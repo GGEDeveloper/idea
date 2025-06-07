@@ -1,0 +1,37 @@
+# Task ID: 1
+# Title: Setup Project Repository and Initial Structure
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Initialize the project repository, set up basic folder structure, and configure development environment, including PostgreSQL database setup.
+# Details:
+Includes version control setup (Git), dependency management, and basic project configuration, ensuring compatibility with PostgreSQL for data persistence and cloud-native deployment (Vercel/Cloud).
+
+# Test Strategy:
+Verify repository is accessible, development environment can be spun up, and PostgreSQL connection is established.
+
+# Subtasks:
+## 1. Initialize Version Control Repository [done]
+### Dependencies: None
+### Description: Set up the Git repository for the project, including creating the initial commit and configuring basic Git ignore rules.
+### Details:
+Initialize Git repository, create a comprehensive `.gitignore` file for Node.js, Next.js, and environment variables.
+
+## 2. Define and Create Project Folder Structure [done]
+### Dependencies: 1.1
+### Description: Establish the foundational directory structure for the Next.js frontend, API routes, database scripts, configuration files, and testing utilities.
+### Details:
+Create directories such as `src/pages`, `src/components`, `src/api`, `db/migrations`, `db/schemas`, `config`, `tests`, `public`, and `locales` to support Next.js, PostgreSQL, API Geko integration, and internationalization.
+
+## 3. Configure Dependency Management [done]
+### Dependencies: 1.2
+### Description: Initialize and configure the package manager (npm/yarn) and add core project dependencies for frontend, authentication, database interaction, and testing.
+### Details:
+Run `npm init` or `yarn init`. Install core packages: `next`, `react`, `react-dom`, `auth-js` (or `clerk/nextjs`), `i18next`, `react-i18next`, `pg` (for PostgreSQL), `axios` (for API Geko), and testing libraries like `jest` or `react-testing-library`.
+
+## 4. Set Up Core Development Environment and Configuration [done]
+### Dependencies: 1.3
+### Description: Configure the initial development environment, including Next.js project setup, basic database connection settings, environment variables, and initial internationalization setup.
+### Details:
+Initialize Next.js project (e.g., `npx create-next-app`). Create and configure `.env.local` for `DATABASE_URL` (PostgreSQL), `AUTH_SECRET`, `CLERK_SECRET_KEY`, and API Geko keys. Set up `next.config.js` for internationalization and initial logging configuration.
+

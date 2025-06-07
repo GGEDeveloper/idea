@@ -1,0 +1,73 @@
+# Task ID: 19
+# Title: Create 'Contact/Support' Page
+# Status: pending
+# Dependencies: 2, 3
+# Priority: medium
+# Description: Develop the 'Contact/Support' page, including a contact form, location details, and a FAQ section. **Highlight the contact form as the channel for account creation requests.**
+# Details:
+Basic layout for all sections. **Ensure clear instructions for account creation requests via the contact form.**
+
+# Test Strategy:
+Verify page loads with all sections present. **Confirm instructions for account creation requests are clear.**
+
+# Subtasks:
+## 1. Implement Basic Contact Page Layout [pending]
+### Dependencies: None
+### Description: Create the fundamental HTML structure and apply initial CSS for the contact page, including header, main content area, and footer sections.
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 2. Develop Contact Form User Interface with Access Request Option [pending]
+### Dependencies: 19.1
+### Description: Build the HTML and CSS for the contact form, including fields for Name, Email, Subject, Message, and a Submit button. Add a subject option or checkbox for 'Solicitar acesso à plataforma como cliente empresa'.
+### Details:
+O formulário deve deixar claro que o acesso só é concedido após análise administrativa. Mensagem explicativa: 'Apenas empresas/clientes aprovados recebem conta. Nossa equipe entrará em contato.' Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 3. Integrate Location Details Section [pending]
+### Dependencies: 19.1
+### Description: Add a dedicated section displaying company address, phone numbers, email, and a placeholder for an embedded map (e.g., Google Maps iframe).
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 4. Implement FAQ Section Structure [pending]
+### Dependencies: 19.1
+### Description: Create the HTML and basic CSS for a Frequently Asked Questions section, allowing for expandable/collapsible answers (e.g., using accordions).
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 5. Add Account Creation Request Instructions [pending]
+### Dependencies: 19.1
+### Description: Integrate a prominent section with clear instructions and a call-to-action for users requesting account creation, including necessary details.
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 6. Highlight Manual Access Request Process [pending]
+### Dependencies: 19.2
+### Description: Adicionar mensagem clara ao formulário de contato explicando que o acesso à plataforma é concedido apenas após avaliação administrativa. Não há auto-registro. Usuários devem aguardar contato do admin.
+### Details:
+Mensagem sugerida: 'Solicite acesso preenchendo este formulário. Nossa equipe analisará seu pedido e entrará em contato. Não há criação automática de conta.' Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 7. Implement Logging for Access Requests and General Submissions [pending]
+### Dependencies: 19.2
+### Description: Adicionar logging detalhado (client-side e backend) para submissões do formulário, destacando pedidos de acesso (subject: 'Solicitar acesso à plataforma'). Garantir que nenhum dado sensível seja exposto e que logs estejam em conformidade com as regras de compliance.
+### Details:
+Registrar logs com timestamp, tipo de solicitação e status de processamento administrativo. Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 8. Implement Basic Form Validation and Fallback [pending]
+### Dependencies: 19.2
+### Description: Add client-side validation for required contact form fields and display user-friendly fallback messages for submission errors or network issues.
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 9. Conduct Contact Page UI Testing [pending]
+### Dependencies: 19.2, 19.3, 19.4, 19.5, 19.6, 19.7, 19.8
+### Description: Perform manual and automated (if applicable) tests to ensure all UI elements (form, sections, placeholders) are rendered correctly, are responsive, and function as expected.
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+## 10. Document Contact Page Implementation [pending]
+### Dependencies: 19.9
+### Description: Update the project's technical documentation with details about the contact page's structure, components, form logic, and any specific implementation notes.
+### Details:
+Timestamp: YYYY-MM-DD HH:MM:SS
+

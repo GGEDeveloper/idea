@@ -1,0 +1,37 @@
+# Task ID: 5
+# Title: Develop Home Page Dynamic Content Features
+# Status: pending
+# Dependencies: 4
+# Priority: medium
+# Description: Implement dynamic sections for highlights, banners, featured categories, latest news, and promotions on the Home Page. **Prices displayed in dynamic content (e.g., promotions, featured products) must be adjusted from Geko API prices and only visible to authenticated users.**
+# Details:
+Content should be manageable via Admin Area and persisted in PostgreSQL. **Prices displayed in dynamic content (e.g., promotions, featured products) must be adjusted from Geko API prices and only visible to authenticated users.**
+
+# Test Strategy:
+Verify dynamic content loads and displays correctly. **Ensure prices are adjusted and hidden for unauthenticated users.**
+
+# Subtasks:
+## 1. Automatizar logs de progresso de microtarefas [pending]
+### Dependencies: None
+### Description: Implementar scripts ou comandos CLI para registrar automaticamente o início e fim de cada microtask, com timestamp UTC até segundos, gravando em LOG_CODE.md ou sistema equivalente.
+### Details:
+Criar script ou função (ex: npm run log-task) que recebe ID da microtask, ação (start/finish), timestamp UTC e mensagem opcional. Garantir integração fácil com o fluxo de desenvolvimento. Validar que logs não exponham dados sensíveis. Atualizar documentação de uso.
+
+## 2. Checklist de revisão automática para microtarefas [pending]
+### Dependencies: None
+### Description: Criar template de checklist para cada microtask, garantindo validação de critérios essenciais (testes, logging, docs, code review) antes de marcar como done.
+### Details:
+Definir checklist padrão (ex: testes rodados, logs criados, documentação atualizada, revisão feita). Integrar com PRs ou scripts de finalização de microtask. Registrar resultado do checklist com timestamp no LOG_CODE.md.
+
+## 3. Configurar monitoramento e alertas em produção [pending]
+### Dependencies: None
+### Description: Adicionar microtarefas para setup e validação de monitoramento (Sentry, LogRocket, alertas de erro/crash) em ambiente de produção.
+### Details:
+Configurar Sentry para logging de erros e alertas automáticos. Integrar LogRocket para rastreamento de sessões e UX. Criar alertas para falhas críticas (e-mail, Slack, etc). Documentar setup e validar funcionamento com testes de erro simulados.
+
+## 4. Microtarefas de feedback e melhoria contínua [pending]
+### Dependencies: None
+### Description: Adicionar microtarefas recorrentes para revisão do fluxo de tasks/microtasks, coleta de feedback do time e ajustes incrementais no processo.
+### Details:
+Agendar revisões periódicas (ex: semanal) do board de microtasks, coletar feedback dos devs, identificar bloqueios e oportunidades de melhoria. Registrar decisões e ações no LOG_CODE.md com timestamp. Atualizar documentação de processos sempre que necessário.
+

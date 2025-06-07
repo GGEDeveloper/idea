@@ -1,0 +1,73 @@
+# Task ID: 16
+# Title: Implement Product Action Buttons
+# Status: pending
+# Dependencies: 10, 24, 49
+# Priority: high
+# Description: Add 'Add to Cart', 'Add to Wishlist', and 'Compare Product' buttons to the Product Detail Page. **The 'Add to Cart' button should only be visible and functional for authenticated users, initiating the order placement process.**
+# Details:
+Buttons should trigger relevant actions, with 'Add to Cart' initiating order persistence in PostgreSQL. **Ensure 'Add to Cart' is tied to the authenticated user's session and the new order placement flow.**
+
+# Test Strategy:
+Verify buttons are clickable and initiate correct actions. **Test 'Add to Cart' visibility and functionality for authenticated vs. unauthenticated users.**
+
+# Subtasks:
+## 1. Design UI for Action Buttons [pending]
+### Dependencies: None
+### Description: Create visual mockups and define interaction states (e.g., enabled, disabled, loading, success, error) for 'Add to Cart', 'Add to Wishlist', and 'Compare Product' buttons.
+### Details:
+Includes button placement, iconography, and text variations.
+
+## 2. Implement Frontend Button Components [pending]
+### Dependencies: 16.1
+### Description: Develop reusable UI components for 'Add to Cart', 'Add to Wishlist', and 'Compare Product' buttons based on the design, ensuring they are styled and can handle basic click events.
+### Details:
+Focus on component reusability and adherence to design system.
+
+## 3. Frontend Logic for 'Add to Cart' (Unauthenticated) [pending]
+### Dependencies: 16.2
+### Description: Implement client-side logic to detect unauthenticated users clicking 'Add to Cart' and redirect them to the login/signup page or display an appropriate message.
+### Details:
+Ensure a smooth user experience for guests attempting to add items to cart.
+
+## 4. Frontend Logic for 'Add to Cart' (Authenticated) [pending]
+### Dependencies: 16.2
+### Description: Develop client-side logic for authenticated users to prepare product data (ID, quantity, variations) and trigger an API call when 'Add to Cart' is clicked.
+### Details:
+Handle data serialization and initial validation before API request.
+
+## 5. Develop Backend API for 'Add to Cart' [pending]
+### Dependencies: None
+### Description: Create or extend the backend API endpoint to securely handle 'Add to Cart' requests, including user authentication, product validation, and updating the user's shopping cart in the database.
+### Details:
+Implement logic for quantity updates, existing cart items, and error handling for invalid products/users.
+
+## 6. Implement Frontend Logic for 'Add to Wishlist' [pending]
+### Dependencies: 16.2
+### Description: Develop client-side logic to handle 'Add to Wishlist' button clicks, preparing product data and triggering an API call to add the item to the user's wishlist.
+### Details:
+Consider immediate visual feedback (e.g., changing button state) upon click.
+
+## 7. Develop Backend API for 'Add to Wishlist' [pending]
+### Dependencies: None
+### Description: Create or extend the backend API endpoint to securely handle 'Add to Wishlist' requests, including user authentication and adding the product to the user's wishlist collection.
+### Details:
+Ensure idempotency and handle cases where the product is already in the wishlist.
+
+## 8. Implement Frontend Logic for 'Compare Product' [pending]
+### Dependencies: 16.2
+### Description: Develop client-side logic for 'Compare Product' button to add/remove products from a local comparison list (e.g., using browser local storage or a global state management solution).
+### Details:
+Manage the list of products for comparison, including limits and removal functionality.
+
+## 9. Integrate Frontend with Backend APIs & Error Handling [pending]
+### Dependencies: 16.3, 16.4, 16.5, 16.6, 16.7
+### Description: Connect the frontend 'Add to Cart' and 'Add to Wishlist' button actions to their respective backend APIs. Implement loading states, success messages, and robust error handling (e.g., toasts, alerts) for API responses.
+### Details:
+Ensure proper display of user feedback for all API interactions.
+
+## 10. Implement Logging and Basic End-to-End Testing [pending]
+### Dependencies: 16.9
+### Description: Add client-side logging for all action button interactions and API responses. Conduct basic end-to-end tests for 'Add to Cart' (authenticated/unauthenticated), 'Add to Wishlist', and 'Compare Product' functionalities.
+### Details:
+Verify core functionality and user flows for all implemented features.
+

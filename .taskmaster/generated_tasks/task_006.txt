@@ -1,0 +1,73 @@
+# Task ID: 6
+# Title: Implement Product Listing Page Structure (Guest & Authenticated Views)
+# Status: pending
+# Dependencies: 2, 3, 49
+# Priority: high
+# Description: Create the basic layout for the Product Listing (Catalog) Page, including space for filters, product grid, sorting, and pagination. **Ensure prices, stock, and restricted commercial information are only visible to authenticated users.**
+# Details:
+Initial static product display for testing purposes, with dynamic data sourced from PostgreSQL. **Implement logic to conditionally display/hide price, stock, and other restricted commercial data based on user authentication status.**
+
+# Test Strategy:
+Verify page loads with correct layout. **Test visibility of prices/stock for both authenticated and unauthenticated users.**
+
+# Subtasks:
+## 1. Setup Base HTML Structure & CSS Reset [pending]
+### Dependencies: None
+### Description: Establish the foundational HTML document for the product listing page, including basic head elements, body structure, and link to a global stylesheet. Apply a standard CSS reset to ensure consistent rendering across browsers.
+### Details:
+Create `index.html` or equivalent. Define main `div` for app. Link `styles.css`. Add basic CSS reset rules (e.g., box-sizing, margin/padding reset). Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 2. Implement Core Product Card UI [pending]
+### Dependencies: 6.1
+### Description: Develop the reusable UI component for a single product item, including placeholders for image, product title, and a basic price display. Focus on semantic HTML and initial styling.
+### Details:
+Create `ProductCard.js` (or equivalent component file). Define HTML structure for image (`<img>`), title (`<h2>`), and price (`<p>`). Apply basic CSS for layout and appearance. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 3. Create Product Grid Layout Component [pending]
+### Dependencies: 6.1, 6.2
+### Description: Build the container component responsible for arranging multiple product cards in a responsive grid or flexbox layout. Ensure proper spacing and alignment.
+### Details:
+Create `ProductGrid.js`. Implement CSS Grid or Flexbox properties to display `ProductCard` instances. Ensure responsiveness for different screen sizes. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 4. Develop Product Data Fetching Module [pending]
+### Dependencies: None
+### Description: Implement the service or hook responsible for making API calls to retrieve product data. Include basic error handling for network requests.
+### Details:
+Create `productService.js` (or data fetching hook). Define function to fetch product array from a mock API endpoint or backend. Implement `try-catch` for network errors. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 5. Implement Guest User Display Logic [pending]
+### Dependencies: 6.3, 6.4
+### Description: Develop the logic to render the product listing page for unauthenticated users, displaying only basic product information (image, title, base price) and hiding commercial details.
+### Details:
+In `ProductListingPage.js`, check user authentication status. If guest, pass only basic product data to `ProductCard` components. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 6. Implement Authenticated User Display Logic [pending]
+### Dependencies: 6.5
+### Description: Extend the product card rendering to include additional commercial details (e.g., discount badges, stock status, 'Add to Cart' button) when an authenticated user is detected.
+### Details:
+Modify `ProductCard.js` to conditionally render additional elements based on an `isAuthenticated` prop. Update `ProductListingPage.js` to pass full product data for authenticated users. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 7. Integrate Permission Service for Commercial Data [pending]
+### Dependencies: 6.6
+### Description: Connect the display of specific commercial information (e.g., wholesale pricing, special offers) to the application's permission system, ensuring visibility only for authorized user roles.
+### Details:
+Introduce a `permissionService.js` or similar. In `ProductCard.js` or `ProductListingPage.js`, use permission checks (e.g., `canViewWholesalePrice`) to control visibility of sensitive data. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 8. Add Logging for Data & Permission Flows [pending]
+### Dependencies: 6.4, 6.5, 6.6, 6.7
+### Description: Implement comprehensive logging for product data fetching success/failure, user authentication status changes, and permission check outcomes to aid debugging and monitoring.
+### Details:
+Integrate a logging library (e.g., console, custom logger). Log API request/response, authentication state transitions, and permission service calls. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 9. Write Unit Tests for Components & Logic [pending]
+### Dependencies: 6.2, 6.3, 6.5, 6.6, 6.7
+### Description: Develop unit tests for the `ProductCard` and `ProductGrid` components, as well as the conditional display logic for guest/authenticated users and permission-based visibility.
+### Details:
+Use a testing framework (e.g., Jest, React Testing Library). Write tests for component rendering, prop handling, conditional UI elements, and permission-driven display. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+
+## 10. Implement i18n & A11y for Product Listing [pending]
+### Dependencies: 6.2, 6.3, 6.5, 6.6
+### Description: Integrate internationalization (i18n) for all user-facing text on the product listing page and ensure accessibility (a11y) standards are met, including ARIA attributes and keyboard navigation.
+### Details:
+Replace hardcoded strings with i18n keys. Add `alt` attributes to images, `aria-label` where necessary, and ensure keyboard focus/navigation for interactive elements. Timestamp: [YYYY-MM-DDTHH:MM:SS]
+

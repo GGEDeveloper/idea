@@ -1,0 +1,31 @@
+# Task ID: 3
+# Title: Develop Global Footer Component
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Implement the site-wide footer including institutional links, social media icons, newsletter signup, contact information, and security seal.
+# Details:
+Must be responsive.
+
+# Test Strategy:
+Verify all links are correct and social media icons are clickable.
+
+# Subtasks:
+## 1. Implement Institutional Links Section [pending]
+### Dependencies: None
+### Description: Develop the static content area of the footer for institutional/company links navigation.
+### Details:
+Create a Next.js/React component for institutional links. Populate with placeholder or real company/institutional links as available. Apply initial styling and semantic HTML structure.
+
+## 2. Implement Social Media Icons as Placeholders (no links yet) [pending]
+### Dependencies: None
+### Description: Add social media icons to the footer as visual placeholders only, without real links until provided.
+### Details:
+Use icon components or SVGs for social media. Do not link to any external profiles yet. Ensure icons are visually distinct and styled consistently with the footer design.
+
+## 3. Implement Responsive Design & Final Styling for Footer [pending]
+### Dependencies: 3.1, 3.2
+### Description: Apply responsive design principles to the entire footer component, ensuring optimal display and usability across various screen sizes (mobile, tablet, desktop), and perform final styling adjustments.
+### Details:
+Utilize CSS media queries and/or CSS-in-JS for responsive layouts. Test the footer's appearance and functionality across different viewports. Address any visual inconsistencies, spacing issues, or layout breaks. Ensure accessibility standards are met.
+

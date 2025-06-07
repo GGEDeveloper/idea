@@ -1,0 +1,37 @@
+# Task ID: 15
+# Title: Display Product Core Information
+# Status: pending
+# Dependencies: 10, 49
+# Priority: high
+# Description: Show price, stock status, EAN, and internal references prominently on the Product Detail Page. **Ensure prices are adjusted from Geko API prices and that price, stock status, EAN, and internal references are only visible to authenticated users.**
+# Details:
+Stock status should be dynamic, sourced from PostgreSQL. **Implement price adjustment logic before display. Implement conditional rendering based on user authentication for all restricted data.**
+
+# Test Strategy:
+Verify all core information is displayed and accurate. **Crucially, verify price adjustment logic is applied and that restricted information is hidden for unauthenticated users.**
+
+# Subtasks:
+## 1. Implement Price Adjustment Logic [pending]
+### Dependencies: None
+### Description: Develop and integrate the logic for adjusting product prices based on data received from the Geko API, ensuring correct calculations and display on the frontend.
+### Details:
+This involves parsing Geko API responses for pricing rules, applying discounts/surcharges, handling currency conversions, and updating the price display in Next.js/React components.
+
+## 2. Integrate Stock Status Display [pending]
+### Dependencies: None
+### Description: Implement the integration with the backend to fetch and display real-time stock availability for each product, including 'In Stock', 'Low Stock', or 'Out of Stock' indicators.
+### Details:
+This requires defining API endpoints for stock data, handling different stock statuses from the backend (PostgreSQL), and dynamically updating the UI components.
+
+## 3. Develop Reference Information Display [pending]
+### Dependencies: None
+### Description: Create components and logic to display static and dynamic reference information related to products, such as product descriptions, specifications, and images.
+### Details:
+This includes fetching product metadata from the backend, structuring the display for various data types, and ensuring responsiveness across devices.
+
+## 4. Implement Authentication-Based Visibility [pending]
+### Dependencies: None
+### Description: Develop the logic to conditionally display or hide certain product information or features based on the user's authentication status and assigned permissions using Auth.js/Clerk.
+### Details:
+Utilize Auth.js/Clerk for user session management and permission checks. Define rules for what content (e.g., special pricing, specific product details) is visible to authenticated vs. unauthenticated users.
+

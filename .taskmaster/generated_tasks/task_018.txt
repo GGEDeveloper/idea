@@ -1,0 +1,19 @@
+# Task ID: 18
+# Title: Create 'About Us' Page
+# Status: pending
+# Dependencies: 2, 3
+# Priority: low
+# Description: Develop the 'About Us' page, including sections for company mission, values, history, and general contact information.
+# Details:
+Static content initially.
+
+# Test Strategy:
+Verify page loads and content is displayed.
+
+# Subtasks:
+## 1. Implement 'About Us' Page Structure and Content [pending]
+### Dependencies: None
+### Description: Develop the 'About Us' page in Next.js/React, incorporating dedicated sections for company information (e.g., mission, vision, history) and contact details (e.g., address, phone, email, map integration).
+### Details:
+Create the necessary Next.js page and React components. Structure the content for company overview, values, and a clear contact section. Ensure basic styling and responsiveness. No backend integration is required for this initial content presentation.
+

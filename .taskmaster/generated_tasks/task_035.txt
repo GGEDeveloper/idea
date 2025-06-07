@@ -1,0 +1,49 @@
+# Task ID: 35
+# Title: Implement Order and Billing Management (Admin)
+# Status: pending
+# Dependencies: 32
+# Priority: high
+# Description: Develop a module in the Admin Area for viewing, processing, **approving/rejecting**, updating status, and generating invoices for customer orders. **All orders require manual admin approval or rejection, and only admins can update order statuses. There is no integrated payment system.**
+# Details:
+Remove payment integration aspects. Implement clear workflows for admin approval/rejection and status updates, with all order data managed in PostgreSQL. Ensure robust logging of order changes.
+
+# Test Strategy:
+Verify admin can manage order lifecycle and billing. **Crucially, test the approval/rejection process and manual status updates. Confirm no payment gateway integration is present.**
+
+# Subtasks:
+## 1. Implement Order Listing and Search [pending]
+### Dependencies: None
+### Description: Develop the frontend and backend for displaying a list of orders with robust search, filtering, and pagination capabilities.
+### Details:
+Backend: PostgreSQL (Neo) for data storage, API endpoints for listing and searching orders. Frontend: Next.js/React components for table display, search bar, and filters. Authentication: Secure endpoints using Auth.js/Clerk. Internationalization: Support for order status and filter labels. Testing: Unit and integration tests for API and UI components. Logging: Comprehensive logging for all API requests and responses. Deployment: Vercel compatibility.
+
+## 2. Develop Order Detail View [pending]
+### Dependencies: 35.1
+### Description: Create a dedicated page to display comprehensive details of a single order, including associated items, customer information, and history.
+### Details:
+Backend: API endpoint to fetch a single order's details from PostgreSQL (Neo). Frontend: Next.js/React component for displaying all order attributes. Authentication: Secure endpoint using Auth.js/Clerk. Internationalization: Display of various order attributes. Testing: Unit and integration tests. Logging: Detailed logging for data retrieval.
+
+## 3. Implement Order Approval/Rejection Workflow [pending]
+### Dependencies: 35.2
+### Description: Develop the functionality for authorized users to approve or reject pending orders, including necessary validations and status transitions.
+### Details:
+Backend: API endpoints for approval/rejection actions, updating order status in PostgreSQL (Neo). Frontend: UI elements (buttons, confirmation dialogs) within the order detail view. Authentication/Permissions: Role-based access control using Auth.js/Clerk. Integration: Potentially trigger notifications or updates via API Geko. Testing: Extensive unit and integration tests for workflow logic and permissions. Logging: Audit logging for all approval/rejection actions, including user and timestamp.
+
+## 4. Develop Order Status Update Functionality [pending]
+### Dependencies: 35.2
+### Description: Enable authorized users to manually update the status of an order (e.g., 'Processing', 'Shipped', 'Cancelled') with appropriate validation and audit trails.
+### Details:
+Backend: API endpoint to update order status in PostgreSQL (Neo). Frontend: UI components (dropdowns, buttons) in the order detail view. Authentication/Permissions: Role-based access control using Auth.js/Clerk. Integration: Potentially trigger external systems via API Geko upon status change. Internationalization: Status labels. Testing: Unit and integration tests. Logging: Audit logging for all status changes.
+
+## 5. Implement Invoice Generation [pending]
+### Dependencies: 35.3, 35.4
+### Description: Develop the capability to generate and store invoices for completed orders, making them available for download.
+### Details:
+Backend: Logic to compile invoice data from PostgreSQL (Neo), generate PDF (or similar format), and store it (e.g., S3 compatible storage, or link to Geko API if it handles this). Frontend: UI element (button) in the order detail view to trigger invoice generation and download. Integration: Potentially use API Geko for invoice numbering or external accounting system integration. Testing: Unit tests for data compilation, integration tests for generation process. Logging: Logging for invoice generation attempts and success/failure.
+
+## 6. Implement Comprehensive Order Change Logging [pending]
+### Dependencies: 35.3, 35.4, 35.5
+### Description: Establish a robust system to log all significant changes made to an order, including user, timestamp, and old/new values, for audit and compliance purposes.
+### Details:
+Backend: Database schema (PostgreSQL Neo) for change logs, API middleware or triggers to capture changes from all relevant endpoints (status updates, approvals, rejections, invoice generation triggers). Frontend: Optional UI to view change history on the order detail page. Compliance: Ensure logging meets audit and compliance requirements. Testing: Unit tests for logging mechanisms, integration tests to ensure changes are captured. Logging: Internal system logging for the logging process itself.
+

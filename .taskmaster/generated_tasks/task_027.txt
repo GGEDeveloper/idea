@@ -1,0 +1,31 @@
+# Task ID: 27
+# Title: Implement Customer Wishlist and Favorites
+# Status: pending
+# Dependencies: 24, 16
+# Priority: medium
+# Description: Develop functionality for customers to add products to a wishlist or mark them as favorites for later purchase.
+# Details:
+Persists across sessions, with data stored in PostgreSQL.
+
+# Test Strategy:
+Verify products can be added/removed from wishlist/favorites.
+
+# Subtasks:
+## 1. Implement Add/Remove Product Logic [pending]
+### Dependencies: None
+### Description: Develop the backend logic for adding and removing products from a user's wishlist. This includes validating product IDs, handling user authentication via Auth.js/Clerk, and defining the core API endpoints.
+### Details:
+Create API routes (e.g., `/api/wishlist/add`, `/api/wishlist/remove`) in Next.js. Integrate with Auth.js/Clerk to identify the authenticated user. Validate product IDs, potentially against data from API Geko. Initial implementation can use in-memory storage for testing purposes.
+
+## 2. Integrate Persistent Wishlist Storage [pending]
+### Dependencies: 27.1
+### Description: Implement persistent storage for user wishlists using PostgreSQL (Neo). This involves defining the database schema for wishlist items and integrating the backend logic developed in Subtask 1 with the database.
+### Details:
+Design `wishlist_items` table in PostgreSQL (Neo) with fields like `user_id`, `product_id`, `added_at`. Update the API endpoints from Subtask 1 to interact with the PostgreSQL database for storing and retrieving wishlist data. Ensure proper error handling and data integrity.
+
+## 3. Develop Wishlist Management UI [pending]
+### Dependencies: 27.1, 27.2
+### Description: Create the frontend user interface for viewing, adding, and removing items from the wishlist. This includes displaying product details, providing interactive controls, and ensuring a responsive user experience.
+### Details:
+Develop Next.js/React components for a dedicated wishlist page. Implement 'Add to Wishlist' buttons on product detail pages. Fetch product information from API Geko for display. Integrate with the backend API endpoints (from Subtask 1 and 2) to perform add/remove operations. Ensure UI updates reflect changes in real-time and support internationalization.
+

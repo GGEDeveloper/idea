@@ -1,0 +1,37 @@
+# Task ID: 34
+# Title: Implement User/Client Management (Admin)
+# Status: pending
+# Dependencies: 32
+# Priority: medium
+# Description: Develop a module in the Admin Area for managing customer accounts, including viewing, editing, deactivating users, **and creating new customer accounts based on requests received via the contact form.**
+# Details:
+Ability to search and filter users, with all user data managed in PostgreSQL. **Implement functionality for admin to securely create new customer accounts, including setting initial passwords or sending activation links.**
+
+# Test Strategy:
+Verify admin can manage user accounts effectively. **Crucially, test the process of creating new customer accounts by an admin and verifying their access.**
+
+# Subtasks:
+## 1. Implement User Listing and Search Functionality [pending]
+### Dependencies: None
+### Description: Develop the backend API and frontend UI for displaying a list of users with search, filtering, and pagination capabilities.
+### Details:
+Design and implement database schema (PostgreSQL/Neo) for user data. Develop backend API endpoints for fetching, searching, and filtering user records. Create Next.js/React frontend components for displaying user lists, search bar, and pagination. Integrate with Auth.js/Clerk for role-based access control. Implement comprehensive logging for all data access and search queries. Ensure internationalization support for UI elements. Develop automated tests for API and UI.
+
+## 2. Develop User Profile Editing Features [pending]
+### Dependencies: 34.1
+### Description: Implement the ability for authorized administrators to edit existing user profiles, including personal details and roles.
+### Details:
+Develop secure backend API endpoints for updating user attributes in PostgreSQL (Neo). Create Next.js/React forms for editing user profiles, including input validation and error handling. Ensure proper authorization checks via Auth.js/Clerk to restrict editing capabilities. Implement robust logging of all changes made to user profiles for auditability. Include automated tests for update operations and UI interactions.
+
+## 3. Implement User Account Deactivation Process [pending]
+### Dependencies: 34.1
+### Description: Develop the functionality to securely deactivate user accounts, ensuring data integrity and compliance with retention policies.
+### Details:
+Implement a soft-delete mechanism in PostgreSQL (Neo) by adding an 'is_active' flag or similar. Develop backend API endpoints to toggle user account status. Create Next.js/React UI for initiating deactivation, including confirmation prompts. Ensure compliance with data retention policies. Integrate with Auth.js/Clerk to manage permissions for deactivation. Implement detailed logging of deactivation events, including who performed the action and when. Develop automated tests for the deactivation flow.
+
+## 4. Automate New User Account Creation from Contact Form Requests [pending]
+### Dependencies: None
+### Description: Develop a system to process contact form requests and automatically create new user accounts based on the provided information.
+### Details:
+Design and implement a robust backend service to consume contact form submissions (e.g., via webhook or API polling). Validate incoming data for new user creation. Integrate with Geko API for any required external data enrichment or validation. Create new user records in PostgreSQL (Neo) with initial default settings. Utilize Auth.js/Clerk for initial user authentication setup and role assignment. Implement an onboarding flow, potentially triggering emails. Ensure comprehensive logging of every step of the creation process, including successes, failures, and API interactions. Develop automated tests covering data parsing, API calls, and database insertions.
+

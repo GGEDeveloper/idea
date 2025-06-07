@@ -1,0 +1,55 @@
+# Task ID: 21
+# Title: Implement FAQ Section
+# Status: pending
+# Dependencies: 18
+# Priority: low
+# Description: Develop an expandable FAQ section on the 'Contact/Support' page to address common customer questions.
+# Details:
+Content should be manageable via Admin Area and stored in PostgreSQL. Only admins can perform CRUD. All operations must be logged/audited. No dados sensíveis. Internacionalização PT/EN. Fallback amigável.
+
+# Test Strategy:
+Verify CRUD, permissions, logging, fallback and i18n. Test both admin and user flows.
+
+# Subtasks:
+## 1. Implement Admin-Only FAQ CRUD Backend [pending]
+### Dependencies: None
+### Description: Develop backend endpoints in Next.js/Prisma for admin-only creation, update, deletion and listing of FAQ items, with validation and audit logging.
+### Details:
+Restrict all write operations to admin role. Store all changes in audit_log. Validate input to prevent sensitive data exposure.
+
+## 2. Implement FAQ Management UI in Admin Area [pending]
+### Dependencies: 21.1
+### Description: Create React components/pages for admins to manage FAQ items (CRUD), with clear feedback, validation and audit trail visibility.
+### Details:
+UI must be accessible, responsive and internationalized (PT/EN). Show audit log for each FAQ entry.
+
+## 3. Implement Expandable FAQ Component for Users [pending]
+### Dependencies: 21.1
+### Description: Develop frontend FAQ component for Contact/Support page, showing questions and answers in an expandable/collapsible format.
+### Details:
+Only published FAQs are shown. Component must be accessible, responsive and fully internationalized.
+
+## 4. Implement Fallback and Empty State Handling [pending]
+### Dependencies: 21.3
+### Description: Show friendly message if no FAQ items are available. Ensure graceful handling of backend/API errors.
+### Details:
+Message must be internacionalizada. Never display technical errors to end user.
+
+## 5. Implement Logging and Audit Trail for FAQ Operations [pending]
+### Dependencies: 21.1
+### Description: Log all create, update, delete and publish/unpublish actions on FAQ items, including user, timestamp and action details.
+### Details:
+Store logs in audit_log table. Make logs accessible to admins for compliance.
+
+## 6. Write Tests for FAQ Backend and Frontend [pending]
+### Dependencies: 21.1, 21.2, 21.3, 21.4, 21.5
+### Description: Develop unit, integration and E2E tests for all CRUD operations, permissions, logging, fallback and i18n (PT/EN).
+### Details:
+Ensure coverage for admin and user flows, edge cases and compliance scenarios.
+
+## 7. Document FAQ Feature and Compliance Rules [pending]
+### Dependencies: 21.1, 21.2, 21.3, 21.4, 21.5, 21.6
+### Description: Document technical and business rules for FAQ: admin-only CRUD, logging, i18n, fallback, security and compliance.
+### Details:
+Update project documentation with FAQ architecture, permission model, audit requirements and user instructions.
+

@@ -1,0 +1,31 @@
+# Task ID: 26
+# Title: Implement Personal Data and Address Management
+# Status: pending
+# Dependencies: 24
+# Priority: medium
+# Description: Enable customers to view, edit, and manage their personal information and shipping/billing addresses within their account.
+# Details:
+Secure update functionality, with data stored in PostgreSQL.
+
+# Test Strategy:
+Verify users can update their data and addresses correctly.
+
+# Subtasks:
+## 1. Implement Secure Personal Data Display [pending]
+### Dependencies: None
+### Description: Develop the frontend components and backend API integration to securely fetch and display a user's personal data.
+### Details:
+Utilize Next.js/React for the user interface. Integrate with Auth.js/Clerk for user authentication and authorization context. Implement API calls to a backend endpoint (connected to PostgreSQL via API Geko) to retrieve user data. Ensure data is displayed in a read-only format initially. Include internationalization support, basic error handling, and comprehensive logging for data retrieval events.
+
+## 2. Develop Personal Data Edit Interface and Client-Side Validation [pending]
+### Dependencies: 26.1
+### Description: Create interactive forms and input fields within the frontend to allow users to modify their personal information, incorporating client-side validation.
+### Details:
+Build React forms for editable personal data fields (e.g., name, email, address). Implement real-time client-side validation (e.g., email format, required fields). Provide clear user feedback for validation errors. Ensure accessibility standards are met. Prepare data for submission to a backend API.
+
+## 3. Implement Secure Personal Data Update API, Server-Side Validation, and Database Persistence [pending]
+### Dependencies: 26.2
+### Description: Develop the secure backend API endpoint and logic for processing, validating, and persisting updated personal data to the database.
+### Details:
+Create a secure API endpoint (e.g., Next.js API route) that receives updated personal data. Implement robust server-side validation, sanitization, and authorization checks using Auth.js/Clerk. Securely update the PostgreSQL database. Ensure transactionality for data integrity. Implement comprehensive logging for all update attempts (success/failure) and integrate automated tests for API functionality, security, and data integrity. Prepare for cloud-native deployment on Vercel.
+

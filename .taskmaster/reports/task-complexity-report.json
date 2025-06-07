@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "generatedAt": "2025-06-06T00:03:31.127Z",
+    "tasksAnalyzed": 30,
+    "totalTasks": 49,
+    "analysisCount": 51,
+    "thresholdScore": 4,
+    "projectName": "Task Master",
+    "usedResearch": false
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 20,
+      "taskTitle": "Implement Contact Form",
+      "complexityScore": 5,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Break down the contact form implementation into subtasks for form UI development, validation logic, submission handling, and account creation request functionality.",
+      "reasoning": "Medium complexity involving form validation, submission handling, and special functionality for account creation requests. Requires secure data transmission."
+    },
+    {
+      "taskId": 31,
+      "taskTitle": "Implement Customer Communication Preferences",
+      "complexityScore": 5,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Break down the 'Implement Customer Communication Preferences' task into 3 subtasks, focusing on preferences UI, storage/application logic, and integration with notification systems. For each subtask, include detailed implementation steps and considerations for data privacy and compliance.",
+      "reasoning": "This task has moderate complexity, primarily focused on UI implementation and data persistence. The existing 2 subtasks are well-structured but could be expanded to include integration with notification systems."
+    },
+    {
+      "taskId": 32,
+      "taskTitle": "Develop Admin Area Authentication and Authorization",
+      "complexityScore": 9,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the 'Develop Admin Area Authentication and Authorization' task into 6 subtasks, focusing on secure user authentication, role definition, permission assignment, role-based access control enforcement, secure session management, and comprehensive testing. For each subtask, include detailed implementation steps and security considerations.",
+      "reasoning": "This task has high complexity due to the security requirements and role-based access control needs. The existing 5 subtasks are well-structured but could be expanded to include comprehensive testing as a separate concern."
+    },
+    {
+      "taskId": 33,
+      "taskTitle": "Implement Product Management (Admin)",
+      "complexityScore": 8,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the 'Implement Product Management (Admin)' task into 6 subtasks, focusing on core product CRUD, category management, variation handling, image management, bulk operations, and user interface implementation. For each subtask, include detailed implementation steps and considerations for data integrity and user experience.",
+      "reasoning": "This task has high complexity due to the comprehensive product management requirements, including categories, variations, and images. The existing 6 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 34,
+      "taskTitle": "Implement User/Client Management (Admin)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement User/Client Management (Admin)' task into 5 subtasks, focusing on user listing/search, profile editing, account deactivation, new account creation from contact form requests, and comprehensive testing. For each subtask, include detailed implementation steps and security considerations.",
+      "reasoning": "This task has significant complexity due to the account management requirements and integration with the contact form for new account requests. The existing 4 subtasks could be expanded to 5 to include comprehensive testing."
+    },
+    {
+      "taskId": 35,
+      "taskTitle": "Implement Order and Billing Management (Admin)",
+      "complexityScore": 9,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the 'Implement Order and Billing Management (Admin)' task into 6 subtasks, focusing on order listing/search, detail view, approval/rejection workflow, status updates, invoice generation, and comprehensive logging. For each subtask, include detailed implementation steps and considerations for data integrity and audit requirements.",
+      "reasoning": "This task has high complexity due to the order lifecycle management, approval/rejection workflow, and comprehensive logging requirements. The existing 6 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 36,
+      "taskTitle": "Implement Banners, Promotions, and Content Management (Admin)",
+      "complexityScore": 8,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Banners, Promotions, and Content Management (Admin)' task into 4 subtasks, focusing on banner management, promotion configuration, WYSIWYG editor integration, and content publishing workflow. For each subtask, include detailed implementation steps and considerations for content versioning and scheduling.",
+      "reasoning": "This task has high complexity due to the diverse content types, WYSIWYG editor integration, and publishing workflow requirements. The existing 4 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 37,
+      "taskTitle": "Implement Reporting (Sales, Stock, Access) (Admin)",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement Reporting (Sales, Stock, Access) (Admin)' task into 5 subtasks, focusing on sales report generation, stock level reporting, access analytics, interactive dashboard, and export functionality. For each subtask, include detailed implementation steps and considerations for data accuracy and performance.",
+      "reasoning": "This task has high complexity due to the diverse report types, data aggregation requirements, and visualization needs. The existing 5 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 38,
+      "taskTitle": "Implement System Logs and Audit Trail (Admin)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement System Logs and Audit Trail (Admin)' task into 4 subtasks, focusing on event capture mechanism, log storage/ingestion, viewing/search interface, and retention/compliance policies. For each subtask, include detailed implementation steps and considerations for security and performance.",
+      "reasoning": "This task has significant complexity due to the comprehensive logging requirements, search functionality, and potential high volume of log data. The existing 3 subtasks could be expanded to 4 to include retention and compliance policies."
+    },
+    {
+      "taskId": 39,
+      "taskTitle": "Implement Instant Search with Autocomplete",
+      "complexityScore": 8,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Instant Search with Autocomplete' task into 4 subtasks, focusing on search UI with autocomplete, backend algorithm/API, authentication-based result filtering, and performance optimization. For each subtask, include detailed implementation steps and considerations for security and user experience.",
+      "reasoning": "This task has high complexity due to the real-time search requirements, authentication-based filtering, and performance optimization needs. The existing 4 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 40,
+      "taskTitle": "Implement Advanced Multi-field Filtering",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement Advanced Multi-field Filtering' task into 5 subtasks, focusing on filter UI components, backend logic/API, frontend-backend integration, role-based permissions, and performance optimization. For each subtask, include detailed implementation steps and considerations for security and user experience.",
+      "reasoning": "This task has high complexity due to the multiple filter types, logical combinations (AND/OR), and authentication-based visibility requirements. The existing 5 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 41,
+      "taskTitle": "Ensure Full Responsiveness (Mobile First)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Ensure Full Responsiveness (Mobile First)' task into 4 subtasks, focusing on design principles/breakpoints, global layout implementation, component-specific adaptations, and comprehensive testing. For each subtask, include detailed implementation steps and considerations for different device types and orientations.",
+      "reasoning": "This task has significant complexity as it affects the entire application and requires careful consideration of various device types and screen sizes. The existing subtasks (after removing duplicates) cover the necessary aspects of responsive design implementation and testing."
+    },
+    {
+      "taskId": 42,
+      "taskTitle": "Implement Internationalization (PT/EN)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Internationalization (PT/EN)' task into 4 subtasks, focusing on infrastructure setup, language switching mechanism, content translation workflow, and comprehensive testing. For each subtask, include detailed implementation steps and considerations for scalability to additional languages.",
+      "reasoning": "This task has significant complexity as it affects all user-facing content and requires careful integration with the application's architecture. The existing subtasks (after removing duplicates) cover the necessary aspects of internationalization implementation and testing."
+    },
+    {
+      "taskId": 43,
+      "taskTitle": "Implement SEO Optimization",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement SEO Optimization' task into 4 subtasks, focusing on SSR/SSG implementation, dynamic metadata generation, sitemap generation, and robots.txt configuration. For each subtask, include detailed implementation steps and considerations for search engine visibility.",
+      "reasoning": "This task has moderate complexity, primarily focused on technical SEO implementation. The existing subtasks (after removing duplicates) cover the necessary aspects of SEO optimization."
+    },
+    {
+      "taskId": 44,
+      "taskTitle": "Implement Performance Optimization",
+      "complexityScore": 8,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Performance Optimization' task into 4 subtasks, focusing on data/API caching, lazy loading for frontend assets, CDN integration, and performance monitoring/testing. For each subtask, include detailed implementation steps and considerations for measuring and validating improvements.",
+      "reasoning": "This task has high complexity due to the diverse optimization techniques and the need for careful measurement and validation. The existing subtasks (after removing duplicates) cover the necessary aspects of performance optimization."
+    },
+    {
+      "taskId": 45,
+      "taskTitle": "Ensure Accessibility (WCAG Compliance)",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Ensure Accessibility (WCAG Compliance)' task into 4 subtasks, focusing on keyboard navigation, ARIA attributes, color contrast compliance, and comprehensive testing. For each subtask, include detailed implementation steps and considerations for different types of disabilities.",
+      "reasoning": "This task has significant complexity as it requires specialized knowledge of accessibility standards and affects the entire application. The existing subtasks (after removing duplicates) cover the necessary aspects of accessibility implementation and testing."
+    },
+    {
+      "taskId": 46,
+      "taskTitle": "Implement System-wide Notification System",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement System-wide Notification System' task into 5 subtasks, focusing on notification data model/API, client-side components, admin management, email integration, and order status change notifications. For each subtask, include detailed implementation steps and considerations for security and user experience.",
+      "reasoning": "This task has high complexity due to the multiple notification channels, real-time requirements, and integration with various system events. The existing 5 subtasks are well-structured and cover all necessary aspects."
+    },
+    {
+      "taskId": 47,
+      "taskTitle": "Implement API Integration and Local Cache",
+      "complexityScore": 9,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the 'Implement API Integration and Local Cache' task into 6 subtasks, focusing on core API client, data transformation, price adjustment logic, error handling/resilience, caching strategy, and cache invalidation. For each subtask, include detailed implementation steps and considerations for security and performance.",
+      "reasoning": "This task has high complexity due to the integration with external APIs, price adjustment requirements, and caching needs. The existing 6 subtasks are well-structured and cover all necessary aspects of API integration and caching."
+    },
+    {
+      "taskId": 48,
+      "taskTitle": "Implement Secure Image and Asset Upload",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Implement Secure Image and Asset Upload' task into 4 subtasks, focusing on upload UI, validation/security, image processing/optimization, and storage integration. For each subtask, include detailed implementation steps and security considerations.",
+      "reasoning": "This task has significant complexity due to the security requirements, image processing needs, and storage integration. The existing 3 subtasks could be expanded to 4 to include storage integration as a separate concern."
+    },
+    {
+      "taskId": 49,
+      "taskTitle": "Implement Permission Management System",
+      "complexityScore": 10,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Break down the 'Implement Permission Management System' task into 7 subtasks, focusing on role definition, permission specification, access control engine, data visibility rules, action authorization, authentication integration, and comprehensive testing. For each subtask, include detailed implementation steps and security considerations.",
+      "reasoning": "This task has the highest complexity due to its critical role in enforcing security across the entire application, particularly for restricted data visibility and admin-only actions. The existing 7 subtasks are comprehensive and well-structured, covering all aspects from role definition to testing."
+    },
+    {
+      "taskId": 50,
+      "taskTitle": "Implement Automated Testing Framework",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the 'Implement Automated Testing Framework' task into 5 subtasks, focusing on unit testing, integration testing, end-to-end testing, CI/CD integration, and coverage reporting. For each subtask, include detailed implementation steps and considerations for test reliability and maintainability.",
+      "reasoning": "This task has significant complexity due to the multiple testing levels and integration with CI/CD pipelines. The existing 5 subtasks are well-structured and cover all necessary aspects of the testing framework."
+    },
+    {
+      "taskId": 1,
+      "taskTitle": "Setup Project Repository and Initial Structure",
+      "complexityScore": 6,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Expand on the 'Set Up Core Development Environment and Configuration' subtask to specifically include detailed steps for PostgreSQL database setup (local and cloud-native) and Vercel deployment configuration, including environment variables and build settings.",
+      "reasoning": "This task is foundational and involves multiple distinct setup steps (VCS, folder, dependencies, environment, DB). The existing subtasks cover the core well, but explicit PostgreSQL setup and cloud-native considerations add a layer of detail that warrants a few more specific subtasks."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "Develop Global Header Component",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Expand on the 'Finalize Responsive Design & Accessibility' subtask to include specific testing methodologies for cross-browser compatibility, detailed ARIA attribute implementation, and keyboard navigation testing.",
+      "reasoning": "The existing subtasks are well-defined and cover the major aspects of a global header, including responsiveness, accessibility, and integration points. The current breakdown is comprehensive for this level."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "Develop Global Footer Component",
+      "complexityScore": 5,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand on the 'Develop Newsletter Signup Functionality' subtask to detail the client-side validation, Geko API integration for subscription, and handling of success/error responses.",
+      "reasoning": "The existing subtasks cover the main areas, but the newsletter signup functionality, especially with Geko API integration, introduces enough complexity to warrant a more detailed breakdown."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "Implement Home Page Structure",
+      "complexityScore": 3,
+      "recommendedSubtasks": 2,
+      "expansionPrompt": "Expand on the 'Create Placeholder Content Sections' subtask to specify the types of content sections (e.g., hero banner, featured products, blog preview) and their initial visual representation.",
+      "reasoning": "This task is purely about creating a basic structural layout and placeholders, which is relatively straightforward. The existing subtasks are appropriate for this scope."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "Develop Home Page Dynamic Content Features",
+      "complexityScore": 9,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "Break down the 'Develop Home Page Dynamic Content Features' task into detailed subtasks, focusing on data modeling in PostgreSQL, API development for content and price adjustment (from Geko API), Admin Area integration for content management, frontend component development for each dynamic section, and conditional rendering logic for authenticated users and adjusted prices.",
+      "reasoning": "The existing subtasks are irrelevant to the task description. This task involves significant backend (Admin Area, PostgreSQL, Geko API integration, price adjustment logic) and frontend (dynamic rendering, conditional visibility based on authentication) work, making it highly complex and requiring a full, proper breakdown."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "Implement Product Listing Page Structure (Guest & Authenticated Views)",
+      "complexityScore": 8,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very comprehensive and well-defined, covering both UI and critical business logic such as conditional display of sensitive information and permission integration. This is a high-complexity task, and the current breakdown reflects that adequately."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "Develop Dynamic Product Filters (Sidebar)",
+      "complexityScore": 9,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the full scope of dynamic filters, including the challenging aspects of Geko API integration, XML parsing, data normalization, and authentication-based conditional display. This is a highly complex task."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "Implement Product Listing Sorting Functionality",
+      "complexityScore": 6,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Expand on the 'Develop Core Sorting Logic' subtask to specify how sorting will be handled (client-side vs. server-side via Geko API) and detail the implementation for each sorting criterion (price, name, relevance).",
+      "reasoning": "The existing subtasks adequately cover the UI, core logic, and the critical authentication-based restriction for sorting. The current breakdown is sufficient for this level."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "Implement Product Listing Pagination",
+      "complexityScore": 7,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "Break down the 'Develop Pagination Logic & Product Set Management' subtask into more granular steps, including specific details on Next.js API route implementation, Geko API interaction for paginated data, error handling, and performance optimization for Vercel.",
+      "reasoning": "The existing two subtasks are too high-level and each encompasses significant work, especially concerning API integration, data processing, and performance optimization for a cloud-native environment."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "Implement Product Detail Page Structure (Guest & Authenticated Views)",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Expand on the 'Implement Conditional Content Display Logic for User Roles' subtask to detail specific UI elements that will be hidden/shown (e.g., 'Add to Cart' button, wholesale pricing, restricted technical data) and the fallback messages for guest users.",
+      "reasoning": "The existing subtasks are well-defined and cover the critical aspects of a product detail page, especially the conditional rendering based on user roles and authentication status, which is a key complexity driver."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "Develop Product Image Gallery",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Develop Product Image Gallery' task into subtasks covering UI component development, image loading and optimization (lazy loading, different resolutions), zoom functionality, and navigation (thumbnails/arrows).",
+      "reasoning": "This task involves developing an interactive UI component with specific features like zoom and multiple images, which requires a structured breakdown for implementation and optimization."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "Implement Rich Product Description Rendering",
+      "complexityScore": 4,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Break down the 'Implement Rich Product Description Rendering' task into subtasks focusing on integrating a rich text display component, implementing robust HTML sanitization to prevent XSS vulnerabilities, and ensuring proper styling.",
+      "reasoning": "While rendering rich text is straightforward, securely sanitizing HTML content to prevent XSS vulnerabilities is a critical aspect that adds complexity and requires dedicated attention."
+    },
+    {
+      "taskId": 13,
+      "taskTitle": "Display Product Technical Tables",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Display Product Technical Tables' task into subtasks covering data fetching and parsing for technical specifications, rendering the table UI, and implementing conditional display logic to hide restricted commercial information for unauthenticated users.",
+      "reasoning": "Displaying structured data is relatively simple, but the requirement for conditional visibility of restricted commercial information based on user authentication adds a layer of business logic and complexity."
+    },
+    {
+      "taskId": 14,
+      "taskTitle": "Handle Product Variations",
+      "complexityScore": 9,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are extremely detailed and cover the full lifecycle of product variations, including data modeling, backend APIs, frontend UI, client-side logic, real-time price/stock updates, conditional visibility, and admin panel management. This is a very complex feature."
+    },
+    {
+      "taskId": 15,
+      "taskTitle": "Display Product Core Information",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Expand on the 'Implement Price Adjustment Logic' subtask to detail the specific rules for price adjustments (e.g., discounts, surcharges, currency conversion) and how they interact with the Geko API.",
+      "reasoning": "The existing subtasks cover the critical aspects of displaying core product information, especially the dynamic price adjustment from the Geko API and the authentication-based conditional visibility, which are complex requirements."
+    },
+    {
+      "taskId": 16,
+      "taskTitle": "Implement Product Action Buttons",
+      "complexityScore": 8,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the full scope of action buttons, including the critical conditional 'Add to Cart' functionality (tied to authentication and new order placement), backend integrations, and comprehensive testing. This is a high-complexity task."
+    },
+    {
+      "taskId": 17,
+      "taskTitle": "Implement Breadcrumbs Navigation",
+      "complexityScore": 4,
+      "recommendedSubtasks": 2,
+      "expansionPrompt": "Expand on the 'Implement Dynamic Breadcrumb Path Generation Logic' subtask to detail how URL segments will be mapped to display names, handle dynamic IDs, and integrate with Next.js routing and internationalization.",
+      "reasoning": "Breadcrumbs are generally straightforward, but dynamic generation based on URL paths and integration with internationalization can add minor complexity. The existing subtasks are appropriate."
+    },
+    {
+      "taskId": 18,
+      "taskTitle": "Create 'About Us' Page",
+      "complexityScore": 2,
+      "recommendedSubtasks": 1,
+      "expansionPrompt": "Expand on the 'Implement 'About Us' Page Structure and Content' subtask to specify the exact content sections (e.g., company mission, values, history, team, contact details) and initial styling considerations.",
+      "reasoning": "This is a simple static content page. The existing single subtask is sufficient for its scope."
+    },
+    {
+      "taskId": 19,
+      "taskTitle": "Create 'Contact/Support' Page",
+      "complexityScore": 7,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the specific requirements of the contact page, especially the explicit instructions for manual account creation requests and the logging requirements, which add significant complexity."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "Log Contact Form Submissions (Audit)",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the 'Log Contact Form Submissions (Audit)' task into subtasks covering the design of the logging schema, implementation of backend logging for form submissions (especially access requests), secure storage and access for audit logs, and testing for compliance.",
+      "reasoning": "This task is critical for compliance and auditing. It requires careful implementation of logging mechanisms, secure data handling, and controlled access to logs, which warrants a dedicated breakdown."
+    },
+    {
+      "taskId": 21,
+      "taskTitle": "Implement FAQ Section",
+      "complexityScore": 7,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the full lifecycle of the FAQ feature, including admin-only CRUD operations, comprehensive logging, internationalization, and robust testing, making it a complex feature."
+    },
+    {
+      "taskId": 22,
+      "taskTitle": "Create Legal Pages",
+      "complexityScore": 8,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the full scope of legal pages, including critical aspects like content versioning, internationalization, accessibility, SEO, logging of changes, and compliance, which collectively make this a highly complex task."
+    },
+    {
+      "taskId": 23,
+      "taskTitle": "Develop Customer Area Authentication System",
+      "complexityScore": 9,
+      "recommendedSubtasks": 10,
+      "expansionPrompt": "The existing subtasks are comprehensive. No further expansion is immediately recommended for this task at this level.",
+      "reasoning": "The existing subtasks are very detailed and cover the unique and critical requirements of this authentication system, especially the explicit removal of self-service features, reliance on admin-only account management, and comprehensive logging for auditability. This makes it a highly complex and sensitive task."
+    },
+    {
+      "taskId": 24,
+      "taskTitle": "Implement Customer Dashboard",
+      "complexityScore": 7,
+      "recommendedSubtasks": 9,
+      "expansionPrompt": "Break down the 'Recent Orders & Messages Data Integration and API Setup' and 'Quick Links Functionality and System Readiness' subtasks into more granular steps, detailing API route implementation, Geko API interaction, PostgreSQL schema design, comprehensive testing, and specific compliance considerations.",
+      "reasoning": "The existing subtasks are high-level and each encompasses significant work, especially concerning personalized data integration from external APIs, secure access, and comprehensive system readiness aspects like testing and compliance."
+    },
+    {
+      "taskId": 25,
+      "taskTitle": "Implement Customer Order History",
+      "complexityScore": 6,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Expand on the 'Implement Order Listing UI' and 'Develop Detailed Order View Page' subtasks to specify the exact data points to be displayed for each order and line item, and how they will be fetched from the Geko API.",
+      "reasoning": "The existing subtasks are well-defined and cover the necessary UI and data display logic for order history, including the read-only status for customers. The current breakdown is sufficient for this level."
+    },
+    {
+      "taskId": 26,
+      "taskTitle": "Implement Personal Data and Address Management",
+      "complexityScore": 6,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Expand on the 'Implement Secure Personal Data Update API, Server-Side Validation, and Database Persistence' subtask to detail the specific validation rules, error handling, and transaction management for data updates.",
+      "reasoning": "The existing subtasks are well-defined and cover the critical aspects of secure personal data and address management, including display, editing, and secure updates with validation."
+    },
+    {
+      "taskId": 27,
+      "taskTitle": "Implement Customer Wishlist and Favorites",
+      "complexityScore": 5,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Expand on the 'Develop Wishlist Management UI' subtask to detail the display of product information (e.g., image, name, price), options to move to cart, and handling of empty wishlist states.",
+      "reasoning": "The existing subtasks cover the core functionality of a wishlist, including adding/removing products, persistent storage, and UI management. The current breakdown is sufficient."
+    },
+    {
+      "taskId": 28,
+      "taskTitle": "Implement Stock Alerts for Customers",
+      "complexityScore": 8,
+      "recommendedSubtasks": 9,
+      "expansionPrompt": "Break down the 'Develop Stock Monitoring and Alert Triggering Logic' and 'Integrate with Notification Delivery System' subtasks into more granular steps, detailing the monitoring frequency, specific alert conditions, chosen notification channels (email, push), and robust error handling for external integrations.",
+      "reasoning": "The existing subtasks are high-level and each encompasses significant work, especially concerning real-time stock monitoring, complex alert triggering logic, and integration with external notification systems, which are inherently complex."
+    },
+    {
+      "taskId": 29,
+      "taskTitle": "Implement Invoice and Document Downloads",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Expand on the 'Implement Secure Document Access Control & Metadata API' subtask to detail the specific access rules based on user roles and order history, and how these rules will be enforced at the API level.",
+      "reasoning": "The existing subtasks are well-defined and cover the critical aspects of secure document management and delivery, including access control, metadata handling, and the download endpoint, which are complex due to security and integration requirements."
+    },
+    {
+      "taskId": 30,
+      "taskTitle": "Implement Customer Communication Preferences",
+      "complexityScore": 7,
+      "recommendedSubtasks": 9,
+      "expansionPrompt": "Break down the 'Develop Communication Preferences Storage & Application Logic' and 'Integrate Notification System with Communication Preferences' subtasks into more granular steps, detailing the PostgreSQL schema, API endpoint implementation, integration with the Geko API for communication dispatch, and specific compliance requirements (e.g., GDPR, LGPD).",
+      "reasoning": "The existing subtasks are high-level and each encompasses significant work, especially concerning data storage, application logic, integration with external communication systems, and adherence to compliance regulations."
+    }
+  ]
+}

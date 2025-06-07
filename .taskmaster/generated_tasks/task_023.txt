@@ -1,0 +1,103 @@
+# Task ID: 23
+# Title: Develop Customer Area Authentication System
+# Status: pending
+# Dependencies: 1, 34
+# Priority: high
+# Description: Implement secure user login for the Customer Area. User registration and password recovery are handled manually by the admin upon user request (no self-service registration or password reset).
+# Details:
+Authentication must be secure and compliant. No 2FA or public password reset. Admin is solely responsible for creating accounts and resetting passwords upon user contact. Remove all self-registration and password reset flows from UI and backend. Maintain logging/audit trail for all authentication events. Internationalization (PT/EN) and friendly fallback required.
+
+# Test Strategy:
+Verify users can log in successfully. Confirm that there is no self-registration or password reset flow available to users. Test that only admins can create or reset accounts. Check that all authentication events are logged and all messages are correctly internationalized.
+
+# Subtasks:
+## 1. Implement Secure Login Backend [pending]
+### Dependencies: None
+### Description: Develop backend logic for secure user login using Auth.js/Clerk and PostgreSQL. Ensure password hashing and session management.
+### Details:
+No 2FA, no self-registration, no public password reset endpoints. Only login functionality exposed to users.
+
+## 2. Remove/Disable Self-Registration and Password Reset Flows [pending]
+### Dependencies: 23.1
+### Description: Ensure there are no UI elements, API endpoints, or backend logic for user self-registration or password reset. All such flows must be fully disabled or removed.
+### Details:
+Test direct API calls as well as UI. Document that password resets are only performed by admin upon user contact.
+
+## 3. Admin-Only Account Creation and Password Reset [pending]
+### Dependencies: 23.1, 23.2
+### Description: Document and implement the process for admins to manually create user accounts and reset passwords upon request.
+### Details:
+Admins use an internal/admin interface or CLI to manage accounts. All actions are logged (who, when, what).
+
+## 4. Internationalization (PT/EN) for Authentication [pending]
+### Dependencies: 23.1, 23.2
+### Description: Ensure all authentication-related UI and error messages are available in Portuguese and English, with proper fallback.
+### Details:
+Cobre mensagens de login, erro, bloqueio, instruções de contato para recuperação.
+
+## 5. Logging and Audit Trail for Authentication Events [pending]
+### Dependencies: 23.1, 23.3
+### Description: Log all login attempts, successes, failures, and all admin actions related to account creation and password reset.
+### Details:
+Registrar IP, horário, user agent e resultado. Logs acessíveis apenas a admins.
+
+## 6. Fallback and Empty State Handling [pending]
+### Dependencies: 23.1, 23.2, 23.4
+### Description: Display friendly, internationalized messages for authentication errors and for any unavailable flows (e.g., password reset).
+### Details:
+Nunca exibir mensagens técnicas ao usuário final. Orientar a entrar em contato com o admin para suporte.
+
+## 7. Write Unit, Integration, and E2E Tests [pending]
+### Dependencies: 23.1, 23.2, 23.3, 23.4, 23.5, 23.6
+### Description: Test login, absence of self-registration and password reset, admin-only flows, logging, i18n, and fallback handling.
+### Details:
+Cobrir tentativas válidas e inválidas, edge cases, e checar logs/audit trail.
+
+## 8. Document Authentication Workflow and Compliance [pending]
+### Dependencies: 23.1, 23.2, 23.3, 23.4, 23.5, 23.6, 23.7
+### Description: Document the authentication process, admin-only flows, and compliance/business rules for account management.
+### Details:
+
+
+## 4. User Authentication API Implementation [pending]
+### Dependencies: 23.1
+### Description: Implement API endpoints for user login, validating credentials against stored hashes and generating secure authentication tokens (e.g., JWT).
+### Details:
+Implement login endpoint with credential validation, brute-force protection, and secure token generation. Ensure secure communication (HTTPS). Execution time tracking (timestamp) is required for this subtask.
+
+## 5. Secure Session & Token Management [pending]
+### Dependencies: 23.4
+### Description: Develop mechanisms for secure session management, including token issuance, validation, refresh, and revocation (e.g., JWT blacklisting, refresh token rotation).
+### Details:
+Implement token refresh, revocation mechanisms, and secure storage for tokens (e.g., HttpOnly cookies). Define session expiry policies. Execution time tracking (timestamp) is required for this subtask.
+
+## 6. Password Recovery API & Email Service [pending]
+### Dependencies: 23.1
+### Description: Implement API for password recovery, including secure token generation, email delivery of recovery links, and password reset functionality.
+### Details:
+Implement secure password reset flow with single-use tokens, expiry, and email integration. Prevent enumeration attacks. Execution time tracking (timestamp) is required for this subtask.
+
+## 7. User Login & Password Recovery UI Integration [pending]
+### Dependencies: 23.4, 23.6
+### Description: Develop and integrate user-facing UI components for login and password recovery, ensuring secure communication with respective APIs.
+### Details:
+Develop user-facing UI for login and password recovery. Ensure secure form submission, client-side validation, and clear user feedback. Execution time tracking (timestamp) is required for this subtask.
+
+## 8. Role-Based Access Control (RBAC) & Permissions [pending]
+### Dependencies: 23.3, 23.5
+### Description: Implement RBAC to enforce permissions, ensuring unauthenticated users cannot access sensitive data and admin roles are properly enforced.
+### Details:
+Define roles (e.g., admin, regular user). Implement authorization checks at API and UI levels. Ensure least privilege principle. Execution time tracking (timestamp) is required for this subtask.
+
+## 9. Comprehensive Logging, Monitoring & Fallback [pending]
+### Dependencies: 23.2, 23.4, 23.6
+### Description: Implement detailed logging for all authentication events (login attempts, password resets, admin actions), integrate monitoring, and define robust error handling/fallback strategies.
+### Details:
+Implement centralized logging for security events (failed logins, admin actions). Set up monitoring alerts. Define graceful degradation and error recovery strategies. Execution time tracking (timestamp) is required for this subtask.
+
+## 10. Security Testing, Integration Testing & Documentation [pending]
+### Dependencies: 23.7, 23.8, 23.9
+### Description: Conduct thorough security audits (penetration testing, vulnerability scanning), integration tests across all components, and comprehensive system documentation.
+### Details:
+Conduct penetration testing, vulnerability scanning, and end-to-end integration tests. Create detailed API documentation, system architecture, and operational guides. Execution time tracking (timestamp) is required for this subtask.
+

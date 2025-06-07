@@ -1,0 +1,31 @@
+# Task ID: 25
+# Title: Implement Customer Order History
+# Status: pending
+# Dependencies: 24, 35
+# Priority: medium
+# Description: Develop a section within the Customer Area allowing users to view their past orders with details. **Customers can track order status, but cannot modify it; status updates are solely managed by the admin.**
+# Details:
+Includes order status, items, and total, persisted in PostgreSQL. **Ensure order status is read-only for customers.**
+
+# Test Strategy:
+Verify order history displays accurately for the logged-in user. **Confirm customers cannot alter order status.**
+
+# Subtasks:
+## 1. Implement Order Listing UI [pending]
+### Dependencies: None
+### Description: Develop the user interface for displaying a list of past orders, including basic order information (e.g., order ID, date, total, status). This involves fetching summary data and presenting it in a user-friendly format.
+### Details:
+Frontend: Next.js/React. Data Fetching: Integrate with API Geko for fetching order summaries. Authentication: Secure access using Auth.js/Clerk. Internationalization: Support multiple languages for display elements. Testing: Implement unit and integration tests for the UI component and data fetching. Logging: Ensure proper logging for data retrieval and display errors. Deployment: Consider Vercel cloud-native environment. Database: PostgreSQL (Neo) for potential local caching or user-specific data.
+
+## 2. Develop Detailed Order View Page [pending]
+### Dependencies: 25.1
+### Description: Create a dedicated page or modal to display comprehensive details of a selected order, including line items, shipping information, payment details, and historical status changes. This view should be accessible from the order listing.
+### Details:
+Frontend: Next.js/React. Data Fetching: Integrate with API Geko for fetching detailed order information. Authentication: Secure access using Auth.js/Clerk. Internationalization: Support multiple languages for all displayed order attributes. Testing: Implement unit and integration tests for the detailed view component and data fetching. Logging: Ensure proper logging for data retrieval and display errors. Deployment: Consider Vercel cloud-native environment. Database: PostgreSQL (Neo) for potential local caching or user-specific data.
+
+## 3. Implement Read-Only Order Status Display Functionality [pending]
+### Dependencies: 25.1, 25.2
+### Description: Develop the functionality to clearly and accurately display the current read-only status of an order within both the listing and detailed views, ensuring it reflects the latest information from the backend and is compliant with data display requirements.
+### Details:
+Frontend: Next.js/React components for status display. Data Source: Ensure status updates are fetched reliably from API Geko. UI/UX: Design clear visual indicators for different order statuses (e.g., 'Processing', 'Shipped', 'Delivered', 'Cancelled'). Internationalization: Localize status text. Testing: Write tests specifically for status display logic and updates. Logging: Log status update events and any discrepancies. Compliance: Ensure status display meets any relevant compliance requirements for order tracking. Deployment: Vercel.
+

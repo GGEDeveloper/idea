@@ -1,0 +1,31 @@
+# Task ID: 8
+# Title: Implement Product Listing Sorting Functionality
+# Status: pending
+# Dependencies: 6, 49
+# Priority: medium
+# Description: Add options to sort products on the Product Listing Page by criteria suchs as price (asc/desc), name, and relevance. **Ensure sorting by price is only available or functional for authenticated users.**
+# Details:
+Sorting should be applied client-side or via API call, leveraging PostgreSQL for data retrieval.
+
+# Test Strategy:
+Verify products are sorted correctly based on selected option. **Test price sorting functionality for unauthenticated users.**
+
+# Subtasks:
+## 1. Implement Sorting UI Components [pending]
+### Dependencies: None
+### Description: Develop and integrate user interface elements (e.g., dropdowns, buttons) for various sorting options (e.g., price, name, date) within the product listing page. Ensure responsiveness and user-friendliness using Next.js/React.
+### Details:
+Frontend: Next.js/React. Integrate with existing product listing component. Consider internationalization for sorting labels.
+
+## 2. Develop Core Sorting Logic [pending]
+### Dependencies: 8.1
+### Description: Implement the core sorting algorithms and data manipulation logic to reorder product listings based on selected criteria (e.g., ascending/descending price, alphabetical name). This involves processing data fetched from the API Geko.
+### Details:
+Logic to be implemented on the frontend after data retrieval from API Geko. Ensure efficient sorting for potentially large datasets. Include automated tests for sorting accuracy.
+
+## 3. Integrate Auth.js/Clerk for Price Sorting Restrictions [pending]
+### Dependencies: 8.1, 8.2
+### Description: Implement logic to restrict or modify price sorting options based on user authentication status (e.g., only authenticated users can sort by price, or different price sorting options for premium users). Utilize Auth.js/Clerk for authentication checks.
+### Details:
+Use Auth.js/Clerk for user session management and role-based access control. Ensure proper error handling and UI feedback for unauthorized attempts. Include automated tests for permission enforcement.
+

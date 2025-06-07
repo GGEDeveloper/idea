@@ -1,0 +1,55 @@
+Integration with B2B Platform:
+    Below you will find files with our database ready for integration with online stores or other sales systems.
+    The files are available in several different formats. XML files are more complete due to better technical capabilities, so we recommend using these files. The most popular formats are:
+        - CSV - can be opened and edited in MS Excel or OpenOffice
+        - XML - dedicated to IT specialists
+        - EPP - intended for the Subiekt GT, Nexo software
+
+    Before you start using the files, please read the most important suggestions::
+        - Products should be imported and synchronized only according to EAN codes (the product name and code may change)
+        - Do not freely distribute files on the Internet. We make files available only to selected clients - we do not want them to be available to everyone
+        - You are not anonymous - every file download is recorded (including the computer's IP address)
+        - The files are updated several times a day - it may happen that you sell a product that is still in stock in the file, but it is no longer in our warehouse
+        - Files can be downloaded automatically - you need an API key for this - instructions on how to obtain it are available at the bottom of this page
+
+
+Your API key: 4bceff60-32d7-4635-b5e8-ca51353a6e0e
+
+
+XML GekoFull
+
+    Universal XML File:
+
+        Absolutely you should not download API to often (like request per few seconds). If you will do it, server will ban your IP address for a while.
+        When you get your IP banned, server will send information about it. (Access denied).
+
+
+    CODE: DOWNLOAD USING LINK BELOW:
+
+        UTF8:
+            pl - https://b2b.geko.pl/pl/xmlapi/20/3/utf8/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+            en - https://b2b.geko.pl/en/xmlapi/20/3/utf8/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+        Windows1250:
+            pl - https://b2b.geko.pl/pl/xmlapi/20/3/windows1250/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+            en - https://b2b.geko.pl/en/xmlapi/20/3/windows1250/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+        UTF8_WithoutBOM:
+            pl - https://b2b.geko.pl/pl/xmlapi/20/3/utf8_withoutbom/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+            en - https://b2b.geko.pl/en/xmlapi/20/3/utf8_withoutbom/4bceff60-32d7-4635-b5e8-ca51353a6e0e  
+
+
+    Advanced options - helpful for programmers:
+        Integration links can be extended with various parameters.
+        Dynamic parameters should be added to the end of the integration address.
+        Dynamic parameters can be freely combined.
+
+
+    Parameter - ID: 
+        ?exfilters - excludes products with selected feature ID's
+        ?filters - excludes products that do not have selected feature ID's (higher priority than exfilters)
+        ?stream=true - Specifies that the contents of the file are to be returned directly in the response stream from the serwer. By default, the content is returned as a file, an attachment to the response from the serwer.
+
+
+    Examples with parameters:
+        /current-integration-link?exfilters=53,637,8843&filters=22,77225&stream=true
+        /current-integration-link?stream=true
+        /current-integration-link?filters=22,77225
