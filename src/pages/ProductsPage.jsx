@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { drillData } from '../data/drillData';
 import { Link } from 'react-router-dom';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -27,61 +26,81 @@ const FilterSection = ({ title, children }) => (
 );
 
 const ProductsPage = () => {
-  const [filteredDrills, setFilteredDrills] = useState(drillData);
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const uniqueBrands = [...new Set(drillData.map(drill => drill.brand))];
-  const uniqueVoltages = [...new Set(drillData.map(drill => drill.voltage === null ? 'Com Fio' : `${drill.voltage}V`))].sort((a, b) => {
-    if (a === 'Com Fio') return 1;
-    if (b === 'Com Fio') return -1;
-    return parseFloat(a) - parseFloat(b);
-  });
-
-  const initialBrandFilters = uniqueBrands.reduce((acc, brand) => ({ ...acc, [brand]: false }), {});
-  const initialVoltageFilters = uniqueVoltages.reduce((acc, voltage) => ({ ...acc, [voltage]: false }), {});
-
-  const [filters, setFilters] = useState({
-    brands: initialBrandFilters,
-    voltages: initialVoltageFilters,
-    // ... outros filtros aqui (preco, etc.)
-  });
-
-  const handleBrandChange = (brandName) => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      brands: { ...prevFilters.brands, [brandName]: !prevFilters.brands[brandName] },
-    }));
-  };
-
-  const handleVoltageChange = (voltageValue) => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      voltages: { ...prevFilters.voltages, [voltageValue]: !prevFilters.voltages[voltageValue] },
-    }));
-  };
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    let currentDrills = [...drillData];
-
-    const selectedBrands = Object.keys(filters.brands).filter(brand => filters.brands[brand]);
-    if (selectedBrands.length > 0) {
-      currentDrills = currentDrills.filter(drill => selectedBrands.includes(drill.brand));
-    }
-
-    const selectedVoltages = Object.keys(filters.voltages).filter(voltage => filters.voltages[voltage]);
-    if (selectedVoltages.length > 0) {
-      currentDrills = currentDrills.filter(drill => {
-        const drillVoltageStr = drill.voltage === null ? 'Com Fio' : `${drill.voltage}V`;
-        return selectedVoltages.includes(drillVoltageStr);
+    setLoading(true);
+    console.log('[FRONT] Buscando produtos da API...');
+    fetch('/api/products')
+      .then(res => {
+        if (!res.ok) throw new Error('Erro ao carregar produtos');
+        return res.json();
+      })
+      .then(data => {
+        setProducts(data);
+        setFilteredProducts(data);
+        setLoading(false);
+        console.log(`[FRONT] Produtos carregados com sucesso. Total: ${data.length}`);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+        console.error('[FRONT] Erro ao buscar produtos:', err);
       });
-    }
+  }, []);
 
-    // TODO: Adicionar lógica para outros filtros (características, preço, etc.) aqui
+  // Filtros podem ser reimplementados com base nos campos reais dos produtos
+  // ...
 
-    setFilteredDrills(currentDrills);
-  }, [filters, drillData]);
+  // Extrair marcas e voltagens únicas dos produtos
+const uniqueBrands = Array.from(new Set(products.map(p => p.producer).filter(Boolean)));
+const uniqueVoltages = Array.from(new Set(products.map(p => p.voltage).filter(Boolean)));
 
-  const SidebarContent = () => (
+// Estados e helpers para filtros
+const initialBrandFilters = uniqueBrands.reduce((acc, brand) => { acc[brand] = false; return acc; }, {});
+const initialVoltageFilters = uniqueVoltages.reduce((acc, voltage) => { acc[voltage] = false; return acc; }, {});
+
+const [filters, setFilters] = useState({ brands: initialBrandFilters, voltages: initialVoltageFilters });
+
+// Atualiza filtros quando produtos mudam
+useEffect(() => {
+  setFilters({ brands: initialBrandFilters, voltages: initialVoltageFilters });
+}, [products.length]);
+
+const handleBrandChange = (brand) => {
+  setFilters(prev => {
+    const newBrands = { ...prev.brands, [brand]: !prev.brands[brand] };
+    console.log(`[FRONT] Filtro de marca alterado: ${brand} -> ${!prev.brands[brand]}`);
+    return { ...prev, brands: newBrands };
+  });
+};
+const handleVoltageChange = (voltage) => {
+  setFilters(prev => {
+    const newVoltages = { ...prev.voltages, [voltage]: !prev.voltages[voltage] };
+    console.log(`[FRONT] Filtro de voltagem alterado: ${voltage} -> ${!prev.voltages[voltage]}`);
+    return { ...prev, voltages: newVoltages };
+  });
+};
+
+// Filtragem dos produtos
+useEffect(() => {
+  let filtered = products;
+  const activeBrands = Object.entries(filters.brands).filter(([k, v]) => v).map(([k]) => k);
+  const activeVoltages = Object.entries(filters.voltages).filter(([k, v]) => v).map(([k]) => k);
+  if (activeBrands.length > 0) {
+    filtered = filtered.filter(p => activeBrands.includes(p.producer));
+  }
+  if (activeVoltages.length > 0) {
+    filtered = filtered.filter(p => activeVoltages.includes(p.voltage));
+  }
+  setFilteredProducts(filtered);
+}, [filters, products]);
+
+const SidebarContent = () => (
     <aside className="w-full md:w-72 lg:w-80 bg-white p-6 rounded-xl shadow-lg h-fit sticky top-28">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Filtros</h2>
@@ -93,10 +112,10 @@ const ProductsPage = () => {
       <FilterSection title="Marca">
         {uniqueBrands.map(brand => (
           <FilterCheckbox 
-            key={brand} 
-            id={`brand-${brand}`} 
-            label={brand} 
-            checked={filters.brands[brand] || false} 
+            key={brand}
+            id={`brand-${brand}`}
+            label={brand}
+            checked={filters.brands[brand] || false}
             onChange={() => handleBrandChange(brand)}
           />
         ))}
@@ -105,10 +124,10 @@ const ProductsPage = () => {
       <FilterSection title="Voltagem">
         {uniqueVoltages.map(voltage => (
           <FilterCheckbox 
-            key={voltage} 
-            id={`voltage-${voltage.replace(' ', '-')}`} 
-            label={voltage} 
-            checked={filters.voltages[voltage] || false} 
+            key={voltage}
+            id={`voltage-${voltage.replace(' ', '-')}`}
+            label={voltage}
+            checked={filters.voltages[voltage] || false}
             onChange={() => handleVoltageChange(voltage)}
           />
         ))}
@@ -198,61 +217,63 @@ const ProductsPage = () => {
           {/* Conteúdo Principal (Grade de Produtos) */}
           <main className="flex-1 md:w-3/4 lg:w-4/5 xl:w-5/6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-6 gap-y-10">
-              {filteredDrills.map((drill) => (
-                <div 
-                  key={drill.id} 
-                  className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
-                >
-                  <div className="relative h-56 w-full overflow-hidden">
-                    <img 
-                      src={drill.imageUrl} 
-                      alt={drill.name} 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    {drill.features.includes('Brushless') && (
-                        <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded">BRUSHLESS</span>
-                    )}
-                    {drill.features.includes('Impacto') && !drill.features.includes('Brushless') && (
-                        <span className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded">IMPACTO</span>
-                    )}
-                  </div>
-                  <div className="p-5 flex flex-col flex-grow">
-                    <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors truncate h-12 leading-tight" title={drill.name}>
-                      {drill.name}
-                    </h3>
-                    <p className="text-sm text-gray-500 mb-1">{drill.brand}</p>
-                    <p className="text-xs text-gray-600 mb-3 h-10 overflow-hidden">
-                      {drill.description_short}
-                    </p>
-                    
-                    <div className="flex items-center mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <StarIcon 
-                          key={i} 
-                          className={`h-5 w-5 ${i < Math.floor(drill.rating) ? 'text-yellow-400' : 'text-gray-300'}`} 
-                        />
-                      ))}
-                      <span className="ml-2 text-xs text-gray-500">({drill.rating.toFixed(1)})</span>
+              {loading && <div className="col-span-full text-center text-lg py-10">A carregar produtos...</div>}
+              {error && <div className="col-span-full text-center text-red-600 py-10">{error}</div>}
+              {!loading && !error && filteredProducts.length === 0 && (
+                <div className="col-span-full text-center text-gray-500 py-10">Nenhum produto encontrado.</div>
+              )}
+              {/* Renderização robusta: fallbacks para todos os campos que podem vir em branco/null */}
+              {!loading && !error && filteredProducts.map((product) => {
+                // Nome do produto: fallback amigável
+                const nome = product.name && product.name.trim() !== '' ? product.name : 'Produto sem nome';
+                // Preço: aceita string ou número, mostra fallback se vazio/null
+                let preco = 'Preço indisponível';
+                if (product.price !== undefined && product.price !== null && product.price !== '') {
+                  const precoNum = Number(product.price);
+                  preco = !isNaN(precoNum) ? `€ ${precoNum.toFixed(2)}` : product.price;
+                }
+                // Descrição: tenta short_desc, depois long_desc, senão fallback
+                const descricao = (product.short_desc && product.short_desc.trim() !== '')
+                  ? product.short_desc
+                  : (product.long_desc && product.long_desc.trim() !== '')
+                    ? product.long_desc
+                    : 'Sem descrição disponível.';
+                // EAN: mostra apenas se existir
+                const ean = product.ean && product.ean.trim() !== '' ? product.ean : null;
+                // Imagem: fallback para placeholder se vazio/null
+                const imagem = product.image_url && product.image_url.trim() !== '' ? product.image_url : '/placeholder.png';
+                return (
+                  <Link
+                    to={ean ? `/produtos/${ean}` : '#'}
+                    key={product.productid || product.ean || product.sku}
+                    className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    tabIndex={ean ? 0 : -1}
+                    aria-disabled={!ean}
+                    style={{ pointerEvents: ean ? 'auto' : 'none' }}
+                  >
+                    <div className="relative h-56 w-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <img 
+                        src={imagem}
+                        alt={nome}
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                        onError={e => { e.target.onerror = null; e.target.src = '/placeholder.png'; }}
+                      />
                     </div>
-
-                    <div className="mt-auto">
-                      <div className="flex justify-between items-center mb-3">
-                        <div>
-                            {drill.voltage && <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full mr-1">{drill.voltage}V</span>}
-                            {drill.batteryType && <span className="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">{drill.batteryType}</span>}
-                            {!drill.voltage && drill.features.includes('Com Fio') && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">COM FIO</span>}
-                        </div>
-                        <p className="text-2xl font-bold text-indigo-600">
-                          €{drill.price.toFixed(2)}
-                        </p>
+                    <div className="p-5 flex flex-col flex-grow">
+                      <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors truncate h-12 leading-tight" title={nome}>
+                        {nome}
+                      </h3>
+                      <p className="text-xs text-gray-600 mb-3 h-10 overflow-hidden">
+                        {descricao}
+                      </p>
+                      <div className="mt-auto flex flex-col gap-2">
+                        <span className="text-base font-bold text-indigo-700">{preco}</span>
+                        {ean && <span className="text-xs text-gray-400">EAN: {ean}</span>}
                       </div>
-                      <Link to={`/produto/${drill.id}`} className="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
-                        Ver Detalhes
-                      </Link>
                     </div>
-                  </div>
-                </div>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           </main>
         </div>

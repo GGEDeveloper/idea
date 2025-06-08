@@ -1,6 +1,68 @@
 # LOG DE PROMPTS - PROJETO IDEA (Início com Cascade)
-**Data de Início:** 2025-06-07T10:51:17Z
-**ID Inicial:** IDEA-PRMT-001
+
+---
+**ID:** IDEA-PRMT-007
+**Timestamp:** 2025-06-07T21:45:51+01:00
+**Tipo:** Prompt
+**Conteúdo:** Pedido para validar se o novo XML está realmente em inglês e garantir que toda a importação futura use apenas esse ficheiro.
+**Resultado/Decisão:** Confirmado idioma inglês no XML e pipeline ajustado para usar apenas `geko_full_en_utf8.xml`.
+
+---
+**ID:** IDEA-PRMT-008
+**Timestamp:** 2025-06-07T21:56:16+01:00
+**Tipo:** Decisão Técnica
+**Conteúdo:** Pedido para cruzar toda a documentação do projeto, logs, memórias e descobertas para propor o pipeline e schema mais adequado possível.
+**Resultado/Decisão:** Pipeline e plano de migração de schema definidos, logs e documentação a serem atualizados em conformidade.
+
+---
+**ID:** IDEA-PRMT-009
+**Timestamp:** 2025-06-07T21:58:01+01:00
+**Tipo:** Decisão
+**Conteúdo:** Pedido para limpeza total dos scripts descartáveis e de diagnóstico do projeto, mantendo apenas boa documentação e logs para rastreabilidade.
+**Resultado/Decisão:** Scripts removidos, documentação e logs atualizados, pipeline preparado para reimportação limpa.
+
+---
+**ID:** IDEA-PRMT-010
+**Timestamp:** 2025-06-08T02:10:44Z
+**Tipo:** Prompt do USER
+**Conteúdo:** Pedido para criar página de detalhes de produtos robusta, com análise aprofundada antes de codificar. USER solicita UX moderna, integração total com backend, múltiplas imagens, variantes, atributos, preços, stock e tratamento de campos em branco.
+**Resultado/Decisão:** Cascade analisou profundamente o schema, endpoints necessários, campos essenciais e UX, propondo plano detalhado de execução (Step 257-259). USER aprovou abordagem (Step 259).
+
+---
+**ID:** IDEA-PRMT-011
+**Timestamp:** 2025-06-08T02:18:47Z
+**Tipo:** Decisão Técnica
+**Conteúdo:** Decisão de criar endpoint `/api/products/:ean` no backend para servir detalhes completos do produto, incluindo imagens, preços, variantes, atributos e stock, respeitando o schema real do banco e garantindo robustez/fallbacks.
+**Resultado/Decisão:** Endpoint implementado em `src/api/products.cjs` (Step 261), testado e integrado ao frontend.
+
+---
+**ID:** IDEA-PRMT-012
+**Timestamp:** 2025-06-08T02:30:00Z
+**Tipo:** Decisão Técnica
+**Conteúdo:** Refactor do componente `ProductDetailPage.jsx` para consumir o endpoint real `/api/products/:ean`, exibir galeria de imagens, variantes, atributos, preços detalhados, stock e garantir UX robusta com fallbacks para todos os campos. USER orientou para máxima robustez e documentação.
+**Resultado/Decisão:** Página de detalhes implementada, testada e alinhada ao backend real (Step 269).
+
+---
+**ID:** IDEA-PRMT-013
+**Timestamp:** 2025-06-08T02:40:00Z
+**Tipo:** Prompt do USER
+**Conteúdo:** Pedido para tornar possível acessar a página de detalhes ao clicar no card do produto na listagem (ProductsPage.jsx).
+**Resultado/Decisão:** Cada card foi envolvido por `<Link to={/produtos/${ean}}>` e navegação implementada com acessibilidade e fallback para EAN ausente (Step 273).
+
+---
+**ID:** IDEA-PRMT-014
+**Timestamp:** 2025-06-08T03:55:00Z
+**Tipo:** Decisão Técnica
+**Conteúdo:** USER decidiu manter o modelo denormalizado por EAN/texto, orientou para alinhamento total do backend, schema e documentação, e exigiu rastreabilidade e consulta obrigatória à documentação antes de qualquer decisão técnica.
+**Resultado/Decisão:** Backend corrigido, endpoint de detalhes 100% funcional, documentação e logs atualizados. Início do desenvolvimento do sistema de filtragem Sidebar (Step 522).
+
+---
+**ID:** IDEA-PRMT-015
+**Timestamp:** 2025-06-08T03:19:36Z
+**Tipo:** Prompt do USER
+**Conteúdo:** Pedido para atualizar todos os logs de código, prompts e erros extensivamente, cobrindo todas as alterações recentes e garantindo rastreabilidade total.
+**Resultado/Decisão:** LOG_CODE.md, LOG_PROMPTS.md e LOG_ERROS.md atualizados extensivamente conforme regras do projeto (Step 281, Step atual).
+
 ---
 
 ### [IDEA-PRMT-001] 2025-06-07T10:51:17Z — Início do Projeto "Idea" e Reset do Ambiente

@@ -4,6 +4,8 @@ import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext'; // Importar useAuth
 import { ShoppingBagIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast'; // Para notificação de logout
+import SearchBar from './SearchBar';
+import '../components/SearchBar.css';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,6 +20,11 @@ const Header = () => {
         <Link to="/" className="text-3xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
           <img src="/logo.svg" alt="LojaChique Logótipo" className="h-10 w-auto" />
         </Link>
+
+        {/* SearchBar Desktop */}
+        <div className="hidden md:block flex-1 mx-6">
+          <SearchBar />
+        </div>
 
         {/* Navegação para Desktop */}
         <nav className="hidden md:flex space-x-6 items-center">
@@ -68,6 +75,9 @@ const Header = () => {
       {/* Menu Mobile Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute w-full">
+          <div className="px-4 pt-3 pb-1">
+            <SearchBar />
+          </div>
           <nav className="flex flex-col space-y-2 px-4 py-3">
             <Link to="/" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <Link to="/produtos" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Produtos</Link>

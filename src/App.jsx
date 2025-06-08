@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/produtos" element={<ProductsPage />} />
-            <Route path="/produto/:productId" element={<ProductDetailPage />} />
+            <Route path="/produtos/:ean" element={<ProductDetailPage />} />
             <Route path="/carrinho" element={<CartPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/minha-conta" element={<ProtectedRoute><MyAccountPage /></ProtectedRoute>} />

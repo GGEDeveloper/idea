@@ -10,4 +10,9 @@ export default defineConfig({
     setupFiles: './src/setupTests.js', // Ficheiro de setup para testes
   },
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000',
+    },
+  },
 })
