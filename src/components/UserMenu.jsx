@@ -72,15 +72,29 @@ const UserMenu = ({ onItemClick }) => {
       .substring(0, 2);
   };
 
+  if (!isLoaded) {
+    return (
+      <div className="h-8 w-8 rounded-full bg-gray-200 animate-pulse" 
+           aria-label={t('loading')}
+           role="status">
+        <span className="sr-only">{t('loading')}</span>
+      </div>
+    );
+  }
+
   return (
     <div className="relative" ref={menuRef}>
       {/* Botão para usuários autenticados */}
       <SignedIn>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 text-text-muted hover:text-secondary transition-colors focus:outline-none"
+          className={`flex items-center space-x-2 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary rounded-full ${
+            isOpen ? 'text-secondary' : 'text-text-muted hover:text-secondary'
+          }`}
           aria-expanded={isOpen}
-          aria-haspopup="true"
+          aria-haspopup="menu"
+          aria-label={t('user.menuAriaLabel')}
+          id="user-menu-button"
         >
           <div className="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden">
             {user?.imageUrl ? (

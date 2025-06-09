@@ -4,10 +4,14 @@
     "pt": "Portuguese",
     "en": "English"
   },
-  "language": "Language",
-  "selectLanguage": "Select language",
-  "languageChanged": "Language changed to {{language}}",
-  "currentLanguage": "Current language: {{language}}",
+  "language": {
+    "label": "Language",
+    "select": "Select language",
+    "changed": "Language changed to {{language}}",
+    "current": "Current language: {{language}}",
+    "selected": "{{language}} (selected)",
+    "menuAriaLabel": "Language selection menu"
+  },
   "nav": {
     "home": "Home",
     "products": "Products",
@@ -27,7 +31,8 @@
     "settings": "Settings",
     "admin": "Administrator",
     "guest": "Guest",
-    "noEmail": "No email"
+    "noEmail": "No email",
+    "menuAriaLabel": "User menu"
   },
   "search": {
     "placeholder": "Search products...",
@@ -47,6 +52,25 @@
   "menu": {
     "open": "Open navigation menu",
     "close": "Close navigation menu"
+  },
+  "loading": "Loading...",
+  "header": {
+    "title": "ALIMAMADETOOLS - Professional Tools",
+    "mainHeader": "Main header",
+    "homeLink": "Home - ALIMAMADETOOLS",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "skipNavigation": "Skip navigation",
+    "currentPage": "current page",
+    "skipToMain": "Skip to main content",
+    "skipToSearch": "Skip to search",
+    "skipToCart": "Skip to cart",
+    "menuButton": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "openUserMenu": "Open user menu",
+    "closeUserMenu": "Close user menu",
+    "openLanguageMenu": "Open language menu",
+    "closeLanguageMenu": "Close language menu"
   },
   "cart": {
     "title": "Shopping Cart ({{count}})",

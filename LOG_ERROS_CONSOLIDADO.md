@@ -270,6 +270,16 @@ gantt
 ## 2025-06-07 - Problemas de Frontend
 
 ### ID: FRONT-ERR-001
+**Timestamp:** 2025-06-09T03:06:00+01:00  
+**Tipo:** Erro de Componente React  
+**Descrição:** Erro de referência não definida para o componente SearchBar no Header.  
+**Detalhes:**  
+- Erro: `ReferenceError: SearchBar is not defined` no Header.jsx  
+- Causa: Falta de importação do componente SearchBar  
+- Resolução: Adicionada importação `import SearchBar from './SearchBar'`  
+- Impacto: O header não era renderizado corretamente  
+- Status: ✅ Resolvido  
+
 **Timestamp:** 2025-06-07T23:24:30Z  
 **Tipo:** Erro de Importação  
 **Descrição:** Falhas na importação bulk após reset do schema.  
