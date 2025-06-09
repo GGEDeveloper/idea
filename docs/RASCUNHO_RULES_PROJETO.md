@@ -29,6 +29,29 @@
 
 ## 5. Clonagem de Interface e Assets
 - Reproduzir fielmente estrutura, layout, estilos, ícones e logos das páginas originais.
+- Manter consistência visual em todas as páginas e componentes.
+- Documentar todas as decisões de design e implementação.
+
+## 6. Implementação de Funcionalidades Dinâmicas
+
+### 6.1. Categorias Dinâmicas
+- As categorias devem ser carregadas dinamicamente da API
+- Exibir no máximo 6 categorias principais na página inicial
+- Manter consistência nos ícones e cores para cada categoria
+- Implementar fallback para categorias padrão em caso de falha na API
+- Garantir carregamento otimizado e responsivo
+
+### 6.2. Tratamento de Erros
+- Exibir mensagens amigáveis para o usuário em caso de falha
+- Manter logs detalhados para diagnóstico
+- Implementar retentativas automáticas para falhas transitórias
+- Fornecer opção para tentar novamente após falha
+
+### 6.3. Performance
+- Implementar cache para reduzir chamadas à API
+- Otimizar imagens e assets
+- Minimizar o tamanho do bundle JavaScript
+- Utilizar carregamento preguiçoso (lazy loading) quando aplicável
 - Adaptar responsividade e acessibilidade conforme as melhores práticas.
 - Garantir que todos os assets estejam armazenados localmente ou em CDN autorizada.
 

@@ -22,13 +22,15 @@ Clonagem integral do site https://b2b.geko.pl/en/p, com sistema de filtragem, UX
 - Modelar entidades: Produto, Categoria, Imagem, Variação, Atributo Técnico, etc.
 - Prever campos opcionais e listas (múltiplas imagens, múltiplas variações).
 
-### 2.4. API Interna
-- Criar endpoints para:
-  - Listagem de produtos (com filtros, paginação, ordenação)
-  - Detalhe do produto
-  - Listagem de categorias/atributos/filtros
-  - Imagens/assets
-- Implementar lógica de busca e filtragem avançada.
+### 2.4. API Interna (Em Andamento)
+- [x] Endpoint para listagem de categorias (`/api/products/categories`)
+  - [x] Filtro de categorias principais
+  - [x] Contagem de produtos por categoria
+  - [x] Paginação e limitação de resultados
+- [ ] Endpoint para listagem de produtos
+- [ ] Endpoint para detalhe do produto
+- [ ] Endpoint para busca e filtragem avançada
+- [ ] Documentação da API
 
 ### 2.5. Clonagem do Frontend
 - Recriar layout, UX e sistema de filtragem do site original (Next.js recomendado).
@@ -58,14 +60,58 @@ Clonagem integral do site https://b2b.geko.pl/en/p, com sistema de filtragem, UX
 
 ---
 
-## 4. Roadmap Sugerido
-1. Mapeamento e download de assets
-2. Parser e importação de dados
-3. Estruturação do banco de dados
-4. API interna
-5. Clonagem do frontend
-6. Testes e validação
-7. Branding e personalização
+## 4. Progresso e Próximos Passos
+
+### ✅ Concluído
+1. **Infraestrutura Inicial**
+   - Configuração do ambiente de desenvolvimento
+   - Estrutura de pastas do projeto
+   - Configuração do banco de dados PostgreSQL
+
+2. **Backend**
+   - [x] Configuração do servidor Express
+   - [x] Middleware CORS
+   - [x] Endpoint de categorias (`/api/products/categories`)
+   - [x] Tratamento de erros e logs
+
+3. **Frontend**
+   - [x] Configuração do React com Vite
+   - [x] Página inicial com categorias dinâmicas
+   - [x] Componente de carregamento e tratamento de erros
+   - [x] Estilização responsiva com Tailwind CSS
+
+### 🚧 Em Andamento
+
+1. **Backend**
+   - [ ] Endpoint de listagem de produtos
+     - [ ] Filtros e ordenação
+     - [ ] Paginação
+   - [ ] Endpoint de detalhes do produto
+   - [ ] Autenticação e autorização
+
+2. **Frontend**
+   - [ ] Página de listagem de produtos
+   - [ ] Componente de filtros
+   - [ ] Página de detalhes do produto
+   - [ ] Carrinho de compras
+
+### 📅 Próximos Passos
+
+1. **Curto Prazo**
+   - [ ] Implementar busca de produtos
+   - [ ] Desenvolver página de detalhes do produto
+   - [ ] Criar componente de carrinho
+
+2. **Médio Prazo**
+   - [ ] Implementar autenticação
+   - [ ] Desenvolver painel administrativo
+   - [ ] Sistema de pedidos
+
+3. **Longo Prazo**
+   - [ ] Otimização de performance
+   - [ ] Testes automatizados
+   - [ ] Internacionalização
+   - [ ] Integração com meios de pagamento
 
 ---
 

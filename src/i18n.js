@@ -4,17 +4,19 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(Backend) // Carrega traduções de um servidor (ou de public/locales)
-  .use(LanguageDetector) // Deteta o idioma do utilizador
-  .use(initReactI18next) // Passa a instância i18n para react-i18next
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    fallbackLng: 'pt', // Idioma de fallback
-    debug: true, // Ativa o modo de debug (útil durante o desenvolvimento)
+    fallbackLng: 'pt',
+    debug: true,
+    defaultNS: 'common',
+    ns: ['common'],
     interpolation: {
-      escapeValue: false, // React já faz escaping por defeito
+      escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json', // Caminho para os ficheiros de tradução
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
   });
 

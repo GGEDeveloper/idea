@@ -1,63 +1,61 @@
 import React, { useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
-import { useAuth } from '../contexts/AuthContext'; // Importar useAuth
-import { ShoppingBagIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import toast from 'react-hot-toast'; // Para notificação de logout
+import { ShoppingBagIcon, Bars3Icon, XMarkIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import SearchBar from './SearchBar';
+import UserMenu from './UserMenu';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 import '../components/SearchBar.css';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { getTotalItems } = useCart();
   const totalItems = getTotalItems();
-  const { isAuthenticated, currentUser, logout } = useAuth();
-  const navigate = useNavigate(); // Para o logout
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-bg-alt shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-3xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
-          <img src="/logo.svg" alt="LojaChique Logótipo" className="h-10 w-auto" />
+        <Link to="/" className="text-3xl font-bold text-secondary hover:text-secondary transition-colors">
+          <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS Logótipo" className="h-20 w-auto max-h-24 min-h-16 transition-all duration-300 drop-shadow-lg" />
         </Link>
 
         {/* SearchBar Desktop */}
         <div className="hidden md:block flex-1 mx-6">
-          <SearchBar />
+          <SearchBar className="w-full" />
         </div>
 
         {/* Navegação para Desktop */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <Link to="/" className="text-gray-600 hover:text-indigo-600 transition-colors font-medium">Home</Link>
-          <Link to="/produtos" className="text-gray-600 hover:text-indigo-600 transition-colors font-medium">Produtos</Link>
-          <Link to="/sobre" className="text-gray-600 hover:text-indigo-600 transition-colors font-medium">Sobre Nós</Link>
-          <Link to="/contato" className="text-gray-600 hover:text-indigo-600 transition-colors font-medium">Contato</Link>
+          <Link to="/" className="text-text-muted hover:text-secondary transition-colors font-medium">{t('nav.home')}</Link>
+          <Link to="/produtos" className="text-text-muted hover:text-secondary transition-colors font-medium">{t('nav.products')}</Link>
+          <Link to="/sobre" className="text-text-muted hover:text-secondary transition-colors font-medium">{t('nav.about')}</Link>
+          <Link to="/contato" className="text-text-muted hover:text-secondary transition-colors font-medium">{t('nav.contact')}</Link>
         </nav>
 
-        {/* Auth Links Desktop */}
+        {/* User Menu */}
         <div className="hidden md:flex items-center space-x-4">
-          {isAuthenticated ? (
-            <>
-              <Link to="/minha-conta" className="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Olá, {currentUser?.name}!</Link>
-              <button 
-                onClick={() => { logout(); navigate('/'); toast.success('Sessão terminada.'); }}
-                className="text-gray-600 hover:text-indigo-600 transition-colors font-medium"
-              >
-                Logout
-              </button>
-            </>
-          ) : (
-            <Link to="/login" className="text-gray-600 hover:text-indigo-600 transition-colors font-medium">Login</Link>
-          )}
+          <UserMenu />
+          <LanguageSwitcher />
         </div>
 
         <div className="flex items-center space-x-4">
-          <Link to="/cart" className="relative text-gray-600 hover:text-indigo-600 transition-colors">
+          <Link 
+            to="/carrinho" 
+            className="relative text-text-muted hover:text-secondary transition-colors"
+            aria-label={t('cart.title', { count: totalItems })}
+            title={t('cart.title', { count: totalItems })}
+          >
             <div className="relative">
-              <ShoppingBagIcon className="h-7 w-7 text-gray-700 group-hover:text-indigo-600 transition-colors" />
+              <ShoppingBagIcon className="h-7 w-7 text-text-base group-hover:text-secondary transition-colors" aria-hidden="true" />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                <span 
+                  className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center"
+                  aria-label={t('cart.itemsCount', { count: totalItems })}
+                >
                   {totalItems}
+                  <span className="sr-only">{t('cart.itemsCount', { count: totalItems })}</span>
                 </span>
               )}
             </div>
@@ -65,50 +63,53 @@ const Header = () => {
 
           {/* Botão do Menu Mobile */}
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-600 hover:text-indigo-600 focus:outline-none">
-              {isMobileMenuOpen ? <XMarkIcon className="h-7 w-7" /> : <Bars3Icon className="h-7 w-7" />}
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-text-muted hover:text-secondary focus:outline-none p-2"
+              aria-label={isMobileMenuOpen ? t('menu.close') : t('menu.open')}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+            >
+              {isMobileMenuOpen ? (
+                <XMarkIcon className="h-7 w-7" aria-hidden="true" />
+              ) : (
+                <Bars3Icon className="h-7 w-7" aria-hidden="true" />
+              )}
+              <span className="sr-only">
+                {isMobileMenuOpen ? t('menu.close') : t('menu.open')}
+              </span>
             </button>
           </div>
         </div>
       </div>
 
       {/* Menu Mobile Dropdown */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute w-full">
-          <div className="px-4 pt-3 pb-1">
-            <SearchBar />
-          </div>
-          <nav className="flex flex-col space-y-2 px-4 py-3">
-            <Link to="/" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            <Link to="/produtos" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Produtos</Link>
-            <Link to="/sobre" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Sobre Nós</Link>
-            <Link to="/contato" className="text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contato</Link>
-            
-            {/* Auth Links Mobile */}
-            <div className="border-t border-gray-200 mt-2 pt-2">
-              {isAuthenticated ? (
-                <>
-                  <Link to="/minha-conta" className="block text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>Olá, {currentUser?.name}!</Link>
-                  <button 
-                    onClick={() => { logout(); setIsMobileMenuOpen(false); navigate('/'); toast.success('Sessão terminada.'); }}
-                    className="w-full text-left text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors"
-                  >
-                    Logout
-                  </button>
-                </>
-              ) : (
-                <Link 
-                  to="/login" 
-                  className="block text-gray-700 hover:bg-indigo-50 p-2 rounded transition-colors" 
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Login
-                </Link>
-              )}
-            </div>
-          </nav>
+      <div id="mobile-menu" className={`md:hidden bg-bg-alt shadow-lg absolute w-full transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible h-0'}`}>
+        <div className="px-4 pt-3 pb-1">
+          <SearchBar />
         </div>
-      )}
+        <nav className="flex flex-col space-y-2 px-4 py-3">
+          <Link to="/" className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+            {t('nav.home')}
+          </Link>
+          <Link to="/produtos" className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+            {t('nav.products')}
+          </Link>
+          <Link to="/sobre" className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+            {t('nav.about')}
+          </Link>
+          <Link to="/contato" className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+            {t('nav.contact')}
+          </Link>
+          
+          {/* Auth Links Mobile */}
+          <div className="border-t border-border-base mt-2 pt-2">
+            <div className="px-2 py-1">
+              <UserMenu onItemClick={() => setIsMobileMenuOpen(false)} />
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

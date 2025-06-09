@@ -1,37 +1,70 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import { useClerk, useSignIn } from '@clerk/clerk-react';
 import toast from 'react-hot-toast';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const { login } = useAuth();
+  const { signIn, setActive, isLoaded: isSignInLoaded } = useSignIn();
+  const { isSignedIn } = useClerk();
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Tenta obter a rota de onde o utilizador veio, para redirecionar após o login
-  // Se não houver, redireciona para a home '/' 
-  const from = location.state?.from?.pathname || '/';
+  // Redireciona se o usuário já estiver autenticado
+  useEffect(() => {
+    if (isSignedIn) {
+      const from = location.state?.from?.pathname || '/';
+      navigate(from, { replace: true });
+    }
+  }, [isSignedIn, navigate, location]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
-    try {
-      const { success, user } = await login(email, password);
-      if (success) {
-        toast.success(`Bem-vindo, ${user.name}!`);
-        navigate(from, { replace: true }); // Redireciona para a página anterior ou home
-      } else {
-        // Esta parte pode ser expandida se a função login retornar erros específicos
-        toast.error('Falha no login. Verifique as suas credenciais.');
-      }
-    } catch (error) {
-      console.error('Erro no login:', error);
-      toast.error('Ocorreu um erro durante o login.');
+    
+    if (!isSignInLoaded) {
+      toast.error('Sistema de autenticação não carregado');
+      return;
     }
-    setIsLoading(false);
+
+    setIsLoading(true);
+    
+    try {
+      // Tenta fazer login com o Clerk
+      const result = await signIn.create({
+        identifier: email,
+        password,
+      });
+
+      if (result.status === 'complete') {
+        // Define a sessão ativa
+        await setActive({ session: result.createdSessionId });
+        
+        // Redireciona para a página de origem ou para a home
+        const from = location.state?.from?.pathname || '/';
+        navigate(from, { replace: true });
+        
+        toast.success('Login realizado com sucesso!');
+      } else {
+        console.error('Falha no login:', result);
+        toast.error('Não foi possível completar o login. Tente novamente.');
+      }
+    } catch (err) {
+      console.error('Erro no login:', err);
+      
+      // Tratamento de erros específicos do Clerk
+      if (err.errors?.[0]?.code === 'form_identifier_not_found') {
+        toast.error('E-mail não encontrado.');
+      } else if (err.errors?.[0]?.code === 'form_password_incorrect') {
+        toast.error('Senha incorreta.');
+      } else {
+        toast.error('Ocorreu um erro durante o login. Tente novamente.');
+      }
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -41,9 +74,18 @@ const LoginPage = () => {
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Aceda à sua conta
           </h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            Ou{' '}
+            <Link 
+              to="/contato" 
+              className="font-medium text-indigo-600 hover:text-indigo-500"
+            >
+              solicite acesso
+            </Link>
+          </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <input type="hidden" name="remember" defaultValue="true" />
+          <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
               <label htmlFor="email-address" className="sr-only">
@@ -93,12 +135,17 @@ const LoginPage = () => {
             </button>
           </div>
         </form>
-        <p className="mt-2 text-center text-sm text-gray-600">
-          Ainda não tem conta?{' '}
-          <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-            Crie uma agora (funcionalidade futura)
-          </a>
-        </p>
+        <div className="mt-6 text-center text-sm">
+          <p className="text-gray-600">
+            Precisa de uma conta? Entre em contato conosco.
+          </p>
+          <Link 
+            to="/contato" 
+            className="mt-2 font-medium text-indigo-600 hover:text-indigo-500 hover:underline"
+          >
+            Solicitar Acesso
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,12 @@
 # LOG DE ERROS E RESOLUÇÕES
 
+### [2025-06-08T04:05Z] Erro de rota dinâmica Express
+- Sintoma: `/api/products/filters` retornava `{ "error": "Produto não encontrado" }`.
+- Causa: rota dinâmica `/:ean` capturava `/filters`.
+- Solução: movida definição da rota `/filters` para antes de `/:ean` e reiniciado backend.
+- Resultado: endpoint de filtros funcionando corretamente.
+
+---
 **ID:** IDEA-ERR-021
 **Timestamp:** 2025-06-08T03:40:00Z
 **Tipo:** Erro Crítico

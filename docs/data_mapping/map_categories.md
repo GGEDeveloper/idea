@@ -1,27 +1,94 @@
-# Data Mapping: Categories Table
+# Mapeamento de Dados: Tabela de Categorias
 
-This document details the mapping of data from the Geko XML feed (`geko_full_en_utf8.xml`) to the `Categories` table in the database, as defined in `docs/database_schema.md`.
+Este documento detalha o mapeamento de dados do feed XML do Geko (`geko_full_en_utf8.xml`) para a tabela `categories` no banco de dados, conforme definido em `docs/database_schema.md`, e como esses dados são utilizados no frontend.
 
-## Table: `Categories`
+## Tabela: `categories`
 
-| Column Name             | Data Type    | XML Source Element/Attribute                                      | Transformation Notes                                                                                                                                                                                                                            |
-|-------------------------|--------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `internal_category_id`  | SERIAL       | N/A (System Generated)                                            | Auto-incrementing primary key.                                                                                                                                                                                                                  |
-| `geko_category_id`      | VARCHAR(255) | `<category id="...">` (within `<product>` or a global `<categories>` section) | Direct mapping from the `id` attribute. This should be unique. This ID is used to link products via the `ProductCategories` table.                                                                                                   |
-| `name`                  | VARCHAR(255) | `<category ...>Category Name</category>` (content of the element) or `<name>` sub-element if categories are structured hierarchically. | Extract text content. The `lang` attribute (e.g., `lang="pol"`) should be noted; the schema currently assumes one name field. If multi-language support for category names is needed, the schema would require adjustment. For now, assume Polish name. |
-| `parent_geko_category_id` | VARCHAR(255) | Implied by nesting in a global `<categories>` section, or potentially from the `geko_category_id` format itself (e.g., "1.1" has parent "1"). | This requires careful parsing of the XML. If a global hierarchical category structure exists (e.g., `<categories><category id="1"><name>P1</name><category id="1.1"><name>C1</name></category></category></categories>`), the parent ID is derived from the structure. If categories are only listed per product without hierarchy, this might be NULL or require external mapping. The import script will need logic to resolve parent IDs. Foreign key to `Categories(geko_category_id)`. |
-| `created_at`            | TIMESTAMP    | N/A (System Generated)                                            | Set to `CURRENT_TIMESTAMP` upon initial insertion.                                                                                                                                                                                              |
-| `updated_at`            | TIMESTAMP    | N/A (System Generated)                                            | Set to `CURRENT_TIMESTAMP` upon insertion and update.                                                                                                                                                                                           |
+| Nome da Coluna          | Tipo de Dados | Origem do Dado (XML)                                             | Notas de Transformação                                                                                                                                                                                                                          |
+|-------------------------|---------------|------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `id_categories`         | SERIAL        | N/A (Gerado pelo Sistema)                                        | Chave primária auto-incremental.                                                                                                                                                                                                               |
+| `geko_category_id`      | VARCHAR(255)  | `<category id="...">` (dentro de `<product>` ou seção global)    | Mapeamento direto do atributo `id`. Deve ser único. Usado para vincular produtos através da tabela `product_categories`.                                                         |
+| `name`                  | VARCHAR(255)  | Conteúdo da tag `<category>` ou sub-tag `<name>`                 | Texto do conteúdo. Atributo `lang` (ex: `lang="en"`) é considerado. O esquema atual assume um único campo de nome.                                                              |
+| `path`                  | VARCHAR(255)  | Estrutura hierárquica no XML                                     | Caminho completo da categoria na hierarquia (ex: "Pai > Filho > Neto").                                                                                                        |
+| `parent_geko_category_id` | VARCHAR(255) | Hierarquia no XML ou formato do ID (ex: "1.1" tem pai "1")     | Derivado da estrutura hierárquica no XML. Pode ser NULL para categorias raiz. Chave estrangeira para `categories(geko_category_id)`.                                               |
+| `created_at`            | TIMESTAMP     | N/A (Gerado pelo Sistema)                                        | Definido como `CURRENT_TIMESTAMP` na inserção inicial.                                                                                                                           |
+| `updated_at`            | TIMESTAMP     | N/A (Gerado pelo Sistema)                                        | Atualizado para `CURRENT_TIMESTAMP` na inserção e atualização.                                                                                                                  |
 
-**Notes on `Categories` Table Mapping:**
+## Uso no Frontend
 
-*   **Source of Categories:** Categories can appear directly within each `<product>` element. The IOF 2.6 standard also allows for a global `<categories>` section which can define a hierarchy. The import script must be prepared to handle both:
-    1.  Extract unique categories from all `<product><category ...></category></product>` tags.
-    2.  If a global `<categories>` section exists, parse it to build the hierarchy and potentially discover categories not directly associated with any product yet.
-*   **Uniqueness:** `geko_category_id` must be unique. The import script should collect all unique categories encountered in the XML.
-*   **Hierarchy (`parent_geko_category_id`):**
-    *   If a global hierarchical section is present, the parent-child relationships are derived from the XML structure.
-    *   If category IDs themselves encode hierarchy (e.g., "10", "10-01", "10-01-A"), logic can be built to parse this.
-    *   If categories are only found flatly within products, `parent_geko_category_id` will likely be `NULL` for these entries unless an external mapping or convention is provided.
-*   **Language:** The XML specifies `lang` for category names. The current schema has a single `name` field. If multiple languages are required, the `Categories` table (and `ProductCategories` if names are overridden per product) would need schema changes (e.g., a separate `CategoryTranslations` table). For now, we assume the primary language (e.g., Polish) is stored.
-*   **Synchronization:** When synchronizing, new categories should be added. Updates to category names or hierarchy should also be handled.
+### Endpoint da API
+
+O frontend consome as categorias através do endpoint `/api/products/categories`, que retorna:
+
+```json
+[
+  {
+    "id": "107712",
+    "name": "Garden",
+    "path": "Garden",
+    "parent_id": null,
+    "product_count": 501,
+    "icon": "hammer",
+    "description": "Produtos na categoria Garden"
+  },
+  ...
+]
+```
+
+### Mapeamento de Ícones
+
+O frontend mapeia automaticamente ícones para cada categoria com base no nome:
+
+- **Garden/Outdoor:** `fa-leaf`
+- **Tools/Ferramentas:** `fa-tools`
+- **Construction/Construção:** `fa-hammer`
+- **Workshop/Oficina:** `fa-wrench`
+- **Service/Manutenção:** `fa-tools`
+- **Electric/Elétrico:** `fa-bolt`
+- **Plumbing/Encanamento:** `fa-faucet`
+- **Painting/Pintura:** `fa-paint-roller`
+- **Safety/Segurança:** `fa-shield-alt`
+- **Automotive/Automóvel:** `fa-car`
+
+### Cores Dinâmicas
+
+As cores de fundo são geradas dinamicamente com base no hash do nome da categoria, garantindo consistência entre carregamentos.
+
+## Notas de Implementação
+
+* **Fonte das Categorias:** Podem aparecer diretamente em cada elemento `<product>` ou em uma seção global `<categories>`.
+* **Unicidade:** `geko_category_id` deve ser único em toda a tabela.
+* **Hierarquia:** A relação pai-filho é mantida através de `parent_geko_category_id`.
+* **Idioma:** Atualmente suporta apenas um idioma por categoria.
+* **Sincronização:** As categorias são sincronizadas durante a importação inicial dos produtos.
+
+## Consultas SQL Úteis
+
+### Contar produtos por categoria
+
+```sql
+SELECT 
+  c.geko_category_id as id,
+  c.name,
+  COUNT(pc.ean) as product_count
+FROM categories c
+LEFT JOIN product_categories pc ON c.geko_category_id = pc.geko_category_id
+GROUP BY c.geko_category_id, c.name
+ORDER BY product_count DESC;
+```
+
+### Buscar categorias principais (sem pai)
+
+```sql
+SELECT * FROM categories 
+WHERE parent_geko_category_id IS NULL
+ORDER BY name;
+```
+
+### Buscar subcategorias de uma categoria específica
+
+```sql
+SELECT * FROM categories 
+WHERE parent_geko_category_id = 'ID_DA_CATEGORIA_PAI' 
+ORDER BY name;
+``` synchronizing, new categories should be added. Updates to category names or hierarchy should also be handled.

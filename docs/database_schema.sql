@@ -1,113 +1,174 @@
--- Geko Catalog - Esquema relacional completo (v2025-06-07)
--- Todas as PK/FK com nomes explícitos e rastreáveis
+-- ============================================
+-- Database Schema for Geko B2B Application
+-- Generated: 2025-06-08
+-- ============================================
 
--- =============================
--- Tabela: categories
--- =============================
-CREATE TABLE IF NOT EXISTS categories (
-    id_categories SERIAL PRIMARY KEY,
-    geko_category_id VARCHAR(64) UNIQUE NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    parent_id_categories INTEGER REFERENCES categories(id_categories)
-);
-
--- =============================
--- Tabela: units
--- =============================
-CREATE TABLE IF NOT EXISTS units (
-    id_units SERIAL PRIMARY KEY,
-    geko_unit_id VARCHAR(64) UNIQUE NOT NULL,
-    name VARCHAR(64) NOT NULL
-);
-
--- =============================
--- Tabela: products
--- =============================
+-- ============================================
+-- Table: products
+-- Main products table
+-- ============================================
 CREATE TABLE IF NOT EXISTS products (
-    id_products SERIAL PRIMARY KEY,
-    ean VARCHAR(32) UNIQUE NOT NULL,
-    product_id_geko VARCHAR(64),
-    code_geko VARCHAR(64),
-    name VARCHAR(255) NOT NULL,
-    short_description TEXT,
-    long_description TEXT,
-    card_url TEXT,
-    vat_rate VARCHAR(16),
-    price_net DECIMAL(12,2),
-    price_gross DECIMAL(12,2),
-    producer_name VARCHAR(255),
-    producer_id_geko VARCHAR(64),
-    category_id_categories INTEGER REFERENCES categories(id_categories),
-    unit_id_units INTEGER REFERENCES units(id_units),
-    geko_size_code VARCHAR(64),
-    weight VARCHAR(32),
-    gross_weight VARCHAR(32)
+    productid TEXT PRIMARY KEY,
+    name TEXT,
+    sku TEXT,
+    ean TEXT,
+    codeproducer TEXT,
+    shortdescription TEXT,
+    longdescription TEXT,
+    descriptionlang TEXT,
+    stockquantity TEXT,
+    deliverytime TEXT,
+    pricenet TEXT,
+    pricegross TEXT,
+    pricevat TEXT,
+    srpnet TEXT,
+    srpgross TEXT,
+    srpvat TEXT,
+    producername TEXT,
+    categoryname TEXT,
+    categoryidosell TEXT,
+    unitname TEXT,
+    specifications_json JSONB,
+    compatibilitycodes TEXT
 );
 
--- =============================
--- Tabela: product_sizes
--- =============================
-CREATE TABLE IF NOT EXISTS product_sizes (
-    id_product_sizes SERIAL PRIMARY KEY,
-    product_id_products INTEGER REFERENCES products(id_products),
-    geko_size_code VARCHAR(64),
-    producer_size_code VARCHAR(64),
-    name VARCHAR(255),
-    UNIQUE(product_id_products, geko_size_code)
-);
-
--- =============================
--- Tabela: stock_levels
--- =============================
-CREATE TABLE IF NOT EXISTS stock_levels (
-    id_stock_levels SERIAL PRIMARY KEY,
-    product_size_id_product_sizes INTEGER REFERENCES product_sizes(id_product_sizes),
-    geko_stock_id VARCHAR(64) UNIQUE,
-    quantity INTEGER
-);
-
--- =============================
--- Tabela: product_images
--- =============================
+-- ============================================
+-- Table: product_images
+-- Product images with main image flag and sorting
+-- ============================================
 CREATE TABLE IF NOT EXISTS product_images (
-    id_product_images SERIAL PRIMARY KEY,
-    product_id_products INTEGER REFERENCES products(id_products),
-    url TEXT NOT NULL,
-    is_main BOOLEAN DEFAULT FALSE,
-    sort_order INTEGER,
-    UNIQUE (product_id_products, url)
+    ean TEXT,
+    url TEXT,
+    is_main BOOLEAN,
+    sort_order INTEGER
 );
 
--- =============================
--- Tabela: attributes (futura)
--- =============================
+-- ============================================
+-- Table: categories
+-- Product categories
+-- ============================================
+CREATE TABLE IF NOT EXISTS categories (
+    geko_category_id TEXT PRIMARY KEY,
+    name TEXT,
+    parent_id_categories INTEGER REFERENCES categories(geko_category_id)
+);
+
+-- ============================================
+-- Table: units
+-- Measurement units
+-- ============================================
+CREATE TABLE IF NOT EXISTS units (
+    geko_unit_id TEXT PRIMARY KEY,
+    name TEXT,
+    moq INTEGER
+);
+
+-- ============================================
+-- Table: producers
+-- Product manufacturers/producers
+-- ============================================
+CREATE TABLE IF NOT EXISTS producers (
+    geko_producer_id TEXT PRIMARY KEY,
+    name TEXT
+);
+
+-- ============================================
+-- Table: attributes
+-- Product attributes/features
+-- ============================================
 CREATE TABLE IF NOT EXISTS attributes (
     id_attributes SERIAL PRIMARY KEY,
-    geko_feature_id VARCHAR(64) UNIQUE,
+    geko_feature_id VARCHAR(64) UNIQUE NOT NULL,
     name VARCHAR(255),
     type VARCHAR(32)
 );
 
--- =============================
--- Tabela: product_attributes (futura)
--- =============================
+-- ============================================
+-- Table: product_attributes
+-- Many-to-many relationship between products and attributes
+-- ============================================
 CREATE TABLE IF NOT EXISTS product_attributes (
     id_product_attributes SERIAL PRIMARY KEY,
-    product_id_products INTEGER REFERENCES products(id_products),
+    product_id_products INTEGER,
     attribute_id_attributes INTEGER REFERENCES attributes(id_attributes),
     value_text TEXT,
-    value_numeric DECIMAL(18,6),
+    value_numeric NUMERIC(18,6),
     value_boolean BOOLEAN,
     geko_value_id VARCHAR(64),
     UNIQUE(product_id_products, attribute_id_attributes)
 );
 
--- =============================
--- Índices e constraints adicionais recomendados
--- =============================
-CREATE INDEX IF NOT EXISTS idx_products_category_id ON products(category_id_categories);
-CREATE INDEX IF NOT EXISTS idx_products_unit_id ON products(unit_id_units);
-CREATE INDEX IF NOT EXISTS idx_product_sizes_product_id ON product_sizes(product_id_products);
-CREATE INDEX IF NOT EXISTS idx_stock_levels_product_size_id ON stock_levels(product_size_id_product_sizes);
-CREATE INDEX IF NOT EXISTS idx_product_images_product_id ON product_images(product_id_products);
--- FKs já estão explícitas e rastreáveis
+-- ============================================
+-- Table: product_categories
+-- Many-to-many relationship between products and categories
+-- ============================================
+CREATE TABLE IF NOT EXISTS product_categories (
+    ean TEXT,
+    geko_category_id TEXT REFERENCES categories(geko_category_id)
+);
+
+-- ============================================
+-- Table: product_variants
+-- Product variants information
+-- ============================================
+CREATE TABLE IF NOT EXISTS product_variants (
+    ean TEXT,
+    geko_variant_size_code TEXT,
+    geko_variant_producer_code TEXT,
+    geko_variant_stock_id TEXT,
+    weight TEXT,
+    gross_weight TEXT
+);
+
+-- ============================================
+-- Table: prices
+-- Product pricing information
+-- ============================================
+CREATE TABLE IF NOT EXISTS prices (
+    ean TEXT,
+    geko_variant_stock_id TEXT,
+    price_type TEXT,
+    net_value TEXT,
+    gross_value TEXT,
+    currency TEXT
+);
+
+-- ============================================
+-- Table: stock_levels
+-- Product stock information
+-- ============================================
+CREATE TABLE IF NOT EXISTS stock_levels (
+    geko_variant_stock_id TEXT,
+    quantity NUMERIC
+);
+
+-- ============================================
+-- Indexes for better query performance
+-- ============================================
+CREATE INDEX IF NOT EXISTS idx_products_ean ON products(ean);
+CREATE INDEX IF NOT EXISTS idx_products_sku ON products(sku);
+CREATE INDEX IF NOT EXISTS idx_product_images_ean ON product_images(ean);
+CREATE INDEX IF NOT EXISTS idx_product_attributes_product ON product_attributes(product_id_products);
+CREATE INDEX IF NOT EXISTS idx_prices_ean ON prices(ean);
+CREATE INDEX IF NOT EXISTS idx_stock_levels_stock_id ON stock_levels(geko_variant_stock_id);
+
+-- ============================================
+-- Foreign Key Constraints
+-- ============================================
+-- Note: Some foreign key constraints are defined inline with the table definitions
+-- Add any additional constraints here if needed
+
+-- ============================================
+-- Comments
+-- ============================================
+COMMENT ON TABLE products IS 'Main products table containing all product information';
+COMMENT ON TABLE product_images IS 'Product images with main image flag and sorting order';
+COMMENT ON TABLE categories IS 'Product categories hierarchy';
+COMMENT ON TABLE units IS 'Measurement units for products';
+COMMENT ON TABLE producers IS 'Product manufacturers/producers';
+COMMENT ON TABLE attributes IS 'Product attributes/features definition';
+COMMENT ON TABLE product_attributes IS 'Many-to-many relationship between products and their attributes';
+COMMENT ON TABLE product_categories IS 'Many-to-many relationship between products and categories';
+COMMENT ON TABLE product_variants IS 'Product variants information';
+COMMENT ON TABLE prices IS 'Product pricing information';
+COMMENT ON TABLE stock_levels IS 'Product stock information';

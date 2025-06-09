@@ -27,8 +27,66 @@
 - **Jest/Testing Library**: últimas versões (testes unitários e e2e)
 - **dotenv**: 16.x (gestão de variáveis de ambiente)
 
-## 4. Observações
-- Todas as versões acima são estáveis e amplamente utilizadas em produção em 2025.
+## 4. Estrutura de Pastas do Projeto
+
+```
+src/
+├── api/                    # Rotas da API
+│   └── products.cjs        # Endpoints de produtos e categorias
+├── assets/                 # Recursos estáticos
+│   └── images/             # Imagens do site
+├── components/             # Componentes reutilizáveis
+│   ├── common/             # Componentes comuns (Header, Footer, etc.)
+│   └── ui/                 # Componentes de interface do usuário
+├── config/                 # Configurações do aplicativo
+├── hooks/                  # Custom React Hooks
+├── pages/                  # Páginas do aplicativo
+│   ├── HomePage.jsx        # Página inicial
+│   └── ...
+├── services/              # Serviços (chamadas de API)
+│   ├── api.js             # Configuração base da API
+│   └── categoryService.js  # Serviço de categorias
+└── styles/                 # Estilos globais
+    └── index.css           # Estilos globais do Tailwind
+```
+
+## 5. Diretrizes de Desenvolvimento
+
+### 5.1. Convenções de Código
+- Componentes em PascalCase (ex: `HomePage.jsx`)
+- Hooks personalizados prefixados com `use` (ex: `useProducts.js`)
+- Serviços em camelCase (ex: `categoryService.js`)
+- Pastas em minúsculas com hífens (ex: `product-details/`)
+
+### 5.2. Padrões de Commit
+- `feat`: Nova funcionalidade
+- `fix`: Correção de bugs
+- `docs`: Atualização de documentação
+- `style`: Formatação de código
+- `refactor`: Refatoração de código
+- `test`: Adição ou correção de testes
+- `chore`: Atualização de dependências
+
+### 5.3. Processo de Desenvolvimento
+1. Criar uma branch a partir de `main`
+2. Desenvolver a funcionalidade
+3. Escrever testes unitários
+4. Abrir um Pull Request
+5. Revisão de código
+6. Deploy em ambiente de teste
+7. Aprovação e merge para `main`
+
+## 6. Próximos Passos
+- [ ] Implementar testes automatizados
+- [ ] Configurar CI/CD
+- [ ] Adicionar monitoramento de erros (Sentry)
+- [ ] Implementar cache em nível de aplicação
+- [ ] Otimizar imagens e assets
+
+## 7. Observações
+- Todas as versões são estáveis e em uso em produção.
+- Manter as dependências atualizadas regularmente.
+- Documentar todas as alterações significativas.
 - Garantir sempre uso de TypeScript e integração contínua (CI/CD) para máxima segurança e performance.
 - Preferir deploy em Vercel para SSR/SSG e CDN global.
 - Internacionalização e assets são nativos ou facilmente integráveis.

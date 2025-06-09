@@ -9,8 +9,51 @@ Este documento resume a estrutura, campos, exemplos e recomendações para integ
 - **Elemento raiz:** `<offer file_format="IOF" version="2.6" generated="...">`
 - **Produtos:** `<products language="pl" currency="EUR">`
     - Múltiplos `<product ...>`
+- **Categorias:** Estrutura hierárquica dentro de cada produto e possivelmente em seção global
 
-### Exemplo de Estrutura de Produto
+## 3. Estrutura de Categorias
+
+### 3.1. Categorias no Produto
+Cada produto pode ter uma ou mais categorias, com estrutura:
+
+```xml
+<category id="105266" name="Podnośniki hydrauliczne" path="Części zamienne\Podnośniki hydrauliczne"/>
+<category_idosell path="Części zamienne\Podnośniki hydrauliczne" />
+```
+
+### 3.2. Mapeamento para o Banco de Dados
+
+| Campo XML | Campo no Banco | Tipo | Notas |
+|-----------|----------------|------|-------|
+| `id` | `geko_category_id` | VARCHAR(255) | Chave única da categoria |
+| `name` | `name` | VARCHAR(255) | Nome da categoria no idioma especificado |
+| `path` | `path` | VARCHAR(255) | Caminho completo da hierarquia |
+| - | `parent_geko_category_id` | VARCHAR(255) | ID da categoria pai (derivado do path) |
+| - | `created_at` | TIMESTAMP | Data de criação |
+| - | `updated_at` | TIMESTAMP | Data de atualização |
+
+### 3.3. Processamento de Categorias
+1. **Extração**: Coletar todas as categorias únicas do XML
+2. **Normalização**: Criar hierarquia baseada no `path`
+3. **Contagem**: Calcular número de produtos por categoria
+4. **Atualização**: Sincronizar com o banco de dados
+
+### 3.4. Exemplo de Consulta SQL para Contagem de Produtos
+
+```sql
+SELECT 
+  c.geko_category_id as id,
+  c.name,
+  COUNT(pc.ean) as product_count
+FROM categories c
+LEFT JOIN product_categories pc ON c.geko_category_id = pc.geko_category_id
+GROUP BY c.geko_category_id, c.name, c.path, c.parent_geko_category_id
+ORDER BY c.path, c.name
+```
+
+## 4. Estrutura de Produto
+
+### 4.1. Exemplo de Estrutura de Produto
 ```xml
 <product id="24" vat="0" code="C00049" code_on_card="C00049" EAN="5901477140723" code_producer="5901477140723">
     <producer name="GEKO" id=""/>

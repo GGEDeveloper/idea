@@ -7,7 +7,15 @@
 ## 1. Estrutura de Páginas e Áreas
 
 ### 1.1. Páginas Públicas
-- **Home Page**: Destaques, banners, busca, categorias, novidades, promoções.
+- **Home Page**: 
+  - Destaques com carrossel de produtos em destaque
+  - Seção de categorias dinâmicas com ícones e contagem de produtos
+  - Banners promocionais
+  - Barra de busca integrada
+  - Novidades e promoções
+  - Produtos mais vendidos
+  - Marcas parceiras
+  - Seção de depoimentos
 - **Página de Produtos (Catálogo/Listagem)**: Filtros dinâmicos (categoria, preço, stock, atributos técnicos, fabricante), ordenação, paginação.
 - **Página de Detalhe do Produto**: Galeria de imagens, descrição rica (HTML), tabelas técnicas, variações, preço, stock, EAN, referências, breadcrumbs, botões de ação (adicionar ao carrinho, wishlist, comparar).
 - **Sobre a Empresa**: Missão, valores, história, contatos.

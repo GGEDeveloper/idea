@@ -1,0 +1,77 @@
+{
+  "languageName": "Português",
+  "languages": {
+    "pt": "Português",
+    "en": "Inglês"
+  },
+  "language": "Idioma",
+  "selectLanguage": "Selecionar idioma",
+  "languageChanged": "Idioma alterado para {{language}}",
+  "currentLanguage": "Idioma atual: {{language}}",
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "about": "Sobre Nós",
+    "contact": "Contato"
+  },
+  "user": {
+    "login": "Entrar",
+    "register": "Registar",
+    "profile": "Meu Perfil",
+    "myAccount": "Minha Conta",
+    "orders": "Meus Pedidos",
+    "logout": "Sair",
+    "administration": "Administração",
+    "adminPanel": "Painel Administrativo",
+    "messages": "Mensagens",
+    "settings": "Configurações",
+    "admin": "Administrador",
+    "guest": "Visitante",
+    "noEmail": "Nenhum email"
+  },
+  "search": {
+    "placeholder": "Pesquisar produtos...",
+    "noResults": "Nenhum resultado encontrado para",
+    "clear": "Limpar pesquisa",
+    "submit": "Pesquisar",
+    "suggestions": "Tente usar termos diferentes ou verifique a ortografia.",
+    "searching": "Pesquisando...",
+    "clearSearch": "Limpar pesquisa",
+    "seeAllResults": "Ver todos os resultados para",
+    "noResultsTitle": "Nenhum resultado encontrado",
+    "searchError": "Ocorreu um erro ao pesquisar. Por favor, tente novamente.",
+    "minChars": "Digite pelo menos 2 caracteres",
+    "results": "Resultados da pesquisa",
+    "foundItems": "Itens encontrados"
+  },
+  "menu": {
+    "open": "Abrir menu de navegação",
+    "close": "Fechar menu de navegação"
+  },
+  "cart": {
+    "title": "Carrinho de compras ({{count}})",
+    "items": "{{count}} itens",
+    "item": "1 item",
+    "itemsCount": "{{count}} itens no carrinho",
+    "itemCount": "1 item no carrinho",
+    "emptyTitle": "O seu carrinho está vazio!",
+    "emptyMessage": "Parece que você ainda não adicionou nenhum produto. Que tal explorar nossos berbequins?",
+    "viewProducts": "Ver Produtos",
+    "pageTitle": "Seu Carrinho de Compras",
+    "decreaseQuantity": "Diminuir quantidade",
+    "increaseQuantity": "Aumentar quantidade",
+    "removeItem": "Remover item",
+    "continueShopping": "Continuar Comprando",
+    "clearCart": "Limpar Carrinho",
+    "orderSummary": "Resumo do Pedido",
+    "subtotal": "Subtotal",
+    "shipping": "Envio",
+    "free": "Grátis",
+    "tax": "Impostos",
+    "total": "Total",
+    "proceedToCheckout": "Finalizar Compra",
+    "checkout": "Finalizar Compra",
+    "or": "ou",
+    "loginToCheckout": "Faça login para finalizar a compra"
+  }
+}

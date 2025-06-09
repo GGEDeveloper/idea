@@ -8,6 +8,20 @@ const productsRouter = require('./src/api/products.cjs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Configuração do CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  
+  // Responde imediatamente a requisições OPTIONS
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  
+  next();
+});
+
 // API routes
 app.use('/api/search', searchRouter);
 app.use('/api/products', productsRouter);

@@ -1,0 +1,228 @@
+{
+  "config": {
+    "configFile": "/home/pixiewsl/CascadeProjects/idea/playwright.config.js",
+    "rootDir": "/home/pixiewsl/CascadeProjects/idea",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/pixiewsl/CascadeProjects/idea",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/pixiewsl/CascadeProjects/idea",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/pixiewsl/CascadeProjects/idea",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/home/pixiewsl/CascadeProjects/idea",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/home/pixiewsl/CascadeProjects/idea",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 8,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "timeout": 120000,
+      "reuseExistingServer": true,
+      "env": {
+        "NODE_ENV": "test",
+        "PORT": "5173"
+      },
+      "stderr": "pipe",
+      "stdout": "pipe"
+    }
+  },
+  "suites": [
+    {
+      "title": "tests/e2e/smoke.test.js",
+      "file": "tests/e2e/smoke.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Página inicial carrega corretamente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "interrupted",
+                  "duration": 3660,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Alimamedetools/\u001b[39m\nReceived string:  \u001b[31m\"Loja Moderna Online\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Loja Moderna Online\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Alimamedetools/\u001b[39m\nReceived string:  \u001b[31m\"Loja Moderna Online\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Loja Moderna Online\"\u001b[22m\n\n    at /home/pixiewsl/CascadeProjects/idea/tests/e2e/smoke.test.js:9:22",
+                    "location": {
+                      "file": "/home/pixiewsl/CascadeProjects/idea/tests/e2e/smoke.test.js",
+                      "column": 22,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m   \n \u001b[90m  8 |\u001b[39m   \u001b[90m// Verifica se o título da página está correto\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Alimamedetools/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \n \u001b[90m 11 |\u001b[39m   \u001b[90m// Verifica se o logo está visível\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mconst\u001b[39m logo \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'header img[alt=\"ALIMAMEDETOOLS Logótipo\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/pixiewsl/CascadeProjects/idea/tests/e2e/smoke.test.js",
+                        "column": 22,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Alimamedetools/\u001b[39m\nReceived string:  \u001b[31m\"Loja Moderna Online\"\u001b[39m\nCall log:\n\u001b[2m  - expect.toHaveTitle with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    6 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Loja Moderna Online\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m   \n \u001b[90m  8 |\u001b[39m   \u001b[90m// Verifica se o título da página está correto\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Alimamedetools/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \n \u001b[90m 11 |\u001b[39m   \u001b[90m// Verifica se o logo está visível\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mconst\u001b[39m logo \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'header img[alt=\"ALIMAMEDETOOLS Logótipo\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/pixiewsl/CascadeProjects/idea/tests/e2e/smoke.test.js:9:22\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-06-08T23:39:24.515Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts/tests-e2e-smoke-Página-inicial-carrega-corretamente-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "_error-context-0",
+                      "contentType": "text/markdown",
+                      "path": "/home/pixiewsl/CascadeProjects/idea/test-results/artifacts/tests-e2e-smoke-Página-inicial-carrega-corretamente-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/pixiewsl/CascadeProjects/idea/tests/e2e/smoke.test.js",
+                    "column": 22,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbef461a6ef5ff7b76af-6e9c790bc2f44d33f0d0",
+          "file": "tests/e2e/smoke.test.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-08T23:39:22.532Z",
+    "duration": 6341.277,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,4 +1,66 @@
+# LOG DE CÓDIGO - PROJETO IDEA
+
+---
+**ID:** 20250608-03
+**Timestamp:** 2025-06-08T18:45:00Z
+**Tipo:** Refatoração
+**Descrição:** Refatoração do componente ProductsPage e FilterSidebar para melhorar a organização, desempenho e manutenibilidade do código.
+
+**Alterações realizadas:**
+1. **Criação do hook useProducts:**
+   - Extração da lógica de busca de produtos e filtros
+   - Gerenciamento centralizado de estados (produtos, loading, erros, filtros)
+   - Integração com a API de busca e filtros
+   - Tratamento de erros e estados de carregamento
+
+2. **Atualização do ProductsPage:**
+   - Simplificação do componente principal
+   - Uso do hook useProducts para gerenciamento de estado
+   - Melhoria na estrutura de renderização condicional
+   - Adição de feedback visual para o usuário
+
+3. **Melhorias no FilterSidebar:**
+   - Comportamento responsivo (mobile/desktop)
+   - Gerenciamento de estado de abertura/fechamento
+   - Integração com os filtros do useProducts
+   - Melhorias na acessibilidade
+
+**Ficheiros/áreas afetadas:**
+- `src/pages/ProductsPage.jsx`
+- `src/components/products/FilterSidebar.jsx`
+- `src/hooks/useProducts.js`
+
+**Resultado:**
+Código mais limpo, organizado e fácil de manter, com melhor desempenho e experiência do usuário.
+
+---
+
 # LOG DE CÓDIGO - PROJETO IDEA (Início com Cascade)
+
+---
+**ID:** 20250608-02
+**Timestamp:** 2025-06-08T04:08Z
+**Tipo:** Implementação
+**Descrição:** Implementação técnica do endpoint de filtros, integração frontend (Sidebar), e lógica de busca filtrada.
+
+**Ações:**
+- Criado endpoint `/api/products/filters` no backend para fornecer marcas e faixa de preço reais.
+- Atualizado componente SidebarContent do frontend para consumir esses filtros e exibir checkboxes de marcas e inputs de preço.
+- Implementada lógica de busca de produtos filtrados no frontend, enviando os filtros ao backend via query string.
+- Lógica local de filtragem removida; agora toda filtragem é feita no backend.
+- Estrutura pronta para expansão futura (características, voltagem, etc).
+
+**Ficheiros/áreas afetadas:**
+- `src/api/filters.cjs`
+- `src/components/SidebarContent.jsx`
+
+**Comandos principais:**
+- Criação de endpoint com Express.js
+- Consumo de API no frontend com React.js
+- Implementação de lógica de busca filtrada
+
+**Resultado:**
+Filtros dinâmicos implementados no frontend, com integração ao backend para busca filtrada de produtos.
 
 ---
 **ID:** 20250608-01

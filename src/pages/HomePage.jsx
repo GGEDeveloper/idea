@@ -1,96 +1,236 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import { Link } from 'react-router-dom';
+import { getCategories, getCategoryIcon, getCategoryColor } from '../services/categoryService';
+
+// Produtos caros de diferentes categorias (pode customizar à vontade)
+const expensiveProducts = [
+  {
+    name: 'Berbequim Profissional 1500W',
+    image: '/produtos/berbequim_profissional.png',
+    price: '€249,99',
+    category: 'Ferramentas Elétricas',
+    badge: 'TOP',
+  },
+  {
+    name: 'Corta-Relva Automático',
+    image: '/produtos/corta_relva_auto.png',
+    price: '€499,00',
+    category: 'Jardim',
+    badge: 'Premium',
+  },
+  {
+    name: 'Compressor Industrial 50L',
+    image: '/produtos/compressor_industrial.png',
+    price: '€329,00',
+    category: 'Oficina',
+    badge: 'TOP',
+  },
+  {
+    name: 'Escada Telescópica Premium',
+    image: '/produtos/escada_telescopica.png',
+    price: '€199,00',
+    category: 'Construção',
+    badge: 'Premium',
+  },
+];
+
+// Produtos caros de diferentes categorias (exemplo)
+// Carrossel 3D sofisticado com SwiperJS
+function ProductCarousel3D({ products }) {
+  return (
+    <div className="w-full max-w-2xl mx-auto px-2 md:px-0 mb-2 mt-4">
+      <Swiper
+        modules={[EffectCoverflow, Autoplay]}
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={1.2}
+        coverflowEffect={{
+          rotate: 32,
+          stretch: 0,
+          depth: 160,
+          modifier: 1.2,
+          slideShadows: true,
+        }}
+        autoplay={{ delay: 3300, disableOnInteraction: false }}
+        breakpoints={{
+          640: { slidesPerView: 1.4 },
+          768: { slidesPerView: 2.1 },
+          1024: { slidesPerView: 2.6 },
+        }}
+        className="mySwiper"
+      >
+        {products.map((product) => (
+          <SwiperSlide key={product.name}>
+            <div className="relative bg-white rounded-2xl shadow-xl flex flex-col items-center p-4 border-4 border-primary min-w-[180px] max-w-[220px] min-h-[220px] mx-auto group hover:scale-105 transition-transform duration-300">
+              {/* Badge Premium/Top */}
+              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 via-indigo-400 to-yellow-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-lg animate-pulse z-10">
+                {product.badge}
+              </div>
+              {/* Imagem com glow */}
+              <div className="relative flex items-center justify-center">
+                <img src={product.image} alt={product.name}
+                  className="h-20 md:h-28 object-contain mb-2 drop-shadow-lg group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.7)] transition-all duration-300"
+                  style={{ filter: 'drop-shadow(0 0 16px #ffe066)' }}
+                />
+                <span className="absolute inset-0 rounded-full blur-2xl opacity-50 bg-gradient-to-tr from-yellow-300 via-indigo-200 to-yellow-100 z-0"></span>
+              </div>
+              <div className="text-lg font-bold text-secondary text-center z-10">{product.name}</div>
+              <div className="text-sm text-gray-600 mb-1 z-10">{product.category}</div>
+              <div className="text-xl font-extrabold text-primary z-10">{product.price}</div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}
 
 const HomePage = () => {
+  const [categories, setCategories] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const data = await getCategories();
+        setCategories(data);
+        setError(null);
+      } catch (err) {
+        console.error('Erro ao carregar categorias:', err);
+        setError('Não foi possível carregar as categorias. Tente novamente mais tarde.');
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCategories();
+  }, []);
   return (
-    <div className="space-y-12">
-      {/* Seção Hero/Banner */}
-      <section 
-        className="relative bg-cover bg-center py-32 md:py-48 rounded-xl shadow-2xl overflow-hidden"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1400&q=80')" }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Descubra Produtos Incríveis
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-            Qualidade, estilo e as melhores ofertas, tudo em um só lugar. Explore nossa coleção exclusiva.
-          </p>
-          <Link 
-            to="/produtos"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-          >
-            Ver Produtos
-          </Link>
+    <div className="space-y-16 bg-bg-base bg-gradient-to-b from-bg-base to-[#e5e7eb]">
+      {/* Hero Section Animado 3D */}
+      <section className="relative flex flex-col items-center justify-center py-20 px-4 min-h-[520px] rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-300 via-yellow-100 to-indigo-100 shadow-2xl">
+        {/* Fundo animado com partículas */}
+        <div className="absolute inset-0 z-0 animate-gradient-move">
+          <svg className="absolute top-0 left-0 w-full h-full opacity-30" style={{filter:'blur(2px)'}}>
+            <circle cx="20%" cy="30%" r="80" fill="#fde047"/>
+            <circle cx="80%" cy="60%" r="120" fill="#818cf8"/>
+            <circle cx="50%" cy="80%" r="60" fill="#fbbf24"/>
+          </svg>
         </div>
+        {/* Logo com efeito 3D/glow */}
+        <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="relative z-10 h-36 md:h-48 w-auto mb-4 drop-shadow-[0_8px_32px_rgba(234,179,8,0.5)] animate-float" />
+        <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-secondary text-center mb-2 drop-shadow-lg">A MARCA DAS MARCAS</h1>
+        <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
+        {/* Carrossel 3D de produtos caros */}
+        <ProductCarousel3D products={expensiveProducts} />
+        <a href="/produtos" className="relative z-10 inline-block px-8 py-4 mt-8 rounded-full bg-primary text-white font-bold text-lg shadow-xl hover:bg-secondary hover:text-primary transition-colors">Ver Produtos</a>
       </section>
 
-      {/* Seção de Produto em Destaque */}
-      <section>
-        <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Produto em Destaque</h2>
-        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden md:flex hover:shadow-indigo-300/50 transition-shadow duration-300">
-          <div className="md:w-1/2">
-            <img 
-              className="h-64 w-full object-cover md:h-full transition-transform duration-500 hover:scale-105"
-              src="https://images.unsplash.com/photo-1593005510329-8a421917703a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" 
-              alt="Berbequim Impacto Profissional XZ-750"
-            />
+      {/* Seção de Categorias */}
+      <section className="bg-bg-alt py-12">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-text-alt mb-4">Nossas Categorias</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Explore nossa ampla variedade de categorias de produtos de qualidade</p>
           </div>
-          <div className="p-8 md:w-1/2 flex flex-col justify-between">
-            <div>
-              <div className="uppercase tracking-wide text-sm text-indigo-600 font-semibold">PowerTools Max</div>
-              <h3 className="block mt-1 text-2xl leading-tight font-bold text-black hover:text-indigo-700 transition-colors">Berbequim Impacto Profissional XZ-750</h3>
-              <p className="mt-2 text-gray-600 text-sm">Potência e precisão para os seus projetos mais exigentes. Ideal para perfuração em madeira, metal e alvenaria.</p>
-              
-              <div className="mt-4">
-                <h4 class="text-md font-semibold text-gray-700 mb-2">Especificações Técnicas:</h4>
-                <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
-                  <li><span class="font-medium">Voltagem:</span> 18V</li>
-                  <li><span class="font-medium">Bateria:</span> 2x 2.0Ah Li-Ion</li>
-                  <li><span class="font-medium">Velocidade:</span> 0-500 / 0-1800 RPM</li>
-                  <li><span class="font-medium">Impactos:</span> 0-27000 IPM</li>
-                  <li><span class="font-medium">Mandril:</span> 13mm (Aperto Rápido)</li>
-                  <li><span class="font-medium">Peso:</span> 1.6 kg (com bateria)</li>
-                  <li><span class="font-medium">Cor:</span> Azul Industrial e Preto</li>
-                </ul>
-              </div>
-              <p className="mt-3 text-xs text-gray-500"><span class="font-semibold">Inclui:</span> Mala de transporte, 2 baterias, carregador rápido, conjunto de brocas.</p>
+          
+          {isLoading ? (
+            <div className="text-center py-16">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-primary"></div>
+              <p className="mt-4 text-text-alt text-lg">Carregando categorias...</p>
             </div>
-
-            <div className="mt-6 flex justify-between items-center">
-              <p className="text-3xl font-bold text-indigo-700">€129<span class="text-xl">.99</span></p>
-              <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                Adicionar ao Carrinho
+          ) : error ? (
+            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+              <i className="fas fa-exclamation-triangle text-3xl mb-3"></i>
+              <p className="text-lg font-medium">Não foi possível carregar as categorias</p>
+              <p className="text-sm mt-2">{error}</p>
+              <button 
+                onClick={() => window.location.reload()} 
+                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+              >
+                Tentar novamente
               </button>
             </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+              {categories.map((category) => (
+                <div key={category.id} className="h-full">
+                  <Link 
+                    to={`/produtos?categoria=${encodeURIComponent(category.name)}`}
+                    className="block h-full group"
+                  >
+                    <div className={`${getCategoryColor(category.name)} rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}>
+                      <div className="p-6 text-center flex-1 flex flex-col items-center justify-center">
+                        <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                          <i className={`${getCategoryIcon(category.name)} text-2xl text-white`}></i>
+                        </div>
+                        <h3 className="text-xl font-bold text-white mb-2">{category.name}</h3>
+                        <p className="text-sm text-white text-opacity-90 mb-3">
+                          {category.product_count} {category.product_count === 1 ? 'produto' : 'produtos'}
+                        </p>
+                        <span className="inline-flex items-center text-white text-sm font-medium mt-auto">
+                          Ver produtos
+                          <i className="fas fa-arrow-right ml-2 text-xs opacity-70 group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          )}
+          
+          {!isLoading && !error && categories.length > 0 && (
+            <div className="text-center mt-12">
+              <Link 
+                to="/produtos" 
+                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary-dark md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+              >
+                Ver todas as categorias
+                <i className="fas fa-arrow-right ml-2"></i>
+              </Link>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Seção Sobre a Marca */}
+      <section className="bg-bg-base py-12">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-extrabold text-text-alt mb-6">Sobre a Marca</h2>
+          <div className="flex flex-wrap justify-center -mx-4">
+            <div className="w-full md:w-1/2 xl:w-1/3 p-4">
+              <div className="bg-gray-200 rounded-lg shadow-md p-4 text-center">
+                <h3 className="text-lg font-bold text-text-alt mb-2">Nossa História</h3>
+                <p className="text-sm text-text-alt">Conheça nossa trajetória e valores.</p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 xl:w-1/3 p-4">
+              <div className="bg-gray-200 rounded-lg shadow-md p-4 text-center">
+                <h3 className="text-lg font-bold text-text-alt mb-2">Nossa Missão</h3>
+                <p className="text-sm text-text-alt">Entenda nosso propósito e objetivos.</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-6">
+            <Link 
+              to="/sobre"
+              className="bg-secondary hover:bg-secondary-dark text-text-alt font-semibold py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Saiba Mais
+            </Link>
           </div>
         </div>
-        <div className="text-center mt-12">
-            <Link 
-                to="/produtos"
-                className="bg-gray-700 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg shadow hover:shadow-md transition-all duration-300"
-            >
-                Ver Todos os Produtos
-            </Link>
-        </div>
       </section>
-
-      {/* Seção de Categorias (Placeholder) */}
-      <section>
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Navegue por Categorias</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['Eletrônicos', 'Moda', 'Casa & Cozinha', 'Esportes'].map(category => (
-            <div key={category} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center cursor-pointer">
-              <div className="text-5xl mb-3 text-indigo-500">🛍️</div> {/* Ícone placeholder */}
-              <h3 className="text-xl font-semibold text-gray-700">{category}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
-
     </div>
   );
 };
 
+// Produtos caros de diferentes categorias (exemplo)
 export default HomePage;
