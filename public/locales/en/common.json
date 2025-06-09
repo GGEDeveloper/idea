@@ -12,12 +12,7 @@
     "selected": "{{language}} (selected)",
     "menuAriaLabel": "Language selection menu"
   },
-  "nav": {
-    "home": "Home",
-    "products": "Products",
-    "about": "About Us",
-    "contact": "Contact"
-  },
+
   "user": {
     "login": "Login",
     "register": "Register",
@@ -34,6 +29,7 @@
     "noEmail": "No email",
     "menuAriaLabel": "User menu"
   },
+
   "search": {
     "placeholder": "Search products...",
     "noResults": "No results found for",
@@ -55,6 +51,7 @@
   },
   "loading": "Loading...",
   "header": {
+    "skipToContent": "Skip to main content",
     "title": "ALIMAMADETOOLS - Professional Tools",
     "mainHeader": "Main header",
     "homeLink": "Home - ALIMAMADETOOLS",
@@ -70,7 +67,13 @@
     "openUserMenu": "Open user menu",
     "closeUserMenu": "Close user menu",
     "openLanguageMenu": "Open language menu",
-    "closeLanguageMenu": "Close language menu"
+    "closeLanguageMenu": "Close language menu",
+    "navigation": {
+      "home": "Home",
+      "products": "Products",
+      "categories": "Categories",
+      "about": "About"
+    }
   },
   "cart": {
     "title": "Shopping Cart ({{count}})",
