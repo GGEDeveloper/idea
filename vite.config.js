@@ -28,39 +28,25 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
+    base: './', // Garante que os assets sejam carregados corretamente
     // Vitest configuration
     test: {
       globals: true,
       environment: 'jsdom',
       setupFiles: './src/setupTests.js',
     },
-    plugins: [
-      react(),
-      {
-        name: 'copy-static-assets',
-        closeBundle: () => {
-          try {
-            // Copiar arquivos de localização
-            copyDir(
-              resolve(__dirname, 'public/locales'),
-              resolve(__dirname, 'dist/locales')
-            );
-            console.log('Arquivos de localização copiados com sucesso!');
-          } catch (error) {
-            console.error('Erro ao copiar arquivos de localização:', error);
-          }
-        },
-      },
-    ],
-    define: {
-      // Expõe as variáveis de ambiente para o cliente
-      'import.meta.env.VITE_CLERK_PUBLISHABLE_KEY': JSON.stringify(env.VITE_CLERK_PUBLISHABLE_KEY),
-      'import.meta.env.VITE_CLERK_FRONTEND_API': JSON.stringify(env.VITE_CLERK_FRONTEND_API),
-      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL),
-    },
     server: {
+      port: 5174,
+      strictPort: true,
+      open: false,
+      // Configuração para servir arquivos estáticos
+      fs: {
+        strict: false, // Permite servir arquivos fora do diretório raiz
+        allow: ['..'] // Permite acessar arquivos em diretórios pai
+      },
       proxy: {
-        '/api': {
+        // Proxy para a API do backend
+        '^/api': {
           target: 'http://localhost:3000',
           changeOrigin: true,
           secure: false,
@@ -72,8 +58,14 @@ export default defineConfig(({ mode }) => {
           changeOrigin: true,
           secure: false,
           ws: true,
-        },
+        }
       },
+    },
+    define: {
+      // Expõe as variáveis de ambiente para o cliente
+      'import.meta.env.VITE_CLERK_PUBLISHABLE_KEY': JSON.stringify(env.VITE_CLERK_PUBLISHABLE_KEY),
+      'import.meta.env.VITE_CLERK_FRONTEND_API': JSON.stringify(env.VITE_CLERK_FRONTEND_API),
+      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL),
     },
   }
 })

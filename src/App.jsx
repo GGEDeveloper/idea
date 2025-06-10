@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
@@ -57,9 +57,32 @@ const RedirectIfAuthenticated = ({ children }) => {
 };
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Efeito para adicionar/remover classe no body quando o menu móvel estiver aberto
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add('mobile-menu-open');
+      // Desabilitar rolagem do body
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.classList.remove('mobile-menu-open');
+      // Restaurar rolagem do body
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.classList.remove('mobile-menu-open');
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+  
   return (
     <div className="flex flex-col min-h-screen bg-bg-base text-text-base">
-      <Header />
+      <Header onMobileMenuToggle={setIsMobileMenuOpen} />
       <main className="flex-grow container mx-auto px-4 py-8">
         <Routes>
           {/* Rotas Públicas */}

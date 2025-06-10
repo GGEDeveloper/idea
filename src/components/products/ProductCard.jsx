@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { StarIcon } from '@heroicons/react/20/solid';
 

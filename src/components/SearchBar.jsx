@@ -1,9 +1,8 @@
 // src/components/SearchBar.jsx
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faSpinner, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { MagnifyingGlassIcon, XMarkIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
 import './SearchBar.css';
 
 function SearchBar({ onResultSelect, className = '' }) {
@@ -146,9 +145,8 @@ function SearchBar({ onResultSelect, className = '' }) {
             className="search-submit"
             aria-label={t('search.submit')}
           >
-            <FontAwesomeIcon 
-              icon={faSearch} 
-              className="search-icon" 
+            <MagnifyingGlassIcon 
+              className="h-4 w-4 text-gray-400" 
               aria-hidden="true"
             />
           </button>
@@ -175,10 +173,8 @@ function SearchBar({ onResultSelect, className = '' }) {
           />
           {loading && (
             <div className="search-loading" role="status" aria-live="polite">
-              <FontAwesomeIcon 
-                icon={faSpinner} 
-                className="search-loading-icon" 
-                spin 
+              <ArrowPathIcon 
+                className="h-4 w-4 text-gray-400 animate-spin" 
                 aria-hidden="true"
               />
               <span className="sr-only">{t('search.searching')}</span>
@@ -191,7 +187,7 @@ function SearchBar({ onResultSelect, className = '' }) {
               className="clear-search"
               aria-label={t('search.clearSearch')}
             >
-              <FontAwesomeIcon icon={faTimes} />
+              <XMarkIcon className="h-4 w-4" />
             </button>
           )}
         </div>

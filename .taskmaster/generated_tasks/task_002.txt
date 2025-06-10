@@ -1,6 +1,6 @@
 # Task ID: 2
 # Title: Develop Global Header Component
-# Status: in-progress (search and cart completed)
+# Status: done
 # Dependencies: 1
 # Priority: high
 # Description: Implement the site-wide header including logo, main navigation menu, search bar, login/customer area link, cart icon, and language switcher.
@@ -55,13 +55,13 @@ Create navigation links (placeholder or static initially). Implement CSS for des
   - `src/components/SearchBar.css`
   - `src/pages/ProductsPage.jsx` (search integration)
 
-## 4. Implement User Area & Language Switcher [pending]
+## 4. Implement User Area & Language Switcher [done]
 ### Dependencies: 2.1
 ### Description: Integrate the login/customer area link/icon (Auth.js/Clerk integration point) and the language switcher component (internationalization setup) into the header.
 ### Details:
 Add a link or icon for the login/customer area, preparing for Auth.js/Clerk integration. Implement a basic language switcher component (e.g., dropdown or flags). Ensure both elements are responsive and visually consistent with the header design. Prepare for internationalization framework integration.
 
-## 5. Finalize Responsive Design & Accessibility [pending]
+## 5. Finalize Responsive Design & Accessibility [done]
 ### Dependencies: 2.1, 2.2, 2.3, 2.4
 ### Description: Conduct a comprehensive review and refinement of all header elements to ensure seamless responsiveness across various screen sizes and devices. Implement final accessibility considerations for all interactive components.
 ### Details:

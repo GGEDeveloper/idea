@@ -9,75 +9,76 @@
 
 ### 1.2 Fluxo de Login
 - [ok] Abre modal de login ao clicar em "Entrar"
-- [ ] Exibe estado de carregamento durante autenticação
-- [ ] Exibe avatar após login bem-sucedido
-- [ ] Fecha o modal após login bem-sucedido
+- [ok] Exibe estado de carregamento durante autenticação
+- [ok] Exibe avatar após login bem-sucedido
+- [ok] Fecha o modal após login bem-sucedido
 
 ### 1.3 Menu Dropdown (Autenticado)
-- [ ] Abre/fecha menu ao clicar no avatar
-- [ ] Fecha menu ao clicar fora
-- [ ] Fecha menu ao pressionar tecla Escape
-- [ ] Navegação por teclado (Tab/Shift+Tab)
-- [ ] Foco retorna ao botão do menu ao fechar
+- [ok] Abre/fecha menu ao clicar no avatar
+- [ok] Fecha menu ao clicar fora
+- [nao] Fecha menu ao pressionar tecla Escape
+- [ok] Navegação por teclado (Tab/Shift+Tab)
+- [ok] Foco retorna ao botão do menu ao fechar
 
 ### 1.4 Itens do Menu
-- [ ] Exibe nome do utilizador
-- [ ] Exibe email do utilizador
-- [ ] Links de navegação funcionais:
-  - [ ] Perfil
-  - [ ] Encomendas
-  - [ ] Definições
-  - [ ] Sair
+- [ok] Exibe nome do utilizador
+- [ok] Exibe email do utilizador
+- [ok] Links de navegação funcionais:
+  - [ok] Perfil
+  - [ok] Encomendas - temos atualmente um que diz "Meus Pedidos"
+  - [ok] Sair
 
 ### 1.5 Logout
-- [ ] Desloga ao clicar em "Sair"
-- [ ] Redireciona para página inicial após logout
-- [ ] Remove dados de sessão
+- [ok] Desloga ao clicar em "Sair"
+- [ok] Redireciona para página inicial após logout
+- [ok] Remove dados de sessão
 
 ## 2. LanguageSwitcher Component
 
 ### 2.1 Estado Inicial
-- [ ] Exibe idioma atual
-- [ ] Exibe ícone de globo
-- [ ] Menu dropdown está fechado
-- [ ] Foco no botão do seletor
+- [ok] Exibe idioma atual
+- [ok] Exibe ícone de globo
+- [ok] Menu dropdown está fechado
+- [ok] Foco no botão do seletor
 
 ### 2.2 Troca de Idioma
-- [ ] Abre dropdown ao clicar
-- [ ] Exibe todas as línguas disponíveis
-- [ ] Muda idioma ao selecionar opção
-- [ ] Fecha dropdown após seleção
-- [ ] Mantém preferência de idioma
+- [ok] Abre dropdown ao clicar
+- [ok] Exibe todas as línguas disponíveis
+- [ok] Muda idioma ao selecionar opção
+- [ok] Fecha dropdown após seleção
+- [ok] Mantém preferência de idioma
 
 ### 2.3 Navegação por Teclado
-- [ ] Abre com Enter/Space
-- [ ] Navega com setas (cima/baixo)
-- [ ] Seleciona com Enter
-- [ ] Fecha com Escape
-- [ ] Navegação circular
+- [ok] Abre com Enter/Space
+- [ok] Navega com setas (cima/baixo)
+- [ok] Seleciona com Enter
+- [ok] Fecha com Escape
+- [ok] Navegação circular
 
 ### 2.4 Acessibilidade
-- [ ] Atributos ARIA corretos
-- [ ] Anúncio de mudanças para leitores de tela
-- [ ] Contraste de cores adequado
-- [ ] Foco visível em todos os elementos interativos
+- [x] Atributos ARIA corretos
+- [x] Anúncio de mudanças para leitores de tela
+- [x] Contraste de cores adequado
+- [x] Foco visível em todos os elementos interativos
+- [x] Navegação por teclado completa
+- [x] Feedback visual para seleção atual
 
 ## 3. Testes de Responsividade
 
 ### 3.1 Desktop (>1024px)
-- [ ] Layout correto
-- [ ] Todos os elementos visíveis
-- [ ] Menu horizontal
+- [x] Layout correto
+- [x] Todos os elementos visíveis
+- [x] Menu horizontal
 
 ### 3.2 Tablet (768px - 1024px)
-- [ ] Layout adaptado
-- [ ] Menu ainda acessível
-- [ ] Botões com tamanho adequado
+- [x] Layout adaptado
+- [x] Menu ainda acessível
+- [x] Botões com tamanho adequado
 
 ### 3.3 Mobile (<768px)
-- [ ] Menu hamburguer funcional
-- [ ] Dropdowns acessíveis
-- [ ] Toque fácil nos elementos
+- [x] Menu hamburguer funcional
+- [x] Dropdowns acessíveis
+- [x] Toque fácil nos elementos
 
 ## 4. Problemas Encontrados
 

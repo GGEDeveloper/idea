@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import '../../src/styles/mobile-menu.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useCart } from '../contexts/CartContext';
 import { Bars3Icon, XMarkIcon, ShoppingCartIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import SearchBar from './SearchBar';
 import useFocusManagement from '../hooks/useFocusManagement';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo_transparente_amarelo.png';
 import './Header.css';
 import UserMenu from './UserMenu';
 import LanguageSwitcher from './LanguageSwitcher';
 import '../components/SearchBar.css';
 
-const Header = () => {
+const Header = ({ onMobileMenuToggle }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -58,8 +59,18 @@ const Header = () => {
 
   // Fechar o menu móvel ao mudar de rota
   useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
+    const closeMenu = () => setIsMobileMenuOpen(false);
+    window.addEventListener('popstate', closeMenu);
+    return () => window.removeEventListener('popstate', closeMenu);
+  }, []);
+  
+  // Fechar menu ao navegar
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+      onMobileMenuToggle?.(false);
+    }
+  }, [location.pathname, isMobileMenuOpen, onMobileMenuToggle]);
 
   // Manipular pesquisa
   const handleSearch = useCallback((e) => {
@@ -166,10 +177,14 @@ const Header = () => {
   // Adicionar/remover listener de teclado para o menu móvel
   useEffect(() => {
     if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleMenuKeyDown);
+    } else {
+      document.body.style.overflow = '';
     }
     
     return () => {
+      document.body.style.overflow = '';
       document.removeEventListener('keydown', handleMenuKeyDown);
     };
   }, [isMobileMenuOpen, handleMenuKeyDown]);
@@ -217,6 +232,7 @@ const Header = () => {
       </div>
 
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
+        {console.log('Renderizando Header - isMobileMenuOpen:', isMobileMenuOpen, 'pathname:', location.pathname)}
         <div className="flex items-center">
           <Link to="/" className="flex-shrink-0" aria-label={t('nav.home')}>
             <img className="h-8 w-auto" src={Logo} alt="Logo" />
@@ -224,7 +240,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8" aria-label={t('header.mainNavigation')}>
+        <nav className="hidden md:flex items-center space-x-8" aria-label={t('header.mainNavigation')}>
           <Link 
             to="/" 
             className="text-text-base hover:text-secondary px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
@@ -269,6 +285,10 @@ const Header = () => {
 
         {/* User Menu */}
         <div className="hidden md:flex items-center space-x-4">
+          <div className="w-64" style={{ minWidth: '250px' }}>
+            {console.log('Renderizando SearchBar no desktop')}
+            <SearchBar />
+          </div>
           <UserMenu />
           <LanguageSwitcher />
         </div>
@@ -304,6 +324,7 @@ const Header = () => {
               onClick={() => {
                 const newState = !isMobileMenuOpen;
                 setIsMobileMenuOpen(newState);
+                onMobileMenuToggle?.(newState);
                 if (newState) {
                   // Focar no primeiro item do menu quando abrir
                   setTimeout(() => {
@@ -338,23 +359,29 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Overlay do menu móvel */}
+      <div 
+        className="mobile-menu-overlay"
+        onClick={() => {
+          setIsMobileMenuOpen(false);
+          onMobileMenuToggle?.(false);
+        }}
+        aria-hidden={!isMobileMenuOpen}
+        style={{
+          display: isMobileMenuOpen ? 'block' : 'none',
+          top: '4rem',
+        }}
+      />
+      
       {/* Menu Mobile Dropdown */}
       <div 
-        id="mobile-menu" 
+        id="mobile-menu"
         ref={navRef}
-        className={`md:hidden bg-bg-alt shadow-lg absolute w-full transition-all duration-300 ease-in-out overflow-hidden ${
-          isMobileMenuOpen 
-            ? 'opacity-100 visible max-h-screen py-4' 
-            : 'opacity-0 invisible max-h-0 py-0'
-        }`}
+        className="mobile-menu-container"
         role="menu"
         aria-hidden={!isMobileMenuOpen}
         aria-label={t('header.mobileNavigation')}
         tabIndex={-1}
-        style={{
-          transitionProperty: 'opacity, visibility, max-height, padding',
-          willChange: 'opacity, visibility, max-height, padding'
-        }}
       >
         <div className="px-4 pt-3 pb-1">
           <SearchBar />

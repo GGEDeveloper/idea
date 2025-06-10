@@ -9,14 +9,21 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'pt',
-    debug: true,
+    debug: process.env.NODE_ENV === 'development',
     defaultNS: 'common',
     ns: ['common'],
     interpolation: {
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}/common.json',
+      requestOptions: {
+        cache: 'no-store',
+      },
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
     },
   });
 

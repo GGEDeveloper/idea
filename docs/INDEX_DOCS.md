@@ -5,13 +5,13 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 ## Documentação Técnica
 
 ### Mapeamento de Dados (XML para Base de Dados)
-- [`docs/data_mapping/map_products.md`](./data_mapping/map_products.md): Mapeamento para a tabela `Products`.
-- [`docs/data_mapping/map_categories.md`](./data_mapping/map_categories.md): Mapeamento para a tabela `Categories` (atualizado para incluir contagem de produtos).
-- [`docs/data_mapping/map_product_categories.md`](./data_mapping/map_product_categories.md): Mapeamento para a tabela de junção `ProductCategories`.
-- [`docs/data_mapping/map_units.md`](./data_mapping/map_units.md): Mapeamento para a tabela `Units`.
-- [`docs/data_mapping/map_variants_stock.md`](./data_mapping/map_variants_stock.md): Mapeamento para as tabelas `ProductVariants` e `StockEntries`.
-- [`docs/data_mapping/map_prices.md`](./data_mapping/map_prices.md): Mapeamento para a tabela `Prices`.
-- [`docs/data_mapping/map_images.md`](./data_mapping/map_images.md): Mapeamento para a tabela `ProductImages`.
+- [map_products.md](./data_mapping/map_products.md): Mapeamento para a tabela `Products`.
+- [map_categories.md](./data_mapping/map_categories.md): Mapeamento para a tabela `Categories` (atualizado para incluir contagem de produtos).
+- [map_product_categories.md](./data_mapping/map_product_categories.md): Mapeamento para a tabela de junção `ProductCategories`.
+- [map_units.md](./data_mapping/map_units.md): Mapeamento para a tabela `Units`.
+- [map_variants_stock.md](./data_mapping/map_variants_stock.md): Mapeamento para as tabelas `ProductVariants` e `StockEntries`.
+- [map_prices.md](./data_mapping/map_prices.md): Mapeamento para a tabela `Prices`.
+- [map_images.md](./data_mapping/map_images.md): Mapeamento para a tabela `ProductImages`.
 
 ### Outros Documentos Técnicos
 - [ESTRUTURA_TECNOLOGICA_PROJETO.md](./ESTRUTURA_TECNOLOGICA_PROJETO.md): Stack tecnológico, versões, dependências.
@@ -19,14 +19,16 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [MEMORIA_DESCRITIVA_SITE.md](./MEMORIA_DESCRITIVA_SITE.md): Memória descritiva de todas as páginas, áreas e funcionalidades do site.
 - [RASCUNHO_ESTRUTURA_PROJETO.md](./RASCUNHO_ESTRUTURA_PROJETO.md): Roadmap e estrutura macro do projeto.
 - [RASCUNHO_RULES_PROJETO.md](./RASCUNHO_RULES_PROJETO.md): Regras e políticas do projeto.
-- [Database Schema](./database_schema.md): Detailed specification of the database tables, columns, relationships, and data sources for the Geko product catalog.
-- [Data Import and Synchronization Plan](./data_import_sync_plan.md): Strategy and plan for importing and synchronizing product data from the Geko XML feed.
+- [database_schema.sql](./database_schema.sql): Especificação detalhada das tabelas, colunas e relacionamentos do banco de dados.
+- [data_import_sync_plan.md](./data_import_sync_plan.md): Estratégia e plano para importação e sincronização de dados do feed XML Geko.
+- [FLUXO_DADOS_ARQUITETURA.md](./FLUXO_DADOS_ARQUITETURA.md): Fluxo de dados e arquitetura do sistema.
+- [FRONTEND_CATEGORIES_IMPLEMENTATION.md](./FRONTEND_CATEGORIES_IMPLEMENTATION.md): Detalhes de implementação das categorias no frontend.
 
 ## Logs e Registros
 - [LOG_ERROS.md](./LOG_ERROS.md): Log de erros e resoluções.
 - [LOG_PROMPTS.md](./LOG_PROMPTS.md): Log de prompts, decisões e interações.
 - [LOG_CODE.md](./LOG_CODE.md): Log de implementações, atualizações e decisões técnicas.
-- [.taskmaster/logs/](./.taskmaster/logs/): Logs detalhados das tarefas (incluindo tarefa_002).
+- `.taskmaster/logs/`: Logs detalhados das tarefas (pasta não listada no diretório atual).
 
 ---
 

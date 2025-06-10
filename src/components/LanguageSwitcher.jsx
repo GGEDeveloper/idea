@@ -3,9 +3,21 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GlobeAltIcon, CheckIcon } from '@heroicons/react/24/outline';
 
+// Componente para anunciar mudanças para leitores de tela
+const LiveAnnouncement = ({ message }) => (
+  <div 
+    className="sr-only" 
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    {message}
+  </div>
+);
+
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [announcement, setAnnouncement] = useState('');
   const dropdownRef = useRef(null);
   const { t } = useTranslation();
 
@@ -17,10 +29,15 @@ const LanguageSwitcher = () => {
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
   const changeLanguage = (lng) => {
+    const languageName = languages.find(lang => lang.code === lng)?.name || lng;
     i18n.changeLanguage(lng);
     setIsOpen(false);
     // Salvar preferência no localStorage
     localStorage.setItem('i18nextLng', lng);
+    // Anunciar mudança para leitores de tela
+    setAnnouncement(t('language.changed', { language: languageName }));
+    // Limpar anúncio após 3 segundos
+    setTimeout(() => setAnnouncement(''), 3000);
   };
 
   // Fechar dropdown ao clicar fora
@@ -84,12 +101,14 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="relative ml-3" ref={dropdownRef}>
+      <LiveAnnouncement message={announcement} />
       <button
         ref={buttonRef}
         type="button"
         className={`flex items-center space-x-1 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary rounded-full p-1 ${
-          isOpen ? 'text-secondary' : 'text-text-muted hover:text-secondary'
+          isOpen ? 'text-secondary' : 'text-text-muted hover:text-secondary hover:bg-gray-50'
         }`}
+        style={{ minWidth: '2.5rem' }} // Garante tamanho mínimo para melhor toque
         onClick={() => setIsOpen(!isOpen)}
         onKeyDown={(e) => {
           if (e.key === 'ArrowDown' && !isOpen) {
@@ -99,9 +118,10 @@ const LanguageSwitcher = () => {
         }}
         aria-haspopup="menu"
         aria-expanded={isOpen}
-        aria-label={t('language')}
+        aria-label={`${t('language.label')}: ${currentLanguage.name}`}
         aria-controls="language-menu"
         id="language-button"
+        title={t('language.select')}
       >
         <GlobeAltIcon className="h-5 w-5" />
         <span className="hidden md:inline text-sm font-medium">
@@ -116,7 +136,7 @@ const LanguageSwitcher = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="language-button"
