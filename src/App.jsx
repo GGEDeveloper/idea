@@ -88,7 +88,7 @@ function App() {
           {/* Rotas Públicas */}
           <Route path="/" element={<HomePage />} />
           <Route path="/produtos" element={<ProductsPage />} />
-          <Route path="/produtos/:ean" element={<ProductDetailPage />} />
+          <Route path="/produto/:ean" element={<ProductDetailPage />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/contato" element={<ContactPage />} />
           

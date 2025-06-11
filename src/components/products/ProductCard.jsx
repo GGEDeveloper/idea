@@ -7,8 +7,8 @@ const ProductCard = ({ product, isAuthenticated = false, hasPermission = () => f
   const { t } = useTranslation();
 
   // Formatar preço ajustado (nunca mostrar preço de fornecedor)
-  const productPrice = (isAuthenticated && hasPermission('view_price') && product.price_gross)
-    ? new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price_gross * 1.15) // Exemplo: margem 15%
+    const productPrice = (isAuthenticated && hasPermission('view_price') && product.price)
+    ? new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price * 1.15) // Exemplo: margem 15%
     : (isAuthenticated ? t('Preço sob consulta') : t('Faça login para ver preço'));
 
   // Obter URL da imagem principal
@@ -30,7 +30,7 @@ const ProductCard = ({ product, isAuthenticated = false, hasPermission = () => f
 
   return (
     <Link
-      to={`/produto/${product.id_products || product.id}`}
+      to={`/produto/${product.ean}`}
       className="group block overflow-hidden rounded-lg border border-border-base bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
       aria-label={product.name || t('Produto sem nome')}
     >

@@ -1,4 +1,22 @@
 -- ============================================
+-- Atualização 2025-06: Hierarquia de categorias baseada em PATH
+--
+-- A partir de junho de 2025, a árvore de categorias é construída a partir do campo 'path',
+-- que contém o caminho completo da categoria (ex: 'mae/filho/neta').
+-- O campo 'parent_id' pode ser ignorado para exibição e navegação no frontend.
+--
+-- Exemplo de uso:
+-- SELECT geko_category_id, name, path FROM categories ORDER BY path;
+--
+-- O backend monta a árvore de categorias a partir do campo 'path' (ver função buildCategoryTreeFromPaths).
+--
+-- Estrutura esperada no frontend:
+-- [
+--   { id, name, path, productCount, children: [ ... ] }, ...
+-- ]
+-- ============================================
+
+-- ============================================
 -- Database Schema for Geko B2B Application
 -- Generated: 2025-06-08
 -- ============================================
@@ -50,7 +68,7 @@ CREATE TABLE IF NOT EXISTS product_images (
 CREATE TABLE IF NOT EXISTS categories (
     geko_category_id TEXT PRIMARY KEY,
     name TEXT,
-    parent_id_categories INTEGER REFERENCES categories(geko_category_id)
+    path TEXT
 );
 
 -- ============================================

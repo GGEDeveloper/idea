@@ -64,6 +64,47 @@ const ProductsPage = () => {
     }));
   };
 
+  // NOVO: handler de filtro de categoria (multi-select por id)
+  const handleCategoryChange = (category) => {
+    const categoryId = typeof category === 'object' ? category.id : category;
+    setFilters(prev => {
+      const categories = prev.categories || [];
+      const exists = categories.includes(categoryId);
+      return {
+        ...prev,
+        categories: exists
+          ? categories.filter(c => c !== categoryId)
+          : [...categories, categoryId]
+      };
+    });
+  };
+
+  // NEW: Stock filter handler (toggle boolean)
+  const handleStockChange = () => {
+    setFilters(prev => ({
+      ...prev,
+      stock: !prev.stock
+    }));
+  };
+
+  // NEW: Technical attribute filter handler (multi-select per attribute)
+  const handleAttributeChange = (attrName, value) => {
+    setFilters(prev => {
+      const attributes = prev.attributes ? { ...prev.attributes } : {};
+      const values = attributes[attrName] || [];
+      const exists = values.includes(value);
+      return {
+        ...prev,
+        attributes: {
+          ...attributes,
+          [attrName]: exists
+            ? values.filter(v => v !== value)
+            : [...values, value]
+        }
+      };
+    });
+  };
+
   const handleClearFilters = () => {
     setFilters(prev => ({
       ...prev,
@@ -71,7 +112,10 @@ const ProductsPage = () => {
       price: {
         min: filterOptions.price.min,
         max: filterOptions.price.max
-      }
+      },
+      categories: [],
+      stock: false,
+      attributes: {}
     }));
   };
 
@@ -140,6 +184,9 @@ const ProductsPage = () => {
             filterOptions={filterOptions}
             onBrandChange={handleBrandChange}
             onPriceChange={handlePriceChange}
+            onCategoryChange={handleCategoryChange}
+            onStockChange={handleStockChange}
+            onAttributeChange={handleAttributeChange}
             onClearFilters={handleClearFilters}
           />
 

@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const searchRouter = require('./src/api/search.cjs');
 const productsRouter = require('./src/api/products.cjs');
+const categoriesRouter = require('./src/api/categories.cjs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 // API routes
 app.use('/api/search', searchRouter);
 app.use('/api/products', productsRouter);
+app.use('/api/categories', categoriesRouter);
 
 // Serve static files from Vite build (if applicable)
 app.use(express.static(path.join(__dirname, 'dist')));

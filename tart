@@ -1,0 +1,54 @@
+ geko_category_id |               name               | parent_geko_category_id |                                    path                                     
+------------------+----------------------------------+-------------------------+-----------------------------------------------------------------------------
+ 110245           | Brushes for A Burnishing Machine |                         | Abrasive Materials\Brushes for A Burnishing Machine
+ 107859           | Brush Brushes                    |                         | Abrasive Materials\Brushes\Brush Brushes
+ 107860           | Butt Brushes With Braided Wire   |                         | Abrasive Materials\Brushes\Butt Brushes With Braided Wire
+ 107861           | Butt Brushes With Crimped Wire   |                         | Abrasive Materials\Brushes\Butt Brushes With Crimped Wire
+ 107857           | Disc Brushes With Braided Wire   |                         | Abrasive Materials\Brushes\Disc Brushes With Braided Wire
+ 107858           | Disc Brushes With Crimped Wire   |                         | Abrasive Materials\Brushes\Disc Brushes With Crimped Wire
+ 107856           | Non-woven Fabrics for Cleaning   |                         | Abrasive Materials\Brushes\Non-woven Fabrics for Cleaning
+ 107863           | Nylon Brushes                    |                         | Abrasive Materials\Brushes\Nylon Brushes
+ 107862           | Wire Brushes                     |                         | Abrasive Materials\Brushes\Wire Brushes
+ 107864           | Discs for Bench Grinders         |                         | Abrasive Materials\Discs for Bench Grinders
+ 107865           | 125mm                            |                         | Abrasive Materials\Discs for Orbital-rotary Sanders\125mm
+ 107967           | 150mm                            |                         | Abrasive Materials\Discs for Orbital-rotary Sanders\150mm
+ 107866           | 190mm                            |                         | Abrasive Materials\Discs for Orbital-rotary Sanders\190mm
+ 107867           | 225mm                            |                         | Abrasive Materials\Discs for Orbital-rotary Sanders\225mm
+ 105569           | Endless Abrasive Belts           |                         | Abrasive Materials\Endless Abrasive Belts
+ 105574           | Felt Discs                       |                         | Abrasive Materials\Felt Discs
+ 105581           | Fiber Discs                      |                         | Abrasive Materials\Fiber Discs
+ 105575           | Flap Discs (Type 29 Conical)     |                         | Abrasive Materials\Flap Discs (Type 29 Conical)
+ 107852           | Manual Sanding                   |                         | Abrasive Materials\Manual Sanding
+ 107955           | Abrasive Sheets                  |                         | Abrasive Materials\Manual Sanding\Abrasive Sheets
+ 107855           | Accessories                      |                         | Abrasive Materials\Manual Sanding\Accessories
+ 107850           | Shank Flap Wheels                |                         | Abrasive Materials\Shank Flap Wheels
+ 105587           | Sharpening Discs                 |                         | Abrasive Materials\Sharpening Discs
+ 107854           | Sharpening Stones                |                         | Abrasive Materials\Sharpening Stones
+ 107851           | Sponges and Polishing Pads       |                         | Abrasive Materials\Sponges and Polishing Pads
+ 108636           | Stoneware Grinding Discs         |                         | Abrasive Materials\Stoneware Grinding Discs
+ 105573           | Velcro Pads                      |                         | Abrasive Materials\Velcro Pads
+ 107705           | Construction and Renovation      |                         | Construction and Renovation
+ 107763           | Agitators                        |                         | Construction and Renovation\Agitators
+ 112529           | Akcesoria do kominów             |                         | Construction and Renovation\Akcesoria do kominów
+ 112778           | Betoniarki                       |                         | Construction and Renovation\Betoniarki
+ 109845           | Rollers                          |                         | Construction and Renovation\Brushes, Rollers, Accessories\Rollers
+ 107760           | Chisels, Chisels and Punches     |                         | Construction and Renovation\Chisels, Chisels and Punches
+ 110347           | Clamps and Handles               |                         | Construction and Renovation\Clamps and Handles
+ 107801           | Angles                           |                         | Construction and Renovation\Clamps, Vices and Squares\Angles
+ 107797           | Concrete Vibrators               |                         | Construction and Renovation\Concrete Vibrators
+ 107762           | Crowbars                         |                         | Construction and Renovation\Crowbars
+ 107761           | Electric Cable Winches           |                         | Construction and Renovation\Electric Cable Winches
+ 107932           | Hand Saws                        |                         | Construction and Renovation\Hand Saws
+ 110317           | Ladders                          |                         | Construction and Renovation\Ladders
+ 107799           | Masonry Hammers                  |                         | Construction and Renovation\Masonry Hammers
+ 112528           | Materiały do znakowania          |                         | Construction and Renovation\Materiały do znakowania
+ 112558           | Oświetlenie robocze              |                         | Construction and Renovation\Oświetlenie robocze
+ 109773           | Painting Accessories             |                         | Construction and Renovation\Painting Accessories
+ 107800           | Painting Guns and Units          |                         | Construction and Renovation\Painting Guns and Units
+ 107798           | Rubber Hammers                   |                         | Construction and Renovation\Rubber Hammers
+ 107759           | Thermal Knives                   |                         | Construction and Renovation\Thermal Knives
+ 112530           | Akcesoria                        |                         | Construction and Renovation\Tile Cutting Tools and Accessories\Akcesoria
+ 109751           | Suction Cups                     |                         | Construction and Renovation\Tile Cutting Tools and Accessories\Suction Cups
+ 107841           | Cutting and Grinding Discs       |                         | Cutting Tools\Cutting and Grinding Discs
+(50 rows)
+

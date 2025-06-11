@@ -55,3 +55,47 @@ Responsável por:
 - Implementar carregamento lazy para imagens
 - Adicionar animações mais elaboradas
 - Suporte a múltiplos idiomas para os nomes das categorias
+
+# Implementação de Árvore de Categorias Dinâmicas (2025)
+
+## Mudança principal
+A partir de junho de 2025, a árvore de categorias exibida no frontend (sidebar de filtros e navegação) passou a ser construída a partir do campo `path` da tabela `categories` no banco de dados, e não mais do campo `parent_id`.
+
+- O backend agora utiliza a função `buildCategoryTreeFromPaths` para montar a hierarquia de categorias a partir do campo `path`.
+- O endpoint `/api/products/filters` retorna a árvore de categorias já aninhada, com cada nó contendo um array `children`.
+- O frontend consome essa estrutura e exibe a árvore navegável normalmente.
+
+## Exemplo de estrutura retornada
+
+```
+[
+  {
+    "id": "1",
+    "name": "Eletrônicos",
+    "path": "eletronicos",
+    "productCount": 120,
+    "children": [
+      {
+        "id": "2",
+        "name": "Celulares",
+        "path": "eletronicos/celulares",
+        "productCount": 40,
+        "children": []
+      },
+      ...
+    ]
+  },
+  ...
+]
+```
+
+## Observações
+- O campo `parent_id` pode ser ignorado para exibição e navegação.
+- O campo `path` deve ser único e refletir a hierarquia completa (ex: `mae/filho/neta`).
+- O frontend espera o array `categories` já aninhado.
+
+## Referências
+- Veja `src/api/products.cjs` para a função `buildCategoryTreeFromPaths`.
+- Veja `CategoryTree.jsx` para renderização recursiva da árvore.
+
+---

@@ -6,6 +6,19 @@
  * Busca as categorias disponíveis
  * @returns {Promise<Array>} Lista de categorias
  */
+export const getCategoryTree = async () => {
+  try {
+    const response = await fetch('/api/categories/tree');
+    if (!response.ok) {
+      throw new Error('Erro ao buscar a árvore de categorias');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Erro ao buscar a árvore de categorias:', error);
+    return []; // Retorna um array vazio em caso de erro
+  }
+};
+
 export const getCategories = async () => {
   try {
     const response = await fetch('/api/products/categories');

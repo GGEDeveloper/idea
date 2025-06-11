@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
+import CategoryTree from './CategoryTree';
 
 const FilterCheckbox = ({ id, label, checked, onChange, disabled, ariaLabel }) => (
   <div className="flex items-center">
@@ -41,8 +43,9 @@ const FilterSidebar = ({
   const { t, i18n } = useTranslation();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
+
   // Logging helper
-  const logFilterEvent = (event, details) => {
+  const logFilterEvent = useCallback((event, details) => {
     console.log(`[FilterSidebar][${event}]`, {
       userId: user?.id,
       isAuthenticated,
@@ -50,7 +53,7 @@ const FilterSidebar = ({
       ...details,
       timestamp: new Date().toISOString(),
     });
-  };
+  }, [user, isAuthenticated]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +73,7 @@ const FilterSidebar = ({
       showPrice: isAuthenticated && hasPermission('view_price'),
       showStock: isAuthenticated && hasPermission('view_stock'),
     });
-  }, [isAuthenticated, hasPermission]);
+  }, [isAuthenticated, hasPermission, logFilterEvent]);
 
   if (isMobile && !isOpen) return null;
 
@@ -115,22 +118,14 @@ const FilterSidebar = ({
           </button>
         </div>
 
-        {/* Categoria */}
-        <FilterSection title={t('Categoria')}>
+        {/* Categorias */}
+        <FilterSection title={t('Categorias')}>
           {filterOptions.categories && filterOptions.categories.length > 0 ? (
-            filterOptions.categories.map((cat) => (
-              <FilterCheckbox
-                key={cat}
-                id={`cat-${cat}`}
-                label={cat}
-                checked={filters.categories?.includes(cat) || false}
-                onChange={() => {
-                  onCategoryChange(cat);
-                  logFilterEvent('category_change', { category: cat });
-                }}
-                ariaLabel={t('Filtro') + ': ' + t('Categoria') + ' ' + cat}
-              />
-            ))
+            <CategoryTree
+              categories={filterOptions.categories}
+              selectedCategories={filters.categories || []}
+              onCategorySelect={onCategoryChange}
+            />
           ) : (
             <p className="text-sm text-text-muted">{t('Nenhuma categoria disponível')}</p>
           )}

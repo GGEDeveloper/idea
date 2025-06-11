@@ -134,6 +134,35 @@ pie
 
 ## 📅 Histórico de Atualizações
 
+---
+
+### **ID 005: Correção Abrangente de Filtros e Permissões (Página de Produtos)**
+
+- **Data:** 2025-06-12
+- **Responsável:** Cascade AI
+- **Módulos Afetados:** `src/hooks/useProducts.js`, `src/components/products/ProductCard.jsx`, `src/components/products/FilterSidebar.jsx`
+
+**Descrição Detalhada:**
+
+Realizada uma série de correções e refatorações para resolver múltiplos problemas na página de listagem de produtos, que impediam a correta exibição de filtros, preços e funcionalidades de compra.
+
+**Alterações Implementadas:**
+
+1.  **Refatoração da Lógica de Filtragem (`useProducts.js`):**
+    - A lógica de filtragem, que era executada no lado do cliente, foi movida para o backend. O hook `useProducts` foi modificado para construir uma query string com os filtros selecionados (marcas, categorias, preço) e enviá-la para a API (`/api/products`).
+    - Resolvido um problema de "estado obsoleto" (*stale state*) ao garantir que a função `fetchProducts` recebe sempre a versão mais atualizada dos filtros como argumento.
+
+2.  **Correção da Exibição de Preços (`ProductCard.jsx`):**
+    - O componente foi atualizado para ler a propriedade `product.price` em vez de `product.price_gross`, alinhando-o com os dados retornados pela API e corrigindo a exibição dos preços.
+
+3.  **Otimização da Barra de Filtros (`FilterSidebar.jsx`):**
+    - Removida uma chamada de API redundante que buscava as categorias de forma independente, fazendo com que o componente passasse a usar os `filterOptions` recebidos via props.
+    - Corrigida a incompatibilidade de nomes de props (`nodes` -> `categories`, `onCategoryChange` -> `onCategorySelect`) na comunicação com o componente `CategoryTree`.
+
+4.  **Diagnóstico de Permissões (`AuthContext.jsx`):**
+    - Identificado que o botão "Adicionar ao Carrinho" não era exibido devido à ausência da permissão `add_to_cart` nos metadados do utilizador no Clerk.
+    - A solução foi aplicada diretamente no painel do Clerk, sem alteração de código, validando o correto funcionamento do `AuthContext`.
+
 | Versão | Data       | Descrição                         | Responsável      |
 |--------|------------|-----------------------------------|------------------|
 | 2.0.0  | 2025-06-09 | Reestruturação completa do documento | Equipe de Dev    |
