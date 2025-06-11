@@ -308,4 +308,16 @@ gantt
 **Estado:** Resolvido
 
 ---
+## 2025-06-11 - Rastreamento de Erros: Início da Task 005 (Home Page)
+
+### Status
+- Nenhum erro pendente após Task 004 (Database Schema Design and Setup)
+- Task 005 iniciada conforme regras de logging e rastreabilidade (ver RASCUNHO_RULES_PROJETO.md)
+- Todos os erros críticos, altos e médios resolvidos até o momento
+
+### Observação
+- Manter logs detalhados de eventuais erros ou avisos durante a implementação da Home Page
+- Seguir políticas de notificação e validação humana em caso de erro crítico
+
+---
 *Última atualização: 2025-06-09T02:35:00+01:00*

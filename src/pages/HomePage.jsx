@@ -5,42 +5,61 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { Link } from 'react-router-dom';
 import { getCategories, getCategoryIcon, getCategoryColor } from '../services/categoryService';
+import { useProducts } from '../hooks/useProducts';
+import { useAuth } from '../contexts/AuthContext';
+import { useTranslation } from 'react-i18next';
 
 // Produtos caros de diferentes categorias (pode customizar à vontade)
-const expensiveProducts = [
-  {
-    name: 'Berbequim Profissional 1500W',
-    image: '/produtos/berbequim_profissional.png',
-    price: '€249,99',
-    category: 'Ferramentas Elétricas',
-    badge: 'TOP',
-  },
-  {
-    name: 'Corta-Relva Automático',
-    image: '/produtos/corta_relva_auto.png',
-    price: '€499,00',
-    category: 'Jardim',
-    badge: 'Premium',
-  },
-  {
-    name: 'Compressor Industrial 50L',
-    image: '/produtos/compressor_industrial.png',
-    price: '€329,00',
-    category: 'Oficina',
-    badge: 'TOP',
-  },
-  {
-    name: 'Escada Telescópica Premium',
-    image: '/produtos/escada_telescopica.png',
-    price: '€199,00',
-    category: 'Construção',
-    badge: 'Premium',
-  },
-];
+// const expensiveProducts = [
+//   {
+//     name: 'Berbequim Profissional 1500W',
+//     image: '/produtos/berbequim_profissional.png',
+//     price: '€249,99',
+//     category: 'Ferramentas Elétricas',
+//     badge: 'TOP',
+//   },
+//   {
+//     name: 'Corta-Relva Automático',
+//     image: '/produtos/corta_relva_auto.png',
+//     price: '€499,00',
+//     category: 'Jardim',
+//     badge: 'Premium',
+//   },
+//   {
+//     name: 'Compressor Industrial 50L',
+//     image: '/produtos/compressor_industrial.png',
+//     price: '€329,00',
+//     category: 'Oficina',
+//     badge: 'TOP',
+//   },
+//   {
+//     name: 'Escada Telescópica Premium',
+//     image: '/produtos/escada_telescopica.png',
+//     price: '€199,00',
+//     category: 'Construção',
+//     badge: 'Premium',
+//   },
+// ];
 
 // Produtos caros de diferentes categorias (exemplo)
 // Carrossel 3D sofisticado com SwiperJS
-function ProductCarousel3D({ products }) {
+function ProductCarousel3D({ products, isAuthenticated, hasPermission }) {
+  const { t } = useTranslation();
+
+  // Logging de exibição dos produtos do carrossel
+  React.useEffect(() => {
+    products.forEach(product => {
+      // eslint-disable-next-line no-console
+      console.log('[LOG][carousel_render]', {
+        event: 'carousel_product_render',
+        ean: product.ean,
+        isAuthenticated,
+        canViewPrice: hasPermission && hasPermission('view_price'),
+        timestamp: new Date().toISOString(),
+      });
+    });
+  }, [products, isAuthenticated, hasPermission]);
+
   return (
     <div className="w-full max-w-2xl mx-auto px-2 md:px-0 mb-2 mt-4">
       <Swiper
@@ -65,8 +84,14 @@ function ProductCarousel3D({ products }) {
         className="mySwiper"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.name}>
-            <div className="relative bg-white rounded-2xl shadow-xl flex flex-col items-center p-4 border-4 border-primary min-w-[180px] max-w-[220px] min-h-[220px] mx-auto group hover:scale-105 transition-transform duration-300">
+          <SwiperSlide key={product.ean || product.name}>
+            <Link
+              to={product.ean ? `/produto/${product.ean}` : '#'}
+              className="relative bg-white rounded-2xl shadow-xl flex flex-col items-center p-4 border-4 border-primary min-w-[180px] max-w-[220px] min-h-[240px] mx-auto group hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
+              tabIndex={product.ean ? 0 : -1}
+              aria-disabled={!product.ean}
+              style={{ pointerEvents: product.ean ? 'auto' : 'none' }}
+            >
               {/* Badge Premium/Top */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 via-indigo-400 to-yellow-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-lg animate-pulse z-10">
                 {product.badge}
@@ -79,10 +104,17 @@ function ProductCarousel3D({ products }) {
                 />
                 <span className="absolute inset-0 rounded-full blur-2xl opacity-50 bg-gradient-to-tr from-yellow-300 via-indigo-200 to-yellow-100 z-0"></span>
               </div>
-              <div className="text-lg font-bold text-secondary text-center z-10">{product.name}</div>
+              <div className="text-lg font-bold text-secondary text-center z-10 line-clamp-2 mb-1">{product.name}</div>
               <div className="text-sm text-gray-600 mb-1 z-10">{product.category}</div>
-              <div className="text-xl font-extrabold text-primary z-10">{product.price}</div>
-            </div>
+              <div className="text-xl font-extrabold text-primary z-10 mb-2">
+                {isAuthenticated && hasPermission && hasPermission('view_price') && product.price
+                  ? product.price
+                  : (isAuthenticated
+                      ? t('Preço sob consulta')
+                      : t('Faça login para ver preço'))}
+              </div>
+              <span className="inline-block mt-auto bg-primary text-white text-xs font-semibold px-4 py-2 rounded-full shadow hover:bg-secondary hover:text-primary transition-colors">{t('Ver detalhes')}</span>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -94,6 +126,10 @@ const HomePage = () => {
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  // Buscar produtos reais
+  const { products, loading: loadingProducts, error: errorProducts } = useProducts();
+  const { isAuthenticated, hasPermission } = useAuth();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -111,6 +147,61 @@ const HomePage = () => {
 
     fetchCategories();
   }, []);
+
+  // Selecionar os produtos mais caros (top 4 por preço)
+  let expensiveProducts = [];
+  if (products && products.length > 0) {
+    expensiveProducts = [...products]
+      .filter(p => p.price)
+      .sort((a, b) => Number(b.price) - Number(a.price))
+      .slice(0, 4)
+      .map(p => ({
+        name: p.name,
+        image: p.image_url || '/placeholder-product.jpg',
+        price: new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(Number(p.price)),
+        category: p.categoryname || '',
+        badge: 'TOP',
+        ean: p.ean,
+      }));
+  }
+  // Fallback para mock se não houver produtos reais
+  if (expensiveProducts.length === 0) {
+    expensiveProducts = [
+      {
+        name: 'Berbequim Profissional 1500W',
+        image: '/produtos/berbequim_profissional.png',
+        price: '€249,99',
+        category: 'Ferramentas Elétricas',
+        badge: 'TOP',
+        ean: '',
+      },
+      {
+        name: 'Corta-Relva Automático',
+        image: '/produtos/corta_relva_auto.png',
+        price: '€499,00',
+        category: 'Jardim',
+        badge: 'Premium',
+        ean: '',
+      },
+      {
+        name: 'Compressor Industrial 50L',
+        image: '/produtos/compressor_industrial.png',
+        price: '€329,00',
+        category: 'Oficina',
+        badge: 'TOP',
+        ean: '',
+      },
+      {
+        name: 'Escada Telescópica Premium',
+        image: '/produtos/escada_telescopica.png',
+        price: '€199,00',
+        category: 'Construção',
+        badge: 'Premium',
+        ean: '',
+      },
+    ];
+  }
+
   return (
     <div className="space-y-16 bg-bg-base bg-gradient-to-b from-bg-base to-[#e5e7eb]">
       {/* Hero Section Animado 3D */}
@@ -128,7 +219,7 @@ const HomePage = () => {
         <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-secondary text-center mb-2 drop-shadow-lg">A MARCA DAS MARCAS</h1>
         <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
         {/* Carrossel 3D de produtos caros */}
-        <ProductCarousel3D products={expensiveProducts} />
+        <ProductCarousel3D products={expensiveProducts} isAuthenticated={isAuthenticated} hasPermission={hasPermission} />
         <a href="/produtos" className="relative z-10 inline-block px-8 py-4 mt-8 rounded-full bg-primary text-white font-bold text-lg shadow-xl hover:bg-secondary hover:text-primary transition-colors">Ver Produtos</a>
       </section>
 
@@ -195,6 +286,56 @@ const HomePage = () => {
                 Ver todas as categorias
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Seção Novidades */}
+      <section className="bg-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold text-primary mb-4">Novidades</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Confira os produtos mais recentes adicionados ao nosso catálogo.</p>
+          </div>
+          {loadingProducts ? (
+            <div className="text-center py-16">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-primary"></div>
+              <p className="mt-4 text-primary text-lg">Carregando novidades...</p>
+            </div>
+          ) : errorProducts ? (
+            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+              <i className="fas fa-exclamation-triangle text-3xl mb-3"></i>
+              <p className="text-lg font-medium">Não foi possível carregar as novidades</p>
+              <p className="text-sm mt-2">{errorProducts}</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+              {(products && products.length > 0 ? [...products].slice(0, 4) : [
+                { name: 'Produto Novo 1', image_url: '/placeholder-product.jpg', price: '€0,00', categoryname: 'Categoria' },
+                { name: 'Produto Novo 2', image_url: '/placeholder-product.jpg', price: '€0,00', categoryname: 'Categoria' },
+                { name: 'Produto Novo 3', image_url: '/placeholder-product.jpg', price: '€0,00', categoryname: 'Categoria' },
+                { name: 'Produto Novo 4', image_url: '/placeholder-product.jpg', price: '€0,00', categoryname: 'Categoria' },
+              ]).map((product, idx) => {
+                let priceContent;
+                if (isAuthenticated && hasPermission && hasPermission('view_price') && product.price) {
+                  priceContent = typeof product.price === 'number'
+                    ? new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price)
+                    : product.price;
+                } else if (isAuthenticated) {
+                  priceContent = t('Preço sob consulta');
+                } else {
+                  priceContent = t('Faça login para ver preço');
+                }
+                return (
+                  <div key={product.name + idx} className="bg-bg-alt rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <img src={product.image_url || '/placeholder-product.jpg'} alt={product.name} className="h-24 w-24 object-contain mb-4 rounded" />
+                    <h3 className="text-lg font-bold text-text-base text-center mb-1">{product.name}</h3>
+                    <p className="text-sm text-gray-500 mb-2">{product.categoryname || 'Categoria'}</p>
+                    <span className="text-primary font-extrabold text-xl" aria-label={typeof priceContent === 'string' ? priceContent : undefined}>{priceContent}</span>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>

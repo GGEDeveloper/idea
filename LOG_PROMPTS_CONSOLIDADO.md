@@ -1,6 +1,6 @@
 # 📋 LOG DE DECISÕES E REQUISITOS
 
-> **Última Atualização:** 2025-06-09T02:35:00+01:00  
+> **Última Atualização:** 2025-06-11T02:35:00+01:00  
 > **Responsável:** Product Owner & Equipe de Desenvolvimento  
 > **Versão do Documento:** 2.0.0
 
@@ -148,7 +148,7 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 
 ---
 
-> 📝 **Nota:** Este documento é atualizado continuamente. Última atualização em 2025-06-09T02:35:00+01:00
+> 📝 **Nota:** Este documento é atualizado continuamente. Última atualização em 2025-06-11T02:35:00+01:00
 
 ---
 ## 2025-06-09 - Decisões de Design do Cabeçalho
@@ -311,4 +311,22 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 **Estado:** Concluído
 
 ---
-*Última atualização: 2025-06-09T02:40:00+01:00*
+## 2025-06-11 - Decisão de Produto: Início da Task 005 (Home Page)
+
+### Contexto
+- Task 004 (Database Schema Design and Setup) concluída
+- Task 005 (Home Page) marcada como próxima prioridade
+- Seguindo as regras de rastreabilidade, logging e validação humana do projeto (ver RASCUNHO_RULES_PROJETO.md)
+
+### Decisão
+- Iniciar implementação da estrutura da Home Page
+- Garantir logging detalhado de todas as ações e decisões
+- Cumprir requisitos de responsividade, acessibilidade e rastreabilidade
+
+### Próximos Passos
+- Implementar layout base (5.1)
+- Criar placeholders de seções (5.2)
+- Integrar dados reais dos produtos (5.3)
+
+---
+*Última atualização: 2025-06-11T02:40:00+01:00*

@@ -3,7 +3,11 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import FilterSidebar from '../components/products/FilterSidebar';
 import ProductCard from '../components/products/ProductCard';
+import ProductGrid from '../components/products/ProductGrid';
 import { useProducts } from '../hooks/useProducts';
+import { useAuth } from '../contexts/AuthContext';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
 const ProductsPage = () => {
   const [searchParams] = useSearchParams();
@@ -21,10 +25,23 @@ const ProductsPage = () => {
     setSearchQuery
   } = useProducts(searchQuery);
 
+  const { isAuthenticated, hasPermission, user } = useAuth();
+  const { t } = useTranslation();
+
   // Atualizar a busca quando o parâmetro da URL mudar
   useEffect(() => {
     setSearchQuery(searchQuery);
   }, [searchQuery, setSearchQuery]);
+
+  // Logging de permissão e autenticação
+  useEffect(() => {
+    console.log('[ProductsPage] Render', {
+      isAuthenticated,
+      userId: user?.id,
+      permissions: user?.publicMetadata?.permissions,
+      timestamp: new Date().toISOString(),
+    });
+  }, [isAuthenticated, user]);
 
   // Handlers
   const handleBrandChange = (brand) => {
@@ -84,7 +101,7 @@ const ProductsPage = () => {
         {/* Cabeçalho */}
         <header className="mb-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-text-base tracking-tight">
-            {searchQuery ? `Resultados para: "${searchQuery}"` : 'Nossos Produtos'}
+            {searchQuery ? t('Resultados para: "{{query}}"', { query: searchQuery }) : t('Nossos Produtos')}
           </h1>
           <div className="mt-3 flex justify-center items-center flex-wrap">
             {searchQuery && (
@@ -93,13 +110,13 @@ const ProductsPage = () => {
                 className="flex items-center text-sm text-primary hover:text-secondary mr-4 mb-2"
               >
                 <XMarkIcon className="h-4 w-4 mr-1" />
-                Limpar busca
+                {t('Limpar busca')}
               </button>
             )}
             <p className="text-lg text-text-muted max-w-2xl">
-              {searchQuery 
-                ? `${filteredProducts.length} ${filteredProducts.length === 1 ? 'resultado encontrado' : 'resultados encontrados'}`
-                : 'Encontre a ferramenta perfeita para o seu projeto, com a ajuda dos nossos filtros especializados.'}
+              {searchQuery
+                ? t('{{count}} resultado(s) encontrado(s)', { count: filteredProducts.length })
+                : t('Encontre a ferramenta perfeita para o seu projeto, com a ajuda dos nossos filtros especializados.')}
             </p>
           </div>
         </header>
@@ -141,27 +158,25 @@ const ProductsPage = () => {
               </div>
             ) : filteredProducts.length === 0 ? (
               <div className="text-center py-12">
-                <h3 className="text-lg font-medium text-text-base mb-2">Nenhum produto encontrado</h3>
-                <p className="text-text-muted mb-4">Tente ajustar seus filtros ou busca</p>
+                <h3 className="text-lg font-medium text-text-base mb-2">{t('Nenhum produto encontrado')}</h3>
+                <p className="text-text-muted mb-4">{t('Tente ajustar seus filtros ou busca')}</p>
                 <button
                   onClick={handleClearFilters}
                   className="text-primary hover:text-primary-dark font-medium"
                 >
-                  Limpar todos os filtros
+                  {t('Limpar todos os filtros')}
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.map((product) => {
-                  const uniqueKey = product.id_products || product.id || `product-${Math.random().toString(36).substr(2, 9)}`;
-                  return (
-                    <ProductCard 
-                      key={uniqueKey}
-                      product={product} 
-                    />
-                  );
-                })}
-              </div>
+              <ProductGrid
+                products={filteredProducts}
+                isAuthenticated={isAuthenticated}
+                hasPermission={hasPermission}
+                onLog={(log) => {
+                  // Logging detalhado de exibição e permissão
+                  console.log('[ProductCard][log]', log);
+                }}
+              />
             )}
           </main>
         </div>

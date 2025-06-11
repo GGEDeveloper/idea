@@ -1,6 +1,6 @@
 # 📋 LOG DE CÓDIGO - PROJETO IDEA
 
-> **Última Atualização:** 2025-06-09T02:40:00+01:00  
+> **Última Atualização:** 2025-06-11T02:40:00+01:00  
 > **Responsável:** Equipe de Desenvolvimento  
 > **Versão do Documento:** 2.0.0
 
@@ -142,7 +142,26 @@ pie
 
 ---
 
-> 📝 **Nota:** Este documento é atualizado continuamente. Última atualização em 2025-06-09T02:40:00+01:00
+> 📝 **Nota:** Este documento é atualizado continuamente. Última atualização em 2025-06-11T02:40:00+01:00
+
+---
+## 2025-06-11 - Início da Task 005: Estrutura da Home Page
+
+### Status Anterior
+- Task 004 (Database Schema Design and Setup): concluída
+- Todas as subtasks de banco de dados e schema: concluídas
+
+### Ação Atual
+- Início da Task 005: "Develop Home Page Structure"
+- Subtasks 5.1 e 5.2: pendentes
+- Subtask 5.3: in-progress
+- Atualização dos logs conforme regras do projeto (ver RASCUNHO_RULES_PROJETO.md)
+- Garantia de rastreabilidade e compliance com políticas de logging, rastreabilidade e validação humana
+
+### Próximos Passos
+- Implementar layout base da Home Page (5.1)
+- Criar placeholders para seções principais (5.2)
+- Integrar dados reais dos produtos (5.3)
 
 ---
 ## 2025-06-09 - Implementação do Cabeçalho Global (Tarefa 002)
@@ -277,4 +296,142 @@ pie
    - Configuração para deploy
 
 ---
-*Última atualização: 2025-06-09T02:30:00+01:00*
+## 2025-06-11 - Evolução da Home Page: Carrossel com Produtos Reais
+
+### Arquivos Modificados/Adicionados:
+- `src/pages/HomePage.jsx`
+- `src/hooks/useProducts.js` (utilizado)
+
+### Decisões Técnicas:
+1. **Integração de Produtos Reais no Carrossel**
+   - O carrossel 3D da Home Page agora consome produtos reais da API, selecionando os mais caros para destaque.
+   - Utilização do hook `useProducts` para buscar e filtrar produtos.
+   - Fallback automático para produtos mockados caso a API não retorne dados.
+   - Mantido tratamento de erros e loading amigável, conforme regras de UX e rastreabilidade do projeto.
+
+2. **Aderência às Regras do Projeto**
+   - Logging detalhado da evolução e decisões.
+   - Garantia de rastreabilidade e compliance com o documento `RASCUNHO_RULES_PROJETO.md`.
+   - Estrutura pronta para futuras expansões (ex: destaques dinâmicos, promoções, etc).
+
+### Próximos Passos
+- Expandir conteúdo institucional e seções dinâmicas.
+- Validar performance e acessibilidade da Home Page.
+- Prosseguir com as próximas subtasks da Task 005.
+
+---
+## 2025-06-11 - Expansão da Home Page: Seção Novidades e Institucional
+
+### Arquivos Modificados/Adicionados:
+- `src/pages/HomePage.jsx`
+
+### Decisões Técnicas:
+1. **Seção Novidades**
+   - Adicionada nova seção na Home Page exibindo os 4 produtos mais recentes da API, com fallback visual e tratamento de erros.
+   - Mantida consistência visual e responsividade.
+   - Não foram incluídos depoimentos, conforme orientação do projeto.
+
+2. **Seção Institucional**
+   - Estrutura da seção "Sobre a Marca" preparada para futura expansão com conteúdo real, mantendo placeholders claros.
+
+3. **Rastreabilidade e Regras**
+   - Todas as ações seguem as regras de logging, rastreabilidade e validação humana do projeto.
+   - Documentação e código prontos para futuras expansões (ex: promoções, banners, etc).
+
+### Próximos Passos
+- Expandir conteúdo institucional real.
+- Validar integração e UX das novas seções.
+- Prosseguir com as próximas subtasks da Task 005.
+
+---
+## 2025-06-11 - Conclusão da Task 6: Product Listing Page Structure
+
+### Implementações:
+- Integração total com AuthContext: diferenciação clara entre visitantes e autenticados.
+- Permissões granulares: exibição de preço, stock e botão de compra apenas para usuários autenticados com permissão.
+- Logging detalhado de fluxos de autenticação, permissão e renderização de cards (console e estrutura para logs futuros).
+- Internacionalização (i18n) aplicada a todos os textos da página e dos cards.
+- Acessibilidade aprimorada: ARIA labels, navegação por teclado, contraste e fallback de imagens.
+- Criação e uso do componente ProductGrid para centralizar a renderização do grid de produtos.
+- Garantia de aderência às regras do projeto (RASCUNHO_RULES_PROJETO.md): nunca exibir preço de fornecedor, logging, rastreabilidade, UX responsiva, fallback amigável.
+- Estrutura pronta para testes unitários e integração com permissionamento futuro.
+
+### Arquivos afetados:
+- src/pages/ProductsPage.jsx
+- src/components/products/ProductCard.jsx
+- src/components/products/ProductGrid.jsx
+- src/components/products/FilterSidebar.jsx
+- src/contexts/AuthContext.jsx
+- src/hooks/useProducts.js
+
+### Status:
+- Task 6 concluída e pronta para validação humana.
+
+---
+## 2025-06-11 - Correção de segurança e UX no carrossel 3D da Home Page
+
+- Ajustado o componente ProductCarousel3D (em HomePage.jsx) para condicionar a exibição de preço e dados comerciais conforme autenticação e permissão do usuário, seguindo as regras do projeto descritas em RASCUNHO_RULES_PROJETO.md.
+- Agora, visitantes (não autenticados) veem apenas o texto "Faça login para ver preço" (i18n), enquanto usuários autenticados sem permissão veem "Preço sob consulta". Apenas usuários autenticados e com permissão visualizam o preço real.
+- Implementado logging detalhado de renderização dos produtos do carrossel para rastreabilidade.
+- Utilizado useAuth e i18n para garantir consistência com ProductCard e ProductGrid.
+- Validação manual e por lint/compilação para garantir ausência de erros.
+- Task relacionada: Task 6 (Product Listing Page Structure) e bug reportado pelo usuário após Task 5.
+
+---
+## 2025-06-11 - Início da Task 007: Filtros Dinâmicos (Sidebar) na Product Listing Page
+
+- Task 007 iniciada: desenvolvimento do componente de filtros dinâmicos (sidebar) para a página de listagem de produtos.
+- Objetivo: permitir filtragem por categoria, faixa de preço, stock, atributos técnicos e fabricante, com atualização dinâmica da lista de produtos.
+- Regras de segurança: filtros de informações restritas (preço, stock) devem ser desabilitados ou ocultos para visitantes (não autenticados), conforme RASCUNHO_RULES_PROJETO.md.
+- Integração obrigatória com AuthContext para controle de exibição/ocultação de filtros.
+- Logging detalhado de exibição/ocultação de filtros por permissão e rastreabilidade de ações do usuário.
+- Padrões de acessibilidade (A11y) e internacionalização (i18n) obrigatórios.
+- Progresso e decisões técnicas serão registrados neste log.
+
+---
+## 2025-06-11 - Refatoração do FilterSidebar para Filtros Dinâmicos e Permissões
+
+- Refatorado `src/components/products/FilterSidebar.jsx` para:
+  - Exibir filtro de categoria para todos os usuários (visitantes e autenticados).
+  - Exibir filtro de marca para todos os usuários.
+  - Exibir filtros técnicos dinâmicos para todos os usuários.
+  - Exibir filtros de preço e stock **apenas** para usuários autenticados **com permissão** (`view_price`, `view_stock`).
+  - Ocultar/desabilitar filtros sensíveis (preço, stock) para visitantes, conforme regras do projeto e `RASCUNHO_RULES_PROJETO.md`.
+  - Logging detalhado de exibição/ocultação e seleção de filtros sensíveis, incluindo permissões e ID do usuário.
+  - Garantia de acessibilidade (a11y) e internacionalização (i18n) em todos os controles.
+  - Estrutura pronta para expansão futura de filtros dinâmicos.
+
+- Não houve alteração na lógica de exibição de categorias: categorias aparecem para todos, independentemente do login.
+- Testes de compilação e lint OK.
+
+---
+## 2025-06-12 - Correção de exibição de preço no grid de novidades da Home Page
+
+- Corrigida a renderização do preço na seção de novidades (Home Page) para respeitar autenticação e permissão (`view_price`).
+- Agora, visitantes veem "Faça login para ver preço" (i18n), usuários autenticados sem permissão veem "Preço sob consulta" e apenas usuários autenticados com permissão visualizam o preço real.
+- Lógica alinhada ao carrossel de produtos caros e aos componentes ProductCard/ProductGrid.
+- Mantida acessibilidade (aria-label) e internacionalização.
+- Revisado conforme regras do projeto em RASCUNHO_RULES_PROJETO.md.
+
+---
+## 2025-06-11 - Correção final Home Page: grid de novidades e logs
+
+### Arquivos Modificados:
+- `src/pages/HomePage.jsx`
+
+### Mudanças:
+- Corrigido bug `t is not defined` no grid de novidades da Home Page, adicionando corretamente o hook `useTranslation` dentro do componente.
+- Garantido que o grid de novidades exibe o preço apenas para usuários autenticados com permissão (`view_price`), mostra "Preço sob consulta" para autenticados sem permissão e "Faça login para ver preço" para visitantes, seguindo o mesmo padrão do carrossel e dos cards de produto.
+- Validado que o FilterSidebar segue as regras de permissão, logging, acessibilidade e i18n.
+- Nenhum erro de compilação após as correções.
+
+### Rastreabilidade:
+- Todas as alterações seguem as regras de permissão e UX descritas em `RASCUNHO_RULES_PROJETO.md`.
+- Logging detalhado implementado para rastreabilidade de eventos de filtro e exibição de preço.
+
+### Status:
+- Home Page e FilterSidebar aderentes às regras do projeto.
+- Pronto para revisão final ou deploy.
+
+---
+*Última atualização: 2025-06-11T02:30:00+01:00*
