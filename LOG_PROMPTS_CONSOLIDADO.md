@@ -329,4 +329,19 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 - Integrar dados reais dos produtos (5.3)
 
 ---
-*Última atualização: 2025-06-11T02:40:00+01:00*
+## 2025-06-12 - Diagnóstico e Resolução de Problemas na Listagem de Produtos
+
+### ID: DIAG-PRMT-001
+**Timestamp:** 2025-06-12T09:00:00Z
+**Tipo:** Diagnóstico e Decisão Técnica
+**Prompt:** "Diagnosticar e resolver por que os filtros de produtos e os preços não são exibidos corretamente, e por que o botão 'Adicionar ao Carrinho' não aparece após o login."
+**Decisões Tomadas:**
+1.  **Centralizar Lógica de Filtragem no Backend:** A filtragem de produtos foi movida do cliente para o servidor para garantir consistência, performance e evitar problemas de `stale state`. O frontend agora apenas envia os parâmetros de filtro para a API.
+2.  **Componentes Agnósticos de Dados:** Os componentes do frontend, como `FilterSidebar.jsx`, foram refatorados para consumir dados exclusivamente via props, em vez de fazerem as suas próprias chamadas de API. Isso melhora a reutilização e a previsibilidade.
+3.  **Correção de Acesso a Dados:** O componente `ProductCard.jsx` foi corrigido para aceder à propriedade correta (`price`) do objeto de produto, resolvendo a exibição incorreta de preços.
+4.  **Gestão de Permissões via Metadados:** A causa do botão "Adicionar ao Carrinho" ausente foi identificada como uma falta de permissões nos metadados do utilizador no Clerk. A decisão foi gerir as permissões de front-end (`view_price`, `add_to_cart`, etc.) através do campo `publicMetadata.permissions` no Clerk, desacoplando as permissões de UI das roles de backend.
+**Arquivos Afetados:** `src/hooks/useProducts.js`, `src/components/products/FilterSidebar.jsx`, `src/components/products/ProductCard.jsx`, `src/contexts/AuthContext.jsx`.
+**Estado:** ✅ Concluído
+
+---
+*Última atualização: 2025-06-12T15:00:00+01:00*

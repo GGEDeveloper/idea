@@ -320,4 +320,38 @@ gantt
 - Seguir políticas de notificação e validação humana em caso de erro crítico
 
 ---
-*Última atualização: 2025-06-09T02:35:00+01:00*
+## 2025-06-12 - Correções na Página de Produtos
+
+### ID: FRONT-ERR-004
+**Timestamp:** 2025-06-12T10:00:00Z
+**Tipo:** Erro de Funcionalidade
+**Descrição:** Os filtros de produtos (marcas, categorias, preço) não funcionavam na página de listagem de produtos. As seleções de filtro não atualizavam os produtos exibidos.
+**Causa:**
+1.  O componente `FilterSidebar.jsx` fazia chamadas de API redundantes para categorias e ignorava as props recebidas.
+2.  O hook `useProducts.js` realizava a filtragem no lado do cliente com estado obsoleto (`stale state`), não enviando os filtros corretos para a API.
+**Solução:**
+1.  Refatorado `FilterSidebar.jsx` para utilizar as `filterOptions` passadas via props, eliminando a chamada de API interna.
+2.  Refatorado o hook `useProducts.js` para delegar a filtragem ao backend, construindo uma query string com os filtros selecionados e passando-a para o endpoint `/api/products`.
+**Arquivos Afetados:** `src/components/products/FilterSidebar.jsx`, `src/hooks/useProducts.js`
+**Estado:** ✅ Resolvido
+
+### ID: FRONT-ERR-005
+**Timestamp:** 2025-06-12T11:30:00Z
+**Tipo:** Erro de UI
+**Descrição:** O preço dos produtos era exibido como "Preço sob consulta" para todos os utilizadores, mesmo para aqueles que deveriam ter permissão para ver os preços.
+**Causa:** O componente `ProductCard.jsx` tentava aceder à propriedade `product.price_gross`, que não existia nos dados do produto retornados pela API. A propriedade correta era `product.price`.
+**Solução:** Corrigido o componente `ProductCard.jsx` para usar `product.price` para exibir o preço.
+**Arquivos Afetados:** `src/components/products/ProductCard.jsx`
+**Estado:** ✅ Resolvido
+
+### ID: AUTH-ERR-001
+**Timestamp:** 2025-06-12T14:00:00Z
+**Tipo:** Erro de Permissão
+**Descrição:** O botão "Adicionar ao Carrinho" não aparecia para utilizadores autenticados, mesmo após o login bem-sucedido.
+**Causa:** A verificação de permissão `hasPermission('add_to_cart')` retornava `false`. A investigação revelou que os metadados públicos do utilizador no Clerk não continham o array `permissions`. O utilizador tinha apenas a `role` de "admin".
+**Solução:** O utilizador foi instruído a atualizar os metadados públicos do seu utilizador no Clerk para incluir o array de permissões necessário: `["view_price", "view_stock", "add_to_cart"]`. Após a atualização e novo login, o problema foi resolvido.
+**Arquivos Afetados:** `src/contexts/AuthContext.jsx` (análise), Configuração de utilizador no Clerk (resolução).
+**Estado:** ✅ Resolvido
+
+---
+*Última atualização: 2025-06-12T15:00:00+01:00*
