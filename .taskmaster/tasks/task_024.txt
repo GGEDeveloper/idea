@@ -1,0 +1,31 @@
+# Task ID: 24
+# Title: Implement Customer Dashboard
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Create the Customer Dashboard displaying a summary of recent orders, messages, and quick links to other customer area sections.
+# Details:
+Personalized content for logged-in users, retrieved from PostgreSQL.
+
+# Test Strategy:
+Verify dashboard loads with correct user-specific data.
+
+# Subtasks:
+## 1. Dashboard UI/UX Design and Core Layout Implementation [pending]
+### Dependencies: None
+### Description: Design and implement the foundational UI/UX for the customer dashboard, focusing on a responsive layout for recent orders, messages, and quick links sections. This includes setting up the Next.js/React project structure, integrating internationalization capabilities, and ensuring a visually appealing and user-friendly interface with initial Auth.js/Clerk integration for user context.
+### Details:
+Create wireframes/mockups for dashboard layout. Implement responsive Next.js/React components for main dashboard structure. Set up internationalization framework (e.g., next-i18next) for UI texts. Define core styling and theme. Integrate Auth.js/Clerk for basic authenticated user context display (e.g., welcome message). Implement placeholder components for recent orders, messages, and quick links.
+
+## 2. Recent Orders & Messages Data Integration and API Setup [pending]
+### Dependencies: 24.1
+### Description: Develop the backend and frontend logic to securely fetch and display personalized data for recent orders and messages. This involves setting up PostgreSQL (Neo) for data storage/caching, integrating with the Geko API for order/message retrieval, and ensuring robust error handling and comprehensive logging for data processes.
+### Details:
+Design PostgreSQL (Neo) schema for relevant customer data. Implement Next.js API routes to interact with the Geko API for fetching recent orders and messages. Integrate Auth.js/Clerk for secure user authentication and authorization when fetching data. Develop React components to consume data from API routes and display recent orders and messages. Implement robust error handling and comprehensive logging for data retrieval processes. Write automated unit/integration tests for data fetching logic.
+
+## 3. Quick Links Functionality and System Readiness [pending]
+### Dependencies: 24.1, 24.2
+### Description: Implement the interactive quick links functionality, allowing users easy access to common actions. This subtask also covers critical system readiness aspects including comprehensive automated testing, full logging, defining user permissions, ensuring compliance, preparing Vercel deployment, and documenting onboarding procedures.
+### Details:
+Develop interactive React components for quick links with navigation logic. Set up end-to-end (E2E) tests for core dashboard functionalities. Configure centralized logging for all dashboard activities (frontend and backend). Define and implement user permissions and roles using Auth.js/Clerk. Prepare Vercel deployment configuration for cloud-native deployment. Document onboarding steps for new developers/users. Ensure all compliance requirements are met for the quick links and overall dashboard.
+

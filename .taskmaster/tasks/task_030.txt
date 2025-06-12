@@ -1,0 +1,31 @@
+# Task ID: 30
+# Title: Implement Customer Communication Preferences
+# Status: pending
+# Dependencies: 24
+# Priority: low
+# Description: Allow customers to manage their communication preferences and notification settings (e.g., newsletter, promotional emails).
+# Details:
+Opt-in/opt-out options, with preferences stored in PostgreSQL.
+
+# Test Strategy:
+Verify preferences can be updated and respected.
+
+# Subtasks:
+## 1. Implement Communication Preferences UI [pending]
+### Dependencies: None
+### Description: Develop the user interface for managing communication preferences, allowing users to select their preferred channels (e.g., email, SMS, push notifications) and frequency. This includes designing responsive components using Next.js/React, ensuring internationalization support, and integrating with Auth.js/Clerk for user context. The UI must be intuitive, accessible, and include client-side validation.
+### Details:
+Design and implement React components for preference selection (checkboxes, toggles, dropdowns). Integrate with Next.js internationalization for multi-language support. Ensure UI adheres to accessibility standards. Connect to Auth.js/Clerk for user identification and session management. Implement client-side validation for preference changes. Ensure mobile responsiveness across devices.
+
+## 2. Develop Communication Preferences Storage & Application Logic [pending]
+### Dependencies: None
+### Description: Implement the backend services for storing, retrieving, and applying user communication preferences. This involves defining the data model in PostgreSQL (Neo), developing API endpoints for preference management, and integrating with the Geko API for actual communication dispatch based on preferences. Ensure compliance requirements are met, robust logging is in place, and the solution is cloud-native for Vercel deployment with comprehensive automated tests.
+### Details:
+Define PostgreSQL (Neo) schema for user communication preferences, including channel, frequency, and opt-in/out status. Develop API endpoints (e.g., `/api/preferences`) for CRUD operations using Next.js API routes or a dedicated backend service. Implement logic to retrieve and apply preferences when initiating communications via the Geko API. Ensure data encryption and privacy compliance (e.g., GDPR, LGPD). Implement comprehensive logging for preference changes, communication attempts, and errors. Prepare for cloud-native deployment on Vercel, ensuring scalability and performance. Develop automated unit and integration tests for API endpoints and business logic.
+
+## 3. Integrate Notification System with Communication Preferences [pending]
+### Dependencies: 30.1, 30.2
+### Description: Implement the integration between user communication preferences and the notification delivery system. Ensure notifications (e.g., email, SMS, push) respect the user's selected channels and opt-in/out status. All notification events must be logged and auditable.
+### Details:
+Integrate with notification delivery backend. Enforce user preferences for channel and frequency. Log all notifications sent, including type, channel, and result. Ensure compliance with privacy and consent regulations.
+

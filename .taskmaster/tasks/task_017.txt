@@ -1,0 +1,25 @@
+# Task ID: 17
+# Title: Implement Breadcrumbs Navigation
+# Status: pending
+# Dependencies: 6, 10
+# Priority: medium
+# Description: Develop a breadcrumbs component to show the user's current location within the site hierarchy, especially on product and category pages.
+# Details:
+Should be dynamic based on URL path.
+
+# Test Strategy:
+Verify breadcrumbs accurately reflect navigation path.
+
+# Subtasks:
+## 1. Implement Dynamic Breadcrumb Path Generation Logic [pending]
+### Dependencies: None
+### Description: Develop the backend or utility logic to dynamically generate the breadcrumb path based on the current URL structure. This involves parsing the URL, mapping segments to human-readable titles (potentially from a route configuration or API calls), and handling edge cases like root paths or dynamic IDs. Ensure compatibility with Next.js routing and potential internationalization requirements.
+### Details:
+Utilize Next.js router hooks (e.g., useRouter) to access the current path. Define a mapping strategy for URL segments to display names. Consider a recursive approach for nested paths. Account for internationalization (i18n) if breadcrumb titles need translation. Integrate with API Geko if path segments require data from it for display names.
+
+## 2. Develop Breadcrumbs UI Component (Next.js/React) [pending]
+### Dependencies: 17.1
+### Description: Create a reusable React component for displaying the breadcrumbs. This component will consume the dynamically generated path data from Subtask 1 and render it as an interactive navigation element. Ensure accessibility, responsiveness, and adherence to design system guidelines.
+### Details:
+Design the visual layout of the breadcrumbs (e.g., using ' > ' as a separator). Implement clickable links for each breadcrumb segment, excluding the last one. Ensure proper ARIA attributes for accessibility. Style the component using CSS modules or a chosen styling solution. Integrate with the generated path data from the logic developed in Subtask 1.
+

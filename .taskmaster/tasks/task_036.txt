@@ -1,0 +1,37 @@
+# Task ID: 36
+# Title: Implement Banners, Promotions, and Content Management (Admin)
+# Status: pending
+# Dependencies: 32
+# Priority: medium
+# Description: Develop a module in the Admin Area to manage website banners, promotional campaigns, and other static content.
+# Details:
+WYSIWYG editor for rich content, with all content managed in PostgreSQL.
+
+# Test Strategy:
+Verify admin can create, update, and publish content.
+
+# Subtasks:
+## 1. Implement Banner Management Module [pending]
+### Dependencies: None
+### Description: Develop the full-stack functionality for creating, uploading, editing, scheduling, and displaying promotional banners. This includes admin UI, API endpoints, database schema, and frontend integration.
+### Details:
+Design PostgreSQL schema for banners (Neo). Develop Next.js/React admin UI for banner CRUD (image upload, text, links, scheduling). Implement API endpoints (Geko API integration if applicable for content delivery). Integrate image storage (e.g., S3 compatible). Ensure internationalization support. Implement logging for all banner operations. Develop automated tests for CRUD and display logic.
+
+## 2. Develop Promotion Configuration Module [pending]
+### Dependencies: None
+### Description: Create a comprehensive module for defining, managing, and applying various types of promotions (e.g., discounts, free shipping) with flexible rules and scheduling.
+### Details:
+Design PostgreSQL schema for promotion types, rules, and applicability. Develop Next.js/React admin UI for promotion setup, including rule engine configuration (e.g., minimum order, specific products, user segments). Implement API endpoints for promotion management and application. Integrate with Geko API for promotion validation/application if external. Ensure internationalization support. Implement logging for promotion changes and usage. Develop automated tests for rule application and validity.
+
+## 3. Integrate WYSIWYG Editor for Static Content [pending]
+### Dependencies: None
+### Description: Implement a robust WYSIWYG editor within the admin panel for creating and managing static content pages (e.g., About Us, FAQs, Terms & Conditions) with rich text and media capabilities.
+### Details:
+Select and integrate a suitable WYSIWYG editor (e.g., TinyMCE, Quill) into the Next.js/React admin panel. Design PostgreSQL schema for static content storage, including versioning. Develop API endpoints for saving and retrieving HTML content. Implement image/media upload and embedding within the editor. Ensure internationalization support for content. Implement logging for content modifications. Develop automated tests for content saving, loading, and rendering.
+
+## 4. Design and Implement Content Publishing Workflow [pending]
+### Dependencies: 36.1, 36.2, 36.3
+### Description: Establish a comprehensive workflow for content creation, review, approval, scheduling, and publishing across all content types, including access control and audit trails.
+### Details:
+Define and implement roles and permissions using Auth.js/Clerk for content creators, reviewers, approvers, and publishers. Design workflow states (e.g., Draft, Pending Review, Approved, Published, Archived). Implement a notification system for workflow transitions. Develop functionality for scheduling content publication/unpublication. Implement version history and rollback capabilities for content. Ensure comprehensive audit logging for all workflow actions. Integrate this workflow with banner management, promotion setup, and static content editing modules. Develop automated tests for workflow transitions and permission enforcement.
+

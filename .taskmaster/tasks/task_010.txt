@@ -1,0 +1,43 @@
+# Task ID: 10
+# Title: Implement Product Detail Page Structure (Guest & Authenticated Views)
+# Status: pending
+# Dependencies: 2, 3, 49
+# Priority: high
+# Description: Create the basic layout for the Product Detail Page, including sections for image gallery, description, technical tables, variations, price, stock, and action buttons. **Ensure prices, stock, and restricted commercial information are only visible to authenticated users.**
+# Details:
+Placeholder content for initial setup, with dynamic data sourced from PostgreSQL. **Implement logic to conditionally display/hide price, stock, and other restricted commercial data based on user authentication status.**
+
+# Test Strategy:
+Verify page loads with correct layout. **Test visibility of prices/stock for both authenticated and unauthenticated users.**
+
+# Subtasks:
+## 1. Implement Basic Product Detail Page Layout & Geko API Integration [pending]
+### Dependencies: None
+### Description: Create the foundational Next.js page structure for the product detail page. Implement server-side data fetching using `getServerSideProps` or `getStaticProps` (with revalidation) to retrieve product data from the Geko API. Define the main layout areas (header, product info section, related products, footer).
+### Details:
+Use Next.js for routing and page creation. Integrate with Geko API for product data. Consider PostgreSQL (Neo) for potential data caching or specific product attributes.
+
+## 2. Develop Core Product Information & Media Components [pending]
+### Dependencies: 10.1
+### Description: Implement reusable React components for displaying product details. This includes the image gallery (with multiple views/zoom), detailed product description, technical specifications tables, and basic pricing information. Ensure components are designed for internationalization.
+### Details:
+Create `ImageGallery`, `ProductDescription`, `TechnicalSpecsTable` components. Focus on responsive design and accessibility. Prepare for i18n integration.
+
+## 3. Integrate Auth.js/Clerk for User Authentication & Permission System [pending]
+### Dependencies: 10.1
+### Description: Set up Auth.js/Clerk for user authentication on the product detail page. Integrate with the backend permission system (potentially via Geko API or a separate service) to retrieve user roles and permissions relevant to viewing commercial information and specific product data.
+### Details:
+Configure Auth.js/Clerk for session management. Define and fetch user permissions based on roles. Ensure secure handling of authentication tokens.
+
+## 4. Implement Conditional Content Display Logic for User Roles [pending]
+### Dependencies: 10.2, 10.3
+### Description: Apply conditional rendering logic to display or hide specific product information (e.g., pricing, commercial details, 'add to cart' button, restricted technical data) based on the user's authentication status (guest vs. authenticated) and their assigned permissions. Ensure appropriate fallback messages or calls to action for guest users.
+### Details:
+Use React's conditional rendering. Implement logic to check `session` and `permissions` objects. Handle different UI states for authenticated vs. guest users.
+
+## 5. Implement Internationalization, Logging, Automated Tests & Vercel Deployment Prep [pending]
+### Dependencies: 10.4
+### Description: Integrate i18n for all static and dynamic text on the product detail page. Implement comprehensive logging for data fetching, errors, and user interactions. Write automated unit and integration tests for components and data fetching logic. Prepare the Next.js application for cloud-native deployment on Vercel.
+### Details:
+Use `next-i18next` or similar for internationalization. Integrate a logging library (e.g., Pino). Write Jest/React Testing Library tests. Configure Vercel deployment settings and environment variables.
+

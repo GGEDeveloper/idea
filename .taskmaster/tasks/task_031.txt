@@ -1,0 +1,43 @@
+# Task ID: 31
+# Title: Develop Admin Area Authentication and Authorization
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Implement secure login and role-based access control for the Admin Area.
+# Details:
+Only authorized personnel can access specific modules, with admin user data and roles stored in PostgreSQL.
+
+# Test Strategy:
+Verify different admin roles have correct access levels.
+
+# Subtasks:
+## 1. Implement Secure User Authentication [pending]
+### Dependencies: None
+### Description: Set up secure user login and registration using Auth.js/Clerk, including robust password hashing, secure credential storage in PostgreSQL, and integration with the Next.js/React frontend. Ensure compliance with security best practices and initial logging for authentication events.
+### Details:
+Integrate Auth.js/Clerk for authentication, design PostgreSQL schema for user data, implement login/registration forms in Next.js/React, ensure password hashing (e.g., bcrypt), and set up basic logging for authentication attempts.
+
+## 2. Develop Role Definition and Management System [pending]
+### Dependencies: 31.1
+### Description: Design and implement the database schema for user roles in PostgreSQL. Develop backend APIs and a dedicated admin UI in Next.js/React for defining, creating, editing, and deleting user roles (e.g., Admin, Editor, Viewer).
+### Details:
+Create 'roles' table in PostgreSQL, develop RESTful APIs for role CRUD operations, build admin panel UI for role management, ensure proper validation and error handling.
+
+## 3. Implement Granular Permission Assignment [pending]
+### Dependencies: 31.2
+### Description: Define and implement a system for granular permissions (e.g., 'user:create', 'product:edit', 'report:view'). Develop the database schema to link these permissions to roles and create an intuitive admin UI for assigning permissions to defined roles.
+### Details:
+Create 'permissions' table and 'role_permissions' join table in PostgreSQL, develop APIs for permission management and assignment, build admin UI for associating permissions with roles, and ensure audit logging for permission changes.
+
+## 4. Enforce Role-Based Access Control (RBAC) [pending]
+### Dependencies: 31.1, 31.3
+### Description: Implement backend middleware or guards to enforce access control based on assigned roles and permissions for all API endpoints. Integrate with Auth.js/Clerk session data to authorize requests, ensuring proper authorization checks for API Geko interactions and conditional rendering in the Next.js/React frontend.
+### Details:
+Develop middleware/decorators for route protection, integrate permission checks with Auth.js session data, apply RBAC to API Geko calls, implement frontend conditional rendering based on user permissions, and add comprehensive logging for access attempts (success/failure).
+
+## 5. Secure Session Management and Logging [pending]
+### Dependencies: 31.1, 31.4
+### Description: Configure and implement secure session management using Auth.js/Clerk, including robust token generation, refresh mechanisms, secure cookie handling (e.g., HttpOnly, Secure), and comprehensive logout functionality. Implement detailed logging for all session-related events and security incidents.
+### Details:
+Configure Auth.js for secure session tokens, implement token refresh logic, ensure secure cookie attributes, develop robust logout process, integrate with logging system for session lifecycle events (login, logout, refresh, invalid attempts), and implement automated tests for session security.
+

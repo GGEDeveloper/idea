@@ -1,0 +1,43 @@
+# Task ID: 46
+# Title: Implement System-wide Notification System
+# Status: pending
+# Dependencies: 29, 35
+# Priority: medium
+# Description: Develop a robust notification system for both client-side (e.g., order updates, stock alerts) and admin-side (e.g., new orders, system errors) alerts. **This includes notifications to customers regarding order approval/rejection and status changes.**
+# Details:
+Supports email and in-app notifications, leveraging PostgreSQL for notification queue and history.
+
+# Test Strategy:
+Verify notifications are sent and received correctly for various events. **Specifically test notifications for order status changes (approved/rejected) to customers.**
+
+# Subtasks:
+## 1. Notification Data Model & Core API Definition [pending]
+### Dependencies: None
+### Description: Design and implement the database schema for various notification types (e.g., system, marketing, transactional), including content, recipients, status, and metadata. Develop core API endpoints for creating, retrieving, and managing notifications.
+### Details:
+Define notification types (e.g., `system`, `transactional`, `marketing`, `order_status_change`). PostgreSQL (Neo) schema design for `notifications` table. API endpoints for `POST /notifications`, `GET /notifications/{id}`, `GET /notifications?user_id=X`, `PUT /notifications/{id}/read`. Consider internationalization for notification content. Implement comprehensive logging for API actions. Develop automated tests for API endpoints. Address compliance considerations for data storage and retention.
+
+## 2. Client-Side Notification Component Development [pending]
+### Dependencies: 46.1
+### Description: Implement the user-facing notification center and individual notification display components in Next.js/React. Integrate with the core notification API and ensure real-time updates (if applicable).
+### Details:
+Develop Next.js/React components for a notification list, individual notification cards, and a notification bell/icon. Integrate with Auth.js/Clerk for user-specific notifications and permissions. Fetch notifications from the core API (`GET /notifications?user_id=X`). Implement functionality to mark notifications as read (`PUT /notifications/{id}/read`). Ensure internationalization for UI text and displayed notification content. Implement automated UI tests (e.g., Playwright/Cypress). Add client-side logging for user interactions (e.g., notification opened, clicked).
+
+## 3. Admin-Side Notification Management & Broadcasting [pending]
+### Dependencies: 46.1
+### Description: Develop an admin interface for creating, editing, sending, and managing different types of notifications. This includes functionalities for broadcasting system-wide or targeted notifications.
+### Details:
+Develop Next.js/React components for an admin dashboard to manage notifications. Create forms for composing new notifications (system, marketing, etc.) with rich text editing capabilities. Implement functionality to target specific users or user groups. Integrate with Auth.js/Clerk for admin authentication and role-based permissions. Display notification history, delivery status, and analytics. Implement comprehensive logging for all admin actions (who sent what notification, when). Develop automated tests for admin functionalities. Ensure compliance for notification content and targeting rules.
+
+## 4. Email Notification Integration & Templating [pending]
+### Dependencies: 46.1
+### Description: Integrate an email service to send notifications via email. Develop robust email templates for various notification types, ensuring branding, internationalization, and compliance.
+### Details:
+Choose and integrate a cloud-native email sending service (e.g., via Vercel serverless functions). Develop responsive and branded email templates for transactional (e.g., order status), marketing, and system notifications. Ensure templates support internationalization for content and subject lines. Implement a reliable mechanism to trigger email sending based on notification events from the core API. Implement detailed logging for email sending status (sent, failed, opened, clicked). Develop automated tests for email content generation and sending triggers. Ensure compliance for email content (e.g., unsubscribe links, privacy policy, CAN-SPAM/GDPR).
+
+## 5. Order Status Change Notification Implementation [pending]
+### Dependencies: 46.1, 46.4
+### Description: Implement the specific logic and integration points for triggering and sending notifications when an order's status changes. This includes both in-app and email notifications.
+### Details:
+Identify and implement integration points with the order management system (e.g., webhooks from API Geko, direct API calls). Develop backend logic to detect order status changes (e.g., 'pending' to 'shipped') and trigger notification creation. Utilize the core notification API (Subtask 1) to create `order_status_change` notifications for in-app display. Trigger email notifications (Subtask 4) for relevant status changes (e.g., order shipped, delivered). Ensure notifications are sent to the correct user associated with the order. Implement comprehensive logging for order status change events and associated notification triggers. Develop automated tests for the entire flow from status change detection to notification delivery. Ensure compliance for timely and accurate order updates.
+

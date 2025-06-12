@@ -1,0 +1,37 @@
+# Task ID: 29
+# Title: Implement Invoice and Document Downloads
+# Status: pending
+# Dependencies: 24, 26
+# Priority: medium
+# Description: Enable customers to download invoices and other relevant documents related to their orders from their account.
+# Details:
+Secure document access, with invoice metadata and links stored in PostgreSQL.
+
+# Test Strategy:
+Verify invoices/documents can be downloaded correctly.
+
+# Subtasks:
+## 1. Implement Document Listing User Interface [pending]
+### Dependencies: None
+### Description: Develop the Next.js/React frontend component to display a paginated list of documents relevant to the authenticated user. This includes UI for filtering, sorting, and internationalization (i18n) support. The UI will consume document metadata from a secure backend API, integrating with Auth.js/Clerk for user context.
+### Details:
+Frontend: Next.js/React, Internationalization (i18n), Pagination, Filtering, Sorting. Authentication: Auth.js/Clerk integration for user context. Integration: Consume document metadata from backend API.
+
+## 2. Develop Secure Document Access Control & Metadata API [pending]
+### Dependencies: None
+### Description: Implement backend services to manage and verify user permissions for document access. This involves creating API endpoints to fetch document metadata, integrating with Auth.js/Clerk for authentication/authorization, defining access rules based on user roles and associated orders (via Geko API), and storing access configurations in PostgreSQL (Neo). Ensure compliance requirements are met with comprehensive logging for access attempts.
+### Details:
+Backend: API endpoints for document metadata. Database: PostgreSQL (Neo) for access rules/metadata. Integrations: Auth.js/Clerk for authentication/authorization, Geko API for order/document mapping. Security: Role-based access control (RBAC), compliance checks. Logging: Comprehensive logging for access attempts. Deployment: Cloud-native considerations for Vercel.
+
+## 3. Implement Secure Document Download Endpoint & Storage Integration [pending]
+### Dependencies: 29.2
+### Description: Create a robust backend API endpoint for securely serving document files. This subtask includes validating user permissions (leveraging the access control from Subtask 2), integrating with the Geko API or other storage solutions to retrieve actual document files, and streaming them to the client. Implement comprehensive logging for all download activities and develop automated tests for the endpoint.
+### Details:
+Backend: API endpoint for file download. Security: Permission validation (depends on Subtask 2), secure file streaming. Integrations: Geko API for document retrieval (or other storage). Testing: Automated unit and integration tests. Logging: Comprehensive logging for download attempts (success/failure, user, document). Deployment: Cloud-native considerations for Vercel.
+
+## 4. Implement Document Preview Functionality [pending]
+### Dependencies: 29.2, 29.3
+### Description: Develop a secure document preview feature for invoices and other documents before download. Ensure only authorized users can preview documents, and that previews are rendered in-browser without exposing sensitive data. Integrate with the document access control and logging system.
+### Details:
+Integrate with existing document access API. Render previews using secure methods (e.g., PDF viewer, image rendering). Ensure compliance with privacy and security requirements. Log all preview attempts for audit.
+

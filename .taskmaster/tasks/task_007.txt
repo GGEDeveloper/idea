@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: Log Contact Form Submissions (Audit)
+# Status: pending
+# Dependencies: 6
+# Priority: medium
+# Description: Implement structured logging for all contact form submissions, especially for access requests (subject: 'Solicitar acesso à plataforma como cliente empresa'). Ensure all requests are auditable, no sensitive data is exposed, and that logs are available for admin review and compliance.
+# Details:
+
+
+# Test Strategy:
+

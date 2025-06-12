@@ -1,0 +1,31 @@
+# Task ID: 5
+# Title: Develop Home Page Structure
+# Status: done
+# Dependencies: 2, 3
+# Priority: medium
+# Description: Create the basic layout and structure for the Home Page.
+# Details:
+Placeholder sections for highlights, banners, categories, news, and promotions.
+
+# Test Strategy:
+Verify page loads correctly with header and footer.
+
+# Subtasks:
+## 1. Design Home Page Core Layout [done]
+### Dependencies: None
+### Description: Implement the fundamental structural layout for the home page using Next.js/React components and CSS (e.g., Tailwind CSS, CSS Modules). Define main regions like header, main content area, and footer, ensuring responsiveness across devices.
+### Details:
+Utilize CSS Grid or Flexbox for the overall page structure. Focus on defining the main containers and their basic positioning. Ensure the layout is adaptable for future content integration.
+
+## 2. Create Placeholder Content Sections [done]
+### Dependencies: 5.1
+### Description: Develop placeholder components or simple div elements for the various content areas within the home page's main content region. This includes sections like a hero banner, product display area, blog preview, and a call-to-action section.
+### Details:
+Each placeholder should have a clear visual boundary (e.g., a distinct background color or border) and a descriptive label (e.g., 'Hero Section Placeholder', 'Featured Products Area'). These will serve as visual guides for content integration.
+
+## 3. Integrar dados reais dos produtos na Home Page e ProductsPage [done]
+### Dependencies: None
+### Description: Substituir mock data por listagem real de produtos, consumindo dados da API/BD PostgreSQL. Implementar componente que faz fetch dos produtos reais e exibe na interface.
+### Details:
+Criar endpoint /api/products no backend Express para expor produtos da BD. Atualizar componente(s) de listagem de produtos na Home Page e ProductsPage para consumir este endpoint e exibir produtos reais, com nome, imagem, preço, etc. Garantir UX responsiva e fallback para loading/erro.
+

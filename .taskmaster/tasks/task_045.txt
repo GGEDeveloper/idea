@@ -1,0 +1,61 @@
+# Task ID: 45
+# Title: Ensure Accessibility (WCAG Compliance)
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Ensure the website adheres to Web Content Accessibility Guidelines (WCAG) to make it usable for people with disabilities.
+# Details:
+Keyboard navigation, ARIA attributes, color contrast.
+
+# Test Strategy:
+Conduct accessibility audits and user testing.
+
+# Subtasks:
+## 1. Implement Keyboard Navigation [pending]
+### Dependencies: None
+### Description: Ensure all interactive elements and components across the Next.js frontend are fully navigable and operable using only a keyboard (Tab, Shift+Tab, Enter, Space, Arrow keys). This includes focus management for modals, dropdowns, and dynamic content.
+### Details:
+Focus management for all interactive components in Next.js/React. Ensure logical tab order for forms (including Auth.js/Clerk authentication flows) and navigation. Test across different browsers and ensure consistency.
+
+## 2. Apply ARIA Attributes [pending]
+### Dependencies: 45.1
+### Description: Integrate appropriate ARIA roles, states, and properties to convey semantic meaning and enhance screen reader compatibility for all custom and dynamic UI elements.
+### Details:
+Use ARIA for dynamic content updates, form validation messages, navigation landmarks, and custom components in Next.js/React. Ensure proper labeling and descriptions for interactive elements. Verify compatibility with Auth.js/Clerk components if they render custom UI that needs ARIA enhancements.
+
+## 3. Ensure Color Contrast Compliance [pending]
+### Dependencies: None
+### Description: Verify all text and interactive elements meet WCAG 2.1 AA color contrast ratios to ensure readability for users with visual impairments.
+### Details:
+Review UI/UX designs for the Next.js frontend. Use automated tools and manual checks to verify color contrast ratios for all text, icons, and interactive elements. Adjust the application's color palette as needed to meet WCAG 2.1 AA standards.
+
+## 4. Conduct Comprehensive Accessibility Testing [pending]
+### Dependencies: 45.1, 45.2, 45.3
+### Description: Perform a thorough audit of the application for accessibility compliance using a combination of automated tools, manual checks, and screen reader testing across key user flows.
+### Details:
+Utilize automated accessibility tools (e.g., Lighthouse, Axe-core) as part of the CI/CD pipeline. Conduct manual keyboard-only navigation tests. Perform screen reader testing (e.g., NVDA, VoiceOver) on critical paths including onboarding, authentication (Auth.js/Clerk), data display from API Geko, and internationalization features. Document all findings and create remediation tasks.
+
+## 5. Implement Keyboard Navigation [pending]
+### Dependencies: None
+### Description: Ensure all interactive elements (buttons, links, form fields, modals, etc.) are focusable via keyboard (Tab, Shift+Tab) and operable using standard keyboard commands (Enter, Space, Arrow keys). Implement a logical tab order across all pages and components.
+### Details:
+Focus management, logical tab order, keyboard shortcuts for interactive elements, visible focus indicators, handling of modal and off-canvas focus traps.
+
+## 6. Integrate ARIA Attributes [pending]
+### Dependencies: 45.5
+### Description: Apply appropriate ARIA roles, states, and properties to enhance semantic meaning for assistive technologies, especially for dynamic content updates, custom controls, complex widgets (e.g., carousels, accordions), and form validation messages.
+### Details:
+Use of `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-expanded`, `aria-haspopup`, `aria-live` regions for dynamic content, and correct ARIA roles for custom components (e.g., `role="button"`, `role="dialog"`).
+
+## 7. Ensure Color Contrast Compliance [pending]
+### Dependencies: None
+### Description: Review and adjust all UI elements (text, icons, interactive components, graphical objects) to meet WCAG 2.1 AA color contrast ratio requirements (minimum 4.5:1 for small text, 3:1 for large text and graphical objects).
+### Details:
+Audit existing color palette, update CSS/design tokens for insufficient contrast, ensure sufficient contrast for all states (hover, focus, active), and provide alternative visual cues where color is the sole indicator.
+
+## 8. Conduct Comprehensive Accessibility Testing [pending]
+### Dependencies: 45.5, 45.6, 45.7
+### Description: Perform thorough accessibility testing using a combination of automated tools, manual keyboard navigation testing, screen reader testing (e.g., NVDA, VoiceOver, JAWS), and user testing with individuals with disabilities. Document and prioritize all identified accessibility issues.
+### Details:
+Automated scanning (e.g., Lighthouse, Axe, WAVE), manual keyboard-only navigation, screen reader walkthroughs for key user flows, user acceptance testing (UAT) with accessibility focus, creation of an accessibility bug backlog, and remediation planning.
+

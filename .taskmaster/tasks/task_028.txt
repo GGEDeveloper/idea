@@ -1,0 +1,31 @@
+# Task ID: 28
+# Title: Implement Stock Alerts for Customers
+# Status: pending
+# Dependencies: 24
+# Priority: low
+# Description: Allow customers to subscribe to stock alerts for out-of-stock products.
+# Details:
+Requires notification system integration, with subscription data stored in PostgreSQL.
+
+# Test Strategy:
+Verify users can subscribe and receive alerts when stock is replenished.
+
+# Subtasks:
+## 1. Implement Alert Subscription User Interface [pending]
+### Dependencies: None
+### Description: Develop the frontend components allowing users to subscribe to stock alerts, define specific alert conditions (e.g., price thresholds, percentage changes), and manage their existing subscriptions.
+### Details:
+Frontend development using Next.js/React. Integrate with Auth.js/Clerk for user authentication and authorization. Design UI to interact with backend APIs for storing user preferences in PostgreSQL (Neo). Implement internationalization (i18n) for all user-facing text and input fields. Include automated unit and integration tests for UI components. Ensure UI design considers compliance requirements for user data privacy.
+
+## 2. Develop Stock Monitoring and Alert Triggering Logic [pending]
+### Dependencies: None
+### Description: Create the backend services responsible for continuously monitoring stock prices against user-defined alert conditions and triggering alerts when these conditions are met.
+### Details:
+Backend development (e.g., Node.js). Integrate with API Geko for real-time and historical stock data. Implement efficient algorithms for evaluating alert conditions (e.g., price crosses, volume changes). Store and retrieve alert conditions from PostgreSQL (Neo). Implement comprehensive logging for monitoring process, data fetching, and triggered alerts. Develop automated tests for logic accuracy, performance, and edge cases. Design for cloud-native deployment on Vercel, considering scalability and resource utilization.
+
+## 3. Integrate with Notification Delivery System [pending]
+### Dependencies: 28.2
+### Description: Set up the backend infrastructure to send out notifications to users via various channels (e.g., email, push notifications) once an alert condition is triggered by the monitoring logic.
+### Details:
+Backend development (e.g., Node.js). Integrate with chosen third-party notification services or build custom notification dispatchers. Retrieve user notification preferences and contact details from PostgreSQL (Neo). Implement robust logging for notification delivery status, errors, and retries. Ensure compliance with data privacy regulations (e.g., GDPR) for notification content and user data. Configure deployment on Vercel, including necessary environment variables and secrets. Implement end-to-end automated tests for notification delivery. Define and manage permissions required for the notification service to access user data and send messages.
+

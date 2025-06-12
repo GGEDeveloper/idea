@@ -1,0 +1,61 @@
+# Task ID: 42
+# Title: Implement Internationalization (PT/EN)
+# Status: pending
+# Dependencies: 2
+# Priority: high
+# Description: Develop the infrastructure for multi-language support, starting with Portuguese and English, with expandability for more languages.
+# Details:
+Translation management system, with translation data stored in PostgreSQL.
+
+# Test Strategy:
+Verify language switching works and all content is translated.
+
+# Subtasks:
+## 1. Set up Internationalization Infrastructure [pending]
+### Dependencies: None
+### Description: Establish the foundational framework for handling multiple languages across the application, including library selection and file structure.
+### Details:
+Choose and integrate an i18n library (e.g., `next-i18next` or `react-i18next`) with Next.js/React. Define the locale file structure (e.g., JSON files per language) and ensure it supports future language additions. Configure webpack/bundler for locale file loading.
+
+## 2. Develop Language Switching Mechanism [pending]
+### Dependencies: 42.1
+### Description: Implement the user interface and underlying logic for users to select and switch between available languages.
+### Details:
+Create a language selector component (e.g., dropdown, buttons) in the Next.js frontend. Implement logic to persist user language preference (e.g., via cookies, local storage, or URL parameters) and ensure proper re-rendering of components upon language change. Integrate with Next.js routing for locale-specific paths.
+
+## 3. Establish Content Translation Workflow [pending]
+### Dependencies: 42.1, 42.2
+### Description: Define and implement the process for translating all application content and integrating it into the i18n system.
+### Details:
+Identify all translatable strings (UI elements, static content, API responses from Geko if applicable). Implement a system for managing translation keys and values, potentially involving manual translation of locale files or integration with a Translation Management System (TMS). Ensure all new content is added to the translation pipeline.
+
+## 4. Perform Internationalization Testing [pending]
+### Dependencies: 42.1, 42.2, 42.3
+### Description: Thoroughly test the application in all supported languages to ensure correct display, functionality, and user experience.
+### Details:
+Conduct comprehensive testing for both English and Portuguese. Verify correct display of UI elements, dynamic content, date/time formats, number formats, and text direction. Test language switching functionality across different pages and user flows. Implement automated tests for key translation components and conduct manual QA for visual consistency and linguistic accuracy.
+
+## 5. Implement Translation Infrastructure [pending]
+### Dependencies: None
+### Description: Set up the foundational infrastructure for internationalization, including i18n libraries, message extraction, and locale file management.
+### Details:
+Integrate an i18n library (e.g., react-i18next, formatjs), define a standard for message keys, set up scripts for extracting translatable strings from the codebase, and establish a structure for storing locale-specific translation files (e.g., JSON, PO files). Consider integration with a Translation Management System (TMS) if applicable.
+
+## 6. Develop Language Switching Mechanism [pending]
+### Dependencies: 42.5
+### Description: Create the user interface and backend logic for users to switch between available languages.
+### Details:
+Implement a language selector UI component (e.g., dropdown, flag icons) that allows users to change the application's language. Develop the logic to persist the user's language preference (e.g., in local storage, user profile) and dynamically load the correct translation files upon selection. Ensure language preference is respected across sessions.
+
+## 7. Translate and Integrate Application Content [pending]
+### Dependencies: 42.5, 42.6
+### Description: Apply the internationalization framework to all user-facing text content within the application and manage the translation process.
+### Details:
+Identify all static and dynamic text strings that need translation (e.g., UI labels, error messages, content from databases). Replace hardcoded strings with i18n keys. Coordinate with translators to get content translated into target languages (e.g., English, Portuguese). Integrate the translated content into the application's locale files.
+
+## 8. Conduct Internationalization Testing [pending]
+### Dependencies: 42.7
+### Description: Perform comprehensive testing to ensure correct display, functionality, and user experience for all supported languages.
+### Details:
+Test the application in both English and Portuguese. Verify that all text is correctly translated and displayed without truncation or layout issues (localization testing). Test the language switching functionality. Check for proper handling of date, time, number, and currency formats specific to each locale. Conduct pseudo-localization testing if possible to identify potential issues early.
+

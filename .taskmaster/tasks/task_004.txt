@@ -1,0 +1,37 @@
+# Task ID: 4
+# Title: Database Schema Design and Setup
+# Status: done
+# Dependencies: 2, 3
+# Priority: low
+# Description: Design and implement the PostgreSQL database schema, including tables for products, categories, users, orders, and other essential e-commerce entities. Set up initial data and migration scripts.
+# Details:
+Includes database modeling, schema creation, and initial data seeding.
+
+# Test Strategy:
+Verify database schema is correct and initial data is populated.
+
+# Subtasks:
+## 1. Design Product Catalog Schema [done]
+### Dependencies: None
+### Description: Design the database table structure for the product catalog, including attributes, categories, pricing, stock levels, and relationships.
+### Details:
+Define tables for products, categories, product categories, and attributes. Establish relationships between tables. Consider indexing and constraints for efficient querying.
+
+## 2. Design User and Order Schema [done]
+### Dependencies: None
+### Description: Design the database table structure for users and orders, including user roles, order status, and payment information.
+### Details:
+Define tables for users, user roles, orders, order items, and payment methods. Establish relationships between tables. Consider indexing and constraints for efficient querying.
+
+## 3. Implement Database Schema [done]
+### Dependencies: 4.1, 4.2
+### Description: Create the PostgreSQL database schema based on the designed tables and relationships.
+### Details:
+Use SQL to create tables, indexes, and constraints. Populate initial data for testing purposes.
+
+## 4. Set Up Migration Scripts [done]
+### Dependencies: 4.3
+### Description: Develop migration scripts to manage changes to the database schema over time.
+### Details:
+Use a migration tool (e.g., Prisma, TypeORM) to manage schema changes. Create initial migration scripts for the designed schema.
+

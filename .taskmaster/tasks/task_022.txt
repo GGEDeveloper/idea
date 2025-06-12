@@ -1,0 +1,61 @@
+# Task ID: 22
+# Title: Create Legal Pages
+# Status: pending
+# Dependencies: 2, 3
+# Priority: high
+# Description: Develop static pages for Privacy Policy, Terms of Use, and Cookie Policy, ensuring compliance, accessibility, internationalization, SEO, logging/versioning, and robust testing.
+# Details:
+Content provided by legal team. Pages must be available in PT/EN, accessible, SEO-friendly, versioned, and with logging of all changes.
+
+# Test Strategy:
+Verify pages load, display correct content in both languages, are accessible, SEO-optimized, and all changes are logged.
+
+# Subtasks:
+## 1. Receive and Version Legal Content [pending]
+### Dependencies: None
+### Description: Store and version all legal content (Privacy Policy, Terms of Use, Cookie Policy) provided by the legal team, in both PT and EN.
+### Details:
+Maintain change history and ensure only authorized personnel can update content. Provide easy rollback to previous versions if needed.
+
+## 2. Implement Static Legal Pages in Next.js [pending]
+### Dependencies: 22.1
+### Description: Create static routes/pages for each legal document, rendering versioned content dynamically according to the selected language.
+### Details:
+Ensure correct routing, dynamic content loading, and fallback for missing content.
+
+## 3. Internationalization (PT/EN) [pending]
+### Dependencies: 22.2
+### Description: Integrate next-intl to provide all legal pages in both Portuguese and English, with automatic and manual language switching.
+### Details:
+Ensure all static and dynamic content, including error/fallback messages, is translated and reviewed.
+
+## 4. Accessibility and SEO Enhancements [pending]
+### Dependencies: 22.2
+### Description: Ensure all legal pages are accessible (WCAG 2.1), readable by screen readers, keyboard navigable, and SEO-optimized (meta tags, titles, sitemap).
+### Details:
+Audit for headings, landmarks, contrast, and navigation. Add SEO meta-data, canonical URLs, and sitemap entries.
+
+## 5. Implement Logging and Version History [pending]
+### Dependencies: 22.1
+### Description: Log all changes to legal content, including who made the change, when, and what was changed. Provide version history for admins.
+### Details:
+Store logs in audit_log table. Make version history accessible to authorized admins only.
+
+## 6. Fallback and Empty State Handling [pending]
+### Dependencies: 22.2, 22.3
+### Description: Display a friendly, internationalized message if a legal page is unavailable or under maintenance.
+### Details:
+Never display technical errors to end users. Ensure fallback is graceful and compliant.
+
+## 7. Write Unit, Integration, and E2E Tests [pending]
+### Dependencies: 22.2, 22.3, 22.4, 22.5, 22.6
+### Description: Develop comprehensive tests for rendering, navigation, i18n, fallback, accessibility, SEO, and logging/versioning.
+### Details:
+Ensure high coverage for all legal pages and flows (including edge cases and compliance scenarios).
+
+## 8. Document Legal Pages Workflow and Compliance [pending]
+### Dependencies: 22.1, 22.2, 22.3, 22.4, 22.5, 22.6, 22.7
+### Description: Document the process for updating, versioning, and auditing legal content, including compliance requirements and admin instructions.
+### Details:
+Update project documentation to describe the legal pages architecture, workflow, and compliance rules.
+

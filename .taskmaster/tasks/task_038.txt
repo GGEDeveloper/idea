@@ -1,0 +1,31 @@
+# Task ID: 38
+# Title: Implement System Logs and Audit Trail (Admin)
+# Status: pending
+# Dependencies: 32
+# Priority: high
+# Description: Develop a system to log administrative actions and system events for auditing and debugging purposes.
+# Details:
+Searchable and filterable logs, persisted in PostgreSQL.
+
+# Test Strategy:
+Verify admin actions are logged correctly.
+
+# Subtasks:
+## 1. Design and Implement Event Capture Mechanism [pending]
+### Dependencies: None
+### Description: Define log formats and implement client-side (Next.js/React) and server-side (API Geko) logging SDKs/libraries to capture application events, errors, and user actions with relevant context.
+### Details:
+Focus on structured logging (JSON), context enrichment (e.g., user ID from Auth.js/Clerk, request ID, timestamp, service name), and asynchronous, non-blocking capture. Ensure different log levels (info, warn, error, debug) are supported. Consider integration points for compliance and security logging.
+
+## 2. Develop Log Storage and Ingestion Pipeline [pending]
+### Dependencies: 38.1
+### Description: Set up the PostgreSQL (Neo) database schema for log storage and implement a robust ingestion pipeline to reliably store captured log events from the event capture mechanism.
+### Details:
+Design efficient PostgreSQL tables for structured log data, including indexing for common query patterns. Implement a dedicated ingestion service (e.g., an API endpoint or message queue consumer) that receives logs, validates them, and persists them to PostgreSQL, handling potential high volume and ensuring data integrity and retention policies.
+
+## 3. Build Log Viewing and Search Interface [pending]
+### Dependencies: 38.2
+### Description: Develop a user-friendly Next.js/React frontend interface for viewing, filtering, and searching stored log events, integrating with the API Geko backend.
+### Details:
+Implement features such as filtering by log level, date range, service, and full-text search capabilities. Ensure efficient pagination and performance for large datasets. Integrate with Auth.js/Clerk for role-based access control to log data. Implement internationalization for the UI and ensure a clear, intuitive display of log details.
+
