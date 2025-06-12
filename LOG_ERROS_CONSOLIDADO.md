@@ -166,6 +166,28 @@ gantt
 
 ## 📅 Histórico de Atualizações
 
+---
+## 2025-06-12 - Correção de Filtros e Inicialização do Servidor
+
+### ID: FRONT-ERR-006
+**Timestamp:** 2025-06-12T14:30:00+01:00  
+**Tipo:** Erro de Integração API  
+**Descrição:** O `FilterSidebar` na página de produtos não exibia categorias nem marcas, mostrando a mensagem "Nenhuma categoria disponível".  
+**Causa:** O hook `useProducts.js` no frontend estava a fazer uma chamada para um endpoint (`/api/products/filters`) que não existia no backend.  
+**Solução:** Foi criado o endpoint `/api/products/filters` em `src/api/products.cjs`, que agora centraliza e retorna todas as opções de filtro necessárias (categorias, marcas, preços).  
+**Arquivos Afetados:** `src/hooks/useProducts.js`, `src/api/products.cjs`, `src/api/categories.cjs`  
+**Estado:** ✅ Resolvido
+
+### ID: BACK-ERR-001
+**Timestamp:** 2025-06-12T14:33:41+01:00  
+**Tipo:** Erro Crítico de Inicialização  
+**Descrição:** O servidor Node.js falhava ao iniciar com o erro `TypeError: Router.use() requires a middleware function but got a Object`.  
+**Stack Trace:** `at Function.use (/home/pixiewsl/CascadeProjects/final/idea-bak/node_modules/express/lib/router/index.js:469:13)`  
+**Causa:** Após refatorar `src/api/categories.cjs` para exportar um objeto (`{ router, buildCategoryTreeFromPaths }`), o ficheiro `server.cjs` continuava a importar o módulo como se ele exportasse apenas o router, passando um objeto em vez de uma função de middleware para `app.use()`.  
+**Solução:** A importação em `server.cjs` foi corrigida para usar desestruturação: `const { router: categoriesRouter } = require('./src/api/categories.cjs');`.  
+**Arquivos Afetados:** `server.cjs`, `src/api/categories.cjs`  
+**Estado:** ✅ Resolvido
+
 | Versão | Data       | Descrição                         | Responsável      |
 |--------|------------|-----------------------------------|------------------|
 | 2.0.0  | 2025-06-09 | Reestruturação completa do documento | Equipe de Dev    |

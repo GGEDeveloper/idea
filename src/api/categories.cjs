@@ -127,4 +127,4 @@ router.get('/tree', async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = { router, buildCategoryTreeFromPaths };

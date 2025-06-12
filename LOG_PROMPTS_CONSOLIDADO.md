@@ -139,6 +139,21 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 
 ## 📅 Histórico de Atualizações
 
+---
+## 2025-06-12 - Decisão Técnica: Resolução do Problema de Filtros Vazios
+
+### ID: DIAG-PRMT-002
+**Timestamp:** 2025-06-12T14:31:00+01:00
+**Tipo:** Diagnóstico e Decisão Técnica
+**Prompt:** "Diagnosticar e resolver por que o `FilterSidebar` na página de produtos não exibe categorias nem marcas."
+**Decisões Tomadas:**
+1.  **Diagnóstico:** A análise do hook `useProducts.js` revelou que o frontend estava a tentar obter os dados dos filtros de um endpoint (`/api/products/filters`) que não existia no backend. A busca no código do backend confirmou a ausência desta rota.
+2.  **Solução Centralizada:** Em vez de apenas corrigir a URL no frontend para apontar para `/api/categories/tree`, foi decidido criar o endpoint `/api/products/filters` para servir como uma fonte única e eficiente de dados para todos os filtros (categorias, marcas, preços). Esta abordagem reduz o número de chamadas de API e simplifica a gestão de estado no frontend.
+3.  **Reutilização de Lógica:** Para evitar a duplicação de código, a função `buildCategoryTreeFromPaths` foi refatorada em `src/api/categories.cjs` para ser exportada e reutilizada pelo novo endpoint.
+4.  **Correção de Efeito Secundário:** A refatoração em `categories.cjs` causou um erro de inicialização no servidor. A decisão foi corrigir a importação em `server.cjs` usando desestruturação, mantendo a refatoração original.
+**Arquivos Afetados:** `src/hooks/useProducts.js` (análise), `src/api/products.cjs`, `src/api/categories.cjs`, `server.cjs`.
+**Estado:** ✅ Concluído
+
 | Versão | Data       | Descrição                         | Responsável      |
 |--------|------------|-----------------------------------|------------------|
 | 2.0.0  | 2025-06-09 | Reestruturação completa do documento | Equipe de Dev    |

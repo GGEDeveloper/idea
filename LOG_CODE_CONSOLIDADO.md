@@ -135,6 +135,35 @@ pie
 ## 📅 Histórico de Atualizações
 
 ---
+### **ID 006: Criação do Endpoint de Filtros Centralizado**
+
+- **Data:** 2025-06-12
+- **Responsável:** Cascade AI
+- **Módulos Afetados:** `src/api/products.cjs`, `src/api/categories.cjs`, `server.cjs`
+
+**Descrição Detalhada:**
+
+Para resolver a falha na exibição de filtros na página de produtos, foi implementado um novo endpoint centralizado no backend.
+
+**Alterações Implementadas:**
+
+1.  **Criação do Endpoint `GET /api/products/filters`:**
+    - Adicionado um novo endpoint em `src/api/products.cjs`.
+    - Este endpoint agora é responsável por buscar e consolidar todas as informações necessárias para os filtros da página de produtos.
+    - Utiliza `Promise.all` para buscar em paralelo: a árvore de categorias, a lista de marcas distintas e o intervalo de preços (min/max).
+    - Retorna um único objeto JSON `{ categories, brands, price }`, alinhado com a estrutura esperada pelo hook `useProducts` no frontend.
+
+2.  **Refatoração e Reutilização de Código (`categories.cjs`):**
+    - A função `buildCategoryTreeFromPaths` foi exportada de `src/api/categories.cjs` para ser reutilizada na criação do novo endpoint de filtros, evitando duplicação de lógica.
+
+3.  **Correção da Inicialização do Servidor (`server.cjs`):**
+    - Ajustada a importação do router de categorias em `server.cjs` para usar desestruturação (`const { router: categoriesRouter } = ...`), corrigindo o erro de inicialização do Express que surgiu após a refatoração.
+
+**Justificativa Técnica:**
+
+A criação de um endpoint centralizado resolve a causa raiz do problema (chamada a uma rota inexistente) e melhora a arquitetura do sistema. Reduz o número de chamadas de rede do frontend, simplifica a lógica no hook `useProducts` e torna o backend mais robusto e fácil de manter.
+
+---
 
 ### **ID 005: Correção Abrangente de Filtros e Permissões (Página de Produtos)**
 

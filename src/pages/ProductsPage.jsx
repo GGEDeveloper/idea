@@ -4,6 +4,7 @@ import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import FilterSidebar from '../components/products/FilterSidebar';
 import ProductCard from '../components/products/ProductCard';
 import ProductGrid from '../components/products/ProductGrid';
+import Pagination from '../components/common/Pagination';
 import { useProducts } from '../hooks/useProducts';
 import { useAuth } from '../contexts/AuthContext';
 import '../i18n';
@@ -22,7 +23,11 @@ const ProductsPage = () => {
     filters,
     setFilters,
     filterOptions,
-    setSearchQuery
+    setSearchQuery,
+    sorting,
+    setSorting,
+    pagination,
+    handlePageChange
   } = useProducts(searchQuery);
 
   const { isAuthenticated, hasPermission, user } = useAuth();
@@ -123,6 +128,11 @@ const ProductsPage = () => {
     window.location.href = '/produtos';
   };
 
+  const handleSortChange = (e) => {
+    const [sortBy, order] = e.target.value.split('-');
+    setSorting({ sortBy, order });
+  };
+
   // Renderização condicional
   if (error) {
     return (
@@ -192,6 +202,31 @@ const ProductsPage = () => {
 
           {/* Lista de Produtos */}
           <main className="flex-1">
+            {/* Controles de Ordenação */}
+            <div className="flex justify-end mb-4">
+              <div className="flex items-center">
+                <label htmlFor="sort-by" className="mr-2 text-sm font-medium text-text-muted">
+                  {t('Ordenar por:')}
+                </label>
+                <select
+                  id="sort-by"
+                  name="sort-by"
+                  className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+                  value={`${sorting.sortBy}-${sorting.order}`}
+                  onChange={handleSortChange}
+                >
+                  <option value="relevance-asc">{t('Relevância')}</option>
+                  <option value="name-asc">{t('Nome (A-Z)')}</option>
+                  <option value="name-desc">{t('Nome (Z-A)')}</option>
+                  {hasPermission('view_price') && (
+                    <>
+                      <option value="price-asc">{t('Preço (Menor para Maior)')}</option>
+                      <option value="price-desc">{t('Preço (Maior para Menor)')}</option>
+                    </>
+                  )}
+                </select>
+              </div>
+            </div>
             {loading ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {[...Array(8)].map((_, i) => (
@@ -215,15 +250,16 @@ const ProductsPage = () => {
                 </button>
               </div>
             ) : (
-              <ProductGrid
-                products={filteredProducts}
+              <div>
+                <ProductGrid 
+                products={filteredProducts} 
+                loading={loading} 
+                error={error} 
                 isAuthenticated={isAuthenticated}
                 hasPermission={hasPermission}
-                onLog={(log) => {
-                  // Logging detalhado de exibição e permissão
-                  console.log('[ProductCard][log]', log);
-                }}
               />
+                <Pagination pagination={pagination} onPageChange={handlePageChange} />
+              </div>
             )}
           </main>
         </div>

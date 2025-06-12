@@ -46,6 +46,10 @@ const ProductCard = ({ product, isAuthenticated = false, hasPermission = () => f
         <h3 className="text-lg font-medium text-text-base line-clamp-2 h-14">
           {product.name || t('Produto sem nome')}
         </h3>
+        <div
+          className="mt-1 text-sm text-text-muted line-clamp-3 h-[60px] overflow-hidden prose prose-sm max-w-none"
+          dangerouslySetInnerHTML={{ __html: product.description || '' }}
+        />
         <div className="mt-2 flex items-center" aria-label={t('Avaliação')}>
           <div className="flex">
             {[0, 1, 2, 3, 4].map((rating) => (

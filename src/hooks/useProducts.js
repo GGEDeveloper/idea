@@ -1,6 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export function useProducts(initialSearch = '') {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,15 +14,22 @@ export function useProducts(initialSearch = '') {
     categories: [],
     price: { min: 0, max: 0 } // Inicializa com 0 para ser atualizado após buscar as opções
   });
+  const [sorting, setSorting] = useState({ sortBy: 'relevance', order: 'asc' });
   const [filterOptions, setFilterOptions] = useState({ 
     brands: [], 
     categories: [],
     price: { min: 0, max: 1000 },
     attributes: {}
   });
+  const [pagination, setPagination] = useState({ 
+    totalProducts: 0, 
+    totalPages: 1, 
+    currentPage: 1, 
+    limit: 24 
+  });
 
-  const buildQuery = useCallback((currentFilters) => {
-    const params = [];
+  const buildQuery = useCallback((currentFilters, currentSorting) => {
+    const params = new URLSearchParams();
     
     // Filtro por marcas
     const activeBrands = Object.entries(currentFilters.brands || {})
@@ -27,28 +37,38 @@ export function useProducts(initialSearch = '') {
       .map(([key]) => key);
       
     if (activeBrands.length > 0) {
-      params.push(`brands=${activeBrands.map(encodeURIComponent).join(',')}`);
+      params.set('brands', activeBrands.map(encodeURIComponent).join(','));
     }
     
     // Filtro por categorias
     if (currentFilters.categories && currentFilters.categories.length > 0) {
-      params.push(`categories=${currentFilters.categories.map(encodeURIComponent).join(',')}`);
+      params.set('categories', currentFilters.categories.map(encodeURIComponent).join(','));
     }
     
     // Filtro por preço (só envia se for diferente dos valores padrão)
     if (currentFilters.price) {
       if (currentFilters.price.min && currentFilters.price.min > 0) {
-        params.push(`priceMin=${currentFilters.price.min}`);
+        params.set('priceMin', currentFilters.price.min);
       }
       if (currentFilters.price.max && currentFilters.price.max < filterOptions.price.max) {
-        params.push(`priceMax=${currentFilters.price.max}`);
+        params.set('priceMax', currentFilters.price.max);
       }
     }
     
-    return params.length > 0 ? `?${params.join('&')}` : '';
-  }, [filterOptions.price.max]);
+    // Adiciona parâmetros de ordenação
+    if (currentSorting && currentSorting.sortBy) {
+      params.set('sortBy', currentSorting.sortBy);
+      params.set('order', currentSorting.order);
+    }
+    
+    // Adiciona parâmetros de paginação
+    params.set('page', pagination.currentPage);
+    params.set('limit', pagination.limit);
 
-  const fetchProducts = useCallback(async (currentFilters) => {
+    return params.toString();
+  }, [filterOptions.price.max, pagination.currentPage, pagination.limit]);
+
+  const fetchProducts = useCallback(async (currentFilters, currentSorting) => {
     setLoading(true);
     setError(null);
     
@@ -59,8 +79,8 @@ export function useProducts(initialSearch = '') {
       if (isSearchActive) {
         url = `/api/products/search?q=${encodeURIComponent(searchQuery)}`;
       } else {
-        const queryString = buildQuery(currentFilters);
-        url = `/api/products${queryString}`;
+        const queryString = buildQuery(currentFilters, currentSorting);
+        url = `/api/products?${queryString}`;
       }
       
       console.log(`[useProducts] Fetching from URL: ${url}`);
@@ -71,7 +91,8 @@ export function useProducts(initialSearch = '') {
       }
       
       const data = await response.json();
-      const productsData = Array.isArray(data) ? data : [];
+      const productsData = data.products || [];
+      const paginationData = data.pagination || { totalPages: 1, currentPage: 1 };
       
       console.log(`Produtos recebidos: ${productsData.length} itens`);
       if (productsData.length > 0) {
@@ -86,6 +107,7 @@ export function useProducts(initialSearch = '') {
       
       setProducts(productsData);
       setFilteredProducts(productsData);
+      setPagination(paginationData);
     } catch (err) {
       console.error('[useProducts] Erro ao buscar produtos:', err);
       setError(err.message);
@@ -132,15 +154,27 @@ export function useProducts(initialSearch = '') {
     }
   }, []);
 
-  // Efeito para carregar os produtos quando os filtros ou busca mudarem
+  // Efeito para carregar os produtos quando os filtros, ordenação, busca ou página mudarem
   useEffect(() => {
-    console.log('Filtros alterados, buscando produtos...', filters);
+    console.log('Filtros, ordenação ou página alterados, buscando produtos...');
     const timer = setTimeout(() => {
-      fetchProducts(filters);
+      fetchProducts(filters, sorting);
     }, 300); // Debounce de 300ms
     
     return () => clearTimeout(timer);
-  }, [filters, searchQuery, fetchProducts]);
+  }, [filters, sorting, searchQuery, pagination.currentPage, fetchProducts]); // Adicionado pagination.currentPage
+
+  // Efeito para ler o estado inicial do URL
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const pageFromUrl = parseInt(searchParams.get('page'), 10) || 1;
+
+    setPagination(prev => ({ ...prev, currentPage: pageFromUrl }));
+    
+    // Idealmente, os outros filtros (sort, etc.) também seriam lidos aqui
+
+  }, [location.search]); // Executa apenas quando o URL muda
+
 
   // Carregar opções de filtro na primeira renderização
   useEffect(() => {
@@ -196,6 +230,12 @@ export function useProducts(initialSearch = '') {
     }
   }, [filterOptions.price.max]);
 
+    const handlePageChange = (newPage) => {
+    const searchParams = new URLSearchParams(location.search);
+    searchParams.set('page', newPage);
+    navigate(`${location.pathname}?${searchParams.toString()}`);
+  };
+
   return {
     products,
     filteredProducts,
@@ -206,7 +246,11 @@ export function useProducts(initialSearch = '') {
     filters,
     setFilters,
     filterOptions,
-    refetch: fetchProducts
+    sorting,
+    setSorting,
+    pagination,
+    handlePageChange,
+    refetch: () => fetchProducts(filters, sorting)
   };
 }
 
