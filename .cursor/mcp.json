@@ -1,23 +1,24 @@
 {
     "mcpServers": {
-        "task-master-ai": {
+        "taskmaster-ai": {
             "command": "npx",
             "args": [
-                "-y",
-                "--package=task-master-ai",
-                "task-master-ai"
+              "-y",
+              "--package=taskmaster-ai",
+              "taskmaster-ai"
             ],
             "env": {
-                "ANTHROPIC_API_KEY": "ANTHROPIC_API_KEY_HERE",
-                "PERPLEXITY_API_KEY": "PERPLEXITY_API_KEY_HERE",
-                "OPENAI_API_KEY": "OPENAI_API_KEY_HERE",
-                "GOOGLE_API_KEY": "GOOGLE_API_KEY_HERE",
-                "XAI_API_KEY": "XAI_API_KEY_HERE",
-                "OPENROUTER_API_KEY": "OPENROUTER_API_KEY_HERE",
-                "MISTRAL_API_KEY": "MISTRAL_API_KEY_HERE",
-                "AZURE_OPENAI_API_KEY": "AZURE_OPENAI_API_KEY_HERE",
-                "OLLAMA_API_KEY": "OLLAMA_API_KEY_HERE"
-            }
+              "GOOGLE_API_KEY": "AIzaSyAY9AsTqmVtHQltmU8cfjBXjaqmo_4EHv0",
+              "PERPLEXITY_API_KEY": "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",
+              "main": "gemini-2.5-pro-preview-05-06",
+              "fallback": "gemini-2.5-flash-preview-05-20",
+              "research": "sonar-pro",
+              "maxTokens": "64000",
+              "temperature": "0.2",
+              "defaultSubtasks": "5",
+              "defaultPriority": "medium"
+            },
+            "disabled": false
         }
     }
 }

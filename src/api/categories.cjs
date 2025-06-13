@@ -1,102 +1,16 @@
-require('dotenv').config();
 const express = require('express');
-const { Pool } = require('pg');
+const { pool } = require('../db.cjs'); // Usar o pool centralizado
+const { buildCategoryTreeFromPaths } = require('./utils/category-utils.cjs');
+const { requireAdminAuth } = require('./middleware/auth.cjs'); // Importar o middleware do novo local
 
 const router = express.Router();
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false },
-});
+// const pool = new Pool({
+//   connectionString: process.env.DATABASE_URL,
+//   ssl: { rejectUnauthorized: false },
+// });
 
-/**
- * Constrói a árvore de categorias a partir do campo 'path' da tabela categories.
- * Cada nó terá um array 'children' com as subcategorias.
- * 
- * @param {Array} categories - Lista de categorias com campos {id, name, path, product_count}
- * @returns {Array} Árvore de categorias aninhada
- */
-function buildCategoryTreeFromPaths(categories) {
-    const pathMap = {};
 
-    // Primeiro, popule o mapa com todas as categorias reais da BD.
-    // Isto garante que temos todos os dados reais (como IDs e contagens diretas).
-    for (const cat of categories) {
-        pathMap[cat.path] = {
-            id: cat.id,
-            name: cat.name,
-            path: cat.path,
-            directProductCount: parseInt(cat.product_count, 10) || 0,
-            children: [],
-        };
-    }
-
-    const roots = [];
-    const sortedPaths = Object.keys(pathMap).sort();
-
-    for (const path of sortedPaths) {
-        const pathParts = path.split('/');
-        const node = pathMap[path];
-
-        if (pathParts.length > 1) {
-            // É um nó filho. Encontrar ou criar o pai.
-            const parentPath = pathParts.slice(0, -1).join('/');
-            
-            if (!pathMap[parentPath]) {
-                // O pai não existe, criar um nó virtual.
-                pathMap[parentPath] = {
-                    id: `virtual-${parentPath}`,
-                    name: pathParts[pathParts.length - 2],
-                    path: parentPath,
-                    directProductCount: 0,
-                    children: [],
-                };
-            }
-            
-            // Adicionar o nó atual aos filhos do pai.
-            if (!pathMap[parentPath].children.some(c => c.path === path)) {
-                pathMap[parentPath].children.push(node);
-            }
-        } 
-    }
-
-    // Identificar os nós raiz (aqueles que não são filhos de ninguém)
-    const childPaths = new Set();
-    Object.values(pathMap).forEach(node => {
-        node.children.forEach(child => childPaths.add(child.path));
-    });
-    Object.values(pathMap).forEach(node => {
-        if (!childPaths.has(node.path)) {
-            roots.push(node);
-        }
-    });
-
-    // Calcular recursivamente a contagem total de produtos para cada nó.
-    function calculateTotalProductCount(node) {
-        let total = node.directProductCount;
-        for (const child of node.children) {
-            total += calculateTotalProductCount(child);
-        }
-        node.productCount = total; // Contagem total para exibição
-        return total;
-    }
-
-    for (const root of roots) {
-        calculateTotalProductCount(root);
-    }
-
-    // Ordenar a árvore alfabeticamente.
-    function sortTree(nodes) {
-        nodes.sort((a, b) => a.name.localeCompare(b.name));
-        for (const node of nodes) {
-            sortTree(node.children);
-        }
-    }
-
-    sortTree(roots);
-
-    return roots;
-}
 
 // GET /api/categories/tree
 // Endpoint para buscar a árvore de categorias completa e hierárquica
@@ -127,4 +41,75 @@ router.get('/tree', async (req, res) => {
   }
 });
 
-module.exports = { router, buildCategoryTreeFromPaths };
+// Rota para CRIAR uma nova categoria (Admin Only)
+router.post('/', requireAdminAuth, async (req, res) => {
+  const { geko_category_id, name, path } = req.body;
+
+  if (!geko_category_id || !name || !path) {
+    return res.status(400).json({ error: 'Missing required fields: geko_category_id, name, path' });
+  }
+
+  try {
+    const newCategory = await pool.query(
+      'INSERT INTO categories (geko_category_id, name, path) VALUES ($1, $2, $3) RETURNING *',
+      [geko_category_id, name, path]
+    );
+    res.status(201).json(newCategory.rows[0]);
+  } catch (error) {
+    console.error('[API] Erro ao criar categoria:', error);
+    if (error.code === '23505') { // unique_violation
+        return res.status(409).json({ error: `Já existe uma categoria com o ID ${geko_category_id}.` });
+    }
+    res.status(500).json({ error: 'Erro ao criar categoria.' });
+  }
+});
+
+// Rota para ATUALIZAR uma categoria (Admin Only)
+router.put('/:id', requireAdminAuth, async (req, res) => {
+  const { id } = req.params;
+  const { name, path } = req.body;
+
+  if (!name || !path) {
+    return res.status(400).json({ error: 'Missing required fields: name, path' });
+  }
+
+  try {
+    const updatedCategory = await pool.query(
+      'UPDATE categories SET name = $1, path = $2 WHERE geko_category_id = $3 RETURNING *',
+      [name, path, id]
+    );
+
+    if (updatedCategory.rows.length === 0) {
+      return res.status(404).json({ error: `Categoria com ID ${id} não encontrada.` });
+    }
+    res.json(updatedCategory.rows[0]);
+  } catch (error) {
+    console.error(`[API] Erro ao atualizar categoria ${id}:`, error);
+    res.status(500).json({ error: 'Erro ao atualizar categoria.' });
+  }
+});
+
+// Rota para APAGAR uma categoria (Admin Only)
+router.delete('/:id', requireAdminAuth, async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Verificar se a categoria não está a ser usada em `product_categories`
+    const usageCheck = await pool.query('SELECT 1 FROM product_categories WHERE geko_category_id = $1 LIMIT 1', [id]);
+    if (usageCheck.rows.length > 0) {
+      return res.status(400).json({ error: 'Não é possível apagar a categoria, pois está associada a produtos.' });
+    }
+
+    const deleteResult = await pool.query('DELETE FROM categories WHERE geko_category_id = $1 RETURNING *', [id]);
+
+    if (deleteResult.rows.length === 0) {
+      return res.status(404).json({ error: `Categoria com ID ${id} não encontrada.` });
+    }
+    res.status(204).send();
+  } catch (error) {
+    console.error(`[API] Erro ao apagar categoria ${id}:`, error);
+    res.status(500).json({ error: 'Erro ao apagar categoria.' });
+  }
+});
+
+module.exports = router;

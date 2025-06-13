@@ -1,14 +1,14 @@
 # Task ID: 8
 # Title: Implement Product Listing Sorting Functionality
-# Status: done
+# Status: pending
 # Dependencies: 6, 49
 # Priority: medium
-# Description: Add options to sort products on the Product Listing Page by criteria suchs as price (asc/desc), name, and relevance. **Ensure sorting by price is only available or functional for authenticated users.**
+# Description: The original implementation for product listing sorting has been invalidated. This task focuses on completely revalidating and re-implementing the sorting functionality, especially for price. The new objective is to ensure frontend sorting options correctly construct parameters for new API queries and to implement strict backend and frontend logic so that the 'sort by price' option is only visible and functional for authenticated users with the correct permissions, utilizing `AuthContext`.
 # Details:
-Sorting should be applied client-side or via API call, leveraging PostgreSQL for data retrieval.
+Sorting logic must now primarily reside on the backend, with the frontend responsible for constructing and sending the correct query parameters to the API. Backend implementation should leverage PostgreSQL for efficient data retrieval and sorting. Strict permission checks for price sorting must be enforced on both frontend (visibility) and backend (functionality).
 
 # Test Strategy:
-Verify products are sorted correctly based on selected option. **Test price sorting functionality for unauthenticated users.**
+Verify that sorting options correctly translate into API query parameters. Thoroughly test the 'sort by price' option: ensure it is not visible or functional for unauthenticated users or users without the correct permissions. Verify it functions correctly for authenticated users with the required permissions. Test all other sorting options for accuracy.
 
 # Subtasks:
 ## 1. Implement Sorting UI Components [done]
@@ -28,4 +28,28 @@ Logic to be implemented on the frontend after data retrieval from API Geko. Ensu
 ### Description: Implement logic to restrict or modify price sorting options based on user authentication status (e.g., only authenticated users can sort by price, or different price sorting options for premium users). Utilize Auth.js/Clerk for authentication checks.
 ### Details:
 Use Auth.js/Clerk for user session management and role-based access control. Ensure proper error handling and UI feedback for unauthorized attempts. Include automated tests for permission enforcement.
+
+## 4. Re-evaluate and Adapt Frontend Sorting UI for New API Queries [pending]
+### Dependencies: None
+### Description: Review the existing sorting UI components (from subtask 1) and adapt them to construct and send the correct query parameters to the new backend API endpoints for sorting. Ensure all sorting options (name, relevance, price) correctly map to API parameters.
+### Details:
+Focus on parameter mapping and API integration. This supersedes the previous client-side sorting logic (from subtask 2) by shifting the responsibility to the backend API.
+
+## 5. Implement Backend API Endpoints for Parameterized Product Sorting [pending]
+### Dependencies: None
+### Description: Develop or modify backend API endpoints to accept sorting parameters (e.g., `sortBy`, `sortOrder`) and return product listings sorted according to these parameters. Leverage PostgreSQL for efficient database-level sorting.
+### Details:
+Ensure API endpoints are robust, handle various sorting criteria, and are optimized for performance. Implement proper input validation for sorting parameters.
+
+## 6. Re-implement Strict Price Sorting Visibility and Functionality (Frontend & Backend) [pending]
+### Dependencies: 8.4, 8.5
+### Description: Implement strict logic on both the frontend and backend to ensure the 'sort by price' option is only visible and functional for authenticated users with the correct permissions, utilizing `AuthContext` for permission checks. This re-validates and strengthens the restrictions previously attempted in subtask 3.
+### Details:
+Frontend: Hide/disable the price sorting option if the user is not authenticated or lacks permission. Backend: Reject API requests for price sorting if the user is not authenticated or lacks permission. Implement robust error handling and user feedback.
+
+## 7. Conduct End-to-End Testing and Validation of Sorting Functionality [pending]
+### Dependencies: 8.4, 8.5, 8.6
+### Description: Perform comprehensive end-to-end testing to validate all sorting options, focusing on the correct interaction between frontend UI, API parameter construction, backend sorting logic, and especially the strict permission-based access for price sorting.
+### Details:
+Test cases should cover: all sorting criteria (name, relevance, price asc/desc), authenticated vs. unauthenticated users, users with/without price sorting permissions, edge cases, and performance under various data loads.
 

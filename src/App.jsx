@@ -13,6 +13,8 @@ import MyAccountPage from './pages/MyAccountPage';
 import About from './pages/About';
 import ContactPage from './pages/ContactPage';
 import UnauthorizedPage from './pages/UnauthorizedPage';
+import ProductsAdminPage from './pages/admin/ProductsAdminPage';
+import ProductEditPage from './pages/admin/ProductEditPage';
 
 // Componente para proteger rotas que requerem autenticação
 const ProtectedRoute = ({ children }) => {
@@ -88,7 +90,7 @@ function App() {
           {/* Rotas Públicas */}
           <Route path="/" element={<HomePage />} />
           <Route path="/produtos" element={<ProductsPage />} />
-          <Route path="/produto/:ean" element={<ProductDetailPage />} />
+          <Route path="/produtos/:id" element={<ProductDetailPage />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/contato" element={<ContactPage />} />
           
@@ -129,6 +131,25 @@ function App() {
           
           {/* Rota de Não Autorizado */}
           <Route path="/unauthorized" element={<UnauthorizedPage />} />
+          
+          {/* Rotas de Administração */}
+          <Route
+            path="/admin/products"
+            element={
+              <ProtectedRoute>
+                <ProductsAdminPage />
+              </ProtectedRoute>
+            }
+          />
+          {/* A rota de edição também deve ser protegida */}
+          <Route
+            path="/admin/products/edit/:id"
+            element={
+              <ProtectedRoute>
+                <ProductEditPage />
+              </ProtectedRoute>
+            }
+          />
           
           {/* Rota 404 - Página não encontrada */}
           <Route path="*" element={

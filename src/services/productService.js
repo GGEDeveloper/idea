@@ -23,3 +23,23 @@ export const getProductByEan = async (ean) => {
 
   return response.json();
 };
+
+/**
+ * Fetches a single product by its ID from the backend API.
+ * This function calls the GET /api/products/:id endpoint.
+ * 
+ * @param {string|number} id - The ID of the product to fetch.
+ * @returns {Promise<Object>} A promise that resolves to the product object.
+ * @throws {Error} Throws an error if the network response is not ok.
+ */
+export const getProductById = async (id) => {
+  const response = await fetch(`/api/products/${id}`);
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => null);
+    const errorMessage = errorData?.error || `Produto com ID ${id} não encontrado.`;
+    throw new Error(errorMessage);
+  }
+
+  return response.json();
+};

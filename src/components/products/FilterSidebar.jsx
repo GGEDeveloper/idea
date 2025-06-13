@@ -123,7 +123,7 @@ const FilterSidebar = ({
           {filterOptions.categories && filterOptions.categories.length > 0 ? (
             <CategoryTree
               categories={filterOptions.categories}
-              selectedCategories={filters.categories || []}
+              selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
               onCategorySelect={onCategoryChange}
             />
           ) : (

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useCallback, useMemo } from 'react';
+import React, { createContext, useContext, useCallback, useMemo, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser, useSession, useClerk, useSignIn, useSignUp } from '@clerk/clerk-react';
 
@@ -20,7 +20,53 @@ export const AuthProvider = ({ children }) => {
   const { signUp, isLoaded: isSignUpLoaded } = useSignUp();
   const navigate = useNavigate();
 
-  const isLoading = !isUserLoaded || !isSessionLoaded || !isSignInLoaded || !isSignUpLoaded;
+  // Estado para armazenar o perfil do utilizador do nosso backend (com roles e permissões)
+  const [localUser, setLocalUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+  const [authError, setAuthError] = useState(null);
+
+  const clerkIsLoaded = isUserLoaded && isSessionLoaded && isSignInLoaded && isSignUpLoaded;
+
+  // Efeito para buscar o perfil do nosso backend quando o utilizador está autenticado
+  useEffect(() => {
+    // Só executa quando o Clerk terminou de carregar e existe uma sessão ativa.
+    if (clerkIsLoaded && session) {
+      const fetchLocalUser = async () => {
+        setAuthLoading(true);
+        try {
+          const token = await session.getToken();
+          const response = await fetch('/api/users/me', {
+            headers: {
+              'Authorization': `Bearer ${token}`,
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error(`Falha ao buscar perfil do utilizador: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+          setLocalUser(data);
+          setAuthError(null);
+        } catch (error) {
+          console.error("Erro ao buscar perfil local:", error);
+          setAuthError(error.message);
+          setLocalUser(null); // Garante que não há dados de utilizador inválidos
+        } finally {
+          setAuthLoading(false);
+        }
+      };
+
+      fetchLocalUser();
+    } else if (clerkIsLoaded) {
+      // Se o Clerk carregou mas não há sessão, terminamos o loading.
+      setAuthLoading(false);
+      setLocalUser(null);
+    }
+  }, [session, clerkIsLoaded]);
+
+  const isLoading = authLoading || !clerkIsLoaded;
+  const isAuthenticated = !isLoading && !!user && !!localUser;
 
   // Login with email/password
   const login = useCallback(async (email, password) => {
@@ -127,11 +173,17 @@ export const AuthProvider = ({ children }) => {
     }
   }, [signOut, navigate]);
 
+  // Verifica se o utilizador tem uma permissão específica
+  const hasPermission = useCallback((permission) => {
+    if (!localUser || !localUser.permissions) return false;
+    return localUser.permissions.includes(permission);
+  }, [localUser]);
+
   // Check if user has specific role
   const hasRole = useCallback((role) => {
-    if (!user) return false;
-    return user.publicMetadata?.roles?.includes(role) || false;
-  }, [user]);
+    if (!localUser) return false;
+    return localUser.role_name === role;
+  }, [localUser]);
 
   // Check if user's email is verified
   const isEmailVerified = useMemo(() => {
@@ -225,27 +277,21 @@ export const AuthProvider = ({ children }) => {
     }
   }, [signIn]);
 
-  // Check if user has specific permission
-  const hasPermission = useCallback((permission) => {
-    if (!user) return false;
-    return user.publicMetadata?.permissions?.includes(permission) || false;
-  }, [user]);
-
   // Check if user has any of the specified permissions
   const hasAnyPermission = useCallback((permissions) => {
-    if (!user) return false;
+    if (!localUser) return false;
     return permissions.some(permission => 
-      user.publicMetadata?.permissions?.includes(permission)
+      localUser.permissions?.includes(permission)
     );
-  }, [user]);
+  }, [localUser]);
 
   // Check if user has all specified permissions
   const hasAllPermissions = useCallback((permissions) => {
-    if (!user) return false;
+    if (!localUser) return false;
     return permissions.every(permission => 
-      user.publicMetadata?.permissions?.includes(permission)
+      localUser.permissions?.includes(permission)
     );
-  }, [user]);
+  }, [localUser]);
 
   // Update user password
   const updatePassword = useCallback(async (currentPassword, newPassword) => {
@@ -266,60 +312,51 @@ export const AuthProvider = ({ children }) => {
     }
   }, [user]);
 
-  // Context value
+  // O valor do contexto agora inclui o nosso utilizador local e as novas funções
   const value = useMemo(() => ({
-    // User data
-    user,
-    session,
+    user, // Utilizador do Clerk (para dados como nome, avatar)
+    localUser, // Nosso utilizador (com roles, permissões)
+    isAuthenticated,
     isLoading,
-    isAuthenticated: !!user,
-    isEmailVerified,
-    
-    // Authentication
+    authError,
     login,
-    logout,
     register,
     verifyEmail,
-    
-    // Authorization
+    logout,
     hasRole,
-    hasPermission,
-    hasAnyPermission,
-    hasAllPermissions,
-    
-    // UI
+    hasPermission, // Nova função exportada
+    isEmailVerified,
     openLogin,
     openRegister,
-    
-    // Account management
+    requestAccess,
     updateProfile,
-    updatePassword,
     sendPasswordResetEmail,
     resetPassword,
-    
-    // Other
-    requestAccess,
+    hasAnyPermission,
+    hasAllPermissions,
+    updatePassword,
   }), [
-    // Dependencies
     user,
-    session,
+    localUser,
+    isAuthenticated,
     isLoading,
-    isEmailVerified,
+    authError,
     login,
-    logout,
     register,
     verifyEmail,
+    logout,
     hasRole,
     hasPermission,
-    hasAnyPermission,
-    hasAllPermissions,
+    isEmailVerified,
     openLogin,
     openRegister,
+    requestAccess,
     updateProfile,
-    updatePassword,
     sendPasswordResetEmail,
     resetPassword,
-    requestAccess,
+    hasAnyPermission,
+    hasAllPermissions,
+    updatePassword,
   ]);
 
   return (

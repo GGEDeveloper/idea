@@ -1,0 +1,56 @@
+# --- Banco de Dados PostgreSQL (Neo) ---
+DATABASE_URL=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech/neondb?sslmode=require
+DATABASE_URL_UNPOOLED=postgresql://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc.eu-west-2.aws.neon.tech/neondb?sslmode=require
+PGHOST=ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech
+PGHOST_UNPOOLED=ep-shiny-bush-abjh1ibc.eu-west-2.aws.neon.tech
+PGUSER=neondb_owner
+PGDATABASE=neondb
+PGPASSWORD=npg_aMgk1osmjh7X
+POSTGRES_URL=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech/neondb?sslmode=require
+POSTGRES_URL_NON_POOLING=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc.eu-west-2.aws.neon.tech/neondb?sslmode=require
+POSTGRES_USER=neondb_owner
+POSTGRES_HOST=ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech
+POSTGRES_PASSWORD=npg_aMgk1osmjh7X
+POSTGRES_DATABASE=neondb
+POSTGRES_URL_NO_SSL=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech/neondb
+POSTGRES_PRISMA_URL=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1ibc-pooler.eu-west-2.aws.neon.tech/neondb?connect_timeout=15&sslmode=require
+
+# --- Geko API ---
+GEKO_API_KEY=4bceff60-32d7-4635-b5e8-ca51353a6e0e
+GEKO_API_XML_URL_EN_UTF8=https://b2b.geko.pl/en/xmlapi/20/3/utf8/4bceff60-32d7-4635-b5e8-ca51353a6e0e
+
+# --- Auth.js/Clerk ---
+# Variáveis para Vite (necessitam do prefixo VITE_)
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_Ymxlc3NlZC1yYXktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA
+VITE_CLERK_FRONTEND_API=https://blessed-ray-59.clerk.accounts.dev
+
+# Variáveis apenas para servidor (não são expostas ao navegador)
+CLERK_SECRET_KEY=sk_test_4uePA8ndyhboyzcixt10bUeTLT53uB1leyHFrkv69f
+CLERK_API_URL=https://api.clerk.com
+CLERK_JWT_KEY="-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq5vhef+1jqUpQQONflDZ\nTD5FVEP3JXS1kUUKWzPIf7ZKvWBiZVix0yldsLONQCzdMu05twXOrjq8VkQ4ejnN\ndoVQ9dS4XKzMXkRTFTNn7kEZ2P6j5S5bteGgkWsfgDdvEBlOZVi97PuiVTNPArnz\nTfy1BeFlEiLkQdwVffHmfEwmiWSn0glMptIxVvUXZ4eZDi2hR1JoAtctvUGoOPYd\nCufK/2tG3ZzuV+7NvPPLQBoFZP198xDIOzAMa/2tqmAH0ilqWswuNNlEwbkmivyV\nNbsoaresukn+LJIiO0lvmuBthEmwQz3cBIkpFqjqkY/llE8vyd4saknMWqyccn4W\njwIDAQAB\n-----END PUBLIC KEY-----"
+
+# --- Internacionalização (next-intl) ---
+NEXT_PUBLIC_DEFAULT_LOCALE=pt
+NEXT_PUBLIC_SUPPORTED_LOCALES=pt,en
+
+# --- Vercel (Deploy Cloud) ---
+VERCEL_PROJECT_ID=prj_wMle3ki5xZLp90gqhZG9Bu0YlhMW
+VERCEL_TOKEN=Gw3HNXvQ8DCPCSHVnvFnebSV
+
+# --- Github (integração CI/CD, se aplicável) ---
+GITHUB_USER=GGEDeveloper
+# GITHUB_TOKEN= # REMOVIDO PARA EVITAR EXPOSIÇÃO - USAR VARIÁVEIS DE AMBIENTE DO SISTEMA CI/CD
+
+# --- Outras Integrações (se aplicável) ---
+# EMAIL_SMTP_HOST=smtp.example.com
+# EMAIL_SMTP_PORT=587
+# EMAIL_SMTP_USER=your-email-user
+# EMAIL_SMTP_PASS=your-email-password
+
+# --- Configurações de Segurança e Logging ---
+LOG_LEVEL=info
+AUDIT_LOG_RETENTION_DAYS=90
+
+# --- Variáveis para Debug/Dev ---
+NODE_ENV=development
+PORT=3000
