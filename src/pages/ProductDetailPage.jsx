@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
-import { getProductByEan } from '../services/productService';
+import { getProductById } from '../services/productService';
+import { useAuth } from '../contexts/AuthContext';
 
 import ProductImageGallery from '../components/products/ProductImageGallery';
 import ProductInfo from '../components/products/ProductInfo';
@@ -11,8 +12,9 @@ import ProductTabs from '../components/products/ProductTabs';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 
 const ProductDetailPage = () => {
-  const { ean } = useParams();
+  const { id } = useParams();
   const { addToCart } = useCart();
+  const { isAuthenticated, hasPermission } = useAuth();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -21,7 +23,7 @@ const ProductDetailPage = () => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const data = await getProductByEan(ean);
+        const data = await getProductById(id);
         setProduct(data);
       } catch (err) {
         setError(err.message);
@@ -31,7 +33,7 @@ const ProductDetailPage = () => {
     };
 
     fetchProduct();
-  }, [ean]);
+  }, [id]);
 
   if (loading) {
     return <div className="container mx-auto px-4 py-12 text-center">A carregar detalhes do produto...</div>;
@@ -62,7 +64,12 @@ const ProductDetailPage = () => {
         <div className="bg-white shadow-xl rounded-lg overflow-hidden">
           <div className="lg:flex">
             <ProductImageGallery images={product.images} />
-            <ProductInfo product={product} addToCart={addToCart} />
+            <ProductInfo 
+              product={product} 
+              addToCart={addToCart}
+              isAuthenticated={isAuthenticated}
+              hasPermission={hasPermission}
+            />
           </div>
           <ProductTabs 
             description={product.longdescription || product.shortdescription}

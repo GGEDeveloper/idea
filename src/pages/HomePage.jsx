@@ -134,11 +134,14 @@ const HomePage = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const data = await getCategories();
-        setCategories(data);
+        const data = await getCategories(); // getCategories já chama /api/categories/tree
+        // Filtrar para incluir apenas categorias de primeiro nível absoluto (sem '\' no path)
+        const topLevelCategories = data.filter(category => category.path && !category.path.includes('\\'));
+        console.log('[HomePage] Categorias de 1º Nível Filtradas:', topLevelCategories.length, topLevelCategories.map(c => c.name));
+        setCategories(topLevelCategories);
         setError(null);
       } catch (err) {
-        console.error('Erro ao carregar categorias:', err);
+        console.error('Erro ao carregar categorias na HomePage:', err);
         setError('Não foi possível carregar as categorias. Tente novamente mais tarde.');
       } finally {
         setIsLoading(false);
@@ -250,20 +253,25 @@ const HomePage = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-              {categories.map((category) => (
+              {categories.map((category) => {
+                // Extrair o nome da categoria do path se category.name for null
+                const displayName = category.name || (category.path ? category.path.split('\\').pop() : 'Categoria Desconhecida');
+                const categoryLink = `/produtos?categoria=${encodeURIComponent(displayName)}`; // Usar displayName para o link também
+
+                return (
                 <div key={category.id} className="h-full">
                   <Link 
-                    to={`/produtos?categoria=${encodeURIComponent(category.name)}`}
+                      to={categoryLink}
                     className="block h-full group"
                   >
-                    <div className={`${getCategoryColor(category.name)} rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}>
+                      <div className={`${getCategoryColor(displayName)} rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}>
                       <div className="p-6 text-center flex-1 flex flex-col items-center justify-center">
                         <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                          <i className={`${getCategoryIcon(category.name)} text-2xl text-white`}></i>
+                            <i className={`${getCategoryIcon(displayName)} text-2xl text-white`}></i>
                         </div>
-                        <h3 className="text-xl font-bold text-white mb-2">{category.name}</h3>
+                          <h3 className="text-xl font-bold text-white mb-2">{displayName}</h3>
                         <p className="text-sm text-white text-opacity-90 mb-3">
-                          {category.product_count} {category.product_count === 1 ? 'produto' : 'produtos'}
+                            {category.product_count || 0} {(category.product_count || 0) === 1 ? 'produto' : 'produtos'}
                         </p>
                         <span className="inline-flex items-center text-white text-sm font-medium mt-auto">
                           Ver produtos
@@ -273,7 +281,8 @@ const HomePage = () => {
                     </div>
                   </Link>
                 </div>
-              ))}
+                );
+              })}
             </div>
           )}
           

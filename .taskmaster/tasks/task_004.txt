@@ -1,6 +1,6 @@
 # Task ID: 4
 # Title: Database Schema Design and Setup
-# Status: done
+# Status: cancelled
 # Dependencies: 2, 3
 # Priority: low
 # Description: Design and implement the PostgreSQL database schema, including tables for products, categories, users, orders, and other essential e-commerce entities. Set up initial data and migration scripts.

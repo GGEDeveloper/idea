@@ -1,78 +1,67 @@
 // src/api/products.cjs
 const express = require('express');
-const { pool } = require('../db.cjs');
-const clerk = require('@clerk/clerk-sdk-node');
-const { buildCategoryTreeFromPaths } = require('./categories.cjs');
+const pool = require('../../db/index.cjs');
+// const clerk = require('@clerk/clerk-sdk-node'); // REMOVIDO - SDK antigo, não é usado diretamente aqui
+const { buildCategoryTreeFromPaths } = require('./utils/category-utils.cjs');
+const productQueries = require('../db/product-queries.cjs');
+const { optionalUser, requireAdminAuth } = require('./middleware/auth.cjs');
 
 const router = express.Router();
 
-// Middleware para autenticação opcional
-const optionalAuth = async (req, res, next) => {
-  req.auth = null; // Garante que req.auth existe, mas é nulo por padrão
-  try {
-    // Tenta autenticar o pedido usando o token do cabeçalho ou do cookie
-    const requestState = await clerk.authenticateRequest({
-      headerToken: req.headers.authorization,
-      cookieToken: req.cookies.__session,
-    });
+/**
+ * Remove campos sensíveis (preço, stock) de um objeto de produto
+ * se o utilizador não tiver a permissão 'view_price'.
+ * @param {object} product - O objeto do produto.
+ * @param {object} localUser - O perfil do utilizador do nosso sistema (com permissões).
+ * @returns {object} O objeto do produto, possivelmente modificado.
+ */
+function sanitizeProductForUser(product, localUser) {
+  const canViewPrice = localUser && localUser.permissions && localUser.permissions.includes('view_price');
 
-    // Se a autenticação for bem-sucedida e tivermos um userId
-    if (requestState.userId) {
-      const user = await clerk.users.getUser(requestState.userId);
-      req.auth = {
-        ...requestState,
-        // Recria o método hasPermission para consistência com o middleware do Clerk
-        hasPermission: (key) => {
-          const permissions = user.publicMetadata?.permissions || [];
-          return permissions.includes(key);
-        }
-      };
-    }
-  } catch (error) {
-    // Se a autenticação falhar (ex: token inválido ou ausente), não faz nada.
-    // O pedido prossegue como um utilizador não autenticado.
-    // console.log('Optional auth failed, proceeding as anonymous:', error.message);
+  if (canViewPrice) {
+    return product;
   }
-  next();
-};
+
+  // Se não pode ver o preço, removemos os campos sensíveis.
+  // Usamos delete para remover as chaves do objeto.
+  const sanitizedProduct = { ...product };
+  delete sanitizedProduct.price;
+  delete sanitizedProduct.stock;
+  // Adicionamos um status para o frontend saber o que mostrar
+  sanitizedProduct.priceStatus = localUser ? 'permission_denied' : 'unauthenticated';
+
+  return sanitizedProduct;
+        }
+
+// Função auxiliar para calcular o markup
+// Temporariamente, usamos um markup fixo de 30%
+function calculateMarkup(priceString) {
+  if (typeof priceString !== 'string' || priceString.trim() === '') {
+    return null;
+  }
+  // Tenta converter, substituindo vírgula por ponto para formatos europeus
+  const priceNumber = parseFloat(priceString.replace(',', '.'));
+  
+  if (isNaN(priceNumber)) {
+    return null;
+  }
+  
+  // Aplica markup de 30%
+  return priceNumber * 1.30;
+  }
 
 // Rota para buscar as opções de filtro (categorias, marcas, preços)
 router.get('/filters', async (req, res) => {
-  console.log('[API] GET /api/products/filters - A buscar opções de filtros.');
   try {
     const [categoryData, brandData, priceData] = await Promise.all([
-      // 1. Buscar todas as categorias com contagem de produtos
-      pool.query(`
-        SELECT 
-            c.geko_category_id as id,
-            c.name,
-            c.path,
-            COUNT(pc.ean) as product_count
-        FROM categories c
-        LEFT JOIN product_categories pc ON c.geko_category_id = pc.geko_category_id
-        GROUP BY c.geko_category_id, c.name, c.path
-        ORDER BY c.path;
-      `),
-      // 2. Buscar todas as marcas distintas
-      pool.query(`
-        SELECT DISTINCT producername as name 
-        FROM products 
-        WHERE producername IS NOT NULL AND producername <> '' 
-        ORDER BY name;
-      `),
-      // 3. Buscar o intervalo de preços
-      pool.query(`
-        SELECT 
-            MIN(CAST(NULLIF(pricegross, '') AS NUMERIC)) as min, 
-            MAX(CAST(NULLIF(pricegross, '') AS NUMERIC)) as max 
-        FROM products;
-      `)
+      pool.query('SELECT categoryid as id, name, "path" FROM categories ORDER BY "path"'),
+      pool.query("SELECT DISTINCT brand as name FROM products WHERE brand IS NOT NULL AND brand <> '' ORDER BY name"),
+      pool.query('SELECT MIN(price) as min, MAX(price) as max FROM prices') // Query simplificada pelo novo schema
     ]);
 
-    // Construir a árvore de categorias
+ 
     const categoryTree = buildCategoryTreeFromPaths(categoryData.rows);
 
-    // Formatar os dados para a resposta
     const filterOptions = {
       categories: categoryTree,
       brands: brandData.rows.map(row => row.name),
@@ -81,135 +70,188 @@ router.get('/filters', async (req, res) => {
         max: parseFloat(priceData.rows[0].max) || 1000,
       }
     };
-
-    console.log(`[API] GET /api/products/filters - Sucesso. Enviando ${filterOptions.categories.length} categorias raiz, ${filterOptions.brands.length} marcas.`);
     res.json(filterOptions);
-
   } catch (error) {
     console.error('[API] Erro ao buscar opções de filtros:', error);
     res.status(500).json({ error: 'Erro ao buscar opções de filtros.' });
   }
 });
 
-// Rota principal para buscar produtos (versão de diagnóstico)
-router.get('/', optionalAuth, async (req, res) => {
-  let {
+// Rota principal para buscar produtos (refatorada para o novo schema)
+router.get('/', optionalUser, async (req, res) => {
+  console.log('[API /api/products GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
+  try {
+    const { 
+      page = 1, 
+      limit = 20, 
+      sortBy = 'name', 
+      order = 'asc',
     brands,
-    categories,
+      categories, 
     priceMin,
     priceMax,
-    sortBy = 'relevance',
-    order = 'asc',
-    page = 1,
-    limit = 24
+      q: searchQuery
   } = req.query;
 
-  // Use o método hasPermission do nosso middleware personalizado
-  const canSortByPrice = req.auth?.hasPermission('view_price') ?? false;
+    const effectiveLimit = Math.min(parseInt(limit, 10) || 20, 2000);
 
-  if (sortBy === 'price' && !canSortByPrice) {
-    sortBy = 'relevance';
-  }
+    const filters = { brands, categoryId: categories, priceMin, priceMax, searchQuery };
+    const pagination = { page: parseInt(page, 10), limit: effectiveLimit, sortBy, order };
 
-  const allowedSortBy = ['relevance', 'name', 'price'];
-  const allowedOrder = ['asc', 'desc'];
-  const safeSortBy = allowedSortBy.includes(sortBy) ? sortBy : 'relevance';
-  const safeOrder = allowedOrder.includes(order) ? order.toUpperCase() : 'ASC';
-
-  const queryParams = [];
-  let paramIndex = 1;
-  const whereClauses = [];
-  let joinClauses = [];
-
-  if (brands) {
-    const brandList = brands.split(',');
-    whereClauses.push(`p.producername IN (${brandList.map(() => `$${paramIndex++}`).join(', ')})`);
-    queryParams.push(...brandList);
-  }
-
-  if (priceMin) {
-    whereClauses.push(`CAST(NULLIF(p.pricegross, '') AS NUMERIC) >= $${paramIndex++}`);
-    queryParams.push(parseFloat(priceMin));
-  }
-  if (priceMax) {
-    whereClauses.push(`CAST(NULLIF(p.pricegross, '') AS NUMERIC) <= $${paramIndex++}`);
-    queryParams.push(parseFloat(priceMax));
-  }
-
-  if (categories) {
-    const categoryList = categories.split(',');
-    joinClauses.push('JOIN product_categories pc ON p.ean = pc.ean');
-    joinClauses.push('JOIN categories c ON pc.geko_category_id = c.geko_category_id');
-    whereClauses.push(`c.geko_category_id IN (${categoryList.map(() => `$${paramIndex++}`).join(', ')})`);
-    queryParams.push(...categoryList);
-  }
-
-  const whereClause = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : '';
-  const joinClause = joinClauses.join('\n');
-
-  let orderByClause = '';
-  if (safeSortBy !== 'relevance') {
-    const columnMap = {
-      name: 'p.name',
-      price: `CAST(NULLIF(p.pricegross, '') AS NUMERIC)`
-    };
-    orderByClause = `ORDER BY ${columnMap[safeSortBy]} ${safeOrder}`;
-  }
-
-  const limitValue = parseInt(limit, 10);
-  const offsetValue = (parseInt(page, 10) - 1) * limitValue;
-
-  const baseQuery = `
-    FROM products AS p
-    ${joinClause}
-    ${whereClause}
-  `;
-
-  const countQuery = `SELECT COUNT(DISTINCT p.productid) ${baseQuery}`;
-  const finalQuery = `
-    SELECT DISTINCT
-      p.productid,
-      p.name,
-      p.ean,
-      p.shortdescription,
-      p.pricegross,
-      p.producername,
-      (SELECT url FROM product_images WHERE ean = p.ean AND is_main = true ORDER BY sort_order ASC LIMIT 1) as image_url
-    ${baseQuery}
-    ${orderByClause}
-    LIMIT $${paramIndex++} OFFSET $${paramIndex++}
-  `;
-
-  try {
-    const [countResult, productsResult] = await Promise.all([
-      pool.query(countQuery, queryParams),
-      pool.query(finalQuery, [...queryParams, limitValue, offsetValue])
+    const [totalProducts, productsFromDB] = await Promise.all([
+      productQueries.countProducts(filters),
+      productQueries.getProducts(filters, pagination)
     ]);
 
-    const totalProducts = parseInt(countResult.rows[0].count, 10);
-    const totalPages = Math.ceil(totalProducts / limitValue);
+    // Log dos produtos crus da DB
+    if (productsFromDB.length > 0) {
+      console.log('[API /api/products GET] Produto cru da DB (primeiro da lista):', JSON.stringify(productsFromDB[0], null, 2));
+    } else {
+      console.log('[API /api/products GET] Nenhum produto retornado da DB para os filtros atuais.');
+    }
+
+    const sanitizedProducts = productsFromDB.map(p => sanitizeProductForUser(p, req.localUser));
 
     res.json({
-      products: productsResult.rows.map(p => ({
-        id: p.productid,
-        name: p.name,
-        description: p.shortdescription,
-        price: p.pricegross,
-        brand: p.producername,
-        imageUrl: p.image_url || '/placeholder-product.jpg'
-      })),
-      pagination: {
-        totalProducts,
-        totalPages,
-        currentPage: parseInt(page, 10),
-        limit: limitValue
-      }
+      products: sanitizedProducts,
+      totalPages: Math.ceil(totalProducts / effectiveLimit),
+      currentPage: parseInt(page, 10),
+      totalProducts
     });
-  } catch (err) {
-    console.error('Erro na query de produtos:', err.stack);
-    res.status(500).json({ error: 'Erro ao buscar produtos' });
+
+  } catch (error) {
+    console.error('[API /api/products GET] Erro ao buscar produtos:', error);
+    res.status(500).json({ message: 'Erro interno do servidor ao buscar produtos.' });
   }
 });
 
-// Exporta o router para ser usado no arquivo server.cjs
+// Rota para buscar um único produto por EAN (refatorada para o novo schema)
+router.get('/:ean', optionalUser, async (req, res) => {
+  console.log('[API /api/products/:ean GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
+  const { ean } = req.params;
+  try {
+    const product = await productQueries.getProductByEan(ean);
+
+    if (!product) {
+      return res.status(404).json({ error: 'Produto não encontrado' });
+    }
+    
+    const sanitizedProduct = sanitizeProductForUser(product, req.localUser);
+
+    res.json(sanitizedProduct);
+
+  } catch (error) {
+    console.error(`Erro ao buscar produto com EAN ${ean}:`, error);
+    res.status(500).json({ message: 'Erro interno do servidor ao buscar o produto.' });
+  }
+});
+
+// Rota para CRIAR um novo produto (Admin Only)
+router.post('/', requireAdminAuth, async (req, res) => {
+  const {
+    productid, name, sku, ean, codeproducer, shortdescription, longdescription,
+    descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
+    srpnet, srpgross, srpvat, producername, categoryname, categoryidosell,
+    unitname, specifications_json, compatibilitycodes
+  } = req.body;
+
+  if (!productid || !name || !sku || !ean) {
+    return res.status(400).json({ error: 'Missing required fields: productid, name, sku, ean' });
+  }
+
+  try {
+    const newProduct = await pool.query(
+      `INSERT INTO products (
+        productid, name, sku, ean, codeproducer, shortdescription, longdescription,
+        descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
+        srpnet, srpgross, srpvat, producername, categoryname, categoryidosell,
+        unitname, specifications_json, compatibilitycodes
+      ) VALUES (
+        $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13,
+        $14, $15, $16, $17, $18, $19, $20, $21, $22
+      ) RETURNING *`,
+      [
+        productid, name, sku, ean, codeproducer, shortdescription, longdescription,
+        descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
+        srpnet, srpgross, srpvat, producername, categoryname, categoryidosell,
+        unitname, specifications_json, compatibilitycodes
+      ]
+    );
+    console.log(`[API] POST /api/products - Produto criado com sucesso: ${newProduct.rows[0].productid}`);
+    res.status(201).json(newProduct.rows[0]);
+  } catch (error) {
+    console.error('[API] Erro ao criar produto:', error);
+    if (error.code === '23505') { // unique_violation
+      return res.status(409).json({ error: `Já existe um produto com o productid ${productid}.` });
+    }
+    res.status(500).json({ error: 'Erro ao criar produto.' });
+  }
+});
+
+// Rota para ATUALIZAR um produto existente (Admin Only)
+router.put('/:id', requireAdminAuth, async (req, res) => {
+  const { id } = req.params;
+  const {
+    name, sku, ean, codeproducer, shortdescription, longdescription,
+    descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
+    srpnet, srpgross, srpvat, producername, categoryname, categoryidosell,
+    unitname, specifications_json, compatibilitycodes
+  } = req.body;
+
+  if (!name) {
+    return res.status(400).json({ error: 'Missing required field: name' });
+  }
+
+  try {
+    const updatedProduct = await pool.query(
+      `UPDATE products SET
+        name = $1, sku = $2, ean = $3, codeproducer = $4, shortdescription = $5, longdescription = $6,
+        descriptionlang = $7, stockquantity = $8, deliverytime = $9, pricenet = $10, pricegross = $11, pricevat = $12,
+        srpnet = $13, srpgross = $14, srpvat = $15, producername = $16, categoryname = $17, categoryidosell = $18,
+        unitname = $19, specifications_json = $20, compatibilitycodes = $21
+      WHERE productid = $22
+      RETURNING *`,
+      [
+        name, sku, ean, codeproducer, shortdescription, longdescription,
+        descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
+        srpnet, srpgross, srpvat, producername, categoryname, categoryidosell,
+        unitname, specifications_json, compatibilitycodes,
+        id
+      ]
+    );
+
+    if (updatedProduct.rows.length === 0) {
+      return res.status(404).json({ error: `Produto com ID ${id} não encontrado.` });
+    }
+
+    console.log(`[API] PUT /api/products/${id} - Produto atualizado com sucesso.`);
+    res.json(updatedProduct.rows[0]);
+  } catch (error) {
+    console.error(`[API] Erro ao atualizar produto ${id}:`, error);
+    res.status(500).json({ error: 'Erro ao atualizar produto.' });
+  }
+});
+
+// Rota para APAGAR um produto (Admin Only)
+router.delete('/:id', requireAdminAuth, async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const deleteResult = await pool.query(
+      'DELETE FROM products WHERE productid = $1 RETURNING *',
+      [id]
+    );
+
+    if (deleteResult.rows.length === 0) {
+      return res.status(404).json({ error: `Produto com ID ${id} não encontrado.` });
+    }
+
+    console.log(`[API] DELETE /api/products/${id} - Produto apagado com sucesso.`);
+    res.status(204).send(); // 204 No Content
+  } catch (error) {
+    console.error(`[API] Erro ao apagar produto ${id}:`, error);
+    res.status(500).json({ error: 'Erro ao apagar produto.' });
+  }
+});
+
 module.exports = router;

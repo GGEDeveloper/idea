@@ -1,256 +1,211 @@
-import { useState, useEffect, useCallback } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { useAuth } from '../contexts/AuthContext';
 
 export function useProducts(initialSearch = '') {
-  const location = useLocation();
-  const navigate = useNavigate();
+  const { hasPermission } = useAuth();
+  
+  // Estados básicos
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
+  // Estado de filtros como strings simples para evitar problemas de referência
   const [searchQuery, setSearchQuery] = useState(initialSearch);
-  const [filters, setFilters] = useState({ 
-    brands: {}, 
-    categories: [],
-    price: { min: 0, max: 0 } // Inicializa com 0 para ser atualizado após buscar as opções
-  });
-  const [sorting, setSorting] = useState({ sortBy: 'relevance', order: 'asc' });
+  const [brandsFilter, setBrandsFilter] = useState(''); // string separada por vírgulas
+  const [categoriesFilter, setCategoriesFilter] = useState('');
+  const [priceMinFilter, setPriceMinFilter] = useState('');
+  const [priceMaxFilter, setPriceMaxFilter] = useState('');
+  
+  // Estados de ordenação como strings simples
+  const [sortBy, setSortBy] = useState('name');
+  const [sortOrder, setSortOrder] = useState('asc');
+  
+  // Paginação como números simples
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalProducts, setTotalProducts] = useState(0);
+  const [limit] = useState(24);
+  
+  // Opções de filtro
   const [filterOptions, setFilterOptions] = useState({ 
     brands: [], 
     categories: [],
-    price: { min: 0, max: 1000 },
-    attributes: {}
+    price: { min: 0, max: 1000 }
   });
-  const [pagination, setPagination] = useState({ 
-    totalProducts: 0, 
-    totalPages: 1, 
-    currentPage: 1, 
-    limit: 24 
-  });
+  
+  // Ref para controlo de fetch
+  const fetchingRef = useRef(false);
+  const filtersLoadedRef = useRef(false);
 
-  const buildQuery = useCallback((currentFilters, currentSorting) => {
-    const params = new URLSearchParams();
+  // Carregar opções de filtro uma única vez
+  useEffect(() => {
+    if (filtersLoadedRef.current) return;
     
-    // Filtro por marcas
-    const activeBrands = Object.entries(currentFilters.brands || {})
-      .filter(([_, value]) => value)
-      .map(([key]) => key);
-      
-    if (activeBrands.length > 0) {
-      params.set('brands', activeBrands.map(encodeURIComponent).join(','));
-    }
-    
-    // Filtro por categorias
-    if (currentFilters.categories && currentFilters.categories.length > 0) {
-      params.set('categories', currentFilters.categories.map(encodeURIComponent).join(','));
-    }
-    
-    // Filtro por preço (só envia se for diferente dos valores padrão)
-    if (currentFilters.price) {
-      if (currentFilters.price.min && currentFilters.price.min > 0) {
-        params.set('priceMin', currentFilters.price.min);
-      }
-      if (currentFilters.price.max && currentFilters.price.max < filterOptions.price.max) {
-        params.set('priceMax', currentFilters.price.max);
-      }
-    }
-    
-    // Adiciona parâmetros de ordenação
-    if (currentSorting && currentSorting.sortBy) {
-      params.set('sortBy', currentSorting.sortBy);
-      params.set('order', currentSorting.order);
-    }
-    
-    // Adiciona parâmetros de paginação
-    params.set('page', pagination.currentPage);
-    params.set('limit', pagination.limit);
-
-    return params.toString();
-  }, [filterOptions.price.max, pagination.currentPage, pagination.limit]);
-
-  const fetchProducts = useCallback(async (currentFilters, currentSorting) => {
-    setLoading(true);
-    setError(null);
-    
-    try {
-      const isSearchActive = searchQuery && searchQuery.length >= 2;
-      let url;
-
-      if (isSearchActive) {
-        url = `/api/products/search?q=${encodeURIComponent(searchQuery)}`;
-      } else {
-        const queryString = buildQuery(currentFilters, currentSorting);
-        url = `/api/products?${queryString}`;
-      }
-      
-      console.log(`[useProducts] Fetching from URL: ${url}`);
-      const response = await fetch(url);
-      
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      
-      const data = await response.json();
-      const productsData = data.products || [];
-      const paginationData = data.pagination || { totalPages: 1, currentPage: 1 };
-      
-      console.log(`Produtos recebidos: ${productsData.length} itens`);
-      if (productsData.length > 0) {
-        console.log('Primeiro produto:', {
-          id: productsData[0].productid,
-          name: productsData[0].name,
-          price: productsData[0].price,
-          category: productsData[0].categoryname,
-          hasImage: !!productsData[0].image_url
-        });
-      }
-      
-      setProducts(productsData);
-      setFilteredProducts(productsData);
-      setPagination(paginationData);
-    } catch (err) {
-      console.error('[useProducts] Erro ao buscar produtos:', err);
-      setError(err.message);
-      setProducts([]);
-      setFilteredProducts([]);
-    } finally {
-      setLoading(false);
-    }
-  }, [searchQuery, buildQuery]);
-
-  const fetchFilterOptions = useCallback(async () => {
-    try {
-      const response = await fetch('/api/products/filters');
-      const data = await response.json();
-      
-      // Log para depuração
-      console.log('Opções de filtro recebidas:', {
-        categoriesCount: data.categories?.length || 0,
-        sampleCategories: data.categories?.slice(0, 3)
-      });
-      
-      setFilterOptions(prev => ({
-        ...prev,
-        brands: data.brands || [],
-        categories: data.categories || [], // Mantém o formato original para exibição
-        price: {
-          min: Number(data.price?.min) || 0,
-          max: Number(data.price?.max) || 1000
-        },
-        attributes: data.attributes || {}
-      }));
-      
-      // Atualiza os filtros com os valores iniciais
-      setFilters(prev => ({
-        ...prev,
-        price: {
-          min: Number(data.price?.min) || 0,
-          max: Number(data.price?.max) || 1000
+    const loadFilters = async () => {
+             try {
+         const response = await fetch('http://localhost:3000/api/products/filters');
+        if (response.ok) {
+          const data = await response.json();
+          setFilterOptions({
+            brands: data.brands || [],
+            categories: data.categories || [],
+            price: data.price || { min: 0, max: 1000 }
+          });
         }
-      }));
-    } catch (err) {
-      console.error('Erro ao buscar opções de filtro:', err);
-      throw err;
+      } catch (err) {
+        console.error('Erro ao carregar filtros:', err);
+      } finally {
+        filtersLoadedRef.current = true;
+      }
+    };
+    
+    loadFilters();
+  }, []); // Sem dependências
+
+  // Buscar produtos com dependências simples
+  useEffect(() => {
+    if (fetchingRef.current) return;
+    
+    const fetchProducts = async () => {
+      fetchingRef.current = true;
+      setLoading(true);
+      setError(null);
+      
+      // Construir query string
+      const params = new URLSearchParams();
+      params.append('page', currentPage.toString());
+      params.append('limit', limit.toString());
+      params.append('sortBy', sortBy);
+      params.append('order', sortOrder);
+      
+      if (searchQuery) params.append('q', searchQuery);
+      if (brandsFilter) params.append('brands', brandsFilter);
+      if (categoriesFilter) params.append('categories', categoriesFilter);
+      
+      if (hasPermission && hasPermission('view_price')) {
+        if (priceMinFilter) params.append('priceMin', priceMinFilter);
+        if (priceMaxFilter) params.append('priceMax', priceMaxFilter);
+      }
+      
+      try {
+         const response = await fetch(`http://localhost:3000/api/products?${params.toString()}`);
+        if (!response.ok) {
+          throw new Error(`Erro ${response.status}: ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        setProducts(data.products || []);
+        setTotalPages(data.totalPages || 1);
+        setTotalProducts(data.totalProducts || 0);
+        
+      } catch (err) {
+        console.error('Erro ao buscar produtos:', err);
+        setError(err.message);
+        setProducts([]);
+      } finally {
+        setLoading(false);
+        setTimeout(() => {
+          fetchingRef.current = false;
+        }, 100);
+      }
+    };
+
+    fetchProducts();
+  }, [
+    searchQuery,
+    brandsFilter, 
+    categoriesFilter,
+    priceMinFilter,
+    priceMaxFilter,
+    sortBy,
+    sortOrder,
+    currentPage,
+    limit
+  ]); // Apenas dependências primitivas
+
+  // Funções helper para compatibilidade com o código existente
+  const filters = {
+    searchQuery,
+    brands: brandsFilter ? brandsFilter.split(',').reduce((acc, brand) => {
+      acc[brand.trim()] = true;
+      return acc;
+    }, {}) : {},
+    categories: categoriesFilter ? categoriesFilter.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id)) : [],
+    price: { 
+      min: priceMinFilter ? parseInt(priceMinFilter) : 0,
+      max: priceMaxFilter ? parseInt(priceMaxFilter) : 0
     }
-  }, []);
-
-  // Efeito para carregar os produtos quando os filtros, ordenação, busca ou página mudarem
-  useEffect(() => {
-    console.log('Filtros, ordenação ou página alterados, buscando produtos...');
-    const timer = setTimeout(() => {
-      fetchProducts(filters, sorting);
-    }, 300); // Debounce de 300ms
-    
-    return () => clearTimeout(timer);
-  }, [filters, sorting, searchQuery, pagination.currentPage, fetchProducts]); // Adicionado pagination.currentPage
-
-  // Efeito para ler o estado inicial do URL
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const pageFromUrl = parseInt(searchParams.get('page'), 10) || 1;
-
-    setPagination(prev => ({ ...prev, currentPage: pageFromUrl }));
-    
-    // Idealmente, os outros filtros (sort, etc.) também seriam lidos aqui
-
-  }, [location.search]); // Executa apenas quando o URL muda
-
-
-  // Carregar opções de filtro na primeira renderização
-  useEffect(() => {
-    fetchFilterOptions();
-  }, [fetchFilterOptions]);
-
-  // Category filter handler (hierarchical)
-  const handleCategoryChange = (category) => {
-    setFilters(prev => {
-      // Se for para limpar todas as categorias
-      if (category === 'clear') {
-        return { ...prev, categories: [] };
-      }
-      
-      const categories = Array.isArray(prev.categories) ? [...prev.categories] : [];
-      const categoryName = category?.name || category;
-      const categoryId = category?.id || category;
-      
-      if (!categoryName) return prev;
-      
-      // Verifica se a categoria já está selecionada
-      const existsIndex = categories.findIndex(c => 
-        (typeof c === 'string' ? c : c.name) === categoryName
-      );
-      
-      // Se a categoria já existe, remove
-      if (existsIndex >= 0) {
-        categories.splice(existsIndex, 1);
-      } 
-      // Se não existe, adiciona
-      else {
-        categories.push({
-          id: categoryId,
-          name: categoryName,
-          path: category?.path
-        });
-      }
-      
-      return { ...prev, categories };
-    });
   };
 
-  // Atualiza os filtros iniciais quando as opções são carregadas
-  useEffect(() => {
-    if (filterOptions.price.max > 0) {
-      setFilters(prev => ({
-        ...prev,
-        price: {
-          min: 0,
-          max: filterOptions.price.max
-        }
-      }));
+  const sorting = { sortBy, order: sortOrder };
+      
+  const pagination = {
+    currentPage,
+    totalPages,
+    totalProducts,
+    limit
+  };
+
+  // Funções de atualização
+  const setFilters = (newFilters) => {
+    if (newFilters.searchQuery !== undefined) {
+      setSearchQuery(newFilters.searchQuery);
     }
-  }, [filterOptions.price.max]);
+    
+    if (newFilters.brands) {
+      const activeBrands = Object.entries(newFilters.brands)
+        .filter(([_, active]) => active)
+        .map(([brand]) => brand);
+      setBrandsFilter(activeBrands.join(','));
+    }
+    
+    if (newFilters.categories !== undefined) {
+      setCategoriesFilter(Array.isArray(newFilters.categories) 
+        ? newFilters.categories.join(',')
+        : newFilters.categories || ''
+      );
+      }
+      
+    if (newFilters.price) {
+      setPriceMinFilter(newFilters.price.min?.toString() || '');
+      setPriceMaxFilter(newFilters.price.max?.toString() || '');
+    }
+    
+    // Reset para primeira página quando filtros mudam
+    setCurrentPage(1);
+  };
+
+  const setSorting = (newSorting) => {
+    setSortBy(newSorting.sortBy);
+    setSortOrder(newSorting.order);
+    setCurrentPage(1);
+  };
 
     const handlePageChange = (newPage) => {
-    const searchParams = new URLSearchParams(location.search);
-    searchParams.set('page', newPage);
-    navigate(`${location.pathname}?${searchParams.toString()}`);
+    if (newPage > 0 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+    }
   };
 
+  const updateSearchQuery = (query) => {
+    setSearchQuery(query);
+    setCurrentPage(1);
+  };
+  
   return {
     products,
-    filteredProducts,
+    filteredProducts: products,
     loading,
     error,
     searchQuery,
-    setSearchQuery,
+    setSearchQuery: updateSearchQuery,
     filters,
     setFilters,
     filterOptions,
     sorting,
     setSorting,
     pagination,
-    handlePageChange,
-    refetch: () => fetchProducts(filters, sorting)
+    handlePageChange
   };
 }
 

@@ -1,14 +1,14 @@
 # Task ID: 5
-# Title: Develop Home Page Structure
-# Status: done
+# Title: [REQUER REVISÃO] Develop Home Page Structure
+# Status: pending
 # Dependencies: 2, 3
 # Priority: medium
 # Description: Create the basic layout and structure for the Home Page.
 # Details:
-Placeholder sections for highlights, banners, categories, news, and promotions.
+Placeholder sections for highlights, banners, categories, news, and promotions. The product search logic and price display on the Home Page need to be validated against the new database schema and the RBAC (Role-Based Access Control) system.
 
 # Test Strategy:
-Verify page loads correctly with header and footer.
+Verify page loads correctly with header and footer. Validate that product data fetching and price display on the Home Page correctly reflect the new database schema and adhere to RBAC permissions. Test various user roles to ensure correct product visibility and pricing.
 
 # Subtasks:
 ## 1. Design Home Page Core Layout [done]
@@ -28,4 +28,28 @@ Each placeholder should have a clear visual boundary (e.g., a distinct backgroun
 ### Description: Substituir mock data por listagem real de produtos, consumindo dados da API/BD PostgreSQL. Implementar componente que faz fetch dos produtos reais e exibe na interface.
 ### Details:
 Criar endpoint /api/products no backend Express para expor produtos da BD. Atualizar componente(s) de listagem de produtos na Home Page e ProductsPage para consumir este endpoint e exibir produtos reais, com nome, imagem, preço, etc. Garantir UX responsiva e fallback para loading/erro.
+
+## 4. Validar Lógica de Busca de Produtos contra Novo Schema DB [pending]
+### Dependencies: 5.3
+### Description: Revisar e validar a lógica de busca e exibição de produtos na Home Page para garantir compatibilidade e correção com o novo schema do banco de dados PostgreSQL. Assegurar que todos os campos de produto (nome, preço, imagem, etc.) são corretamente mapeados e exibidos.
+### Details:
+Verificar queries SQL ou ORM para garantir que estão alinhadas com as novas definições de tabelas e colunas. Testar a exibição de produtos com diferentes tipos de dados e cenários (e.g., produtos sem imagem, com preço zero).
+
+## 5. Validar Exibição de Preços contra Novo Schema DB [pending]
+### Dependencies: 5.3, 5.4
+### Description: Confirmar que a exibição de preços na Home Page está correta e consistente com o novo schema do banco de dados, incluindo formatação e precisão.
+### Details:
+Testar a exibição de preços para diferentes moedas, formatos e valores (e.g., preços com casas decimais, preços inteiros). Verificar se há arredondamentos ou truncamentos inesperados.
+
+## 6. Validar Lógica de Busca de Produtos com RBAC [pending]
+### Dependencies: 5.3
+### Description: Testar a lógica de busca e exibição de produtos na Home Page sob diferentes permissões de usuário (RBAC) para garantir que apenas produtos autorizados são visíveis.
+### Details:
+Simular diferentes perfis de usuário (e.g., administrador, cliente logado, visitante) e verificar se a lista de produtos exibida respeita as regras de acesso definidas pelo RBAC. Garantir que produtos restritos não são vazados.
+
+## 7. Validar Exibição de Preços com RBAC [pending]
+### Dependencies: 5.3, 5.6
+### Description: Verificar se a exibição de preços na Home Page respeita as permissões de acesso definidas pelo RBAC, garantindo que preços específicos (e.g., preços de atacado) são visíveis apenas para usuários autorizados.
+### Details:
+Testar cenários onde diferentes preços são aplicados com base no perfil do usuário. Assegurar que usuários não autorizados não conseguem visualizar preços privilegiados ou descontos específicos.
 

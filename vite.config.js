@@ -46,11 +46,20 @@ export default defineConfig(({ mode }) => {
       },
       proxy: {
         // Proxy para a API do backend
-        '^/api': {
+        '/api': {
           target: 'http://localhost:3000',
           changeOrigin: true,
           secure: false,
           ws: true,
+          configure: (proxy, options) => {
+            // Remove headers problemáticos que podem causar 401
+            proxy.on('proxyReq', (proxyReq, req, res) => {
+              // Remove headers de autenticação específicos do browser
+              proxyReq.removeHeader('authorization');
+              proxyReq.removeHeader('cookie');
+              proxyReq.removeHeader('x-forwarded-for');
+            });
+          },
         },
         // Configuração para o Clerk
         '/v1': {

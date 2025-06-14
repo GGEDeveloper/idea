@@ -48,80 +48,73 @@ const ProductsPage = () => {
     });
   }, [isAuthenticated, user]);
 
-  // Handlers
+  // Handlers simplificados
   const handleBrandChange = (brand) => {
-    setFilters(prev => ({
-      ...prev,
+    setFilters({
+      ...filters,
       brands: {
-        ...prev.brands,
-        [brand]: !prev.brands[brand]
+        ...filters.brands,
+        [brand]: !filters.brands[brand]
       }
-    }));
-  };
-
-  const handlePriceChange = (type, value) => {
-    setFilters(prev => ({
-      ...prev,
-      price: {
-        ...prev.price,
-        [type]: value
-      }
-    }));
-  };
-
-  // NOVO: handler de filtro de categoria (multi-select por id)
-  const handleCategoryChange = (category) => {
-    const categoryId = typeof category === 'object' ? category.id : category;
-    setFilters(prev => {
-      const categories = prev.categories || [];
-      const exists = categories.includes(categoryId);
-      return {
-        ...prev,
-        categories: exists
-          ? categories.filter(c => c !== categoryId)
-          : [...categories, categoryId]
-      };
     });
   };
 
-  // NEW: Stock filter handler (toggle boolean)
-  const handleStockChange = () => {
-    setFilters(prev => ({
-      ...prev,
-      stock: !prev.stock
-    }));
+  const handlePriceChange = (type, value) => {
+    setFilters({
+      ...filters,
+      price: {
+        ...filters.price,
+        [type]: value
+      }
+    });
   };
 
-  // NEW: Technical attribute filter handler (multi-select per attribute)
+  const handleCategoryChange = (category) => {
+    const categoryId = typeof category === 'object' ? category.id : category;
+    const categories = Array.isArray(filters.categories) ? filters.categories : [];
+      const exists = categories.includes(categoryId);
+    setFilters({
+      ...filters,
+        categories: exists
+          ? categories.filter(c => c !== categoryId)
+          : [...categories, categoryId]
+    });
+  };
+
+  const handleStockChange = () => {
+    setFilters({
+      ...filters,
+      stock: !filters.stock
+    });
+  };
+
   const handleAttributeChange = (attrName, value) => {
-    setFilters(prev => {
-      const attributes = prev.attributes ? { ...prev.attributes } : {};
+    const attributes = filters.attributes ? { ...filters.attributes } : {};
       const values = attributes[attrName] || [];
       const exists = values.includes(value);
-      return {
-        ...prev,
+    setFilters({
+      ...filters,
         attributes: {
           ...attributes,
           [attrName]: exists
             ? values.filter(v => v !== value)
             : [...values, value]
         }
-      };
     });
   };
 
   const handleClearFilters = () => {
-    setFilters(prev => ({
-      ...prev,
+    setFilters({
       brands: {},
       price: {
-        min: filterOptions.price.min,
-        max: filterOptions.price.max
+        min: 0,
+        max: 1000
       },
       categories: [],
       stock: false,
-      attributes: {}
-    }));
+      attributes: {},
+      searchQuery: ''
+    });
   };
 
   const clearSearch = () => {
@@ -169,7 +162,7 @@ const ProductsPage = () => {
             )}
             <p className="text-lg text-text-muted max-w-2xl">
               {searchQuery
-                ? t('{{count}} resultado(s) encontrado(s)', { count: filteredProducts.length })
+                ? t('{{count}} resultado(s) encontrado(s)', { count: pagination.totalProducts })
                 : t('Encontre a ferramenta perfeita para o seu projeto, com a ajuda dos nossos filtros especializados.')}
             </p>
           </div>
@@ -201,7 +194,7 @@ const ProductsPage = () => {
           />
 
           {/* Lista de Produtos */}
-          <main className="flex-1">
+          <main className="flex-1 min-w-0">
             {/* Controles de Ordenação */}
             <div className="flex justify-end mb-4">
               <div className="flex items-center">
@@ -238,7 +231,7 @@ const ProductsPage = () => {
                   </div>
                 ))}
               </div>
-            ) : filteredProducts.length === 0 ? (
+            ) : products.length === 0 ? (
               <div className="text-center py-12">
                 <h3 className="text-lg font-medium text-text-base mb-2">{t('Nenhum produto encontrado')}</h3>
                 <p className="text-text-muted mb-4">{t('Tente ajustar seus filtros ou busca')}</p>
@@ -250,16 +243,15 @@ const ProductsPage = () => {
                 </button>
               </div>
             ) : (
-              <div>
-                <ProductGrid 
-                products={filteredProducts} 
-                loading={loading} 
-                error={error} 
-                isAuthenticated={isAuthenticated}
-                hasPermission={hasPermission}
-              />
-                <Pagination pagination={pagination} onPageChange={handlePageChange} />
-              </div>
+              <>
+                <ProductGrid products={products} />
+                <div className="mt-10">
+                  <Pagination
+                    pagination={pagination}
+                    onPageChange={handlePageChange}
+                  />
+                </div>
+              </>
             )}
           </main>
         </div>

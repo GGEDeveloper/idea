@@ -1,0 +1,3 @@
+"price_list_id","name","description"
+"1","Preço Base","Preços originais migrados"
+"4","Preço Cliente","Preços com margem aplicada sobre fornecedor"

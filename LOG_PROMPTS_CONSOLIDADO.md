@@ -360,3 +360,16 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 
 ---
 *Última atualização: 2025-06-12T15:00:00+01:00*
+
+---
+## 2025-06-13 - Diagnóstico e Resolução de Problema de Layout Responsivo
+
+### ID: DIAG-PRMT-003
+**Timestamp:** 2025-06-13T12:00:00Z
+**Tipo:** Diagnóstico de UX e Decisão Técnica
+**Prompt:** "Fiz uma análise, aumentei e reduzi o tamanho da janela do browser e o que acontece é quando o tamanho fica menor e o filtro passa para cima da grid as imagens ficam com os tamanhos apropriados mas quando estao em full screen as imagens ficam com tamanho gigante. a que se deve isto?"
+**Decisões Tomadas:**
+1.  **Diagnóstico Confirmado:** A análise do utilizador estava correta. O problema de layout estava ligado à mudança de `flex-col` (mobile) para `flex-row` (desktop). Na vista de desktop, o contentor principal (`<main>`) que aloja a grelha de produtos, sendo um item flex (`flex-1`), não era corretamente constrangido pelo seu parente, fazendo com que se expandisse para além do pretendido.
+2.  **Solução Técnica (`min-w-0`):** A decisão técnica foi aplicar a classe `min-w-0` ao elemento `<main>`. Esta é uma solução padrão da Tailwind CSS para problemas de overflow em contentores flex, pois define `min-width: 0px` e permite que o contentor encolha adequadamente, respeitando os limites do seu parente.
+**Arquivos Afetados:** `src/pages/ProductsPage.jsx`.
+**Estado:** ✅ Concluído

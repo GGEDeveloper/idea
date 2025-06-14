@@ -1,14 +1,14 @@
 # Task ID: 9
-# Title: Implement Product Listing Pagination
-# Status: done
+# Title: [REQUER REVISÃO] Implement Product Listing Pagination
+# Status: pending
 # Dependencies: 6
 # Priority: medium
 # Description: Add pagination controls to the Product Listing Page to navigate through multiple pages of products.
 # Details:
-Supports large product catalogs.
+Supports large product catalogs. The existing pagination queries and logic must be validated and adapted against the new `product-queries.cjs` and the updated database schema to ensure data consistency and correct product retrieval.
 
 # Test Strategy:
-Verify pagination links work and display correct product sets.
+Verify pagination links work and display correct product sets. Crucially, validate that the product retrieval queries used for pagination align with the new `product-queries.cjs` and the updated database schema, ensuring data integrity and performance.
 
 # Subtasks:
 ## 1. Implement Pagination UI Component [done]
@@ -22,4 +22,16 @@ Design and implement the React component for pagination controls using Next.js. 
 ### Description: Implement the server-side and client-side logic for handling product data pagination. This includes defining Next.js API routes to fetch and process paginated product data from the external Geko API, managing product sets based on 'page' and 'limit' parameters, and integrating with PostgreSQL (Neo) if complex data manipulation or caching is required. Ensure robust error handling, comprehensive logging, and performance optimization for cloud-native deployment on Vercel.
 ### Details:
 Define and implement Next.js API routes (e.g., '/api/products?page={page}&limit={limit}') to serve paginated product data. Implement server-side logic to make requests to the Geko API, handling authentication if required. Process and transform raw data received from the Geko API to fit the application's product data model. Implement pagination logic (offset/limit or cursor-based) to correctly slice data from Geko API responses or PostgreSQL (Neo) if used as an intermediary. Integrate with PostgreSQL (Neo) for any necessary data persistence, complex filtering, or caching of product sets beyond direct Geko API capabilities. Implement comprehensive error handling for Geko API calls and data processing, including retry mechanisms and fallback strategies. Integrate logging (e.g., using a dedicated logging library) for all critical operations, errors, and performance metrics. Develop unit and integration tests for the pagination logic, API routes, and data processing. Optimize data fetching and processing for performance, considering Vercel's serverless environment.
+
+## 3. Validate and Adapt Pagination Queries [pending]
+### Dependencies: 9.2
+### Description: Review and validate the existing product retrieval queries used for pagination (implemented in subtask 2) against the new `product-queries.cjs` file and the updated database schema. Adapt the queries and associated logic as necessary to ensure compatibility, correct data fetching, and optimal performance with the new data model.
+### Details:
+Analyze the current pagination data fetching logic, specifically how products are queried and filtered. Compare this logic with the definitions and best practices outlined in the new `product-queries.cjs`. Identify any discrepancies or areas for improvement based on the updated database schema. Implement necessary changes to the queries (e.g., SQL adjustments, ORM changes) and the data processing logic to align with the new schema and `product-queries.cjs`. Ensure that pagination parameters (`page`, `limit`) are correctly applied and that the expected product sets are returned. Conduct thorough testing to confirm that the adapted queries retrieve the correct data and maintain performance.
+
+## 4. Update Integration Tests for New Schema [pending]
+### Dependencies: 9.3
+### Description: Update existing integration tests for product listing pagination to reflect the changes introduced by the new database schema and `product-queries.cjs`. Add new test cases to cover specific scenarios related to the updated data model.
+### Details:
+Review and modify existing integration tests for the product listing page and its pagination functionality. Ensure that test data and assertions are consistent with the new database schema. Add new integration test cases to specifically validate the correct functioning of pagination with the updated `product-queries.cjs` and any new data fields or relationships. Focus on edge cases and potential regressions introduced by the schema changes. Ensure tests cover correct product counts, ordering, and filtering across paginated results.
 

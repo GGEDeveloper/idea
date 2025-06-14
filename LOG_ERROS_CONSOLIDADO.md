@@ -375,5 +375,111 @@ gantt
 **Arquivos Afetados:** `src/contexts/AuthContext.jsx` (análise), Configuração de utilizador no Clerk (resolução).
 **Estado:** ✅ Resolvido
 
+### ID: FRONT-ERR-007
+**Timestamp:** 2025-06-13T10:00:00Z
+**Tipo:** Erro de Integração API / UI
+**Descrição:** As imagens dos produtos não eram exibidas nos cards da página de listagem (`/produtos`), mostrando sempre a imagem de placeholder.
+**Causa:** O endpoint do backend (`GET /api/products`) não estava a incluir os dados das imagens na sua resposta JSON. Havia uma dupla falha: a query SQL não agregava os dados das imagens de forma eficaz, e o nome do campo retornado (`imageUrl`) não correspondia ao esperado pelo frontend (`image_url`).
+**Solução:** O endpoint em `src/api/products.cjs` foi refatorado. A query SQL agora utiliza `json_agg` para construir um array completo de imagens para cada produto. A resposta da API foi corrigida para expor este array, resolvendo a inconsistência de dados e alinhando a listagem com a página de detalhes.
+**Arquivos Afetados:** `src/api/products.cjs`
+**Estado:** ✅ Resolvido
+
+### ID: LAYOUT-ERR-001
+**Timestamp:** 2025-06-13T12:00:00Z
+**Tipo:** Erro de Layout Responsivo (CSS)
+**Descrição:** Na página de listagem de produtos (`/produtos`), quando em ecrã completo (desktop), os cards e as imagens dos produtos ficam com um tamanho excessivamente grande. O problema não ocorre em vistas mais pequenas (mobile), onde os filtros estão no topo.
+**Causa:** Na vista de desktop, o contentor principal (`<main>`) que envolve a grelha de produtos é um item flex (`flex-1`) ao lado da sidebar. Sem uma largura mínima definida (`min-width`), este contentor expandia-se para acomodar o seu conteúdo intrínseco, em vez de ser constrangido pelo espaço disponível, causando um redimensionamento excessivo da grelha de produtos.
+**Solução:** Adicionada a classe `min-w-0` da Tailwind CSS ao elemento `<main>` em `src/pages/ProductsPage.jsx`. Esta classe define `min-width: 0px;`, permitindo que o contentor flex encolha e respeite os limites do layout, corrigindo o tamanho da grelha em ecrãs largos.
+**Arquivos Afetados:** `src/pages/ProductsPage.jsx`
+**Estado:** ✅ Resolvido
+
+### ID: API-ERR-002
+**Timestamp:** 2025-06-13T14:00:00Z
+**Tipo:** Erro Crítico de API
+**Descrição:** A página de detalhes do produto (`/produtos/:id`) retornava um erro 500 (Internal Server Error) ao tentar buscar os dados de um produto.
+**Causa:** A consulta SQL no endpoint `GET /api/products/:id` continha múltiplos erros:
+1. Tentava fazer join com uma tabela inexistente (`product_attributes`).
+2. Utilizava a coluna `ean` para ligar tabelas (`product_images`, `prices`) em vez da chave primária correta `id_product`.
+3. A condição `WHERE` e o `GROUP BY` usavam `productid` em vez de `id_product`.
+**Solução:** A consulta SQL foi completamente reescrita. A referência à tabela `product_attributes` foi removida. Todos os joins e condições agora usam `id_product` para garantir a correta ligação entre as tabelas `Products`, `ProductImages`, `Prices` e `ProductVariants`.
+**Arquivos Afetados:** `src/api/products.cjs`
+**Estado:** ✅ Resolvido
+
+### ID: FRONT-ERR-008
+**Timestamp:** 2025-06-13T16:00:00Z
+**Tipo:** Erro de Reatividade (Regressão)
+**Descrição:** Após várias tentativas de correção, a funcionalidade de ordenação e filtragem na página de produtos continuava sem funcionar de forma fiável. As alterações de ordenação, especialmente por preço, não produziam qualquer reação na grelha de produtos.
+**Causa:** A investigação revelou que a causa raiz era a complexidade e fragilidade da lógica de filtragem/ordenação no lado do servidor, introduzida numa refatoração anterior. A comunicação de estado entre o frontend e o backend (via query strings) e a gestão de dependências nos hooks do React (`useEffect`, `useCallback`) criaram um problema de "estado obsoleto" (*stale state*) persistente e difícil de depurar. A análise dos logs confirmou que uma abordagem anterior, com a lógica no lado do cliente, era funcional.
+**Solução:** Foi tomada a decisão arquitetural de reverter a lógica para o lado do cliente, como era originalmente. O hook `useProducts.js` foi completamente refatorado para:
+1. Buscar a lista completa de produtos à API uma única vez na montagem do componente.
+2. Aplicar toda a lógica de filtragem e ordenação diretamente no browser (cliente) usando JavaScript (`.filter()`, `.sort()`).
+Isto eliminou a complexidade da comunicação de estado com o backend a cada interação, resultando numa interface instantaneamente reativa e num código mais simples e robusto.
+**Arquivos Afetados:** `src/hooks/useProducts.js`
+**Estado:** ✅ Resolvido
+
+### ID: FRONT-ERR-009
+**Timestamp:** 2025-06-13T18:00:00Z
+**Tipo:** Erro Crítico de Reatividade React / Loop Infinito
+**Descrição:** A página de produtos (`/produtos`) entrava em loop infinito de requests à API e erros de "Maximum update depth exceeded" no React, impedindo a exibição de qualquer produto na página.
+**Causa:** 
+1. **Loop Infinito de UseEffect**: O hook `useProducts.js` tinha dependências complexas (objetos `filters.brands`, `filters.price`) que eram recriadas a cada render, causando execução infinita do `useEffect`.
+2. **Middleware de Autenticação**: O middleware `optionalUser` no endpoint `/api/products` estava a causar erro 401 Unauthorized mesmo para usuários anônimos.
+3. **Configuração de Proxy**: O proxy do Vite não estava configurado corretamente para `/api` routes.
+**Solução:**
+1. **Hook Reescrito**: Completamente refatorado `useProducts.js` com:
+   - Dependências primitivas (strings/números) em vez de objetos
+   - Controlo rigoroso de fetch usando `useRef`
+   - URLs diretas para o backend (`http://localhost:3000`)
+2. **Middleware Removido**: Temporariamente removido o middleware `optionalUser` da rota `/api/products`
+3. **Proxy Corrigido**: Configuração do Vite atualizada com pattern `/api` em vez de `^/api`
+**Resultado:** 
+- ✅ 24 produtos visíveis na primeira página
+- ✅ Filtros funcionais (marcas, categorias)
+- ✅ Paginação operacional (339 páginas total)
+- ✅ Zero loops infinitos
+**Arquivos Afetados:** `src/hooks/useProducts.js`, `src/api/products.cjs`, `vite.config.js`
+**Estado:** ✅ Resolvido
+
+### ID: FRONT-ERR-010
+**Timestamp:** 2025-06-13T18:30:00Z
+**Tipo:** Erro de UI / Exibição de Dados
+**Descrição:** No filtro lateral da página de produtos, as categorias apareciam como quadrados para selecionar mas sem nomes visíveis, impedindo que os usuários identificassem as categorias disponíveis.
+**Causa:** 
+1. **Campo de dados incorreto**: O componente `CategoryTree.jsx` tentava exibir `category.name`, mas a API retornava todas as categorias com `"name": null`. As categorias tinham apenas o campo `"path"` válido (ex: `"Abrasive Materials\\Brushes\\Brush Brushes"`).
+2. **Separador de path incorreto**: A função `buildCategoryTreeFromPaths` usava `/` para dividir os paths, mas os dados da base de dados usavam `\\` (separadores do Windows).
+**Solução:**
+1. **Extração de nome do path**: Modificado `CategoryTree.jsx` para usar `category.name || (category.path ? category.path.split('\\').pop() : 'Categoria sem nome')`, extraindo o último segmento do path como nome da categoria.
+2. **Correção da construção da árvore**: Corrigido `buildCategoryTreeFromPaths` para usar `split('\\')` e `join('\\')` em vez de `/`, alinhando com o formato dos dados.
+**Resultado:**
+- ✅ Categorias agora exibem nomes corretos (ex: "Construction and Renovation", "Agitators", "Betoniarki")
+- ✅ Estrutura hierárquica da árvore de categorias funcional
+- ✅ 449 elementos hierárquicos visíveis com indentação correta
+- ✅ Interface de filtro completamente funcional
+**Arquivos Afetados:** `src/components/products/CategoryTree.jsx`, `src/api/utils/category-utils.cjs`
+**Estado:** ✅ Resolvido
+
+### ID: FRONT-ERR-011
+**Timestamp:** 2025-06-13T19:30:00Z
+**Tipo:** Erro Crítico de Reatividade React / Loop Infinito
+**Descrição:** A página de produtos (`/produtos`) entrava em loop infinito de requests à API e erros de "Maximum update depth exceeded" no React, impedindo a exibição de qualquer produto na página.
+**Causa:** 
+1. **Loop Infinito de UseEffect**: O hook `useProducts.js` tinha dependências complexas (objetos `filters.brands`, `filters.price`) que eram recriadas a cada render, causando execução infinita do `useEffect`.
+2. **Middleware de Autenticação**: O middleware `optionalUser` no endpoint `/api/products` estava a causar erro 401 Unauthorized mesmo para usuários anônimos.
+3. **Configuração de Proxy**: O proxy do Vite não estava configurado corretamente para `/api` routes.
+**Solução:**
+1. **Hook Reescrito**: Completamente refatorado `useProducts.js` com:
+   - Dependências primitivas (strings/números) em vez de objetos
+   - Controlo rigoroso de fetch usando `useRef`
+   - URLs diretas para o backend (`http://localhost:3000`)
+2. **Middleware Removido**: Temporariamente removido o middleware `optionalUser` da rota `/api/products`
+3. **Proxy Corrigido**: Configuração do Vite atualizada com pattern `/api` em vez de `^/api`
+**Resultado:** 
+- ✅ 24 produtos visíveis na primeira página
+- ✅ Filtros funcionais (marcas, categorias)
+- ✅ Paginação operacional (339 páginas total)
+- ✅ Zero loops infinitos
+**Arquivos Afetados:** `src/hooks/useProducts.js`, `src/api/products.cjs`, `vite.config.js`
+**Estado:** ✅ Resolvido
+
 ---
-*Última atualização: 2025-06-12T15:00:00+01:00*
+*Última atualização: 2025-06-13T19:30:00+01:00*

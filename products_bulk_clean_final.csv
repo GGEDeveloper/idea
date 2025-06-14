@@ -1,2 +1,0 @@
-ean,product_id_geko,code_geko,name,short_description,long_description,card_url,vat_rate,price_net,price_gross,producer_name,producer_id_geko,category_id_categories,unit_id_units,geko_size_code,weight,gross_weight
-1234567890123,P001,COD001,Produto Teste,Desc curta,Desc longa,http://exemplo.com,23.00,10.00,12.30,Produtor Teste,PR001,1,2,SZ001,1.0,1.2

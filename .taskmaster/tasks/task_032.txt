@@ -11,39 +11,69 @@ User-friendly interface for product data entry, with all product information man
 Verify products, categories, and variations can be created, read, updated, and deleted.
 
 # Subtasks:
-## 1. Core Product CRUD & Schema Design [in-progress]
+## 1. Backend: Implement Core Product CRUD (API & DB) [pending]
 ### Dependencies: None
-### Description: Design and implement the database schema for products in PostgreSQL (Neo). Develop backend API endpoints for creating, reading, updating, and deleting product records. Include basic validation, error handling, comprehensive logging, and define initial permission structures for product management. Ensure compliance requirements are considered for data storage.
+### Description: Design and implement the database schema for products in PostgreSQL. Develop backend API endpoints (POST, GET, PUT, DELETE) for creating, reading, updating, and deleting product records. Include validation, error handling, and logging.
 ### Details:
-PostgreSQL (Neo) schema, RESTful API endpoints, basic data validation, logging, permissions, compliance.
 
-## 2. Category Management Implementation [pending]
+
+## 2. Backend: Implement Category CRUD with Hierarchy Support [pending]
 ### Dependencies: None
-### Description: Develop the database schema and API endpoints for managing product categories, including support for hierarchical structures if required. Implement CRUD operations for categories, integrate with the product module, and ensure proper logging and access controls. Design the corresponding UI components for category administration.
+### Description: Develop the API endpoints and database schema for managing product categories, including support for hierarchical (parent-child) structures. Implement full CRUD operations.
 ### Details:
-PostgreSQL (Neo) schema for categories, API for CRUD, UI components, logging, permissions.
 
-## 3. Product Variation Handling [pending]
-### Dependencies: 32.1
-### Description: Extend the product schema and API to support product variations (e.g., size, color, material). Implement CRUD operations for variations, ensuring they are correctly linked to parent products. Develop backend logic for managing variation-specific attributes like price adjustments or stock. Include logging and permission checks.
-### Details:
-PostgreSQL (Neo) schema for variations, API for CRUD, linking to products, logging, permissions.
 
-## 4. Image Management & Storage [pending]
-### Dependencies: 32.1, 32.3
-### Description: Implement functionality for uploading, storing, and retrieving product and variation images. Integrate with a cloud storage solution suitable for Vercel deployment (e.g., Vercel Blob or external CDN). Develop API endpoints for image operations and ensure images are correctly associated with products/variations. Address image compliance and optimize for performance.
+## 3. Backend: Implement Product Variation CRUD [pending]
+### Dependencies: None
+### Description: Extend the product schema and API to support product variations (e.g., size, color). Implement CRUD endpoints for variations, ensuring they are correctly linked to parent products and can manage attributes.
 ### Details:
-Cloud storage integration (Vercel-compatible), API for image upload/retrieval, image association, compliance, performance optimization.
 
-## 5. Bulk Operations & External API Integration [pending]
-### Dependencies: 32.1, 32.2, 32.3, 32.4
-### Description: Develop features for bulk import/export of products, categories, and variations, including data validation and error reporting. Implement integration with the external API Geko for product data synchronization or retrieval. Ensure robust logging for all bulk operations and external API interactions.
-### Details:
-Bulk import/export functionality, Geko API integration, data validation, error handling, comprehensive logging.
 
-## 6. User Interface & Authentication Layer [pending]
-### Dependencies: 32.1, 32.2, 32.3, 32.4, 32.5
-### Description: Design and develop the Next.js/React frontend for all product management functionalities (CRUD, categories, variations, images, bulk ops). Implement user authentication using Auth.js/Clerk, including role-based access control for product managers. Integrate internationalization, implement automated UI tests, and design the onboarding flow for new product management users. Ensure cloud-native deployment readiness on Vercel.
+## 4. Backend: Implement Dedicated Stock Management API for Variations [pending]
+### Dependencies: None
+### Description: Create dedicated and explicit API endpoints (e.g., GET /api/products/variants/{variantId}/stock, PUT /api/products/variants/{variantId}/stock) to manually view and update the stock quantity for each specific product variation (SKU). This is a critical fix.
 ### Details:
-Next.js/React frontend, Auth.js/Clerk authentication, internationalization, automated UI tests, onboarding, Vercel deployment.
+
+
+## 5. Backend: Implement Image Management (Upload, Link, Delete) [pending]
+### Dependencies: None
+### Description: Implement functionality for uploading, storing, and retrieving product and variation images. Develop API endpoints for image operations (upload, delete, reorder) and ensure images are correctly associated with products/variations.
+### Details:
+
+
+## 6. Backend: Implement Bulk Product Import/Export [pending]
+### Dependencies: None
+### Description: Develop backend features for bulk import/export of products and their variations from/to CSV files, including data validation and error reporting.
+### Details:
+
+
+## 7. Frontend: Create Product Listing View with Search & Filters [pending]
+### Dependencies: None
+### Description: Design and develop the main view for the admin panel to list all products in a table. Implement search, filtering, and pagination controls to easily find products.
+### Details:
+
+
+## 8. Frontend: Build Product Create/Edit Form [pending]
+### Dependencies: None
+### Description: Build the React/Next.js form for creating and editing a product. The form should include fields for all product attributes, category selection, and sections for managing variations and images.
+### Details:
+
+
+## 9. Frontend: Build UI for Manual Stock Quantity Management [pending]
+### Dependencies: None
+### Description: Inside the product edit form, create a clear and intuitive UI section to list all product variations. Each variation must have an input field to view and directly update its stock quantity.
+### Details:
+
+
+## 10. Frontend: Build Image Gallery Management UI [pending]
+### Dependencies: None
+### Description: Develop an image gallery manager component within the product form. It should allow uploading new images, deleting existing ones, and reordering them via drag-and-drop.
+### Details:
+
+
+## 11. Integration: Connect UI to APIs & Secure Admin Module [pending]
+### Dependencies: None
+### Description: Connect all frontend UI components to their respective backend API endpoints. Ensure the entire admin product management module is protected by authentication (user must be logged in) and authorization (user must have 'admin' role).
+### Details:
+
 

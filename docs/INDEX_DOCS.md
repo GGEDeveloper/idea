@@ -4,6 +4,10 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 
 ## Documentação Técnica
 
+### Environment
+
+- [env-doc.txt](./env-doc.txt): conteudo do .env do projeto
+
 ### Mapeamento de Dados (XML para Base de Dados)
 - [map_products.md](./data_mapping/map_products.md): Mapeamento para a tabela `Products`.
 - [map_categories.md](./data_mapping/map_categories.md): Mapeamento para a tabela `Categories` (atualizado para incluir contagem de produtos).
@@ -25,11 +29,25 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [FRONTEND_CATEGORIES_IMPLEMENTATION.md](./FRONTEND_CATEGORIES_IMPLEMENTATION.md): Detalhes de implementação das categorias no frontend. **(Atualizado: árvore de categorias baseada em path, estrutura esperada e exemplos)**
 
 ## Logs e Registros
-- [LOG_ERROS.md](./LOG_ERROS.md): Log de erros e resoluções.
-- [LOG_PROMPTS.md](./LOG_PROMPTS.md): Log de prompts, decisões e interações.
-- [LOG_CODE.md](./LOG_CODE.md): Log de implementações, atualizações e decisões técnicas.
+- [LOG_ERROS_CONSOLIDADO.md](../LOG_ERROS_CONSOLIDADO.md): Log consolidado de erros e resoluções. **(Atualizado: 2025-06-13T19:32:00 - Incluída correção FRONT-ERR-011)**
+- [LOG_PROMPTS_CONSOLIDADO.md](../LOG_PROMPTS_CONSOLIDADO.md): Log consolidado de prompts, decisões e interações.
+- [LOG_CODE_CONSOLIDADO.md](../LOG_CODE_CONSOLIDADO.md): Log consolidado de implementações, atualizações e decisões técnicas. **(Atualizado: 2025-06-13T19:35:00 - Incluída resolução FRONT-ERR-011)**
 - `.taskmaster/logs/`: Logs detalhados das tarefas (pasta não listada no diretório atual).
+
+## Status Atual do Sistema (2025-06-13)
+
+### ✅ Funcionalidades Completamente Operacionais
+- **Página de Produtos (`/produtos`)**: Totalmente funcional com listagem, filtros, paginação e busca
+- **Sistema de Categorias**: Árvore hierárquica com nomes visíveis e navegação funcional, seleção de categorias sem erros.
+- **Filtros Laterais**: Marcas, categorias, preço (autenticado), stock (autenticado) - tudo funcionando corretamente.
+- **Autenticação**: Login/logout com Clerk, permissões funcionais
+- **API Backend**: Todos os endpoints principais funcionando (`/api/products`, `/api/products/filters`)
+
+### 🔧 Correções Recentes
+- **FRONT-ERR-009**: Resolvido loop infinito na página de produtos
+- **FRONT-ERR-010**: Resolvido problema de exibição de categorias sem nomes
+- **FRONT-ERR-011**: Resolvido erro `TypeError: selectedCategories.some is not a function` no filtro de categorias.
 
 ---
 
-> Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes.
+> **IMPORTANTE**: Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes. O sistema está agora completamente funcional para as funcionalidades principais de e-commerce.

@@ -1,153 +1,106 @@
-# Data Import and Synchronization Plan
+# Data Import and Synchronization Plan (v2.0)
 
-This document outlines the strategy and plan for importing product data from the Geko XML feed into the project's database, and for keeping this data synchronized.
+**Data:** 2025-06-13  
+**Autor:** Cascade AI  
+**Status:** Ativo
 
-## 1. Objective and Scope
+> **AVISO:** Este documento substitui a versão anterior e está alinhado com o schema de base de dados definido em `docs/database_schema.sql` (versão 2.1 ou superior) e com o `docs/data_mapping/master_mapping.md`.
 
--   **Objective**: To accurately and efficiently populate the product catalog database with data from the `geko_full_en_utf8.xml` file and maintain synchronization with subsequent updates to this file.
--   **Scope**: All relevant product information including core details, categories, units, variants (sizes), prices, stock levels, and images as defined in the `docs/database_schema.md`.
+---
 
-## 2. Data Sources and Target
+## 1. Objetivo e Estratégia
 
--   **Data Source**: `geko_full_en_utf8.xml` (IOF 2.6 format).
--   **Target Database**: PostgreSQL (assumed, to be confirmed) database, with the schema defined in `docs/database_schema.md`.
+O objetivo é popular e sincronizar a base de dados do projeto IDEA com o feed XML da Geko de forma eficiente, robusta e segura, respeitando a integridade referencial imposta pelas `FOREIGN KEY` constraints.
 
-## 3. Tools and Technologies Suggested
+**Estratégia:** Um processo de importação em lote (`bulk import`) que segue uma ordem estrita de dependências, com validação e limpeza de dados em cada etapa.
 
--   **Programming Language**: Python 3.x
--   **XML Parsing**: `lxml` library (preferred for performance and features) or `xml.etree.ElementTree`.
--   **Database Interaction**: SQLAlchemy (for ORM capabilities and database-agnostic code) or `psycopg2` (for direct PostgreSQL interaction).
--   **Dependency Management**: `pip` with a `requirements.txt` file.
+---
 
-## 4. Detailed Data Mapping (XML to Tables)
+## 2. Ordem de Importação (Respeitando Foreign Keys)
 
-Given the complexity and volume of data, the detailed XML-to-table mappings are provided in separate documents within the `docs/data_mapping/` directory. This modular approach enhances clarity and manageability.
+A importação **DEVE** seguir esta ordem para evitar erros de integridade referencial:
 
-Refer to the following documents for specific mappings:
+1.  **`price_lists` (Seed):** Esta tabela não vem do XML. Deve ser populada manualmente ou por um script de *seed* com as listas de preços do negócio (ex: 'Base', 'Revenda').
+2.  **`categories`:** Importar todas as categorias primeiro, pois são referenciadas pelos produtos.
+3.  **`products`:** Importar os dados base dos produtos.
+4.  **`product_categories`:** Com produtos e categorias na base de dados, criar as associações.
+5.  **`product_images`:** Associar imagens aos produtos existentes.
+6.  **`product_variants`:** Importar as variantes (que contêm o stock) e associá-las aos produtos.
+7.  **`product_attributes`:** Importar os atributos técnicos e associá-los aos produtos.
+8.  **`prices`:** Finalmente, com produtos e listas de preços disponíveis, importar os preços e associá-los a ambos.
 
--   [`docs/data_mapping/map_products.md`](./data_mapping/map_products.md): Mapping for the `Products` table.
--   [`docs/data_mapping/map_categories.md`](./data_mapping/map_categories.md): Mapping for the `Categories` table.
--   [`docs/data_mapping/map_units.md`](./data_mapping/map_units.md): Mapping for the `Units` table (if units are to be stored separately and referenced, otherwise integrated into products).
--   [`docs/data_mapping/map_variants_stock.md`](./data_mapping/map_variants_stock.md): Mapping for `ProductVariants` and `StockEntries` tables.
--   [`docs/data_mapping/map_prices.md`](./data_mapping/map_prices.md): Mapping for the `Prices` table.
--   [`docs/data_mapping/map_images.md`](./data_mapping/map_images.md): Mapping for the `ProductImages` table.
--   [`docs/data_mapping/map_product_categories.md`](./data_mapping/map_product_categories.md): Mapping for the `ProductCategories` junction table.
+---
 
-*(These documents will be created and detailed progressively.)*
+## 3. Pipeline do Script de Importação (Python)
 
-## 5. Initial Import Strategy (Full Load)
+O processo será orquestrado por um script principal em Python (`run_import.py`) que chama módulos especializados para cada tabela.
 
-### 5.1. Order of Table Population
-To respect foreign key dependencies and maximize efficiency, the recommended order is:
-1. `Categories` (reference data)
-2. `Units` (reference data)
-3. `Products` (references `Categories` and `Units`)
-4. `ProductVariants` (if variants exist)
-5. `StockEntries` (references variants or products)
-6. `Prices` (references products)
-7. `ProductImages` (references products)
-8. `ProductCategories` (junction table)
+### 3.1. Estrutura de Scripts Sugerida
 
-### 5.2. Efficient XML Parsing
-- Use `lxml.iterparse` for streaming XML parsing (memory efficient for large files).
-- Validate and normalize data before DB insertion (e.g., trims, type conversion, uniqueness checks).
-- Log parsing steps and errors.
+```
+/scripts/import/
+|-- run_import.py           # Orquestrador principal
+|-- /parsers/
+|   |-- parse_xml.py        # Lógica de parsing do XML (lxml.iterparse)
+|-- /importers/
+|   |-- import_categories.py
+|   |-- import_products.py
+|   |-- import_variants.py
+|   |-- import_prices.py
+|   |-- ... (etc.)
+|-- /database/
+|   |-- db_connector.py     # Gestão da conexão com a BD (psycopg2)
+|   |-- queries.py          # Funções para INSERT em lote (batch)
+|-- /utils/
+|   |-- logger.py           # Configuração do logging
+|   |-- data_cleaner.py     # Funções para limpar e validar dados
+|-- requirements.txt
+```
 
-### 5.3. Batch Inserts and Transaction Handling
-- Use transactions for each batch of inserts (e.g., 500–1000 records per transaction).
-- Use `executemany` (psycopg2) or `bulk_save_objects` (SQLAlchemy) for batch operations.
-- For very large volumes, consider using PostgreSQL `COPY` for bulk loading.
-- Rollback batch on critical errors; log details for review.
+### 3.2. Lógica do Orquestrador (`run_import.py`)
 
-### 5.4. Error Handling
-- Capture and log parsing, validation, and integrity errors (FK, uniqueness).
-- Write error details to `LOG_ERROS.md` with timestamps and context.
-
-### 5.5. Example Import Pipeline (Pseudocode)
 ```python
-for table in [Categories, Units, Products, ProductVariants, StockEntries, Prices, ProductImages, ProductCategories]:
-    with db.transaction():
-        for batch in parse_xml_for_table(table, batch_size=1000):
-            try:
-                db.bulk_insert(table, batch)
-            except Exception as e:
-                log_error(e, batch)
-                db.rollback()
+# Pseudocódigo
+
+# 1. Limpar tabelas (opcional, para importação total)
+truncate_tables_in_order()
+
+# 2. Seed da tabela price_lists
+seed_price_lists()
+
+# 3. Extrair dados do XML
+raw_categories = parse_xml('categories')
+raw_products = parse_xml('products')
+# ... etc
+
+# 4. Limpar e Validar Dados
+clean_categories = clean(raw_categories)
+clean_products = clean(raw_products)
+# ... etc
+
+# 5. Importar para a BD na ordem correta
+import_to_db('categories', clean_categories)
+import_to_db('products', clean_products)
+import_to_db('product_categories', ...)
+# ... e assim por diante
 ```
 
-### 5.6. Directory Structure for Scripts
-```
-import_scripts/
-  ├── __init__.py
-  ├── parse_xml.py
-  ├── import_categories.py
-  ├── import_units.py
-  ├── import_products.py
-  ├── import_variants.py
-  ├── import_stock.py
-  ├── import_prices.py
-  ├── import_images.py
-  ├── import_product_categories.py
-  └── utils.py
-requirements.txt
-```
+---
 
-### 5.7. Logging & Reporting
-- Log all critical operations: batch start/end, errors, import stats.
-- Separate logs for errors (`LOG_ERROS.md`), prompts/decisions (`LOG_PROMPTS.md`), technical actions (`LOG_CODE.md`).
-- Generate summary report after each import (products imported, updated, errors, etc).
+## 4. Estratégia de Sincronização Incremental
 
-## 6. Incremental Synchronization Strategy
+Para atualizações futuras, em vez de uma importação total, o script usará uma lógica de `UPSERT`.
 
-### 6.1. Synchronization Frequency
-- Schedule regular syncs (e.g., via cron, or triggered by new XML availability).
-- Frequency depends on business needs and update frequency of Geko feed.
+-   **Identificação:** Usar o `ean` do produto como chave de conflito.
+-   **Lógica:**
+    -   `INSERT ... ON CONFLICT (ean) DO UPDATE SET ...` para a tabela `products`.
+    -   Para tabelas relacionadas (imagens, variantes, preços), a estratégia será `DELETE` todos os registos antigos para um determinado `ean` e `INSERT` os novos. Isto simplifica a lógica e evita inconsistências, ao custo de uma pequena sobrecarga na escrita.
+-   **Remoções:** Produtos que existem na BD mas não no novo XML devem ser marcados como `active = false` na tabela `products`.
 
-### 6.2. Identifying New, Updated, or Removed Records
-- Use `ean` and `updated_at` from XML to detect new or changed products.
-- For removals: compare current DB EANs with EANs in latest XML; mark as inactive or delete as per business logic.
+---
 
-### 6.3. Upsert Logic
-- Use PostgreSQL `INSERT ... ON CONFLICT ... DO UPDATE` for upserts (supported by Neon).
-- Apply upsert for products, variants, prices, stock, images, categories.
-- Update related tables (e.g., if product changes, update its prices, stock, images, categories).
+## 5. Logging e Gestão de Erros
 
-### 6.4. Data Integrity & Performance
-- Ensure all FK relationships are respected on update.
-- Use batch upserts for efficiency.
-- Maintain indexes on keys and timestamps for fast lookup.
-
-### 6.5. Error Handling & Logging
-- Log all sync operations, especially conflicts and errors.
-- Write detailed error reports to `LOG_ERROS.md`.
-
-### 6.6. Testing & Validation
-- Unit tests for upsert logic and XML parsing.
-- Integration tests for DB sync.
-- Post-sync validation: record counts, FK integrity, sample data checks.
-
-### 6.7. Example Upsert Pipeline (Pseudocode)
-```python
-for product in parse_xml_products():
-    db.upsert_product(product)
-    db.upsert_related(product.prices, table='Prices')
-    db.upsert_related(product.variants, table='ProductVariants')
-    db.upsert_related(product.stock, table='StockEntries')
-    db.upsert_related(product.images, table='ProductImages')
-    db.upsert_related(product.categories, table='ProductCategories')
-```
-
-## 7. Error Handling and Logging
-
-*(Strategy for managing errors during import/sync and for logging activities. To be detailed further.)*
-
--   Logging to `LOG_CODE.md` and `LOG_ERROS.md`.
--   Error reporting and resolution strategy.
-
-## 8. Testing Strategy
-
-*(Approach for testing the import and synchronization scripts. To be detailed further.)*
-
--   Unit tests for parsing/transformation functions.
--   Integration tests for database operations.
--   Data validation post-import/sync.
+-   **Logging Detalhado:** Todas as etapas (parsing, limpeza, inserção) devem ser registadas num ficheiro de log (`import.log`).
+-   **Erros de Validação:** Dados que falhem a validação (ex: um preço que não é um número) devem ser registados num ficheiro de erros (`import_errors.csv`) com o `ean` do produto e o motivo do erro, sem parar a importação dos dados válidos.
+-   **Erros de BD:** Erros de integridade (que não deveriam ocorrer se a ordem for respeitada) devem parar a transação atual, fazer `rollback` e registar um erro fatal.

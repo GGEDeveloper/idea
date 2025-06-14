@@ -9,7 +9,8 @@ const CategoryItem = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(level < 2); // Expande os primeiros níveis por padrão
   const hasChildren = category.children && category.children.length > 0;
-  const isSelected = selectedCategories.some(catId => catId === category.id);
+  const safeSelectedCategories = Array.isArray(selectedCategories) ? selectedCategories : [];
+  const isSelected = safeSelectedCategories.some(catId => catId === category.id);
 
   const handleToggle = (e) => {
     e.stopPropagation();
@@ -49,7 +50,7 @@ const CategoryItem = ({
             className="h-4 w-4 text-primary rounded border-gray-300 focus:ring-primary"
           />
           <span className="ml-2 text-sm text-gray-700">
-            {category.name}
+            {category.name || (category.path ? category.path.split('\\').pop() : 'Categoria sem nome')}
             {category.directProductCount > 0 && (
               <span className="ml-1 text-xs text-gray-500">
                 ({category.directProductCount})
@@ -67,7 +68,7 @@ const CategoryItem = ({
               category={child}
               level={level + 1}
               onSelect={onSelect}
-              selectedCategories={selectedCategories}
+              selectedCategories={safeSelectedCategories}
             />
           ))}
         </div>
