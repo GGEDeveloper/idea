@@ -96,29 +96,34 @@ async function getProducts(filters = {}, pagination = {}) {
   const safeSortBy = validSortColumns.includes(sortBy.toLowerCase()) ? sortBy : 'name';
   const safeOrder = order.toLowerCase() === 'desc' ? 'DESC' : 'ASC';
 
+  const basePriceListIdSubquery = "(SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1)";
+
   const query = `
     SELECT 
-      p.*,
-      pr.price,
-      (SELECT json_agg(cat) FROM 
-        (SELECT c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
+      p.ean, p.name, p.brand, p.active, p.shortdescription, -- Selecionar colunas explícitas de p
+      pr.price as product_price, -- Renomeado para evitar conflito e ser explícito
+      pr.price_list_id as product_price_list_id, -- Para depuração
+      pl.name as fetched_price_list_name, -- Para depuração
+      (SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1) as expected_price_list_id, -- Para depuração
+      (SELECT json_agg(cat ORDER BY cat.path) FROM 
+        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
       ) as categories,
-      (SELECT json_agg(img) FROM 
-        (SELECT url, alt, is_primary FROM product_images WHERE ean = p.ean ORDER BY is_primary DESC) as img
+      (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
+        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
-      (SELECT SUM(stockquantity) FROM product_variants WHERE ean = p.ean) as total_stock
+      (SELECT SUM(pv.stockquantity) FROM product_variants pv WHERE pv.ean = p.ean) as total_stock
     FROM products p
-    LEFT JOIN prices pr ON p.ean = pr.product_ean
-    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id AND pl.name = 'Preço Base'
+    LEFT JOIN prices pr ON p.ean = pr.product_ean AND pr.price_list_id = ${basePriceListIdSubquery}
+    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id
     ${whereClause}
-    ORDER BY ${safeSortBy} ${safeOrder}, p.ean ASC
+    ORDER BY ${safeSortBy === 'price' ? 'pr.price' : 'p.' + safeSortBy} ${safeOrder} NULLS LAST, p.ean ASC
     LIMIT $${paramIndex++} OFFSET $${paramIndex++}
   `;
   
   const finalQueryParams = [...queryParams, limit, offset];
-
   const { rows } = await pool.query(query, finalQueryParams);
-  return rows;
+  // Mapear para o nome de campo 'price' esperado pelo frontend, mas mantendo os logs com product_price
+  return rows.map(row => ({...row, price: row.product_price })); 
 }
 
 /**
@@ -127,30 +132,39 @@ async function getProducts(filters = {}, pagination = {}) {
  * @returns {Promise<object|null>} - O objeto do produto ou nulo se não for encontrado.
  */
 async function getProductByEan(ean) {
+  const basePriceListIdSubquery = "(SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1)";
     const query = `
     SELECT 
-      p.*,
-      pr.price,
-      (SELECT json_agg(cat) FROM 
-        (SELECT c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
+      p.ean, p.name, p.brand, p.active, p.shortdescription, p.longdescription, p.productid, p.created_at, p.updated_at, -- Selecionar colunas explícitas de p
+      pr.price as product_price, 
+      pr.price_list_id as product_price_list_id, 
+      pl.name as fetched_price_list_name,
+      (SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1) as expected_price_list_id,
+      (SELECT json_agg(cat ORDER BY cat.path) FROM 
+        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
       ) as categories,
-      (SELECT json_agg(img) FROM 
-        (SELECT url, alt, is_primary FROM product_images WHERE ean = p.ean ORDER BY is_primary DESC) as img
+      (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
+        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
-      (SELECT json_agg(var) FROM
-        (SELECT name, stockquantity FROM product_variants WHERE ean = p.ean) as var
+      (SELECT json_agg(var ORDER BY var.name) FROM
+        (SELECT variantid, name, stockquantity FROM product_variants WHERE ean = p.ean) as var
       ) as variants,
-      (SELECT json_agg(attr) FROM
-        (SELECT "key", "value" FROM product_attributes WHERE product_ean = p.ean) as attr
+      (SELECT json_agg(attr ORDER BY attr.key) FROM
+        (SELECT attributeid, "key", "value" FROM product_attributes WHERE product_ean = p.ean) as attr
       ) as attributes
     FROM products p
-    LEFT JOIN prices pr ON p.ean = pr.product_ean
-    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id AND pl.name = 'Preço Base'
+    LEFT JOIN prices pr ON p.ean = pr.product_ean AND pr.price_list_id = ${basePriceListIdSubquery}
+    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id
     WHERE p.ean = $1
   `;
   
   const { rows } = await pool.query(query, [ean]);
-  return rows[0] || null;
+  if (rows.length > 0) {
+    // Mapear para o nome de campo 'price' esperado pelo frontend
+    const product = rows[0];
+    return {...product, price: product.product_price };
+  }
+  return null;
 }
 
 /**

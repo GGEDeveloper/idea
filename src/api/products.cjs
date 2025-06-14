@@ -1,7 +1,7 @@
 // src/api/products.cjs
 const express = require('express');
 const pool = require('../../db/index.cjs');
-const clerk = require('@clerk/clerk-sdk-node');
+// const clerk = require('@clerk/clerk-sdk-node'); // REMOVIDO - SDK antigo, não é usado diretamente aqui
 const { buildCategoryTreeFromPaths } = require('./utils/category-utils.cjs');
 const productQueries = require('../db/product-queries.cjs');
 const { optionalUser, requireAdminAuth } = require('./middleware/auth.cjs');
@@ -78,7 +78,8 @@ router.get('/filters', async (req, res) => {
 });
 
 // Rota principal para buscar produtos (refatorada para o novo schema)
-router.get('/', async (req, res) => {
+router.get('/', optionalUser, async (req, res) => {
+  console.log('[API /api/products GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   try {
     const { 
       page = 1, 
@@ -86,7 +87,7 @@ router.get('/', async (req, res) => {
       sortBy = 'name', 
       order = 'asc',
     brands,
-      categories, // A lógica de filtro por categoria está em buildWhereClause
+      categories, 
     priceMin,
     priceMax,
       q: searchQuery
@@ -97,14 +98,19 @@ router.get('/', async (req, res) => {
     const filters = { brands, categoryId: categories, priceMin, priceMax, searchQuery };
     const pagination = { page: parseInt(page, 10), limit: effectiveLimit, sortBy, order };
 
-    // As novas funções de query simplificam drasticamente a rota.
-    const [totalProducts, products] = await Promise.all([
+    const [totalProducts, productsFromDB] = await Promise.all([
       productQueries.countProducts(filters),
       productQueries.getProducts(filters, pagination)
     ]);
 
-    // Sanitiza cada produto na lista
-    const sanitizedProducts = products.map(p => sanitizeProductForUser(p, req.localUser));
+    // Log dos produtos crus da DB
+    if (productsFromDB.length > 0) {
+      console.log('[API /api/products GET] Produto cru da DB (primeiro da lista):', JSON.stringify(productsFromDB[0], null, 2));
+    } else {
+      console.log('[API /api/products GET] Nenhum produto retornado da DB para os filtros atuais.');
+    }
+
+    const sanitizedProducts = productsFromDB.map(p => sanitizeProductForUser(p, req.localUser));
 
     res.json({
       products: sanitizedProducts,
@@ -114,13 +120,14 @@ router.get('/', async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Erro ao buscar produtos:', error);
+    console.error('[API /api/products GET] Erro ao buscar produtos:', error);
     res.status(500).json({ message: 'Erro interno do servidor ao buscar produtos.' });
   }
 });
 
 // Rota para buscar um único produto por EAN (refatorada para o novo schema)
 router.get('/:ean', optionalUser, async (req, res) => {
+  console.log('[API /api/products/:ean GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   const { ean } = req.params;
   try {
     const product = await productQueries.getProductByEan(ean);

@@ -72,12 +72,12 @@ const ProductsPage = () => {
   const handleCategoryChange = (category) => {
     const categoryId = typeof category === 'object' ? category.id : category;
     const categories = Array.isArray(filters.categories) ? filters.categories : [];
-    const exists = categories.includes(categoryId);
+      const exists = categories.includes(categoryId);
     setFilters({
       ...filters,
-      categories: exists
-        ? categories.filter(c => c !== categoryId)
-        : [...categories, categoryId]
+        categories: exists
+          ? categories.filter(c => c !== categoryId)
+          : [...categories, categoryId]
     });
   };
 
@@ -90,16 +90,16 @@ const ProductsPage = () => {
 
   const handleAttributeChange = (attrName, value) => {
     const attributes = filters.attributes ? { ...filters.attributes } : {};
-    const values = attributes[attrName] || [];
-    const exists = values.includes(value);
+      const values = attributes[attrName] || [];
+      const exists = values.includes(value);
     setFilters({
       ...filters,
-      attributes: {
-        ...attributes,
-        [attrName]: exists
-          ? values.filter(v => v !== value)
-          : [...values, value]
-      }
+        attributes: {
+          ...attributes,
+          [attrName]: exists
+            ? values.filter(v => v !== value)
+            : [...values, value]
+        }
     });
   };
 

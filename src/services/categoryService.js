@@ -15,27 +15,28 @@ export const getCategoryTree = async () => {
     return await response.json();
   } catch (error) {
     console.error('Erro ao buscar a árvore de categorias:', error);
-    return []; // Retorna um array vazio em caso de erro
+    return [];
   }
 };
 
 export const getCategories = async () => {
+  console.log('[categoryService] getCategories: Chamando /api/categories/tree (GARANTIDO)');
   try {
-    const response = await fetch('/api/products/categories');
+    const response = await fetch('/api/categories/tree'); // URL correta
     if (!response.ok) {
-      throw new Error('Erro ao buscar categorias');
+      console.error('[categoryService] getCategories: Falha no fetch para /api/categories/tree', { status: response.status, statusText: response.statusText });
+      throw new Error(`Erro ao buscar categorias: ${response.statusText}`);
     }
     const data = await response.json();
+    console.log('[categoryService] getCategories: Dados recebidos de /api/categories/tree:', data ? data.length : 0, 'elementos raiz');
     
-    // Se não houver categorias, retorna as categorias padrão
     if (!data || data.length === 0) {
+      console.warn('[categoryService] getCategories: Nenhuma categoria recebida, usando padrão.');
       return getDefaultCategories();
     }
-    
     return data;
   } catch (error) {
-    console.error('Erro ao buscar categorias:', error);
-    // Retorna categorias padrão em caso de erro
+    console.error('[categoryService] getCategories: Erro no catch:', error);
     return getDefaultCategories();
   }
 };

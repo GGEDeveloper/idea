@@ -87,7 +87,7 @@ export function useProducts(initialSearch = '') {
         if (priceMaxFilter) params.append('priceMax', priceMaxFilter);
       }
       
-             try {
+      try {
          const response = await fetch(`http://localhost:3000/api/products?${params.toString()}`);
         if (!response.ok) {
           throw new Error(`Erro ${response.status}: ${response.statusText}`);
@@ -109,7 +109,7 @@ export function useProducts(initialSearch = '') {
         }, 100);
       }
     };
-    
+
     fetchProducts();
   }, [
     searchQuery,
@@ -138,7 +138,7 @@ export function useProducts(initialSearch = '') {
   };
 
   const sorting = { sortBy, order: sortOrder };
-
+      
   const pagination = {
     currentPage,
     totalPages,
@@ -164,8 +164,8 @@ export function useProducts(initialSearch = '') {
         ? newFilters.categories.join(',')
         : newFilters.categories || ''
       );
-    }
-    
+      }
+      
     if (newFilters.price) {
       setPriceMinFilter(newFilters.price.min?.toString() || '');
       setPriceMaxFilter(newFilters.price.max?.toString() || '');
@@ -181,7 +181,7 @@ export function useProducts(initialSearch = '') {
     setCurrentPage(1);
   };
 
-  const handlePageChange = (newPage) => {
+    const handlePageChange = (newPage) => {
     if (newPage > 0 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
@@ -191,7 +191,7 @@ export function useProducts(initialSearch = '') {
     setSearchQuery(query);
     setCurrentPage(1);
   };
-
+  
   return {
     products,
     filteredProducts: products,

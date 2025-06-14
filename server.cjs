@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors'); // Importa o pacote cors
 const cookieParser = require('cookie-parser');
+const { clerkMiddleware } = require('@clerk/express'); // Importar clerkMiddleware
 
 const pool = require('./db/index.cjs');
 
@@ -29,6 +30,11 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
+// Aplicar Clerk Middleware globalmente ANTES das rotas da API
+// Isto irá popular req.auth para todas as rotas se o utilizador estiver autenticado.
+// Certifique-se que CLERK_SECRET_KEY e CLERK_PUBLISHABLE_KEY estão nas suas variáveis de ambiente.
+app.use(clerkMiddleware());
+
 // Middleware para adicionar o pool de conexão a cada requisição
 app.use((req, res, next) => {
   req.pool = pool;
@@ -36,8 +42,8 @@ app.use((req, res, next) => {
 });
 
 // Rotas da API
-// A autenticação agora é gerida individualmente em cada ficheiro de rota,
-// o que previne o erro 401 para utilizadores anónimos com cookies inválidos.
+// Com clerkMiddleware() global, req.auth estará disponível aqui se autenticado.
+// A proteção específica de rotas (exigir login) ainda será feita nos routers individuais ou com requireAuth.
 app.use('/api/search', searchRouter);
 app.use('/api/products', productsRouter);
 app.use('/api/categories', categoriesRouter);

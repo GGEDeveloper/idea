@@ -8,6 +8,9 @@ const ProductCard = ({ product }) => {
   const { isAuthenticated, hasPermission } = useAuth();
   const { t } = useTranslation();
 
+  // Adicionar um log para quando o ProductCard renderiza e com qual produto
+  // console.log(`[ProductCard] Renderizando para produto ID: ${product ? product.id : 'N/A'}, EAN: ${product ? product.ean : 'N/A'}`);
+
   if (!product) {
     // Adiciona um fallback para o caso de o produto ser nulo
     return <div className="h-full w-full animate-pulse rounded-lg bg-gray-200"></div>;
@@ -23,9 +26,10 @@ const ProductCard = ({ product }) => {
 
   return (
     <Link
-      to={`/produtos/${product.id}`}
+      to={`/produtos/${product.id || product.ean}`}
       className="group flex h-full flex-col overflow-hidden rounded-lg border border-border-base bg-white shadow-sm transition-shadow duration-200 hover:shadow-md"
       aria-label={product.name || t('Produto sem nome')}
+      data-testid={`product-card-${product.id || product.ean}`}
     >
       {/* Imagem */}
       <div className="relative flex-shrink-0 overflow-hidden bg-gray-100">
@@ -69,15 +73,32 @@ const ProductCard = ({ product }) => {
         </div>
         <div className="mt-auto pt-4">
           <div className="text-lg font-bold text-text-base">
-            {isAuthenticated ? (
-              hasPermission('view_price') && product.price != null ? (
-                <span>{new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price)}</span>
-              ) : (
-                <span className="text-sm font-normal text-text-muted">{t('Preço sob consulta')}</span>
-              )
-            ) : (
-              <span className="text-sm font-normal text-text-muted">{t('Faça login para ver o preço')}</span>
-            )}
+            {(function() {
+              if (!product) return <span className="text-sm font-normal text-text-muted">{t('Carregando preço...')}</span>;
+
+              const canViewPrice = hasPermission('view_price');
+              const priceExists = product.price != null && product.price !== '' && !isNaN(parseFloat(product.price));
+              
+              // Log detalhado para depuração do preço
+              console.log(`[ProductCard: ${product.id || product.ean}] Preço Debugging: `,
+                `isAuthenticated: ${isAuthenticated}, `,
+                `canViewPrice (view_price): ${canViewPrice}, `,
+                `priceExists: ${priceExists} (Valor: ${product.price}, Tipo: ${typeof product.price}), `,
+                `Produto Completo:`, product
+              );
+
+              if (isAuthenticated) {
+                if (canViewPrice && priceExists) {
+                  return <span>{new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(parseFloat(product.price))}</span>;
+                } else if (canViewPrice && !priceExists) {
+                  return <span className="text-sm font-normal text-text-muted">{t('Preço indisponível')}</span>; // Preço não existe mas tem permissão
+                } else {
+                  return <span className="text-sm font-normal text-text-muted">{t('Preço sob consulta')}</span>; // Não tem permissão
+                }
+              } else {
+                return <span className="text-sm font-normal text-text-muted">{t('Faça login para ver o preço')}</span>;
+              }
+            })()}
           </div>
 
             <button

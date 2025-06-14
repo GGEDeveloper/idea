@@ -29,44 +29,68 @@ export const AuthProvider = ({ children }) => {
 
   // Efeito para buscar o perfil do nosso backend quando o utilizador está autenticado
   useEffect(() => {
-    // Só executa quando o Clerk terminou de carregar e existe uma sessão ativa.
-    if (clerkIsLoaded && session) {
+    console.log('[AuthContext] useEffect for localUser triggered. clerkIsLoaded:', clerkIsLoaded, 'Session active:', !!session, 'User object from Clerk:', !!user);
+    if (clerkIsLoaded && session && user) {
       const fetchLocalUser = async () => {
+        console.log('[AuthContext] fetchLocalUser INICIADA. User ID from Clerk:', user.id);
         setAuthLoading(true);
+        let response;
         try {
+          console.log('[AuthContext] Obtendo token da sessão Clerk...');
           const token = await session.getToken();
-          const response = await fetch('/api/users/me', {
+          if (!token) {
+            console.warn('[AuthContext] Não foi possível obter o token da sessão Clerk. Saindo de fetchLocalUser.');
+            setAuthLoading(false);
+            setLocalUser(null); // Certificar que localUser é limpo
+            return;
+          }
+          console.log('[AuthContext] Token obtido. Tentando fetch para /api/users/me. Token (primeiros 20 chars):', token.substring(0, 20));
+          
+          response = await fetch('/api/users/me', {
             headers: {
               'Authorization': `Bearer ${token}`,
             },
           });
+          // Log imediato após a promessa do fetch resolver/rejeitar
+          console.log('[AuthContext] Fetch para /api/users/me PROMESSA RESOLVIDA/REJEITADA. Status:', response ? response.status : 'Resposta indefinida', 'OK:', response ? response.ok : 'Resposta indefinida');
 
           if (!response.ok) {
-            throw new Error(`Falha ao buscar perfil do utilizador: ${response.statusText}`);
+            const errorBody = await response.text();
+            console.error(`[AuthContext] Fetch local user NÃO OK. Status: ${response.status}, StatusText: ${response.statusText}, Body: ${errorBody}`);
+            throw new Error(`Falha ao buscar perfil do utilizador: ${response.status} ${response.statusText}`);
           }
 
+          console.log('[AuthContext] Resposta OK. Tentando response.json()...');
           const data = await response.json();
+          console.log('[AuthContext] Local user data JSON parsed (full object):', data);
+
+          if (!data || !data.user_id) {
+            console.error('[AuthContext] Dados do localUser inválidos ou user_id (do nosso sistema) em falta:', data);
+            throw new Error('Dados do perfil local inválidos ou user_id do sistema em falta.');
+          }
+          console.log('[AuthContext] Prestes a chamar setLocalUser com os dados recebidos.');
           setLocalUser(data);
           setAuthError(null);
+          console.log('[AuthContext] localUser definido com sucesso no estado.');
         } catch (error) {
-          console.error("Erro ao buscar perfil local:", error);
+          console.error("[AuthContext] Erro CRÍTICO no bloco try/catch de fetchLocalUser:", error.message, error);
           setAuthError(error.message);
-          setLocalUser(null); // Garante que não há dados de utilizador inválidos
+          setLocalUser(null);
         } finally {
+          console.log('[AuthContext] fetchLocalUser FINALIZADA (bloco finally).');
           setAuthLoading(false);
         }
       };
-
       fetchLocalUser();
     } else if (clerkIsLoaded) {
-      // Se o Clerk carregou mas não há sessão, terminamos o loading.
+      console.log('[AuthContext] Clerk está carregado, mas CONDIÇÃO (session && user) NÃO CUMPRIDA para fetchLocalUser. Session:', !!session, 'User:', !!user, 'Limpando localUser.');
       setAuthLoading(false);
       setLocalUser(null);
     }
-  }, [session, clerkIsLoaded]);
+  }, [session, clerkIsLoaded, user]);
 
   const isLoading = authLoading || !clerkIsLoaded;
-  const isAuthenticated = !isLoading && !!user && !!localUser;
+  const isAuthenticated = !isLoading && !!user && !!localUser && !!localUser.user_id;
 
   // Login with email/password
   const login = useCallback(async (email, password) => {
@@ -175,9 +199,15 @@ export const AuthProvider = ({ children }) => {
 
   // Verifica se o utilizador tem uma permissão específica
   const hasPermission = useCallback((permission) => {
-    if (!localUser || !localUser.permissions) return false;
-    return localUser.permissions.includes(permission);
-  }, [localUser]);
+    if (isLoading) return false;
+    if (!isAuthenticated || !localUser || !localUser.permissions) {
+      console.log(`[AuthContext] hasPermission(${permission}) check: Preconditions not met. isAuthenticated: ${isAuthenticated}, localUser: ${!!localUser}, localUser.permissions: ${localUser ? !!localUser.permissions : 'N/A'}`);
+      return false;
+    }
+    const hasPerm = localUser.permissions.includes(permission);
+    console.log(`[AuthContext] hasPermission(${permission}): ${hasPerm}. User permissions:`, localUser.permissions);
+    return hasPerm;
+  }, [localUser, isAuthenticated, isLoading]);
 
   // Check if user has specific role
   const hasRole = useCallback((role) => {
@@ -358,6 +388,11 @@ export const AuthProvider = ({ children }) => {
     hasAllPermissions,
     updatePassword,
   ]);
+
+  // Log de estado de autenticação principal (menos frequente, mas útil)
+  useEffect(() => {
+    console.log('[AuthContext] Key Auth State Update:', { isLoading, isAuthenticated, localUserExists: !!localUser, clerkUserExists: !!user, clerkSessionExists: !!session, clerkIsLoaded });
+  }, [isLoading, isAuthenticated, localUser, user, session, clerkIsLoaded]);
 
   return (
     <AuthContext.Provider value={value}>

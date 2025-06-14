@@ -1,0 +1,3 @@
+"role_id","role_name","description","created_at"
+"1","admin","Administrador com acesso total ao sistema.","2025-06-13 12:25:04.486505+00"
+"2","customer","Cliente com acesso a preços, stock e criação de encomendas.","2025-06-13 12:25:04.486505+00"
