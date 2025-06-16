@@ -50,31 +50,41 @@ export default defineConfig(({ mode }) => {
           target: 'http://localhost:3000',
           changeOrigin: true,
           secure: false,
-          ws: true,
+          // ws: true, // Manter se realmente usar WebSockets para a API, senão pode remover
           configure: (proxy, options) => {
-            // Remove headers problemáticos que podem causar 401
             proxy.on('proxyReq', (proxyReq, req, res) => {
-              // Remove headers de autenticação específicos do browser
-              proxyReq.removeHeader('authorization');
-              proxyReq.removeHeader('cookie');
-              proxyReq.removeHeader('x-forwarded-for');
+              console.log(`[VITE PROXY Req] Sending ${req.method} request to: ${proxyReq.host}${proxyReq.path}`);
+              // NÃO REMOVER COOKIES OU AUTHORIZATION A NÃO SER QUE HAJA UM MOTIVO MUITO ESPECÍFICO
+              // proxyReq.removeHeader('authorization');
+              // proxyReq.removeHeader('cookie'); 
+              // proxyReq.removeHeader('x-forwarded-for');
+              // console.log('[VITE PROXY Req Headers]', proxyReq.getHeaders());
+            });
+            proxy.on('proxyRes', (proxyRes, req, res) => {
+              console.log(`[VITE PROXY Res] Received ${proxyRes.statusCode} from ${req.url}`);
+              // console.log('[VITE PROXY Res Headers]', proxyRes.headers);
+            });
+            proxy.on('error', (err, req, res) => {
+              console.error('[VITE PROXY] Error:', err);
             });
           },
         },
-        // Configuração para o Clerk
+        // Remover configuração de proxy para /v1 (Clerk)
+        /*
         '/v1': {
           target: 'https://api.clerk.com',
           changeOrigin: true,
           secure: false,
           ws: true,
         }
+        */
       },
     },
     define: {
-      // Expõe as variáveis de ambiente para o cliente
-      'import.meta.env.VITE_CLERK_PUBLISHABLE_KEY': JSON.stringify(env.VITE_CLERK_PUBLISHABLE_KEY),
-      'import.meta.env.VITE_CLERK_FRONTEND_API': JSON.stringify(env.VITE_CLERK_FRONTEND_API),
-      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL),
+      // Manter apenas as variáveis de ambiente que a sua aplicação frontend realmente precisa
+      // 'import.meta.env.VITE_CLERK_PUBLISHABLE_KEY': JSON.stringify(env.VITE_CLERK_PUBLISHABLE_KEY), // REMOVER
+      // 'import.meta.env.VITE_CLERK_FRONTEND_API': JSON.stringify(env.VITE_CLERK_FRONTEND_API), // REMOVER
+      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL), // Manter se usado
     },
   }
 })

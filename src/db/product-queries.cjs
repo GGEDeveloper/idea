@@ -189,7 +189,7 @@ async function getProductByEan(ean) {
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
       (SELECT json_agg(var ORDER BY var.variantid) FROM
-        (SELECT pv_detail.variantid, pv_detail.name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
+        (SELECT pv_detail.variantid, pv_detail.sku, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
                 (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${basePriceListId} LIMIT 1) as base_selling_price,
                 (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
          FROM product_variants pv_detail WHERE pv_detail.ean = p.ean
@@ -216,7 +216,7 @@ async function getProductByEan(ean) {
  * @returns {Promise<object>} - O produto recém-criado.
  */
 async function createProduct(productData) {
-  const { ean, productid, name, shortdescription, longdescription, brand, price } = productData;
+  const { ean, productid, name, shortdescription, longdescription, brand, price, active = true } = productData;
   const client = await pool.connect();
   
   try {
@@ -224,11 +224,11 @@ async function createProduct(productData) {
     
     // Inserir na tabela products
     const productQuery = `
-      INSERT INTO products(ean, productid, name, shortdescription, longdescription, brand)
-      VALUES($1, $2, $3, $4, $5, $6)
+      INSERT INTO products(ean, productid, name, shortdescription, longdescription, brand, active)
+      VALUES($1, $2, $3, $4, $5, $6, $7)
       RETURNING *;
     `;
-    const { rows: [newProduct] } = await client.query(productQuery, [ean, productid, name, shortdescription, longdescription, brand]);
+    const { rows: [newProduct] } = await client.query(productQuery, [ean, productid, name, shortdescription, longdescription, brand, active]);
     
     // Inserir o preço na lista de preços 'Preço Base'
     if (price) {

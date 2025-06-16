@@ -491,3 +491,113 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 **Estado:** ✅ Concluído (Funcionalidades de produto `is_featured`/`is_on_sale` adicionadas ao schema. Estratégia de preços de venda implementada na BD e no ETL. Hierarquia de categorias verificada.)
 
 ---
+## 2025-06-16 - Decisão de Arquitetura: Transição para Autenticação Local
+
+### ID: AUTH-DECISION-001
+**Timestamp:** 2025-06-16T14:00:00+01:00
+**Tipo:** Decisão de Arquitetura e Refatoração
+**Prompt:** "Vamos esquecer o Clerk pfv, mas antes faz um backup intensivo para podermos voltar a este ponto se necessario. (...) agora faz uma analise estensiva e aprofundada ao nosso projeto e implementa o login local removendo tudo o que é do clerk tbm pfv"
+**Decisões Tomadas & Implementação em Andamento:**
+1.  **Backup do Estado Clerk:** Foi realizado um backup Git (commit `2daf610`, branch `clerk-debugging-checkpoint`) do estado do projeto antes de remover a integração com o Clerk.
+2.  **Abandono da Integração Clerk:** Devido a dificuldades persistentes em fazer o middleware do Clerk funcionar de forma fiável e com logs de depuração adequados na aplicação principal, foi tomada a decisão de implementar um sistema de autenticação local.
+3.  **Requisitos para Autenticação Local (Simplificados):** Gestão de contas e passwords pelo administrador, login com email/password, autorização baseada em roles/permissões na BD.
+4.  **Implementação do Sistema de Autenticação Local (Backend):**
+    *   **BD:** Adicionada coluna `password_hash` à tabela `users`; `clerk_id` tornado `NULLABLE`. Scripts `apply_schema_changes.cjs` e `seed_user_password.cjs` criados/executados.
+    *   **Dependências:** Adicionadas `bcryptjs` e `jsonwebtoken`.
+    *   **Utilitários:** Criados `src/utils/passwordUtils.cjs` e `src/utils/jwtUtils.cjs`.
+    *   **Queries DB (`src/db/user-queries.cjs`):** Adaptadas para autenticação local (`findUserByEmailForAuth`, `findUserByIdForSession`).
+    *   **Middleware (`src/api/middleware/localAuth.cjs`):** Criado com `populateUserFromToken`, `requireAuth`, `requireAdmin`.
+    *   **Rotas Auth (`src/api/auth.cjs`):** Criadas rotas `POST /api/auth/login` e `POST /api/auth/logout`.
+    *   **Rota User (`src/api/users.cjs`):** Rota `GET /api/users/me` adaptada.
+    *   **Limpeza de Routers API:** Referências ao antigo middleware do Clerk removidas de `search.cjs`, `products.cjs`, `categories.cjs`, `variations.cjs`, `stock.cjs`, `orders.cjs`.
+    *   **Servidor Principal (`server.cjs`):** Configurado com `cookieParser`, `populateUserFromToken` globalmente, e os novos routers.
+    *   **`.env`:** Adicionada `JWT_SECRET`.
+5.  **Implementação do Sistema de Autenticação Local (Frontend):**
+    *   **Dependências:** Removidos `@clerk/clerk-react`, `@clerk/clerk-js`.
+    *   **`src/main.jsx`:** `ClerkProvider` removido, `AuthProvider` local em uso.
+    *   **`src/contexts/AuthContext.jsx`:** Reescrito para autenticação local JWT.
+    *   **Componentes Adaptados:** `LoginPage.jsx`, `UserMenu.jsx`, `App.jsx` (com `ProtectedRoute`, `RedirectIfAuthenticated`), `UnauthorizedPage.jsx`, `MyAccountPage.jsx` foram adaptados.
+**Arquivos Afetados Principalmente:** Múltiplos ficheiros no backend e frontend, `server.cjs`, `package.json`, `.env`, `docs/database_schema.sql`.
+**Estado:** Implementação base do sistema de autenticação local concluída. Pendente de testes exaustivos.
+**Próximos Passos:** Testar o novo fluxo de login, logout, proteção de rotas e acesso a dados. Corrigir bugs.
+---
+
+## 📅 Histórico de Prompts
+
+---
+### **PROMPT-016: Implementação Completa da Área de Admin e Sistema de Autenticação Local**
+
+**Data/Hora:** 2025-06-16T15:00:00+01:00  
+**Contexto:** Desenvolvimento da área administrativa e validação do sistema de roles  
+**Tipo:** Implementação de Funcionalidades  
+
+**Prompt do Usuário:**
+> "vamos tratar da area de admin e de cliente, elas teem diferencas obvias (verifica regras e docs). pdoemos comecar pela area admin pois ha funcionalidades para clientes que vao ter sempre que passar pela area de admin. pfv analisa aprofundadamente o que ja temos e dame um plano para avaliarmos com base nisso"
+
+**Análise Realizada:**
+- Revisão completa da estrutura existente (`src/api/admin/`, `src/pages/admin/`)
+- Análise dos endpoints backend já implementados
+- Avaliação das páginas frontend existentes
+- Identificação de gaps e funcionalidades em falta
+
+**Decisões Tomadas:**
+1. **Priorizar área admin** - funcionalidades base para gestão de produtos
+2. **Implementar CRUD completo** - criar, listar, editar, ativar/desativar produtos
+3. **Usar EAN como identificador** - migração de `id` para `ean` nos endpoints admin
+4. **Validar sistema de roles** - criar utilizadores de teste para ambos os roles
+
+**Implementações Realizadas:**
+- Backend API admin completo (`/api/admin/products`)
+- Frontend admin com 3 páginas (listagem, criação, edição)
+- Sistema de autenticação local (substituição do Clerk)
+- Criação de utilizadores de teste
+- Validação completa da separação de roles
+
+**Resultado:** Sistema de gestão de produtos totalmente funcional com separação correta de roles validada.
+
+---
+### **PROMPT-015: Criação de Utilizador Cliente para Testes**
+
+**Data/Hora:** 2025-06-16T18:30:00+01:00  
+**Contexto:** Necessidade de criar utilizador cliente para testar separação de roles  
+**Tipo:** Configuração de Base de Dados  
+
+**Prompt do Usuário:**
+> "antes de avancarmos para isso vamos criar uma conta para "clientes" (dado que a g.art.shine... é admin) para podermos testar se a area de cada um ja fica devidamente acessivel ao role especifco"
+
+**Análise Realizada:**
+- Verificação da estrutura atual da tabela `users`
+- Identificação de utilizador cliente incorreto existente
+- Análise do sistema de hash de passwords
+
+**Decisões Tomadas:**
+1. **Remover utilizador cliente incorreto** - dados inconsistentes
+2. **Criar novo utilizador cliente** - com dados corretos e password hash adequado
+3. **Usar email `cliente@mike.com`** - para facilitar testes
+4. **Password `2585`** - simples para testes
+
+**Script Criado:**
+- `create_customer_user.sql` com instruções completas de execução
+- Remoção do utilizador incorreto
+- Inserção do novo utilizador com hash correto
+- Validações de verificação
+
+**Resultado:** Dois utilizadores funcionais - admin e cliente - com separação de roles validada.
+
+---
+### **PROMPT-014: Análise e Planeamento das Áreas Admin e Cliente**
+
+**Data/Hora:** 2025-06-16T14:00:00+01:00  
+**Contexto:** Avaliação do estado atual e planeamento das próximas funcionalidades  
+**Tipo:** Análise e Planeamento  
+
+**Conteúdo:** Análise aprofundada da estrutura existente, identificação de funcionalidades implementadas e criação de plano detalhado para desenvolvimento das áreas admin e cliente, com foco inicial na área administrativa.
+
+**Decisões Estratégicas:**
+- Priorização da área admin como base para funcionalidades cliente
+- Implementação de CRUD completo para produtos
+- Validação do sistema de autenticação e roles
+- Preparação para expansão futura (gestão de utilizadores, encomendas)
+
+---
+### **PROMPT-013: Atualização Extensiva de Logs e Documentação**

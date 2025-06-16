@@ -1,6 +1,6 @@
 const express = require('express');
-const { pool } = require('../db.cjs');
-const { requireAdminAuth } = require('./middleware/auth.cjs');
+const pool = require('../../db/index.cjs');
+const { requireAdmin } = require('./middleware/localAuth.cjs');
 
 const router = express.Router({ mergeParams: true }); // mergeParams para aceder ao :variantStockId
 
@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
 });
 
 // PUT /api/products/:productId/variations/:variantStockId/stock - Atualizar o stock de uma variação (Admin Only)
-router.put('/', requireAdminAuth, async (req, res) => {
+router.put('/', requireAdmin, async (req, res) => {
     const { variantStockId } = req.params;
     const { quantity } = req.body;
 

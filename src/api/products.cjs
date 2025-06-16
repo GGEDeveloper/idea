@@ -4,7 +4,7 @@ const pool = require('../../db/index.cjs');
 // const clerk = require('@clerk/clerk-sdk-node'); // REMOVIDO - SDK antigo, não é usado diretamente aqui
 const { buildCategoryTreeFromPaths } = require('./utils/category-utils.cjs');
 const productQueries = require('../db/product-queries.cjs');
-const { optionalUser, requireAdminAuth } = require('./middleware/auth.cjs');
+const { requireAdmin } = require('./middleware/localAuth.cjs');
 
 const router = express.Router();
 
@@ -16,23 +16,38 @@ const router = express.Router();
  * @returns {object} O objeto do produto, possivelmente modificado.
  */
 function sanitizeProductForUser(product, localUser) {
+  // Adicionar logs detalhados aqui
+  console.log('[sanitizeProductForUser] localUser recebido:', localUser ? { email: localUser.email, permissions: localUser.permissions, role: localUser.role_name } : null);
   const canViewPrice = localUser && localUser.permissions && localUser.permissions.includes('view_price');
+  const canViewStock = localUser && localUser.permissions && localUser.permissions.includes('view_stock'); // Adicionar verificação de stock se necessário
+  console.log(`[sanitizeProductForUser] Para produto EAN ${product.ean}: canViewPrice = ${canViewPrice}, canViewStock = ${canViewStock}`);
 
   if (canViewPrice) {
-    return product;
+    // Se pode ver o preço, não fazemos nada ao stock a não ser que haja regra específica
+    // Apenas retornamos o produto como está, assumindo que product_price é o preço de venda correto
+    // e total_stock (ou similar) é o stock.
+    // Se o stock também for condicional, adicionar lógica aqui.
+    const productToSend = { ...product };
+    if (!canViewStock) {
+      // delete productToSend.total_stock; // Exemplo, se o nome do campo for total_stock
+      // productToSend.stockStatus = localUser ? 'permission_denied_stock' : 'unauthenticated_stock';
+      console.log(`[sanitizeProductForUser] Utilizador ${localUser ? localUser.email : 'Guest'} NÃO PODE VER STOCK para ${product.ean}`);
+    }
+    return productToSend;
   }
 
-  // Se não pode ver o preço, removemos os campos sensíveis.
-  // Usamos delete para remover as chaves do objeto.
   const sanitizedProduct = { ...product };
-  delete sanitizedProduct.price;
-  delete sanitizedProduct.product_price;
-  delete sanitizedProduct.stock;
-  // Adicionamos um status para o frontend saber o que mostrar
-  sanitizedProduct.priceStatus = localUser ? 'permission_denied' : 'unauthenticated';
-
+  delete sanitizedProduct.price; // Supondo que 'price' é o campo de preço que não deve ser visto
+  delete sanitizedProduct.product_price; // Se este também for um campo de preço sensível
+  // delete sanitizedProduct.total_stock; // Remover também o stock se a permissão for conjunta ou se canViewStock for false
+  
+sanitizedProduct.priceStatus = localUser ? 'permission_denied' : 'unauthenticated';
+  // if (!canViewStock) {
+  //   sanitizedProduct.stockStatus = localUser ? 'permission_denied_stock' : 'unauthenticated_stock';
+  // }
+  console.log(`[sanitizeProductForUser] Produto ${product.ean} sanitizado para ${localUser ? localUser.email : 'Guest'}`);
   return sanitizedProduct;
-        }
+}
 
 // Função auxiliar para calcular o markup
 // Temporariamente, usamos um markup fixo de 30%
@@ -79,7 +94,7 @@ router.get('/filters', async (req, res) => {
 });
 
 // Rota principal para buscar produtos
-router.get('/', optionalUser, async (req, res) => {
+router.get('/', async (req, res) => {
   console.log('[API /api/products GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   try {
     const { 
@@ -157,7 +172,7 @@ router.get('/', optionalUser, async (req, res) => {
 });
 
 // Rota para buscar um único produto por EAN
-router.get('/:ean', optionalUser, async (req, res) => {
+router.get('/:ean', async (req, res) => {
   console.log('[API /api/products/:ean GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   const { ean } = req.params;
   try {
@@ -178,7 +193,7 @@ router.get('/:ean', optionalUser, async (req, res) => {
 });
 
 // Rota para CRIAR um novo produto (Admin Only)
-router.post('/', requireAdminAuth, async (req, res) => {
+router.post('/', requireAdmin, async (req, res) => {
   const {
     productid, name, sku, ean, codeproducer, shortdescription, longdescription,
     descriptionlang, stockquantity, deliverytime, pricenet, pricegross, pricevat,
@@ -220,7 +235,7 @@ router.post('/', requireAdminAuth, async (req, res) => {
 });
 
 // Rota para ATUALIZAR um produto existente (Admin Only)
-router.put('/:id', requireAdminAuth, async (req, res) => {
+router.put('/:id', requireAdmin, async (req, res) => {
   const { id } = req.params;
   const {
     name, sku, ean, codeproducer, shortdescription, longdescription,
@@ -264,7 +279,7 @@ router.put('/:id', requireAdminAuth, async (req, res) => {
 });
 
 // Rota para APAGAR um produto (Admin Only)
-router.delete('/:id', requireAdminAuth, async (req, res) => {
+router.delete('/:id', requireAdmin, async (req, res) => {
   const { id } = req.params;
 
   try {

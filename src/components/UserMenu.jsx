@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { useUser, useClerk, SignedIn, SignedOut } from '@clerk/clerk-react';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   UserCircleIcon, 
   Cog6ToothIcon, 
@@ -16,23 +16,24 @@ import { useTranslation } from 'react-i18next';
 
 const UserMenu = ({ onItemClick }) => {
   const { t } = useTranslation();
-  const { isLoaded, isSignedIn, user } = useUser();
-  const { signOut } = useClerk();
+  const { localUser, isAuthenticated, logout, isLoading: authIsLoading } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
 
+  console.log('[UserMenu] Renderizado. isAuthenticated:', isAuthenticated, 'localUser:', localUser ? localUser.email : null, 'authIsLoading:', authIsLoading);
+
   const handleLogin = () => {
     const redirectPath = location.pathname !== '/' ? `?redirect=${encodeURIComponent(location.pathname)}` : '';
     navigate(`/login${redirectPath}`);
     if (onItemClick) onItemClick();
+    setIsOpen(false);
   };
 
   const handleLogout = async () => {
     try {
-      await signOut();
-      navigate('/');
+      await logout();
       setIsOpen(false);
       if (onItemClick) onItemClick();
     } catch (error) {
@@ -45,34 +46,29 @@ const UserMenu = ({ onItemClick }) => {
     if (onItemClick) onItemClick();
   };
 
-  // Fechar o menu ao clicar fora
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     }
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
-  // Função para obter iniciais do nome do usuário
   const getInitials = () => {
-    if (!user) return '??';
-    const name = user.fullName || user.primaryEmailAddress?.emailAddress || '';
-    return name
-      .split(' ')
-      .map(part => part[0])
-      .filter(Boolean)
-      .join('')
-      .toUpperCase()
-      .substring(0, 2);
+    if (!localUser) return '??';
+    const name = localUser.first_name || localUser.last_name || localUser.email || '';
+    if (localUser.first_name && localUser.last_name) {
+      return `${localUser.first_name[0]}${localUser.last_name[0]}`.toUpperCase();
+    }
+    return name.substring(0, 2).toUpperCase();
   };
 
-  if (!isLoaded) {
+  if (authIsLoading && !isAuthenticated) {
+    console.log('[UserMenu] A mostrar loader porque authIsLoading é true e não está autenticado ainda.');
     return (
       <div className="h-8 w-8 rounded-full bg-gray-200 animate-pulse" 
            aria-label={t('loading')}
@@ -84,8 +80,8 @@ const UserMenu = ({ onItemClick }) => {
 
   return (
     <div className="relative" ref={menuRef}>
-      {/* Botão para usuários autenticados */}
-      <SignedIn>
+      {isAuthenticated && localUser ? (
+        (console.log('[UserMenu] A renderizar botão de utilizador AUTENTICADO.'),
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`flex items-center space-x-2 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary rounded-full ${
@@ -97,41 +93,30 @@ const UserMenu = ({ onItemClick }) => {
           id="user-menu-button"
         >
           <div className="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden">
-            {user?.imageUrl ? (
-              <img 
-                src={user.imageUrl} 
-                alt={user.fullName || 'Usuário'}
-                className="h-full w-full object-cover"
-              />
-            ) : (
               <span className="text-indigo-700 font-medium text-sm">
                 {getInitials()}
               </span>
-            )}
           </div>
           <span className="hidden md:inline text-sm font-medium text-gray-700">
-            {user?.fullName || t('user.myAccount')}
+            {localUser.first_name || localUser.email || t('user.myAccount')}
           </span>
           <ChevronDownIcon 
             className={`h-4 w-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} 
           />
-        </button>
-      </SignedIn>
-      
-      {/* Botão de login para usuários não autenticados */}
-      <SignedOut>
+        </button>)
+      ) : (
+        (console.log('[UserMenu] A renderizar botão de LOGIN (não autenticado ou localUser em falta).'),
         <button
           onClick={handleLogin}
           className="flex items-center space-x-2 text-text-muted hover:text-secondary transition-colors focus:outline-none"
         >
           <ArrowRightEndOnRectangleIcon className="h-6 w-6" />
           <span className="hidden md:inline">{t('user.login')}</span>
-        </button>
-      </SignedOut>
+        </button>)
+      )}
 
-      {/* Menu dropdown */}
       <AnimatePresence>
-        {isOpen && isSignedIn && (
+        {isOpen && isAuthenticated && localUser && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -140,18 +125,16 @@ const UserMenu = ({ onItemClick }) => {
             className="absolute right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
           >
             <div className="py-1" role="menu" aria-orientation="vertical">
-              {/* Cabeçalho com informações do usuário */}
               <div className="px-4 py-3 border-b border-gray-100">
                 <p className="text-sm font-medium text-gray-900 truncate">
-                  {user?.fullName || t('user.guest')}
+                  {localUser.first_name || localUser.last_name || t('user.guest')}
                 </p>
                 <p className="text-xs text-gray-500 truncate flex items-center mt-1">
                   <EnvelopeIcon className="h-3.5 w-3.5 mr-1" />
-                  {user?.primaryEmailAddress?.emailAddress || t('user.noEmail')}
+                  {localUser.email || t('user.noEmail')}
                 </p>
                 
-                {/* Badge de admin se o usuário for administrador */}
-                {user?.publicMetadata?.roles?.includes('admin') && (
+                {localUser.role_name === 'admin' && (
                   <div className="mt-1">
                     <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 text-indigo-800">
                       {t('user.admin')}
@@ -160,7 +143,6 @@ const UserMenu = ({ onItemClick }) => {
                 )}
               </div>
               
-              {/* Links do menu */}
               <Link
                 to="/minha-conta"
                 onClick={handleItemClick}
@@ -181,8 +163,7 @@ const UserMenu = ({ onItemClick }) => {
                 {t('user.orders')}
               </Link>
               
-              {/* Seção de administração */}
-              {user?.publicMetadata?.roles?.includes('admin') && (
+              {localUser.role_name === 'admin' && (
                 <div className="border-t border-gray-100 my-1">
                   <p className="px-4 py-1.5 text-xs font-medium text-gray-500 uppercase tracking-wider">
                     {t('user.administration')}
@@ -199,7 +180,6 @@ const UserMenu = ({ onItemClick }) => {
                 </div>
               )}
               
-              {/* Botão de logout */}
               <div className="border-t border-gray-100">
                 <button
                   onClick={handleLogout}

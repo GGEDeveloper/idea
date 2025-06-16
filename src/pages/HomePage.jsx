@@ -8,6 +8,7 @@ import { getCategories, getCategoryIcon, getCategoryColor } from '../services/ca
 import { useProducts } from '../hooks/useProducts';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
+import { formatPrice } from '../utils/formatUtils.js';
 
 // Produtos caros de diferentes categorias (pode customizar à vontade)
 // const expensiveProducts = [
@@ -92,9 +93,7 @@ function ProductCarousel3D({ products, isAuthenticated, hasPermission }) {
         {products.map((product) => {
           let priceContent;
           if (product.price !== undefined && product.price !== null && isAuthenticated && hasPermission && hasPermission('view_price')) {
-            priceContent = typeof product.price === 'number'
-              ? new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price)
-              : product.price; 
+            priceContent = formatPrice(product.price);
           } else if (isAuthenticated && product.priceStatus === 'permission_denied') {
             priceContent = t('Preço sob consulta');
           } else { 
@@ -350,9 +349,7 @@ const HomePage = () => {
               {novidadesDisplayProducts.map((product, idx) => {
                 let priceContent;
                 if (product.price !== undefined && product.price !== null && isAuthenticated && hasPermission && hasPermission('view_price')) {
-                  priceContent = typeof product.price === 'number'
-                    ? new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(product.price)
-                    : product.price;
+                  priceContent = formatPrice(product.price);
                 } else if (isAuthenticated && product.priceStatus === 'permission_denied') {
                   priceContent = t('Preço sob consulta');
                 } else {

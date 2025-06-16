@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useUser, useClerk } from '@clerk/clerk-react';
+// import { useUser, useClerk } from '@clerk/clerk-react'; // REMOVER CLERK
+import { useAuth } from '../contexts/AuthContext'; // USAR NOSSO AUTHCONTEXT
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import EditProfileForm from '../components/EditProfileForm';
@@ -11,22 +12,18 @@ import {
   PencilIcon, 
   ArrowLeftOnRectangleIcon,
   EnvelopeIcon,
-  PhoneIcon,
+  // PhoneIcon, // localUser pode não ter telefone
   ClockIcon,
-  CheckCircleIcon,
+  // CheckCircleIcon, // Não temos isEmailVerified no sistema local
   ExclamationCircleIcon,
   Cog6ToothIcon
 } from '@heroicons/react/24/outline';
 
 const MyAccountPage = () => {
-  const { user: clerkUser, isLoaded } = useUser();
-  const { signOut } = useClerk();
+  const { localUser, isLoading: authIsLoading, logout, isAuthenticated } = useAuth();
   const [activeSection, setActiveSection] = useState('details');
-  const [isLoading, setIsLoading] = useState(true);
-  const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
 
-  // Função para formatar a data
   const formatDate = (dateString) => {
     if (!dateString) return 'Data não disponível';
     const date = new Date(dateString);
@@ -39,42 +36,10 @@ const MyAccountPage = () => {
     });
   };
 
-  // Verificar se o email foi verificado
-  const isEmailVerified = clerkUser?.emailAddresses?.some(
-    email => email.id === clerkUser.primaryEmailAddressId && email.verification.status === 'verified'
-  ) || false;
-
-  // Carregar dados adicionais do usuário quando o componente montar
-  useEffect(() => {
-    const fetchUserData = async () => {
-      if (isLoaded && clerkUser) {
-        try {
-          setUserData({
-            id: clerkUser.id,
-            name: clerkUser.fullName,
-            email: clerkUser.primaryEmailAddress?.emailAddress,
-            phone: clerkUser.primaryPhoneNumber?.phoneNumber,
-            imageUrl: clerkUser.imageUrl,
-            createdAt: clerkUser.createdAt,
-            lastSignInAt: clerkUser.lastSignInAt,
-          });
-        } catch (error) {
-          console.error('Erro ao carregar dados do usuário:', error);
-          toast.error('Não foi possível carregar os dados do usuário');
-        } finally {
-          setIsLoading(false);
-        }
-      }
-    };
-
-    fetchUserData();
-  }, [isLoaded, clerkUser]);
-
   const handleLogout = async () => {
     try {
-      await signOut();
-      toast.success('Sessão terminada com sucesso!');
-      navigate('/');
+      await logout();
+      // A navegação é tratada dentro da função logout do AuthContext
     } catch (error) {
       console.error('Erro ao fazer logout:', error);
       toast.error('Ocorreu um erro ao terminar a sessão');
@@ -82,34 +47,13 @@ const MyAccountPage = () => {
   };
 
   const menuItems = [
-    { 
-      id: 'details', 
-      name: 'Visão Geral', 
-      icon: UserCircleIcon,
-      action: () => setActiveSection('details') 
-    },
-    { 
-      id: 'orderHistory', 
-      name: 'Meus Pedidos', 
-      icon: ClipboardDocumentListIcon,
-      action: () => setActiveSection('orderHistory') 
-    },
-    { 
-      id: 'editProfile', 
-      name: 'Editar Perfil', 
-      icon: PencilIcon,
-      action: () => setActiveSection('editProfile') 
-    },
-    { 
-      id: 'settings', 
-      name: 'Configurações', 
-      icon: Cog6ToothIcon,
-      action: () => setActiveSection('settings') 
-    }
+    { id: 'details', name: 'Visão Geral', icon: UserCircleIcon, action: () => setActiveSection('details') },
+    { id: 'orderHistory', name: 'Meus Pedidos', icon: ClipboardDocumentListIcon, action: () => setActiveSection('orderHistory') },
+    { id: 'editProfile', name: 'Editar Perfil', icon: PencilIcon, action: () => setActiveSection('editProfile') },
+    { id: 'settings', name: 'Configurações', icon: Cog6ToothIcon, action: () => setActiveSection('settings') }
   ];
 
-  // Mostrar um loader enquanto os dados estão sendo carregados
-  if (!isLoaded || isLoading) {
+  if (authIsLoading) {
     return (
       <div className="min-h-[calc(100vh-128px)] flex items-center justify-center bg-gray-100">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
@@ -117,8 +61,7 @@ const MyAccountPage = () => {
     );
   }
 
-  // Se não houver usuário logado (não deveria acontecer com rota protegida)
-  if (!clerkUser) {
+  if (!isAuthenticated || !localUser) {
     return (
       <div className="min-h-[calc(100vh-128px)] flex flex-col items-center justify-center bg-gray-100 p-4 text-center">
         <ExclamationCircleIcon className="h-12 w-12 text-yellow-500 mb-4" />
@@ -134,6 +77,8 @@ const MyAccountPage = () => {
     );
   }
 
+  const fullName = `${localUser.first_name || ''} ${localUser.last_name || ''}`.trim() || localUser.email;
+
   return (
     <div className="min-h-[calc(100vh-128px)] bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -141,14 +86,8 @@ const MyAccountPage = () => {
           <h1 className="text-3xl font-bold text-gray-900">Minha Conta</h1>
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <p className="text-lg text-gray-600">
-              Olá, <span className="font-medium text-indigo-600">{clerkUser.fullName}</span>!
+              Olá, <span className="font-medium text-indigo-600">{fullName}</span>!
             </p>
-            {!isEmailVerified && (
-              <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
-                <ExclamationCircleIcon className="h-4 w-4 mr-1.5" />
-                Verifique seu email
-              </div>
-            )}
           </div>
         </header>
 
@@ -158,20 +97,12 @@ const MyAccountPage = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="relative mb-4">
-                  {clerkUser.imageUrl ? (
-                    <img 
-                      src={clerkUser.imageUrl} 
-                      alt={clerkUser.fullName} 
-                      className="h-20 w-20 rounded-full object-cover border-4 border-white shadow-md"
-                    />
-                  ) : (
                     <div className="h-20 w-20 rounded-full bg-indigo-100 flex items-center justify-center">
                       <UserCircleIcon className="h-12 w-12 text-indigo-500" />
                     </div>
-                  )}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">{clerkUser.fullName}</h3>
-                <p className="text-sm text-gray-500 mt-1">{clerkUser.primaryEmailAddress?.emailAddress}</p>
+                <h3 className="text-lg font-semibold text-gray-900">{fullName}</h3>
+                <p className="text-sm text-gray-500 mt-1">{localUser.email}</p>
               </div>
               
               <nav className="space-y-1">
@@ -207,35 +138,17 @@ const MyAccountPage = () => {
               </nav>
             </div>
             
-            {/* Status da Conta */}
             <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-3">
                 Status da Conta
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start">
-                  {isEmailVerified ? (
-                    <CheckCircleIcon className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  ) : (
-                    <ExclamationCircleIcon className="h-5 w-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                  )}
-                  <div className="ml-2">
-                    <p className="text-sm font-medium text-gray-900">
-                      {isEmailVerified ? 'Email verificado' : 'Email não verificado'}
-                    </p>
-                    <p className="text-xs text-gray-500 mt-0.5">
-                      {isEmailVerified
-                        ? 'Seu endereço de email foi confirmado.'
-                        : 'Por favor, verifique seu endereço de email.'}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
                   <ClockIcon className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
                   <div className="ml-2">
                     <p className="text-sm font-medium text-gray-900">Membro desde</p>
                     <p className="text-xs text-gray-500 mt-0.5">
-                      {formatDate(clerkUser.createdAt)}
+                      {formatDate(localUser.created_at)} 
                     </p>
                   </div>
                 </div>
@@ -266,39 +179,21 @@ const MyAccountPage = () => {
                   
                   <div className="border-t border-gray-200 pt-6">
                     <h3 className="text-lg font-medium text-gray-900 mb-6">Informações Pessoais</h3>
-                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-1">
                         <dt className="text-sm font-medium text-gray-500">Nome Completo</dt>
-                        <dd className="text-base text-gray-900">{clerkUser.fullName || 'Não informado'}</dd>
+                        <dd className="text-base text-gray-900">{fullName || 'Não informado'}</dd>
                       </div>
-                      
                       <div className="space-y-1">
                         <dt className="text-sm font-medium text-gray-500">Endereço de Email</dt>
                         <dd className="text-base text-gray-900 flex items-center">
                           <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-2" />
-                          {clerkUser.primaryEmailAddress?.emailAddress || 'Não informado'}
-                          {!isEmailVerified && (
-                            <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                              Não verificado
-                            </span>
-                          )}
+                          {localUser.email || 'Não informado'}
                         </dd>
                       </div>
-                      
                       <div className="space-y-1">
-                        <dt className="text-sm font-medium text-gray-500">Telefone</dt>
-                        <dd className="text-base text-gray-900 flex items-center">
-                          <PhoneIcon className="h-5 w-5 text-gray-400 mr-2" />
-                          {clerkUser.primaryPhoneNumber?.phoneNumber || 'Não informado'}
-                        </dd>
-                      </div>
-                      
-                      <div className="space-y-1">
-                        <dt className="text-sm font-medium text-gray-500">Último Acesso</dt>
-                        <dd className="text-base text-gray-900">
-                          {formatDate(clerkUser.lastSignInAt)}
-                        </dd>
+                        <dt className="text-sm font-medium text-gray-500">Empresa</dt>
+                        <dd className="text-base text-gray-900">{localUser.company_name || 'Não informado'}</dd>
                       </div>
                     </div>
                   </div>
@@ -308,16 +203,15 @@ const MyAccountPage = () => {
               {activeSection === 'editProfile' && (
                 <EditProfileForm 
                   user={{
-                    id: clerkUser.id,
-                    name: clerkUser.fullName,
-                    email: clerkUser.primaryEmailAddress?.emailAddress,
-                    phone: clerkUser.primaryPhoneNumber?.phoneNumber,
-                    imageUrl: clerkUser.imageUrl
+                    id: localUser.user_id,
+                    name: fullName, // (localUser.first_name || '') + ' ' + (localUser.last_name || '') poderia ser mais explícito aqui
+                    email: localUser.email,
+                    // phone: localUser.phone, // Adicionar se tiver este campo no localUser
+                    // imageUrl: localUser.imageUrl // Adicionar se tiver este campo no localUser
                   }}
                   onUpdate={(updatedData) => {
-                    // Aqui você atualizaria os dados do usuário na sua API
-                    // Por enquanto, apenas mostramos uma mensagem de sucesso
-                    toast.success('Perfil atualizado com sucesso!');
+                    toast.success('Funcionalidade de atualização de perfil a ser implementada.');
+                    // Aqui chamaria uma função do AuthContext para atualizar dados no backend e depois o localUser
                     setActiveSection('details');
                   }}
                   onCancel={() => setActiveSection('details')}

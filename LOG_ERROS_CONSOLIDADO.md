@@ -1,8 +1,8 @@
 # 📋 LOG DE ERROS E RESOLUÇÕES
 
-> **Última Atualização:** 2025-06-15T18:30:00+01:00  
+> **Última Atualização:** 2025-06-16T19:00:00+01:00  
 > **Responsável:** Equipe de Desenvolvimento  
-> **Versão do Documento:** 2.0.0
+> **Versão do Documento:** 2.1.0
 
 ## 📌 Índice
 
@@ -165,6 +165,43 @@ gantt
 ```
 
 ## 📅 Histórico de Atualizações
+
+---
+## 2025-06-16 - Implementação Completa da Área Admin e Validação do Sistema de Autenticação
+
+### ID: AUTH-SUCCESS-001
+**Timestamp:** 2025-06-16T19:00:00+01:00  
+**Tipo:** Implementação Bem-Sucedida  
+**Descrição:** Implementação completa e validação do sistema de autenticação local e área administrativa para gestão de produtos.  
+**Módulos Afetados:** Sistema de autenticação, área admin, gestão de produtos, base de dados  
+**Estado:** ✅ Implementado e Validado
+
+**Funcionalidades Implementadas:**
+- Sistema de autenticação local (substituição completa do Clerk)
+- Área administrativa completa para gestão de produtos (CRUD)
+- Separação correta de roles (admin/cliente)
+- Criação de utilizadores de teste para validação
+- Interface responsiva e user-friendly
+
+**Validações Realizadas:**
+- ✅ Login funcional para admin (`g.art.shine@gmail.com`)
+- ✅ Login funcional para cliente (`cliente@mike.com` / password: `2585`)
+- ✅ Cliente não consegue aceder à área admin
+- ✅ Admin consegue aceder a todas as funcionalidades
+- ✅ Operações CRUD de produtos funcionais
+- ✅ Gestão de stock por variação operacional
+- ✅ Navegação e roteamento corretos
+
+**Arquivos Criados/Modificados:**
+- `src/api/admin/products.cjs` (novo)
+- `src/pages/admin/ProductsAdminPage.jsx` (atualizado)
+- `src/pages/admin/ProductEditPage.jsx` (atualizado)
+- `src/pages/admin/ProductCreatePage.jsx` (novo)
+- `src/db/product-queries.cjs` (atualizado)
+- `src/App.jsx` (atualizado)
+- `create_customer_user.sql` (novo)
+
+**Impacto:** Sistema agora tem base sólida para expansão com gestão de utilizadores, encomendas e outras funcionalidades administrativas.
 
 ---
 ## 2025-06-12 - Correção de Filtros e Inicialização do Servidor
@@ -542,5 +579,27 @@ Isto eliminou a complexidade da comunicação de estado com o backend a cada int
 2.  **Lógica de Criação de Pais e Iteração:** A função `populate_categories_and_links` foi significativamente refatorada para identificar todos os segmentos de caminho e garantir que uma entrada de categoria seja criada para cada um (seja a partir do XML original ou gerada para caminhos intermédios). A função `update_category_parent_ids` foi também refatorada para operar em múltiplas passagens, permitindo que as relações pai-filho sejam estabelecidas progressivamente à medida que as categorias pai (incluindo as intermédias recém-criadas) são processadas e adicionadas ao mapa `path_to_id_map`.
 **Arquivos Afetados:** `process_staged_data.py` (funções `populate_categories_and_links` e `update_category_parent_ids`).
 **Estado:** ✅ Resolvido (Confirmado após a execução bem-sucedida do script em 2025-06-15 ~16:30:00+01:00, onde 240 categorias tiveram o `parent_id` atualizado).
+
+---
+
+## 2025-06-16 - Erros de Integração Clerk e Transição para Autenticação Local
+
+### ID: CLERK-INT-ERR-001
+**Timestamp:** 2025-06-15 a 2025-06-16
+**Tipo:** Erro Crítico de Integração / Funcionamento de Middleware
+**Descrição:** Apesar de múltiplas tentativas de configuração (chaves API corretas, `debug:true`, simplificação do servidor), o middleware `requireAuth` do Clerk na aplicação Express principal (`server.cjs`) continuou a bloquear pedidos para rotas protegidas silenciosamente, sem emitir logs de depuração do Clerk SDK. O frontend recebia respostas HTML (fallback da SPA) em vez de JSON.
+**Causa Raiz (Suspeita):** Interação complexa ou conflito não identificado dentro da configuração do `server.cjs` que impedia o correto funcionamento ou logging do Clerk SDK, apesar de um teste mínimo isolado com Clerk funcionando.
+**Solução:** Decisão de arquitetura de abandonar a integração com o Clerk e implementar um sistema de autenticação local.
+**Arquivos Afetados (durante a depuração do Clerk):** `server.cjs`, `src/api/users.cjs`, `src/contexts/AuthContext.jsx`, `minimal_clerk_test.cjs`.
+**Estado:** ◼️ Contornado (Clerk removido)
+
+### ID: BACK-MOD-ERR-001 (Série)
+**Timestamp:** 2025-06-16
+**Tipo:** Erro de Inicialização do Servidor (Pós-remoção do Clerk)
+**Descrição:** Após a remoção do Clerk e a reestruturação para um sistema de autenticação local, o servidor (`node server.cjs`) falhou ao arrancar múltiplas vezes com erros `Error: Cannot find module './middleware/auth.cjs'` ou erros de caminho para utilitários.
+**Causa:** Vários ficheiros de rotas API (`src/api/auth.cjs`, `src/api/search.cjs`, `src/api/products.cjs`, `src/api/categories.cjs`, `src/api/variations.cjs`, `src/api/stock.cjs`, `src/api/orders.cjs`) ainda continham importações do antigo ficheiro de middleware do Clerk (`./middleware/auth.cjs`) que já tinha sido eliminado, ou caminhos incorretos para novos utilitários.
+**Solução:** Os referidos ficheiros foram editados um a um para remover a importação do middleware antigo e corrigir os caminhos. Quando necessário, foram atualizados para importar os novos middlewares de autenticação local (`requireAuth`, `requireAdmin`) de `src/api/middleware/localAuth.cjs`.
+**Arquivos Afetados:** `src/api/auth.cjs`, `src/api/search.cjs`, `src/api/products.cjs`, `src/api/categories.cjs`, `src/api/variations.cjs`, `src/api/stock.cjs`, `src/api/orders.cjs`.
+**Estado:** ✅ Resolvido (Servidor backend arranca após correções manuais nos caminhos de importação).
 
 ---

@@ -1,12 +1,12 @@
 const express = require('express');
 const orderQueries = require('../db/order-queries.cjs');
-const { requireAuth, optionalUser } = require('./middleware/auth.cjs');
+const { requireAuth } = require('./middleware/localAuth.cjs');
 
 const router = express.Router();
 
 // Middleware para verificar permissões de encomendas
 const requirePlaceOrderPermission = (req, res, next) => {
-  if (!req.localUser || !req.localUser.permissions.includes('place_order')) {
+  if (!req.localUser || !req.localUser.permissions || !req.localUser.permissions.includes('create_order')) {
     return res.status(403).json({ error: 'Acesso negado. Permissão para criar encomendas é necessária.' });
   }
   next();
@@ -14,9 +14,9 @@ const requirePlaceOrderPermission = (req, res, next) => {
 
 /**
  * Rota para criar uma nova encomenda.
- * Requer que o utilizador esteja autenticado e tenha a permissão 'place_order'.
+ * Requer que o utilizador esteja autenticado e tenha a permissão 'create_order'.
  */
-router.post('/', requireAuth, optionalUser, requirePlaceOrderPermission, async (req, res) => {
+router.post('/', requireAuth, requirePlaceOrderPermission, async (req, res) => {
   const { items } = req.body;
   const userId = req.localUser.user_id;
 

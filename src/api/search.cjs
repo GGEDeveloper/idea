@@ -2,7 +2,6 @@
 require('dotenv').config();
 const express = require('express');
 const { Pool } = require('pg');
-const { optionalUser } = require('./middleware/auth.cjs'); // Import optionalUser
 
 const router = express.Router();
 
@@ -30,9 +29,9 @@ try {
 }
 
 // /api/search?q=search+term
-router.get('/', optionalUser, async (req, res) => {
+router.get('/', async (req, res) => {
   const { q } = req.query;
-  const localUser = req.localUser; // Get user from middleware
+  const localUser = req.localUser; // req.localUser será populado pelo middleware global populateUserFromToken
   
   if (!q || q.length < 2) {
     return res.status(400).json({ 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import { useAuth } from './contexts/AuthContext'; // USAR NOSSO AUTHCONTEXT
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -15,47 +15,42 @@ import ContactPage from './pages/ContactPage';
 import UnauthorizedPage from './pages/UnauthorizedPage';
 import ProductsAdminPage from './pages/admin/ProductsAdminPage';
 import ProductEditPage from './pages/admin/ProductEditPage';
+import ProductCreatePage from './pages/admin/ProductCreatePage';
 
 // Componente para proteger rotas que requerem autenticação
-const ProtectedRoute = ({ children }) => {
-  return (
-    <>
-      <SignedIn>
-        {children}
-      </SignedIn>
-      <SignedOut>
-        <div className="text-center py-12">
-          <h2 className="text-xl font-semibold mb-4">Acesso Restrito</h2>
-          <p className="mb-6">Por favor, faça login para acessar esta página.</p>
-          <Link 
-            to={"/login?redirect=" + encodeURIComponent(window.location.pathname)}
-            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors inline-block"
-          >
-            Fazer Login
-          </Link>
-        </div>
-      </SignedOut>
-    </>
-  );
+const ProtectedRoute = ({ children, adminOnly = false }) => {
+  const { isAuthenticated, isLoading, localUser } = useAuth();
+  const location = useLocation();
+
+  if (isLoading) {
+    // Pode mostrar um spinner/loading aqui se desejar
+    return <div className="text-center py-12">A verificar autenticação...</div>;
+  }
+
+  if (!isAuthenticated) {
+    return <Navigate to={`/login?redirect=${encodeURIComponent(location.pathname)}`} replace />;
+  }
+
+  if (adminOnly && (!localUser || localUser.role_name !== 'admin')) {
+    return <Navigate to="/unauthorized" replace />;
+  }
+
+  return children;
 };
 
-// Componente para redirecionar usuários autenticados para a página inicial
+// Componente para redirecionar utilizadores autenticados para a página inicial (ex: de /login)
 const RedirectIfAuthenticated = ({ children }) => {
-  return (
-    <>
-      <SignedIn>
-        <div className="text-center py-12">
-          <p className="mb-4">Você já está autenticado.</p>
-          <Link to="/" className="text-indigo-600 hover:underline">
-            Voltar para a página inicial
-          </Link>
-        </div>
-      </SignedIn>
-      <SignedOut>
-        {children}
-      </SignedOut>
-    </>
-  );
+  const { isAuthenticated, isLoading } = useAuth();
+
+  if (isLoading) {
+    return <div className="text-center py-12">A verificar...</div>; 
+  }
+
+  if (isAuthenticated) {
+    return <Navigate to="/" replace />;
+  }
+
+  return children;
 };
 
 function App() {
@@ -117,16 +112,7 @@ function App() {
           {/* Carrinho - Pode ser acessado por qualquer um, mas mostra mensagem se não estiver logado */}
           <Route 
             path="/carrinho" 
-            element={
-              <>
-                <SignedIn>
-                  <CartPage />
-                </SignedIn>
-                <SignedOut>
-                  <CartPage />
-                </SignedOut>
-              </>
-            } 
+            element={<CartPage />} // Lógica de autenticação para carrinho pode ser interna ao CartPage ou gerida aqui
           />
           
           {/* Rota de Não Autorizado */}
@@ -136,16 +122,25 @@ function App() {
           <Route
             path="/admin/products"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute adminOnly={true}>
                 <ProductsAdminPage />
               </ProtectedRoute>
             }
           />
-          {/* A rota de edição também deve ser protegida */}
+          {/* Rota para criar novo produto */}
           <Route
-            path="/admin/products/edit/:id"
+            path="/admin/products/create"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute adminOnly={true}>
+                <ProductCreatePage />
+              </ProtectedRoute>
+            }
+          />
+          {/* A rota de edição também deve ser protegida e usar EAN */}
+          <Route
+            path="/admin/products/edit/:ean"
+            element={
+              <ProtectedRoute adminOnly={true}>
                 <ProductEditPage />
               </ProtectedRoute>
             }

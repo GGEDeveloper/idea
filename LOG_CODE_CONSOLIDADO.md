@@ -1,8 +1,8 @@
 # 📋 LOG DE CÓDIGO - PROJETO IDEA
 
-> **Última Atualização:** 2025-06-15T18:30:00+01:00  
+> **Última Atualização:** 2025-06-16T19:00:00+01:00  
 > **Responsável:** Equipe de Desenvolvimento  
-> **Versão do Documento:** 2.3.0
+> **Versão do Documento:** 2.4.0
 
 ## 📌 Índice
 
@@ -133,6 +133,72 @@ pie
 | Média         | 89%       |
 
 ## 📅 Histórico de Atualizações
+
+---
+### **ID 013: Implementação Completa da Área de Admin para Gestão de Produtos e Sistema de Autenticação Local**
+
+- **Data:** 2025-06-16
+- **Responsável:** Equipa de Desenvolvimento (AI)
+- **Módulos Afetados:** `src/api/admin/products.cjs`, `src/pages/admin/ProductsAdminPage.jsx`, `src/pages/admin/ProductEditPage.jsx`, `src/pages/admin/ProductCreatePage.jsx`, `src/db/product-queries.cjs`, `src/App.jsx`, `create_customer_user.sql`
+
+**Descrição Detalhada:**
+
+Implementação completa do sistema de gestão de produtos para administradores, incluindo operações CRUD completas, sistema de autenticação local (substituindo Clerk), e criação de utilizadores de teste para validação do sistema de roles.
+
+**Funcionalidades Implementadas:**
+
+1.  **Backend API Admin (`src/api/admin/products.cjs`)**
+    - **GET /api/admin/products**: Lista todos os produtos com paginação, incluindo produtos inativos
+    - **GET /api/admin/products/:ean**: Busca produto específico por EAN para edição
+    - **POST /api/admin/products**: Criação de novos produtos
+    - **PUT /api/admin/products/:ean**: Atualização completa de produtos existentes
+    - **DELETE /api/admin/products/:ean**: Desativação de produtos (soft delete)
+    - Todos os endpoints protegidos por middleware `requireAdminAuth`
+
+2.  **Frontend Admin - Gestão de Produtos**
+    - **ProductsAdminPage** (`/admin/products`): Listagem paginada com botão "Criar Novo Produto"
+    - **ProductCreatePage** (`/admin/products/create`): Formulário completo para criação de produtos
+    - **ProductEditPage** (`/admin/products/edit/:ean`): Edição de produtos com gestão de stock por variação
+    - Interface responsiva com feedback visual (loading, success, error states)
+    - Navegação consistente entre páginas de admin
+
+3.  **Melhorias na Base de Dados**
+    - Atualização da função `createProduct` para suportar campo `active`
+    - Correção da query `getProductByEan` para usar `sku` em vez de `name` nas variações
+    - Melhoria das queries para consistência com a estrutura de dados
+
+4.  **Sistema de Autenticação Local**
+    - Migração completa do Clerk para sistema local com JWT
+    - Criação de utilizadores de teste:
+      - **Admin**: `g.art.shine@gmail.com` (role_id: 1)
+      - **Cliente**: `cliente@mike.com` / password: `2585` (role_id: 2)
+    - Validação completa da separação de roles e acesso às áreas específicas
+
+5.  **Roteamento e Navegação**
+    - Adição das rotas admin ao `src/App.jsx`
+    - Correção da rota de edição para usar `:ean` em vez de `:id`
+    - Proteção adequada de todas as rotas admin com `ProtectedRoute adminOnly={true}`
+
+**Alterações Técnicas Específicas:**
+
+- **Identificação por EAN**: Migração completa de `id` para `ean` como identificador primário nos endpoints admin
+- **Gestão de Stock**: Interface para atualização de stock por variação de produto
+- **Validação de Dados**: Implementação de validação robusta nos formulários
+- **Error Handling**: Tratamento consistente de erros em todas as operações CRUD
+- **Feedback UX**: Estados de loading, success e error em todas as operações
+
+**Validação e Testes:**
+
+- ✅ Login funcional para ambos os roles (admin/cliente)
+- ✅ Separação correta de acesso às áreas (cliente não acede a admin)
+- ✅ Operações CRUD completas para produtos (criar, listar, editar, ativar/desativar)
+- ✅ Gestão de stock por variação funcional
+- ✅ Navegação e roteamento corretos
+- ✅ Interface responsiva e user-friendly
+
+**Impacto no Sistema:**
+
+Esta implementação estabelece a base sólida para a área administrativa, permitindo gestão completa de produtos e validando o sistema de roles. O sistema está agora preparado para expansão com gestão de utilizadores, encomendas e outras funcionalidades administrativas.
 
 ---
 ### **ID 012: Depuração Extensiva de Erros de Autenticação e Arranque (Pós-Refatoração)**
@@ -1455,4 +1521,51 @@ Este conjunto de scripts forma um pipeline de dados modular e robusto.
 - A captura de preços de fornecedor a nível de variante (`product_variants.supplier_price`) é crucial para a precisão do cálculo de preços de venda, conforme as regras de negócio.
 - O logging e a idempotência dos scripts facilitam a manutenção e a execução repetida.
 
+---
+
+## Autenticação Local (Implementado em 2025-06-16)
+
+### Visão Geral
+Sistema de autenticação e gestão de sessão local utilizando email/password, hashing com `bcryptjs` e JSON Web Tokens (JWTs). Substitui a integração anterior com o Clerk, após dificuldades de depuração com o middleware do Clerk na aplicação principal.
+
+### Módulos Principais do Backend:
+-   **`src/utils/passwordUtils.cjs`**:
+    -   Responsável pelo hashing de passwords (usando `bcrypt.hash`) e comparação de passwords com hashes armazenados (usando `bcrypt.compare`). Utiliza `HASH_SALT_ROUNDS = 10`.
+-   **`src/utils/jwtUtils.cjs`**:
+    -   Responsável pela geração de JWTs (usando `jwt.sign` com `JWT_SECRET` do `.env`) e verificação de JWTs (usando `jwt.verify`).
+    -   Define a expiração do token em `JWT_EXPIRES_IN` (ex: '1d'). Exporta esta constante.
+-   **`src/db/user-queries.cjs`**:
+    -   `findUserByEmailForAuth(email)`: Busca utilizador por email, retornando `user_id`, `email`, `password_hash`, `role_name`, e um array de `permissions` (usando `COALESCE(ARRAY_REMOVE(ARRAY_AGG(p.permission_name), NULL), '{}')` para garantir um array vazio em vez de `[null]`). Usado no login.
+    -   `findUserByIdForSession(userId)`: Busca utilizador por `user_id`, retornando dados do perfil (sem `password_hash`, mas incluindo `clerk_id` para referência futura) como `email`, `first_name`, `last_name`, `company_name`, `role_name`, e `permissions`. Usado para popular `req.localUser`.
+-   **`src/api/middleware/localAuth.cjs`**:
+    -   `TOKEN_COOKIE_NAME = 'idea_session_token'`: Nome do cookie da sessão.
+    -   `populateUserFromToken`: Middleware global que lê o JWT do cookie `TOKEN_COOKIE_NAME`, verifica-o usando `jwtUtils.verifyToken`. Se válido e contiver `userId`, busca o perfil do utilizador com `userQueries.findUserByIdForSession` e anexa-o a `req.localUser`. Não bloqueia se o token for inválido/ausente, permitindo acesso público opcional.
+    -   `requireAuth`: Middleware de rota que verifica se `req.localUser` e `req.localUser.user_id` existem. Retorna 401 (e limpa o cookie) se não autenticado.
+    -   `requireAdmin`: Middleware de rota que verifica se `req.localUser.role_name === 'admin'`. Retorna 403 se não for admin.
+-   **`src/api/auth.cjs` (Router):**
+    -   `POST /api/auth/login`: Recebe `email` e `password`. Valida credenciais contra `userQueries.findUserByEmailForAuth` e `passwordUtils.comparePassword`. Se válido, gera JWT com payload `{ userId, email, role }` usando `jwtUtils.generateToken` e envia o token num cookie HttpOnly, Secure (em produção), SameSite='Lax', com `maxAge` correspondente à expiração do JWT. Devolve dados básicos do utilizador.
+    -   `POST /api/auth/logout`: Limpa o cookie `TOKEN_COOKIE_NAME`.
+-   **`src/api/users.cjs` (Router):**
+    -   `GET /api/users/me`: Protegido por `requireAuth` de `localAuth.cjs`. Devolve `req.localUser` (que contém o perfil completo, incluindo role e permissões).
+-   **`server.cjs` (Configuração Global):**
+    -   Usa `cookieParser()`.
+    -   Usa `populateUserFromToken` como middleware global após `cookieParser`.
+    -   Monta o `authRouter`, `usersRouter` e outros routers da aplicação.
+    -   Removeu todas as referências e configurações do Clerk.
+
+### Frontend (`src/contexts/AuthContext.jsx`):
+-   Completamente reescrito para gerir o estado de autenticação local.
+-   Estado: `localUser`, `isAuthenticated` (derivado de `localUser`), `isLoading`, `authError`.
+-   `fetchUserProfile()`: Função assíncrona chamada no `useEffect` inicial (para verificar sessão existente via cookie) e após login bem-sucedido. Faz GET para `/api/users/me`. Se sucesso, define `localUser`. Se 401/403, limpa `localUser`. Trata de outros erros.
+-   `login(email, password)`: Envia POST para `/api/auth/login`. Se sucesso (200 OK e `data.user` presente), chama `fetchUserProfile` para popular o estado e depois navega.
+-   `logout()`: Envia POST para `/api/auth/logout`. Limpa `localUser` e navega para `/login`.
+-   `hasPermission(permission)` e `hasRole(role)`: Funções utilitárias que verificam `localUser.permissions` e `localUser.role_name`.
+-   Componentes como `LoginPage`, `UserMenu`, `App.jsx` (com `ProtectedRoute`, `RedirectIfAuthenticated`), `MyAccountPage`, `UnauthorizedPage` foram adaptados para usar este novo contexto.
+
+### Ficheiros de Configuração e Scripts de Suporte:
+-   **`.env`**: Adicionada variável `JWT_SECRET` para a assinatura de tokens. Variáveis do Clerk removidas/comentadas.
+-   **`docs/database_schema.sql`**: Tabela `users` modificada para adicionar `password_hash TEXT` e tornar `clerk_id NULLABLE`.
+-   **`apply_schema_changes.cjs`**: Script Node.js para aplicar as alterações de schema à tabela `users`.
+-   **`hash_password_util.cjs`**: Script Node.js para gerar hashes de password bcryptjs a partir da linha de comando.
+-   **`seed_user_password.cjs`**: Script Node.js para inserir/atualizar o `password_hash` de um utilizador específico na BD.
 ---

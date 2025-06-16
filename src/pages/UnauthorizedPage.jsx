@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useUser } from '@clerk/clerk-react';
+// import { useUser } from '@clerk/clerk-react'; // REMOVER CLERK
+import { useAuth } from '../contexts/AuthContext'; // USAR NOSSO AUTHCONTEXT
 
 const UnauthorizedPage = () => {
   const location = useLocation();
-  const { isSignedIn, user } = useUser();
+  // const { isSignedIn, user } = useUser(); // REMOVER CLERK
+  const { isAuthenticated, localUser } = useAuth(); // USAR NOSSO AUTHCONTEXT
   const from = location.state?.from?.pathname || '/';
 
   return (
@@ -34,7 +36,7 @@ const UnauthorizedPage = () => {
         </p>
         
         <div className="mt-6">
-          {isSignedIn ? (
+          {isAuthenticated ? ( // USAR isAuthenticated
             <Link
               to="/"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -44,7 +46,7 @@ const UnauthorizedPage = () => {
           ) : (
             <Link
               to="/login"
-              state={{ from: from }}
+              state={{ from: from }} // Manter o estado para redirecionamento após login
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Fazer Login
@@ -52,10 +54,10 @@ const UnauthorizedPage = () => {
           )}
         </div>
         
-        {isSignedIn && user && (
+        {isAuthenticated && localUser && ( // USAR isAuthenticated e localUser
           <div className="mt-6 p-4 bg-gray-50 rounded-md">
             <p className="text-sm text-gray-600">
-              Você está logado como <span className="font-medium">{user.primaryEmailAddress?.emailAddress}</span>.
+              Você está logado como <span className="font-medium">{localUser.email}</span>.
             </p>
             <p className="mt-2 text-sm text-gray-600">
               Se acredita que isso é um erro, entre em contato com o suporte.

@@ -19,15 +19,17 @@ POSTGRES_PRISMA_URL=postgres://neondb_owner:npg_aMgk1osmjh7X@ep-shiny-bush-abjh1
 GEKO_API_KEY=4bceff60-32d7-4635-b5e8-ca51353a6e0e
 GEKO_API_XML_URL_EN_UTF8=https://b2b.geko.pl/en/xmlapi/20/3/utf8/4bceff60-32d7-4635-b5e8-ca51353a6e0e
 
-# --- Auth.js/Clerk ---
-# Variáveis para Vite (necessitam do prefixo VITE_)
-VITE_CLERK_PUBLISHABLE_KEY=pk_test_Ymxlc3NlZC1yYXktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA
-# VITE_CLERK_FRONTEND_API=https://blessed-ray-59.clerk.accounts.dev # Antiga, manter comentada ou remover
+# --- Autenticação Local ---
+JWT_SECRET=a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2
 
-# Variáveis apenas para servidor (não são expostas ao navegador)
-CLERK_SECRET_KEY=sk_test_4uePA8ndyhboyzcixt10bUeTLT53uB1leyHFrkv69f
-CLERK_PUBLISHABLE_KEY=pk_test_Ymxlc3NlZC1yYXktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA # Adicionada para o backend
-CLERK_API_URL=https://api.clerk.com
+# --- Variáveis de Frontend (se ainda forem usadas para algo não relacionado com Clerk) ---
+# VITE_CLERK_PUBLISHABLE_KEY=pk_test_Ymxlc3NlZC1yYXktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA # Ex-Clerk
+# VITE_CLERK_FRONTEND_API=https://blessed-ray-59.clerk.accounts.dev # Ex-Clerk
+
+# --- Variáveis de Servidor (Ex-Clerk - Removidas ou Comentadas) ---
+# CLERK_SECRET_KEY=sk_test_4uePA8ndyhboyzcixt10bUeTLT53uB1leyHFrkv69f
+# CLERK_PUBLISHABLE_KEY=pk_test_Ymxlc3NlZC1yYXktNTkuY2xlcmsuYWNjb3VudHMuZGV2JA
+# CLERK_API_URL=https://api.clerk.com
 # CLERK_JWT_KEY="-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq5vhef+1jqUpQQONflDZ\nTD5FVEP3JXS1kUUKWzPIf7ZKvWBiZVix0yldsLONQCzdMu05twXOrjq8VkQ4ejnN\ndoVQ9dS4XKzMXkRTFTNn7kEZ2P6j5S5bteGgkWsfgDdvEBlOZVi97PuiVTNPArnz\nTfy1BeFlEiLkQdwVffHmfEwmiWSn0glMptIxVvUXZ4eZDi2hR1JoAtctvUGoOPYd\nCufK/2tG3ZzuV+7NvPPLQBoFZP198xDIOzAMa/2tqmAH0ilqWswuNNlEwbkmivyV\nNbsoaresukn+LJIiO0lvmuBthEmwQz3cBIkpFqjqkY/llE8vyd4saknMWqyccn4W\njwIDAQAB\n-----END PUBLIC KEY-----"
 
 # --- Internacionalização (next-intl) ---

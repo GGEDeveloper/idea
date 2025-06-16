@@ -2,7 +2,8 @@ const express = require('express');
 // const { pool } = require('../db.cjs'); // Caminho antigo e incorreto
 const pool = require('../../db/index.cjs'); // Caminho corrigido para o pool centralizado
 const { buildCategoryTreeFromPaths } = require('./utils/category-utils.cjs');
-const { requireAdminAuth } = require('./middleware/auth.cjs'); // Importar o middleware do novo local
+// const { requireAdminAuth } = require('./middleware/auth.cjs'); // REMOVER esta linha
+const { requireAdmin } = require('./middleware/localAuth.cjs'); // USAR o novo requireAdmin do localAuth
 
 const router = express.Router();
 
@@ -46,7 +47,7 @@ router.get('/tree', async (req, res) => {
 });
 
 // Rota para CRIAR uma nova categoria (Admin Only)
-router.post('/', requireAdminAuth, async (req, res) => {
+router.post('/', requireAdmin, async (req, res) => {
   const { geko_category_id, name, path } = req.body; // geko_category_id é o input do payload
   if (!geko_category_id || !name || !path) {
     return res.status(400).json({ error: 'Campos obrigatórios: geko_category_id (será usado como categoryid), name, path' });
@@ -67,7 +68,7 @@ router.post('/', requireAdminAuth, async (req, res) => {
 });
 
 // Rota para ATUALIZAR uma categoria (Admin Only)
-router.put('/:id', requireAdminAuth, async (req, res) => {
+router.put('/:id', requireAdmin, async (req, res) => {
   const categoryIdToUpdate = req.params.id; // Este é o categoryid
   const { name, path } = req.body;
   if (!name || !path) {
@@ -89,7 +90,7 @@ router.put('/:id', requireAdminAuth, async (req, res) => {
 });
 
 // Rota para APAGAR uma categoria (Admin Only)
-router.delete('/:id', requireAdminAuth, async (req, res) => {
+router.delete('/:id', requireAdmin, async (req, res) => {
   const categoryIdToDelete = req.params.id; // Este é o categoryid
   try {
     const usageCheck = await pool.query('SELECT 1 FROM product_categories WHERE category_id = $1 LIMIT 1', [categoryIdToDelete]);

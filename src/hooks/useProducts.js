@@ -57,8 +57,10 @@ export function useProducts(options = {}) {
     if (filtersLoadedRef.current) return;
     
     const loadFilters = async () => {
-             try {
-         const response = await fetch('http://localhost:3000/api/products/filters');
+      try {
+        const response = await fetch('http://localhost:3000/api/products/filters', {
+          credentials: 'include',
+        });
         if (response.ok) {
           const data = await response.json();
           setFilterOptions({
@@ -113,7 +115,9 @@ export function useProducts(options = {}) {
       }
       
       try {
-         const response = await fetch(`http://localhost:3000/api/products?${params.toString()}`);
+        const response = await fetch(`http://localhost:3000/api/products?${params.toString()}`, {
+          credentials: 'include',
+        });
         if (!response.ok) {
           throw new Error(`Erro ${response.status}: ${response.statusText}`);
         }
@@ -147,7 +151,6 @@ export function useProducts(options = {}) {
     currentPage,
     limit,
     isFeaturedQuery,
-    hasPermission,
     canViewPrices
   ]); // Apenas dependências primitivas
 
