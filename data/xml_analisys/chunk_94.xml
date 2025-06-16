@@ -1,0 +1,1500 @@
+                            <price gross="3.63" net="3.63"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-11" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="3.63" net="3.63"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5632_0_2334614.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5632_0_5576057.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5633" vat="0" code="CG80268-13" code_on_card="CG80268-13" EAN="5901477145551" code_producer="5901477145551">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ball-bearing-6000-rs"/>
+                        <description>
+                            <name><![CDATA[Ball bearing 6000 RS]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.32" net="3.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-13" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.32" net="3.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5634" vat="0" code="CG80268-15" code_on_card="CG80268-15" EAN="5901477145568" code_producer="5901477145568">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/end-gear"/>
+                        <description>
+                            <name><![CDATA[End gear]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.16" net="3.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-15" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.16" net="3.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5634_0_2334629.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5635" vat="0" code="CG80268-17" code_on_card="CG80268-17" EAN="5901477145575" code_producer="5901477145575">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ball-bearing-607zz"/>
+                        <description>
+                            <name><![CDATA[Ball bearing 607ZZ]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.98" net="0.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-17" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.98" net="0.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5636" vat="0" code="CG80268-19" code_on_card="CG80268-19" EAN="5901477145582" code_producer="5901477145582">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/small-bearing-cover"/>
+                        <description>
+                            <name><![CDATA[Small bearing cover]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.95" net="1.95"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-19" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="1.95" net="1.95"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5636_0_2334644.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5637" vat="0" code="CG80268-20" code_on_card="CG80268-20" EAN="5901477145599" code_producer="5901477145599">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/large-bevel-gear"/>
+                        <description>
+                            <name><![CDATA[Large bevel gear]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.92" net="3.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-20" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="3.92" net="3.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5637_0_2334649.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5638" vat="0" code="CG80268-22" code_on_card="CG80268-22" EAN="5901477145605" code_producer="5901477145605">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/main-driving-shaft"/>
+                        <description>
+                            <name><![CDATA[Main driving shaft]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.97" net="3.97"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-22" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="3.97" net="3.97"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5638_0_2334660.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5639" vat="0" code="CG80268-23" code_on_card="CG80268-23" EAN="5901477145612" code_producer="5901477145612">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gear-box"/>
+                        <description>
+                            <name><![CDATA[Gear box]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.88" net="10.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-23" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="10.88" net="10.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5639_0_2334666.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5641" vat="0" code="CG80268-27" code_on_card="CG80268-27" EAN="5901477145629" code_producer="5901477145629">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/aluminum-fittings"/>
+                        <description>
+                            <name><![CDATA[Aluminum fittings]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.78" net="2.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-27" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="2.78" net="2.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5641_0_2334673.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5642" vat="0" code="CG80268-28" code_on_card="CG80268-28" EAN="5901477145636" code_producer="5901477145636">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/small-bevel-gear"/>
+                        <description>
+                            <name><![CDATA[Small bevel gear]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.81" net="2.81"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-28" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.81" net="2.81"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5642_0_2334680.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5643" vat="0" code="CG80268-30" code_on_card="CG80268-30" EAN="5901477145643" code_producer="5901477145643">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/middle-cover"/>
+                        <description>
+                            <name><![CDATA[Middle cover]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.13" net="3.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-30" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.13" net="3.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5643_0_2334686.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5644" vat="0" code="CG80268-31" code_on_card="CG80268-31" EAN="5901477145650" code_producer="5901477145650">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotor-5644"/>
+                        <description>
+                            <name><![CDATA[Rotor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.94" net="12.94"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-31" weight="300.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="12.94" net="12.94"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5644_0_2334693.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5645" vat="0" code="CG80268-33" code_on_card="CG80268-33" EAN="5901477145667" code_producer="5901477145667">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ball-bearing-608-rs"/>
+                        <description>
+                            <name><![CDATA[Ball bearing 608 RS]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.45" net="2.45"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-33" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="2.45" net="2.45"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5647" vat="0" code="CG80268-35" code_on_card="CG80268-35" EAN="5901477145681" code_producer="5901477145681">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/anti-wind-ring"/>
+                        <description>
+                            <name><![CDATA[Anti-wind ring]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.72" net="0.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-35" weight="150.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.72" net="0.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5647_0_18512363.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5647_1_18512364.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5649" vat="0" code="CG80268-38" code_on_card="CG80268-38" EAN="5901477145704" code_producer="5901477145704">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-housing"/>
+                        <description>
+                            <name><![CDATA[Motor housing]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.53" net="4.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-38" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="4.53" net="4.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5649_0_18512321.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5649_1_18512322.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5649_1_18512323.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5649_1_18512324.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5650" vat="0" code="CG80268-41" code_on_card="CG80268-41" EAN="5901477145728" code_producer="5901477145728">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/brush-holder"/>
+                        <description>
+                            <name><![CDATA[Brush holder]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.12" net="2.12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-41" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.12" net="2.12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5650_0_11468578.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5650_0_2334736.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5652" vat="0" code="CG80268-44" code_on_card="CG80268-44" EAN="5901477145742" code_producer="5901477145742">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-housing-5652"/>
+                        <description>
+                            <name><![CDATA[Motor housing]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.89" net="3.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-44" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.89" net="3.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5652_0_2334773.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5653" vat="0" code="CG80268-46" code_on_card="CG80268-46" EAN="5901477145759" code_producer="5901477145759">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/back-cover"/>
+                        <description>
+                            <name><![CDATA[Back cover]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.87" net="1.87"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-46" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="1.87" net="1.87"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5653_0_18512360.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5653_1_18512361.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5654" vat="0" code="CG80268-48" code_on_card="CG80268-48" EAN="5901477145766" code_producer="5901477145766">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/long-brush-segment"/>
+                        <description>
+                            <name><![CDATA[Long brush segment]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.02" net="5.02"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-48" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.02" net="5.02"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5654_0_2334794.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5655" vat="0" code="CG80268-53" code_on_card="CG80268-53" EAN="5901477145780" code_producer="5901477145780">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/detachable"/>
+                        <description>
+                            <name><![CDATA[Detachable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.16" net="1.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-53" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.16" net="1.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5655_0_2334801.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5657" vat="0" code="CG80268-56B" code_on_card="CG80268-56B" EAN="5901477145803" code_producer="5901477145803">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hoods-5657"/>
+                        <description>
+                            <name><![CDATA[Hoods]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.23" net="4.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-56B" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.23" net="4.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5657_0_2334830.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5658" vat="0" code="CG80268-58" code_on_card="CG80268-58" EAN="5901477145810" code_producer="5901477145810">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/shield-connectoc"/>
+                        <description>
+                            <name><![CDATA[Shield connectoc]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.72" net="0.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-58" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="12,00"/>
+                                                                    <price gross="0.72" net="0.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5658_0_2334836.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5659" vat="0" code="CG80268-60" code_on_card="CG80268-60" EAN="5901477145827" code_producer="5901477145827">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/420-hose"/>
+                        <description>
+                            <name><![CDATA[420 hose]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.74" net="2.74"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-60" weight="400.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.74" net="2.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5659_0_2334849.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5660" vat="0" code="CG80268-63" code_on_card="CG80268-63" EAN="5901477145834" code_producer="5901477145834">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/left-front-handle"/>
+                        <description>
+                            <name><![CDATA[Left front handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.28" net="4.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-63" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.28" net="4.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5660_0_2334871.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5661" vat="0" code="CG80268-64" code_on_card="CG80268-64" EAN="5901477145841" code_producer="5901477145841">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plastic-soft-pipe-31"/>
+                        <description>
+                            <name><![CDATA[Plastic soft pipe (31)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.92" net="0.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-64" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="0.92" net="0.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5661_0_2334890.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5662" vat="0" code="CG80268-66" code_on_card="CG80268-66" EAN="5901477145858" code_producer="5901477145858">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/flexible-sleeve"/>
+                        <description>
+                            <name><![CDATA[Flexible sleeve]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.72" net="0.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-66" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="0.72" net="0.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5662_0_18512377.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5662_1_18512378.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5663" vat="0" code="CG80268-68" code_on_card="CG80268-68" EAN="5901477145865" code_producer="5901477145865">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/aluminum-pipe"/>
+                        <description>
+                            <name><![CDATA[Aluminum pipe]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.82" net="5.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-68" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="5.82" net="5.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5663_0_2334903.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5665" vat="0" code="CG80268-71" code_on_card="CG80268-71" EAN="5901477145889" code_producer="5901477145889">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/speed-governor-5665"/>
+                        <description>
+                            <name><![CDATA[Speed governor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.44" net="6.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-71" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.44" net="6.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5665_0_18497349.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5666" vat="0" code="CG80268-73A" code_on_card="CG80268-73A" EAN="5901477145896" code_producer="5901477145896">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-5666"/>
+                        <description>
+                            <name><![CDATA[Switch]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.76" net="1.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-73A" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="1.76" net="1.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5666_0_18512335.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5666_1_18512336.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5667" vat="0" code="CG80268-77" code_on_card="CG80268-77" EAN="5901477145902" code_producer="5901477145902">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cable"/>
+                        <description>
+                            <name><![CDATA[Cable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.61" net="4.61"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-77" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.61" net="4.61"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5667_0_2334939.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5668" vat="0" code="CG80268-80" code_on_card="CG80268-80" EAN="5901477145919" code_producer="5901477145919">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/led-switch"/>
+                        <description>
+                            <name><![CDATA[LED switch]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.3" net="1.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-80" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.3" net="1.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5668_0_2334948.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5669" vat="0" code="CG80268-83" code_on_card="CG80268-83" EAN="5901477145926" code_producer="5901477145926">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/right-front-handle"/>
+                        <description>
+                            <name><![CDATA[Right front handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.28" net="4.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-83" weight="150.00" grossWeight="0.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="4.28" net="4.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5669_0_2334955.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5670" vat="0" code="CG80268-89" code_on_card="CG80268-89" EAN="5901477145933" code_producer="5901477145933">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/right-front-handle-5670"/>
+                        <description>
+                            <name><![CDATA[Right front handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.44" net="5.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-89" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.44" net="5.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5670_0_2334963.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5671" vat="0" code="CG80268-90" code_on_card="CG80268-90" EAN="5901477145940" code_producer="5901477145940">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/the-vice-grip"/>
+                        <description>
+                            <name><![CDATA[The vice grip]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.39" net="1.39"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-90" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.39" net="1.39"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5671_0_2334970.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5672" vat="0" code="CG80268-92" code_on_card="CG80268-92" EAN="5901477145957" code_producer="5901477145957">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector-57"/>
+                        <description>
+                            <name><![CDATA[Connector (57)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.84" net="1.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-92" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="1.84" net="1.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5672_0_2334977.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5673" vat="0" code="CG80268-93" code_on_card="CG80268-93" EAN="5901477145964" code_producer="5901477145964">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/oval-tubes"/>
+                        <description>
+                            <name><![CDATA[Oval tubes]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.01" net="7.01"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-93" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="7.01" net="7.01"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5673_0_2334983.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5674" vat="0" code="CG80268-95" code_on_card="CG80268-95" EAN="5901477145971" code_producer="5901477145971">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector-35-5674"/>
+                        <description>
+                            <name><![CDATA[Connector (35)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.91" net="0.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-95" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.91" net="0.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5674_0_2334988.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5675" vat="0" code="CG80268-96" code_on_card="CG80268-96" EAN="5901477145988" code_producer="5901477145988">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/under-vice-grip"/>
+                        <description>
+                            <name><![CDATA[Under vice grip]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.39" net="1.39"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-96" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="1.39" net="1.39"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5675_0_2335000.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5676" vat="0" code="CG80268-97" code_on_card="CG80268-97" EAN="5901477145995" code_producer="5901477145995">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/vacuum-tube-5676"/>
+                        <description>
+                            <name><![CDATA[Vacuum Tube]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.63" net="4.63"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-97" weight="150.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.63" net="4.63"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5676_0_2335018.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5677" vat="0" code="CG80268-98" code_on_card="CG80268-98" EAN="5901477146008" code_producer="5901477146008">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector"/>
+                        <description>
+                            <name><![CDATA[Connector]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.93" net="0.93"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80268-98" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="16,00"/>
+                                                                    <price gross="0.93" net="0.93"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5677_0_2335026.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5678" vat="0" code="CG80267-26" code_on_card="CG80267-26" EAN="5901477145315" code_producer="5901477145315">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105663" name="Plaster Grinders" path="Spare Parts\Plaster Grinders"/>
+            <category_idosell path="Spare Parts\Plaster Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bearing-608-rs"/>
+                        <description>
+                            <name><![CDATA[Bearing 608 RS]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.44" net="1.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80267-26" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="1.44" net="1.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5679" vat="0" code="T01000-S" code_on_card="T01000-S" EAN="5901477146367" code_producer="5901477146367">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="106238" name="Sweatshirts" path="Health and Safety Articles\Work Clothes\Sweatshirts"/>
+            <category_idosell path="Health and Safety Articles\Work Clothes\Sweatshirts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/jacket-size-s"/>
+                        <description>
+                            <name><![CDATA[Jacket size S]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: S</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: S</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></short_desc>
+                            <description><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: S</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.85" net="9.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T01000-S" weight="700.00" grossWeight="800.00">
+                                        <stock id="1" quantity="41,00"/>
+                                                                    <price gross="9.85" net="9.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_0_18522035.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509061.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509062.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509063.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509064.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509065.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509066.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509067.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509068.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509069.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509070.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509071.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509072.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18509073.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18522036.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18522037.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5679_1_18522038.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5680" vat="0" code="T01001-M" code_on_card="T01001-M" EAN="5901477146374" code_producer="5901477146374">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="106238" name="Sweatshirts" path="Health and Safety Articles\Work Clothes\Sweatshirts"/>
+            <category_idosell path="Health and Safety Articles\Work Clothes\Sweatshirts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/jacket-size-m"/>
+                        <description>
+                            <name><![CDATA[Jacket size M]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: M</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: M</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></short_desc>
+                            <description><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: M</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.85" net="9.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T01001-M" weight="700.00" grossWeight="800.00">
+                                        <stock id="1" quantity="116,00"/>
+                                                                    <price gross="9.85" net="9.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_0_18522039.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509076.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509077.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509078.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509079.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509080.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509081.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509082.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509083.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509084.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509085.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509086.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18509087.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18522040.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18522041.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5680_1_18522042.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5682" vat="0" code="T01002-L" code_on_card="T01002-L" EAN="5901477146381" code_producer="5901477146381">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="106238" name="Sweatshirts" path="Health and Safety Articles\Work Clothes\Sweatshirts"/>
+            <category_idosell path="Health and Safety Articles\Work Clothes\Sweatshirts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/jacket-size-l-52"/>
+                        <description>
+                            <name><![CDATA[Jacket size L(52)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: L</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: L</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></short_desc>
+                            <description><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: L</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.85" net="9.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T01002-L" weight="700.00" grossWeight="800.00">
+                                        <stock id="1" quantity="226,00"/>
+                                                                    <price gross="9.85" net="9.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_0_18522043.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509090.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509091.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509092.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509093.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509094.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509095.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509096.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509097.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509098.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509099.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509100.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509101.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18509102.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18522044.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18522045.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5682_1_18522046.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5683" vat="0" code="T01003-LD" code_on_card="T01003-LD" EAN="5901477146398" code_producer="5901477146398">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="106238" name="Sweatshirts" path="Health and Safety Articles\Work Clothes\Sweatshirts"/>
+            <category_idosell path="Health and Safety Articles\Work Clothes\Sweatshirts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/jacket-size-ld-54"/>
+                        <description>
+                            <name><![CDATA[Jacket size LD(54)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<img src="https://b2b.geko.pl/usr/i/bluza_robocza_en.jpg" alt=""><br/><h3>Product Features</h3><br/><ul><br/>    <li>Work Jacket made of Cotton (35%) and Polyester (65%)</li><br/>    <li>Material weight: 267 g/m2</li><br/>    <li>7 pockets, including 4 with Velcro fastening</li><br/>    <li>Mobile phone pocket</li><br/>    <li>Pen/pencil pocket</li><br/>    <li>Zip fastener</li><br/>    <li>Width adjustment at the jacket bottom with buttons</li><br/>    <li>Reflective components on chest and back</li><br/>    <li>Strengthened pockets and elbows area with Polyester fabric</li><br/>    <li>Additional stitching</li><br/>    <li>ID insert</li><br/>    <li>CE Certificate</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Material Composition: 35% Cotton, 65% Polyester</li><br/>    <li>Material Weight: 267 g/m2</li><br/>    <li>Size: LD</li><br/></ul><br/><h4>Size Chart</h4><br/><div style="float:left;width:80%"><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>S (48)</th><br/>    <th>M (50)</th><br/>    <th>L (52)</th><br/>    <th>LD (54)</th><br/>    <th>XL (56)</th><br/>    <th>XXL (58)</th><br/>  </tr><br/>  <tr><br/>    <td>A</td><br/>    <td>92 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 108 cm</td><br/>    <td>108 - 116 cm</td><br/>    <td>116 - 124 cm</td><br/>    <td>124 - 132 cm</td><br/>  </tr><br/>  <tr><br/>    <td>B</td><br/>    <td>64 - 72 cm</td><br/>    <td>72 - 80 cm</td><br/>    <td>80 - 88 cm</td><br/>    <td>88 - 96 cm</td><br/>    <td>96 - 104 cm</td><br/>    <td>104 - 112 cm</td><br/>  </tr><br/>  <tr><br/>    <td>C</td><br/>    <td>164 - 170 cm</td><br/>    <td>170 - 176 cm</td><br/>    <td>176 - 182 cm</td><br/>    <td>182 - 188 cm</td><br/>    <td>188 - 194 cm</td><br/>    <td>194 - 200 cm</td><br/>  </tr><br/></table><br/></div><br/><div style="float:right;width:20%"><img src="https://b2b.geko.pl/usr/i/size.png" alt=""></div><br/><div style="clear: both"></div>]]></long_desc>

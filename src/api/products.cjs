@@ -26,6 +26,7 @@ function sanitizeProductForUser(product, localUser) {
   // Usamos delete para remover as chaves do objeto.
   const sanitizedProduct = { ...product };
   delete sanitizedProduct.price;
+  delete sanitizedProduct.product_price;
   delete sanitizedProduct.stock;
   // Adicionamos um status para o frontend saber o que mostrar
   sanitizedProduct.priceStatus = localUser ? 'permission_denied' : 'unauthenticated';
@@ -56,9 +57,9 @@ router.get('/filters', async (req, res) => {
     const [categoryData, brandData, priceData] = await Promise.all([
       pool.query('SELECT categoryid as id, name, "path" FROM categories ORDER BY "path"'),
       pool.query("SELECT DISTINCT brand as name FROM products WHERE brand IS NOT NULL AND brand <> '' ORDER BY name"),
-      pool.query('SELECT MIN(price) as min, MAX(price) as max FROM prices') // Query simplificada pelo novo schema
+      // Querying prices from the 'prices' table, specifically for the 'Base Selling Price' list
+      pool.query("SELECT MIN(price) as min, MAX(price) as max FROM prices WHERE price_list_id = (SELECT price_list_id FROM price_lists WHERE name = 'Base Selling Price' LIMIT 1)")
     ]);
-
  
     const categoryTree = buildCategoryTreeFromPaths(categoryData.rows);
 
@@ -67,7 +68,7 @@ router.get('/filters', async (req, res) => {
       brands: brandData.rows.map(row => row.name),
       price: {
         min: parseFloat(priceData.rows[0].min) || 0,
-        max: parseFloat(priceData.rows[0].max) || 1000,
+        max: parseFloat(priceData.rows[0].max) || 10000, // Adjusted max based on typical product prices
       }
     };
     res.json(filterOptions);
@@ -77,33 +78,63 @@ router.get('/filters', async (req, res) => {
   }
 });
 
-// Rota principal para buscar produtos (refatorada para o novo schema)
+// Rota principal para buscar produtos
 router.get('/', optionalUser, async (req, res) => {
   console.log('[API /api/products GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   try {
     const { 
       page = 1, 
-      limit = 20, 
-      sortBy = 'name', 
-      order = 'asc',
+      limit, // Default limit will be set based on featured status
+      sortBy: querySortBy,
+      order: queryOrder,
     brands,
       categories, 
     priceMin,
     priceMax,
-      q: searchQuery
+      q: searchQuery,
+      featured // New query parameter for featured products
   } = req.query;
 
-    const effectiveLimit = Math.min(parseInt(limit, 10) || 20, 2000);
+    let defaultSortBy = 'name';
+    let defaultOrder = 'asc';
+    const isFeaturedRequest = String(featured).toLowerCase() === 'true';
 
-    const filters = { brands, categoryId: categories, priceMin, priceMax, searchQuery };
-    const pagination = { page: parseInt(page, 10), limit: effectiveLimit, sortBy, order };
+    if (isFeaturedRequest) {
+      defaultSortBy = 'created_at'; // Default sort for featured items: newest first
+      defaultOrder = 'desc';
+    }
+
+    const finalSortBy = querySortBy || defaultSortBy;
+    const finalOrder = queryOrder || defaultOrder;
+    
+    // Set a smaller default limit for featured items, e.g., for a carousel
+    const effectiveLimit = parseInt(limit, 10) || (isFeaturedRequest ? 5 : 20);
+    const safeLimit = Math.min(effectiveLimit, 2000); // Cap limit
+
+    const filters = {
+      brands,
+      categoryId: categories,
+      priceMin,
+      priceMax,
+      searchQuery
+    };
+
+    // Only add is_featured to filters if it's explicitly true
+    if (isFeaturedRequest) {
+      filters.is_featured = true;
+    }
+
+    const pagination = { page: parseInt(page, 10), limit: safeLimit, sortBy: finalSortBy, order: finalOrder };
+
+    // Log filters and pagination
+    console.log('[API /api/products GET] Filters:', JSON.stringify(filters));
+    console.log('[API /api/products GET] Pagination:', JSON.stringify(pagination));
 
     const [totalProducts, productsFromDB] = await Promise.all([
       productQueries.countProducts(filters),
       productQueries.getProducts(filters, pagination)
     ]);
 
-    // Log dos produtos crus da DB
     if (productsFromDB.length > 0) {
       console.log('[API /api/products GET] Produto cru da DB (primeiro da lista):', JSON.stringify(productsFromDB[0], null, 2));
     } else {
@@ -114,7 +145,7 @@ router.get('/', optionalUser, async (req, res) => {
 
     res.json({
       products: sanitizedProducts,
-      totalPages: Math.ceil(totalProducts / effectiveLimit),
+      totalPages: Math.ceil(totalProducts / safeLimit),
       currentPage: parseInt(page, 10),
       totalProducts
     });
@@ -125,7 +156,7 @@ router.get('/', optionalUser, async (req, res) => {
   }
 });
 
-// Rota para buscar um único produto por EAN (refatorada para o novo schema)
+// Rota para buscar um único produto por EAN
 router.get('/:ean', optionalUser, async (req, res) => {
   console.log('[API /api/products/:ean GET] User making request:', req.localUser ? req.localUser.email : 'Guest', 'Permissions:', req.localUser ? req.localUser.permissions : 'N/A');
   const { ean } = req.params;

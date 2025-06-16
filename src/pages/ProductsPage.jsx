@@ -28,7 +28,7 @@ const ProductsPage = () => {
     setSorting,
     pagination,
     handlePageChange
-  } = useProducts(searchQuery);
+  } = useProducts({ initialSearch: searchQuery });
 
   const { isAuthenticated, hasPermission, user } = useAuth();
   const { t } = useTranslation();

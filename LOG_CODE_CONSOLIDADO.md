@@ -1,6 +1,6 @@
 # 📋 LOG DE CÓDIGO - PROJETO IDEA
 
-> **Última Atualização:** 2025-06-13T18:35:00+01:00  
+> **Última Atualização:** 2025-06-15T18:30:00+01:00  
 > **Responsável:** Equipe de Desenvolvimento  
 > **Versão do Documento:** 2.3.0
 
@@ -807,7 +807,7 @@ Após a resolução do loop infinito na página de produtos, foi identificado um
 - Pronto para revisão final ou deploy.
 
 ---
-*Última atualização: 2025-06-11T02:30:00+01:00*
+*Última atualização: 2025-06-15T18:30:00+01:00*
 
 ### **ID 011: Correção de Erros de Inicialização do Servidor (Pós-Refatoração)**
 
@@ -1402,3 +1402,57 @@ module.exports = pool;
 ---
 
 *Última atualização: 2025-06-13T19:32:00+01:00*
+
+---
+### **ID 015: Pipeline de Dados Geko - Scripts de Importação e ETL**
+
+- **Data:** 2025-06-15
+- **Responsável:** Equipa de Desenvolvimento (AI)
+- **Módulos/Scripts Criados:** 
+    - `split_xml_script.py`: Utilitário para dividir o XML grande da Geko em chunks menores para facilitar a análise inicial.
+    - `populate_geko_products.py`: Script para popular a tabela de staging `geko_products` a partir do XML completo da Geko. Utiliza parsing iterativo para eficiência de memória e `psycopg2.extras.execute_values` para batch upserting, garantindo idempotência e performance.
+    - `apply_schema_updates.py`: Script para aplicar alterações de schema na base de dados de forma controlada e com logging. Usado para adicionar constraints, colunas e triggers necessários iterativamente.
+    - `process_staged_data.py`: Script ETL principal que lê dados da tabela de staging `geko_products` e popula as tabelas finais do catálogo de produtos (`products`, `categories`, `product_categories`, `product_images`, `product_variants`, `product_attributes`, `prices`). Realiza transformações, parsing de HTML (com `BeautifulSoup`) para atributos, e utiliza batch upserts/inserts com lógica `ON CONFLICT`.
+
+**Descrição Detalhada:**
+
+Foi desenvolvido um pipeline de dados robusto para importar e processar o feed de produtos da Geko. 
+
+1.  **`split_xml_script.py`**: 
+    - Lê o arquivo XML principal da Geko.
+    - Divide o XML em múltiplos arquivos menores (chunks) com um número configurável de linhas.
+    - Facilita a análise inicial da estrutura do XML e a identificação de padrões de dados.
+
+2.  **`populate_geko_products.py`**: 
+    - Lê o arquivo XML completo da Geko de forma eficiente (iterparse).
+    - Extrai dados essenciais por produto: EAN, preço de fornecedor (net), quantidade em stock (principal) e o bloco XML bruto do produto.
+    - Insere/atualiza estes dados na tabela de staging `geko_products`.
+    - Otimizado para performance com `psycopg2.extras.execute_values` para operações de base de dados em lote.
+    - Projetado para ser idempotente, podendo ser executado múltiplas vezes.
+
+3.  **`apply_schema_updates.py`**:
+    - Executa comandos SQL para modificar o schema da base de dados.
+    - Utilizado para adicionar constraints (UNIQUE), colunas (`created_at`, `updated_at`, `supplier_price`), e triggers de forma incremental e segura.
+    - Fornece logging detalhado de cada operação de alteração do schema.
+
+4.  **`process_staged_data.py`**:
+    - Orquestra o processo ETL a partir da tabela `geko_products`.
+    - Lê os dados staged, incluindo o XML bruto de cada produto.
+    - **`products`**: Popula com EAN, ID Geko, nome, descrições (preservando HTML bruto para fidelidade), e marca.
+    - **`categories` & `product_categories`**: Extrai todas as categorias Geko, insere as únicas, e cria as ligações produto-categoria.
+    - **`product_images`**: Extrai URLs de imagens, define uma imagem primária e usa o nome do produto como alt text default.
+    - **`product_variants`**: Trata cada tag `<size>` do XML Geko como uma variante, extraindo o código da variante, stock específico e, crucialmente, o preço de fornecedor específico da variante.
+    - **`product_attributes`**: Realiza parsing de HTML (das descrições) usando `BeautifulSoup` para extrair especificações técnicas e outros atributos chave-valor.
+    - **`prices`**: Popula a tabela com o preço de fornecedor principal do produto, associado a uma lista de preços "Supplier Price".
+    - Todas as operações de BD são feitas em lote e com cláusulas `ON CONFLICT` para garantir idempotência e atualizações corretas.
+
+**Justificativa Técnica:**
+
+Este conjunto de scripts forma um pipeline de dados modular e robusto. 
+- A separação em scripts distintos permite gerir a complexidade e executar passos específicos conforme necessário (ex: apenas atualizar schema, apenas reprocessar dados staged).
+- O uso de uma tabela de staging (`geko_products`) desacopla a ingestão de dados brutos da sua transformação e carregamento nas tabelas finais, tornando o processo mais resiliente.
+- A preservação do HTML original nas descrições e do XML bruto por produto (`raw_data`) garante máxima fidelidade e a possibilidade de reprocessamento futuro ou extração de mais detalhes sem re-importar o feed original.
+- A captura de preços de fornecedor a nível de variante (`product_variants.supplier_price`) é crucial para a precisão do cálculo de preços de venda, conforme as regras de negócio.
+- O logging e a idempotência dos scripts facilitam a manutenção e a execução repetida.
+
+---

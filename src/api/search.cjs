@@ -2,6 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const { Pool } = require('pg');
+const { optionalUser } = require('./middleware/auth.cjs'); // Import optionalUser
 
 const router = express.Router();
 
@@ -18,19 +19,20 @@ try {
   // Test the database connection
   pool.query('SELECT NOW()', (err) => {
     if (err) {
-      console.error('❌ Failed to connect to the database:', err.message);
+      console.error('❌ Failed to connect to the database for search API:', err.message);
     } else {
-      console.log('✅ Successfully connected to the database');
+      console.log('✅ Successfully connected to the database for search API');
     }
   });
 } catch (err) {
-  console.error('❌ Error creating database pool:', err.message);
+  console.error('❌ Error creating database pool for search API:', err.message);
   process.exit(1);
 }
 
 // /api/search?q=search+term
-router.get('/', async (req, res) => {
+router.get('/', optionalUser, async (req, res) => {
   const { q } = req.query;
+  const localUser = req.localUser; // Get user from middleware
   
   if (!q || q.length < 2) {
     return res.status(400).json({ 
@@ -39,54 +41,40 @@ router.get('/', async (req, res) => {
     });
   }
 
-  // Validate database connection
   if (!pool) {
-    console.error('Database connection pool is not initialized');
+    console.error('Search API: Database connection pool is not initialized');
     return res.status(500).json({ 
       error: 'Database connection error',
       code: 'DATABASE_CONNECTION_ERROR'
     });
   }
 
-  console.log(`🔍 Searching for: "${q}"`);
+  console.log(`🔍 Searching for: "${q}". User: ${localUser ? localUser.email : 'Guest'}`);
   
   try {
-    // First, get the table structure
-    const tablesQuery = `
-      SELECT table_name 
-      FROM information_schema.tables 
-      WHERE table_schema = 'public';
-    `;
-    const tables = await pool.query(tablesQuery);
-    console.log('Available tables:', tables.rows.map(t => t.table_name));
-    
-    // Get products table structure
-    const columnsQuery = `
-      SELECT column_name, data_type 
-      FROM information_schema.columns 
-      WHERE table_name = 'products';
-    `;
-    const columns = await pool.query(columnsQuery);
-    console.log('Products table columns:', columns.rows);
-    
     const searchTerm = `%${q}%`;
     
     // Build the search query with proper column names from the schema
     const queryText = `
       WITH product_search AS (
         SELECT 
-          p.productid,
+          p.productid,      -- Geko's original product ID
           p.name, 
-          p.ean,
-          p.pricegross as price,
-          p.shortdescription as description,
-          (
-            SELECT pi.url 
-            FROM product_images pi 
-            WHERE pi.ean = p.ean 
-            AND (pi.is_main = true OR pi.sort_order = 1)
-            LIMIT 1
-          ) as image_url,
+          p.ean,            -- Our primary key for products
+          p.shortdescription,
+          p.longdescription,
+          -- Subquery for price (Base Selling Price)
+          (SELECT price FROM prices pr
+           JOIN product_variants pv ON pr.variantid = pv.variantid
+           WHERE pv.ean = p.ean AND pr.price_list_id = 2 -- Base Selling Price (ID 2)
+           ORDER BY pv.variantid -- Consistent price if multiple variants
+           LIMIT 1) AS product_price,
+          -- Subquery for image URL
+          COALESCE(
+            (SELECT url FROM product_images WHERE ean = p.ean AND is_primary = TRUE LIMIT 1), -- Primary image
+            (SELECT url FROM product_images WHERE ean = p.ean LIMIT 1), -- Any image as fallback
+            '/placeholder-product.jpg' -- Default placeholder if no image
+          ) AS image_url,
           -- Search relevance scoring
           CASE 
             WHEN p.name ILIKE $1 THEN 1
@@ -103,132 +91,42 @@ router.get('/', async (req, res) => {
           p.longdescription ILIKE $1
       )
       SELECT 
-        productid as id_products,
-        name,
-        ean,
-        price,
-        description as short_desc,
-        COALESCE(image_url, '') as image_url
-      FROM product_search
-      ORDER BY relevance, name
-      LIMIT 20`;
+        p_search.ean AS id_products, -- Use EAN for navigation consistency
+        p_search.name,
+        p_search.ean,
+        p_search.product_price AS price, -- Use the derived product_price
+        p_search.shortdescription AS short_desc,
+        p_search.image_url
+      FROM product_search p_search
+      ORDER BY p_search.relevance, p_search.name
+      LIMIT 20`; // Limit results for search dropdown
     
     const query = {
       text: queryText,
       values: [searchTerm]
     };
     
-    console.log('Executing query:', query.text.replace(/\s+/g, ' ').trim());
+    console.log('Executing search query (simplified):', query.text.substring(0, 300).replace(/\s+/g, ' ') + '...');
     
-    try {
       const result = await pool.query(query);
-      console.log(`Found ${result.rows.length} results`);
-      
-      // If no results, try a more extensive search in specifications JSON
-      if (result.rows.length === 0) {
-        console.log('No results in primary search, trying fallback search in specifications');
-        const fallbackQuery = {
-          text: `
-            WITH product_search AS (
-              SELECT 
-                p.productid,
-                p.name, 
-                p.ean,
-                p.pricegross as price,
-                p.shortdescription as description,
-                p.specifications_json->>'description' as spec_description,
-                (
-                  SELECT pi.url 
-                  FROM product_images pi 
-                  WHERE pi.ean = p.ean 
-                  AND (pi.is_main = true OR pi.sort_order = 1)
-                  LIMIT 1
-                ) as image_url
-              FROM products p
-              WHERE p.specifications_json::text ILIKE $1
-                OR p.longdescription ILIKE $1
-              LIMIT 10
-            )
-            SELECT 
-              productid as id_products,
-              name,
-              ean,
-              price,
-              COALESCE(description, spec_description, '') as short_desc,
-              COALESCE(image_url, '') as image_url
-            FROM product_search
-            ORDER BY name
-          `,
-          values: [searchTerm]
-        };
-        
-        console.log('Executing fallback query:', fallbackQuery.text.replace(/\s+/g, ' ').trim());
-        const fallbackResult = await pool.query(fallbackQuery);
-        console.log(`Found ${fallbackResult.rows.length} results in fallback search`);
-        return res.json(fallbackResult.rows);
+    console.log(`Found ${result.rows.length} results for "${q}"`);
+    
+    const canViewPrice = localUser && localUser.permissions && localUser.permissions.includes('view_price');
+
+    const sanitizedResults = result.rows.map(product => {
+      if (canViewPrice) {
+        return product;
       }
-      
-      return res.json(result.rows);
-    } catch (err) {
-      console.error('Search query error:', {
-        message: err.message,
-        query: q,
-        timestamp: new Date().toISOString(),
-        stack: err.stack
-      });
-      
-      return res.status(500).json({ 
-        error: 'Erro ao processar a busca', 
-        details: process.env.NODE_ENV === 'development' ? err.message : undefined,
-        code: 'SEARCH_ERROR'
-      });
-    }
+      const { price, ...rest } = product;
+      return { ...rest, price: null, priceStatus: localUser ? 'permission_denied' : 'unauthenticated' };
+    });
     
-    console.log('Executing search query:', query.text.replace(/\s+/g, ' ').trim());
-    
-    console.log('Executing query:', query.text.replace(/\s+/g, ' ').trim());
+    return res.json(sanitizedResults);
 
-    console.log('Executing query:', query.text.replace(/\s+/g, ' ').trim());
-    const result = await pool.query(query);
-    console.log(`Found ${result.rows.length} results in primary search`);
-
-    // If no results, try a more extensive search in descriptions
-    if (result.rows.length === 0) {
-      console.log('No results in primary search, trying fallback search');
-      const fallbackQuery = {
-        text: `
-          SELECT 
-            p.id_products, 
-            p.name, 
-            p.ean, 
-            p.price_gross,
-            p.short_description as short_desc,
-            COALESCE(pi.url, '') as image_url
-          FROM products p
-          LEFT JOIN product_images pi ON 
-            p.id_products = pi.product_id_products AND 
-            (pi.is_main = true OR pi.sort_order = 1)
-          WHERE 
-            p.long_description ILIKE $1
-          GROUP BY p.id_products, p.name, p.ean, p.price_gross, p.short_description, pi.url
-          ORDER BY p.name ASC
-          LIMIT 10
-        `,
-        values: [searchTerm]
-      };
-      console.log('Executing fallback query:', fallbackQuery.text.replace(/\s+/g, ' ').trim());
-      
-      const fallbackResult = await pool.query(fallbackQuery);
-      console.log(`Found ${fallbackResult.rows.length} results in fallback search`);
-      return res.json(fallbackResult.rows);
-    }
-
-    // Return successful results
-    res.json(result.rows);
   } catch (err) {
     console.error('❌ Search error:', {
       message: err.message,
-      stack: err.stack,
+      stack: err.stack, // Full stack for detailed debugging
       query: q,
       timestamp: new Date().toISOString()
     });

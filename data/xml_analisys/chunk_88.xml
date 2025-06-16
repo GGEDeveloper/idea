@@ -1,0 +1,1500 @@
+
+                            <size code="CG82002D" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="1.05" net="1.05"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5323_0_37228.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5324" vat="0" code="CG82002E" code_on_card="CG82002E" EAN="5901477142307" code_producer="5901477142307">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105652" name="Petrol Saws" path="Spare Parts\Petrol Saws"/>
+            <category_idosell path="Spare Parts\Petrol Saws" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carbureator-for-chainsaw-4500"/>
+                        <description>
+                            <name><![CDATA[Carbureator for chainsaw 4500]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.24" net="5.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG82002E" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.24" net="5.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5324_0_37229.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5324_1_37230.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5324_1_37231.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5325" vat="0" code="CG82002F" code_on_card="CG82002F" EAN="5901477142314" code_producer="5901477142314">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105652" name="Petrol Saws" path="Spare Parts\Petrol Saws"/>
+            <category_idosell path="Spare Parts\Petrol Saws" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/piston-ring-for-chainsaw-4500-standard"/>
+                        <description>
+                            <name><![CDATA[Piston ring for chainsaw 4500 Standard]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.7" net="3.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG82002F" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="3.7" net="3.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5326" vat="0" code="G66500" code_on_card="G66500" EAN="5901477140334" code_producer="5901477140334">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/transfer-shovel-with-steel-d-handle"/>
+                        <description>
+                            <name><![CDATA[Transfer Shovel with Steel D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Łopata piaskowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata piaskowa wykonana ze stali hartowanej.<br/>Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>wymiary: 1210 x 230 x 260 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Łopata piaskowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata piaskowa wykonana ze stali hartowanej.<br/>Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>wymiary: 1210 x 230 x 260 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Łopata piaskowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata piaskowa wykonana ze stali hartowanej.<br/>Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>wymiary: 1210 x 230 x 260 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.12" net="9.12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66500" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="322,00"/>
+                                                                    <price gross="9.12" net="9.12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5326_1_35614.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5326_1_35615.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5326_1_35616.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5326_1_35617.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5327" vat="0" code="G66501" code_on_card="G66501" EAN="5901477140341" code_producer="5901477140341">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rounded-spade-with-steel-d-handle"/>
+                        <description>
+                            <name><![CDATA[Rounded Spade with Steel D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Szpadel prosty – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel prosty wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: prosty</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Szpadel prosty – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel prosty wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: prosty</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Szpadel prosty – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel prosty wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: prosty</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.32" net="8.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66501" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="325,00"/>
+                                                                    <price gross="8.32" net="8.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5327_1_35618.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5328" vat="0" code="G66502" code_on_card="G66502" EAN="5901477140358" code_producer="5901477140358">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pointed-digging-shovel-with-steel-d-handle"/>
+                        <description>
+                            <name><![CDATA[Pointed Digging Shovel with Steel D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Szpadel ostry – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel ostry wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: ostry</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Szpadel ostry – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel ostry wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: ostry</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Szpadel ostry – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości szpadel ostry wykonany ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany ze stali hartowanej</li>
+<li>wygięty trzonek szpadla powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj szpadla: ostry</li>
+<li>wymiary: 1140 x 190 x 290 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.32" net="8.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66502" weight="1800.00" grossWeight="1800.00">
+                                        <stock id="1" quantity="145,00"/>
+                                                                    <price gross="8.32" net="8.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_0_18519260.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_1_18519261.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_1_18519262.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_1_18519263.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_1_18519264.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5328_1_18519265.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5329" vat="0" code="G66504" code_on_card="G66504" EAN="5901477140372" code_producer="5901477140372">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/garden-spade-with-wood-d-handle"/>
+                        <description>
+                            <name><![CDATA[Garden Spade with Wood D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>A garden spade reinforced framed</strong> is a tool for every gardening enthusiast. This spade is made of high-quality steel, which gives it strength. The wooden frame provides comfort and stability during work. The spade has an ergonomic shape, which facilitates digging and moving soil. The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space. The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights. A garden spade reinforced framed is an essential element of equipment for every garden.</p><br/><h4>Product characteristics:</h4><br/><ul><br/><li>It is made of high-quality steel, which gives it strength</li><br/><li>The wooden frame provides comfort and stability during work</li><br/><li>The spade has an ergonomic shape, which facilitates digging and moving soil</li><br/><li>The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space</li><br/><li>The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights</li><br/></ul><br/><h4>Technical specification:</h4><br/><ul><br/><li>Material:<strong> steel and wood </strong></li><br/><li>Blade dimensions: <strong>29x20cm</strong></li><br/><li>Total height: <strong>120cm</strong></li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>A garden spade reinforced framed</strong> is a tool for every gardening enthusiast. This spade is made of high-quality steel, which gives it strength. The wooden frame provides comfort and stability during work. The spade has an ergonomic shape, which facilitates digging and moving soil. The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space. The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights. A garden spade reinforced framed is an essential element of equipment for every garden.</p><br/><h4>Product characteristics:</h4><br/><ul><br/><li>It is made of high-quality steel, which gives it strength</li><br/><li>The wooden frame provides comfort and stability during work</li><br/><li>The spade has an ergonomic shape, which facilitates digging and moving soil</li><br/><li>The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space</li><br/><li>The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights</li><br/></ul><br/><h4>Technical specification:</h4><br/><ul><br/><li>Material:<strong> steel and wood </strong></li><br/><li>Blade dimensions: <strong>29x20cm</strong></li><br/><li>Total height: <strong>120cm</strong></li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>A garden spade reinforced framed</strong> is a tool for every gardening enthusiast. This spade is made of high-quality steel, which gives it strength. The wooden frame provides comfort and stability during work. The spade has an ergonomic shape, which facilitates digging and moving soil. The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space. The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights. A garden spade reinforced framed is an essential element of equipment for every garden.</p><br/><h4>Product characteristics:</h4><br/><ul><br/><li>It is made of high-quality steel, which gives it strength</li><br/><li>The wooden frame provides comfort and stability during work</li><br/><li>The spade has an ergonomic shape, which facilitates digging and moving soil</li><br/><li>The dimensions of the blade are <strong>29x20cm</strong>, which allows for efficient use of space</li><br/><li>The total height of the spade is <strong>120cm</strong>, which makes it suitable for people of different heights</li><br/></ul><br/><h4>Technical specification:</h4><br/><ul><br/><li>Material:<strong> steel and wood </strong></li><br/><li>Blade dimensions: <strong>29x20cm</strong></li><br/><li>Total height: <strong>120cm</strong></li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.26" net="6.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66504" weight="1920.00" grossWeight="1920.00">
+                                        <stock id="1" quantity="94,00"/>
+                                                                    <price gross="6.26" net="6.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5329_0_36321.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5329_1_36322.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5329_1_36323.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5330" vat="0" code="G66505" code_on_card="G66505" EAN="5901477140389" code_producer="5901477140389">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107746" name="Forks and Rakes" path="Garden\Forks and Rakes"/>
+            <category_idosell path="Garden\Forks and Rakes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/12-tine-rake-with-wood-handle"/>
+                        <description>
+                            <name><![CDATA[12-Tine Rake with Wood Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.83" net="4.83"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66505" weight="1000.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="84,00"/>
+                                                                    <price gross="4.83" net="4.83"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5330_0_36305.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5330_1_36306.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5330_1_36307.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5331" vat="0" code="G66506" code_on_card="G66506" EAN="5901477140396" code_producer="5901477140396">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107746" name="Forks and Rakes" path="Garden\Forks and Rakes"/>
+            <category_idosell path="Garden\Forks and Rakes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/14-tine-rake-with-wood-handle"/>
+                        <description>
+                            <name><![CDATA[14-Tine Rake with Wood Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.99" net="4.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66506" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="102,00"/>
+                                                                    <price gross="4.99" net="4.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5331_0_36308.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5331_1_36309.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5331_1_36310.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5332" vat="0" code="G66507" code_on_card="G66507" EAN="5901477140402" code_producer="5901477140402">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107746" name="Forks and Rakes" path="Garden\Forks and Rakes"/>
+            <category_idosell path="Garden\Forks and Rakes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/16-tine-rake-with-wood-handle"/>
+                        <description>
+                            <name><![CDATA[16-Tine Rake with Wood Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.2" net="5.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66507" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="51,00"/>
+                                                                    <price gross="5.2" net="5.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5332_0_36311.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5332_1_36312.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5332_1_36313.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5333" vat="0" code="G66508" code_on_card="G66508" EAN="5901477140419" code_producer="5901477140419">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107746" name="Forks and Rakes" path="Garden\Forks and Rakes"/>
+            <category_idosell path="Garden\Forks and Rakes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/18-tine-rake-with-wood-handle"/>
+                        <description>
+                            <name><![CDATA[18-Tine Rake with Wood Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.28" net="5.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66508" weight="1400.00" grossWeight="1400.00">
+                                        <stock id="1" quantity="25,00"/>
+                                                                    <price gross="5.28" net="5.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5333_0_36314.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5333_1_36315.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5333_1_36316.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5334" vat="0" code="G66509" code_on_card="G66509" EAN="5901477140426" code_producer="5901477140426">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/trunk-shovel-with-steel-d-handle"/>
+                        <description>
+                            <name><![CDATA[Trunk Shovel with Steel D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.7" net="5.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66509" weight="1160.00" grossWeight="1160.00">
+                                        <stock id="1" quantity="63,00"/>
+                                                                    <price gross="5.7" net="5.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5334_0_36317.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5334_1_36318.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5334_1_36319.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5334_1_36320.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5335" vat="0" code="G66510" code_on_card="G66510" EAN="5901477140433" code_producer="5901477140433">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/coal-shovel-with-steel-d-handle"/>
+                        <description>
+                            <name><![CDATA[Coal Shovel with Steel D-Handle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Łopata węglowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata węglowa wykonana ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj łopaty: węglowa</li>
+<li>wymiary: 1240 x 240 x 330 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Łopata węglowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata węglowa wykonana ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj łopaty: węglowa</li>
+<li>wymiary: 1240 x 240 x 330 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Łopata węglowa – wygięty metalowy trzonek</h3>
+<p>Wysokiej jakości łopata węglowa wykonana ze stali hartowanej.<br />Stalowy wygięty trzonek powlekany tworzywem sztucznym, zakończony uchwytem w kształcie litery D wykonanym z wytrzymałego tworzywa.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonana ze stali hartowanej</li>
+<li>wygięty trzonek łopaty powlekany tworzywem sztucznym</li>
+<li>uchwyt w kształcie litery D</li>
+<li>rodzaj łopaty: węglowa</li>
+<li>wymiary: 1240 x 240 x 330 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.28" net="11.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66510" weight="2400.00" grossWeight="2400.00">
+                                        <stock id="1" quantity="169,00"/>
+                                                                    <price gross="11.28" net="11.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5335_0_18505955.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5335_1_18505956.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5335_1_18505957.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5335_1_18505958.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5336" vat="0" code="G66511" code_on_card="G66511" EAN="5901477140440" code_producer="5901477140440">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107745" name="Soil Drilling Rigs" path="Garden\Soil Drilling Rigs"/>
+            <category_idosell path="Garden\Soil Drilling Rigs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/manual-hand-drill-digger-earth-auger-110-mm"/>
+                        <description>
+                            <name><![CDATA[Manual Hand Drill Digger Earth Auger 110 mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.66" net="10.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66511" weight="1600.00" grossWeight="1600.00">
+                                        <stock id="1" quantity="109,00"/>
+                                                                    <price gross="10.66" net="10.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_18516453.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_18516455.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_18516456.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_18516457.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_35625.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_35626.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_35627.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5336_1_35628.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5337" vat="0" code="G66512" code_on_card="G66512" EAN="5901477140457" code_producer="5901477140457">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107745" name="Soil Drilling Rigs" path="Garden\Soil Drilling Rigs"/>
+            <category_idosell path="Garden\Soil Drilling Rigs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/manual-hand-drill-digger-earth-auger-140-mm"/>
+                        <description>
+                            <name><![CDATA[Manual Hand Drill Digger Earth Auger 140 mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12" net="12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66512" weight="2200.00" grossWeight="2200.00">
+                                        <stock id="1" quantity="76,00"/>
+                                                                    <price gross="12" net="12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5337_1_35629.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5337_1_35630.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5337_1_35631.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5337_1_35632.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5338" vat="0" code="G66513" code_on_card="G66513" EAN="5901477140464" code_producer="5901477140464">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107745" name="Soil Drilling Rigs" path="Garden\Soil Drilling Rigs"/>
+            <category_idosell path="Garden\Soil Drilling Rigs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/manual-hand-drill-digger-earth-auger-170-mm"/>
+                        <description>
+                            <name><![CDATA[Manual Hand Drill Digger Earth Auger 170 mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.25" net="13.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66513" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="110,00"/>
+                                                                    <price gross="13.25" net="13.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5338_0_36324.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5338_1_36325.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5338_1_36326.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5338_1_36327.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5339" vat="0" code="G66514" code_on_card="G66514" EAN="5901477140471" code_producer="5901477140471">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107745" name="Soil Drilling Rigs" path="Garden\Soil Drilling Rigs"/>
+            <category_idosell path="Garden\Soil Drilling Rigs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/manual-hand-drill-digger-earth-auger-200-mm"/>
+                        <description>
+                            <name><![CDATA[Manual Hand Drill Digger Earth Auger 200 mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.7" net="13.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G66514" weight="2500.00" grossWeight="2500.00">
+                                        <stock id="1" quantity="53,00"/>
+                                                                    <price gross="13.7" net="13.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5339_0_36328.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5339_1_36329.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5339_1_36330.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5339_1_36331.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5348" vat="0" code="G10057" code_on_card="G10057" EAN="5901477142253" code_producer="5901477142253">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107705" name="Construction and Renovation" path="Construction and Renovation"/>
+            <category_idosell path="Construction and Renovation" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reinforcement-binding-hook-tool"/>
+                        <description>
+                            <name><![CDATA[Reinforcement Binding Hook Tool]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Klucz do zbrojenia zwany potocznie hakiem do drutu. Klucz służy do wiązania drutu wiązałkowego. Wygodna rączka z wytrzymałego tworzywa sztucznego. W prowadnicy umieszczone jest łożysko, które znacząco ułatwia pracę.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Klucz do zbrojenia zwany potocznie hakiem do drutu. Klucz służy do wiązania drutu wiązałkowego. Wygodna rączka z wytrzymałego tworzywa sztucznego. W prowadnicy umieszczone jest łożysko, które znacząco ułatwia pracę.</p>]]></short_desc>
+                            <description><![CDATA[<p>Klucz do zbrojenia zwany potocznie hakiem do drutu. Klucz służy do wiązania drutu wiązałkowego. Wygodna rączka z wytrzymałego tworzywa sztucznego. W prowadnicy umieszczone jest łożysko, które znacząco ułatwia pracę.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.25" net="1.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10057" weight="140.00" grossWeight="150.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.25" net="1.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5348_0_37483.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5348_1_37484.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5348_1_3921393.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5349" vat="0" code="G10152" code_on_card="G10152" EAN="5901477143809" code_producer="5901477143809">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107718" name="Socket Wrenches and Accessories" path="Tools for The Workshop and Garage\Socket Wrenches and Accessories"/>
+            <category_idosell path="Tools for The Workshop and Garage\Socket Wrenches and Accessories" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/socket-set-1-4-38-pcs"/>
+                        <description>
+                            <name><![CDATA[Socket Set 1/4" 38 pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 50 and 100 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>14x 6-point 1/4" Drive Sockets (L20 mm): 3.5, 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13, 14 mm</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>5x Hex: H3, H4, H5, H6, H8</li><br/><li>2x Philips PH1, PH2</li><br/><li>2x Pozidrive PZ1, PZ2</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>6x Torx: T10, T15, T20, T25, T30, T40</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 50 and 100 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>14x 6-point 1/4" Drive Sockets (L20 mm): 3.5, 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13, 14 mm</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>5x Hex: H3, H4, H5, H6, H8</li><br/><li>2x Philips PH1, PH2</li><br/><li>2x Pozidrive PZ1, PZ2</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>6x Torx: T10, T15, T20, T25, T30, T40</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 50 and 100 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>14x 6-point 1/4" Drive Sockets (L20 mm): 3.5, 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13, 14 mm</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>5x Hex: H3, H4, H5, H6, H8</li><br/><li>2x Philips PH1, PH2</li><br/><li>2x Pozidrive PZ1, PZ2</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>6x Torx: T10, T15, T20, T25, T30, T40</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.15" net="8.15"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10152" weight="1200.00" grossWeight="1240.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.15" net="8.15"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_0_593611.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_1_593609.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_1_593610.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_1_593612.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_1_593613.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5349_1_593614.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5350" vat="0" code="G10153" code_on_card="G10153" EAN="5901477143816" code_producer="5901477143816">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107718" name="Socket Wrenches and Accessories" path="Tools for The Workshop and Garage\Socket Wrenches and Accessories"/>
+            <category_idosell path="Tools for The Workshop and Garage\Socket Wrenches and Accessories" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/socket-set-torx-1-4-56-pcs"/>
+                        <description>
+                            <name><![CDATA[Socket Set Torx 1/4" 56 pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 75 and 150 mm</li><br/><li>1x Flexible extension bar 1/4" 140 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>12x 6-point 1/4" Drive Sockets (L20 mm): 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13 mm</li><br/><li>6x E-Sockets 1/4": E4, E5, E6, E7, E8, E10</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>6x Hex: H3, H4, H5, H6, H7, H8</li><br/><li>3x Philips PH1, PH2, PH3</li><br/><li>3x Pozidrive PZ1, PZ2, PZ3</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>7x Torx: T8, T10, T15, T20, T25, T30, T40</li><br/><li>1x Bits adapter 1/4"</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 75 and 150 mm</li><br/><li>1x Flexible extension bar 1/4" 140 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>12x 6-point 1/4" Drive Sockets (L20 mm): 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13 mm</li><br/><li>6x E-Sockets 1/4": E4, E5, E6, E7, E8, E10</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>6x Hex: H3, H4, H5, H6, H7, H8</li><br/><li>3x Philips PH1, PH2, PH3</li><br/><li>3x Pozidrive PZ1, PZ2, PZ3</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>7x Torx: T8, T10, T15, T20, T25, T30, T40</li><br/><li>1x Bits adapter 1/4"</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Product Features</h3><br/><ul><br/><li>Chrome vanadium steel forging for durability</li><br/><li>Ratchet 1/4" with 45 teeth and ergonomic handle</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/><li>2x Extension bar 1/4" 75 and 150 mm</li><br/><li>1x Flexible extension bar 1/4" 140 mm</li><br/><li>1x Sliding T-handle 110 mm</li><br/><li>1x Universal joint 1/4"</li><br/><li>1x Nut spinner handle 1/4"</li><br/><li>1x 45-teeth Ratchet handle 1/4"</li><br/><li>12x 6-point 1/4" Drive Sockets (L20 mm): 4, 4.5, 5, 5.5, 6, 7, 8, 9, 10, 11, 12, 13 mm</li><br/><li>6x E-Sockets 1/4": E4, E5, E6, E7, E8, E10</li><br/></ul><br/><h4>Bits 1/4":</h4><br/><ul><br/><li>6x Hex: H3, H4, H5, H6, H7, H8</li><br/><li>3x Philips PH1, PH2, PH3</li><br/><li>3x Pozidrive PZ1, PZ2, PZ3</li><br/><li>3x Slotted 4, 5.5, 6.5 mm</li><br/><li>7x Torx: T8, T10, T15, T20, T25, T30, T40</li><br/><li>1x Bits adapter 1/4"</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.15" net="13.15"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10153" weight="1650.00" grossWeight="1660.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="13.15" net="13.15"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_0_593618.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_1_593616.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_1_593617.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_1_593619.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_1_593620.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5350_1_593621.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5351" vat="0" code="G30061" code_on_card="G30061" EAN="5901477143304" code_producer="5901477143304">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105285" name="Screwdrivers and Impact Wrenches" path="Power Tools\Screwdrivers and Impact Wrenches"/>
+            <category_idosell path="Power Tools\Screwdrivers and Impact Wrenches" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/drill-bit-set-56-pcs"/>
+                        <description>
+                            <name><![CDATA[Drill Bit Set 56 pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>56 pcs Screwdriver Drill Bit Set. Includes standard bits 25 mm and extra long bits 75 mm.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Magnetic Bit Holder L65mm</li><br/></ul><br/><h6>48 x 25mm CrV Bits</h6><br/><ul><br/>    <li>3x PH1</li><br/>    <li>3x PH2</li><br/>    <li>3x PH3</li><br/>    <li>3x PZ1</li><br/>    <li>3x PZ2</li><br/>    <li>3x PZ3</li><br/>    <li>2x SL4</li><br/>    <li>2x SL5</li><br/>    <li>2x SL6</li><br/>    <li>1x H3</li><br/>    <li>1x H4</li><br/>    <li>1x H5</li><br/>    <li>2x T10</li><br/>    <li>2x T15</li><br/>    <li>2x T20</li><br/>    <li>2x T25</li><br/>    <li>2x T27</li><br/>    <li>2x T30</li><br/>    <li>2x T40</li><br/>    <li>6x Torx Tamper: T10, T15, T20, T25, T27, T30, T40</li><br/></ul><br/><h6>75 mm Bits</h6><br/><ul><br/>    <li>1x PH2</li><br/>    <li>1x PH3</li><br/>    <li>1x PZ1</li><br/>    <li>1x PZ2</li><br/>    <li>1x T20</li><br/>    <li>1x T25</li><br/>    <li>1x SL6</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>56 pcs Screwdriver Drill Bit Set. Includes standard bits 25 mm and extra long bits 75 mm.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Magnetic Bit Holder L65mm</li><br/></ul><br/><h6>48 x 25mm CrV Bits</h6><br/><ul><br/>    <li>3x PH1</li><br/>    <li>3x PH2</li><br/>    <li>3x PH3</li><br/>    <li>3x PZ1</li><br/>    <li>3x PZ2</li><br/>    <li>3x PZ3</li><br/>    <li>2x SL4</li><br/>    <li>2x SL5</li><br/>    <li>2x SL6</li><br/>    <li>1x H3</li><br/>    <li>1x H4</li><br/>    <li>1x H5</li><br/>    <li>2x T10</li><br/>    <li>2x T15</li><br/>    <li>2x T20</li><br/>    <li>2x T25</li><br/>    <li>2x T27</li><br/>    <li>2x T30</li><br/>    <li>2x T40</li><br/>    <li>6x Torx Tamper: T10, T15, T20, T25, T27, T30, T40</li><br/></ul><br/><h6>75 mm Bits</h6><br/><ul><br/>    <li>1x PH2</li><br/>    <li>1x PH3</li><br/>    <li>1x PZ1</li><br/>    <li>1x PZ2</li><br/>    <li>1x T20</li><br/>    <li>1x T25</li><br/>    <li>1x SL6</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>56 pcs Screwdriver Drill Bit Set. Includes standard bits 25 mm and extra long bits 75 mm.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Magnetic Bit Holder L65mm</li><br/></ul><br/><h6>48 x 25mm CrV Bits</h6><br/><ul><br/>    <li>3x PH1</li><br/>    <li>3x PH2</li><br/>    <li>3x PH3</li><br/>    <li>3x PZ1</li><br/>    <li>3x PZ2</li><br/>    <li>3x PZ3</li><br/>    <li>2x SL4</li><br/>    <li>2x SL5</li><br/>    <li>2x SL6</li><br/>    <li>1x H3</li><br/>    <li>1x H4</li><br/>    <li>1x H5</li><br/>    <li>2x T10</li><br/>    <li>2x T15</li><br/>    <li>2x T20</li><br/>    <li>2x T25</li><br/>    <li>2x T27</li><br/>    <li>2x T30</li><br/>    <li>2x T40</li><br/>    <li>6x Torx Tamper: T10, T15, T20, T25, T27, T30, T40</li><br/></ul><br/><h6>75 mm Bits</h6><br/><ul><br/>    <li>1x PH2</li><br/>    <li>1x PH3</li><br/>    <li>1x PZ1</li><br/>    <li>1x PZ2</li><br/>    <li>1x T20</li><br/>    <li>1x T25</li><br/>    <li>1x SL6</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.79" net="5.79"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G30061" weight="580.00" grossWeight="630.00">
+                                        <stock id="1" quantity="532,00"/>
+                                                                    <price gross="5.79" net="5.79"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5351_0_639762.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5351_1_639763.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5351_1_639764.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5351_1_639765.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5351_1_639766.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5352" vat="0" code="G73132" code_on_card="G73132" EAN="5901477143076" code_producer="5901477143076">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-nipple-1-4-1-4-connector-for-pressure-cleaning-gun"/>
+                        <description>
+                            <name><![CDATA[Hex Nipple 1/4" - 1/4" Connector for Pressure Cleaning Gun]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.06" net="1.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G73132" weight="60.00" grossWeight="66.00">
+                                        <stock id="1" quantity="277,00"/>
+                                                                    <price gross="1.06" net="1.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5352_0_37028.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5353" vat="0" code="G73133" code_on_card="G73133" EAN="5901477143083" code_producer="5901477143083">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector-for-pressure-cleaning-hose-k-dn6"/>
+                        <description>
+                            <name><![CDATA[Connector for pressure cleaning hose K dn6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.38" net="1.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G73133" weight="20.00" grossWeight="21.00">
+                                        <stock id="1" quantity="127,00"/>
+                                                                    <price gross="1.38" net="1.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5353_0_37029.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5354" vat="0" code="G73134" code_on_card="G73134" EAN="5901477143090" code_producer="5901477143090">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector-for-pressure-cleaning-hose-nilfisk-st-dn6"/>
+                        <description>
+                            <name><![CDATA[Connector for pressure cleaning hose Nilfisk St dn6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.09" net="1.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G73134" weight="23.00" grossWeight="26.00">
+                                        <stock id="1" quantity="87,00"/>
+                                                                    <price gross="1.09" net="1.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5354_0_37030.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5355" vat="0" code="G73135" code_on_card="G73135" EAN="5901477143052" code_producer="5901477143052">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bayonet-adapter-for-high-pressure-washers-k-series-1-4-thread"/>
+                        <description>
+                            <name><![CDATA[Bayonet Adapter for High-Pressure Washers K Series 1/4" Thread]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.06" net="2.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G73135" weight="50.00" grossWeight="53.00">
+                                        <stock id="1" quantity="286,00"/>
+                                                                    <price gross="2.06" net="2.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5355_0_37031.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5356" vat="0" code="G73136" code_on_card="G73136" EAN="5901477143069" code_producer="5901477143069">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bayonet-adapter-for-high-pressure-washers-k-series-1-4-thread-5356"/>
+                        <description>
+                            <name><![CDATA[Bayonet Adapter for High-Pressure Washers K Series 1/4" Thread]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.76" net="2.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G73136" weight="146.00" grossWeight="156.00">
+                                        <stock id="1" quantity="52,00"/>
+                                                                    <price gross="2.76" net="2.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5356_0_37032.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5357" vat="0" code="G80266" code_on_card="G80266" EAN="5901477143038" code_producer="5901477143038">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107822" name="Straight Grinders" path="Power Tools\Angle Grinders and Metal Processing\Straight Grinders"/>
+            <category_idosell path="Power Tools\Angle Grinders and Metal Processing\Straight Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/straight-grinder-geko"/>
+                        <description>
+                            <name><![CDATA[Straight Grinder GEKO]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 700W</li>
+<li>Obroty silnika: 26000 obr./min</li>
+<li>Wrzeciono: 6 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 700W</li>
+<li>Obroty silnika: 26000 obr./min</li>
+<li>Wrzeciono: 6 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 700W</li>
+<li>Obroty silnika: 26000 obr./min</li>
+<li>Wrzeciono: 6 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.93" net="22.93"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80266" weight="1950.00" grossWeight="2050.00">
+                                        <stock id="1" quantity="115,00"/>
+                                                                    <price gross="22.93" net="22.93"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_0_117861.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117862.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117863.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117864.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117865.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117866.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5357_1_117867.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5358" vat="0" code="G80267" code_on_card="G80267" EAN="5901477143281" code_producer="5901477143281">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107041" name="Grinders for Plaster and Plaster" path="Power Tools\Grinders for Plaster and Plaster"/>
+            <category_idosell path="Power Tools\Grinders for Plaster and Plaster" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/190mm-drywall-sander-800w-2xled"/>
+                        <description>
+                            <name><![CDATA[190mm Drywall Sander 800W 2xLED]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>GEKO drywall sander with electronic speed regulation and ergonomic gun-grip handle for fatigue-free operation. Dust collection bag for cleaner, safer working. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>800W powerful engine</li><br/>    <li>Disc diameter: 190mm</li><br/>    <li>LED work light</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m with dust bag</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 800W</li><br/>    <li>No Load Speed: 1200 - 2300 rpm</li><br/>    <li>Sanding Disc Diameter: 190 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/>    <li>Dust Extraction Port Diameter: 32 mm</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>GEKO drywall sander with electronic speed regulation and ergonomic gun-grip handle for fatigue-free operation. Dust collection bag for cleaner, safer working. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>800W powerful engine</li><br/>    <li>Disc diameter: 190mm</li><br/>    <li>LED work light</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m with dust bag</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 800W</li><br/>    <li>No Load Speed: 1200 - 2300 rpm</li><br/>    <li>Sanding Disc Diameter: 190 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/>    <li>Dust Extraction Port Diameter: 32 mm</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>GEKO drywall sander with electronic speed regulation and ergonomic gun-grip handle for fatigue-free operation. Dust collection bag for cleaner, safer working. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>800W powerful engine</li><br/>    <li>Disc diameter: 190mm</li><br/>    <li>LED work light</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m with dust bag</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 800W</li><br/>    <li>No Load Speed: 1200 - 2300 rpm</li><br/>    <li>Sanding Disc Diameter: 190 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/>    <li>Dust Extraction Port Diameter: 32 mm</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="49.52" net="49.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80267" weight="3500.00" grossWeight="4000.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="49.52" net="49.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_0_174467.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174521.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174522.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174523.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174524.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174525.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174526.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174527.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174528.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174529.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5358_1_174530.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5359" vat="0" code="G80268" code_on_card="G80268" EAN="5901477143298" code_producer="5901477143298">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107041" name="Grinders for Plaster and Plaster" path="Power Tools\Grinders for Plaster and Plaster"/>
+            <category_idosell path="Power Tools\Grinders for Plaster and Plaster" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/225mm-long-reach-drywall-sander-710w"/>
+                        <description>
+                            <name><![CDATA[225mm Long-Reach Drywall Sander 710W]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>GEKO drywall sander with electronic speed regulation and adjustable sanding head. Integrated capture device allows connection to a vacuum cleaner and minimises dust production. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>710W powerful engine</li><br/>    <li>Disc diameter: 225mm</li><br/>    <li>LED work light</li><br/>    <li>Telescopic handle</li><br/>    <li>Dust extraction facility</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 710W</li><br/>    <li>No Load Speed: 800 - 1700 rpm</li><br/>    <li>Sanding Disc Diameter: 225 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>GEKO drywall sander with electronic speed regulation and adjustable sanding head. Integrated capture device allows connection to a vacuum cleaner and minimises dust production. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>710W powerful engine</li><br/>    <li>Disc diameter: 225mm</li><br/>    <li>LED work light</li><br/>    <li>Telescopic handle</li><br/>    <li>Dust extraction facility</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 710W</li><br/>    <li>No Load Speed: 800 - 1700 rpm</li><br/>    <li>Sanding Disc Diameter: 225 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>GEKO drywall sander with electronic speed regulation and adjustable sanding head. Integrated capture device allows connection to a vacuum cleaner and minimises dust production. Perfect for use on drywall works, painting and renovating tasks.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>710W powerful engine</li><br/>    <li>Disc diameter: 225mm</li><br/>    <li>LED work light</li><br/>    <li>Telescopic handle</li><br/>    <li>Dust extraction facility</li><br/>    <li>Hook &amp; loop fixing</li><br/>    <li>Variable speed integral inverter</li><br/>    <li>Hose length 2 m</li><br/>    <li>Cable length 4 m</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Voltage: 230V / 50Hz</li><br/>    <li>Power Output: 710W</li><br/>    <li>No Load Speed: 800 - 1700 rpm</li><br/>    <li>Sanding Disc Diameter: 225 mm</li><br/>    <li>Cable Length: 4 m</li><br/>    <li>Hose Length: 2 m</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="81.67" net="81.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80268" weight="5240.00" grossWeight="6740.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="81.67" net="81.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_0_174469.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174531.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174532.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174533.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174534.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174535.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174536.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174537.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174538.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174539.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174540.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174541.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174542.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5359_1_174543.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5362" vat="0" code="G81021" code_on_card="G81021" EAN="5901477142505" code_producer="5901477142505">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/electric-chain-saw-sharpener-big-premium"/>
+                        <description>
+                            <name><![CDATA[Electric Chain Saw Sharpener BIG Premium]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Urządzenie zapewnia szybkie i precyzyjne ostrzenie. Imadło z regulacją kąta do 35&deg; w lewo lub w prawo. Nadaje się do wszystkich typów popularnych łańcuchów pił łańcuchowych.</li>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik indukcyjny o mocy 230W, chłodzony powietrzem</li>
+<li>regulowany kąt ostrzenia z podziałką w zakresie od 0 do 35&deg;</li>
+<li>wygodny uchwyt prowadzący</li>
+<li>bezpieczeństwo pracy dzięki mocowaniu ostrzałki do stołu za pomocą śruby</li>
+<li>ogranicznik głębokości szlifu zwiększa precyzję ostrzenia</li>
+<li>nadaje się do ostrzenia łańcuchów pił spalinowych i pilarek elektrycznych</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 230W</li>
+<li>Obroty silnika: 3000 - 3500 obr./min</li>
+<li>Zakres regulacji kąta ostrzenia: 0 - 35&deg;</li>
+<li>Wymiary tarczy: 145 x 22,3 x 3,2 mm</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Urządzenie zapewnia szybkie i precyzyjne ostrzenie. Imadło z regulacją kąta do 35&deg; w lewo lub w prawo. Nadaje się do wszystkich typów popularnych łańcuchów pił łańcuchowych.</li>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik indukcyjny o mocy 230W, chłodzony powietrzem</li>
+<li>regulowany kąt ostrzenia z podziałką w zakresie od 0 do 35&deg;</li>
+<li>wygodny uchwyt prowadzący</li>
+<li>bezpieczeństwo pracy dzięki mocowaniu ostrzałki do stołu za pomocą śruby</li>
+<li>ogranicznik głębokości szlifu zwiększa precyzję ostrzenia</li>
+<li>nadaje się do ostrzenia łańcuchów pił spalinowych i pilarek elektrycznych</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 230W</li>
+<li>Obroty silnika: 3000 - 3500 obr./min</li>
+<li>Zakres regulacji kąta ostrzenia: 0 - 35&deg;</li>
+<li>Wymiary tarczy: 145 x 22,3 x 3,2 mm</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p>Urządzenie zapewnia szybkie i precyzyjne ostrzenie. Imadło z regulacją kąta do 35&deg; w lewo lub w prawo. Nadaje się do wszystkich typów popularnych łańcuchów pił łańcuchowych.</li>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik indukcyjny o mocy 230W, chłodzony powietrzem</li>
+<li>regulowany kąt ostrzenia z podziałką w zakresie od 0 do 35&deg;</li>
+<li>wygodny uchwyt prowadzący</li>
+<li>bezpieczeństwo pracy dzięki mocowaniu ostrzałki do stołu za pomocą śruby</li>
+<li>ogranicznik głębokości szlifu zwiększa precyzję ostrzenia</li>
+<li>nadaje się do ostrzenia łańcuchów pił spalinowych i pilarek elektrycznych</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 230W</li>
+<li>Obroty silnika: 3000 - 3500 obr./min</li>
+<li>Zakres regulacji kąta ostrzenia: 0 - 35&deg;</li>
+<li>Wymiary tarczy: 145 x 22,3 x 3,2 mm</li>
+</ul>]]></description>
+                        </description>
+                        <delivery>04.07.2025</delivery>
+                            <price gross="59.44" net="59.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G81021" weight="5300.00" grossWeight="6370.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="59.44" net="59.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_0_117925.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117926.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117927.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117928.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117929.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117930.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117931.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117932.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117933.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5362_1_117934.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5363" vat="0" code="G81022" code_on_card="G81022" EAN="5901477143311" code_producer="5901477143311">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107820" name="Sharpeners for Discs, Drills and Knives" path="Power Tools\Sharpeners for Discs, Drills and Knives"/>
+            <category_idosell path="Power Tools\Sharpeners for Discs, Drills and Knives" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/circular-saw-blade-sharpener-80-700-mm"/>
+                        <description>
+                            <name><![CDATA[Circular Saw Blade Sharpener 80 - 700 mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Ostrzałka do pił widiowych wyposażona w ściernicę diamentową o średnicy 125 mm. Nadaje się do ostrzenia pił o średnicy od 80 do 700 mm. Regulacja kąta nachylenia tarczy oraz regulacja uchwytu piły pozwala na ostrzenie różnego rodzaju pił.</p>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik o mocy 250W, chłodzony powietrzem</li>
+<li>obsługa tarcz o średnicy od 80 do 700 mm</li>
+<li>w zestawie 3 adaptery do tarcz o otworze montażowym 22.2mm, 25.4 mm oraz 30 mm</li>
+<li>wytrzymała tarcza diamentowa w zestawie</li>
+<li>głowica z regulacją kąta nachylenia tarczy w zakresie od -30&deg; do +30&deg;</li>
+<li>regulacja uchwytu piły w zakresie od 30&deg; w lewo do 45&deg; w prawo</li>
+<li>gumowe podstawki tłumiące drgania</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 250W</li>
+<li>Obroty silnika: 2850 obr./min</li>
+<li>Kąt lewo/prawo: 30&deg;/45&deg;</li>
+<li>Regulacja nachylenia: +/- 30&deg;</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Ostrzałka do pił widiowych wyposażona w ściernicę diamentową o średnicy 125 mm. Nadaje się do ostrzenia pił o średnicy od 80 do 700 mm. Regulacja kąta nachylenia tarczy oraz regulacja uchwytu piły pozwala na ostrzenie różnego rodzaju pił.</p>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik o mocy 250W, chłodzony powietrzem</li>
+<li>obsługa tarcz o średnicy od 80 do 700 mm</li>
+<li>w zestawie 3 adaptery do tarcz o otworze montażowym 22.2mm, 25.4 mm oraz 30 mm</li>
+<li>wytrzymała tarcza diamentowa w zestawie</li>
+<li>głowica z regulacją kąta nachylenia tarczy w zakresie od -30&deg; do +30&deg;</li>
+<li>regulacja uchwytu piły w zakresie od 30&deg; w lewo do 45&deg; w prawo</li>
+<li>gumowe podstawki tłumiące drgania</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 250W</li>
+<li>Obroty silnika: 2850 obr./min</li>
+<li>Kąt lewo/prawo: 30&deg;/45&deg;</li>
+<li>Regulacja nachylenia: +/- 30&deg;</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p>Ostrzałka do pił widiowych wyposażona w ściernicę diamentową o średnicy 125 mm. Nadaje się do ostrzenia pił o średnicy od 80 do 700 mm. Regulacja kąta nachylenia tarczy oraz regulacja uchwytu piły pozwala na ostrzenie różnego rodzaju pił.</p>
+<h3>Cechy produktu</h3>
+<ul>
+<li>wydajny silnik o mocy 250W, chłodzony powietrzem</li>
+<li>obsługa tarcz o średnicy od 80 do 700 mm</li>
+<li>w zestawie 3 adaptery do tarcz o otworze montażowym 22.2mm, 25.4 mm oraz 30 mm</li>
+<li>wytrzymała tarcza diamentowa w zestawie</li>
+<li>głowica z regulacją kąta nachylenia tarczy w zakresie od -30&deg; do +30&deg;</li>
+<li>regulacja uchwytu piły w zakresie od 30&deg; w lewo do 45&deg; w prawo</li>
+<li>gumowe podstawki tłumiące drgania</li>
+</ul>
+<h4>Dane techniczne</h4>
+<ul>
+<li>Napięcie zasilania: 230V / 50 Hz</li>
+<li>Moc silnika: 250W</li>
+<li>Obroty silnika: 2850 obr./min</li>
+<li>Kąt lewo/prawo: 30&deg;/45&deg;</li>
+<li>Regulacja nachylenia: +/- 30&deg;</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="138.88" net="138.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G81022" weight="20620.00" grossWeight="21620.00">
+                                        <stock id="1" quantity="55,00"/>
+                                                                    <price gross="138.88" net="138.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_0_117869.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117870.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117871.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117872.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117873.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117874.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117875.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117876.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117877.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/5363_1_117878.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="5364" vat="0" code="G81223" code_on_card="G81223" EAN="5901477143045" code_producer="5901477143045">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107821" name="Detail Grinders" path="Power Tools\Detail Grinders"/>
+            <category_idosell path="Power Tools\Detail Grinders" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotary-tool-with-flex-shaft-and-accessories-assortment-222-pcs"/>
+                        <description>
+                            <name><![CDATA[Rotary Tool with Flex Shaft and Accessories Assortment 222 pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Multiszlifierka GEKO z pełnym zestawem akcesoriów 222 el. Dzięki dużej ilości różnorodnych końcówek, mini szlifierka doskonale sprawdzi się przy prac modelarskich, drobnych naprawach, podczas czyszczenia i polerowania drobnych elementów.</p>
+<p>Urządzenie wyposażone zostało w silnik o mocy 170W z możliwością płynnej regulacji obrotów w zakresie 8000-35000 obr./min.</p>
+<p>Dodatkowo szlifierka wyposażona została w elastyczny wałek z uchwytem do końcówek, który umożliwia bardzo precyzyjna prace nie obciążając ręki wagą urządzenia.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>silnik o mocy 170W</li>
+<li>regulacja obrotów w zakresie 8000-35000 obr/min</li>
+<li>zestaw 5 tulei zaciskowych</li>
+<li>pełen zestaw akcesoriów do czyszczenia, polerowania, szlifowania, wiercenia, wycinania i cięcia</li>
+<li>elastyczny wałek z uchwytem do końcówek umożliwiający wykonywanie bardzo precyzyjnych prac</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Napięcie: 230V ~50Hz</li>
+<li>Moc: 170 W</li>
+<li>Obroty: 8000 – 35000 obr./min</li>
+<li>Ilość elementów zestawu: 222</li>
+</ul>
+<h4>Zawartość opakowania</h4>
+<ul>
+<li>1x szlifierka</li>
+<li>1x nasadka na szlifierkę</li>
+<li>1x przezroczysta osłona</li>
+<li>1x giętki wałek</li>
+<li>1x kluczyk do montażu akcesoriów</li>
+<li>1x trzpień do szlifowania 6,4 mm</li>
+<li>1x trzpień do szlifowania 13 mm</li>
+<li>16x taśmy szlifierskie 6,4 mm</li>
+<li>16x taśmy szlifierskie 13 mm</li>
+<li>5x tarcza do cięcia 32 mm</li>
+<li>1x metalowa tarcza do cięcia</li>
+<li>6x tarcze szlifierskie z tlenku glinu 20 mm</li>
+<li>6x tarcze szlifierskie krzemowo-węglikowe 20 mm</li>
+<li>60x tarcze do cięcia 24 mm</li>
+<li>2x pasta do polerowania</li>
+<li>4x filcowa tarcza polerska 24 mm</li>
+<li>4x filcowa tarcza polerska 12 mm</li>
+<li>1x trzpień polerski 10 mm</li>
+<li>3x szczotka ze stali węglowej</li>
+<li>3x szczotka nylonowa</li>
+<li>3x szczotka z mosiądzu</li>
+<li>7x kamienie szlifierskie z tlenku glinu</li>
+<li>3x kamienie szlifierskie krzemowo-węglikowe</li>
+<li>6x kamienie szlifierskie</li>
+<li>2x trzpienie do montażu filcu</li>
+<li>2x trzpienie do montażu tarcz</li>
+<li>6x wiertła HSS</li>
+<li>4x tuleje zaciskowe</li>
+<li>9x ściernice diamentowe</li>
+<li>50x tarcza ścierna</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Multiszlifierka GEKO z pełnym zestawem akcesoriów 222 el. Dzięki dużej ilości różnorodnych końcówek, mini szlifierka doskonale sprawdzi się przy prac modelarskich, drobnych naprawach, podczas czyszczenia i polerowania drobnych elementów.</p>
+<p>Urządzenie wyposażone zostało w silnik o mocy 170W z możliwością płynnej regulacji obrotów w zakresie 8000-35000 obr./min.</p>
+<p>Dodatkowo szlifierka wyposażona została w elastyczny wałek z uchwytem do końcówek, który umożliwia bardzo precyzyjna prace nie obciążając ręki wagą urządzenia.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>silnik o mocy 170W</li>
+<li>regulacja obrotów w zakresie 8000-35000 obr/min</li>
+<li>zestaw 5 tulei zaciskowych</li>
+<li>pełen zestaw akcesoriów do czyszczenia, polerowania, szlifowania, wiercenia, wycinania i cięcia</li>
+<li>elastyczny wałek z uchwytem do końcówek umożliwiający wykonywanie bardzo precyzyjnych prac</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Napięcie: 230V ~50Hz</li>
+<li>Moc: 170 W</li>
+<li>Obroty: 8000 – 35000 obr./min</li>
+<li>Ilość elementów zestawu: 222</li>
+</ul>
+<h4>Zawartość opakowania</h4>
+<ul>
+<li>1x szlifierka</li>
+<li>1x nasadka na szlifierkę</li>
+<li>1x przezroczysta osłona</li>
+<li>1x giętki wałek</li>
+<li>1x kluczyk do montażu akcesoriów</li>
+<li>1x trzpień do szlifowania 6,4 mm</li>
+<li>1x trzpień do szlifowania 13 mm</li>
+<li>16x taśmy szlifierskie 6,4 mm</li>
+<li>16x taśmy szlifierskie 13 mm</li>
+<li>5x tarcza do cięcia 32 mm</li>
+<li>1x metalowa tarcza do cięcia</li>
+<li>6x tarcze szlifierskie z tlenku glinu 20 mm</li>
+<li>6x tarcze szlifierskie krzemowo-węglikowe 20 mm</li>
+<li>60x tarcze do cięcia 24 mm</li>
+<li>2x pasta do polerowania</li>
+<li>4x filcowa tarcza polerska 24 mm</li>
+<li>4x filcowa tarcza polerska 12 mm</li>
+<li>1x trzpień polerski 10 mm</li>
+<li>3x szczotka ze stali węglowej</li>
+<li>3x szczotka nylonowa</li>
+<li>3x szczotka z mosiądzu</li>
+<li>7x kamienie szlifierskie z tlenku glinu</li>
+<li>3x kamienie szlifierskie krzemowo-węglikowe</li>
+<li>6x kamienie szlifierskie</li>
+<li>2x trzpienie do montażu filcu</li>
+<li>2x trzpienie do montażu tarcz</li>
+<li>6x wiertła HSS</li>
+<li>4x tuleje zaciskowe</li>
+<li>9x ściernice diamentowe</li>
+<li>50x tarcza ścierna</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p>Multiszlifierka GEKO z pełnym zestawem akcesoriów 222 el. Dzięki dużej ilości różnorodnych końcówek, mini szlifierka doskonale sprawdzi się przy prac modelarskich, drobnych naprawach, podczas czyszczenia i polerowania drobnych elementów.</p>
+<p>Urządzenie wyposażone zostało w silnik o mocy 170W z możliwością płynnej regulacji obrotów w zakresie 8000-35000 obr./min.</p>
+<p>Dodatkowo szlifierka wyposażona została w elastyczny wałek z uchwytem do końcówek, który umożliwia bardzo precyzyjna prace nie obciążając ręki wagą urządzenia.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>silnik o mocy 170W</li>
+<li>regulacja obrotów w zakresie 8000-35000 obr/min</li>
+<li>zestaw 5 tulei zaciskowych</li>
+<li>pełen zestaw akcesoriów do czyszczenia, polerowania, szlifowania, wiercenia, wycinania i cięcia</li>
+<li>elastyczny wałek z uchwytem do końcówek umożliwiający wykonywanie bardzo precyzyjnych prac</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Napięcie: 230V ~50Hz</li>
+<li>Moc: 170 W</li>
+<li>Obroty: 8000 – 35000 obr./min</li>
+<li>Ilość elementów zestawu: 222</li>
+</ul>
+<h4>Zawartość opakowania</h4>
+<ul>
+<li>1x szlifierka</li>
+<li>1x nasadka na szlifierkę</li>
+<li>1x przezroczysta osłona</li>
+<li>1x giętki wałek</li>
+<li>1x kluczyk do montażu akcesoriów</li>
+<li>1x trzpień do szlifowania 6,4 mm</li>
+<li>1x trzpień do szlifowania 13 mm</li>
+<li>16x taśmy szlifierskie 6,4 mm</li>
+<li>16x taśmy szlifierskie 13 mm</li>
+<li>5x tarcza do cięcia 32 mm</li>
+<li>1x metalowa tarcza do cięcia</li>
+<li>6x tarcze szlifierskie z tlenku glinu 20 mm</li>
+<li>6x tarcze szlifierskie krzemowo-węglikowe 20 mm</li>
+<li>60x tarcze do cięcia 24 mm</li>
+<li>2x pasta do polerowania</li>
+<li>4x filcowa tarcza polerska 24 mm</li>
+<li>4x filcowa tarcza polerska 12 mm</li>
+<li>1x trzpień polerski 10 mm</li>
+<li>3x szczotka ze stali węglowej</li>
+<li>3x szczotka nylonowa</li>
+<li>3x szczotka z mosiądzu</li>
+<li>7x kamienie szlifierskie z tlenku glinu</li>
+<li>3x kamienie szlifierskie krzemowo-węglikowe</li>
+<li>6x kamienie szlifierskie</li>
+<li>2x trzpienie do montażu filcu</li>
+<li>2x trzpienie do montażu tarcz</li>
+<li>6x wiertła HSS</li>
+<li>4x tuleje zaciskowe</li>
+<li>9x ściernice diamentowe</li>
+<li>50x tarcza ścierna</li>
+</ul>]]></description>

@@ -18,7 +18,7 @@ const userQueries = require('../../db/user-queries.cjs');
  * Este middleware assume que `clerkMiddleware()` já foi aplicado globalmente e `req.auth` existe se autenticado.
  */
 const optionalUser = async (req, res, next) => {
-  const auth = req.auth(); // Chamar req.auth() como uma função
+  const auth = req.auth();
   if (auth && auth.userId) {
       try {
       const userProfile = await userQueries.findOrCreateUserByClerkId(auth.userId);
@@ -40,7 +40,7 @@ const optionalUser = async (req, res, next) => {
 const requireAdminAuth = [
   requireAuth, // Primeiro, garante que o utilizador está autenticado.
     (req, res, next) => {
-    const auth = req.auth(); // Chamar req.auth() como uma função
+    const auth = req.auth();
     // Verificar se auth existe e depois as claims. Se requireAuth passou, auth deve existir.
     if (!auth || auth.sessionClaims?.metadata?.role !== 'admin') {
             return res.status(403).json({ error: 'Acesso negado. Recurso exclusivo para administradores.' });

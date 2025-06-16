@@ -1,8 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 
-export function useProducts(initialSearch = '') {
-  const { hasPermission } = useAuth();
+// Updated to accept an options object for more flexible initialization
+export function useProducts(options = {}) {
+  const {
+    initialSearch = '',
+    initialFilters = {},
+    initialSortBy = 'name',
+    initialSortOrder = 'asc',
+    initialPage = 1,
+    initialLimit = 24,
+    isFeatured: initialIsFeatured = false // Specific initial prop for featured status
+  } = options;
+
+  const { hasPermission, localUser } = useAuth();
   
   // Estados básicos
   const [products, setProducts] = useState([]);
@@ -10,28 +21,32 @@ export function useProducts(initialSearch = '') {
   const [error, setError] = useState(null);
   
   // Estado de filtros como strings simples para evitar problemas de referência
-  const [searchQuery, setSearchQuery] = useState(initialSearch);
-  const [brandsFilter, setBrandsFilter] = useState(''); // string separada por vírgulas
-  const [categoriesFilter, setCategoriesFilter] = useState('');
-  const [priceMinFilter, setPriceMinFilter] = useState('');
-  const [priceMaxFilter, setPriceMaxFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState(typeof initialSearch === 'string' ? initialSearch : '');
+  const [brandsFilter, setBrandsFilter] = useState(initialFilters.brands || ''); 
+  const [categoriesFilter, setCategoriesFilter] = useState(initialFilters.categories || '');
+  const [priceMinFilter, setPriceMinFilter] = useState(initialFilters.priceMin?.toString() || '');
+  const [priceMaxFilter, setPriceMaxFilter] = useState(initialFilters.priceMax?.toString() || '');
+  const [isFeaturedQuery, setIsFeaturedQuery] = useState(initialIsFeatured); // For API query
   
   // Estados de ordenação como strings simples
-  const [sortBy, setSortBy] = useState('name');
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [sortBy, setSortBy] = useState(initialSortBy);
+  const [sortOrder, setSortOrder] = useState(initialSortOrder);
   
   // Paginação como números simples
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(initialPage);
   const [totalPages, setTotalPages] = useState(1);
   const [totalProducts, setTotalProducts] = useState(0);
-  const [limit] = useState(24);
+  const [limit, setLimit] = useState(initialLimit);
   
   // Opções de filtro
   const [filterOptions, setFilterOptions] = useState({ 
     brands: [], 
     categories: [],
-    price: { min: 0, max: 1000 }
+    price: { min: 0, max: 10000 } // Default/max from API filters
   });
+  
+  // New state to track price visibility permission directly
+  const [canViewPrices, setCanViewPrices] = useState(false);
   
   // Ref para controlo de fetch
   const fetchingRef = useRef(false);
@@ -49,7 +64,7 @@ export function useProducts(initialSearch = '') {
           setFilterOptions({
             brands: data.brands || [],
             categories: data.categories || [],
-            price: data.price || { min: 0, max: 1000 }
+            price: data.price || { min: 0, max: 10000 }
           });
         }
       } catch (err) {
@@ -62,8 +77,16 @@ export function useProducts(initialSearch = '') {
     loadFilters();
   }, []); // Sem dependências
 
+  // Update canViewPrices when hasPermission changes or localUser's permissions change
+  useEffect(() => {
+    if (hasPermission) {
+      setCanViewPrices(hasPermission('view_price'));
+    }
+  }, [hasPermission, localUser]); // Assuming localUser from AuthContext implies permission changes
+
   // Buscar produtos com dependências simples
   useEffect(() => {
+    console.log('[useProducts] Fetch effect running. User authed:', !!hasPermission, 'Actual canViewPrices state:', canViewPrices, 'isFeaturedQuery:', isFeaturedQuery, 'searchQuery:', searchQuery, 'currentPage:', currentPage, 'limit:', limit, 'sortBy:', sortBy, 'order:', sortOrder);
     if (fetchingRef.current) return;
     
     const fetchProducts = async () => {
@@ -78,11 +101,13 @@ export function useProducts(initialSearch = '') {
       params.append('sortBy', sortBy);
       params.append('order', sortOrder);
       
-      if (searchQuery) params.append('q', searchQuery);
+      if (searchQuery && typeof searchQuery === 'string') params.append('q', searchQuery.trim());
       if (brandsFilter) params.append('brands', brandsFilter);
       if (categoriesFilter) params.append('categories', categoriesFilter);
+      if (isFeaturedQuery) params.append('featured', 'true'); // Send if true
       
-      if (hasPermission && hasPermission('view_price')) {
+      // Use the canViewPrices state for the condition
+      if (canViewPrices) {
         if (priceMinFilter) params.append('priceMin', priceMinFilter);
         if (priceMaxFilter) params.append('priceMax', priceMaxFilter);
       }
@@ -120,7 +145,10 @@ export function useProducts(initialSearch = '') {
     sortBy,
     sortOrder,
     currentPage,
-    limit
+    limit,
+    isFeaturedQuery,
+    hasPermission,
+    canViewPrices
   ]); // Apenas dependências primitivas
 
   // Funções helper para compatibilidade com o código existente
@@ -132,9 +160,10 @@ export function useProducts(initialSearch = '') {
     }, {}) : {},
     categories: categoriesFilter ? categoriesFilter.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id)) : [],
     price: { 
-      min: priceMinFilter ? parseInt(priceMinFilter) : 0,
-      max: priceMaxFilter ? parseInt(priceMaxFilter) : 0
-    }
+      min: priceMinFilter ? parseInt(priceMinFilter) : filterOptions.price.min,
+      max: priceMaxFilter ? parseInt(priceMaxFilter) : filterOptions.price.max
+    },
+    featured: isFeaturedQuery
   };
 
   const sorting = { sortBy, order: sortOrder };
@@ -149,26 +178,27 @@ export function useProducts(initialSearch = '') {
   // Funções de atualização
   const setFilters = (newFilters) => {
     if (newFilters.searchQuery !== undefined) {
-      setSearchQuery(newFilters.searchQuery);
+      setSearchQuery(typeof newFilters.searchQuery === 'string' ? newFilters.searchQuery.trim() : '');
     }
     
-    if (newFilters.brands) {
-      const activeBrands = Object.entries(newFilters.brands)
+    if (newFilters.brands !== undefined) {
+      const activeBrands = Object.entries(newFilters.brands || {})
         .filter(([_, active]) => active)
         .map(([brand]) => brand);
       setBrandsFilter(activeBrands.join(','));
     }
     
     if (newFilters.categories !== undefined) {
-      setCategoriesFilter(Array.isArray(newFilters.categories) 
-        ? newFilters.categories.join(',')
-        : newFilters.categories || ''
-      );
+      setCategoriesFilter(Array.isArray(newFilters.categories) ? newFilters.categories.join(',') : newFilters.categories || '');
       }
       
     if (newFilters.price) {
       setPriceMinFilter(newFilters.price.min?.toString() || '');
       setPriceMaxFilter(newFilters.price.max?.toString() || '');
+    }
+    
+    if (newFilters.featured !== undefined) {
+      setIsFeaturedQuery(!!newFilters.featured);
     }
     
     // Reset para primeira página quando filtros mudam
@@ -188,8 +218,13 @@ export function useProducts(initialSearch = '') {
   };
 
   const updateSearchQuery = (query) => {
-    setSearchQuery(query);
+    setSearchQuery(typeof query === 'string' ? query.trim() : '');
     setCurrentPage(1);
+  };
+  
+  const setPaginationLimit = (newLimit) => {
+    setLimit(Math.max(1, parseInt(newLimit,10) || 24)); // Ensure limit is at least 1
+    setCurrentPage(1); // Reset to page 1 when limit changes
   };
   
   return {
@@ -205,7 +240,9 @@ export function useProducts(initialSearch = '') {
     sorting,
     setSorting,
     pagination,
-    handlePageChange
+    handlePageChange,
+    setLimit: setPaginationLimit,
+    setIsFeaturedQuery
   };
 }
 

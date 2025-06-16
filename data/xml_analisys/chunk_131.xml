@@ -1,0 +1,1500 @@
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/fuel-tank-for-earth-auger-g84021"/>
+                        <description>
+                            <name><![CDATA[Fuel tank for earth auger G84021]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.99" net="3.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84021A" weight="1200.00" grossWeight="1300.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.99" net="3.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7598_0_18514317.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7598_1_18514318.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7599" vat="0" code="CG84021B" code_on_card="CG84021B" EAN="5901477160790" code_producer="5901477160790">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105641" name="Combustion Augers" path="Spare Parts\Combustion Augers"/>
+            <category_idosell path="Spare Parts\Combustion Augers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-set-for-earth-auger-g84021"/>
+                        <description>
+                            <name><![CDATA[Handle set for earth auger G84021]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="19.3" net="19.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84021B" weight="800.00" grossWeight="850.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="19.3" net="19.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7599_0_14044492.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7599_1_14044507.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7599_1_14044510.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7600" vat="0" code="CG84021C" code_on_card="CG84021C" EAN="5901477160806" code_producer="5901477160806">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105641" name="Combustion Augers" path="Spare Parts\Combustion Augers"/>
+            <category_idosell path="Spare Parts\Combustion Augers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-earth-auger-g84021"/>
+                        <description>
+                            <name><![CDATA[Switch for earth auger G84021]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.22" net="4.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84021C" weight="100.00" grossWeight="120.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.22" net="4.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7600_0_18514320.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7600_1_18514321.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7600_1_18514322.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7600_1_18514323.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7603" vat="0" code="CG82005F" code_on_card="CG82005F" EAN="5901477161674" code_producer="5901477161674">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105652" name="Petrol Saws" path="Spare Parts\Petrol Saws"/>
+            <category_idosell path="Spare Parts\Petrol Saws" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bearing-for-chain-saw-g82005"/>
+                        <description>
+                            <name><![CDATA[Bearing for chain saw G82005]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.04" net="1.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG82005F" weight="300.00" grossWeight="0.00">
+                                        <stock id="1" quantity="12,00"/>
+                                                                    <price gross="1.04" net="1.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7603_0_14179900.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7604" vat="0" code="CG82005G" code_on_card="CG82005G" EAN="5901477161681" code_producer="5901477161681">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105652" name="Petrol Saws" path="Spare Parts\Petrol Saws"/>
+            <category_idosell path="Spare Parts\Petrol Saws" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/oil-pump-for-chain-saw-g82005"/>
+                        <description>
+                            <name><![CDATA[Oil pump for chain saw G82005]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.94" net="1.94"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG82005G" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="1.94" net="1.94"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7604_0_14179966.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7607" vat="0" code="G02064A" code_on_card="G02064A" EAN="5901477160929" code_producer="5901477160929">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107070" name="Tools for The Workshop and Garage" path="Tools for The Workshop and Garage"/>
+            <category_idosell path="Tools for The Workshop and Garage" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rubber-for-air-jacks-3t-3-5t"/>
+                        <description>
+                            <name><![CDATA[Rubber for air jacks 3T - 3,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.21" net="2.21"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02064A" weight="180.00" grossWeight="190.00">
+                                        <stock id="1" quantity="742,00"/>
+                                                                    <price gross="2.21" net="2.21"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7607_0_14424076.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7607_1_14424077.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7610" vat="0" code="CG83005A" code_on_card="CG83005A" EAN="5901477160905" code_producer="5901477160905">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/engine-for-electric-hedge-trimmer-520w-450mm"/>
+                        <description>
+                            <name><![CDATA[Engine for electric hedge trimmer 520W 450mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.57" net="8.57"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83005A" weight="960.00" grossWeight="1020.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.57" net="8.57"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7610_0_18513004.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7612" vat="0" code="CG02089A" code_on_card="CG02089A" EAN="5901477166426" code_producer="5901477166426">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105275" name="Hydraulic Presses" path="Spare Parts\Hydraulic Presses"/>
+            <category_idosell path="Spare Parts\Hydraulic Presses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/spring-for-50t-hydraulic-press"/>
+                        <description>
+                            <name><![CDATA[Spring for 50T hydraulic press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.86" net="3.86"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02089A" weight="500.00" grossWeight="550.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.86" net="3.86"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7612_0_12420189.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7613" vat="0" code="G90542-40" code_on_card="G90542-40" EAN="5901477161087" code_producer="5901477161087">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-40"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 40]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.3" net="22.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-40" weight="1480.00" grossWeight="1780.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.3" net="22.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_0_13318014.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318027.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318046.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318058.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318066.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318067.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318074.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318172.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318185.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318199.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_13318893.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7613_1_14517977.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7614" vat="0" code="G90542-41" code_on_card="G90542-41" EAN="5901477161094" code_producer="5901477161094">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-41"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 41]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.3" net="22.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-41" weight="1520.00" grossWeight="1820.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.3" net="22.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318367.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318371.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318378.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318385.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318392.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318403.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318580.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318590.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318607.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_13318960.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_17722032.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7614_1_17722048.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7615" vat="0" code="G90542-42" code_on_card="G90542-42" EAN="5901477161100" code_producer="5901477161100">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-42"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 42]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.29" net="22.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-42" weight="1560.00" grossWeight="1860.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.29" net="22.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_0_13318633.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318652.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318657.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318660.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318667.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318674.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318682.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318694.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318701.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318739.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_13318979.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7615_1_18497977.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7616" vat="0" code="G90542-43" code_on_card="G90542-43" EAN="5901477161117" code_producer="5901477161117">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-43"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 43]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.3" net="22.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-43" weight="1580.00" grossWeight="1880.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.3" net="22.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_0_13319004.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319016.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319022.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319025.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319032.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319045.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319100.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319119.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319125.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319133.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_13319140.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7616_1_14517999.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7617" vat="0" code="G90542-44" code_on_card="G90542-44" EAN="5901477161124" code_producer="5901477161124">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-44"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 44]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.3" net="22.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-44" weight="1650.00" grossWeight="1950.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.3" net="22.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_0_13319166.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319178.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319183.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319187.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319194.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319207.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319214.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319221.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319228.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319235.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_13319245.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7617_1_14518005.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7618" vat="0" code="G90542-45" code_on_card="G90542-45" EAN="5901477161131" code_producer="5901477161131">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-45"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 45]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.29" net="22.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-45" weight="1700.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.29" net="22.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_0_13319291.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319300.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319307.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319314.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319321.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319327.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319330.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319336.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319343.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319368.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_13319381.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7618_1_14518264.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7619" vat="0" code="G90542-46" code_on_card="G90542-46" EAN="5901477161148" code_producer="5901477161148">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-7-nubuck-leather-size-46"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 7 nubuck leather - size 46]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 class leather work shoes. Shoes of the reputable brand GEKO designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p><strong>Product features:&nbsp;</strong><br />made of cowhide leather - <strong>nubuck</strong><br />safety footwear category - <strong>S3</strong><br />anti-electrostatic<br />SRC anti-slip<br />steel toecap with 200J protection<br />lining made of breathable mesh fabric - provides good ventilation<br />energy absorbing and reinforced heel protection<br />changeable insole<br />compliance with standards: CE EN ISO 20345: 2011<br />Protection class S3 SRC<br />oils, gasoline and other organic solvents resistant<br />anti-static&nbsp;<br />PU / PU sole</p><br/><p>Sole made of polyurethane (black / gray) with different densities. Equipped with a puncture-resistant steel insert with a pressing force of 1100 Newtons.</p><br/><p>SRC - non-slip, deeply treaded sole<br />skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution<br />skid resistance on a steel substrate coated with glycerol</p><br/><p><br /><strong>Technical data:</strong><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU (two different polyurethane densities)</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong>&nbsp;<br />Additional footwear properties: <strong>SRC</strong>&nbsp;</p><br/><p><strong><img src="https://i.pinimg.com/564x/2a/f1/65/2af16518eef9a77300cd9aa9eafa8896.jpg" alt="" /></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.3" net="22.3"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90542-46" weight="1740.00" grossWeight="2040.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.3" net="22.3"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319432.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319439.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319446.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319453.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319460.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319467.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319474.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319479.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319488.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_13319495.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_14518296.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7619_1_14518305.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7622" vat="0" code="G90545-40" code_on_card="G90545-40" EAN="5901477161162" code_producer="5901477161162">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105999" name="Work Shoes" path="Health and Safety Articles\Work Shoes"/>
+            <category_idosell path="Health and Safety Articles\Work Shoes" />
+        
+
+                            <unit id="9143237671069306483" name="pr." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/safety-shoes-model-no-9-black-nubuck-leather-s3-src-size-40"/>
+                        <description>
+                            <name><![CDATA[Safety shoes model no. 9 black nubuck leather S3 SRC - size 40]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 SRC class leather work boots. Boots of the popular GEKO brand designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant to the touch. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p>The shoes do not have metal inserts, thanks to which they do not conduct electricity, heat and cold, and are more flexible than shoes with steel inserts.</p><br/><h3>Product features:</h3><br/><ul><br/><li>made of cowhide leather - nubuck</li><br/><li>safety footwear category - S3</li><br/><li>have anti-electrostatic properties</li><br/><li>has SRC anti-slip properties</li><br/><li>composite toecap with a strength of 200J for greater protection of the toes</li><br/><li>lining made of breathable mesh fabric - provides good ventilation</li><br/><li>provide energy absorption in the heel area</li><br/><li>reinforced built-in heel</li><br/><li>the possibility of replacing the insert</li><br/><li>compliance with standards: CE EN ISO 20345: 2011</li><br/></ul><br/><h2>S3 SRC PROTECTION</h2><br/><p>Safety footwear categories according to PN-EN ISO 20345:impact-resistant composite toecap with a force of <strong>200J</strong> and a compression force of 15 kN<br />1100 Newtons puncture resistant Kevlar insert<br />built-up heel<br />resistance to oils, gasoline and other organic solvents<br />anti-static properties<br />energy absorption in the heel area</p><br/><h2>PU + rubber sole</h2><br/><p>The sole is made of <strong>polyurethane (black / gray)</strong> with different densities and rubber. Equipped with a puncture resistant <strong>Kevlar insert</strong> with a pressure force<strong> of 1100 Newtons.</strong></p><br/><h2>SRC - non-slip, deeply treaded sole</h2><br/><ul><br/><li>skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution</li><br/><li>skid resistance on a steel substrate coated with glycerol</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU + Rubber</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong><br />Additional footwear properties: <strong>SRC</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>High-quality, functional PREMIUM S3 SRC class leather work boots. Boots of the popular GEKO brand designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant to the touch. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p>The shoes do not have metal inserts, thanks to which they do not conduct electricity, heat and cold, and are more flexible than shoes with steel inserts.</p><br/><h3>Product features:</h3><br/><ul><br/><li>made of cowhide leather - nubuck</li><br/><li>safety footwear category - S3</li><br/><li>have anti-electrostatic properties</li><br/><li>has SRC anti-slip properties</li><br/><li>composite toecap with a strength of 200J for greater protection of the toes</li><br/><li>lining made of breathable mesh fabric - provides good ventilation</li><br/><li>provide energy absorption in the heel area</li><br/><li>reinforced built-in heel</li><br/><li>the possibility of replacing the insert</li><br/><li>compliance with standards: CE EN ISO 20345: 2011</li><br/></ul><br/><h2>S3 SRC PROTECTION</h2><br/><p>Safety footwear categories according to PN-EN ISO 20345:impact-resistant composite toecap with a force of <strong>200J</strong> and a compression force of 15 kN<br />1100 Newtons puncture resistant Kevlar insert<br />built-up heel<br />resistance to oils, gasoline and other organic solvents<br />anti-static properties<br />energy absorption in the heel area</p><br/><h2>PU + rubber sole</h2><br/><p>The sole is made of <strong>polyurethane (black / gray)</strong> with different densities and rubber. Equipped with a puncture resistant <strong>Kevlar insert</strong> with a pressure force<strong> of 1100 Newtons.</strong></p><br/><h2>SRC - non-slip, deeply treaded sole</h2><br/><ul><br/><li>skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution</li><br/><li>skid resistance on a steel substrate coated with glycerol</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU + Rubber</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong><br />Additional footwear properties: <strong>SRC</strong></p>]]></short_desc>
+                            <description><![CDATA[<p>High-quality, functional PREMIUM S3 SRC class leather work boots. Boots of the popular GEKO brand designed to protect the feet against external factors, designed in such a way as to improve the comfort and safety of work as much as possible. Footwear in accordance with the standard specifying the requirements for safety footwear: CE EN ISO 20345: 2011.</p><br/><p>Nubuck is a delicately sanded upper part of the leather. Just like suede, it has a delicate structure and is very pleasant to the touch. Many people are afraid that nubuck, like suede, is a material that is not resistant to damage - nothing could be further from the truth. With proper maintenance and cleaning, nubuck shoes will keep their elegant appearance for a long time. What is characteristic of nubuck is its thickness, stiffness and resistance to damage.</p><br/><p>The shoes do not have metal inserts, thanks to which they do not conduct electricity, heat and cold, and are more flexible than shoes with steel inserts.</p><br/><h3>Product features:</h3><br/><ul><br/><li>made of cowhide leather - nubuck</li><br/><li>safety footwear category - S3</li><br/><li>have anti-electrostatic properties</li><br/><li>has SRC anti-slip properties</li><br/><li>composite toecap with a strength of 200J for greater protection of the toes</li><br/><li>lining made of breathable mesh fabric - provides good ventilation</li><br/><li>provide energy absorption in the heel area</li><br/><li>reinforced built-in heel</li><br/><li>the possibility of replacing the insert</li><br/><li>compliance with standards: CE EN ISO 20345: 2011</li><br/></ul><br/><h2>S3 SRC PROTECTION</h2><br/><p>Safety footwear categories according to PN-EN ISO 20345:impact-resistant composite toecap with a force of <strong>200J</strong> and a compression force of 15 kN<br />1100 Newtons puncture resistant Kevlar insert<br />built-up heel<br />resistance to oils, gasoline and other organic solvents<br />anti-static properties<br />energy absorption in the heel area</p><br/><h2>PU + rubber sole</h2><br/><p>The sole is made of <strong>polyurethane (black / gray)</strong> with different densities and rubber. Equipped with a puncture resistant <strong>Kevlar insert</strong> with a pressure force<strong> of 1100 Newtons.</strong></p><br/><h2>SRC - non-slip, deeply treaded sole</h2><br/><ul><br/><li>skid resistance on a ceramic substrate coated with sodium lauryl sulfate (SLS) solution</li><br/><li>skid resistance on a steel substrate coated with glycerol</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><br />Producer: <strong>GEKO</strong><br />Upper: <strong>cow leather - nubuck</strong><br />Liner: <strong>airy multi-layer mesh fabric</strong><br />Sole: <strong>Polyurethane PU + Rubber</strong><br />Removable insole: <strong>yes</strong><br />Compliance with standards: <strong>CE EN ISO 20345: 2011</strong><br />Protection class: <strong>S3</strong><br />Additional footwear properties: <strong>SRC</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="30.64" net="30.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90545-40" weight="1350.00" grossWeight="1650.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="30.64" net="30.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188307.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188315.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188318.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188373.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188377.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188381.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188384.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188389.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188396.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_13188398.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_14518363.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7622_1_14518369.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7657" vat="0" code="G10907" code_on_card="G10907" EAN="5901477161261" code_producer="5901477161261">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107615" name="Safes and Boxes" path="Household Items\Safes and Boxes"/>
+            <category_idosell path="Household Items\Safes and Boxes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/key-safe-4-digit-combination-lock"/>
+                        <description>
+                            <name><![CDATA[Key safe 4-digit combination lock]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Wysokiej jakości, solidny i przede wszystkim wytrzymały sejf na klucze</strong>. Jest to idealne rozwiązanie na osób które chcą w bezpiecznym miejscu zostawić klucze dla najemcy, klienta domku lub mieszkania wakacyjnego itp.</p>
+<p>Sejf <strong>wykonany z najwyższej jakości twardego stopu aluminium odpornego na próby wyłamania zamka lub rozbicia młotkiem</strong>.</p>
+<p>Posiada <strong>zabezpieczenie zamka w postaci zasuwy z tworzywa</strong>, która skutecznie chroni zamek przed warunkami atmosferycznymi.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany <strong>z najwyższej jakości stopu aluminium</strong></li>
+<li><strong>boczne ścianki sejfu mają grubość aż 10-12mm</strong>, co sprawia że sejf jest odporny na próby wyłamania zamku lub rozbicia młotkiem</li>
+<li><strong>zamykany na 4-cyfrowy szyfr co daje 10 000 kombinacji</strong></li>
+<li>zabezpieczenie zamka w postaci zasuwy z tworzywa</li>
+<li>pojemna komora na klucze</li>
+<li>w komplecie zestaw kołków montażowych</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Materiał: <strong>najwyższej jakości stop aluminium o grubości sięgającej 12mm</strong></p>
+<p>Zamykanie: <strong>4-cyfrowy zamek szyfrowy</strong></p>
+<p>Informacje dodatkowe: <strong>zabezpieczenie zamka w postaci zasuwy, w komplecie zestaw kołków montażowych</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Wysokiej jakości, solidny i przede wszystkim wytrzymały sejf na klucze</strong>. Jest to idealne rozwiązanie na osób które chcą w bezpiecznym miejscu zostawić klucze dla najemcy, klienta domku lub mieszkania wakacyjnego itp.</p>
+<p>Sejf <strong>wykonany z najwyższej jakości twardego stopu aluminium odpornego na próby wyłamania zamka lub rozbicia młotkiem</strong>.</p>
+<p>Posiada <strong>zabezpieczenie zamka w postaci zasuwy z tworzywa</strong>, która skutecznie chroni zamek przed warunkami atmosferycznymi.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany <strong>z najwyższej jakości stopu aluminium</strong></li>
+<li><strong>boczne ścianki sejfu mają grubość aż 10-12mm</strong>, co sprawia że sejf jest odporny na próby wyłamania zamku lub rozbicia młotkiem</li>
+<li><strong>zamykany na 4-cyfrowy szyfr co daje 10 000 kombinacji</strong></li>
+<li>zabezpieczenie zamka w postaci zasuwy z tworzywa</li>
+<li>pojemna komora na klucze</li>
+<li>w komplecie zestaw kołków montażowych</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Materiał: <strong>najwyższej jakości stop aluminium o grubości sięgającej 12mm</strong></p>
+<p>Zamykanie: <strong>4-cyfrowy zamek szyfrowy</strong></p>
+<p>Informacje dodatkowe: <strong>zabezpieczenie zamka w postaci zasuwy, w komplecie zestaw kołków montażowych</strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Wysokiej jakości, solidny i przede wszystkim wytrzymały sejf na klucze</strong>. Jest to idealne rozwiązanie na osób które chcą w bezpiecznym miejscu zostawić klucze dla najemcy, klienta domku lub mieszkania wakacyjnego itp.</p>
+<p>Sejf <strong>wykonany z najwyższej jakości twardego stopu aluminium odpornego na próby wyłamania zamka lub rozbicia młotkiem</strong>.</p>
+<p>Posiada <strong>zabezpieczenie zamka w postaci zasuwy z tworzywa</strong>, która skutecznie chroni zamek przed warunkami atmosferycznymi.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wykonany <strong>z najwyższej jakości stopu aluminium</strong></li>
+<li><strong>boczne ścianki sejfu mają grubość aż 10-12mm</strong>, co sprawia że sejf jest odporny na próby wyłamania zamku lub rozbicia młotkiem</li>
+<li><strong>zamykany na 4-cyfrowy szyfr co daje 10 000 kombinacji</strong></li>
+<li>zabezpieczenie zamka w postaci zasuwy z tworzywa</li>
+<li>pojemna komora na klucze</li>
+<li>w komplecie zestaw kołków montażowych</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Materiał: <strong>najwyższej jakości stop aluminium o grubości sięgającej 12mm</strong></p>
+<p>Zamykanie: <strong>4-cyfrowy zamek szyfrowy</strong></p>
+<p>Informacje dodatkowe: <strong>zabezpieczenie zamka w postaci zasuwy, w komplecie zestaw kołków montażowych</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.37" net="5.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10907" weight="470.00" grossWeight="520.00">
+                                        <stock id="1" quantity="973,00"/>
+                                                                    <price gross="5.37" net="5.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_0_18522964.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522965.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522966.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522967.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522968.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522969.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522970.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522971.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522972.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7657_1_18522973.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7662" vat="0" code="G30145" code_on_card="G30145" EAN="5901477161247" code_producer="5901477161247">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107705" name="Construction and Renovation" path="Construction and Renovation"/>
+            <category_idosell path="Construction and Renovation" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/floor-repairing-kit"/>
+                        <description>
+                            <name><![CDATA[Floor repairing kit]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w panelach, meblach, drzwiach oraz innych materiałach drewnopodobnych itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>panele</li>
+<li>drewno</li>
+<li>materiały drewnopodobne</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w panelach, meblach, drzwiach oraz innych materiałach drewnopodobnych itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>panele</li>
+<li>drewno</li>
+<li>materiały drewnopodobne</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w panelach, meblach, drzwiach oraz innych materiałach drewnopodobnych itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>panele</li>
+<li>drewno</li>
+<li>materiały drewnopodobne</li>
+</ul>]]></description>
+                        </description>
+                        <delivery>30.06.2025</delivery>
+                            <price gross="9.54" net="9.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G30145" weight="400.00" grossWeight="500.00">
+                                        <stock id="1" quantity="244,00"/>
+                                                                    <price gross="9.54" net="9.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7662_1_13505784.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7662_1_13505788.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7662_1_13505792.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7662_1_13505812.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7662_1_13512552.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7664" vat="0" code="G30146" code_on_card="G30146" EAN="5901477161254" code_producer="5901477161254">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107705" name="Construction and Renovation" path="Construction and Renovation"/>
+            <category_idosell path="Construction and Renovation" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tile-repairing-kit"/>
+                        <description>
+                            <name><![CDATA[Tile repairing kit]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w płytkach, kamieniu, ceramice, itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>ceramika</li>
+<li>glazura</li>
+<li>lastryko</li>
+<li>kamień</li>
+<li>podłogi przemysłowe</li>
+<li>produkty wykonane z tworzyw kamieniopodobnych</li>
+<li>produkty wykonane z konglomeratów</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w płytkach, kamieniu, ceramice, itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>ceramika</li>
+<li>glazura</li>
+<li>lastryko</li>
+<li>kamień</li>
+<li>podłogi przemysłowe</li>
+<li>produkty wykonane z tworzyw kamieniopodobnych</li>
+<li>produkty wykonane z konglomeratów</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>Zestaw do naprawy uszkodzeń powstałych w płytkach, kamieniu, ceramice, itp.</strong> Zestaw pozwala w estetyczni i tani sposób zamaskować pęknięcia, wyszczerbienia, a nawet otwory po wierceniu.</p>
+<p>W skład zestawu wchodzi: <strong>przyrząd do topienia wypełniaczy, szpachelki, gąbkę polerską oraz zestaw 11 wypełniaczy.</strong></p>
+<p>Wypełniacze w różnych kolorach, które można ze sobą dowolnie mieszać pozwala uzyskać niemalże idealne dopasowanie kolorystyczne do naprawianej powierzchni.</p>
+<h4>Rodzaje uszkodzeń możliwych do naprawy:</h4>
+<ul>
+<li>odpryski</li>
+<li>pęknięcia</li>
+<li>ubytki</li>
+<li>otwory po wierceniu</li>
+</ul>
+<h4>Materiały:</h4>
+<ul>
+<li>ceramika</li>
+<li>glazura</li>
+<li>lastryko</li>
+<li>kamień</li>
+<li>podłogi przemysłowe</li>
+<li>produkty wykonane z tworzyw kamieniopodobnych</li>
+<li>produkty wykonane z konglomeratów</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.85" net="10.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G30146" weight="400.00" grossWeight="500.00">
+                                        <stock id="1" quantity="330,00"/>
+                                                                    <price gross="10.85" net="10.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7664_1_13505836.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7664_1_13505841.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7664_1_13505845.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7664_1_13505849.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7664_1_13505853.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7688" vat="0" code="T00055" code_on_card="T00055" EAN="5901477161278" code_producer="5901477161278">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pvc-cutters-with-changeable-blade-0-42mm-sk5"/>
+                        <description>
+                            <name><![CDATA[PVC Cutters with changeable blade 0-42mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 42mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 42mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 42mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.09" net="10.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00055" weight="430.00" grossWeight="470.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.09" net="10.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_0_14143387.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_1_14143395.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_1_14143398.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_1_14143401.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_1_14143407.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7688_1_14143411.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7689" vat="0" code="T00056" code_on_card="T00056" EAN="5901477161285" code_producer="5901477161285">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pvc-cutters-with-changeable-blade-0-50mm-sk5"/>
+                        <description>
+                            <name><![CDATA[PVC Cutters with changeable blade 0-50mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 50mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 50mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 50mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.26" net="10.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00056" weight="550.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.26" net="10.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_0_14143742.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_1_14143747.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_1_14143752.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_1_14143761.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_1_14143766.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7689_1_14143775.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7690" vat="0" code="T00057" code_on_card="T00057" EAN="5901477161292" code_producer="5901477161292">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pvc-cutters-with-changeable-blade-0-63mm-sk5"/>
+                        <description>
+                            <name><![CDATA[PVC Cutters with changeable blade 0-63mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 63mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 63mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Professional PVC Cutters from the reputable brand Tvardy. Designed for cutting pipes made of PVC, PU, ??PP, PE, and PEX-AL-PEX. Carefully made using the highest quality materials.</p><br/><p>The replaceable blade is made of high-carbon SK5 tool steel characterized by very high resistance to chipping and cracking, moreover, it is a steel with high abrasion resistance, thanks to which it dulls much slower.</p><br/><p>The cutter body is made of high-quality aluminum-based alloy.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Blade made of high-carbon tool steel with very high resistance to abrasion, cracks, and chipping, subjected to professional heat treatment (hardening and tempering at an appropriate temperature)</li><br/><li>Body made of high-quality aluminum-based alloy</li><br/><li>Ergonomic non-slip handle</li><br/><li>Blade is replaceable</li><br/><li>Working range from 0 to 63mm</li><br/><li>The 10-degree blade advance prevents deformation of the cut pipes</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.49" net="11.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00057" weight="570.00" grossWeight="620.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="11.49" net="11.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_0_14143897.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_1_14143934.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_1_14143939.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_1_14143941.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_1_14143945.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7690_1_14143951.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7691" vat="0" code="T00058" code_on_card="T00058" EAN="5901477161308" code_producer="5901477161308">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/changeable-blade-for-pvc-cutters-0-42mm-sk5"/>
+                        <description>
+                            <name><![CDATA[Changeable blade for PVC Cutters 0-42mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></short_desc>
+                            <description><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.76" net="1.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00058" weight="65.00" grossWeight="75.00">
+                                        <stock id="1" quantity="42,00"/>
+                                                                    <price gross="1.76" net="1.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7691_0_14144078.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7691_1_14144082.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7691_1_14144087.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7692" vat="0" code="T00059" code_on_card="T00059" EAN="5901477161315" code_producer="5901477161315">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/changeable-blade-for-pvc-cutters-0-50mm-sk5"/>
+                        <description>
+                            <name><![CDATA[Changeable blade for PVC Cutters  0-50mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></short_desc>
+                            <description><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 50mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.32" net="2.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00059" weight="95.00" grossWeight="115.00">
+                                        <stock id="1" quantity="172,00"/>
+                                                                    <price gross="2.32" net="2.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7692_0_14144295.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7692_1_14144306.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7692_1_14144312.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7693" vat="0" code="T00060" code_on_card="T00060" EAN="5901477161322" code_producer="5901477161322">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105327" name="Pipe Cutters" path="Tools for Plumbers\Pipe Cutters"/>
+            <category_idosell path="Tools for Plumbers\Pipe Cutters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/changeable-blade-for-pvc-cutters-0-63mm-sk5"/>
+                        <description>
+                            <name><![CDATA[Changeable blade for PVC Cutters  0-63mm SK5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 63mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 63mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></short_desc>
+                            <description><![CDATA[<p>Replaceable blade for Tvardy Pipe Cutters with a working range from 0 to 63mm. It is made of high-carbon SK5 tool steel, which is very resistant to chipping and cracking, and it is also steel with high abrasion resistance, thanks to which it dulls much slower.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.56" net="2.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00060" weight="130.00" grossWeight="150.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="2.56" net="2.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7693_0_14144401.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7693_1_14144430.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7693_1_14144436.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7695" vat="0" code="CG80715-A" code_on_card="CG80715-A" EAN="5901477166020" code_producer="5901477166020">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="100018" name="Spare Parts" path="Spare Parts"/>
+            <category_idosell path="Spare Parts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-metal-cut-off-saw-350mm"/>
+                        <description>
+                            <name><![CDATA[Handle for metal cut-off saw 350mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.02" net="4.02"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80715-A" weight="500.00" grossWeight="550.00">
+                                        <stock id="1" quantity="16,00"/>
+                                                                    <price gross="4.02" net="4.02"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7695_0_18512461.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7695_1_18512462.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7696" vat="0" code="CG80715-B" code_on_card="CG80715-B" EAN="5901477166037" code_producer="5901477166037">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="100018" name="Spare Parts" path="Spare Parts"/>
+            <category_idosell path="Spare Parts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotor-for-metal-cut-off-saw-350mm"/>
+                        <description>
+                            <name><![CDATA[Rotor for metal cut-off saw 350mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.74" net="12.74"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80715-B" weight="400.00" grossWeight="450.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.74" net="12.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7696_0_18512831.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7696_1_18512832.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7699" vat="0" code="CG80715-E" code_on_card="CG80715-E" EAN="5902973765595" code_producer="5902973765595">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="100018" name="Spare Parts" path="Spare Parts"/>
+            <category_idosell path="Spare Parts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/brush-holder-for-metal-cut-off-saw-350mm"/>
+                        <description>
+                            <name><![CDATA[Brush holder for metal cut-off saw 350mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.39" net="2.39"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80715-E" weight="150.00" grossWeight="160.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="2.39" net="2.39"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7699_0_18512490.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7699_1_18512491.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7704" vat="0" code="G72075" code_on_card="G72075" EAN="5901477161346" code_producer="5901477161346">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/manual-twist-tiller"/>
+                        <description>
+                            <name><![CDATA[Manual Twist Tiller]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Manual Cultivator is a perfect tool for small gardens.</p><br/><p>Wide T handle that reduces the effort of twisting, using the force of your body to easily rotate sharp angled claw tines into hard compacted soil. Solid shaft is made of steel and powder coated.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Manual Cultivator is a perfect tool for small gardens.</p><br/><p>Wide T handle that reduces the effort of twisting, using the force of your body to easily rotate sharp angled claw tines into hard compacted soil. Solid shaft is made of steel and powder coated.</p>]]></short_desc>
+                            <description><![CDATA[<p>Manual Cultivator is a perfect tool for small gardens.</p><br/><p>Wide T handle that reduces the effort of twisting, using the force of your body to easily rotate sharp angled claw tines into hard compacted soil. Solid shaft is made of steel and powder coated.</p>]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="6.92" net="6.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72075" weight="1090.00" grossWeight="1130.00">
+                                        <stock id="1" quantity="194,00"/>
+                                                                    <price gross="6.92" net="6.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7704_0_14816723.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7704_1_14816726.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7704_1_14816728.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7705" vat="0" code="G03190" code_on_card="G03190" EAN="5901477161360" code_producer="5901477161360">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107940" name="Polyurethane Straight Hoses" path="Pneumatics\Pneumatic Installation Accessories\Polyurethane Straight Hoses"/>
+            <category_idosell path="Pneumatics\Pneumatic Installation Accessories\Polyurethane Straight Hoses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-hose-on-reel-10m-8x12mm"/>
+                        <description>
+                            <name><![CDATA[Air hose on reel 10m 8x12mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 10 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 8 mm / 12 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 10 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 8 mm / 12 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 10 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 8 mm / 12 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>23.06.2025</delivery>
+                            <price gross="21.33" net="21.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G03190" weight="3550.00" grossWeight="3670.00">
+                                        <stock id="1" quantity="488,00"/>
+                                                                    <price gross="21.33" net="21.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_0_13826648.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_1_13826657.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_1_13826666.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_1_13826675.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_1_13826679.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7705_1_13826685.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7706" vat="0" code="G03191" code_on_card="G03191" EAN="5901477161353" code_producer="5901477161353">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107940" name="Polyurethane Straight Hoses" path="Pneumatics\Pneumatic Installation Accessories\Polyurethane Straight Hoses"/>
+            <category_idosell path="Pneumatics\Pneumatic Installation Accessories\Polyurethane Straight Hoses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-hose-on-reel-14m-6-5x10mm"/>
+                        <description>
+                            <name><![CDATA[Air hose on reel  14m 6,5x10mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 14 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 6.5 mm / 10 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 14 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 6.5 mm / 10 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Pneumatic hose on a reel made of high quality reinforced PVC material. It is characterized by high resistance to high pressure. The reel is equipped with automatic blockade preventing the hose from self-winding, and hanger allowing the hose to be hung on the wall.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>High pressure resistance</li><br/><li>Hose made of reinforced PVC</li><br/><li>Hose reel with locking mechanism and braking system</li><br/><li>Fitted with bracket so it can be mounted on the wall or ceiling and rotated up to 180°</li><br/><li>Included mounting pins</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Output Hose Length: 14 m</li><br/><li>Input Hose Length: 1 m</li><br/><li>Inner and Outer Diameter: 6.5 mm / 10 mm</li><br/><li>Air Inlet Size: 1/4"</li><br/><li>Working Perssure: 8 bar</li><br/><li>Burst Pressure: 24 bar</li><br/><li>Hose Material: reinforced PVC material</li><br/><li>Working Temperature: from -5 to +45&deg;C</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="26.31" net="26.31"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G03191" weight="4800.00" grossWeight="4920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="26.31" net="26.31"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_0_13573218.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13573219.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13573221.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13573222.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13573223.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13573224.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_13719201.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7706_1_14518617.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7707" vat="0" code="G83028" code_on_card="G83028" EAN="5901477161421" code_producer="5901477161421">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="107757" name="Mowing" path="Garden\Mowing"/>
+            <category_idosell path="Garden\Mowing" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/electric-lawn-mower-38cm-model-strong"/>
+                        <description>
+                            <name><![CDATA[Electric Lawn Mower 38cm model : Strong]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Electric Lawn Mower 38cm model: STRONG</h3><br/><br/><h4>Technical Specifications</h4><br/><ul><br/><li>Power Supply: 230V ~50Hz</li><br/><li>Power Consumption: 1700W</li><br/><li>Rotation Speed: 3450 rpm</li><br/><li>Cutting Width: 380mm</li><br/><li>Cutting Height: 25 - 75mm</li><br/><li>Height Adjustment Levels: 5</li><br/><li>Grass Box Capacity: 40L</li><br/></ul><br/><br/><h4>Package Contents</h4><br/><ul><br/><li>Lawn mower with 40L grass box</li><br/><li>Mounting kit</li><br/></ul><br/><br/><p><strong>Check out the device presentation on our YouTube channel:</strong></p><br/><p><iframe src="//www.youtube.com/embed/Mq23F4MGyd4" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Electric Lawn Mower 38cm model: STRONG</h3><br/><br/><h4>Technical Specifications</h4><br/><ul><br/><li>Power Supply: 230V ~50Hz</li><br/><li>Power Consumption: 1700W</li><br/><li>Rotation Speed: 3450 rpm</li><br/><li>Cutting Width: 380mm</li><br/><li>Cutting Height: 25 - 75mm</li><br/><li>Height Adjustment Levels: 5</li><br/><li>Grass Box Capacity: 40L</li><br/></ul><br/><br/><h4>Package Contents</h4><br/><ul><br/><li>Lawn mower with 40L grass box</li><br/><li>Mounting kit</li><br/></ul><br/><br/><p><strong>Check out the device presentation on our YouTube channel:</strong></p><br/><p><iframe src="//www.youtube.com/embed/Mq23F4MGyd4" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></short_desc>
+                            <description><![CDATA[<h3>Electric Lawn Mower 38cm model: STRONG</h3><br/><br/><h4>Technical Specifications</h4><br/><ul><br/><li>Power Supply: 230V ~50Hz</li><br/><li>Power Consumption: 1700W</li><br/><li>Rotation Speed: 3450 rpm</li><br/><li>Cutting Width: 380mm</li><br/><li>Cutting Height: 25 - 75mm</li><br/><li>Height Adjustment Levels: 5</li><br/><li>Grass Box Capacity: 40L</li><br/></ul><br/><br/><h4>Package Contents</h4><br/><ul><br/><li>Lawn mower with 40L grass box</li><br/><li>Mounting kit</li><br/></ul><br/><br/><p><strong>Check out the device presentation on our YouTube channel:</strong></p><br/><p><iframe src="//www.youtube.com/embed/Mq23F4MGyd4" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="74.88" net="74.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G83028" weight="11400.00" grossWeight="13100.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="74.88" net="74.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_0_16210178.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210182.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210186.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210190.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210194.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210201.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210205.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210209.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210213.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210235.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210239.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16210243.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16470239.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16470243.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7707_1_16470245.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7708" vat="0" code="G70071" code_on_card="G70071" EAN="5901477161377" code_producer="5901477161377">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107748" name="Garden Hoses" path="Garden\Garden Hoses"/>
+            <category_idosell path="Garden\Garden Hoses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/soaker-hose-1-2-30m"/>
+                        <description>
+                            <name><![CDATA[Soaker Hose 1/2" 30m]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 30m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 30m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 30m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.85" net="7.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G70071" weight="4000.00" grossWeight="4000.00">
+                                        <stock id="1" quantity="460,00"/>
+                                                                    <price gross="7.85" net="7.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7708_0_14816775.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7708_1_14816778.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7709" vat="0" code="G70072" code_on_card="G70072" EAN="5901477161384" code_producer="5901477161384">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107748" name="Garden Hoses" path="Garden\Garden Hoses"/>
+            <category_idosell path="Garden\Garden Hoses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/soaker-hose-1-2-50m"/>
+                        <description>
+                            <name><![CDATA[Soaker Hose 1/2" 50m]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 50m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 50m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Soaker Hose is great for watering shrubs, plants and more directly to the plant’s root zone. The porous material of a soaker hose allows water to seep out at an even, slow rate.</p><br/><ul><br/><li>Can be used above or below ground</li><br/><li>Aqua pores deliver water direct to the root zone</li><br/><li>1/2 inch diameter, 50m length</li><br/><li>End cap allows multiple hoses to be joined together</li><br/><li>Designed for use with low water pressure</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.8" net="12.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G70072" weight="4000.00" grossWeight="4000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.8" net="12.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7709_0_14020976.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7709_1_14518720.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7710" vat="0" code="G13501" code_on_card="G13501" EAN="5901477161391" code_producer="5901477161391">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107898" name="Specialized Tools for Vehicles" path="Tools for The Workshop and Garage\Specialized Tools for Vehicles"/>
+            <category_idosell path="Tools for The Workshop and Garage\Specialized Tools for Vehicles" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/spark-plug-wrench-3-8-14mm-12pt-renault-bmw"/>
+                        <description>
+                            <name><![CDATA[Spark Plug Wrench 3/8" 14mm 12pt Renault BMW]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Spark Plug Wrench for many BMW nad Renault engines. 3/8-inch drive, 12 point, 14mm with thin wall. Support 3/8" drive ratchet wrench. The thin wall spark plug socket is made of chrome vanadium steel.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Spark Plug Wrench for many BMW nad Renault engines. 3/8-inch drive, 12 point, 14mm with thin wall. Support 3/8" drive ratchet wrench. The thin wall spark plug socket is made of chrome vanadium steel.</p>]]></short_desc>
+                            <description><![CDATA[<p>Spark Plug Wrench for many BMW nad Renault engines. 3/8-inch drive, 12 point, 14mm with thin wall. Support 3/8" drive ratchet wrench. The thin wall spark plug socket is made of chrome vanadium steel.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.89" net="1.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G13501" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="139,00"/>
+                                                                    <price gross="1.89" net="1.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7710_0_14816668.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7710_1_14816677.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7710_1_14816679.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7711" vat="0" code="G10048" code_on_card="G10048" EAN="5901477161490" code_producer="5901477161490">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105300" name="The Other" path="Tools for Plumbers\The Other"/>
+            <category_idosell path="Tools for Plumbers\The Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/multi-purpose-universal-wrench-for-cabinets-10in1"/>
+                        <description>
+                            <name><![CDATA[Multi-Purpose Universal Wrench for cabinets 10in1]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Universal wrench socket, with a screwdriver, Multifunctional key for the actuation of locking systems from the areas of facilities engineering, gas and water supply and shut-off-systems. </p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Universal wrench socket, with a screwdriver, Multifunctional key for the actuation of locking systems from the areas of facilities engineering, gas and water supply and shut-off-systems. </p>]]></short_desc>
+                            <description><![CDATA[<p>Universal wrench socket, with a screwdriver, Multifunctional key for the actuation of locking systems from the areas of facilities engineering, gas and water supply and shut-off-systems. </p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.64" net="2.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10048" weight="153.00" grossWeight="158.00">
+                                        <stock id="1" quantity="441,00"/>
+                                                                    <price gross="2.64" net="2.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7711_0_14477835.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7711_1_14477878.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7711_1_14477881.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/7711_1_15210979.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="7712" vat="0" code="G81235" code_on_card="G81235" EAN="5901477161513" code_producer="5901477161513">
+                        <producer name="GEKO" id=""/>

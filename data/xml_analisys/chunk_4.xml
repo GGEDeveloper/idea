@@ -1,0 +1,1500 @@
+                        </images>
+                    </product>
+                    <product id="213" vat="0" code="C10000F" code_on_card="C10000F" EAN="5901477131387" code_producer="5901477131387">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/needle-roller-bearing-12-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Needle roller bearing #12 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.49" net="0.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000F" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.49" net="0.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/213_0_37344.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="214" vat="0" code="C10000G" code_on_card="C10000G" EAN="5901477131394" code_producer="5901477131394">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/left-loop-handle-15-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Left Loop Handle #15 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000G" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/214_0_37345.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/214_1_37346.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="215" vat="0" code="C10000H" code_on_card="C10000H" EAN="5901477131400" code_producer="5901477131400">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/right-loop-handle-16-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Right Loop Handle #16 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000H" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/215_0_37347.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/215_1_37348.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/215_1_37349.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="216" vat="0" code="C10000I" code_on_card="C10000I" EAN="5901477131417" code_producer="5901477131417">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gear-housing-21-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Gear housing #21 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.95" net="4.95"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000I" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="4.95" net="4.95"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/216_0_37350.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/216_1_37351.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="217" vat="0" code="C10000J" code_on_card="C10000J" EAN="5901477131424" code_producer="5901477131424">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ball-bearing-22-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Ball bearing #22 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.24" net="1.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000J" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.24" net="1.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/217_0_37352.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="218" vat="0" code="C10000K" code_on_card="C10000K" EAN="5901477131431" code_producer="5901477131431">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/armature-26-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Armature #26 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.84" net="10.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000K" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="21,00"/>
+                                                                    <price gross="10.84" net="10.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/218_0_37353.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="219" vat="0" code="C10000L" code_on_card="C10000L" EAN="5901477131448" code_producer="5901477131448">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-housing-32-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Motor housing #32 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.97" net="1.97"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000L" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="1.97" net="1.97"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/219_0_18511366.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/219_1_18511367.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/219_1_18511368.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="220" vat="0" code="C10000M" code_on_card="C10000M" EAN="5901477131455" code_producer="5901477131455">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/field-33-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Field #33 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.93" net="8.93"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000M" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="8.93" net="8.93"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/220_0_18511370.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/220_1_18511371.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/220_1_18511372.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="221" vat="0" code="C10000N" code_on_card="C10000N" EAN="5901477131462" code_producer="5901477131462">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carbon-brush-37-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Carbon brush #37 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.24" net="1.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000N" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.24" net="1.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/221_0_37357.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="222" vat="0" code="C10000O" code_on_card="C10000O" EAN="5901477131479" code_producer="5901477131479">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/brush-holder-cup-38-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Brush holder cup #38 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.78" net="0.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000O" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.78" net="0.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/222_0_37358.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/222_1_37359.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="223" vat="0" code="C10000P" code_on_card="C10000P" EAN="5901477131486" code_producer="5901477131486">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/controller-40-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Controller #40 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.33" net="5.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000P" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.33" net="5.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/223_0_37360.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="224" vat="0" code="C10000R" code_on_card="C10000R" EAN="5901477131493" code_producer="5901477131493">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/right-softgrip-handle-43-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Right Softgrip Handle #43 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000R" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="16,00"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/224_1_37362.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="225" vat="0" code="C10000S" code_on_card="C10000S" EAN="5901477131509" code_producer="5901477131509">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-44-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Switch #44 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.61" net="1.61"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000S" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.61" net="1.61"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/225_0_37363.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="226" vat="0" code="C10000T" code_on_card="C10000T" EAN="5901477131516" code_producer="5901477131516">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/diode-47-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Diode #47 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.11" net="1.11"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000T" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="18,00"/>
+                                                                    <price gross="1.11" net="1.11"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/226_0_37364.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/226_1_37365.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="227" vat="0" code="C10000U" code_on_card="C10000U" EAN="5901477131523" code_producer="5901477131523">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/left-softgrip-handle-51-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Left Softgrip Handle #51 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000U" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/227_1_37367.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/227_1_37368.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="228" vat="0" code="C10000W" code_on_card="C10000W" EAN="5901477131530" code_producer="5901477131530">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105269" name="Car Polishers" path="Spare Parts\Car Polishers"/>
+            <category_idosell path="Spare Parts\Car Polishers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cord-guard-52-for-polishing-device"/>
+                        <description>
+                            <name><![CDATA[Cord Guard #52 for Polishing Device]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.23" net="2.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C10000W" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.23" net="2.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/228_0_37369.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="331" vat="0" code="CG00900-1" code_on_card="CG00900-1" EAN="5901477142031" code_producer="5901477142031">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107802" name="Pipe Crimpers and Accessories" path="Tools for Plumbers\Pipe Crimpers and Accessories"/>
+            <category_idosell path="Tools for Plumbers\Pipe Crimpers and Accessories" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stones-for-g00900-mechanical-pex-pipe-crimping-tool"/>
+                        <description>
+                            <name><![CDATA[Stones for G00900 Mechanical Pex Pipe Crimping Tool]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="29.52" net="29.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00900-1" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="29.52" net="29.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/331_0_37218.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="332" vat="0" code="CG00911-1" code_on_card="CG00911-1" EAN="5901477142048" code_producer="5901477142048">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/adjustment-ring-for-hydraulic-gear-puller-10t"/>
+                        <description>
+                            <name><![CDATA[Adjustment ring for Hydraulic gear puller 10T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.19" net="8.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00911-1" weight="2080.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.19" net="8.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/332_0_26.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/332_1_27.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="333" vat="0" code="CG00911-2" code_on_card="CG00911-2" EAN="5901477142055" code_producer="5901477142055">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ring-gastet-for-hydraulic-gear-puller-10t"/>
+                        <description>
+                            <name><![CDATA[Ring gastet for Hydraulic gear puller 10T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.02" net="6.02"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00911-2" weight="2080.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.02" net="6.02"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/333_0_28.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="334" vat="0" code="CG00911-3" code_on_card="CG00911-3" EAN="5901477142062" code_producer="5901477142062">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tree-jaw-for-hydraulic-gear-puller-10t"/>
+                        <description>
+                            <name><![CDATA[Tree-jaw for hydraulic gear puller 10T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.94" net="13.94"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00911-3" weight="1720.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="13.94" net="13.94"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/334_0_29.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="335" vat="0" code="CG00912-1" code_on_card="CG00912-1" EAN="5901477142079" code_producer="5901477142079">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/adjustment-ring-for-hydraulic-gear-puller-20t"/>
+                        <description>
+                            <name><![CDATA[Adjustment ring for Hydraulic gear puller 20T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.07" net="11.07"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00912-1" weight="3260.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="11.07" net="11.07"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/335_0_30.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/335_1_31.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="336" vat="0" code="CG00912-2" code_on_card="CG00912-2" EAN="5901477142086" code_producer="5901477142086">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ring-gastet-for-hydraulic-gear-puller-20t"/>
+                        <description>
+                            <name><![CDATA[Ring gastet for Hydraulic gear puller 20T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.07" net="11.07"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00912-2" weight="3260.00" grossWeight="0.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="11.07" net="11.07"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/336_0_32.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="337" vat="0" code="CG00912-3" code_on_card="CG00912-3" EAN="5901477142093" code_producer="5901477142093">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105272" name="Hydraulic Pullers" path="Spare Parts\Hydraulic Pullers"/>
+            <category_idosell path="Spare Parts\Hydraulic Pullers" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tree-jaw-for-hydraulic-gear-puller-20t"/>
+                        <description>
+                            <name><![CDATA[Tree-jaw for hydraulic gear puller 20T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.89" net="20.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG00912-3" weight="1770.00" grossWeight="0.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="20.89" net="20.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/337_0_33.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="338" vat="0" code="CG01021-1" code_on_card="CG01021-1" EAN="5901477142109" code_producer="5901477142109">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-hand-oil-pump-3-tube-blue"/>
+                        <description>
+                            <name><![CDATA[Handle for Hand oil pump 3 tube blue]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.55" net="0.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01021-1" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.55" net="0.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/338_0_34.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="339" vat="0" code="CG01087-1" code_on_card="CG01087-1" EAN="5901477142116" code_producer="5901477142116">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-g01087-150-300kg"/>
+                        <description>
+                            <name><![CDATA[Switch for G01087 150/300kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.77" net="12.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01087-1" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="112,00"/>
+                                                                    <price gross="12.77" net="12.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/339_0_5083190.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="340" vat="0" code="CG01087-2" code_on_card="CG01087-2" EAN="5901477142123" code_producer="5901477142123">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-g01087-150-300kg"/>
+                        <description>
+                            <name><![CDATA[Stator for G01087 150/300kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="21.89" net="21.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01087-2" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="21.89" net="21.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/340_0_5083192.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/340_1_5083193.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="341" vat="0" code="CG01088-1" code_on_card="CG01088-1" EAN="5901477142130" code_producer="5901477142130">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-g01088-300-600kg"/>
+                        <description>
+                            <name><![CDATA[Switch for G01088 300/600kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.77" net="12.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01088-1" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.77" net="12.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/341_0_5083195.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="342" vat="0" code="CG01088-2" code_on_card="CG01088-2" EAN="5901477142147" code_producer="5901477142147">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-g01088-300-600kg"/>
+                        <description>
+                            <name><![CDATA[Stator for G01088 300/600kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="29.52" net="29.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01088-2" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="29.52" net="29.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/342_0_5083197.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/342_1_5083198.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="343" vat="0" code="CG01089-1" code_on_card="CG01089-1" EAN="5901477142154" code_producer="5901477142154">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-g01089-400-800kg"/>
+                        <description>
+                            <name><![CDATA[Switch for G01089 400/800kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.79" net="12.79"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01089-1" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.79" net="12.79"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/343_0_5083200.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="344" vat="0" code="CG01089-2" code_on_card="CG01089-2" EAN="5901477142161" code_producer="5901477142161">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105273" name="Electric Winches" path="Spare Parts\Electric Winches"/>
+            <category_idosell path="Spare Parts\Electric Winches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-g01089-400-800kg"/>
+                        <description>
+                            <name><![CDATA[Stator for G01089 400/800kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="38.48" net="38.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01089-2" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="38.48" net="38.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/344_0_5083202.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/344_1_5083203.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="356" vat="0" code="CG02019-5" code_on_card="CG02019-5" EAN="5901477134807" code_producer="5901477134807">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105270" name="Cabin and Siphon Sandblasters" path="Spare Parts\Cabin and Siphon Sandblasters"/>
+            <category_idosell path="Spare Parts\Cabin and Siphon Sandblasters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/axle-for-g02019"/>
+                        <description>
+                            <name><![CDATA[Axle for G02019]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.18" net="3.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02019-5" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.18" net="3.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="361" vat="0" code="CG02021-27" code_on_card="CG02021-27" EAN="5901477134852" code_producer="5901477134852">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105270" name="Cabin and Siphon Sandblasters" path="Spare Parts\Cabin and Siphon Sandblasters"/>
+            <category_idosell path="Spare Parts\Cabin and Siphon Sandblasters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/transformer-for-g02021"/>
+                        <description>
+                            <name><![CDATA[Transformer for G02021]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.35" net="8.35"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02021-27" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.35" net="8.35"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="365" vat="0" code="CG02022-31" code_on_card="CG02022-31" EAN="5901477134890" code_producer="5901477134890">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105270" name="Cabin and Siphon Sandblasters" path="Spare Parts\Cabin and Siphon Sandblasters"/>
+            <category_idosell path="Spare Parts\Cabin and Siphon Sandblasters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/set-of-screws-for-g02022"/>
+                        <description>
+                            <name><![CDATA[Set of screws for G02022]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.36" net="0.36"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02022-31" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="0.36" net="0.36"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="369" vat="0" code="CG02026-22" code_on_card="CG02026-22" EAN="5901477134937" code_producer="5901477134937">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105270" name="Cabin and Siphon Sandblasters" path="Spare Parts\Cabin and Siphon Sandblasters"/>
+            <category_idosell path="Spare Parts\Cabin and Siphon Sandblasters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-for-g02026"/>
+                        <description>
+                            <name><![CDATA[Motor for G02026]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="78.09" net="78.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02026-22" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="78.09" net="78.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="376" vat="0" code="CG02082-2" code_on_card="CG02082-2" EAN="5901477134333" code_producer="5901477134333">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105275" name="Hydraulic Presses" path="Spare Parts\Hydraulic Presses"/>
+            <category_idosell path="Spare Parts\Hydraulic Presses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/20-ton-hydraulic-cylinder-for-shop-press"/>
+                        <description>
+                            <name><![CDATA[20 Ton Hydraulic Cylinder for Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="57.38" net="57.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02082-2" weight="10500.00" grossWeight="11000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="57.38" net="57.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/376_0_36942.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/376_1_36943.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/376_1_36944.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="378" vat="0" code="CG02083-2" code_on_card="CG02083-2" EAN="5901477134357" code_producer="5901477134357">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105275" name="Hydraulic Presses" path="Spare Parts\Hydraulic Presses"/>
+            <category_idosell path="Spare Parts\Hydraulic Presses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/30-ton-hydraulic-cylinder-for-shop-press"/>
+                        <description>
+                            <name><![CDATA[30 Ton Hydraulic Cylinder for Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="70.78" net="70.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02083-2" weight="13000.00" grossWeight="14000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="70.78" net="70.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/378_0_36945.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/378_1_36946.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/378_1_36947.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="379" vat="0" code="CG02086-1" code_on_card="CG02086-1" EAN="5901477134364" code_producer="5901477134364">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105275" name="Hydraulic Presses" path="Spare Parts\Hydraulic Presses"/>
+            <category_idosell path="Spare Parts\Hydraulic Presses" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hydraulic-pump-for-foot-operated-20-ton-shop-press"/>
+                        <description>
+                            <name><![CDATA[Hydraulic Pump for Foot Operated 20 Ton Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="52.82" net="52.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG02086-1" weight="12000.00" grossWeight="13000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="52.82" net="52.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/379_0_36948.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/379_1_36949.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/379_1_36950.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="380" vat="0" code="CG73216A" code_on_card="CG73216A" EAN="5901477140570" code_producer="5901477140570">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ac-adapter-charger-for-battery-powered-sprayer"/>
+                        <description>
+                            <name><![CDATA[AC Adapter Charger for Battery Powered Sprayer]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.92" net="3.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG73216A" weight="120.00" grossWeight="130.00">
+                                        <stock id="1" quantity="255,00"/>
+                                                                    <price gross="3.92" net="3.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/380_0_36717.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/380_1_36718.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="381" vat="0" code="CG80250-11A" code_on_card="CG80250-11A" EAN="5901477133336" code_producer="5901477133336">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-cylinder-head"/>
+                        <description>
+                            <name><![CDATA[6,5HP Cylinder head]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="18.82" net="18.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-11A" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="17,00"/>
+                                                                    <price gross="18.82" net="18.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="382" vat="0" code="CG80250-14A" code_on_card="CG80250-14A" EAN="5901477133343" code_producer="5901477133343">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-carburetor"/>
+                        <description>
+                            <name><![CDATA[6,5HP Carburetor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.13" net="7.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-14A" weight="200.00" grossWeight="220.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.13" net="7.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="383" vat="0" code="CG80250-152" code_on_card="CG80250-152" EAN="5901477133350" code_producer="5901477133350">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-recoil-starter"/>
+                        <description>
+                            <name><![CDATA[6,5HP Recoil starter]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.2" net="3.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-152" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.2" net="3.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="384" vat="0" code="CG80250-16A" code_on_card="CG80250-16A" EAN="5901477133367" code_producer="5901477133367">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-air-cleaner-gasket"/>
+                        <description>
+                            <name><![CDATA[6,5HP Air cleaner gasket]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.37" net="2.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-16A" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="2.37" net="2.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="385" vat="0" code="CG80250-1A" code_on_card="CG80250-1A" EAN="5901477133374" code_producer="5901477133374">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-muffler"/>
+                        <description>
+                            <name><![CDATA[6,5HP Muffler]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.55" net="4.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-1A" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.55" net="4.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="386" vat="0" code="CG80250-218" code_on_card="CG80250-218" EAN="5901477133381" code_producer="5901477133381">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-filter-element"/>
+                        <description>
+                            <name><![CDATA[13HP Filter element]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.45" net="3.45"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-218" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.45" net="3.45"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="387" vat="0" code="CG80250-25A" code_on_card="CG80250-25A" EAN="5901477133398" code_producer="5901477133398">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-exhaust-system"/>
+                        <description>
+                            <name><![CDATA[6,5HP Exhaust system]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.14" net="5.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-25A" weight="300.00" grossWeight="300.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="5.14" net="5.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="388" vat="0" code="CG80250-260" code_on_card="CG80250-260" EAN="5901477133404" code_producer="5901477133404">

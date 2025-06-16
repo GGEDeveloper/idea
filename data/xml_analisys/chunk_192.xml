@@ -1,0 +1,1500 @@
+                        <card url="https://b2b.geko.pl/en/starter-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Starter for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.26" net="9.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-9" weight="360.00" grossWeight="360.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="9.26" net="9.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9338" vat="0" code="CT05015-2-81" code_on_card="CT05015-2-81" EAN="5901477176555" code_producer="5901477176555">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/engine-gasket-set-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Engine gasket set for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.89" net="6.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-81" weight="20.00" grossWeight="20.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="6.89" net="6.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_0_18514501.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514502.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514503.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514504.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514505.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514506.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514507.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514508.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514509.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9338_1_18514510.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9339" vat="0" code="CT05015-2-79" code_on_card="CT05015-2-79" EAN="5901477176548" code_producer="5901477176548">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/piston-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Piston for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="16.19" net="16.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-79" weight="60.00" grossWeight="60.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="16.19" net="16.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9339_0_18514493.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9339_1_18514494.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9340" vat="0" code="CT05015-1-10" code_on_card="CT05015-1-10" EAN="5901477176432" code_producer="5901477176432">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-switch-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Ignition switch for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.59" net="8.59"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-1-10" weight="220.00" grossWeight="220.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="8.59" net="8.59"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9341" vat="0" code="CT05015-2-78" code_on_card="CT05015-2-78" EAN="5901477176531" code_producer="5901477176531">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/piston-rings-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Piston rings for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.6" net="3.6"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-78" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="3.6" net="3.6"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9341_0_18514523.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9341_1_18514524.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9343" vat="0" code="CT05015-2-54" code_on_card="CT05015-2-54" EAN="5901477176487" code_producer="5901477176487">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carburetor-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Carburetor for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.76" net="11.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-54" weight="240.00" grossWeight="240.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="11.76" net="11.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9343_0_18514487.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9343_1_18514488.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9344" vat="0" code="CT05015-2-10" code_on_card="CT05015-2-10" EAN="5901477176456" code_producer="5901477176456">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-filter-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Air filter for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.64" net="11.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-10" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="11.64" net="11.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9344_0_18514484.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9344_1_18514485.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9345" vat="0" code="CT05015-2-19" code_on_card="CT05015-2-19" EAN="5901477176463" code_producer="5901477176463">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotor-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Rotor for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.58" net="20.58"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-19" weight="1540.00" grossWeight="1540.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="20.58" net="20.58"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9346" vat="0" code="CT05015-2-23" code_on_card="CT05015-2-23" EAN="5901477176470" code_producer="5901477176470">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-generator-t05015"/>
+                        <description>
+                            <name><![CDATA[Stator for generator T05015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="26.45" net="26.45"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05015-2-23" weight="960.00" grossWeight="960.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="26.45" net="26.45"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9346_0_18514539.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9346_1_18514540.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9346_1_18514541.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9347" vat="0" code="GH02001" code_on_card="GH02001" EAN="5901477177477" code_producer="5901477177477">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109132" name="Other" path="Household Items\Other"/>
+            <category_idosell path="Household Items\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/massage-gun-100w"/>
+                        <description>
+                            <name><![CDATA[Massage gun 100W]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Discover unparalleled relief and pleasure with our massage gun. This advanced massage gun is designed to provide the highest quality and effectiveness. In the set, you'll find up to 8 different attachments, allowing you to customize the massage to your individual needs and preferences. Whether you need a relaxing massage, deep muscle relaxation, or post-workout recovery, our massage gun will meet your expectations.</p><br/><p>The 100W power ensures intense and effective massages, targeting deeper muscle layers to reduce tension and pain. Combined with 30 speed levels, you'll have full control over the massage intensity, adjusting it to your preferences.</p><br/><p>The 2400mAh battery capacity ensures long-lasting use without frequent recharging, allowing you to use the massage gun anywhere and anytime without needing to plug it in.</p><br/><p>Made from the highest quality materials, our massage gun is not only incredibly effective but also durable and ergonomic to use.</p><br/><p>Feel the relaxation and relief after a long day, unwind after a workout, or release muscle tension at any time. Choose our massage gun, and your body and mind will thank you for it.</p><br/><h4>Product features:</h4><br/><ul><br/><li>8 different attachments for various massages</li><br/><li>100W power for intense and effective performance</li><br/><li>2400mAh battery for prolonged usage</li><br/><li>30 speed levels to customize the massage to your needs</li><br/><li>Durable and ergonomic design for maximum comfort</li><br/></ul><br/><h4>Usage of individual massage attachments:</h4><br/><ul><br/><li><strong>Flat attachment:</strong> Helps with targeted massaging of smaller and larger muscle groups. You can feel immediate relief after massaging tight glutes or chest.</li><br/><li><strong>Ball attachment</strong>: Suitable for massaging all muscles and for muscle relaxation before and after exercises.</li><br/><li><strong>"U"-shaped attachment:</strong> Suitable for muscles on both sides of the spine. The "U"-shaped attachment avoids the spine and neck vertebrae (cannot be used directly on the spine and neck vertebrae as it may cause physical damage).</li><br/><li><strong>Finger-shaped attachment:</strong> Suitable for massaging feet and hands. It is small but can generate significant power.</li><br/><li><strong>Blade-shaped attachment:</strong> Has a narrow shape and is intended for very deep tissue massage.</li><br/><li><strong>Bullet-shaped attachment:</strong> Allows effective muscle relaxation, targeting trigger points.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Speed control: <strong>30-speed levels - from 1200 to 3800 RPM</strong></p><br/><p>Voltage: <strong>16.8 V</strong></p><br/><p>Number of massage attachments: 8</p><br/><p>Maximum power: <strong>150W</strong></p><br/><p>Effective power:<strong> 100W</strong></p><br/><p>Battery:<strong> lithium-ion</strong></p><br/><p>Battery capacity: <strong>2400mAh</strong></p><br/><p>Charging time: <strong>60-90 minutes</strong></p><br/><p>Operating time: <strong>1-5 hours</strong></p><br/><p>Noise level: <strong>45 to 65 dB</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Discover unparalleled relief and pleasure with our massage gun. This advanced massage gun is designed to provide the highest quality and effectiveness. In the set, you'll find up to 8 different attachments, allowing you to customize the massage to your individual needs and preferences. Whether you need a relaxing massage, deep muscle relaxation, or post-workout recovery, our massage gun will meet your expectations.</p><br/><p>The 100W power ensures intense and effective massages, targeting deeper muscle layers to reduce tension and pain. Combined with 30 speed levels, you'll have full control over the massage intensity, adjusting it to your preferences.</p><br/><p>The 2400mAh battery capacity ensures long-lasting use without frequent recharging, allowing you to use the massage gun anywhere and anytime without needing to plug it in.</p><br/><p>Made from the highest quality materials, our massage gun is not only incredibly effective but also durable and ergonomic to use.</p><br/><p>Feel the relaxation and relief after a long day, unwind after a workout, or release muscle tension at any time. Choose our massage gun, and your body and mind will thank you for it.</p><br/><h4>Product features:</h4><br/><ul><br/><li>8 different attachments for various massages</li><br/><li>100W power for intense and effective performance</li><br/><li>2400mAh battery for prolonged usage</li><br/><li>30 speed levels to customize the massage to your needs</li><br/><li>Durable and ergonomic design for maximum comfort</li><br/></ul><br/><h4>Usage of individual massage attachments:</h4><br/><ul><br/><li><strong>Flat attachment:</strong> Helps with targeted massaging of smaller and larger muscle groups. You can feel immediate relief after massaging tight glutes or chest.</li><br/><li><strong>Ball attachment</strong>: Suitable for massaging all muscles and for muscle relaxation before and after exercises.</li><br/><li><strong>"U"-shaped attachment:</strong> Suitable for muscles on both sides of the spine. The "U"-shaped attachment avoids the spine and neck vertebrae (cannot be used directly on the spine and neck vertebrae as it may cause physical damage).</li><br/><li><strong>Finger-shaped attachment:</strong> Suitable for massaging feet and hands. It is small but can generate significant power.</li><br/><li><strong>Blade-shaped attachment:</strong> Has a narrow shape and is intended for very deep tissue massage.</li><br/><li><strong>Bullet-shaped attachment:</strong> Allows effective muscle relaxation, targeting trigger points.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Speed control: <strong>30-speed levels - from 1200 to 3800 RPM</strong></p><br/><p>Voltage: <strong>16.8 V</strong></p><br/><p>Number of massage attachments: 8</p><br/><p>Maximum power: <strong>150W</strong></p><br/><p>Effective power:<strong> 100W</strong></p><br/><p>Battery:<strong> lithium-ion</strong></p><br/><p>Battery capacity: <strong>2400mAh</strong></p><br/><p>Charging time: <strong>60-90 minutes</strong></p><br/><p>Operating time: <strong>1-5 hours</strong></p><br/><p>Noise level: <strong>45 to 65 dB</strong></p>]]></short_desc>
+                            <description><![CDATA[<p>Discover unparalleled relief and pleasure with our massage gun. This advanced massage gun is designed to provide the highest quality and effectiveness. In the set, you'll find up to 8 different attachments, allowing you to customize the massage to your individual needs and preferences. Whether you need a relaxing massage, deep muscle relaxation, or post-workout recovery, our massage gun will meet your expectations.</p><br/><p>The 100W power ensures intense and effective massages, targeting deeper muscle layers to reduce tension and pain. Combined with 30 speed levels, you'll have full control over the massage intensity, adjusting it to your preferences.</p><br/><p>The 2400mAh battery capacity ensures long-lasting use without frequent recharging, allowing you to use the massage gun anywhere and anytime without needing to plug it in.</p><br/><p>Made from the highest quality materials, our massage gun is not only incredibly effective but also durable and ergonomic to use.</p><br/><p>Feel the relaxation and relief after a long day, unwind after a workout, or release muscle tension at any time. Choose our massage gun, and your body and mind will thank you for it.</p><br/><h4>Product features:</h4><br/><ul><br/><li>8 different attachments for various massages</li><br/><li>100W power for intense and effective performance</li><br/><li>2400mAh battery for prolonged usage</li><br/><li>30 speed levels to customize the massage to your needs</li><br/><li>Durable and ergonomic design for maximum comfort</li><br/></ul><br/><h4>Usage of individual massage attachments:</h4><br/><ul><br/><li><strong>Flat attachment:</strong> Helps with targeted massaging of smaller and larger muscle groups. You can feel immediate relief after massaging tight glutes or chest.</li><br/><li><strong>Ball attachment</strong>: Suitable for massaging all muscles and for muscle relaxation before and after exercises.</li><br/><li><strong>"U"-shaped attachment:</strong> Suitable for muscles on both sides of the spine. The "U"-shaped attachment avoids the spine and neck vertebrae (cannot be used directly on the spine and neck vertebrae as it may cause physical damage).</li><br/><li><strong>Finger-shaped attachment:</strong> Suitable for massaging feet and hands. It is small but can generate significant power.</li><br/><li><strong>Blade-shaped attachment:</strong> Has a narrow shape and is intended for very deep tissue massage.</li><br/><li><strong>Bullet-shaped attachment:</strong> Allows effective muscle relaxation, targeting trigger points.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Speed control: <strong>30-speed levels - from 1200 to 3800 RPM</strong></p><br/><p>Voltage: <strong>16.8 V</strong></p><br/><p>Number of massage attachments: 8</p><br/><p>Maximum power: <strong>150W</strong></p><br/><p>Effective power:<strong> 100W</strong></p><br/><p>Battery:<strong> lithium-ion</strong></p><br/><p>Battery capacity: <strong>2400mAh</strong></p><br/><p>Charging time: <strong>60-90 minutes</strong></p><br/><p>Operating time: <strong>1-5 hours</strong></p><br/><p>Noise level: <strong>45 to 65 dB</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="23.2" net="23.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="GH02001" weight="1450.00" grossWeight="1520.00">
+                                        <stock id="1" quantity="137,00"/>
+                                                                    <price gross="23.2" net="23.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512450.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512451.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512452.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512453.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512454.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512455.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512456.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512457.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512458.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512459.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9347_1_18512460.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9348" vat="0" code="G80515" code_on_card="G80515" EAN="5901477177149" code_producer="5901477177149">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gas-barbecue-grill-4-burners-3-1-11-6kw"/>
+                        <description>
+                            <name><![CDATA[Gas barbecue grill 4 burners (3 + 1) 11,6kW]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada trzy palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 11,6 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>11,6 kW</strong></p>
+<p>Moc wyjściowa: <strong>3x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>3 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 121 x 54 x 107 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>51 x 41 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>47,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada trzy palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 11,6 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>11,6 kW</strong></p>
+<p>Moc wyjściowa: <strong>3x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>3 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 121 x 54 x 107 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>51 x 41 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>47,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada trzy palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 11,6 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>11,6 kW</strong></p>
+<p>Moc wyjściowa: <strong>3x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>3 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 121 x 54 x 107 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>51 x 41 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>47,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="156" net="156"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80515" weight="32500.00" grossWeight="36500.00">
+                                        <stock id="1" quantity="234,00"/>
+                                                                    <price gross="156" net="156"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503867.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503868.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503869.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503871.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503872.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503873.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503874.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503875.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503876.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503877.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9348_1_18503893.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9349" vat="0" code="G80516" code_on_card="G80516" EAN="5901477177156" code_producer="5901477177156">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gas-barbecue-grill-5-burners-4-1-15kw"/>
+                        <description>
+                            <name><![CDATA[Gas barbecue grill 5 burners (4 + 1) 15kW]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada cztery palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 14,5 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>14,5 kW</strong></p>
+<p>Moc wyjściowa: <strong>4x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>4 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 132 x 58 x 109,5 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>59 x 41,5 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>59,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada cztery palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 14,5 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>14,5 kW</strong></p>
+<p>Moc wyjściowa: <strong>4x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>4 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 132 x 58 x 109,5 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>59 x 41,5 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>59,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Marzysz o grillowaniu na najwyższym poziomie w Twoim ogrodzie?</strong> Poznaj nasz niezawodny ogrodowy grill gazowy, który spełni Twoje oczekiwania i jeszcze więcej!</p>
+<p>Dlaczego ograniczać się do standardowego grillowania? Z naszym ogrodowym grillem gazowym możesz rozwinąć swoje kulinarną wyobraźnię i zaskoczyć swoich gości.</p>
+<p>Odkryj, dlaczego nasz grill to must-have dla wszystkich miłośników grillowania:</p>
+<h4>Wszechstronność grillowania:</h4>
+<p>Nasz grill gazowy posiada cztery palniki główne, które zapewniają równomierne rozprowadzenie ciepła, a także palnik dedykowany dla garnka lub czajnika. To oznacza, że możesz jednocześnie grillować i gotować ulubione potrawy. Bez ograniczeń kulinarnych!</p>
+<h4>Potężna moc grzewcza:</h4>
+<p>Z całkowitą mocą grzewczą 14,5 kW, ten grill zapewni Ci szybkie nagrzewanie i gotowanie. Soczyste steki, smakowite warzywa, czy aromatyczne kiełbaski będą gotowe w mgnieniu oka. Ciesz się smakiem bez długiego oczekiwania!</p>
+<h4>Praktyczność na pierwszym miejscu:</h4>
+<p>Nasz grill został zaprojektowany z myślą o Twojej wygodzie. Posiada pojemny schowek, w którym możesz przechowywać akcesoria grillowe, takie jak przyrządy czy przyprawy. Wszystko, czego potrzebujesz, na wyciągnięcie ręki! Dodatkowo, wyposażony jest w pokrywę z wbudowanym termometrem, abyś zawsze miał kontrolę nad temperaturą podczas grillowania.</p>
+<h4>Indywidualna kontrola:</h4>
+<p>Każdy palnik ma oddzielną regulację, co daje Ci pełną kontrolę nad temperaturą na różnych strefach grilla. Możesz łatwo dostosować ognie do różnych potraw, aby uzyskać perfekcyjne efekty smażenia. A zapalnik piezoelektryczny sprawia, że rozpoczęcie grillowania jest szybkie i bezproblemowe.</p>
+<h4>Mobilność i stabilność:</h4>
+<p>Nasz grill jest wyposażony w cztery skrętne koła, w tym dwa z hamulcem. Dzięki nim możesz swobodnie przemieszczać grill po ogrodzie i ustawić go w dogodnym miejscu. Bez problemu dopasujesz go do swoich preferencji.</p>
+<h4>Łatwe czyszczenie:</h4>
+<p>Po zakończonym grillowaniu nie martw się o tłuste plamy. Nasz grill posiada ociekacz ze specjalnym pojemnikiem na tłuszcz, który skutecznie zbiera nadmiar tłuszczu i soki z mięsa. To ułatwia czyszczenie i utrzymanie grilla w czystości.</p>
+<h4>Specyfikacja techniczna:</h4>
+<p>Całkowita moc grzewcza: <strong>14,5 kW</strong></p>
+<p>Moc wyjściowa: <strong>4x 2,9 kW + 1x 2,9 kW</strong></p>
+<p>Ilość palników: <strong>4 + 1</strong></p>
+<p>Zapłon: <strong>piezoelektryczny</strong></p>
+<p>Regulator płomienia: <strong>płynna</strong></p>
+<p>Materiał wykonania: <strong>blacha stalowa malowana proszkowo</strong></p>
+<p>Wymiary (wys. x gł. x szer.):<strong> 132 x 58 x 109,5 cm</strong></p>
+<p>Powierzchnia grillowania (dł. x szer.): <strong>59 x 41,5 cm</strong></p>
+<p>Powierzchnia podgrzewania (dł. x szer.): <strong>59,5 x 12 cm</strong></p>
+<p>Wydatek gazu:<strong> G30: 843 g/h G31: 829 g/h</strong></p>
+<p>Rodzaj gazu: <strong>gaz płynny (propan / butan)</strong></p>
+<p>Ciśnienie gazu: <strong>37mbar</strong></p>
+<p>Butla gazu: <strong>dostępna w handlu butla gazowa o wadze 3, 5 lub 11 kg</strong></p>
+<p>Średnica dyszy palnika: <strong>0,79 mm</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="166.5" net="166.5"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80516" weight="29000.00" grossWeight="31500.00">
+                                        <stock id="1" quantity="243,00"/>
+                                                                    <price gross="166.5" net="166.5"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503878.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503879.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503880.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503882.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503883.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503884.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503885.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503886.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503887.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503888.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503889.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503892.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9349_1_18503894.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9350" vat="0" code="CG80515-0" code_on_card="CG80515-0" EAN="5901477177187" code_producer="5901477177187">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80515-barbecue-gas-grill-cover"/>
+                        <description>
+                            <name><![CDATA[G80515 barbecue gas grill cover]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></short_desc>
+                            <description><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.24" net="12.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80515-0" weight="1400.00" grossWeight="1400.00">
+                                        <stock id="1" quantity="260,00"/>
+                                                                    <price gross="12.24" net="12.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9350_0_18503895.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9351" vat="0" code="CG80516-0" code_on_card="CG80516-0" EAN="5901477177217" code_producer="5901477177217">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80516-barbecue-gas-grill-cover"/>
+                        <description>
+                            <name><![CDATA[G80516 barbecue gas grill cover]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></short_desc>
+                            <description><![CDATA[<p>A grill cover is an essential accessory for all grill enthusiasts. Made from high-quality materials, it provides protection against weather conditions, dust, and other pollutants.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.14" net="12.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80516-0" weight="880.00" grossWeight="880.00">
+                                        <stock id="1" quantity="37,00"/>
+                                                                    <price gross="12.14" net="12.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9351_0_18503897.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9351_1_18503898.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9352" vat="0" code="CG80515-3" code_on_card="CG80515-3" EAN="5901477177194" code_producer="5901477177194">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="100018" name="Spare Parts" path="Spare Parts"/>
+            <category_idosell path="Spare Parts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80515-barbecue-gas-grill-grates-2pcs-set"/>
+                        <description>
+                            <name><![CDATA[G80515 barbecue gas grill grates (2pcs set)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h4>Specyfikacja: </h4>
+<p>Wymiary rusztu: <strong>24,5 x 42 cm </strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h4>Specyfikacja: </h4>
+<p>Wymiary rusztu: <strong>24,5 x 42 cm </strong></p>]]></short_desc>
+                            <description><![CDATA[<h4>Specyfikacja: </h4>
+<p>Wymiary rusztu: <strong>24,5 x 42 cm </strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.29" net="15.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80515-3" weight="1220.00" grossWeight="1220.00">
+                                        <stock id="1" quantity="21,00"/>
+                                                                    <price gross="15.29" net="15.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9352_0_18512998.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9352_1_18512842.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9352_1_18512843.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9352_1_18512844.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9353" vat="0" code="CG80516-3" code_on_card="CG80516-3" EAN="5901477177224" code_producer="5901477177224">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="100018" name="Spare Parts" path="Spare Parts"/>
+            <category_idosell path="Spare Parts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80516-barbecue-gas-grill-grates-2pcs-set"/>
+                        <description>
+                            <name><![CDATA[G80516 barbecue gas grill grates (2pcs set)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.95" net="15.95"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80516-3" weight="1500.00" grossWeight="1500.00">
+                                        <stock id="1" quantity="21,00"/>
+                                                                    <price gross="15.95" net="15.95"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9353_0_18512999.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9353_1_18512846.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9353_1_18512847.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9353_1_18512848.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9354" vat="0" code="CG80515-4" code_on_card="CG80515-4" EAN="5901477177200" code_producer="5901477177200">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80515-barbecue-gas-grill-heat-plates-3pcs-set"/>
+                        <description>
+                            <name><![CDATA[G80515 barbecue gas grill heat plates (3pcs set)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.98" net="15.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80515-4" weight="380.00" grossWeight="380.00">
+                                        <stock id="1" quantity="39,00"/>
+                                                                    <price gross="15.98" net="15.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9354_0_18503899.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9354_1_18503900.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9355" vat="0" code="CG80516-4" code_on_card="CG80516-4" EAN="5901477177231" code_producer="5901477177231">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="109846" name="Grills and Accessories" path="Garden\Grills and Accessories"/>
+            <category_idosell path="Garden\Grills and Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/g80516-barbecue-gas-grill-heat-plates-4pcs-set"/>
+                        <description>
+                            <name><![CDATA[G80516 barbecue gas grill heat plates (4pcs set)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="21.19" net="21.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80516-4" weight="680.00" grossWeight="680.00">
+                                        <stock id="1" quantity="32,00"/>
+                                                                    <price gross="21.19" net="21.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9355_0_18503902.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9355_1_18503903.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9356" vat="0" code="K02203" code_on_card="K02203" EAN="5901477176913" code_producer="5901477176913">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/abs-universal-stand-for-a-phone-or-tablet"/>
+                        <description>
+                            <name><![CDATA[ABS universal stand for a phone or tablet]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Plastic Stand for Desk for Phones and Tablets</h3><br/><p>We present our phone<strong>/tablet stand</strong>, which will provide comfort and stability when using mobile devices. Made of durable plastic, our stand offers an adjustable angle of inclination, allowing you to adjust it to your preferences.</p><br/><h3>Main features of the phone/tablet stand:</h3><br/><p><strong>Comfortable use:</strong> The stand has been designed to ensure maximum comfort when using your phone or tablet. Thanks to it, you can freely watch movies, browse the Internet or conduct video conferences without worrying about the inconvenient position of the device.</p><br/><p><strong>Adjustable angle of inclination:</strong> It has the ability to adjust the angle of inclination, which allows you to adapt it to your needs. You can set the optimal viewing angle to have a full screen view without holding the device in your hand.</p><br/><p><strong>Versatility:</strong> Our stand fits most phone and tablet models, regardless of their size. You can use it in both portrait and landscape orientation, providing complete flexibility when using mobile devices.</p><br/><h3>Convenient use</h3><br/><p>Thanks to our phone/tablet stand, you can enjoy comfortable and ergonomic use of your mobile devices. Watching movies, browsing the Internet or conducting video conferences will be even more comfortable and enjoyable. Whether you're working or relaxing, our stand will be an irreplaceable addition to your mobile device.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Plastic Stand for Desk for Phones and Tablets</h3><br/><p>We present our phone<strong>/tablet stand</strong>, which will provide comfort and stability when using mobile devices. Made of durable plastic, our stand offers an adjustable angle of inclination, allowing you to adjust it to your preferences.</p><br/><h3>Main features of the phone/tablet stand:</h3><br/><p><strong>Comfortable use:</strong> The stand has been designed to ensure maximum comfort when using your phone or tablet. Thanks to it, you can freely watch movies, browse the Internet or conduct video conferences without worrying about the inconvenient position of the device.</p><br/><p><strong>Adjustable angle of inclination:</strong> It has the ability to adjust the angle of inclination, which allows you to adapt it to your needs. You can set the optimal viewing angle to have a full screen view without holding the device in your hand.</p><br/><p><strong>Versatility:</strong> Our stand fits most phone and tablet models, regardless of their size. You can use it in both portrait and landscape orientation, providing complete flexibility when using mobile devices.</p><br/><h3>Convenient use</h3><br/><p>Thanks to our phone/tablet stand, you can enjoy comfortable and ergonomic use of your mobile devices. Watching movies, browsing the Internet or conducting video conferences will be even more comfortable and enjoyable. Whether you're working or relaxing, our stand will be an irreplaceable addition to your mobile device.</p>]]></short_desc>
+                            <description><![CDATA[<h3>Plastic Stand for Desk for Phones and Tablets</h3><br/><p>We present our phone<strong>/tablet stand</strong>, which will provide comfort and stability when using mobile devices. Made of durable plastic, our stand offers an adjustable angle of inclination, allowing you to adjust it to your preferences.</p><br/><h3>Main features of the phone/tablet stand:</h3><br/><p><strong>Comfortable use:</strong> The stand has been designed to ensure maximum comfort when using your phone or tablet. Thanks to it, you can freely watch movies, browse the Internet or conduct video conferences without worrying about the inconvenient position of the device.</p><br/><p><strong>Adjustable angle of inclination:</strong> It has the ability to adjust the angle of inclination, which allows you to adapt it to your needs. You can set the optimal viewing angle to have a full screen view without holding the device in your hand.</p><br/><p><strong>Versatility:</strong> Our stand fits most phone and tablet models, regardless of their size. You can use it in both portrait and landscape orientation, providing complete flexibility when using mobile devices.</p><br/><h3>Convenient use</h3><br/><p>Thanks to our phone/tablet stand, you can enjoy comfortable and ergonomic use of your mobile devices. Watching movies, browsing the Internet or conducting video conferences will be even more comfortable and enjoyable. Whether you're working or relaxing, our stand will be an irreplaceable addition to your mobile device.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.55" net="0.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02203" weight="32.00" grossWeight="32.00">
+                                        <stock id="1" quantity="2462,00"/>
+                                                                    <price gross="0.55" net="0.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_0_18506752.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_1_18506746.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_1_18506747.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_1_18506748.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_1_18506749.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9356_1_18506750.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9357" vat="0" code="K02205" code_on_card="K02205" EAN="5901477176920" code_producer="5901477176920">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/self-adhesive-cable-clips-holder-with-5-slots"/>
+                        <description>
+                            <name><![CDATA[Self-adhesive cable clips holder with 5 slots]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Cable Organizer 5-Slot Flexible Holder</h3><br/><p>If you want the cables on your desk to be organized, our holder is the perfect solution for you.</p><br/><p><strong>Main features of the cable holder:</strong></p><br/><p>??<strong>Multi-functionality:</strong>&nbsp;Our cable holder has five slots that allow you to organize various types of cables, such as those from the mouse, keyboard, charger, etc.</p><br/><p>??<strong>Aesthetic design:</strong>&nbsp;Not only does it organize cables, but it also gives them an aesthetic look, which is important for both our eyes and safety.</p><br/><p>??<strong>Practical design:</strong>&nbsp;The holder is designed to be easy to install and use (mounted with 3M double-sided tape). It has flexible openings that make it easy to insert and remove cables.</p><br/><p>??<strong>Durability and resilience:</strong>&nbsp;Our cable holder is made of high-quality rubber, known for its high durability and resilience.</p><br/><p>&nbsp;</p><br/><h3>Product features</h3><br/><ul style="list-style-type: disc;"><br/><li>Material:&nbsp;<strong>silicone</strong></li><br/><li>Cable hole diameter:&nbsp;<strong>5mm</strong></li><br/><li>Color:&nbsp;<strong>black</strong></li><br/><li>Holder dimensions:&nbsp;<strong>11.8cm x 2.2 cm x 1.4cm</strong></li><br/><li>Number of cable holes:&nbsp;<strong>5</strong></li><br/><li>Maximum cable dimensions:&nbsp;<strong>5-6mm</strong></li><br/></ul><br/><p><strong>NOTE! The holder should only be mounted on smooth surfaces. Before sticking, make sure the surface is clean, dry, and degreased.</strong></p><br/><p>&nbsp;</p><br/><h3>Elastic, Practical, and Minimalistic</h3><br/><ul style="list-style-type: disc;"><br/><li><strong>Universal and waterproof</strong></li><br/><li>Organizes cables</li><br/><li><strong>Strong adhesive</strong>&nbsp;(stick to a smooth, clean, and dry surface)</li><br/><li>Quick <strong>non-invasive installation</strong></li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Cable Organizer 5-Slot Flexible Holder</h3><br/><p>If you want the cables on your desk to be organized, our holder is the perfect solution for you.</p><br/><p><strong>Main features of the cable holder:</strong></p><br/><p>??<strong>Multi-functionality:</strong>&nbsp;Our cable holder has five slots that allow you to organize various types of cables, such as those from the mouse, keyboard, charger, etc.</p><br/><p>??<strong>Aesthetic design:</strong>&nbsp;Not only does it organize cables, but it also gives them an aesthetic look, which is important for both our eyes and safety.</p><br/><p>??<strong>Practical design:</strong>&nbsp;The holder is designed to be easy to install and use (mounted with 3M double-sided tape). It has flexible openings that make it easy to insert and remove cables.</p><br/><p>??<strong>Durability and resilience:</strong>&nbsp;Our cable holder is made of high-quality rubber, known for its high durability and resilience.</p><br/><p>&nbsp;</p><br/><h3>Product features</h3><br/><ul style="list-style-type: disc;"><br/><li>Material:&nbsp;<strong>silicone</strong></li><br/><li>Cable hole diameter:&nbsp;<strong>5mm</strong></li><br/><li>Color:&nbsp;<strong>black</strong></li><br/><li>Holder dimensions:&nbsp;<strong>11.8cm x 2.2 cm x 1.4cm</strong></li><br/><li>Number of cable holes:&nbsp;<strong>5</strong></li><br/><li>Maximum cable dimensions:&nbsp;<strong>5-6mm</strong></li><br/></ul><br/><p><strong>NOTE! The holder should only be mounted on smooth surfaces. Before sticking, make sure the surface is clean, dry, and degreased.</strong></p><br/><p>&nbsp;</p><br/><h3>Elastic, Practical, and Minimalistic</h3><br/><ul style="list-style-type: disc;"><br/><li><strong>Universal and waterproof</strong></li><br/><li>Organizes cables</li><br/><li><strong>Strong adhesive</strong>&nbsp;(stick to a smooth, clean, and dry surface)</li><br/><li>Quick <strong>non-invasive installation</strong></li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Cable Organizer 5-Slot Flexible Holder</h3><br/><p>If you want the cables on your desk to be organized, our holder is the perfect solution for you.</p><br/><p><strong>Main features of the cable holder:</strong></p><br/><p>??<strong>Multi-functionality:</strong>&nbsp;Our cable holder has five slots that allow you to organize various types of cables, such as those from the mouse, keyboard, charger, etc.</p><br/><p>??<strong>Aesthetic design:</strong>&nbsp;Not only does it organize cables, but it also gives them an aesthetic look, which is important for both our eyes and safety.</p><br/><p>??<strong>Practical design:</strong>&nbsp;The holder is designed to be easy to install and use (mounted with 3M double-sided tape). It has flexible openings that make it easy to insert and remove cables.</p><br/><p>??<strong>Durability and resilience:</strong>&nbsp;Our cable holder is made of high-quality rubber, known for its high durability and resilience.</p><br/><p>&nbsp;</p><br/><h3>Product features</h3><br/><ul style="list-style-type: disc;"><br/><li>Material:&nbsp;<strong>silicone</strong></li><br/><li>Cable hole diameter:&nbsp;<strong>5mm</strong></li><br/><li>Color:&nbsp;<strong>black</strong></li><br/><li>Holder dimensions:&nbsp;<strong>11.8cm x 2.2 cm x 1.4cm</strong></li><br/><li>Number of cable holes:&nbsp;<strong>5</strong></li><br/><li>Maximum cable dimensions:&nbsp;<strong>5-6mm</strong></li><br/></ul><br/><p><strong>NOTE! The holder should only be mounted on smooth surfaces. Before sticking, make sure the surface is clean, dry, and degreased.</strong></p><br/><p>&nbsp;</p><br/><h3>Elastic, Practical, and Minimalistic</h3><br/><ul style="list-style-type: disc;"><br/><li><strong>Universal and waterproof</strong></li><br/><li>Organizes cables</li><br/><li><strong>Strong adhesive</strong>&nbsp;(stick to a smooth, clean, and dry surface)</li><br/><li>Quick <strong>non-invasive installation</strong></li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.7" net="0.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02205" weight="20.00" grossWeight="20.00">
+                                        <stock id="1" quantity="1255,00"/>
+                                                                    <price gross="0.7" net="0.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_0_18506483.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506484.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506485.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506486.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506487.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506488.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9357_1_18506489.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9358" vat="0" code="Q00019" code_on_card="Q00019" EAN="5901477177118" code_producer="5901477177118">
+                        <producer id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/capacitive-touch-screen-stylus-pen"/>
+                        <description>
+                            <name><![CDATA[Capacitive touch screen stylus pen]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Rysik pojemnościowy, który uczyni korzystanie z Twojego telefonu i tabletu jeszcze bardziej przyjemnym i precyzyjnym!</p>
+<h4>Charakterystyka produktu: </h4>
+<ul>
+<li>Precyzja i płynność: Nasz rysik pojemnościowy został zaprojektowany z myślą o precyzji. Dzięki jego delikatnemu i płynnemu ruchowi możesz swobodnie pisać, rysować, podkreślać i nawigować po ekranie swojego urządzenia. Każdy detal będzie widoczny i wyraźny.</li>
+<li>Wygodne użytkowanie: Ergonomiczny design rysika zapewnia wygodny chwyt i minimalizuje zmęczenie dłoni podczas długiego korzystania. Możesz cieszyć się pełną kontrolą nad rysowaniem, bez niechcianych drgań czy niedokładności.</li>
+<li>Uniwersalność: Nasz rysik pojemnościowy doskonale współpracuje zarówno z telefonami, jak i tabletami. Niezależnie od marki czy modelu Twojego urządzenia, możesz cieszyć się jego wszechstronnym zastosowaniem.</li>
+<li>Naturalne wrażenia: Nasz rysik pojemnościowy zapewnia wrażenia zbliżone do tradycyjnego pisania ołówkiem czy długopisem. Dzięki jego precyzyjnej końcówce możesz tworzyć cienkie linie, pisać notatki czy rysować z doskonałą kontrolą i wrażliwością.</li>
+<li>Kompatybilność: Nasz rysik pojemnościowy jest kompatybilny z szeroką gamą urządzeń, takich jak iPhone, iPad, Samsung Galaxy, Huawei, Lenovo, Microsoft Surface i wiele innych. Bez względu na to, jakie urządzenie posiadasz, nasz rysik idealnie się do niego dopasuje</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Rysik pojemnościowy, który uczyni korzystanie z Twojego telefonu i tabletu jeszcze bardziej przyjemnym i precyzyjnym!</p>
+<h4>Charakterystyka produktu: </h4>
+<ul>
+<li>Precyzja i płynność: Nasz rysik pojemnościowy został zaprojektowany z myślą o precyzji. Dzięki jego delikatnemu i płynnemu ruchowi możesz swobodnie pisać, rysować, podkreślać i nawigować po ekranie swojego urządzenia. Każdy detal będzie widoczny i wyraźny.</li>
+<li>Wygodne użytkowanie: Ergonomiczny design rysika zapewnia wygodny chwyt i minimalizuje zmęczenie dłoni podczas długiego korzystania. Możesz cieszyć się pełną kontrolą nad rysowaniem, bez niechcianych drgań czy niedokładności.</li>
+<li>Uniwersalność: Nasz rysik pojemnościowy doskonale współpracuje zarówno z telefonami, jak i tabletami. Niezależnie od marki czy modelu Twojego urządzenia, możesz cieszyć się jego wszechstronnym zastosowaniem.</li>
+<li>Naturalne wrażenia: Nasz rysik pojemnościowy zapewnia wrażenia zbliżone do tradycyjnego pisania ołówkiem czy długopisem. Dzięki jego precyzyjnej końcówce możesz tworzyć cienkie linie, pisać notatki czy rysować z doskonałą kontrolą i wrażliwością.</li>
+<li>Kompatybilność: Nasz rysik pojemnościowy jest kompatybilny z szeroką gamą urządzeń, takich jak iPhone, iPad, Samsung Galaxy, Huawei, Lenovo, Microsoft Surface i wiele innych. Bez względu na to, jakie urządzenie posiadasz, nasz rysik idealnie się do niego dopasuje</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<p>Rysik pojemnościowy, który uczyni korzystanie z Twojego telefonu i tabletu jeszcze bardziej przyjemnym i precyzyjnym!</p>
+<h4>Charakterystyka produktu: </h4>
+<ul>
+<li>Precyzja i płynność: Nasz rysik pojemnościowy został zaprojektowany z myślą o precyzji. Dzięki jego delikatnemu i płynnemu ruchowi możesz swobodnie pisać, rysować, podkreślać i nawigować po ekranie swojego urządzenia. Każdy detal będzie widoczny i wyraźny.</li>
+<li>Wygodne użytkowanie: Ergonomiczny design rysika zapewnia wygodny chwyt i minimalizuje zmęczenie dłoni podczas długiego korzystania. Możesz cieszyć się pełną kontrolą nad rysowaniem, bez niechcianych drgań czy niedokładności.</li>
+<li>Uniwersalność: Nasz rysik pojemnościowy doskonale współpracuje zarówno z telefonami, jak i tabletami. Niezależnie od marki czy modelu Twojego urządzenia, możesz cieszyć się jego wszechstronnym zastosowaniem.</li>
+<li>Naturalne wrażenia: Nasz rysik pojemnościowy zapewnia wrażenia zbliżone do tradycyjnego pisania ołówkiem czy długopisem. Dzięki jego precyzyjnej końcówce możesz tworzyć cienkie linie, pisać notatki czy rysować z doskonałą kontrolą i wrażliwością.</li>
+<li>Kompatybilność: Nasz rysik pojemnościowy jest kompatybilny z szeroką gamą urządzeń, takich jak iPhone, iPad, Samsung Galaxy, Huawei, Lenovo, Microsoft Surface i wiele innych. Bez względu na to, jakie urządzenie posiadasz, nasz rysik idealnie się do niego dopasuje</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.28" net="0.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="Q00019" weight="2.00" grossWeight="2.00">
+                                        <stock id="1" quantity="12265,00"/>
+                                                                    <price gross="0.28" net="0.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9358_0_18503339.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9359" vat="0" code="G02409" code_on_card="G02409" EAN="5901477176982" code_producer="5901477176982">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107715" name="Car Accessories" path="Tools for The Workshop and Garage\Car Accessories"/>
+            <category_idosell path="Tools for The Workshop and Garage\Car Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/velcro-mesh-trunk-organizer-50x25cm"/>
+                        <description>
+                            <name><![CDATA[Velcro mesh - trunk organizer 50x25cm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 50 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 50 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 50 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 50 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 50 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 50 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></short_desc>
+                            <description><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 50 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 50 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 50 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></description>
+                        </description>
+                        <delivery>24.06.2025</delivery>
+                            <price gross="1.49" net="1.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02409" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="461,00"/>
+                                                                    <price gross="1.49" net="1.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9359_0_18503429.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9360" vat="0" code="G00198" code_on_card="G00198" EAN="5901477177538" code_producer="5901477177538">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107844" name="For Wood" path="Cutting Tools\Discs With Tungsten Carbide Blade\For Wood"/>
+            <category_idosell path="Cutting Tools\Discs With Tungsten Carbide Blade\For Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cutting-disc-for-wood-plastic-drywall-125x22-2mm"/>
+                        <description>
+                            <name><![CDATA[Cutting disc for wood, plastic, drywall 125x22.2mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Discover excellent cutting results with our blade designed for wood, plastics, and gypsum board. The blade's diameter of 125 mm and a mounting hole of 22.2 mm ensure perfect compatibility with your angle grinder.</p><br/><p>Equipped with a carbide-tipped blade, it guarantees outstanding durability and strength. Whether cutting various wood hardnesses or diverse synthetic materials, our blade can handle it all.</p><br/><h4>Product characteristics:</h4><br/><ul style="list-style-type: disc;"><br/><li>Perfectly compatible with 125 mm angle grinders, ensuring seamless and safe mounting.<br />Ideal for cutting materials such as wood, wood-derived materials, plastics, and gypsum board.</li><br/><li>Carbide-tipped blade provides excellent durability and strength, enabling cutting through various materials.</li><br/><li>Optimized design reduces friction and increases the blade's lifespan without compromising cutting quality.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Blade diameter: <strong>125 mm</strong></p><br/><p>Mounting hole diameter: <strong>22.2 mm</strong></p><br/><p>Blade material: <strong>Carbide-tipped</strong></p><br/><p>Usage: <strong>Wood, plastics, gypsum board</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Discover excellent cutting results with our blade designed for wood, plastics, and gypsum board. The blade's diameter of 125 mm and a mounting hole of 22.2 mm ensure perfect compatibility with your angle grinder.</p><br/><p>Equipped with a carbide-tipped blade, it guarantees outstanding durability and strength. Whether cutting various wood hardnesses or diverse synthetic materials, our blade can handle it all.</p><br/><h4>Product characteristics:</h4><br/><ul style="list-style-type: disc;"><br/><li>Perfectly compatible with 125 mm angle grinders, ensuring seamless and safe mounting.<br />Ideal for cutting materials such as wood, wood-derived materials, plastics, and gypsum board.</li><br/><li>Carbide-tipped blade provides excellent durability and strength, enabling cutting through various materials.</li><br/><li>Optimized design reduces friction and increases the blade's lifespan without compromising cutting quality.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Blade diameter: <strong>125 mm</strong></p><br/><p>Mounting hole diameter: <strong>22.2 mm</strong></p><br/><p>Blade material: <strong>Carbide-tipped</strong></p><br/><p>Usage: <strong>Wood, plastics, gypsum board</strong></p>]]></short_desc>
+                            <description><![CDATA[<p>Discover excellent cutting results with our blade designed for wood, plastics, and gypsum board. The blade's diameter of 125 mm and a mounting hole of 22.2 mm ensure perfect compatibility with your angle grinder.</p><br/><p>Equipped with a carbide-tipped blade, it guarantees outstanding durability and strength. Whether cutting various wood hardnesses or diverse synthetic materials, our blade can handle it all.</p><br/><h4>Product characteristics:</h4><br/><ul style="list-style-type: disc;"><br/><li>Perfectly compatible with 125 mm angle grinders, ensuring seamless and safe mounting.<br />Ideal for cutting materials such as wood, wood-derived materials, plastics, and gypsum board.</li><br/><li>Carbide-tipped blade provides excellent durability and strength, enabling cutting through various materials.</li><br/><li>Optimized design reduces friction and increases the blade's lifespan without compromising cutting quality.</li><br/></ul><br/><h4>Technical specifications:</h4><br/><p>Blade diameter: <strong>125 mm</strong></p><br/><p>Mounting hole diameter: <strong>22.2 mm</strong></p><br/><p>Blade material: <strong>Carbide-tipped</strong></p><br/><p>Usage: <strong>Wood, plastics, gypsum board</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.84" net="2.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G00198" weight="130.00" grossWeight="140.00">
+                                        <stock id="1" quantity="2698,00"/>
+                                                                    <price gross="2.84" net="2.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9360_0_18504472.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9360_1_18504473.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9360_1_18504474.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9361" vat="0" code="G02407" code_on_card="G02407" EAN="5901477176968" code_producer="5901477176968">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107715" name="Car Accessories" path="Tools for The Workshop and Garage\Car Accessories"/>
+            <category_idosell path="Tools for The Workshop and Garage\Car Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/velcro-mesh-trunk-organizer-30x25cm"/>
+                        <description>
+                            <name><![CDATA[Velcro mesh - trunk organizer 30x25cm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 30 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 30 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 30 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 30 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 30 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 30 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></short_desc>
+                            <description><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 30 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 30 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 30 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.16" net="1.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02407" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="1009,00"/>
+                                                                    <price gross="1.16" net="1.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9361_0_18503425.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9362" vat="0" code="G02408" code_on_card="G02408" EAN="5901477176975" code_producer="5901477176975">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107715" name="Car Accessories" path="Tools for The Workshop and Garage\Car Accessories"/>
+            <category_idosell path="Tools for The Workshop and Garage\Car Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/velcro-mesh-trunk-organizer-40x25cm"/>
+                        <description>
+                            <name><![CDATA[Velcro mesh - trunk organizer 40x25cm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 40 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 40 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 40 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 40 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 40 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 40 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></short_desc>
+                            <description><![CDATA[<p>Przedstawiamy nasz praktyczny organizer-siatkę do bagażnika w rozmiarze 40 cm x 25 cm, który sprawi, że podróżowanie stanie się bardziej uporządkowane i wygodne niż kiedykolwiek wcześniej. Ta funkcjonalna siatka mocowana na rzep jest idealnym rozwiązaniem do przechowywania i zabezpieczania Twoich przedmiotów w bagażniku.</p>
+<p>Nie musisz już martwić się o rozrzucone rzeczy podczas jazdy. Nasza siatka doskonale trzyma wszystko na swoim miejscu, zapewniając bezpieczne i stabilne przechowywanie. Możesz ją łatwo zamocować na rzep do ścian bocznych lub podłogi bagażnika, w zależności od Twoich potrzeb.</p>
+<p>Organizer-siatka jest niezwykle wszechstronna. Możesz używać jej do przechowywania torb, plecaków, butów, artykułów spożywczych i wielu innych przedmiotów, które chcesz mieć w zasięgu ręki podczas podróży. Dzięki siatce łatwo zobaczysz, co jest w środku, co pozwala szybko znaleźć potrzebne przedmioty bez konieczności przekopywania się przez cały bagażnik.</p>
+<p>Nasz organizer-siatka jest wykonana z wytrzymałych materiałów, które zapewniają długotrwałe użytkowanie. Solidne mocowanie na rzep gwarantuje stabilność i niezawodność, nawet podczas intensywnego użytkowania. Dodatkowo, siatka jest lekka i nie zajmuje dużo miejsca, co pozwala zachować przestrzeń w bagażniku.</p>
+<p>Nie zwlekaj dłużej! Nasz organizer-siatka to nieodzowny element każdej podróży. Dzięki niej Twój bagażnik będzie uporządkowany i zorganizowany, a Ty będziesz mieć łatwy dostęp do potrzebnych rzeczy. Wybierz naszą siatkę do bagażnika i ciesz się bezpieczną i komfortową podróżą bez niepotrzebnego chaosu.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>Praktyczna siatka do bagażnika w rozmiarze 40 cm x 25 cm, która pomaga utrzymać porządek i zabezpieczyć przedmioty podczas podróży.</li>
+<li>Mocowanie na rzep zapewnia łatwą instalację i demontaż siatki.</li>
+<li>Doskonała stabilność i bezpieczeństwo, dzięki solidnemu mocowaniu na rzep.</li>
+<li>Wielofunkcyjność - idealna do przechowywania różnych przedmiotów, takich jak torby, plecaki, buty, artykuły spożywcze, itp.</li>
+<li>Dobra widoczność - siatka umożliwia łatwe zobaczenie zawartości, co ułatwia znalezienie potrzebnego przedmiotu.</li>
+<li>Wykonana z wytrzymałych materiałów, gwarantujących trwałość i długotrwałe użytkowanie.</li>
+<li>Lekka i niezajmująca dużo miejsca, co zapewnia zachowanie przestrzeni w bagażniku.</li>
+</ul>
+<p>Specyfikacja techniczna:</p>
+<p>Rozmiar: 40 x 25 cm</p>
+<p>Mocowanie: rzep</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.36" net="1.36"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02408" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="814,00"/>
+                                                                    <price gross="1.36" net="1.36"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9362_0_18503427.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9363" vat="0" code="G15027" code_on_card="G15027" EAN="5901477177026" code_producer="5901477177026">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107883" name="Box Wrenches" path="Tools for The Workshop and Garage\General Mechanical Tools\Wrenches\Box Wrenches"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools\Wrenches\Box Wrenches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/multifunctional-wrench-8-22mm"/>
+                        <description>
+                            <name><![CDATA[Multifunctional wrench 8-22mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The universal ring spanner, 14-22 mm/8-13 mm, is a versatile hand tool that is useful in various applications, especially in the fields of mechanics, maintenance, and repairs.</p><br/><h4>Versatility</h4><br/><p>The ring spanner features two sets of sizes, one ranging from 14 mm to 22 mm, and the other from 8 mm to 13 mm. This makes the tool versatile and allows it to handle different sizes of nuts and bolts.</p><br/><h4>Ergonomic Handle</h4><br/><p>The ring spanner is equipped with an ergonomic handle that provides a comfortable grip and control over the tool during work.</p><br/><h4>CrV Material</h4><br/><p>The spanner is made from high-quality chrome-vanadium steel (CrV), ensuring durability and resistance to corrosion. This guarantees that the tool will serve you for a long time.</p><br/><p>Overall Length: 270 mm</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The universal ring spanner, 14-22 mm/8-13 mm, is a versatile hand tool that is useful in various applications, especially in the fields of mechanics, maintenance, and repairs.</p><br/><h4>Versatility</h4><br/><p>The ring spanner features two sets of sizes, one ranging from 14 mm to 22 mm, and the other from 8 mm to 13 mm. This makes the tool versatile and allows it to handle different sizes of nuts and bolts.</p><br/><h4>Ergonomic Handle</h4><br/><p>The ring spanner is equipped with an ergonomic handle that provides a comfortable grip and control over the tool during work.</p><br/><h4>CrV Material</h4><br/><p>The spanner is made from high-quality chrome-vanadium steel (CrV), ensuring durability and resistance to corrosion. This guarantees that the tool will serve you for a long time.</p><br/><p>Overall Length: 270 mm</p>]]></short_desc>
+                            <description><![CDATA[<p>The universal ring spanner, 14-22 mm/8-13 mm, is a versatile hand tool that is useful in various applications, especially in the fields of mechanics, maintenance, and repairs.</p><br/><h4>Versatility</h4><br/><p>The ring spanner features two sets of sizes, one ranging from 14 mm to 22 mm, and the other from 8 mm to 13 mm. This makes the tool versatile and allows it to handle different sizes of nuts and bolts.</p><br/><h4>Ergonomic Handle</h4><br/><p>The ring spanner is equipped with an ergonomic handle that provides a comfortable grip and control over the tool during work.</p><br/><h4>CrV Material</h4><br/><p>The spanner is made from high-quality chrome-vanadium steel (CrV), ensuring durability and resistance to corrosion. This guarantees that the tool will serve you for a long time.</p><br/><p>Overall Length: 270 mm</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.66" net="1.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G15027" weight="184.00" grossWeight="185.00">
+                                        <stock id="1" quantity="749,00"/>
+                                                                    <price gross="1.66" net="1.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9363_0_18506432.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9363_1_18506072.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9363_1_18506073.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9364" vat="0" code="K02235" code_on_card="K02235" EAN="5901477177057" code_producer="5901477177057">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/3pcs-webcam-covers"/>
+                        <description>
+                            <name><![CDATA[3pcs webcam covers]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Protect your privacy and gain complete peace of mind with our webcam cover, specially designed for your laptop or smartphone!</p><br/><p>In today's world, where the use of mobile devices and laptops is an integral part of our lives, we cannot overlook our privacy. Our webcam cover is a simple yet effective solution that will safeguard your camera from unauthorized access. With it, you can control when the camera is active and when it is safely blocked.</p><br/><p>The webcam cover is carefully designed to perfectly fit different models of laptops and smartphones, providing not only protection but also an aesthetic appearance. Its slim profile and discreet design make it almost invisible when mounted on your device.</p><br/><p>Our product is easy to install and remove, leaving no traces after removal. You can also slide it to the side when you want to use the camera and then return it to the closed position when you're done.</p><br/><h4>Product Features:</h4><br/><ul><br/><li>Privacy protection</li><br/><li>Perfectly fits various models of laptops and smartphones</li><br/><li>Discreet design, almost invisible after mounting</li><br/><li>Easy to install and remove</li><br/><li>Leaves no visible traces after removal</li><br/><li>Can be slid to the side for camera usage</li><br/><li>Set includes 3 webcam covers</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Protect your privacy and gain complete peace of mind with our webcam cover, specially designed for your laptop or smartphone!</p><br/><p>In today's world, where the use of mobile devices and laptops is an integral part of our lives, we cannot overlook our privacy. Our webcam cover is a simple yet effective solution that will safeguard your camera from unauthorized access. With it, you can control when the camera is active and when it is safely blocked.</p><br/><p>The webcam cover is carefully designed to perfectly fit different models of laptops and smartphones, providing not only protection but also an aesthetic appearance. Its slim profile and discreet design make it almost invisible when mounted on your device.</p><br/><p>Our product is easy to install and remove, leaving no traces after removal. You can also slide it to the side when you want to use the camera and then return it to the closed position when you're done.</p><br/><h4>Product Features:</h4><br/><ul><br/><li>Privacy protection</li><br/><li>Perfectly fits various models of laptops and smartphones</li><br/><li>Discreet design, almost invisible after mounting</li><br/><li>Easy to install and remove</li><br/><li>Leaves no visible traces after removal</li><br/><li>Can be slid to the side for camera usage</li><br/><li>Set includes 3 webcam covers</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Protect your privacy and gain complete peace of mind with our webcam cover, specially designed for your laptop or smartphone!</p><br/><p>In today's world, where the use of mobile devices and laptops is an integral part of our lives, we cannot overlook our privacy. Our webcam cover is a simple yet effective solution that will safeguard your camera from unauthorized access. With it, you can control when the camera is active and when it is safely blocked.</p><br/><p>The webcam cover is carefully designed to perfectly fit different models of laptops and smartphones, providing not only protection but also an aesthetic appearance. Its slim profile and discreet design make it almost invisible when mounted on your device.</p><br/><p>Our product is easy to install and remove, leaving no traces after removal. You can also slide it to the side when you want to use the camera and then return it to the closed position when you're done.</p><br/><h4>Product Features:</h4><br/><ul><br/><li>Privacy protection</li><br/><li>Perfectly fits various models of laptops and smartphones</li><br/><li>Discreet design, almost invisible after mounting</li><br/><li>Easy to install and remove</li><br/><li>Leaves no visible traces after removal</li><br/><li>Can be slid to the side for camera usage</li><br/><li>Set includes 3 webcam covers</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.34" net="0.34"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02235" weight="5.00" grossWeight="5.00">
+                                        <stock id="1" quantity="1480,00"/>
+                                                                    <price gross="0.34" net="0.34"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9364_0_18504269.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9364_1_18504270.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9364_1_18504434.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9365" vat="0" code="K02222" code_on_card="K02222" EAN="5901477177033" code_producer="5901477177033">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/waterproof-phone-case-175x105mm"/>
+                        <description>
+                            <name><![CDATA[Waterproof phone case 175x105mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Waterproof case</strong> made of PVC for a phone with dimensions of 175 x 105 mm is a product designed to <strong>protect the device against moisture, rain, dust and other external factors</strong>.</strong> p><br/><p><strong>Made of high-quality PVC, which is flexible, but at the same time durable and resistant to water.</strong> This guarantees <strong>effective protection against moisture and rain</strong>.</p><br/><p>The case has a <strong>snap closure</strong> which guarantees tightness and protection against water. Additionally equipped with a practical lanyard, which makes it easier to wear the phone around the neck or wrist. This is a particularly convenient solution for active people who want to have their phone always at hand.</p><br/><p><strong>Case dimensions 175 x 105 mm</strong>, which allows it to fit various phone models of similar sizes.</p><br/><p>Ideal for active people, traveling or working in conditions where the phone may be exposed to moisture.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Waterproof case</strong> made of PVC for a phone with dimensions of 175 x 105 mm is a product designed to <strong>protect the device against moisture, rain, dust and other external factors</strong>.</strong> p><br/><p><strong>Made of high-quality PVC, which is flexible, but at the same time durable and resistant to water.</strong> This guarantees <strong>effective protection against moisture and rain</strong>.</p><br/><p>The case has a <strong>snap closure</strong> which guarantees tightness and protection against water. Additionally equipped with a practical lanyard, which makes it easier to wear the phone around the neck or wrist. This is a particularly convenient solution for active people who want to have their phone always at hand.</p><br/><p><strong>Case dimensions 175 x 105 mm</strong>, which allows it to fit various phone models of similar sizes.</p><br/><p>Ideal for active people, traveling or working in conditions where the phone may be exposed to moisture.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Waterproof case</strong> made of PVC for a phone with dimensions of 175 x 105 mm is a product designed to <strong>protect the device against moisture, rain, dust and other external factors</strong>.</strong> p><br/><p><strong>Made of high-quality PVC, which is flexible, but at the same time durable and resistant to water.</strong> This guarantees <strong>effective protection against moisture and rain</strong>.</p><br/><p>The case has a <strong>snap closure</strong> which guarantees tightness and protection against water. Additionally equipped with a practical lanyard, which makes it easier to wear the phone around the neck or wrist. This is a particularly convenient solution for active people who want to have their phone always at hand.</p><br/><p><strong>Case dimensions 175 x 105 mm</strong>, which allows it to fit various phone models of similar sizes.</p><br/><p>Ideal for active people, traveling or working in conditions where the phone may be exposed to moisture.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.59" net="0.59"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02222" weight="1.00" grossWeight="1.00">
+                                        <stock id="1" quantity="1516,00"/>
+                                                                    <price gross="0.59" net="0.59"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9365_0_18507359.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9365_1_18507360.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9365_1_18507361.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9365_1_18507362.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9366" vat="0" code="K02215" code_on_card="K02215" EAN="5901477177040" code_producer="5901477177040">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/universal-air-vent-magnetic-phone-holder"/>
+                        <description>
+                            <name><![CDATA[Universal air vent magnetic phone holder]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Magnetic Car Phone Holder for Air Vent Mounting</h3><br/><p><strong>Modern and minimalist</strong> magnetic phone holder from the Keltin brand. Comes with a set of metal plates for phones.</p><br/><ul><br/>  <li>Brand: <strong>Keltin</strong></li><br/>  <li>Color: <strong>Black</strong></li><br/>  <li>Original packaging with holder and phone plates</li><br/>  <li><strong>Minimalist design</strong></li><br/>  <li><strong>Strong magnetic attachment</strong></li><br/>  <li><strong>360&deg; Rotating Head</strong> - allows for both portrait and landscape device usage</li><br/>  <li><strong>Quick installation</strong> - simply connect the elements, insert the clamp into the air vent grille, then tighten the knob until resistance is felt</li><br/>  <li><strong>Clamps with soft foam</strong> to protect the air vent grille from scratches</li><br/>  <li><strong>High-quality construction</strong></li><br/>  <li>Easy installation</li><br/>  <li>Strong and durable grip</li><br/>  <li><strong>Large magnetic gripping surface</strong></li><br/>  <li><strong>Adjustable viewing angle</strong></li><br/></ul><br/><p>&nbsp;</p><br/><h3>Strong and Non-intrusive Clamp</h3><br/><p><strong>The holder is equipped with a mounting element designed for the car's air vent grille.</strong> Simply slide the clamp onto the grille and then turn the rotating clamp until resistance is felt.</p><br/><p><strong>The clamp has soft foam</strong> to prevent damage to the air vent grille.</p><br/><p>&nbsp;</p><br/><h3>Very Convenient and Quick Magnetic Mounting</h3><br/><p><strong>The holder is equipped with strong magnets that perfectly grip the metal plates included in the set,</strong> which should be mounted on the case or back of the phone. Just place the phone back against the holder!</p><br/><p>The magnetic grip is <strong>very strong,</strong> and the phone won't fall even when driving on bumpy roads.</p><br/><p>&nbsp;</p><br/><h3>Driving Safety</h3><br/><p><strong>Thanks to its compact size and easy installation, you can choose a convenient position on the air vent grille yourself.</strong> This ensures that the holder is always within reach, making it easier to use the phone with one hand and improving driving safety.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Magnetic Car Phone Holder for Air Vent Mounting</h3><br/><p><strong>Modern and minimalist</strong> magnetic phone holder from the Keltin brand. Comes with a set of metal plates for phones.</p><br/><ul><br/>  <li>Brand: <strong>Keltin</strong></li><br/>  <li>Color: <strong>Black</strong></li><br/>  <li>Original packaging with holder and phone plates</li><br/>  <li><strong>Minimalist design</strong></li><br/>  <li><strong>Strong magnetic attachment</strong></li><br/>  <li><strong>360&deg; Rotating Head</strong> - allows for both portrait and landscape device usage</li><br/>  <li><strong>Quick installation</strong> - simply connect the elements, insert the clamp into the air vent grille, then tighten the knob until resistance is felt</li><br/>  <li><strong>Clamps with soft foam</strong> to protect the air vent grille from scratches</li><br/>  <li><strong>High-quality construction</strong></li><br/>  <li>Easy installation</li><br/>  <li>Strong and durable grip</li><br/>  <li><strong>Large magnetic gripping surface</strong></li><br/>  <li><strong>Adjustable viewing angle</strong></li><br/></ul><br/><p>&nbsp;</p><br/><h3>Strong and Non-intrusive Clamp</h3><br/><p><strong>The holder is equipped with a mounting element designed for the car's air vent grille.</strong> Simply slide the clamp onto the grille and then turn the rotating clamp until resistance is felt.</p><br/><p><strong>The clamp has soft foam</strong> to prevent damage to the air vent grille.</p><br/><p>&nbsp;</p><br/><h3>Very Convenient and Quick Magnetic Mounting</h3><br/><p><strong>The holder is equipped with strong magnets that perfectly grip the metal plates included in the set,</strong> which should be mounted on the case or back of the phone. Just place the phone back against the holder!</p><br/><p>The magnetic grip is <strong>very strong,</strong> and the phone won't fall even when driving on bumpy roads.</p><br/><p>&nbsp;</p><br/><h3>Driving Safety</h3><br/><p><strong>Thanks to its compact size and easy installation, you can choose a convenient position on the air vent grille yourself.</strong> This ensures that the holder is always within reach, making it easier to use the phone with one hand and improving driving safety.</p>]]></short_desc>
+                            <description><![CDATA[<h3>Magnetic Car Phone Holder for Air Vent Mounting</h3><br/><p><strong>Modern and minimalist</strong> magnetic phone holder from the Keltin brand. Comes with a set of metal plates for phones.</p><br/><ul><br/>  <li>Brand: <strong>Keltin</strong></li><br/>  <li>Color: <strong>Black</strong></li><br/>  <li>Original packaging with holder and phone plates</li><br/>  <li><strong>Minimalist design</strong></li><br/>  <li><strong>Strong magnetic attachment</strong></li><br/>  <li><strong>360&deg; Rotating Head</strong> - allows for both portrait and landscape device usage</li><br/>  <li><strong>Quick installation</strong> - simply connect the elements, insert the clamp into the air vent grille, then tighten the knob until resistance is felt</li><br/>  <li><strong>Clamps with soft foam</strong> to protect the air vent grille from scratches</li><br/>  <li><strong>High-quality construction</strong></li><br/>  <li>Easy installation</li><br/>  <li>Strong and durable grip</li><br/>  <li><strong>Large magnetic gripping surface</strong></li><br/>  <li><strong>Adjustable viewing angle</strong></li><br/></ul><br/><p>&nbsp;</p><br/><h3>Strong and Non-intrusive Clamp</h3><br/><p><strong>The holder is equipped with a mounting element designed for the car's air vent grille.</strong> Simply slide the clamp onto the grille and then turn the rotating clamp until resistance is felt.</p><br/><p><strong>The clamp has soft foam</strong> to prevent damage to the air vent grille.</p><br/><p>&nbsp;</p><br/><h3>Very Convenient and Quick Magnetic Mounting</h3><br/><p><strong>The holder is equipped with strong magnets that perfectly grip the metal plates included in the set,</strong> which should be mounted on the case or back of the phone. Just place the phone back against the holder!</p><br/><p>The magnetic grip is <strong>very strong,</strong> and the phone won't fall even when driving on bumpy roads.</p><br/><p>&nbsp;</p><br/><h3>Driving Safety</h3><br/><p><strong>Thanks to its compact size and easy installation, you can choose a convenient position on the air vent grille yourself.</strong> This ensures that the holder is always within reach, making it easier to use the phone with one hand and improving driving safety.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.54" net="1.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02215" weight="60.00" grossWeight="67.00">
+                                        <stock id="1" quantity="874,00"/>
+                                                                    <price gross="1.54" net="1.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9366_0_18522446.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9366_1_18522447.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9366_1_18522448.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9366_1_18522449.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9366_1_18522450.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9367" vat="0" code="G80657" code_on_card="G80657" EAN="5901477181344" code_producer="5901477181344">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107920" name="Lubricators" path="Tools for The Workshop and Garage\Lubricators"/>
+            <category_idosell path="Tools for The Workshop and Garage\Lubricators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cordless-grease-gun-with-4-0ah-battery-charger"/>
+                        <description>
+                            <name><![CDATA[Cordless grease gun with 4.0Ah battery & charger]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Features:</p><br/><ul><br/><li>Steel lubrication tube</li><br/><li>Bright LED working light</li><br/><li>Variable speed - precise control of grease flow</li><br/><li>Continuous operation lock button</li><br/><li>Wireless, 18V power supply - 4.0 Ah battery included</li><br/><li>Equipped with an air release valve</li><br/><li>Integrated device feet for placing the device sideways after work</li><br/><li>30-inch flexible hose</li><br/></ul><br/><table style="border-collapse: collapse; width: 100%; height: 144px;" border="1"><br/><tbody><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Voltage:</td><br/><td style="width: 50%; height: 18px;">18V</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Type:</td><br/><td style="width: 50%; height: 18px;">Li-ion</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Capacity:</td><br/><td style="width: 50%; height: 18px;">4.0 Ah</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Working Pressure:</td><br/><td style="width: 50%; height: 18px;">620 bar (9000 PSI)</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Flow Rate:</td><br/><td style="width: 50%; height: 18px;">284 g/min</td><br/></tr><br/><tr style="height: 18px;" ><br/><td colspan="2">Tank Capacity:</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Cartridge:</td><br/><td style="width: 50%; height: 18px;">600 g</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Direct Loading:</td><br/><td style="width: 50%; height: 18px;">460 g</td><br/></tr><br/></tbody><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Features:</p><br/><ul><br/><li>Steel lubrication tube</li><br/><li>Bright LED working light</li><br/><li>Variable speed - precise control of grease flow</li><br/><li>Continuous operation lock button</li><br/><li>Wireless, 18V power supply - 4.0 Ah battery included</li><br/><li>Equipped with an air release valve</li><br/><li>Integrated device feet for placing the device sideways after work</li><br/><li>30-inch flexible hose</li><br/></ul><br/><table style="border-collapse: collapse; width: 100%; height: 144px;" border="1"><br/><tbody><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Voltage:</td><br/><td style="width: 50%; height: 18px;">18V</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Type:</td><br/><td style="width: 50%; height: 18px;">Li-ion</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Capacity:</td><br/><td style="width: 50%; height: 18px;">4.0 Ah</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Working Pressure:</td><br/><td style="width: 50%; height: 18px;">620 bar (9000 PSI)</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Flow Rate:</td><br/><td style="width: 50%; height: 18px;">284 g/min</td><br/></tr><br/><tr style="height: 18px;" ><br/><td colspan="2">Tank Capacity:</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Cartridge:</td><br/><td style="width: 50%; height: 18px;">600 g</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Direct Loading:</td><br/><td style="width: 50%; height: 18px;">460 g</td><br/></tr><br/></tbody><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Features:</p><br/><ul><br/><li>Steel lubrication tube</li><br/><li>Bright LED working light</li><br/><li>Variable speed - precise control of grease flow</li><br/><li>Continuous operation lock button</li><br/><li>Wireless, 18V power supply - 4.0 Ah battery included</li><br/><li>Equipped with an air release valve</li><br/><li>Integrated device feet for placing the device sideways after work</li><br/><li>30-inch flexible hose</li><br/></ul><br/><table style="border-collapse: collapse; width: 100%; height: 144px;" border="1"><br/><tbody><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Voltage:</td><br/><td style="width: 50%; height: 18px;">18V</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Type:</td><br/><td style="width: 50%; height: 18px;">Li-ion</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Battery Capacity:</td><br/><td style="width: 50%; height: 18px;">4.0 Ah</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Working Pressure:</td><br/><td style="width: 50%; height: 18px;">620 bar (9000 PSI)</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Maximum Flow Rate:</td><br/><td style="width: 50%; height: 18px;">284 g/min</td><br/></tr><br/><tr style="height: 18px;" ><br/><td colspan="2">Tank Capacity:</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Cartridge:</td><br/><td style="width: 50%; height: 18px;">600 g</td><br/></tr><br/><tr style="height: 18px;"><br/><td style="width: 50%; height: 18px;">Direct Loading:</td><br/><td style="width: 50%; height: 18px;">460 g</td><br/></tr><br/></tbody><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="102.56" net="102.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80657" weight="5800.00" grossWeight="6002.00">
+                                        <stock id="1" quantity="60,00"/>
+                                                                    <price gross="102.56" net="102.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_0_18507364.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507365.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507366.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507367.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507368.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507369.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507370.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507371.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507372.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507373.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507374.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507375.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507376.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9367_1_18507377.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9368" vat="0" code="G80658" code_on_card="G80658" EAN="5901477181467" code_producer="5901477181467">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107920" name="Lubricators" path="Tools for The Workshop and Garage\Lubricators"/>
+            <category_idosell path="Tools for The Workshop and Garage\Lubricators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/18v-fast-charger-for-g80657"/>
+                        <description>
+                            <name><![CDATA[18V Fast charger for G80657]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.34" net="5.34"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80658" weight="280.00" grossWeight="300.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="5.34" net="5.34"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9368_0_18510100.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9369" vat="0" code="G80659" code_on_card="G80659" EAN="5901477181474" code_producer="5901477181474">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107920" name="Lubricators" path="Tools for The Workshop and Garage\Lubricators"/>
+            <category_idosell path="Tools for The Workshop and Garage\Lubricators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/battery-li-ion-18v-4-0ah-for-g80657"/>
+                        <description>
+                            <name><![CDATA[Battery Li-ion 18V 4.0Ah for G80657]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.44" net="20.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80659" weight="900.00" grossWeight="900.00">
+                                        <stock id="1" quantity="17,00"/>
+                                                                    <price gross="20.44" net="20.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9369_0_18510102.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/9/9369_1_18510103.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="9371" vat="0" code="K02211" code_on_card="K02211" EAN="5901477176852" code_producer="5901477176852">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="109752" name="GSM Accessories" path="Household Items\GSM Accessories"/>
+            <category_idosell path="Household Items\GSM Accessories" />
+        
+

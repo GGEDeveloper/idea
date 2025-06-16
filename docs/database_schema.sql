@@ -27,10 +27,11 @@ CREATE TABLE IF NOT EXISTS products (
     longdescription TEXT,
     brand TEXT,
     active BOOLEAN DEFAULT true,
+    is_featured BOOLEAN DEFAULT false, -- Para destaque na Home Page carousel
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
-COMMENT ON TABLE products IS 'Tabela principal de produtos. EAN é a chave primária de negócio.';
+COMMENT ON TABLE products IS 'Tabela principal de produtos. EAN é a chave primária de negócio. Inclui flag para destaque.';
 
 -- Tabela para armazenar dados originais da API Geko (Fase 3)
 CREATE TABLE IF NOT EXISTS geko_products (
@@ -69,9 +70,10 @@ CREATE TABLE IF NOT EXISTS product_images (
     ean TEXT,
     "url" TEXT,
     alt TEXT,
-    is_primary BOOLEAN DEFAULT false
+    is_primary BOOLEAN DEFAULT false,
+    UNIQUE(ean, "url")
 );
-COMMENT ON TABLE product_images IS 'Armazena as URLs das imagens para cada produto.';
+COMMENT ON TABLE product_images IS 'Armazena as URLs das imagens para cada produto. Garante unicidade por ean e url.';
 
 -- Tabela para variantes de produtos (ex: cor, tamanho).
 -- O stock foi movido para aqui na refatoração.
@@ -79,18 +81,24 @@ CREATE TABLE IF NOT EXISTS product_variants (
     variantid TEXT PRIMARY KEY,
     ean TEXT,
     name TEXT,
-    stockquantity INTEGER
+    stockquantity INTEGER,
+    supplier_price NUMERIC(12,4),
+    is_on_sale BOOLEAN DEFAULT false, -- Para indicar se a variante está em promoção
+    FOREIGN KEY (ean) REFERENCES products(ean) ON DELETE CASCADE -- Adicionada FK aqui
 );
-COMMENT ON TABLE product_variants IS 'Variantes de um produto (SKUs). O stock é gerido a este nível.';
+COMMENT ON TABLE product_variants IS 'Variantes de um produto (SKUs). O stock e preço de fornecedor são geridos a este nível. Inclui flag de promoção.';
 
 -- Tabela para atributos (características técnicas) dos produtos.
 CREATE TABLE IF NOT EXISTS product_attributes (
     attributeid SERIAL PRIMARY KEY,
     product_ean TEXT,
     "key" TEXT,
-    "value" TEXT
+    "value" TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(product_ean, "key")
 );
-COMMENT ON TABLE product_attributes IS 'Pares chave-valor para as especificações técnicas de um produto.';
+COMMENT ON TABLE product_attributes IS 'Pares chave-valor para as especificações técnicas de um produto. Garante unicidade por produto e chave de atributo.';
 
 
 -- ============================================
@@ -106,14 +114,18 @@ CREATE TABLE IF NOT EXISTS price_lists (
 COMMENT ON TABLE price_lists IS 'Define diferentes tipos de listas de preços (ex: Base, Promoção, Revendedor).';
 
 -- Tabela de preços que associa um produto e uma lista de preços a um valor.
+-- Modificada para ser baseada em variantid para preços de venda ao público.
 CREATE TABLE IF NOT EXISTS prices (
     priceid SERIAL PRIMARY KEY,
-    product_ean TEXT NOT NULL,
+    -- product_ean TEXT NOT NULL, -- Removido, preço agora é por variante
+    variantid TEXT NOT NULL, -- Adicionado para ligar ao product_variants
     price_list_id INTEGER NOT NULL,
     price NUMERIC(12, 4) NOT NULL,
-    UNIQUE(product_ean, price_list_id)
+    UNIQUE(variantid, price_list_id),
+    FOREIGN KEY (variantid) REFERENCES product_variants(variantid) ON DELETE CASCADE, -- Nova FK
+    FOREIGN KEY (price_list_id) REFERENCES price_lists(price_list_id) ON DELETE CASCADE
 );
-COMMENT ON TABLE prices IS 'Associa um preço a um produto para uma determinada lista de preços.';
+COMMENT ON TABLE prices IS 'Associa um preço a uma variante de produto para uma determinada lista de preços.';
 
 
 -- ============================================
@@ -201,8 +213,8 @@ ALTER TABLE product_images DROP CONSTRAINT IF EXISTS fk_pi_product_ean;
 ALTER TABLE product_images ADD CONSTRAINT fk_pi_product_ean FOREIGN KEY (ean) REFERENCES products(ean) ON DELETE CASCADE;
 
 -- Relações da tabela product_variants
-ALTER TABLE product_variants DROP CONSTRAINT IF EXISTS fk_pv_product_ean;
-ALTER TABLE product_variants ADD CONSTRAINT fk_pv_product_ean FOREIGN KEY (ean) REFERENCES products(ean) ON DELETE CASCADE;
+-- ALTER TABLE product_variants DROP CONSTRAINT IF EXISTS fk_pv_product_ean; -- Esta linha já está no schema, mas a FK está definida inline acima agora
+-- ALTER TABLE product_variants ADD CONSTRAINT fk_pv_product_ean FOREIGN KEY (ean) REFERENCES products(ean) ON DELETE CASCADE;
 
 -- Relações da tabela product_attributes
 ALTER TABLE product_attributes DROP CONSTRAINT IF EXISTS fk_pa_product_ean;
@@ -215,8 +227,10 @@ ALTER TABLE prices DROP CONSTRAINT IF EXISTS fk_p_price_list_id;
 ALTER TABLE prices ADD CONSTRAINT fk_p_price_list_id FOREIGN KEY (price_list_id) REFERENCES price_lists(price_list_id) ON DELETE CASCADE;
 
 -- Relações da tabela geko_products
-ALTER TABLE geko_products DROP CONSTRAINT IF EXISTS fk_gp_product_ean;
-ALTER TABLE geko_products ADD CONSTRAINT fk_gp_product_ean FOREIGN KEY (ean) REFERENCES products(ean) ON DELETE CASCADE;
+-- A constraint fk_gp_product_ean foi REMOVIDA. A tabela geko_products é uma tabela de staging
+-- e não deve ter uma FK para a tabela products, pois os produtos podem ainda não existir em 'products'
+-- quando são inicialmente carregados do feed Geko.
+-- A integridade será garantida no processo de ETL que move dados de geko_products para products.
 
 
 -- ============================================
@@ -267,6 +281,13 @@ BEFORE UPDATE ON geko_products
 FOR EACH ROW
 EXECUTE PROCEDURE trigger_set_timestamp();
 
+-- Adicionar trigger para product_attributes
+DROP TRIGGER IF EXISTS set_timestamp_product_attributes ON product_attributes;
+CREATE TRIGGER set_timestamp_product_attributes
+BEFORE UPDATE ON product_attributes
+FOR EACH ROW
+EXECUTE PROCEDURE trigger_set_timestamp();
+
 -- ============================================
 -- Inserções de Dados Base (Idempotentes)
 -- ============================================
@@ -276,6 +297,13 @@ INSERT INTO roles (role_name, description) VALUES
 ('admin', 'Administrador com acesso total ao sistema.'),
 ('customer', 'Cliente com acesso a preços, stock e criação de encomendas.')
 ON CONFLICT (role_name) DO NOTHING;
+
+-- Inserir price_lists essenciais se não existirem (Adicionado)
+INSERT INTO price_lists (price_list_id, name, description) VALUES
+(1, 'Supplier Price', 'Custo de fornecedor (base da variante)'),
+(2, 'Base Selling Price', 'Preço de venda base (markup sobre custo fornecedor da variante)'),
+(3, 'Promotional Price', 'Preço promocional temporário')
+ON CONFLICT (price_list_id) DO UPDATE SET name = EXCLUDED.name, description = EXCLUDED.description;
 
 -- Inserir permissões granulares se não existirem
 INSERT INTO permissions (permission_name, description) VALUES

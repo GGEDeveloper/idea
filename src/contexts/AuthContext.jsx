@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   // Efeito para buscar o perfil do nosso backend quando o utilizador está autenticado
   useEffect(() => {
-    console.log('[AuthContext] useEffect for localUser triggered. clerkIsLoaded:', clerkIsLoaded, 'Session active:', !!session, 'User object from Clerk:', !!user);
+    console.log('[AuthContext] useEffect for localUser triggered. clerkIsLoaded:', clerkIsLoaded, 'Session active:', !!session, 'User object from Clerk PRESENT:', !!user);
     if (clerkIsLoaded && session && user) {
       const fetchLocalUser = async () => {
         console.log('[AuthContext] fetchLocalUser INICIADA. User ID from Clerk:', user.id);

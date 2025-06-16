@@ -14,42 +14,83 @@ const pool = require('../../db/index.cjs'); // Corrigido para apontar para a rai
 /**
  * Constrói a cláusula WHERE para a query de produtos com base nos filtros fornecidos.
  * @param {object} filters - Objeto de filtros.
+ * @param {boolean} forCount - Indica se a cláusula é usada para contagem.
  * @returns {object} - { whereClause: string, queryParams: any[], paramIndex: number }
  */
-function buildWhereClause(filters) {
+function buildWhereClause(filters, forCount = false) {
   const whereClauses = [];
   const queryParams = [];
   let paramIndex = 1;
+  const productAlias = forCount ? 'p_count' : 'p';
 
   if (filters.brands) {
     const brandList = filters.brands.split(',');
-    whereClauses.push(`p.brand IN (${brandList.map(() => `$${paramIndex++}`).join(', ')})`);
-    queryParams.push(...brandList);
+    const validBrands = brandList.map(b => b.trim()).filter(b => b !== '');
+    if (validBrands.length > 0) {
+      whereClauses.push(`${productAlias}.brand IN (${validBrands.map(() => `$${paramIndex++}`).join(', ')})`);
+      queryParams.push(...validBrands);
+    }
   }
 
-  if (filters.priceMin) {
-    whereClauses.push(`pr.price >= $${paramIndex++}`);
-    queryParams.push(filters.priceMin);
+  if (filters.is_featured !== undefined && filters.is_featured !== null && String(filters.is_featured).trim() !== '') {
+    const isFeaturedValue = String(filters.is_featured).toLowerCase() === 'true';
+    whereClauses.push(`${productAlias}.is_featured = $${paramIndex++}`);
+    queryParams.push(isFeaturedValue);
   }
 
+  if (filters.priceMin || filters.priceMax) {
+    const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+    let priceConditions = [];
+    if (filters.priceMin) {
+        const priceMinNum = parseFloat(String(filters.priceMin).replace(',', '.'));
+        if (!isNaN(priceMinNum)) {
+            priceConditions.push(`pr_filter.price >= $${paramIndex++}`);
+            queryParams.push(priceMinNum);
+        }
+    }
   if (filters.priceMax) {
-    whereClauses.push(`pr.price <= $${paramIndex++}`);
-    queryParams.push(filters.priceMax);
+        const priceMaxNum = parseFloat(String(filters.priceMax).replace(',', '.'));
+        if (!isNaN(priceMaxNum)) {
+            priceConditions.push(`pr_filter.price <= $${paramIndex++}`);
+            queryParams.push(priceMaxNum);
+        }
+    }
+    if (priceConditions.length > 0) {
+      whereClauses.push(`
+        EXISTS (
+            SELECT 1 FROM product_variants pv_filter
+            JOIN prices pr_filter ON pv_filter.variantid = pr_filter.variantid
+            WHERE pv_filter.ean = ${productAlias}.ean 
+            AND pr_filter.price_list_id = ${basePriceListId}
+            AND ${priceConditions.join(' AND ')}
+        )
+      `);
+    }
   }
 
-  if (filters.searchQuery) {
-    whereClauses.push(`p.name ILIKE $${paramIndex++}`); // Usando ILIKE para busca simples
-    queryParams.push(`%${filters.searchQuery}%`);
-  }
+  if (filters.searchQuery && typeof filters.searchQuery === 'string' && String(filters.searchQuery).trim() !== '') {
+    const searchTerm = `%${String(filters.searchQuery).trim()}%`;
+    const searchConditions = [
+        `${productAlias}.name ILIKE $${paramIndex}`,
+        `${productAlias}.ean ILIKE $${paramIndex + 1}`,
+        `${productAlias}.shortdescription ILIKE $${paramIndex + 2}`,
+        `${productAlias}.longdescription ILIKE $${paramIndex + 3}`,
+        `${productAlias}.brand ILIKE $${paramIndex + 4}`
+    ];
+    whereClauses.push(`(${searchConditions.join(' OR ')})`);
+    for(let i=0; i<5; i++) queryParams.push(searchTerm);
+    paramIndex += 5;
+  } 
   
-  // Filtro por categoria (exemplo)
   if (filters.categoryId) {
-    whereClauses.push(`p.ean IN (SELECT product_ean FROM product_categories WHERE category_id = $${paramIndex++})`);
-    queryParams.push(filters.categoryId);
+    const categoryIdTrimmed = String(filters.categoryId).trim();
+    if (categoryIdTrimmed && categoryIdTrimmed !== 'null' && categoryIdTrimmed !== 'undefined') {
+        whereClauses.push(`EXISTS (SELECT 1 FROM product_categories pc WHERE pc.product_ean = ${productAlias}.ean AND pc.category_id = $${paramIndex++})`);
+        queryParams.push(categoryIdTrimmed);
+    }
   }
 
   const whereClause = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : "";
-  
   return { whereClause, queryParams, paramIndex };
 }
 
@@ -59,22 +100,12 @@ function buildWhereClause(filters) {
  * @returns {Promise<number>} - O número total de produtos.
  */
 async function countProducts(filters = {}) {
-  // Para contagem, um JOIN simples com preços é necessário se houver filtro de preço
-  const { whereClause, queryParams } = buildWhereClause(filters);
-  let countQuery = `
-    SELECT COUNT(DISTINCT p.ean) 
-    FROM products p
+  const { whereClause, queryParams } = buildWhereClause(filters, true);
+  const countQuery = `
+    SELECT COUNT(DISTINCT p_count.ean) 
+    FROM products p_count 
+    ${whereClause}
   `;
-
-  if (filters.priceMin || filters.priceMax) {
-    countQuery += `
-      LEFT JOIN prices pr ON p.ean = pr.product_ean
-      LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id AND pl.name = 'Preço Base'
-    `;
-  }
-
-  countQuery += ` ${whereClause}`;
-
   const { rows } = await pool.query(countQuery, queryParams);
   return parseInt(rows[0].count, 10) || 0;
 }
@@ -88,41 +119,48 @@ async function countProducts(filters = {}) {
 async function getProducts(filters = {}, pagination = {}) {
   const { page = 1, limit = 20, sortBy = 'name', order = 'asc' } = pagination;
   const offset = (page - 1) * limit;
-
-  const { whereClause, queryParams, paramIndex: initialParamIndex } = buildWhereClause(filters);
-  let paramIndex = initialParamIndex;
+  const { whereClause, queryParams, paramIndex: buildClauseParamIndex } = buildWhereClause(filters, false);
+  let currentParamIndex = buildClauseParamIndex;
 
   const validSortColumns = ['name', 'price', 'created_at', 'brand'];
   const safeSortBy = validSortColumns.includes(sortBy.toLowerCase()) ? sortBy : 'name';
   const safeOrder = order.toLowerCase() === 'desc' ? 'DESC' : 'ASC';
 
-  const basePriceListIdSubquery = "(SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1)";
+  const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+  
+  const priceSubQuery = `
+    (SELECT pr_display.price 
+     FROM product_variants pv_display
+     JOIN prices pr_display ON pv_display.variantid = pr_display.variantid
+     WHERE pv_display.ean = p.ean AND pr_display.price_list_id = ${basePriceListId}
+     ORDER BY pv_display.variantid ASC
+     LIMIT 1
+    ) 
+  `;
+
+  const sortExpression = safeSortBy === 'price' 
+    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.ean AND pr_sort.price_list_id = ${basePriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
+    : `p.${safeSortBy}`;
 
   const query = `
     SELECT 
-      p.ean, p.name, p.brand, p.active, p.shortdescription, -- Selecionar colunas explícitas de p
-      pr.price as product_price, -- Renomeado para evitar conflito e ser explícito
-      pr.price_list_id as product_price_list_id, -- Para depuração
-      pl.name as fetched_price_list_name, -- Para depuração
-      (SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1) as expected_price_list_id, -- Para depuração
+      p.ean, p.name, p.brand, p.active, p.shortdescription, p.is_featured, p.created_at, p.updated_at,
+      ${priceSubQuery} as product_price,
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
         (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
-      (SELECT SUM(pv.stockquantity) FROM product_variants pv WHERE pv.ean = p.ean) as total_stock
+      (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.ean) as total_stock
     FROM products p
-    LEFT JOIN prices pr ON p.ean = pr.product_ean AND pr.price_list_id = ${basePriceListIdSubquery}
-    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id
     ${whereClause}
-    ORDER BY ${safeSortBy === 'price' ? 'pr.price' : 'p.' + safeSortBy} ${safeOrder} NULLS LAST, p.ean ASC
-    LIMIT $${paramIndex++} OFFSET $${paramIndex++}
+    ORDER BY ${sortExpression} ${safeOrder} NULLS LAST, p.ean ASC
+    LIMIT $${currentParamIndex++} OFFSET $${currentParamIndex++}
   `;
   
   const finalQueryParams = [...queryParams, limit, offset];
   const { rows } = await pool.query(query, finalQueryParams);
-  // Mapear para o nome de campo 'price' esperado pelo frontend, mas mantendo os logs com product_price
   return rows.map(row => ({...row, price: row.product_price })); 
 }
 
@@ -132,35 +170,40 @@ async function getProducts(filters = {}, pagination = {}) {
  * @returns {Promise<object|null>} - O objeto do produto ou nulo se não for encontrado.
  */
 async function getProductByEan(ean) {
-  const basePriceListIdSubquery = "(SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1)";
+  const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+  const promotionalPriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Promotional Price\' LIMIT 1)';
+  
     const query = `
     SELECT 
-      p.ean, p.name, p.brand, p.active, p.shortdescription, p.longdescription, p.productid, p.created_at, p.updated_at, -- Selecionar colunas explícitas de p
-      pr.price as product_price, 
-      pr.price_list_id as product_price_list_id, 
-      pl.name as fetched_price_list_name,
-      (SELECT price_list_id FROM price_lists WHERE name = 'Preço Base' LIMIT 1) as expected_price_list_id,
+      p.ean, p.name, p.brand, p.active, p.shortdescription, p.longdescription, p.productid, p.created_at, p.updated_at, p.is_featured,
+      (SELECT pr.price 
+       FROM product_variants pv 
+       JOIN prices pr ON pv.variantid = pr.variantid 
+       WHERE pv.ean = p.ean AND pr.price_list_id = ${basePriceListId}
+       ORDER BY pv.variantid ASC LIMIT 1
+      ) as product_price, 
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
         (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
-      (SELECT json_agg(var ORDER BY var.name) FROM
-        (SELECT variantid, name, stockquantity FROM product_variants WHERE ean = p.ean) as var
+      (SELECT json_agg(var ORDER BY var.variantid) FROM
+        (SELECT pv_detail.variantid, pv_detail.name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
+                (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${basePriceListId} LIMIT 1) as base_selling_price,
+                (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
+         FROM product_variants pv_detail WHERE pv_detail.ean = p.ean
+        ) as var
       ) as variants,
       (SELECT json_agg(attr ORDER BY attr.key) FROM
         (SELECT attributeid, "key", "value" FROM product_attributes WHERE product_ean = p.ean) as attr
       ) as attributes
     FROM products p
-    LEFT JOIN prices pr ON p.ean = pr.product_ean AND pr.price_list_id = ${basePriceListIdSubquery}
-    LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id
     WHERE p.ean = $1
   `;
   
   const { rows } = await pool.query(query, [ean]);
   if (rows.length > 0) {
-    // Mapear para o nome de campo 'price' esperado pelo frontend
     const product = rows[0];
     return {...product, price: product.product_price };
   }

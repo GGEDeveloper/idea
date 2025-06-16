@@ -1,6 +1,6 @@
 # 📋 LOG DE DECISÕES E REQUISITOS
 
-> **Última Atualização:** 2025-06-11T02:35:00+01:00  
+> **Última Atualização:** 2025-06-15T18:30:00+01:00  
 > **Responsável:** Product Owner & Equipe de Desenvolvimento  
 > **Versão do Documento:** 2.0.0
 
@@ -373,3 +373,121 @@ Otimização do carregamento de ícones e imagens do cabeçalho.
 2.  **Solução Técnica (`min-w-0`):** A decisão técnica foi aplicar a classe `min-w-0` ao elemento `<main>`. Esta é uma solução padrão da Tailwind CSS para problemas de overflow em contentores flex, pois define `min-width: 0px` e permite que o contentor encolha adequadamente, respeitando os limites do seu parente.
 **Arquivos Afetados:** `src/pages/ProductsPage.jsx`.
 **Estado:** ✅ Concluído
+
+---
+## 2025-06-15 - Desenvolvimento do Pipeline de Importação de Dados Geko
+
+### ID: GEKO-ETL-PRMT-001
+**Timestamp:** 2025-06-15T10:00:00+01:00
+**Tipo:** Decisão Técnica e Desenvolvimento de Backend
+**Prompt:** "Precisamos de avaliar o nosso projeto para continuarmos o desenvolvimento. Neste momento estávamos a povoar a tabela geko_poducts da nossa bd que serve com tabela intermédia entre os dados reais da geko e os dados que utilizaremos para o site. Avalia e vê como podemos fazer isto corretamente."
+**Decisões Tomadas:**
+1.  **Análise de XML Grande:** O ficheiro XML da Geko é demasiado grande para leitura direta. Decisão: Dividir o XML em chunks mais pequenos para análise.
+    - Criado script `split_xml_script.py` para dividir o XML em pedaços de 1500 linhas.
+2.  **Análise da Estrutura XML:** Com base nos chunks, foi analisada a estrutura do XML Geko.
+    - Identificados os tags principais: `<offer>`, `<products>`, `<product>`.
+    - Mapeados os campos chave: EAN, supplier_price (net), stock_quantity, e a estrutura das descrições (HTML em CDATA).
+    - Documentação criada em `docs/geko_xml_structure_analysis.md`.
+3.  **Desenvolvimento do Script de Staging (`populate_geko_products.py`):
+    - Objetivo: Popular a tabela `geko_products` com dados brutos do XML.
+    - Implementado parsing iterativo (memory-efficient) do XML.
+    - Extração dos campos: EAN, supplier_price, stock_quantity, e o `raw_data` (XML completo do produto).
+    - Utilização de `INSERT ... ON CONFLICT DO UPDATE` para idempotência.
+    - Otimização com `psycopg2.extras.execute_values` para batch upserting (BATCH_SIZE=200).
+4.  **Ajustes de Schema (Iterativo):
+    - Removida FK `fk_gp_product_ean` de `geko_products` para `products` para permitir o staging de todos os produtos Geko, independentemente de já existirem em `products`.
+    - Adicionada constraint `UNIQUE (ean, "url")` a `product_images`.
+    - Adicionadas colunas `created_at`, `updated_at` e trigger de update a `product_attributes`.
+    - Adicionada constraint `UNIQUE (product_ean, "key")` a `product_attributes`.
+    - Adicionada coluna `supplier_price` a `product_variants`.
+    - Criado script `apply_schema_updates.py` para gerir estas alterações de schema de forma controlada.
+5.  **Desenvolvimento do Script ETL Principal (`process_staged_data.py`):
+    - Objetivo: Popular as tabelas finais do catálogo a partir de `geko_products`.
+    - Implementadas funções para popular: `products`, `categories`, `product_categories`, `product_images`, `product_variants`, `product_attributes`, `prices`.
+    - EAN como chave de ligação principal.
+    - Preservação de HTML nas descrições da tabela `products` para máxima fidelidade.
+    - Extração de atributos de `product_attributes` através de parsing de HTML (`BeautifulSoup`).
+    - População de `product_variants.supplier_price` com preços específicos de variantes.
+    - Lógica de upsert e batching para performance e idempotência.
+    - Garantia de existência de uma `price_list` para "Supplier Price".
+**Arquivos Afetados/Criados:** `populate_geko_products.py`, `process_staged_data.py`, `apply_schema_updates.py`, `docs/geko_xml_structure_analysis.md`, `docs/database_schema.sql` (múltiplas atualizações).
+**Estado:** ✅ Concluído (Pipeline ETL inicial implementado e funcional).
+
+---
+## 2025-06-15 - Melhorias no Pipeline de Dados Geko e Estrutura de Categorias
+
+### ID: GEKO-ETL-PRMT-002
+**Timestamp:** 2025-06-15T16:15:00+01:00
+**Tipo:** Refinamento Técnico e de Dados
+**Prompt:** "O que temos que corrigir, alterar para a bd ficar perfeita para a nossa utilizacao de acordo com o nosso projeto e regras? Quero que analises os dados e que povoes todas, atencao que queremos usar o ean com chave de ligacao ok? Ve a doc toda relevante e prepara. Procede [para implementar hierarquia de categorias e preços de variantes]."
+**Decisões Tomadas:**
+1.  **Revisão da Fidelidade de Dados vs. Regras do Projeto (`RASCUNHO_RULES_PROJETO.md`):
+    - **Preços de Fornecedor**: Reforçada a regra de não expor preços de fornecedor. Decidido que a tabela `product_variants` deveria armazenar o preço de fornecedor específico da variante (vindo de `<size><price net="..."/></size>`), pois este é o custo mais granular.
+        - Schema de `product_variants` atualizado para incluir `supplier_price NUMERIC(12,4)`.
+        - Script `apply_schema_updates.py` modificado para adicionar esta coluna.
+        - Script `process_staged_data.py` (função `populate_product_variants`) atualizado para extrair e popular este preço.
+    - **Descrições de Produtos**: Para máxima fidelidade, a decisão anterior de armazenar HTML bruto das descrições Geko nas colunas `products.shortdescription` e `products.longdescription` foi mantida e verificada como correta.
+2.  **Implementação da Hierarquia de Categorias (`categories.parent_id`):
+    - Objetivo: Permitir navegação e exibição hierárquica de categorias, conforme implícito na regra de "Categorias Dinâmicas".
+    - Refatorada a função `populate_categories_and_links` para criar proativamente categorias para todos os segmentos de um caminho (path), garantindo que os pais existem antes de serem referenciados.
+    - Refatorada a função `update_category_parent_ids` em `process_staged_data.py` para iterativamente construir a árvore de `parent_id` a partir dos `path` das categorias. Esta função agora lida com a criação de categorias intermédias em falta e faz múltiplas passagens para resolver a hierarquia.
+    - Corrigido um bug na função `update_category_parent_ids` onde a tupla para `execute_batch` não tinha o número correto de argumentos para a query SQL de `UPDATE`.
+3.  **Revisão e Confirmação dos Scripts ETL:**
+    - O script `populate_geko_products.py` foi considerado estável e otimizado.
+    - O script `apply_schema_updates.py` foi atualizado para incluir todas as alterações de schema necessárias (constraints, colunas, triggers) de forma idempotente.
+    - O script `process_staged_data.py` foi iterativamente construído e testado para popular todas as tabelas de catálogo (`products`, `categories`, `product_categories`, `product_images`, `product_variants`, `product_attributes`, `prices`), culminando na inclusão da lógica de hierarquia de categorias e tratamento de preços de variantes.
+**Arquivos Afetados/Criados:** `process_staged_data.py` (atualizações significativas), `apply_schema_updates.py` (atualizações), `docs/database_schema.sql` (atualizações), `LOG_PROMPTS_CONSOLIDADO.md`, `LOG_ERROS_CONSOLIDADO.md`, `LOG_CODE_CONSOLIDADO.md` (atualizações).
+**Estado:** ✅ Concluído (Pipeline ETL refinado, hierarquia de categorias e preços de variantes implementados).
+
+---
+## 2025-06-15 - Finalização e Verificação do Pipeline de Dados Geko
+
+### ID: GEKO-ETL-PRMT-003
+**Timestamp:** 2025-06-15T17:00:00+01:00
+**Tipo:** Conclusão de Desenvolvimento e Verificação
+**Prompt:** (Implícito) "Correr os scripts atualizados e verificar a integridade final da hierarquia de categorias."
+**Decisões Tomadas & Resultados:**
+1.  **Execução do `apply_schema_updates.py`**: Confirmado que todas as alterações de schema (incluindo `product_variants.supplier_price` e constraints para `product_images` e `product_attributes`) foram aplicadas com sucesso à base de dados.
+2.  **Execução do `process_staged_data.py` (Refinado)**: 
+    - O script foi executado com a lógica atualizada para `populate_categories_and_links` (para criar categorias para todos os segmentos de path) e `update_category_parent_ids` (com a correção do tuple e lógica iterativa).
+    - O script concluiu todas as etapas de população de tabelas (`products`, `categories`, `product_categories`, `product_images`, `product_variants`, `product_attributes`, `prices`) sem erros de base de dados.
+    - A secção de `update_category_parent_ids` mostrou que 156 categorias tiveram o seu `parent_id` atualizado com sucesso através de múltiplas passagens, indicando a construção da hierarquia.
+3.  **Verificação da Hierarquia de Categorias (`verify_category_hierarchy.py`):
+    - O script de verificação foi executado após o `process_staged_data.py`.
+    - **Resultado Confirmado:**
+        - Total de Categorias: 416 (superior aos 387 originais, indicando criação de pais intermédios).
+        - Categorias Raiz (parent_id IS NULL): 20.
+        - Categorias Filhas (parent_id IS NOT NULL): 396.
+    - A amostra da hierarquia exibida pelo script de verificação demonstrou a correta ligação pai-filho para múltiplos níveis, incluindo categorias com IDs gerados (prefixo "GEN_") para os pais intermédios.
+**Arquivos Afetados/Criados:** Nenhuma alteração de código nesta fase; apenas execução e verificação.
+**Estado:** ✅ Concluído (Pipeline de importação e processamento de dados Geko, incluindo hierarquia de categorias e preços de variantes, está funcional e verificado. Documentação atualizada.)
+
+---
+## 2025-06-15 - Implementação de Funcionalidades Adicionais de Produto e Estratégia de Preços
+
+### ID: FEAT-PRICE-PRMT-001
+**Timestamp:** 2025-06-15T17:55:00+01:00
+**Tipo:** Decisão de Produto e Refinamento de Schema/ETL
+**Prompt:** "Podes proceguir da melhor maneira. PS.: acabei de me lembrar que deviamos ter colunas para definir se um produto esta em promocao ou se esta em destaque para aparecer no carrocel da home page, tem em consideracao para termos isto tratado antes de avancarmos. (...) quero que analises os dados e que povoes todas, atencao que queremos usar o ean com chave de ligacao ok? ve a doc toda relevante e prepara."
+**Decisões Tomadas:**
+1.  **Implementação de Flags de Produto:**
+    - Adicionada a coluna `is_featured BOOLEAN DEFAULT false` à tabela `products` para marcar produtos de destaque para o carrossel da Home Page.
+    - Adicionada a coluna `is_on_sale BOOLEAN DEFAULT false` à tabela `product_variants` para indicar se uma variante específica está em promoção.
+    - O script `apply_schema_updates.py` foi atualizado para adicionar estas colunas à base de dados.
+    - Os scripts ETL (`process_staged_data.py`) foram ajustados para que estas colunas sejam populadas com o seu valor `DEFAULT false`, uma vez que esta informação não provém do feed XML da Geko e será gerida pela administração do site.
+2.  **Estratégia de Preços de Venda (Retail Pricing):**
+    - **Listas de Preços:** Confirmada a necessidade e criadas/asseguradas entradas na tabela `price_lists` para:
+        - ID 1: "Supplier Price" (Custo de fornecedor, base da variante)
+        - ID 2: "Base Selling Price" (Preço de venda base, com markup sobre o custo de fornecedor da variante)
+        - ID 3: "Promotional Price" (Preço promocional temporário)
+    - **Estrutura da Tabela `prices`:** Refatorada para ser específica por variante. A chave primária implícita (por constraint `UNIQUE`) passou de `(product_ean, price_list_id)` para `(variantid, price_list_id)`. Isto envolveu remover `product_ean`, adicionar `variantid` e atualizar as constraints e FKs na tabela `prices` via `apply_schema_updates.py`.
+    - **Cálculo de Preço Base:** A função `populate_prices_table` em `process_staged_data.py` foi modificada para:
+        - Ler `supplier_price` de cada `product_variant`.
+        - Inserir uma entrada na tabela `prices` para `price_list_id = 1` com este `variant.supplier_price`.
+        - Calcular o "Base Selling Price" aplicando um markup de +25% (`supplier_price * 1.25`) e inserir uma entrada na tabela `prices` para `price_list_id = 2` com este valor calculado, associado ao `variantid`.
+    - **Preços Promocionais**: A estrutura suporta-os (via `price_list_id = 3`), mas a sua definição e população serão geridas externamente à importação ETL inicial (ex: admin UI, importação manual).
+3.  **Confirmação da Hierarquia de Categorias:** Após refatoração da lógica em `populate_categories_and_links` e `update_category_parent_ids` para garantir a criação de todas as categorias intermédias e a correta ligação dos `parent_id`, o script `verify_category_hierarchy.py` confirmou a criação de uma estrutura hierárquica robusta (416 categorias no total, com 20 raiz e 396 filhas).
+**Arquivos Afetados/Criados:** `docs/database_schema.sql`, `apply_schema_updates.py`, `process_staged_data.py`, `LOG_PROMPTS_CONSOLIDADO.md`, `LOG_ERROS_CONSOLIDADO.md`, `LOG_CODE_CONSOLIDADO.md`.
+**Estado:** ✅ Concluído (Funcionalidades de produto `is_featured`/`is_on_sale` adicionadas ao schema. Estratégia de preços de venda implementada na BD e no ETL. Hierarquia de categorias verificada.)
+
+---

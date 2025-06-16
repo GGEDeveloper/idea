@@ -1,0 +1,1500 @@
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/488_0_36429.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="489" vat="0" code="CG80303-43" code_on_card="CG80303-43" EAN="5901477136580" code_producer="5901477136580">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cylinder-do-kompresora-100l-g80303-43"/>
+                        <description>
+                            <name><![CDATA[Cylinder do kompresora 100L (G80303-43)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.2" net="15.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80303-43" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="15.2" net="15.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/489_0_36274.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="490" vat="0" code="CG80303-45_48" code_on_card="CG80303-45_48" EAN="5901477136597" code_producer="5901477136597">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plyta-zaworu-do-kompresora-100l-g80303-1"/>
+                        <description>
+                            <name><![CDATA[Płyta zaworu do kompresora 100L(G80303) (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.85" net="7.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80303-45_48" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="7.85" net="7.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/490_0_5086146.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="491" vat="0" code="CG80303-50" code_on_card="CG80303-50" EAN="5901477136603" code_producer="5901477136603">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rurka-powietrza-glowicy-cylindra-do-kompresora-100l-g80303-50"/>
+                        <description>
+                            <name><![CDATA[Rurka powietrza głowicy cylindra do kompresora 100L (G80303-50)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.7" net="7.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80303-50" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="7.7" net="7.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/491_0_36276.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="492" vat="0" code="CG80303-51" code_on_card="CG80303-51" EAN="5901477136610" code_producer="5901477136610">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/glowica-cylindra-do-kompresora-100l-g80303"/>
+                        <description>
+                            <name><![CDATA[Głowica cylindra do kompresora 100L (G80303)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.72" net="11.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80303-51" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="38,00"/>
+                                                                    <price gross="11.72" net="11.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/492_0_36278.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="493" vat="0" code="CG80303-8" code_on_card="CG80303-8" EAN="5901477136504" code_producer="5901477136504">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/czterostonny-wylacznik-cisnieniowy-do-kompresora-100l-g80303-no-8-1"/>
+                        <description>
+                            <name><![CDATA[Czterostonny wyłącznik cisnieniowy do kompresora 100L (G80303) no.8 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="4.33" net="4.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80303-8" weight="400.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.33" net="4.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/493_0_36280.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/493_1_36281.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="494" vat="0" code="CG80304" code_on_card="CG80304" EAN="5901477136627" code_producer="5901477136627">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/jednostronny-wylacznik-cisnienowy-do-kompresora-100l-g80304-1"/>
+                        <description>
+                            <name><![CDATA[Jednostronny wyłącznik cisnienowy do kompresora 100L(G80304) (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="3.5" net="3.5"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80304" weight="400.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.5" net="3.5"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/494_0_36283.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/494_1_36284.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="495" vat="0" code="CG80305-1" code_on_card="CG80305-1" EAN="5901477136979" code_producer="5901477136979">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/skrzynia-korbowa-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Skrzynia korbowa do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.44" net="17.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-1" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="17.44" net="17.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/495_0_18499679.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/495_1_18499680.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="496" vat="0" code="CG80305-15" code_on_card="CG80305-15" EAN="5901477136931" code_producer="5901477136931">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/glowica-cylindra-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Głowica cylindra do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="7.38" net="7.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-15" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="24,00"/>
+                                                                    <price gross="7.38" net="7.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/496_0_36290.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="497" vat="0" code="CG80305-16" code_on_card="CG80305-16" EAN="5901477136924" code_producer="5901477136924">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tlumik-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Tłumik do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="1.35" net="1.35"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-16" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="62,00"/>
+                                                                    <price gross="1.35" net="1.35"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/497_0_18498831.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/497_1_18498832.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="498" vat="0" code="CG80305-2" code_on_card="CG80305-2" EAN="5901477136962" code_producer="5901477136962">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wal-korbowy-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Wał korbowy do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.54" net="6.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-2" weight="200.00" grossWeight="210.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="6.54" net="6.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/498_0_36293.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/498_1_18505206.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="513" vat="0" code="C00360A" code_on_card="C00360A" EAN="5901477141294" code_producer="5901477141294">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheel-axis-g890303-no-6"/>
+                        <description>
+                            <name><![CDATA[Wheel axis (G890303) NO. 6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00360A" weight="500.00" grossWeight="500.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/513_0_16652797.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="514" vat="0" code="C00360D" code_on_card="C00360D" EAN="5901477141317" code_producer="5901477141317">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/one-way-valve-g80303-no-9"/>
+                        <description>
+                            <name><![CDATA[One-way valve (G80303), no.9]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="3.52" net="3.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00360D" weight="105.00" grossWeight="105.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="3.52" net="3.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/514_0_18498807.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="515" vat="0" code="C00360G" code_on_card="C00360G" EAN="5901477141331" code_producer="5901477141331">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-feet-screw-no-14"/>
+                        <description>
+                            <name><![CDATA[Motor feet screw, no.14]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.26" net="0.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00360G" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="0.26" net="0.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/515_1_18498809.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="516" vat="0" code="C00360I" code_on_card="C00360I" EAN="5901477141355" code_producer="5901477141355">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/crankcase-no-20-g80303"/>
+                        <description>
+                            <name><![CDATA[Crankcase,no.20 (G80303)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.8" net="9.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00360I" weight="500.00" grossWeight="500.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="9.8" net="9.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/516_0_5086136.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/516_1_5086137.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="517" vat="0" code="C00360K" code_on_card="C00360K" EAN="5901477141379" code_producer="5901477141379">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/drain-plug-g80303-no-24"/>
+                        <description>
+                            <name><![CDATA[Drain plug (G80303) no.24]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.58" net="0.58"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00360K" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="17,00"/>
+                                                                    <price gross="0.58" net="0.58"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/517_0_18498813.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="518" vat="0" code="CG80302-3-4" code_on_card="CG80302-3-4" EAN="5901477136757" code_producer="5901477136757">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/oil-level-sight-glass-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Oil Level Sight Glass for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.09" net="1.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-3-4" weight="50.00" grossWeight="60.00">
+                                        <stock id="1" quantity="206,00"/>
+                                                                    <price gross="1.09" net="1.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/518_0_18498821.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="519" vat="0" code="CG80302-34" code_on_card="CG80302-34" EAN="5901477136818" code_producer="5901477136818">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wal-korbowy-do-kompresora-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Wał korbowy do kompresora 100L(G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.16" net="6.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-34" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="11,00"/>
+                                                                    <price gross="6.16" net="6.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/519_0_36242.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="520" vat="0" code="CG80302-43" code_on_card="CG80302-43" EAN="5901477136825" code_producer="5901477136825">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheel-for-air-compressor-pump-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Wheel for Air Compressor Pump 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.8" net="12.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-43" weight="1500.00" grossWeight="1500.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="12.8" net="12.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/520_0_36245.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="521" vat="0" code="CG80302-56" code_on_card="CG80302-56" EAN="5901477140655" code_producer="5901477140655">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/engine-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Engine for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="58.51" net="58.51"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-56" weight="12780.00" grossWeight="13060.00">
+                                        <stock id="1" quantity="24,00"/>
+                                                                    <price gross="58.51" net="58.51"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/521_0_36446.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/521_1_36447.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/521_1_36448.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="522" vat="0" code="CG80302-59" code_on_card="CG80302-59" EAN="5901477136832" code_producer="5901477136832">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/connector-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Connector for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="7.35" net="7.35"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-59" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.35" net="7.35"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/522_0_36249.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="523" vat="0" code="CG80302-61_65" code_on_card="CG80302-61_65" EAN="5901477136849" code_producer="5901477136849">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pressure-gauge-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Pressure Gauge for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="2.18" net="2.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-61_65" weight="400.00" grossWeight="400.00">
+                                        <stock id="1" quantity="66,00"/>
+                                                                    <price gross="2.18" net="2.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/523_0_18499331.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="524" vat="0" code="CG80302-63" code_on_card="CG80302-63" EAN="5901477136856" code_producer="5901477136856">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/check-valve-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Check Valve for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="3.66" net="3.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-63" weight="105.00" grossWeight="105.00">
+                                        <stock id="1" quantity="31,00"/>
+                                                                    <price gross="3.66" net="3.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/524_0_36253.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="525" vat="0" code="CG80302-64" code_on_card="CG80302-64" EAN="5901477136863" code_producer="5901477136863">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pressure-switch-valve-regulator-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Pressure Switch Valve Regulator for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.73" net="3.73"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-64" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.73" net="3.73"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/525_0_36255.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/525_1_36256.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="526" vat="0" code="CG80302-69" code_on_card="CG80302-69" EAN="5901477136870" code_producer="5901477136870">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-safety-valve-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Air Safety Valve for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.54" net="2.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-69" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="134,00"/>
+                                                                    <price gross="2.54" net="2.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/526_0_18498825.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="527" vat="0" code="CG80302-7" code_on_card="CG80302-7" EAN="5901477136764" code_producer="5901477136764">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cylinder-for-air-compressor-100l-g80302"/>
+                        <description>
+                            <name><![CDATA[Cylinder for Air Compressor 100L (G80302)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.06" net="7.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80302-7" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="7.06" net="7.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/527_0_36260.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="528" vat="0" code="CG80305-22" code_on_card="CG80305-22" EAN="5901477136917" code_producer="5901477136917">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stojan-z-oslona-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Stojan z osłoną do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="47.4" net="47.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-22" weight="7900.00" grossWeight="8000.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="47.4" net="47.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/528_0_36295.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/528_1_18504899.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/528_1_36296.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="529" vat="0" code="CG80305-34" code_on_card="CG80305-34" EAN="5901477136900" code_producer="5901477136900">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/szybkozlaczka-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Szybkozłączka do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="1.36" net="1.36"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-34" weight="50.00" grossWeight="60.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.36" net="1.36"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/529_0_36298.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="530" vat="0" code="CG80305-36" code_on_card="CG80305-36" EAN="5901477136894" code_producer="5901477136894">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/zawor-jednostronny-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Zawór jednostronny do kompresora 50L (G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.91" net="2.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-36" weight="97.00" grossWeight="97.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.91" net="2.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/530_0_18498834.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="531" vat="0" code="CG80305-7" code_on_card="CG80305-7" EAN="5901477136955" code_producer="5901477136955">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pierscien-tlokowy-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Pierścień tłokowy do kompresora 50L(G80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="1.86" net="1.86"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-7" weight="50.00" grossWeight="60.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.86" net="1.86"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/531_0_36301.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="532" vat="0" code="CG80305-9" code_on_card="CG80305-9" EAN="5901477136948" code_producer="5901477136948">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105262" name="Compressors" path="Spare Parts\Compressors"/>
+            <category_idosell path="Spare Parts\Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cylinder-do-kompresora-50l-g80305"/>
+                        <description>
+                            <name><![CDATA[Cylinder do kompresora 50L (g80305)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="7.16" net="7.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80305-9" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.16" net="7.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/532_0_36303.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="533" vat="0" code="CG80410-10" code_on_card="CG80410-10" EAN="5901477137051" code_producer="5901477137051">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/fan-for-gas-fired-heater-g80410-10"/>
+                        <description>
+                            <name><![CDATA[Fan for Gas Fired Heater G80410 #10]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-10" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/533_0_18498700.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="534" vat="0" code="CG80410-11" code_on_card="CG80410-11" EAN="5901477137068" code_producer="5901477137068">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-for-gas-fired-heater-g80410-11"/>
+                        <description>
+                            <name><![CDATA[Motor for Gas Fired Heater G80410 #11]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.43" net="14.43"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-11" weight="690.00" grossWeight="770.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="14.43" net="14.43"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/534_0_18498702.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="535" vat="0" code="CG80410-12" code_on_card="CG80410-12" EAN="5901477137075" code_producer="5901477137075">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/back-grill-for-gas-fired-heater-g80410-12"/>
+                        <description>
+                            <name><![CDATA[Back Grill for Gas Fired Heater G80410 #12]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.52" net="2.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-12" weight="186.00" grossWeight="200.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="2.52" net="2.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/535_0_18498704.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/535_1_18498705.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="536" vat="0" code="CG80410-14" code_on_card="CG80410-14" EAN="5901477137082" code_producer="5901477137082">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-for-gas-fired-heater-g80410-14"/>
+                        <description>
+                            <name><![CDATA[Power Cord for Gas Fired Heater G80410 #14]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.88" net="4.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-14" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="4.88" net="4.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="537" vat="0" code="CG80410-15" code_on_card="CG80410-15" EAN="5901477137099" code_producer="5901477137099">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/strain-relief-grommet-for-gas-fired-heater-g80410-15"/>
+                        <description>
+                            <name><![CDATA[Strain Relief Grommet for Gas Fired Heater G80410 #15]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.48" net="0.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-15" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.48" net="0.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="538" vat="0" code="CG80410-16" code_on_card="CG80410-16" EAN="5901477137105" code_producer="5901477137105">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/propane-hose-regulator-assembly-for-gas-fired-heater-g80410-16"/>
+                        <description>
+                            <name><![CDATA[Propane Hose/Regulator Assembly for Gas Fired Heater G80410 #16]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.69" net="10.69"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-16" weight="473.00" grossWeight="500.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="10.69" net="10.69"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/538_0_18498706.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="539" vat="0" code="CG80410-17" code_on_card="CG80410-17" EAN="5901477137112" code_producer="5901477137112">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gas-inlet-nozzle-for-gas-fired-heater-g80410-17"/>
+                        <description>
+                            <name><![CDATA[Gas Inlet Nozzle for Gas Fired Heater G80410 #17]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.14" net="0.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-17" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.14" net="0.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="540" vat="0" code="CG80410-18" code_on_card="CG80410-18" EAN="5901477137129" code_producer="5901477137129">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plastic-base-for-gas-fired-heater-g80410-18"/>
+                        <description>
+                            <name><![CDATA[Plastic Base for Gas Fired Heater G80410 #18]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.7" net="4.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-18" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="4.7" net="4.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/540_0_18498708.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="541" vat="0" code="CG80410-19" code_on_card="CG80410-19" EAN="5901477137136" code_producer="5901477137136">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/valve-lifter-for-gas-fired-heater-g80410-19"/>
+                        <description>
+                            <name><![CDATA[Valve Lifter for Gas Fired Heater G80410 #19]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.86" net="0.86"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-19" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="11,00"/>
+                                                                    <price gross="0.86" net="0.86"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/541_0_18498710.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="542" vat="0" code="CG80410-20" code_on_card="CG80410-20" EAN="5901477137143" code_producer="5901477137143">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/i-o-switch-for-gas-fired-heater-g80410-20"/>
+                        <description>
+                            <name><![CDATA[I/O Switch for Gas Fired Heater G80410 #20]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.73" net="1.73"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-20" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.73" net="1.73"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="543" vat="0" code="CG80410-21" code_on_card="CG80410-21" EAN="5901477137150" code_producer="5901477137150">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/piezo-ignitor-for-gas-fired-heater-g80410-21"/>
+                        <description>
+                            <name><![CDATA[Piezo Ignitor for Gas Fired Heater G80410 #21]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.41" net="3.41"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-21" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.41" net="3.41"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/543_0_18498712.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="544" vat="0" code="CG80410-22" code_on_card="CG80410-22" EAN="5901477137167" code_producer="5901477137167">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/valve-assembly-for-gas-fired-heater-g80410-22"/>
+                        <description>
+                            <name><![CDATA[Valve Assembly for Gas Fired Heater G80410 #22]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="21.1" net="21.1"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-22" weight="230.00" grossWeight="243.00">
+                                        <stock id="1" quantity="37,00"/>
+                                                                    <price gross="21.1" net="21.1"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="545" vat="0" code="CG80410-23" code_on_card="CG80410-23" EAN="5901477137174" code_producer="5901477137174">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bracket-for-gas-fired-heater-g80410-23"/>
+                        <description>
+                            <name><![CDATA[Bracket for Gas Fired Heater G80410 #23]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.49" net="0.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-23" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="0.49" net="0.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="546" vat="0" code="CG80410-24" code_on_card="CG80410-24" EAN="5901477137181" code_producer="5901477137181">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-needle-for-gas-fired-heater-g80410-24"/>
+                        <description>
+                            <name><![CDATA[Ignition Needle for Gas Fired Heater G80410 #24]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.16" net="2.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-24" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.16" net="2.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/546_0_18498714.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="547" vat="0" code="CG80410-3" code_on_card="CG80410-3" EAN="5901477137198" code_producer="5901477137198">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-gas-fired-heater-g80410-3"/>
+                        <description>
+                            <name><![CDATA[Handle for Gas Fired Heater G80410 #3]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.07" net="1.07"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-3" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.07" net="1.07"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/547_0_18498751.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="548" vat="0" code="CG80410-7" code_on_card="CG80410-7" EAN="5901477137204" code_producer="5901477137204">
+                        <producer name="GEKO" id=""/>
+

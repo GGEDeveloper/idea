@@ -1,0 +1,1500 @@
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-gas-fired-heater-g80410-7"/>
+                        <description>
+                            <name><![CDATA[Handle for Gas Fired Heater G80410 #7]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.64" net="1.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-7" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="1.64" net="1.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="549" vat="0" code="CG80410-8" code_on_card="CG80410-8" EAN="5901477137211" code_producer="5901477137211">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/thermostat-probe-for-gas-fired-heater-g80410-8"/>
+                        <description>
+                            <name><![CDATA[Thermostat Probe for Gas Fired Heater G80410 #8]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.08" net="2.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-8" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="2.08" net="2.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/549_0_18498718.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="550" vat="0" code="CG80410-9" code_on_card="CG80410-9" EAN="5901477137228" code_producer="5901477137228">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/thermocouple-for-gas-fired-heater-g80410-9"/>
+                        <description>
+                            <name><![CDATA[Thermocouple for Gas Fired Heater G80410 #9]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.47" net="3.47"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80410-9" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.47" net="3.47"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/550_0_18498716.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="551" vat="0" code="CG80411-10" code_on_card="CG80411-10" EAN="5901477137235" code_producer="5901477137235">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/fan-for-gas-fired-heater-g80411-10"/>
+                        <description>
+                            <name><![CDATA[Fan for Gas Fired Heater G80411 #10]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.98" net="1.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-10" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="1.98" net="1.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/551_0_18498722.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="552" vat="0" code="CG80411-11" code_on_card="CG80411-11" EAN="5901477137242" code_producer="5901477137242">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-for-gas-fired-heater-g80411-11"/>
+                        <description>
+                            <name><![CDATA[Motor for Gas Fired Heater G80411 #11]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.74" net="15.74"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-11" weight="745.00" grossWeight="825.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="15.74" net="15.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/552_0_18498724.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="553" vat="0" code="CG80411-12" code_on_card="CG80411-12" EAN="5901477137259" code_producer="5901477137259">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/back-grill-for-gas-fired-heater-g80411-12"/>
+                        <description>
+                            <name><![CDATA[Back Grill for Gas Fired Heater G80411 #12]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.43" net="3.43"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-12" weight="186.00" grossWeight="200.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="3.43" net="3.43"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/553_0_18498726.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="554" vat="0" code="CG80411-14" code_on_card="CG80411-14" EAN="5901477137266" code_producer="5901477137266">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/nozzle-support-bracket-for-gas-fired-heater-g80411-14"/>
+                        <description>
+                            <name><![CDATA[Nozzle Support Bracket for Gas Fired Heater G80411 #14]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.8" net="0.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-14" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.8" net="0.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="555" vat="0" code="CG80411-15" code_on_card="CG80411-15" EAN="5901477137273" code_producer="5901477137273">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/solenoid-valve-for-gas-fired-heater-g80411-15"/>
+                        <description>
+                            <name><![CDATA[Solenoid Valve for Gas Fired Heater G80411 #15]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.88" net="14.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-15" weight="230.00" grossWeight="243.00">
+                                        <stock id="1" quantity="26,00"/>
+                                                                    <price gross="14.88" net="14.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="556" vat="0" code="CG80411-16" code_on_card="CG80411-16" EAN="5901477137280" code_producer="5901477137280">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-pipe-connector-for-gas-fired-heater-g80411-16"/>
+                        <description>
+                            <name><![CDATA[Air Pipe Connector for Gas Fired Heater G80411 #16]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.11" net="2.11"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-16" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="2.11" net="2.11"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="557" vat="0" code="CG80411-17" code_on_card="CG80411-17" EAN="5901477137297" code_producer="5901477137297">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-pipe-nut-fixing-plate-for-gas-fired-heater-g80411-17"/>
+                        <description>
+                            <name><![CDATA[Air Pipe Nut Fixing Plate for Gas Fired Heater G80411 #17]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.99" net="0.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-17" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.99" net="0.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="558" vat="0" code="CG80411-18" code_on_card="CG80411-18" EAN="5901477137303" code_producer="5901477137303">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/inlet-connection-protection-cover-for-gas-fired-heater-g80411-18"/>
+                        <description>
+                            <name><![CDATA[Inlet Connection Protection Cover for Gas Fired Heater G80411 #18]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.49" net="0.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-18" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.49" net="0.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="559" vat="0" code="CG80411-19" code_on_card="CG80411-19" EAN="5901477137310" code_producer="5901477137310">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-transformer-for-gas-fired-heater-g80411-19"/>
+                        <description>
+                            <name><![CDATA[Ignition Transformer for Gas Fired Heater G80411 #19]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.64" net="2.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-19" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.64" net="2.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/559_0_18498728.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="560" vat="0" code="CG80411-20" code_on_card="CG80411-20" EAN="5901477137327" code_producer="5901477137327">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-for-gas-fired-heater-g80411-20"/>
+                        <description>
+                            <name><![CDATA[Power Cord for Gas Fired Heater G80411 #20]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.92" net="3.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-20" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.92" net="3.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="561" vat="0" code="CG80411-21" code_on_card="CG80411-21" EAN="5901477137334" code_producer="5901477137334">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-fastener-for-gas-fired-heater-g80411-21"/>
+                        <description>
+                            <name><![CDATA[Power Cord Fastener for Gas Fired Heater G80411 #21]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.99" net="0.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-21" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="0.99" net="0.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="562" vat="0" code="CG80411-22" code_on_card="CG80411-22" EAN="5901477137341" code_producer="5901477137341">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bottom-base-for-gas-fired-heater-g80411-22"/>
+                        <description>
+                            <name><![CDATA[Bottom Base for Gas Fired Heater G80411 #22]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.62" net="5.62"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-22" weight="186.00" grossWeight="200.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="5.62" net="5.62"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/562_0_18498730.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/562_1_18498731.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="563" vat="0" code="CG80411-23" code_on_card="CG80411-23" EAN="5901477137358" code_producer="5901477137358">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/i-o-switch-for-gas-fired-heater-g80411-23"/>
+                        <description>
+                            <name><![CDATA[I/O Switch for Gas Fired Heater G80411 #23]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.29" net="1.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-23" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.29" net="1.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="564" vat="0" code="CG80411-24" code_on_card="CG80411-24" EAN="5901477137365" code_producer="5901477137365">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-pcb-for-gas-fired-heater-g80411-24"/>
+                        <description>
+                            <name><![CDATA[Power PCB for Gas Fired Heater G80411 #24]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.33" net="14.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-24" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="22,00"/>
+                                                                    <price gross="14.33" net="14.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/564_0_18498732.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/564_1_18498733.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="565" vat="0" code="CG80411-25" code_on_card="CG80411-25" EAN="5901477137372" code_producer="5901477137372">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/knob-for-gas-fired-heater-g80411-25"/>
+                        <description>
+                            <name><![CDATA[Knob for Gas Fired Heater G80411 #25]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.99" net="0.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-25" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.99" net="0.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="566" vat="0" code="CG80411-28" code_on_card="CG80411-28" EAN="5901477137389" code_producer="5901477137389">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/display-pcb2-for-gas-fired-heater-g80411-28"/>
+                        <description>
+                            <name><![CDATA[Display PCB2 for Gas Fired Heater G80411 #28]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.33" net="13.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-28" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="32,00"/>
+                                                                    <price gross="13.33" net="13.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/566_0_18498735.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="567" vat="0" code="CG80411-29" code_on_card="CG80411-29" EAN="5901477137396" code_producer="5901477137396">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/waterproof-cover-for-gas-fired-heater-g80411-29"/>
+                        <description>
+                            <name><![CDATA[Waterproof Cover for Gas Fired Heater G80411 #29]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.78" net="0.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-29" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="0.78" net="0.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="568" vat="0" code="CG80411-3" code_on_card="CG80411-3" EAN="5901477137402" code_producer="5901477137402">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-gas-fired-heater-g80411-3"/>
+                        <description>
+                            <name><![CDATA[Handle for Gas Fired Heater G80411 #3]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.96" net="1.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-3" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="1.96" net="1.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/568_0_18498720.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="569" vat="0" code="CG80411-30" code_on_card="CG80411-30" EAN="5901477137419" code_producer="5901477137419">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/propane-hose-regulator-assembly-for-gas-fired-heater-g80411-30"/>
+                        <description>
+                            <name><![CDATA[Propane Hose/Regulator Assembly for Gas Fired Heater G80411 #30]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.57" net="12.57"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-30" weight="473.00" grossWeight="500.00">
+                                        <stock id="1" quantity="27,00"/>
+                                                                    <price gross="12.57" net="12.57"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/569_0_18498737.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="570" vat="0" code="CG80411-5" code_on_card="CG80411-5" EAN="5901477137426" code_producer="5901477137426">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/burner-head-for-gas-fired-heater-g80411-5"/>
+                        <description>
+                            <name><![CDATA[Burner Head for Gas Fired Heater G80411 #5]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.94" net="4.94"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-5" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="4.94" net="4.94"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="571" vat="0" code="CG80411-6" code_on_card="CG80411-6" EAN="5901477137433" code_producer="5901477137433">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wind-shield-for-gas-fired-heater-g80411-6"/>
+                        <description>
+                            <name><![CDATA[Wind Shield for Gas Fired Heater G80411 #6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.23" net="1.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-6" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.23" net="1.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="572" vat="0" code="CG80411-7" code_on_card="CG80411-7" EAN="5901477137440" code_producer="5901477137440">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/thermostat-for-gas-fired-heater-g80411-7"/>
+                        <description>
+                            <name><![CDATA[Thermostat for Gas Fired Heater G80411 #7]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.33" net="1.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-7" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.33" net="1.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/572_0_18498741.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="573" vat="0" code="CG80411-8" code_on_card="CG80411-8" EAN="5901477137457" code_producer="5901477137457">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-needle-for-gas-fired-heater-g80411-8"/>
+                        <description>
+                            <name><![CDATA[Ignition Needle for Gas Fired Heater G80411 #8]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.18" net="3.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-8" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.18" net="3.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/573_0_18498743.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="574" vat="0" code="CG80411-9" code_on_card="CG80411-9" EAN="5901477137464" code_producer="5901477137464">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/flame-detection-needle-for-gas-fired-heater-g80411-9"/>
+                        <description>
+                            <name><![CDATA[Flame Detection Needle for Gas Fired Heater G80411 #9]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.41" net="1.41"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80411-9" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="1.41" net="1.41"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="575" vat="0" code="CG80412-10" code_on_card="CG80412-10" EAN="5901477137471" code_producer="5901477137471">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/fan-for-gas-fired-heater-g80412-10"/>
+                        <description>
+                            <name><![CDATA[Fan for Gas Fired Heater G80412 #10]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.39" net="2.39"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-10" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.39" net="2.39"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/575_0_17300528.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="576" vat="0" code="CG80412-11" code_on_card="CG80412-11" EAN="5901477137488" code_producer="5901477137488">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-for-gas-fired-heater-g80412-11"/>
+                        <description>
+                            <name><![CDATA[Motor for Gas Fired Heater G80412 #11]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.49" net="17.49"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-11" weight="1275.00" grossWeight="1355.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="17.49" net="17.49"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/576_0_17300585.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="577" vat="0" code="CG80412-12" code_on_card="CG80412-12" EAN="5901477137495" code_producer="5901477137495">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/back-grill-for-gas-fired-heater-g80412-12"/>
+                        <description>
+                            <name><![CDATA[Back Grill for Gas Fired Heater G80412 #12]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.28" net="4.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-12" weight="186.00" grossWeight="200.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="4.28" net="4.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/577_0_17300640.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="578" vat="0" code="CG80412-14" code_on_card="CG80412-14" EAN="5901477137501" code_producer="5901477137501">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/nozzle-support-bracket-for-gas-fired-heater-g80412-14"/>
+                        <description>
+                            <name><![CDATA[Nozzle Support Bracket for Gas Fired Heater G80412 #14]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.78" net="0.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-14" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="0.78" net="0.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/578_0_17300660.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="579" vat="0" code="CG80412-15" code_on_card="CG80412-15" EAN="5901477137518" code_producer="5901477137518">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/solenoid-valve-for-gas-fired-heater-g80412-15"/>
+                        <description>
+                            <name><![CDATA[Solenoid Valve for Gas Fired Heater G80412 #15]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="18.21" net="18.21"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-15" weight="230.00" grossWeight="243.00">
+                                        <stock id="1" quantity="11,00"/>
+                                                                    <price gross="18.21" net="18.21"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/579_0_17300674.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="580" vat="0" code="CG80412-16" code_on_card="CG80412-16" EAN="5901477137525" code_producer="5901477137525">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-pipe-connector-for-gas-fired-heater-g80412-16"/>
+                        <description>
+                            <name><![CDATA[Air Pipe Connector for Gas Fired Heater G80412 #16]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.13" net="2.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-16" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.13" net="2.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/580_0_17300702.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="581" vat="0" code="CG80412-17" code_on_card="CG80412-17" EAN="5901477137532" code_producer="5901477137532">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-pipe-nut-fixing-plate-for-gas-fired-heater-g80412-17"/>
+                        <description>
+                            <name><![CDATA[Air Pipe Nut Fixing Plate for Gas Fired Heater G80412 #17]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.94" net="0.94"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-17" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="0.94" net="0.94"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/581_0_17300738.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="582" vat="0" code="CG80412-18" code_on_card="CG80412-18" EAN="5901477137549" code_producer="5901477137549">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/inlet-connection-protection-cover-for-gas-fired-heater-g80412-18"/>
+                        <description>
+                            <name><![CDATA[Inlet Connection Protection Cover for Gas Fired Heater G80412 #18]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.78" net="0.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-18" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="0.78" net="0.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/582_0_17300772.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="583" vat="0" code="CG80412-19" code_on_card="CG80412-19" EAN="5901477137556" code_producer="5901477137556">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-transformer-for-gas-fired-heater-g80412-19"/>
+                        <description>
+                            <name><![CDATA[Ignition Transformer for Gas Fired Heater G80412 #19]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.84" net="4.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-19" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.84" net="4.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/583_0_17300795.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="584" vat="0" code="CG80412-20" code_on_card="CG80412-20" EAN="5901477137563" code_producer="5901477137563">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-for-gas-fired-heater-g80412-20"/>
+                        <description>
+                            <name><![CDATA[Power Cord for Gas Fired Heater G80412 #20]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.12" net="3.12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-20" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.12" net="3.12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="585" vat="0" code="CG80412-21" code_on_card="CG80412-21" EAN="5901477137570" code_producer="5901477137570">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-fastener-for-gas-fired-heater-g80412-21"/>
+                        <description>
+                            <name><![CDATA[Power Cord Fastener for Gas Fired Heater G80412 #21]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.04" net="1.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-21" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.04" net="1.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/585_0_17300817.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="586" vat="0" code="CG80412-22" code_on_card="CG80412-22" EAN="5901477137587" code_producer="5901477137587">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bottom-base-for-gas-fired-heater-g80412-22"/>
+                        <description>
+                            <name><![CDATA[Bottom Base for Gas Fired Heater G80412 #22]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.56" net="6.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-22" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="16,00"/>
+                                                                    <price gross="6.56" net="6.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/586_0_17336832.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="587" vat="0" code="CG80412-23" code_on_card="CG80412-23" EAN="5901477137594" code_producer="5901477137594">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/i-o-switch-for-gas-fired-heater-g80412-23"/>
+                        <description>
+                            <name><![CDATA[I/O Switch for Gas Fired Heater G80412 #23]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.04" net="1.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-23" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="1.04" net="1.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="588" vat="0" code="CG80412-24" code_on_card="CG80412-24" EAN="5901477137600" code_producer="5901477137600">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/capacitor-for-gas-fired-heater-g80412-24"/>
+                        <description>
+                            <name><![CDATA[Capacitor for Gas Fired Heater G80412 #24]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.82" net="1.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-24" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="1.82" net="1.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/588_0_17300865.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="589" vat="0" code="CG80412-25" code_on_card="CG80412-25" EAN="5901477137617" code_producer="5901477137617">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-pcb1-for-gas-fired-heater-g80412-25"/>
+                        <description>
+                            <name><![CDATA[Power PCB1 for Gas Fired Heater G80412 #25]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.24" net="14.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-25" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="14.24" net="14.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/589_0_17300927.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="590" vat="0" code="CG80412-26" code_on_card="CG80412-26" EAN="5901477137624" code_producer="5901477137624">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/knob-for-gas-fired-heater-g80412-26"/>
+                        <description>
+                            <name><![CDATA[Knob for Gas Fired Heater G80412 #26]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.04" net="1.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-26" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.04" net="1.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/590_0_17300989.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="591" vat="0" code="CG80412-28" code_on_card="CG80412-28" EAN="5901477137631" code_producer="5901477137631">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/display-window-for-gas-fired-heater-g80412-28"/>
+                        <description>
+                            <name><![CDATA[Display Window for Gas Fired Heater G80412 #28]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.78" net="0.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-28" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="0.78" net="0.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/591_0_17301007.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="592" vat="0" code="CG80412-29" code_on_card="CG80412-29" EAN="5901477137648" code_producer="5901477137648">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/display-pcb2-for-gas-fired-heater-g80412-29"/>
+                        <description>
+                            <name><![CDATA[Display PCB2 for Gas Fired Heater G80412 #29]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.51" net="9.51"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-29" weight="63.00" grossWeight="64.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="9.51" net="9.51"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/592_0_17301029.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="593" vat="0" code="CG80412-3" code_on_card="CG80412-3" EAN="5901477137655" code_producer="5901477137655">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105634" name="Heaters" path="Spare Parts\Heaters"/>
+            <category_idosell path="Spare Parts\Heaters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-gas-fired-heater-g80412-3"/>
+                        <description>
+                            <name><![CDATA[Handle for Gas Fired Heater G80412 #3]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.73" net="2.73"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80412-3" weight="79.00" grossWeight="84.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.73" net="2.73"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/593_0_17300331.jpg"/>
+                            </large>
+                        </images>

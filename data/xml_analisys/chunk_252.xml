@@ -1,0 +1,84 @@
+                            <name><![CDATA[Manual concrete screed 120x20cm 3x180cm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0" net="0"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="NG80191" weight="0.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0" net="0"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="12882" vat="0" code="NG80193" code_on_card="NG80193">
+                        <producer name="GEKO" id=""/>
+
+
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/concrete-screed-ruller-2m"/>
+                        <description>
+                            <name><![CDATA[Concrete screed ruller 2m]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0" net="0"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="NG80193" weight="0.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0" net="0"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="12883" vat="0" code="NG80192" code_on_card="NG80192">
+                        <producer name="GEKO" id=""/>
+
+
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/electrical-concrete-screed-1m"/>
+                        <description>
+                            <name><![CDATA[Electrical concrete screed 1m]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0" net="0"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="NG80192" weight="0.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0" net="0"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+            </products>
+        </offer>
+        <!-- SOLEX B2B -->
+
+

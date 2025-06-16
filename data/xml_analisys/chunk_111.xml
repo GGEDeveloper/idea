@@ -1,0 +1,1500 @@
+                    <product id="6564" vat="0" code="G90045-L" code_on_card="G90045-L" EAN="5901477153631" code_producer="5901477153631">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-coat-pvc-polyester-size-l"/>
+                        <description>
+                            <name><![CDATA[Rain coat PVC/POLYESTER size L]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.2" net="5.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90045-L" weight="570.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.2" net="5.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6564_0_5369676.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6565" vat="0" code="G90045-XL" code_on_card="G90045-XL" EAN="5901477153655" code_producer="5901477153655">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-coat-pvc-polyester-size-xl"/>
+                        <description>
+                            <name><![CDATA[Rain coat PVC/POLYESTER size XL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.2" net="5.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90045-XL" weight="570.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.2" net="5.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6565_0_5369680.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6566" vat="0" code="G90045-XXL" code_on_card="G90045-XXL" EAN="5901477153662" code_producer="5901477153662">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-coat-pvc-polyester-size-xxl"/>
+                        <description>
+                            <name><![CDATA[Rain coat PVC/POLYESTER size XXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.2" net="5.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90045-XXL" weight="570.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.2" net="5.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6566_0_5369683.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6567" vat="0" code="G90045-XXXL" code_on_card="G90045-XXXL" EAN="5901477153679" code_producer="5901477153679">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-coat-pvc-polyester-size-xxxl"/>
+                        <description>
+                            <name><![CDATA[Rain coat PVC/POLYESTER size XXXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Raincoat Polyester PVC Coated. Elasticated inner cuffs. 2 pockets. Outer material made of polyester with PVC coating.</p><br/><ul><br/><li>Material: PVC, Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.2" net="5.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90045-XXXL" weight="570.00" grossWeight="600.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="5.2" net="5.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6567_0_5369685.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6568" vat="0" code="G90046-M" code_on_card="G90046-M" EAN="5901477153693" code_producer="5901477153693">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-suit-pvc-polyester-size-m"/>
+                        <description>
+                            <name><![CDATA[Rain suit PVC/POLYESTER size M]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.13" net="6.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90046-M" weight="900.00" grossWeight="920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.13" net="6.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_0_5369691.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5369692.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5369693.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498875.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498876.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498877.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498878.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498879.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6568_1_5498880.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6569" vat="0" code="G90046-L" code_on_card="G90046-L" EAN="5901477153686" code_producer="5901477153686">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-suit-pvc-polyester-size-l"/>
+                        <description>
+                            <name><![CDATA[Rain suit PVC/POLYESTER size L]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.13" net="6.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90046-L" weight="900.00" grossWeight="920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.13" net="6.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_0_5369687.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5369688.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5369689.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498868.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498869.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498870.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498871.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498872.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6569_1_5498874.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6570" vat="0" code="G90046-XL" code_on_card="G90046-XL" EAN="5901477153709" code_producer="5901477153709">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-suit-pvc-polyester-size-xl"/>
+                        <description>
+                            <name><![CDATA[Rain suit PVC/POLYESTER size XL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.13" net="6.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90046-XL" weight="900.00" grossWeight="920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.13" net="6.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_0_5369695.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5369697.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5369698.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498881.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498882.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498883.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498884.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498885.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6570_1_5498886.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6571" vat="0" code="G90046-XXL" code_on_card="G90046-XXL" EAN="5901477153716" code_producer="5901477153716">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-suit-pvc-polyester-size-xxl"/>
+                        <description>
+                            <name><![CDATA[Rain suit PVC/POLYESTER size XXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.13" net="6.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90046-XXL" weight="900.00" grossWeight="920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.13" net="6.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_0_5369700.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5369701.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5369702.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498888.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498889.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498890.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498891.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498892.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6571_1_5498893.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6572" vat="0" code="G90046-XXXL" code_on_card="G90046-XXXL" EAN="5901477153723" code_producer="5901477153723">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106929" name="Rainwear" path="Health and Safety Articles\Rainwear"/>
+            <category_idosell path="Health and Safety Articles\Rainwear" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rain-suit-pvc-polyester-size-xxxl"/>
+                        <description>
+                            <name><![CDATA[Rain suit PVC/POLYESTER size XXXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>The Jacket and Trouser Set. Both include sewn and taped waterproof seams. (Sold as set, pouch included).</p><br/><ul><br/><li>Front hand pockets</li><br/><li>Foldaway storm hood with draw-cord</li><br/><li>Sewn and taped waterproofed seams</li><br/><li>Packs away into a compact pouch</li><br/><li>Elasticated cuffs</li><br/><li>Full front zip fastening with stud closing front storm flap</li><br/><li>Material: Polyester coated with PVC</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>M<br></td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.13" net="6.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90046-XXXL" weight="900.00" grossWeight="920.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.13" net="6.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_0_5369704.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5369705.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5369706.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498895.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498896.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498897.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498898.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498899.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6572_1_5498900.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6573" vat="0" code="CG01062A" code_on_card="CG01062A" EAN="5901477153105" code_producer="5901477153105">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/nakladka-okragla-na-podnosnik-hydrauliczny-3t-3-5t"/>
+                        <description>
+                            <name><![CDATA[Nakładka okrągła na podnośnik hydrauliczny 3T-3,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.07" net="5.07"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG01062A" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.07" net="5.07"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6573_0_5654699.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6575" vat="0" code="G80096" code_on_card="G80096" EAN="5901477153426" code_producer="5901477153426">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107774" name="Multi-process Devices" path="Welding Equipment and Accessories\Multi-process Devices"/>
+            <category_idosell path="Welding Equipment and Accessories\Multi-process Devices" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-machine-200a-mig-tig-mma-230v"/>
+                        <description>
+                            <name><![CDATA[Welding Machine 200A MIG/TIG/MMA 230V]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Microprocessor controlled 200A MIG/TIG/MMA 230V Multi-Function Welder.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <td>Wire Dia. Size</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>MMA Electrode Size</td><br/>    <td>2,0 - 3,2 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Wire Feed Speed</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>No-load Voltage</td><br/>    <td>56V</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1max</sub></td><br/>    <td>30.3 A</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1eff</sub></td><br/>    <td>22.2 A</td><br/>  </tr><br/>  <tr><br/>    <td>Power Factor</td><br/>    <td>0.93</td><br/>  </tr><br/></table><br/><h5>MIG</h5><br/><table><br/>  <tr><br/>    <th>MIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>22 V</td><br/>    <td>25 V</td><br/>  </tr><br/></table><br/><h5>TIG</h5><br/><table><br/>  <tr><br/>    <th>TIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>16.4 V</td><br/>    <td>18.8 V</td><br/>  </tr><br/></table><br/><h5>MMA</h5><br/><table><br/>  <tr><br/>    <th>MMA Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>26.4 V</td><br/>    <td>28.8 V</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Microprocessor controlled 200A MIG/TIG/MMA 230V Multi-Function Welder.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <td>Wire Dia. Size</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>MMA Electrode Size</td><br/>    <td>2,0 - 3,2 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Wire Feed Speed</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>No-load Voltage</td><br/>    <td>56V</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1max</sub></td><br/>    <td>30.3 A</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1eff</sub></td><br/>    <td>22.2 A</td><br/>  </tr><br/>  <tr><br/>    <td>Power Factor</td><br/>    <td>0.93</td><br/>  </tr><br/></table><br/><h5>MIG</h5><br/><table><br/>  <tr><br/>    <th>MIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>22 V</td><br/>    <td>25 V</td><br/>  </tr><br/></table><br/><h5>TIG</h5><br/><table><br/>  <tr><br/>    <th>TIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>16.4 V</td><br/>    <td>18.8 V</td><br/>  </tr><br/></table><br/><h5>MMA</h5><br/><table><br/>  <tr><br/>    <th>MMA Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>26.4 V</td><br/>    <td>28.8 V</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Microprocessor controlled 200A MIG/TIG/MMA 230V Multi-Function Welder.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <td>Wire Dia. Size</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>MMA Electrode Size</td><br/>    <td>2,0 - 3,2 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Wire Feed Speed</td><br/>    <td>0,6 - 1,0 mm</td><br/>  </tr><br/>  <tr><br/>    <td>No-load Voltage</td><br/>    <td>56V</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1max</sub></td><br/>    <td>30.3 A</td><br/>  </tr><br/>  <tr><br/>    <td>I<sub>1eff</sub></td><br/>    <td>22.2 A</td><br/>  </tr><br/>  <tr><br/>    <td>Power Factor</td><br/>    <td>0.93</td><br/>  </tr><br/></table><br/><h5>MIG</h5><br/><table><br/>  <tr><br/>    <th>MIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>22 V</td><br/>    <td>25 V</td><br/>  </tr><br/></table><br/><h5>TIG</h5><br/><table><br/>  <tr><br/>    <th>TIG Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>16.4 V</td><br/>    <td>18.8 V</td><br/>  </tr><br/></table><br/><h5>MMA</h5><br/><table><br/>  <tr><br/>    <th>MMA Duty Cycle</th><br/>    <th>100%</th><br/>    <th>60%</th><br/>  </tr><br/>  <tr><br/>    <td>Current</td><br/>    <td>160 A</td><br/>    <td>220 A</td><br/>  </tr><br/>  <tr><br/>    <td>Voltage</td><br/>    <td>26.4 V</td><br/>    <td>28.8 V</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="184.32" net="184.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80096" weight="12700.00" grossWeight="13800.00">
+                                        <stock id="1" quantity="75,00"/>
+                                                                    <price gross="184.32" net="184.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_0_5637646.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637628.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637629.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637630.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637631.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637632.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637633.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637634.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637635.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637636.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637637.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637638.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637639.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637640.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637641.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637642.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637643.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637644.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5637645.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6575_1_5645071.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6578" vat="0" code="G90042-S" code_on_card="G90042-S" EAN="5901477153594" code_producer="5901477153594">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-s"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size S]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size S.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size S.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size S.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-S" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="458,00"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6578_0_5369667.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6579" vat="0" code="G90042-M" code_on_card="G90042-M" EAN="5901477153587" code_producer="5901477153587">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-m"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size M]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size M.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size M.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size M.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-M" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6579_0_5369665.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6580" vat="0" code="G90042-L" code_on_card="G90042-L" EAN="5901477153570" code_producer="5901477153570">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-l"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size L]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size L.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size L.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size L.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-L" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="455,00"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6580_0_5369663.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6581" vat="0" code="G90042-XL" code_on_card="G90042-XL" EAN="5901477153600" code_producer="5901477153600">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-xl"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size XL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size XL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-XL" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="489,00"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6581_0_5369670.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6582" vat="0" code="G90042-XXL" code_on_card="G90042-XXL" EAN="5901477153617" code_producer="5901477153617">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-xxl"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size XXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size XXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-XXL" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6582_0_5369672.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6583" vat="0" code="G90042-XXXL" code_on_card="G90042-XXXL" EAN="5901477153624" code_producer="5901477153624">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106928" name="Reflective Vests" path="Health and Safety Articles\Reflective Vests"/>
+            <category_idosell path="Health and Safety Articles\Reflective Vests" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/reflective-vest-basic-size-xxxl"/>
+                        <description>
+                            <name><![CDATA[Reflective vest BASIC size XXXL]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XXXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Reflective Vest BASIC size XXXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Reflective Vest BASIC size XXXL.</p><br/><ul><br/><li>Color: yellow</li><br/><li>Material: 100% Polyester</li><br/></ul><br/><table><br/>  <tr><br/>    <th>Size</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>S</td><br/>    <td>140-164 cm</td><br/>  </tr><br/>  <tr><br/>    <td>M</td><br/>    <td>158-166 cm</td><br/>  </tr><br/>  <tr><br/>    <td>L</td><br/>    <td>170-176 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XL</td><br/>    <td>176-182 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXL</td><br/>    <td>182-188 cm</td><br/>  </tr><br/>  <tr><br/>    <td>XXXL</td><br/>    <td>188-194 cm</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.77" net="0.77"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G90042-XXXL" weight="60.00" grossWeight="65.00">
+                                        <stock id="1" quantity="723,00"/>
+                                                                    <price gross="0.77" net="0.77"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6583_0_5369674.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6584" vat="0" code="G81436" code_on_card="G81436" EAN="5901477153839" code_producer="5901477153839">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105476" name="Circulation Pumps for Central Heating and Hot Water" path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water"/>
+            <category_idosell path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pump-co-electronic-energy-saving-25-40-180"/>
+                        <description>
+                            <name><![CDATA[Pump CO Electronic Energy-saving 25-40 / 180]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-40/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption.</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 22W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 40 L/min (2,4 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>4 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-40/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption.</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 22W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 40 L/min (2,4 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>4 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-40/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption.</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 22W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 40 L/min (2,4 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>4 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="44.67" net="44.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G81436" weight="2460.00" grossWeight="2710.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="44.67" net="44.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_0_5637709.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652026.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652027.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652028.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652029.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652030.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652031.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652032.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652033.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652034.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652035.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6584_1_5652036.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6585" vat="0" code="G81437" code_on_card="G81437" EAN="5901477153846" code_producer="5901477153846">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105476" name="Circulation Pumps for Central Heating and Hot Water" path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water"/>
+            <category_idosell path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pump-co-electronic-energy-saving-25-60-180"/>
+                        <description>
+                            <name><![CDATA[Pump CO Electronic Energy-saving 25-60 / 180]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-60/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 45W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 50 L/min (3,0 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>6 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-60/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 45W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 50 L/min (3,0 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>6 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Electronic Energy-Saving Circulation Pump 25-60/180 for central heating installations. Suitable for domestic hot water and central heating. The energy-saving GEKO pump allows you to automatically control the pressure difference by regulating the speed and adapting it to the current demand. Only 5 watts minimum power consumption</p><br/><h4>Technical Data</h4><br/><table><br/><tbody><br/><tr><br/><th style="text-align: left;">Input Voltage</th><br/><td>230V, ~50-60Hz</td><br/></tr><br/><tr><br/><th style="text-align: left;">Power Consumption (AUTO mode)</th><br/><td>from 5 to 45W</td><br/></tr><br/><tr><br/><th style="text-align: left;">Rate of Flow</th><br/><td>up to 50 L/min (3,0 m3/h)</td><br/></tr><br/><tr><br/><th style="text-align: left;">Installation Length</th><br/><td>180 mm</td><br/></tr><br/><tr><br/><th style="text-align: left;">Threaded Connection</th><br/><td>G1 1/2</td><br/></tr><br/><tr><br/><th style="text-align: left;">Pressure Head</th><br/><td>6 m</td><br/></tr><br/><tr><br/><th style="text-align: left;">Media Temperature</th><br/><td>min. +2&deg;C, max. +95&deg;C</td><br/></tr><br/><tr><br/><th style="text-align: left;">Max Pressure</th><br/><td>1,0 MPa</td><br/></tr><br/><tr><br/><th style="text-align: left;">Protection Class</th><br/><td>IP44</td><br/></tr><br/><tr><br/><th style="text-align: left;">Insulation Class</th><br/><td>F</td><br/></tr><br/><tr><br/><th style="text-align: left;">Certificates</th><br/><td>CE</td><br/></tr><br/></tbody><br/></table><br/><h5>Package Content</h5><br/><ul><br/><li>Circulation pump</li><br/><li>Union fitting set cast iron 6/4 in x 1 in (2 pcs)</li><br/><li>Electric supply cable 1.1m length</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="45.48" net="45.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G81437" weight="2460.00" grossWeight="2710.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="45.48" net="45.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_0_5637711.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652037.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652038.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652039.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652040.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652041.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652042.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652043.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652044.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652045.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652046.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6585_1_5652047.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6586" vat="0" code="G81438" code_on_card="G81438" EAN="5901477153853" code_producer="5901477153853">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105476" name="Circulation Pumps for Central Heating and Hot Water" path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water"/>
+            <category_idosell path="Tools for Plumbers\Circulation Pumps for Central Heating and Hot Water" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/circulation-pump-for-hot-utility-water-cp15-15"/>
+                        <description>
+                            <name><![CDATA[Circulation pump for hot utility water CP15-15]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Circulation Pump CP15-15 GEKO for hot utility water. This circulation pump is used to force the circulation of hot tap water in single and multi-family houses.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <th>Max Pressure</th><br/>    <th>10 bar</th><br/>  </tr><br/>  <tr><br/>    <td>Insulation Class</td><br/>    <td>F</td><br/>  </tr><br/>  <tr><br/>    <td>Input Voltage</td><br/>    <td>230V, 50-60Hz</td><br/>  </tr><br/>  <tr><br/>    <td>Power Consumption</td><br/>    <td>28 W</td><br/>  </tr><br/>  <tr><br/>    <td>Installation Length</td><br/>    <td>85 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Threaded Connection</td><br/>    <td>G1/2</td><br/>  </tr><br/>  <tr><br/>    <td>Media Temperature</td><br/>    <td>min. +2&deg;C, max. +95&deg;C</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Circulation Pump CP15-15 GEKO for hot utility water. This circulation pump is used to force the circulation of hot tap water in single and multi-family houses.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <th>Max Pressure</th><br/>    <th>10 bar</th><br/>  </tr><br/>  <tr><br/>    <td>Insulation Class</td><br/>    <td>F</td><br/>  </tr><br/>  <tr><br/>    <td>Input Voltage</td><br/>    <td>230V, 50-60Hz</td><br/>  </tr><br/>  <tr><br/>    <td>Power Consumption</td><br/>    <td>28 W</td><br/>  </tr><br/>  <tr><br/>    <td>Installation Length</td><br/>    <td>85 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Threaded Connection</td><br/>    <td>G1/2</td><br/>  </tr><br/>  <tr><br/>    <td>Media Temperature</td><br/>    <td>min. +2&deg;C, max. +95&deg;C</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Circulation Pump CP15-15 GEKO for hot utility water. This circulation pump is used to force the circulation of hot tap water in single and multi-family houses.</p><br/><h4>Technical Data</h4><br/><table><br/>  <tr><br/>    <th>Max Pressure</th><br/>    <th>10 bar</th><br/>  </tr><br/>  <tr><br/>    <td>Insulation Class</td><br/>    <td>F</td><br/>  </tr><br/>  <tr><br/>    <td>Input Voltage</td><br/>    <td>230V, 50-60Hz</td><br/>  </tr><br/>  <tr><br/>    <td>Power Consumption</td><br/>    <td>28 W</td><br/>  </tr><br/>  <tr><br/>    <td>Installation Length</td><br/>    <td>85 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Threaded Connection</td><br/>    <td>G1/2</td><br/>  </tr><br/>  <tr><br/>    <td>Media Temperature</td><br/>    <td>min. +2&deg;C, max. +95&deg;C</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="27.25" net="27.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G81438" weight="1470.00" grossWeight="1550.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="27.25" net="27.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6586_1_5637715.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6586_1_5652123.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6586_1_5652128.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6586_1_5652129.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6586_1_5652131.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6591" vat="0" code="G80096A" code_on_card="G80096A" EAN="5901477153884" code_producer="5901477153884">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105614" name="Accessories for Welding Machines" path="Welding Equipment and Accessories\Accessories for Welding Machines"/>
+            <category_idosell path="Welding Equipment and Accessories\Accessories for Welding Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/set-of-torch-and-nozzles-for-mag-welding-machines"/>
+                        <description>
+                            <name><![CDATA[Set of torch and nozzles for Mag welding machines]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Rozmiary dysz: </h3>
+<ul>
+<li>0.8mm - 2 szt.</li>
+<li>1.0mm - 2 szt.</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Rozmiary dysz: </h3>
+<ul>
+<li>0.8mm - 2 szt.</li>
+<li>1.0mm - 2 szt.</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Rozmiary dysz: </h3>
+<ul>
+<li>0.8mm - 2 szt.</li>
+<li>1.0mm - 2 szt.</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.19" net="6.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80096A" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="54,00"/>
+                                                                    <price gross="6.19" net="6.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6591_0_11365275.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6591_1_11365278.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6593" vat="0" code="CG81024B" code_on_card="CG81024B" EAN="5901477166709" code_producer="5901477166709">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105277" name="Power Tools" path="Power Tools"/>
+            <category_idosell path="Power Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lacznik-podstawy-przecinarki-do-metalu-g81024-1"/>
+                        <description>
+                            <name><![CDATA[Łącznik podstawy przecinarki do metalu G81024 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.28" net="20.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81024B" weight="1200.00" grossWeight="1200.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="20.28" net="20.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6593_0_6813272.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6594" vat="0" code="G83018" code_on_card="G83018" EAN="5901477153396" code_producer="5901477153396">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107897" name="Trimming" path="Garden\Trimming"/>
+            <category_idosell path="Garden\Trimming" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cover-for-brush-cutter-jg"/>
+                        <description>
+                            <name><![CDATA[Cover for brush cutter JG]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.87" net="10.87"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G83018" weight="800.00" grossWeight="810.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.87" net="10.87"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6594_0_5538523.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6594_1_5499445.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6595" vat="0" code="G80652" code_on_card="G80652" EAN="5901477153464" code_producer="5901477153464">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106039" name="Cordless Power Tools" path="Power Tools\Cordless Power Tools"/>
+            <category_idosell path="Power Tools\Cordless Power Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/12v-cordless-tire-compressor-150psi"/>
+                        <description>
+                            <name><![CDATA[12V Cordless Tire Compressor 150PSI]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Cordless Tire Compressor can easily pump up your car tyres, bicycle tyres, footballs, air beds and more.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Pressure up to 150 PSI</li><br/><li>Fitted with a digital display and LED light so you can always get the pressure right</li><br/><li>The automatic shut off will stop inflation once the desired pressure level has been achieved</li><br/><li>The On/Off switch can be locked in the On position</li><br/><li>With three different nozzles the inflator can inflate virtually anything</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Voltage: 12V</li><br/><li>Battery: Li-Ion 1500 mAh</li><br/><li>Units: PSI, Bar, kPa, kg/cm&sup2;</li><br/></ul><br/><p>Check out the <strong>tool test on Youtube:</strong></p><br/><p><iframe src="//www.youtube.com/embed/xuYrBvvfmQY" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Cordless Tire Compressor can easily pump up your car tyres, bicycle tyres, footballs, air beds and more.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Pressure up to 150 PSI</li><br/><li>Fitted with a digital display and LED light so you can always get the pressure right</li><br/><li>The automatic shut off will stop inflation once the desired pressure level has been achieved</li><br/><li>The On/Off switch can be locked in the On position</li><br/><li>With three different nozzles the inflator can inflate virtually anything</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Voltage: 12V</li><br/><li>Battery: Li-Ion 1500 mAh</li><br/><li>Units: PSI, Bar, kPa, kg/cm&sup2;</li><br/></ul><br/><p>Check out the <strong>tool test on Youtube:</strong></p><br/><p><iframe src="//www.youtube.com/embed/xuYrBvvfmQY" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></short_desc>
+                            <description><![CDATA[<p>Cordless Tire Compressor can easily pump up your car tyres, bicycle tyres, footballs, air beds and more.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Pressure up to 150 PSI</li><br/><li>Fitted with a digital display and LED light so you can always get the pressure right</li><br/><li>The automatic shut off will stop inflation once the desired pressure level has been achieved</li><br/><li>The On/Off switch can be locked in the On position</li><br/><li>With three different nozzles the inflator can inflate virtually anything</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/><li>Voltage: 12V</li><br/><li>Battery: Li-Ion 1500 mAh</li><br/><li>Units: PSI, Bar, kPa, kg/cm&sup2;</li><br/></ul><br/><p>Check out the <strong>tool test on Youtube:</strong></p><br/><p><iframe src="//www.youtube.com/embed/xuYrBvvfmQY" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="35.71" net="35.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80652" weight="740.00" grossWeight="960.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="35.71" net="35.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_0_5086164.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086165.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086167.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086168.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086169.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086170.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086171.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086172.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086173.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086174.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086175.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086176.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6595_1_5086484.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6597" vat="0" code="G80761" code_on_card="G80761" EAN="5901477153754" code_producer="5901477153754">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107705" name="Construction and Renovation" path="Construction and Renovation"/>
+            <category_idosell path="Construction and Renovation" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plastic-pad-smoothing-machine-390mm"/>
+                        <description>
+                            <name><![CDATA[Plastic Pad Smoothing Machine 390mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.36" net="7.36"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80761" weight="500.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.36" net="7.36"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6597_0_5253092.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6597_1_5253094.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6599" vat="0" code="G80763" code_on_card="G80763" EAN="5901477153778" code_producer="5901477153778">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107705" name="Construction and Renovation" path="Construction and Renovation"/>
+            <category_idosell path="Construction and Renovation" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/sponge-pad-for-smoothing-machine-390mm"/>
+                        <description>
+                            <name><![CDATA[Sponge Pad for Smoothing Machine 390mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.51" net="8.51"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80763" weight="500.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.51" net="8.51"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6599_0_5253111.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6599_1_5253112.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6601" vat="0" code="G80770" code_on_card="G80770" EAN="5901477153808" code_producer="5901477153808">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107800" name="Painting Guns and Units" path="Construction and Renovation\Painting Guns and Units"/>
+            <category_idosell path="Construction and Renovation\Painting Guns and Units" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/electric-airless-paint-sprayer"/>
+                        <description>
+                            <name><![CDATA[Electric Airless Paint Sprayer]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Electric Airless Sprayer GEKO DP-X6. Ideal for spraying low and medium viscosity paint material like latex and acrylic coatings. Compact, portable design - making it perfect for light-duty projects such as decks, fences, and other painting projects. The high pressure pump delivers a finely atomized spray for a flawless professional finish.</p><br/><p>Coating types: water-based paints; oil-based paints; latex; enamels; lacquers; varnishes; primers; stains.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Compact, lightweight and easy to carry</li><br/>    <li>Adjustable pressure - from low pressure cleaning, medium pressure rolling and high pressure airless painting</li><br/>    <li>X-450 forged aluminium gun for exceptional durability</li><br/>    <li>Flexible suction tube spray directly paint containers</li><br/>    <li>Piston rod automatic lubrication</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Input Voltage: 230V / 50Hz</li><br/>    <li>Motor Power: 650W</li><br/>    <li>Max. Flow Rate: 1400 ml/min</li><br/>    <li>Efficiency: 6-8 m&sup2;/min</li><br/>    <li>Max. Pressure: 200 bar / 2900 PSI / 20 MPa</li><br/>    <li>Pressure Controlling: mechanical</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Electric Airless Sprayer DP-X6</li><br/>    <li>X-450 spray gun with airless tip 0,48mm</li><br/>    <li>Tip 517X</li><br/>    <li>30cm nozzle extension wand</li><br/>    <li>1/4'' x 7.5m high pressure hose</li><br/>    <li>Operation manual</li><br/></ul><br/><br/><p><iframe src="//www.youtube.com/embed/3B73_ofzbs8" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Electric Airless Sprayer GEKO DP-X6. Ideal for spraying low and medium viscosity paint material like latex and acrylic coatings. Compact, portable design - making it perfect for light-duty projects such as decks, fences, and other painting projects. The high pressure pump delivers a finely atomized spray for a flawless professional finish.</p><br/><p>Coating types: water-based paints; oil-based paints; latex; enamels; lacquers; varnishes; primers; stains.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Compact, lightweight and easy to carry</li><br/>    <li>Adjustable pressure - from low pressure cleaning, medium pressure rolling and high pressure airless painting</li><br/>    <li>X-450 forged aluminium gun for exceptional durability</li><br/>    <li>Flexible suction tube spray directly paint containers</li><br/>    <li>Piston rod automatic lubrication</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Input Voltage: 230V / 50Hz</li><br/>    <li>Motor Power: 650W</li><br/>    <li>Max. Flow Rate: 1400 ml/min</li><br/>    <li>Efficiency: 6-8 m&sup2;/min</li><br/>    <li>Max. Pressure: 200 bar / 2900 PSI / 20 MPa</li><br/>    <li>Pressure Controlling: mechanical</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Electric Airless Sprayer DP-X6</li><br/>    <li>X-450 spray gun with airless tip 0,48mm</li><br/>    <li>Tip 517X</li><br/>    <li>30cm nozzle extension wand</li><br/>    <li>1/4'' x 7.5m high pressure hose</li><br/>    <li>Operation manual</li><br/></ul><br/><br/><p><iframe src="//www.youtube.com/embed/3B73_ofzbs8" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></short_desc>
+                            <description><![CDATA[<p>Electric Airless Sprayer GEKO DP-X6. Ideal for spraying low and medium viscosity paint material like latex and acrylic coatings. Compact, portable design - making it perfect for light-duty projects such as decks, fences, and other painting projects. The high pressure pump delivers a finely atomized spray for a flawless professional finish.</p><br/><p>Coating types: water-based paints; oil-based paints; latex; enamels; lacquers; varnishes; primers; stains.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Compact, lightweight and easy to carry</li><br/>    <li>Adjustable pressure - from low pressure cleaning, medium pressure rolling and high pressure airless painting</li><br/>    <li>X-450 forged aluminium gun for exceptional durability</li><br/>    <li>Flexible suction tube spray directly paint containers</li><br/>    <li>Piston rod automatic lubrication</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Input Voltage: 230V / 50Hz</li><br/>    <li>Motor Power: 650W</li><br/>    <li>Max. Flow Rate: 1400 ml/min</li><br/>    <li>Efficiency: 6-8 m&sup2;/min</li><br/>    <li>Max. Pressure: 200 bar / 2900 PSI / 20 MPa</li><br/>    <li>Pressure Controlling: mechanical</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Electric Airless Sprayer DP-X6</li><br/>    <li>X-450 spray gun with airless tip 0,48mm</li><br/>    <li>Tip 517X</li><br/>    <li>30cm nozzle extension wand</li><br/>    <li>1/4'' x 7.5m high pressure hose</li><br/>    <li>Operation manual</li><br/></ul><br/><br/><p><iframe src="//www.youtube.com/embed/3B73_ofzbs8" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="136.96" net="136.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80770" weight="7000.00" grossWeight="8800.00">
+                                        <stock id="1" quantity="116,00"/>
+                                                                    <price gross="136.96" net="136.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_0_5253114.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253115.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253116.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253117.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253118.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253119.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253120.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253121.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253122.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253123.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253124.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253125.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6601_1_5253126.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6606" vat="0" code="G10824" code_on_card="G10824" EAN="5901477153457" code_producer="5901477153457">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107787" name="Service Carts" path="Tools for The Workshop and Garage\Service Carts"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Carts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tool-trolley-with-side-panels-js-17a"/>
+                        <description>
+                            <name><![CDATA[Tool trolley with side panels JS-17A]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Professional workshop trolley that allows you to maintain order in the workplace. The trolley has three spacious shelves and an ergonomic handle for easy transport. In addition, it has 4 castors including 2 swivel castors (one with a brake).</p><br/><h3>Product Features</h3><br/><ul><br/><li>Three Shelves</li><br/><li>Shelves clearance: 242 mm</li><br/><li>2 fixed castors and 2 swivel castors (one with brake)</li><br/><li>Plastic coated castors to prevent scratching of the ground</li><br/><li>Side perforated panels to hang tools and accessories</li><br/><li>Ergonomic handle</li><br/></ul><br/><h4>Dimensions</h4><br/><table><br/>  <tr><br/>    <th></th><br/>    <th>Width</th><br/>    <th>Depth</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>Dimensions</td><br/>    <td>700 mm</td><br/>    <td>348 mm</td><br/>    <td>665 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Dimensions with handle and castors</td><br/>    <td>775 mm</td><br/>    <td>348 mm</td><br/>    <td>760 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Shelves Inner Dimensions</td><br/>    <td>695 mm</td><br/>    <td>345 mm</td><br/>    <td>55 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Castors Size</td><br/>    <td>75 mm</td><br/>    <td>25 mm</td><br/>    <td>-</td><br/>  </tr><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Professional workshop trolley that allows you to maintain order in the workplace. The trolley has three spacious shelves and an ergonomic handle for easy transport. In addition, it has 4 castors including 2 swivel castors (one with a brake).</p><br/><h3>Product Features</h3><br/><ul><br/><li>Three Shelves</li><br/><li>Shelves clearance: 242 mm</li><br/><li>2 fixed castors and 2 swivel castors (one with brake)</li><br/><li>Plastic coated castors to prevent scratching of the ground</li><br/><li>Side perforated panels to hang tools and accessories</li><br/><li>Ergonomic handle</li><br/></ul><br/><h4>Dimensions</h4><br/><table><br/>  <tr><br/>    <th></th><br/>    <th>Width</th><br/>    <th>Depth</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>Dimensions</td><br/>    <td>700 mm</td><br/>    <td>348 mm</td><br/>    <td>665 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Dimensions with handle and castors</td><br/>    <td>775 mm</td><br/>    <td>348 mm</td><br/>    <td>760 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Shelves Inner Dimensions</td><br/>    <td>695 mm</td><br/>    <td>345 mm</td><br/>    <td>55 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Castors Size</td><br/>    <td>75 mm</td><br/>    <td>25 mm</td><br/>    <td>-</td><br/>  </tr><br/></table>]]></short_desc>
+                            <description><![CDATA[<p>Professional workshop trolley that allows you to maintain order in the workplace. The trolley has three spacious shelves and an ergonomic handle for easy transport. In addition, it has 4 castors including 2 swivel castors (one with a brake).</p><br/><h3>Product Features</h3><br/><ul><br/><li>Three Shelves</li><br/><li>Shelves clearance: 242 mm</li><br/><li>2 fixed castors and 2 swivel castors (one with brake)</li><br/><li>Plastic coated castors to prevent scratching of the ground</li><br/><li>Side perforated panels to hang tools and accessories</li><br/><li>Ergonomic handle</li><br/></ul><br/><h4>Dimensions</h4><br/><table><br/>  <tr><br/>    <th></th><br/>    <th>Width</th><br/>    <th>Depth</th><br/>    <th>Height</th><br/>  </tr><br/>  <tr><br/>    <td>Dimensions</td><br/>    <td>700 mm</td><br/>    <td>348 mm</td><br/>    <td>665 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Dimensions with handle and castors</td><br/>    <td>775 mm</td><br/>    <td>348 mm</td><br/>    <td>760 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Shelves Inner Dimensions</td><br/>    <td>695 mm</td><br/>    <td>345 mm</td><br/>    <td>55 mm</td><br/>  </tr><br/>  <tr><br/>    <td>Castors Size</td><br/>    <td>75 mm</td><br/>    <td>25 mm</td><br/>    <td>-</td><br/>  </tr><br/></table>]]></description>
+                        </description>
+                        <delivery>16.08.2025</delivery>
+                            <price gross="28.71" net="28.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10824" weight="12600.00" grossWeight="13490.00">
+                                        <stock id="1" quantity="100,00"/>
+                                                                    <price gross="28.71" net="28.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6606_0_5100290.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6606_1_5100291.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6606_1_5100292.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6606_1_5100293.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6607" vat="0" code="T00025" code_on_card="T00025" EAN="5901477153815" code_producer="5901477153815">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="107717" name="Torque Wrenches" path="Tools for The Workshop and Garage\Torque Wrenches"/>
+            <category_idosell path="Tools for The Workshop and Garage\Torque Wrenches" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/digital-torque-adapter-1-2-inch-drive-with-3-8-1-4-socket"/>
+                        <description>
+                            <name><![CDATA[Digital Torque Adapter 1/2 Inch Drive with 3/8 1/4 Socket]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Digital Torque Adapter can be used to recalibrate any type of torque wrench.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Recalibration device for torque wrenches</li><br/>    <li>Units of measure: Kg-CM, Kg-M, In.-lb., Ft.-lb, N-m</li><br/>    <li>Range: 40 - 200 Nm</li><br/>    <li>Converts any ratchet into a torque measuring tool</li><br/>    <li>LED backlight</li><br/>    <li>10 memory settings</li><br/>    <li>Contains one DC 3V, CR2032 battery</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Digital Torque Adapter can be used to recalibrate any type of torque wrench.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Recalibration device for torque wrenches</li><br/>    <li>Units of measure: Kg-CM, Kg-M, In.-lb., Ft.-lb, N-m</li><br/>    <li>Range: 40 - 200 Nm</li><br/>    <li>Converts any ratchet into a torque measuring tool</li><br/>    <li>LED backlight</li><br/>    <li>10 memory settings</li><br/>    <li>Contains one DC 3V, CR2032 battery</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Digital Torque Adapter can be used to recalibrate any type of torque wrench.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Recalibration device for torque wrenches</li><br/>    <li>Units of measure: Kg-CM, Kg-M, In.-lb., Ft.-lb, N-m</li><br/>    <li>Range: 40 - 200 Nm</li><br/>    <li>Converts any ratchet into a torque measuring tool</li><br/>    <li>LED backlight</li><br/>    <li>10 memory settings</li><br/>    <li>Contains one DC 3V, CR2032 battery</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="39.71" net="39.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="T00025" weight="380.00" grossWeight="410.00">
+                                        <stock id="1" quantity="443,00"/>
+                                                                    <price gross="39.71" net="39.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6607_0_5782234.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6607_1_5782237.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6607_1_5782238.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6607_1_5782240.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6607_1_5782252.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6611" vat="0" code="CG83020-27" code_on_card="CG83020-27" EAN="5901477166815" code_producer="5901477166815">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-6611"/>
+                        <description>
+                            <name><![CDATA[Switch]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.33" net="5.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83020-27" weight="366.00" grossWeight="434.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.33" net="5.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6611_0_17301863.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6613" vat="0" code="CG83020-34" code_on_card="CG83020-34" EAN="5901477166822" code_producer="5901477166822">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/power-cord-6613"/>
+                        <description>
+                            <name><![CDATA[Power cord]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.42" net="3.42"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83020-34" weight="400.00" grossWeight="0.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="3.42" net="3.42"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6614" vat="0" code="CG83020-46" code_on_card="CG83020-46" EAN="5901477166839" code_producer="5901477166839">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-6614"/>
+                        <description>
+                            <name><![CDATA[Motor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="16.98" net="16.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83020-46" weight="4000.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="16.98" net="16.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6615" vat="0" code="CG83020-14-3" code_on_card="CG83020-14-3" EAN="5901477166808" code_producer="5901477166808">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gear"/>
+                        <description>
+                            <name><![CDATA[Gear]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.66" net="5.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83020-14-3" weight="150.00" grossWeight="0.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="5.66" net="5.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6616" vat="0" code="CG83020-48" code_on_card="CG83020-48" EAN="5901477166846" code_producer="5901477166846">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blade-6616"/>
+                        <description>
+                            <name><![CDATA[Blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.24" net="3.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83020-48" weight="370.00" grossWeight="430.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.24" net="3.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6616_0_17301903.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6617" vat="0" code="CG83021-10" code_on_card="CG83021-10" EAN="5901477166853" code_producer="5901477166853">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/enclosure"/>
+                        <description>
+                            <name><![CDATA[Enclosure]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.84" net="14.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83021-10" weight="400.00" grossWeight="600.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="14.84" net="14.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6618" vat="0" code="CG83021-42" code_on_card="CG83021-42" EAN="5901477166860" code_producer="5901477166860">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-6618"/>
+                        <description>
+                            <name><![CDATA[Motor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.37" net="20.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83021-42" weight="4000.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="20.37" net="20.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6619" vat="0" code="CG83021-46" code_on_card="CG83021-46" EAN="5901477166877" code_producer="5901477166877">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rack-wheel"/>
+                        <description>
+                            <name><![CDATA[Rack wheel]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.53" net="4.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83021-46" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="4.53" net="4.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6620" vat="0" code="CG83022-18" code_on_card="CG83022-18" EAN="5901477166884" code_producer="5901477166884">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/frame"/>
+                        <description>
+                            <name><![CDATA[Frame]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="15.88" net="15.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83022-18" weight="800.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="15.88" net="15.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6621" vat="0" code="CG83022-24" code_on_card="CG83022-24" EAN="5901477166891" code_producer="5901477166891">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blade-6621"/>
+                        <description>
+                            <name><![CDATA[Blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.39" net="5.39"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83022-24" weight="570.00" grossWeight="630.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.39" net="5.39"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/6621_0_17301919.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6622" vat="0" code="CG83022-25-4" code_on_card="CG83022-25-4" EAN="5901477166907" code_producer="5901477166907">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gear-6622"/>
+                        <description>
+                            <name><![CDATA[Gear]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.53" net="4.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83022-25-4" weight="150.00" grossWeight="0.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="4.53" net="4.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6623" vat="0" code="CG83022-26" code_on_card="CG83022-26" EAN="5901477166914" code_producer="5901477166914">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/motor-6623"/>
+                        <description>
+                            <name><![CDATA[Motor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="30.56" net="30.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83022-26" weight="4000.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="30.56" net="30.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="6624" vat="0" code="CG83022-37" code_on_card="CG83022-37" EAN="5901477166921" code_producer="5901477166921">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="106397" name="Electric Lawn Mowers" path="Spare Parts\Electric Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Electric Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/internal-wiring"/>
+                        <description>
+                            <name><![CDATA[Internal wiring]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.08" net="4.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83022-37" weight="570.00" grossWeight="630.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.08" net="4.08"/>

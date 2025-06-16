@@ -1,0 +1,1500 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes' ?>        <offer file_format="IOF" version="2.6" generated="14.06.2025 13:06:48">
+            <products language="en" currency="EUR">
+
+                    <product id="24" vat="0" code="C00049" code_on_card="C00049" EAN="5901477140723" code_producer="5901477140723">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/front-wheel-10pcs-back-wheelor-floor-jack-2-5t"/>
+                        <description>
+                            <name><![CDATA[Front wheel 10pcs + back wheelor floor jack 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.18" net="2.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00049" weight="90.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.18" net="2.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="25" vat="0" code="C00050" code_on_card="C00050" EAN="5901477128028" code_producer="5901477128028">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/set-of-wheels-for-hydraulic-jacks-2t-and-2-5t"/>
+                        <description>
+                            <name><![CDATA[Set of wheels for hydraulic jacks 2T and 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.71" net="6.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00050" weight="3250.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.71" net="6.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/25_0_16651359.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="27" vat="0" code="C00052" code_on_card="C00052" EAN="5901477140730" code_producer="5901477140730">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/handle-for-floor-jack-2-5t"/>
+                        <description>
+                            <name><![CDATA[Handle for floor jack 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.44" net="1.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00052" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.44" net="1.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="28" vat="0" code="C00053" code_on_card="C00053" EAN="5901477140747" code_producer="5901477140747">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bearing-for-floor-jack-2-5t"/>
+                        <description>
+                            <name><![CDATA[Bearing for floor jack 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.82" net="0.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00053" weight="600.00" grossWeight="650.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.82" net="0.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/28_0_16651429.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="29" vat="0" code="C00054" code_on_card="C00054" EAN="5901477140754" code_producer="5901477140754">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plastic-handle-for-floor-jack-2-5t"/>
+                        <description>
+                            <name><![CDATA[Plastic handle for floor jack 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.87" net="1.87"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00054" weight="50.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.87" net="1.87"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/2/29_0_16651454.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="31" vat="0" code="C00056" code_on_card="C00056" EAN="5901477140761" code_producer="5901477140761">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105266" name="Hydraulic Lifts" path="Spare Parts\Hydraulic Lifts"/>
+            <category_idosell path="Spare Parts\Hydraulic Lifts" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cylinder-for-floor-jack-2-5t"/>
+                        <description>
+                            <name><![CDATA[Cylinder for floor jack 2,5T]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.55" net="12.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00056" weight="2900.00" grossWeight="3000.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="12.55" net="12.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="42" vat="0" code="C00100" code_on_card="C00100" EAN="5901477128882" code_producer="5901477128882">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-clamp-with-cable-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Welding clamp with cable for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.9" net="13.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00100" weight="80.00" grossWeight="100.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="13.9" net="13.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/42_0_35847.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="43" vat="0" code="C00101" code_on_card="C00101" EAN="5901477128899" code_producer="5901477128899">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-torch-with-cable-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Welding torch with cable for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="60.06" net="60.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00101" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="60.06" net="60.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/43_1_35789.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="44" vat="0" code="C00102" code_on_card="C00102" EAN="5901477128905" code_producer="5901477128905">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Switch for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="22.62" net="22.62"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00102" weight="100.00" grossWeight="130.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="22.62" net="22.62"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/44_0_35790.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/44_1_35791.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="45" vat="0" code="C00103" code_on_card="C00103" EAN="5901477128912" code_producer="5901477128912">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-wire-spool-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Welding wire spool for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.8" net="17.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00103" weight="300.00" grossWeight="400.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="17.8" net="17.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/45_0_35792.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/45_1_35793.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/45_1_35794.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="46" vat="0" code="C00104" code_on_card="C00104" EAN="5901477128929" code_producer="5901477128929">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wire-feeder-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Wire feeder for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="97.46" net="97.46"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00104" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="97.46" net="97.46"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/46_0_35795.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/46_1_35796.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="47" vat="0" code="C00105" code_on_card="C00105" EAN="5901477128936" code_producer="5901477128936">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/control-board-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Control board for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="18.54" net="18.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00105" weight="80.00" grossWeight="85.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="18.54" net="18.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/47_0_35797.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/47_1_35798.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/47_1_35799.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="48" vat="0" code="C00106" code_on_card="C00106" EAN="5901477128943" code_producer="5901477128943">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/front-wheel-for-mig-welding-machines"/>
+                        <description>
+                            <name><![CDATA[Front wheel for MIG welding machines]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.9" net="2.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00106" weight="375.00" grossWeight="500.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="2.9" net="2.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/48_0_35800.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="49" vat="0" code="C00107" code_on_card="C00107" EAN="5901477128950" code_producer="5901477128950">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/back-wheel-for-mig-welding-machines"/>
+                        <description>
+                            <name><![CDATA[Back wheel for MIG welding machines]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.2" net="4.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00107" weight="375.00" grossWeight="500.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.2" net="4.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/49_0_35801.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/49_1_35802.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/49_1_35803.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="50" vat="0" code="C00108" code_on_card="C00108" EAN="5901477128967" code_producer="5901477128967">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/recifier-bridge-for-mig250"/>
+                        <description>
+                            <name><![CDATA[Recifier bridge for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="34.4" net="34.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00108" weight="300.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="34.4" net="34.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/50_0_35804.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/50_1_35805.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="51" vat="0" code="C00129" code_on_card="C00129" EAN="5901477128981" code_producer="5901477128981">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-torch-with-cable-for-mig250-51"/>
+                        <description>
+                            <name><![CDATA[Welding torch with cable for MIG250]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.42" net="20.42"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00129" weight="380.00" grossWeight="500.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="20.42" net="20.42"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/51_0_593935.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="52" vat="0" code="C00130" code_on_card="C00130" EAN="5901477128974" code_producer="5901477128974">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-clamp-with-able-for-mig200-220"/>
+                        <description>
+                            <name><![CDATA[Welding clamp with able for mig200-220]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="59.78" net="59.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00130" weight="550.00" grossWeight="700.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="59.78" net="59.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/52_0_35806.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="53" vat="0" code="C00131" code_on_card="C00131" EAN="5901477128998" code_producer="5901477128998">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/switch-for-mig220-200"/>
+                        <description>
+                            <name><![CDATA[Switch for MIG220-200]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.43" net="17.43"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00131" weight="60.00" grossWeight="80.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="17.43" net="17.43"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/53_0_35807.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/53_1_35808.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="54" vat="0" code="C00132" code_on_card="C00132" EAN="5901477129001" code_producer="5901477129001">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-wire-spool-for-mig220"/>
+                        <description>
+                            <name><![CDATA[Welding wire spool for MIG220]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.91" net="6.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00132" weight="380.00" grossWeight="500.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.91" net="6.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/54_0_35809.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="55" vat="0" code="C00133" code_on_card="C00133" EAN="5901477140778" code_producer="5901477140778">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wire-feeder"/>
+                        <description>
+                            <name><![CDATA[Wire Feeder]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.13" net="9.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00133" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="9.13" net="9.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/55_0_35810.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/55_1_35811.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/55_1_35812.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="56" vat="0" code="C00134" code_on_card="C00134" EAN="5901477129018" code_producer="5901477129018">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/control-board-for-mig200-mig220"/>
+                        <description>
+                            <name><![CDATA[Control board for MIG200-MIG220]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.46" net="12.46"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00134" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.46" net="12.46"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/56_0_35813.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/56_1_35814.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="57" vat="0" code="C00135" code_on_card="C00135" EAN="5901477129025" code_producer="5901477129025">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/recifier-bridge-for-mig220"/>
+                        <description>
+                            <name><![CDATA[Recifier bridge for MIG220]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="28.53" net="28.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00135" weight="12000.00" grossWeight="12000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="28.53" net="28.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/57_0_35815.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/57_1_35816.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="58" vat="0" code="C00150" code_on_card="C00150" EAN="5901477130625" code_producer="5901477130625">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-4-power-source-cable"/>
+                        <description>
+                            <name><![CDATA[no. 4 Power source cable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.68" net="6.68"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00150" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.68" net="6.68"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/58_0_35817.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="59" vat="0" code="C00151" code_on_card="C00151" EAN="5901477130632" code_producer="5901477130632">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-5-input-power-source-board"/>
+                        <description>
+                            <name><![CDATA[no. 5  input power source board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="42.29" net="42.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00151" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="42.29" net="42.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/59_0_35818.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/5/59_1_35819.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="60" vat="0" code="C00152" code_on_card="C00152" EAN="5901477130649" code_producer="5901477130649">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-6-thermistor"/>
+                        <description>
+                            <name><![CDATA[no. 6 Thermistor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.22" net="2.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00152" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="42,00"/>
+                                                                    <price gross="2.22" net="2.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/60_0_35820.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="61" vat="0" code="C00153" code_on_card="C00153" EAN="5901477130656" code_producer="5901477130656">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-7-relay"/>
+                        <description>
+                            <name><![CDATA[no. 7 relay]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.22" net="2.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00153" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.22" net="2.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/61_1_35821.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="62" vat="0" code="C00154" code_on_card="C00154" EAN="5901477130663" code_producer="5901477130663">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-10-indicator"/>
+                        <description>
+                            <name><![CDATA[no. 10 indicator]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.67" net="0.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00154" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="0.67" net="0.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/62_1_35822.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="63" vat="0" code="C00155" code_on_card="C00155" EAN="5901477130670" code_producer="5901477130670">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-11-digital-display"/>
+                        <description>
+                            <name><![CDATA[no. 11 digital display]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.11" net="3.11"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00155" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.11" net="3.11"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/63_0_35823.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/63_1_35824.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="64" vat="0" code="C00156" code_on_card="C00156" EAN="5901477130687" code_producer="5901477130687">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-12-potentiometer"/>
+                        <description>
+                            <name><![CDATA[no. 12 potentiometer]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4" net="4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00156" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4" net="4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/64_0_35825.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/64_1_35826.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="65" vat="0" code="C00157" code_on_card="C00157" EAN="5901477130694" code_producer="5901477130694">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-13-quick-connection"/>
+                        <description>
+                            <name><![CDATA[no. 13 quick connection]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.6" net="4.6"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00157" weight="150.00" grossWeight="160.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.6" net="4.6"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/65_0_35827.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="66" vat="0" code="C00158" code_on_card="C00158" EAN="5901477130700" code_producer="5901477130700">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-15-rectifier-bridge"/>
+                        <description>
+                            <name><![CDATA[no. 15 rectifier bridge]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="25.6" net="25.6"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00158" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="25.6" net="25.6"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/66_0_35828.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="67" vat="0" code="C00159" code_on_card="C00159" EAN="5901477130717" code_producer="5901477130717">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-18-control-board"/>
+                        <description>
+                            <name><![CDATA[no. 18 control board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.46" net="8.46"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00159" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="12,00"/>
+                                                                    <price gross="8.46" net="8.46"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/67_0_35829.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="68" vat="0" code="C00160" code_on_card="C00160" EAN="5901477130724" code_producer="5901477130724">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-19-igbt"/>
+                        <description>
+                            <name><![CDATA[no. 19 IGBT]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.68" net="6.68"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00160" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="46,00"/>
+                                                                    <price gross="6.68" net="6.68"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/68_0_35830.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="69" vat="0" code="C00161" code_on_card="C00161" EAN="5901477130731" code_producer="5901477130731">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-20-main-board"/>
+                        <description>
+                            <name><![CDATA[no. 20 main board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="48.97" net="48.97"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00161" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="48.97" net="48.97"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/69_0_35831.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/69_1_35832.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/69_1_35833.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="70" vat="0" code="C00162" code_on_card="C00162" EAN="5901477130748" code_producer="5901477130748">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-21-power-source-board"/>
+                        <description>
+                            <name><![CDATA[no. 21 power source board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.91" net="10.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00162" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="10.91" net="10.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/70_0_35834.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/70_1_35835.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="71" vat="0" code="C00163" code_on_card="C00163" EAN="5901477130755" code_producer="5901477130755">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-2-fan"/>
+                        <description>
+                            <name><![CDATA[no. 2 fan]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.66" net="4.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00163" weight="200.00" grossWeight="210.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.66" net="4.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/71_0_35836.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="72" vat="0" code="C00164" code_on_card="C00164" EAN="5901477130762" code_producer="5901477130762">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/on-off-switch"/>
+                        <description>
+                            <name><![CDATA[ON/OFF switch]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.92" net="1.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00164" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.92" net="1.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/72_0_35837.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="73" vat="0" code="C00165" code_on_card="C00165" EAN="5901477130779" code_producer="5901477130779">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/capacitor-mma-200-mma-220-no-8"/>
+                        <description>
+                            <name><![CDATA[Capacitor MMA-200 MMA-220   NO. 8]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span><a href="https://www.diki.pl/slownik-angielskiego?q=electrolytic+capacitors" class="plainLink">Electrolytic capacitor</a>áof general use withásnap - in polesá</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span><a href="https://www.diki.pl/slownik-angielskiego?q=electrolytic+capacitors" class="plainLink">Electrolytic capacitor</a>áof general use withásnap - in polesá</span></p>]]></short_desc>
+                            <description><![CDATA[<p><span><a href="https://www.diki.pl/slownik-angielskiego?q=electrolytic+capacitors" class="plainLink">Electrolytic capacitor</a>áof general use withásnap - in polesá</span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.66" net="4.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00165" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="4.66" net="4.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/73_0_35838.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="74" vat="0" code="C00166" code_on_card="C00166" EAN="5901477130786" code_producer="5901477130786">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-11-digital-display-74"/>
+                        <description>
+                            <name><![CDATA[no. 11 digital display]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.84" net="3.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00166" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="3.84" net="3.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/74_0_35839.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="75" vat="0" code="C00167" code_on_card="C00167" EAN="5901477130793" code_producer="5901477130793">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-18-control-board-75"/>
+                        <description>
+                            <name><![CDATA[no. 18 control board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.9" net="8.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00167" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="13,00"/>
+                                                                    <price gross="8.9" net="8.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/75_0_35840.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="76" vat="0" code="C00168" code_on_card="C00168" EAN="5901477130809" code_producer="5901477130809">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/modul-no-19-igbt"/>
+                        <description>
+                            <name><![CDATA[Modul no. 19 IGBT]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.35" net="7.35"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00168" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="7.35" net="7.35"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/76_0_35841.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="77" vat="0" code="C00169" code_on_card="C00169" EAN="5901477130816" code_producer="5901477130816">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/no-20-main-board-77"/>
+                        <description>
+                            <name><![CDATA[no. 20 main board]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="57.9" net="57.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00169" weight="80.00" grossWeight="0.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="57.9" net="57.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/77_0_35842.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/77_1_35843.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/77_1_35844.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="78" vat="0" code="C00170" code_on_card="C00170" EAN="5901477130823" code_producer="5901477130823">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/earth-clamp-with-cable"/>
+                        <description>
+                            <name><![CDATA[earth clamp with cable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.23" net="13.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00170" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="13.23" net="13.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/78_0_35845.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="79" vat="0" code="C00171" code_on_card="C00171" EAN="5901477130830" code_producer="5901477130830">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105267" name="Welders and Mig Machines" path="Spare Parts\Welders and Mig Machines"/>
+            <category_idosell path="Spare Parts\Welders and Mig Machines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/electrode-holder-with-cable"/>
+                        <description>
+                            <name><![CDATA[electrode holder with cable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.04" net="20.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00171" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="20.04" net="20.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/79_0_35846.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="80" vat="0" code="C00200" code_on_card="C00200" EAN="5901477140785" code_producer="5901477140785">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotor-for-electric-wrench"/>
+                        <description>
+                            <name><![CDATA[Rotor for electric wrench]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">Piston for 2T hydraulic jack</span></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">Piston for 2T hydraulic jack</span></strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">Piston for 2T hydraulic jack</span></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.78" net="9.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="C00200" weight="458.00" grossWeight="500.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="9.78" net="9.78"/>
+                                <srp gross="" net=""/>
+                            </size>

@@ -1,0 +1,1500 @@
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-complete-tank"/>
+                        <description>
+                            <name><![CDATA[6,5HP Complete tank]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.7" net="9.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-260" weight="200.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="9.7" net="9.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="389" vat="0" code="CG80250-28A" code_on_card="CG80250-28A" EAN="5901477133411" code_producer="5901477133411">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5-hp-spark-plug"/>
+                        <description>
+                            <name><![CDATA[6,5 HP Spark plug]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.1" net="1.1"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-28A" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.1" net="1.1"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="390" vat="0" code="CG80250-34A" code_on_card="CG80250-34A" EAN="5901477133428" code_producer="5901477133428">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-governor-set"/>
+                        <description>
+                            <name><![CDATA[6,5HP Governor set]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.82" net="1.82"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-34A" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="1.82" net="1.82"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="391" vat="0" code="CG80250-37A" code_on_card="CG80250-37A" EAN="5901477133435" code_producer="5901477133435">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-ignition-coil"/>
+                        <description>
+                            <name><![CDATA[6,5HP Ignition coil]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.18" net="5.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-37A" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="5.18" net="5.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="392" vat="0" code="CG80250-63A" code_on_card="CG80250-63A" EAN="5901477133442" code_producer="5901477133442">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-crankshaft"/>
+                        <description>
+                            <name><![CDATA[6,5HP Crankshaft]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.75" net="9.75"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-63A" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="9.75" net="9.75"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="393" vat="0" code="CG80250-74A" code_on_card="CG80250-74A" EAN="5901477133459" code_producer="5901477133459">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-connecting-rod"/>
+                        <description>
+                            <name><![CDATA[6,5HP Connecting rod]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.78" net="4.78"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-74A" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="17,00"/>
+                                                                    <price gross="4.78" net="4.78"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="394" vat="0" code="CG80250-77A" code_on_card="CG80250-77A" EAN="5901477133466" code_producer="5901477133466">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-piston-ring"/>
+                        <description>
+                            <name><![CDATA[6,5HP Piston+ring]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.13" net="7.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-77A" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="7.13" net="7.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/394_0_18497544.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="395" vat="0" code="CG80250-A" code_on_card="CG80250-A" EAN="5901477133473" code_producer="5901477133473">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-repair-set-of-head"/>
+                        <description>
+                            <name><![CDATA[6,5HP repair set of head]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.52" net="7.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-A" weight="100.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.52" net="7.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="396" vat="0" code="CG80250-B" code_on_card="CG80250-B" EAN="5901477133480" code_producer="5901477133480">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-set-of-rings"/>
+                        <description>
+                            <name><![CDATA[6,5HP Set of rings]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.76" net="2.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-B" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.76" net="2.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="397" vat="0" code="CG80250-C" code_on_card="CG80250-C" EAN="5901477136481" code_producer="5901477136481">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5-hp-set-of-rings"/>
+                        <description>
+                            <name><![CDATA[6,5 HP Set of rings]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.96" net="2.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80250-C" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="2.96" net="2.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="398" vat="0" code="CG80251-14A" code_on_card="CG80251-14A" EAN="5901477133497" code_producer="5901477133497">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-carburetor"/>
+                        <description>
+                            <name><![CDATA[13HP Carburetor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="18.93" net="18.93"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-14A" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="27,00"/>
+                                                                    <price gross="18.93" net="18.93"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="399" vat="0" code="CG80251-156" code_on_card="CG80251-156" EAN="5901477133503" code_producer="5901477133503">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-recoil-starter"/>
+                        <description>
+                            <name><![CDATA[13HP Recoil starter]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.4" net="6.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-156" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.4" net="6.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/399_0_2349431.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="400" vat="0" code="CG80251-16A" code_on_card="CG80251-16A" EAN="5901477133510" code_producer="5901477133510">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-air-cleaner-gasket"/>
+                        <description>
+                            <name><![CDATA[13HP Air cleaner gasket]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.6" net="2.6"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-16A" weight="50.00" grossWeight="50.00">
+                                        <stock id="1" quantity="19,00"/>
+                                                                    <price gross="2.6" net="2.6"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="401" vat="0" code="CG80251-218" code_on_card="CG80251-218" EAN="5901477133527" code_producer="5901477133527">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/16hp-filter-element"/>
+                        <description>
+                            <name><![CDATA[16HP Filter element]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.56" net="6.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-218" weight="60.00" grossWeight="70.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.56" net="6.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="402" vat="0" code="CG80251-25A" code_on_card="CG80251-25A" EAN="5901477133534" code_producer="5901477133534">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/exhaust-system-for-gasoline-engine-13hp-g80251"/>
+                        <description>
+                            <name><![CDATA[Exhaust System for Gasoline Engine 13HP G80251]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="16.48" net="16.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-25A" weight="300.00" grossWeight="350.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="16.48" net="16.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="403" vat="0" code="CG80251-260" code_on_card="CG80251-260" EAN="5901477133541" code_producer="5901477133541">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-complete-tank"/>
+                        <description>
+                            <name><![CDATA[13HP Complete tank]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.48" net="17.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-260" weight="250.00" grossWeight="250.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="17.48" net="17.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="404" vat="0" code="CG80251-37A" code_on_card="CG80251-37A" EAN="5901477133558" code_producer="5901477133558">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-ignition-coil"/>
+                        <description>
+                            <name><![CDATA[13HP Ignition coil]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.56" net="4.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-37A" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="4.56" net="4.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="405" vat="0" code="CG80251-74A" code_on_card="CG80251-74A" EAN="5901477133565" code_producer="5901477133565">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/13hp-connecting-rod"/>
+                        <description>
+                            <name><![CDATA[13HP Connecting rod]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.33" net="6.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-74A" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="21,00"/>
+                                                                    <price gross="6.33" net="6.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="406" vat="0" code="CG80251-77A" code_on_card="CG80251-77A" EAN="5901477133572" code_producer="5901477133572">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-5hp-piston-ring-406"/>
+                        <description>
+                            <name><![CDATA[6,5HP Piston+ring]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.89" net="9.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-77A" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="9.89" net="9.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="407" vat="0" code="CG80251-78/11A" code_on_card="CG80251-78/11A" EAN="5901477133589" code_producer="5901477133589">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cylinder-head"/>
+                        <description>
+                            <name><![CDATA[Cylinder head]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="28" net="28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-78/11A" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="28" net="28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="408" vat="0" code="CG80251-C" code_on_card="CG80251-C" EAN="5901477133596" code_producer="5901477133596">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105274" name="Combustion Engines" path="Spare Parts\Combustion Engines"/>
+            <category_idosell path="Spare Parts\Combustion Engines" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/set-of-rings-for-gasoline-engine-13hp"/>
+                        <description>
+                            <name><![CDATA[Set of rings for gasoline engine 13HP]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.51" net="2.51"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80251-C" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="50,00"/>
+                                                                    <price gross="2.51" net="2.51"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="409" vat="0" code="CG80261-15" code_on_card="CG80261-15" EAN="5901477138348" code_producer="5901477138348">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blokada-czesc-zamienna-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Blokada-cześć zamienna do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.98" net="1.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-15" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="30,00"/>
+                                                                    <price gross="1.98" net="1.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/409_0_36006.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="410" vat="0" code="CG80261-17" code_on_card="CG80261-17" EAN="5901477138355" code_producer="5901477138355">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lozysko-625-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Łożysko 625 do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.19" net="1.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-17" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="1.19" net="1.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/410_0_36008.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="411" vat="0" code="CG80261-20" code_on_card="CG80261-20" EAN="5901477138362" code_producer="5901477138362">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lozysko-608-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Łożysko 608 do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.13" net="2.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-20" weight="10.00" grossWeight="13.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.13" net="2.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/411_0_36010.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="412" vat="0" code="CG80261-21" code_on_card="CG80261-21" EAN="5901477138379" code_producer="5901477138379">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wirnik-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Wirnik do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.88" net="9.88"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-21" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="26,00"/>
+                                                                    <price gross="9.88" net="9.88"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/412_0_36012.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="413" vat="0" code="CG80261-22" code_on_card="CG80261-22" EAN="5901477138386" code_producer="5901477138386">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lozysko-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Łożysko do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.48" net="1.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-22" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.48" net="1.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/413_0_36014.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="414" vat="0" code="CG80261-25" code_on_card="CG80261-25" EAN="5901477138393" code_producer="5901477138393">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stojan-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Stojan do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.18" net="7.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-25" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="7.18" net="7.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/414_0_36016.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="415" vat="0" code="CG80261-28" code_on_card="CG80261-28" EAN="5901477138409" code_producer="5901477138409">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/przelacznik-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Przełącznik do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.96" net="0.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-28" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="0.96" net="0.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/415_0_36018.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="416" vat="0" code="CG80261-29" code_on_card="CG80261-29" EAN="5901477138416" code_producer="5901477138416">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ciegno-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Cięgno do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.61" net="0.61"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-29" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="29,00"/>
+                                                                    <price gross="0.61" net="0.61"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/416_0_36020.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="417" vat="0" code="CG80261-31" code_on_card="CG80261-31" EAN="5901477138423" code_producer="5901477138423">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/przelacznik-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1-417"/>
+                        <description>
+                            <name><![CDATA[Przełącznik do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2" net="2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-31" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2" net="2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/417_0_36022.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="418" vat="0" code="CG80261-34" code_on_card="CG80261-34" EAN="5901477138430" code_producer="5901477138430">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/szczotkotrzymacz-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Szczotkotrzymacz do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.99" net="0.99"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-34" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="31,00"/>
+                                                                    <price gross="0.99" net="0.99"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/418_0_36024.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="419" vat="0" code="CG80261-36" code_on_card="CG80261-36" EAN="5901477138447" code_producer="5901477138447">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/szczotka-weglowa-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Szczotka węglowa do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.98" net="1.98"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-36" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.98" net="1.98"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/419_0_36026.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="420" vat="0" code="CG80261-37" code_on_card="CG80261-37" EAN="5901477138454" code_producer="5901477138454">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/sprezyna-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Sprężyna do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.61" net="0.61"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-37" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="14,00"/>
+                                                                    <price gross="0.61" net="0.61"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/420_0_36028.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="421" vat="0" code="CG80261-38" code_on_card="CG80261-38" EAN="5901477138461" code_producer="5901477138461">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105644" name="Renovators" path="Spare Parts\Renovators"/>
+            <category_idosell path="Spare Parts\Renovators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/regulator-predkosci-do-wielofunkcyjnego-urzadzenia-oscylacyjnego-1"/>
+                        <description>
+                            <name><![CDATA[Regulator prędkości do wielofunkcyjnego urządzenia oscylacyjnego (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.71" net="4.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80261-38" weight="38.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.71" net="4.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/421_0_36030.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="422" vat="0" code="CG80262-17" code_on_card="CG80262-17" EAN="5901477138478" code_producer="5901477138478">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/czesc-zamienna-plytka-pcb-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Część zamienna-płytka PCB do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.72" net="3.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-17" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.72" net="3.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/422_0_36032.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/422_1_36033.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="423" vat="0" code="CG80262-20" code_on_card="CG80262-20" EAN="5901477138485" code_producer="5901477138485">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/dzwignia-ruchoma-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Dźwignia ruchoma do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.47" net="3.47"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-20" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.47" net="3.47"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/423_0_36035.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="424" vat="0" code="CG80262-22" code_on_card="CG80262-22" EAN="5901477138492" code_producer="5901477138492">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/duze-kolo-zebate-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Duże koło zębate do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.44" net="2.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-22" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.44" net="2.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/424_0_36037.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/424_1_36038.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/424_1_36039.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="425" vat="0" code="CG80262-33" code_on_card="CG80262-33" EAN="5901477138508" code_producer="5901477138508">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lozysko-608-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Łożysko 608 do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-33" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/425_0_36041.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="426" vat="0" code="CG80262-36" code_on_card="CG80262-36" EAN="5901477138515" code_producer="5901477138515">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/plytka-podstawy-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Płytka podstawy do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.66" net="3.66"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-36" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.66" net="3.66"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/426_0_36043.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="427" vat="0" code="CG80262-41" code_on_card="CG80262-41" EAN="5901477138522" code_producer="5901477138522">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wirnik-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Wirnik do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.67" net="8.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-41" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="15,00"/>
+                                                                    <price gross="8.67" net="8.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/427_0_36045.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="428" vat="0" code="CG80262-42" code_on_card="CG80262-42" EAN="5901477138539" code_producer="5901477138539">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/szczotkotrzymacz-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Szczotkotrzymacz do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.96" net="0.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-42" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.96" net="0.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/428_0_36047.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="429" vat="0" code="CG80262-43" code_on_card="CG80262-43" EAN="5901477138546" code_producer="5901477138546">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/szczotka-weglowa-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Szczotka węglowa do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.22" net="1.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-43" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.22" net="1.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/429_0_36049.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="430" vat="0" code="CG80262-45" code_on_card="CG80262-45" EAN="5901477138553" code_producer="5901477138553">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stojan-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Stojan do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.18" net="7.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-45" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="7.18" net="7.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/430_0_36051.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="431" vat="0" code="CG80262-47" code_on_card="CG80262-47" EAN="5901477138560" code_producer="5901477138560">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/lozysko-607-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Łożysko 607 do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.12" net="1.12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-47" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.12" net="1.12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/431_0_36053.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="432" vat="0" code="CG80262-49" code_on_card="CG80262-49" EAN="5901477138577" code_producer="5901477138577">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105643" name="Jigsaws for Wood" path="Spare Parts\Jigsaws for Wood"/>
+            <category_idosell path="Spare Parts\Jigsaws for Wood" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wylacznik-do-wyrzynarki-do-drewna-z-laserem-810w-1"/>
+                        <description>
+                            <name><![CDATA[Wyłącznik do wyrzynarki do drewna z laserem 810W (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.97" net="2.97"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80262-49" weight="108.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.97" net="2.97"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/432_0_36055.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="433" vat="0" code="CG80263-10" code_on_card="CG80263-10" EAN="5901477138584" code_producer="5901477138584">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105288" name="Reciprocating Saws" path="Spare Parts\Reciprocating Saws"/>
+            <category_idosell path="Spare Parts\Reciprocating Saws" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wool-mat-for-reciprocating-saw-g80263-10"/>
+                        <description>
+                            <name><![CDATA[Wool Mat for Reciprocating Saw G80263 #10]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.72" net="0.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG80263-10" weight="61.00" grossWeight="0.00">
+                                        <stock id="1" quantity="43,00"/>
+                                                                    <price gross="0.72" net="0.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/4/433_0_36122.jpg"/>
+                            </large>
+                        </images>

@@ -1,0 +1,1500 @@
+                            <size code="CT05003-1" weight="1.00" grossWeight="1.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="142.74" net="142.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8727_0_18500225.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8728" vat="0" code="CT05003-3" code_on_card="CT05003-3" EAN="5901477170966" code_producer="5901477170966">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-switch-for-generator-t05003"/>
+                        <description>
+                            <name><![CDATA[Ignition switch for generator T05003]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.83" net="8.83"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05003-3" weight="350.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.83" net="8.83"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8728_0_18500235.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8729" vat="0" code="CT05003-77" code_on_card="CT05003-77" EAN="5901477170980" code_producer="5901477170980">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-filter-for-generator-t05003"/>
+                        <description>
+                            <name><![CDATA[Air filter for generator T05003]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.08" net="14.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05003-77" weight="950.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="14.08" net="14.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8729_0_18500239.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8729_1_18500240.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8730" vat="0" code="CT05004-54" code_on_card="CT05004-54" EAN="5901477171048" code_producer="5901477171048">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carburetor-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Carburetor for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="27.24" net="27.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-54" weight="900.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="27.24" net="27.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8730_0_18500253.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8731" vat="0" code="CT05004-2" code_on_card="CT05004-2" EAN="5901477171024" code_producer="5901477171024">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Stator for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="156.52" net="156.52"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-2" weight="9500.00" grossWeight="10000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="156.52" net="156.52"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8731_0_18500249.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8732" vat="0" code="CT05004-10" code_on_card="CT05004-10" EAN="5901477171000" code_producer="5901477171000">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/regulator-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Regulator for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="17.65" net="17.65"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-10" weight="950.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="17.65" net="17.65"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8732_0_18500244.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8733" vat="0" code="CT05004-1" code_on_card="CT05004-1" EAN="5901477170997" code_producer="5901477170997">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rotor-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Rotor for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="128.72" net="128.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-1" weight="9500.00" grossWeight="10000.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="128.72" net="128.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8733_0_18500242.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8734" vat="0" code="CT05004-3" code_on_card="CT05004-3" EAN="5901477171031" code_producer="5901477171031">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ignition-switch-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Ignition switch for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.62" net="10.62"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-3" weight="350.00" grossWeight="400.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.62" net="10.62"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8734_0_18500251.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8735" vat="0" code="CT05004-77" code_on_card="CT05004-77" EAN="5901477171055" code_producer="5901477171055">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/air-filter-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Air filter for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.15" net="11.15"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-77" weight="950.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="11.15" net="11.15"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8735_0_18500255.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8735_1_18500256.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8736" vat="0" code="CT05003-11" code_on_card="CT05003-11" EAN="5901477170942" code_producer="5901477170942">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter-for-generator-t05003"/>
+                        <description>
+                            <name><![CDATA[Starter for generator T05003]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="18.05" net="18.05"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05003-11" weight="600.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="18.05" net="18.05"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8736_0_18500230.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8736_1_18500231.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8737" vat="0" code="CT05004-11" code_on_card="CT05004-11" EAN="5901477171017" code_producer="5901477171017">
+                        <producer name="Tvardy" id=""/>
+
+
+            <category id="105774" name="Parts for Power Generators" path="Spare Parts\Parts for Power Generators"/>
+            <category_idosell path="Spare Parts\Parts for Power Generators" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter-for-generator-t05004"/>
+                        <description>
+                            <name><![CDATA[Starter for generator T05004]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="14.26" net="14.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CT05004-11" weight="600.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="14.26" net="14.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8737_0_18500246.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8737_1_18500247.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8740" vat="0" code="G20030" code_on_card="G20030" EAN="5901477171239" code_producer="5901477171239">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105595" name="Torches and Soldering Irons" path="Joining Tools\Torches and Soldering Irons"/>
+            <category_idosell path="Joining Tools\Torches and Soldering Irons" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/mapp-gas-torch-adaptor"/>
+                        <description>
+                            <name><![CDATA[MAPP Gas Torch + adaptor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Professional gas burner powered by propane gas or MAPP mixture. Made of the highest quality materials, the brass body of the burner allows achieving a maximum temperature of 2800 &deg; C and power of 2.0kW. The average gas consumption is approx. 142 g / h, while the gas pressure is 2.59 MPa. By equipping the burner with turbo nozzles producing a swirl flame, the gas flow increases, which in turn translates into increased efficiency and faster heating of the pipes.</p><br/><p>Undoubtedly, one of the greatest advantages of our burner is the AUTO START / STOP function. A built-in valve and PIEZO igniter make the burner can be successfully operated with one hand. After turning the switch to the OFF position, the burner immediately turns off. There is no need to close the gas cylinder, thanks to which restarting the burner is much faster.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>made using the highest quality components</li><br/><li>the brass body of the burner allows reaching a maximum temperature of 2800 &deg; C and a power of 2 kW</li><br/><li>the turbo nozzle creates a vortex flame which greatly increases the efficiency of the burner</li><br/><li>powered by propane gas or MAPP mix</li><br/><li>the PIEZO igniter allows you to start the burner without using an external igniter</li><br/><li>trigger lock and continuous operation lock</li><br/><li>AUTO START / STOP function, after switching the switch to the OFF position, the built-in</li><br/><li>the valve automatically cuts off the gas supply without the need to close the valve in the cylinder</li><br/><li>convenient and very easy operation of the burner</li><br/><li>the burner can work at an angle of 360 &deg;, which ensures safe operation in any position</li><br/><li>has a connection with a G1 M thread, in addition, the set includes an adapter with a G7 / 16 F thread</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><strong>Application:</strong> brazing - copper pipes up to 32 mm in diameter / soft soldering - copper pipes up to 100 mm in diameter/welding</p><br/><ul><br/><li>Power: 2 kW</li><br/><li>Continuous work lock: yes</li><br/><li>Working angle: 360 &deg;</li><br/><li>Auto on / off: yes</li><br/><li>Connection thread size: G1 M</li><br/><li>Turbo nozzle: yes</li><br/><li>Flame temperature: 2800 &deg; C</li><br/><li>Gas consumption: 142 g / h</li><br/><li>Gas supply type: Propane gas from external cylinder / MAPP mix</li><br/><li>Flame power adjustment: yes</li><br/><li>Piezo ignition: Yes</li><br/><li>Gas pressure: 2.59MPa</li><br/><li>Kit contents: gas burner, G1 M x G7 / 16 F adapter</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Professional gas burner powered by propane gas or MAPP mixture. Made of the highest quality materials, the brass body of the burner allows achieving a maximum temperature of 2800 &deg; C and power of 2.0kW. The average gas consumption is approx. 142 g / h, while the gas pressure is 2.59 MPa. By equipping the burner with turbo nozzles producing a swirl flame, the gas flow increases, which in turn translates into increased efficiency and faster heating of the pipes.</p><br/><p>Undoubtedly, one of the greatest advantages of our burner is the AUTO START / STOP function. A built-in valve and PIEZO igniter make the burner can be successfully operated with one hand. After turning the switch to the OFF position, the burner immediately turns off. There is no need to close the gas cylinder, thanks to which restarting the burner is much faster.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>made using the highest quality components</li><br/><li>the brass body of the burner allows reaching a maximum temperature of 2800 &deg; C and a power of 2 kW</li><br/><li>the turbo nozzle creates a vortex flame which greatly increases the efficiency of the burner</li><br/><li>powered by propane gas or MAPP mix</li><br/><li>the PIEZO igniter allows you to start the burner without using an external igniter</li><br/><li>trigger lock and continuous operation lock</li><br/><li>AUTO START / STOP function, after switching the switch to the OFF position, the built-in</li><br/><li>the valve automatically cuts off the gas supply without the need to close the valve in the cylinder</li><br/><li>convenient and very easy operation of the burner</li><br/><li>the burner can work at an angle of 360 &deg;, which ensures safe operation in any position</li><br/><li>has a connection with a G1 M thread, in addition, the set includes an adapter with a G7 / 16 F thread</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><strong>Application:</strong> brazing - copper pipes up to 32 mm in diameter / soft soldering - copper pipes up to 100 mm in diameter/welding</p><br/><ul><br/><li>Power: 2 kW</li><br/><li>Continuous work lock: yes</li><br/><li>Working angle: 360 &deg;</li><br/><li>Auto on / off: yes</li><br/><li>Connection thread size: G1 M</li><br/><li>Turbo nozzle: yes</li><br/><li>Flame temperature: 2800 &deg; C</li><br/><li>Gas consumption: 142 g / h</li><br/><li>Gas supply type: Propane gas from external cylinder / MAPP mix</li><br/><li>Flame power adjustment: yes</li><br/><li>Piezo ignition: Yes</li><br/><li>Gas pressure: 2.59MPa</li><br/><li>Kit contents: gas burner, G1 M x G7 / 16 F adapter</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Professional gas burner powered by propane gas or MAPP mixture. Made of the highest quality materials, the brass body of the burner allows achieving a maximum temperature of 2800 &deg; C and power of 2.0kW. The average gas consumption is approx. 142 g / h, while the gas pressure is 2.59 MPa. By equipping the burner with turbo nozzles producing a swirl flame, the gas flow increases, which in turn translates into increased efficiency and faster heating of the pipes.</p><br/><p>Undoubtedly, one of the greatest advantages of our burner is the AUTO START / STOP function. A built-in valve and PIEZO igniter make the burner can be successfully operated with one hand. After turning the switch to the OFF position, the burner immediately turns off. There is no need to close the gas cylinder, thanks to which restarting the burner is much faster.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>made using the highest quality components</li><br/><li>the brass body of the burner allows reaching a maximum temperature of 2800 &deg; C and a power of 2 kW</li><br/><li>the turbo nozzle creates a vortex flame which greatly increases the efficiency of the burner</li><br/><li>powered by propane gas or MAPP mix</li><br/><li>the PIEZO igniter allows you to start the burner without using an external igniter</li><br/><li>trigger lock and continuous operation lock</li><br/><li>AUTO START / STOP function, after switching the switch to the OFF position, the built-in</li><br/><li>the valve automatically cuts off the gas supply without the need to close the valve in the cylinder</li><br/><li>convenient and very easy operation of the burner</li><br/><li>the burner can work at an angle of 360 &deg;, which ensures safe operation in any position</li><br/><li>has a connection with a G1 M thread, in addition, the set includes an adapter with a G7 / 16 F thread</li><br/></ul><br/><p><strong>Technical data:</strong></p><br/><p><strong>Application:</strong> brazing - copper pipes up to 32 mm in diameter / soft soldering - copper pipes up to 100 mm in diameter/welding</p><br/><ul><br/><li>Power: 2 kW</li><br/><li>Continuous work lock: yes</li><br/><li>Working angle: 360 &deg;</li><br/><li>Auto on / off: yes</li><br/><li>Connection thread size: G1 M</li><br/><li>Turbo nozzle: yes</li><br/><li>Flame temperature: 2800 &deg; C</li><br/><li>Gas consumption: 142 g / h</li><br/><li>Gas supply type: Propane gas from external cylinder / MAPP mix</li><br/><li>Flame power adjustment: yes</li><br/><li>Piezo ignition: Yes</li><br/><li>Gas pressure: 2.59MPa</li><br/><li>Kit contents: gas burner, G1 M x G7 / 16 F adapter</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>07.07.2025</delivery>
+                            <price gross="23.4" net="23.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G20030" weight="700.00" grossWeight="790.00">
+                                        <stock id="1" quantity="267,00"/>
+                                                                    <price gross="23.4" net="23.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_0_18499862.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499863.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499864.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499865.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499866.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499867.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8740_1_18499868.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8741" vat="0" code="G80335" code_on_card="G80335" EAN="5901477171161" code_producer="5901477171161">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107951" name="Oil and Oil-free Compressors" path="Pneumatics\Oil and Oil-free Compressors"/>
+            <category_idosell path="Pneumatics\Oil and Oil-free Compressors" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/oil-free-air-compressor-24l-980w"/>
+                        <description>
+                            <name><![CDATA[Oil-Free Air Compressor 24L 980W]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h4>Oil-free Air Compressor with a tank capacity of 24 liters.</h4><br/><p>The compressor is equipped with an oil-free pump, suitable for long-term operation. Complete with a pressure gauge showing the tank pressure and a pressure reducer with a manometer with which you can set the output pressure and easily read it. Oil-free compressors are characterized by a much higher work culture compared to traditional oil compressors. It is especially recommended for use wherever the compressed air cannot be contaminated with oil.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Air compressor for professionals and not only, it will find application in every garage, home workshop, farm</li><br/><li>Simple construction, low-failure pump without oil</li><br/><li>High mobility - equipped with wheels and a handle, making it very easy to move with it from place to place</li><br/><li>Fitted with a pressure reducer equipped with an innovative adjustment mechanism, 2 large pressure gauges located on the compressor in a position that facilitates reading the parameters</li><br/><li>Characterized by a much greater work culture compared to traditional oil compressors</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><p>Tank capacity: <strong>24l</strong></p><br/><p>Power: <strong>980 W</strong></p><br/><p>Rated Current: <strong>3,2 A</strong></p><br/><p>Theoretical Efficiency: <strong>140</strong><strong> l/min</strong></p><br/><p>Effective Productivity: <strong>108 l/min</strong></p><br/><p>Max. Working Pressure: <strong>8 Bar</strong></p><br/><p>Rated Voltage: <strong>230V, 50Hz</strong></p><br/><p>&nbsp;</p><br/><p>Sprawdź działanie urządzenia na naszym kanale w serwisie Youtube:</p><br/><p><iframe src="//www.youtube.com/embed/ouUjSlSlGgc" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h4>Oil-free Air Compressor with a tank capacity of 24 liters.</h4><br/><p>The compressor is equipped with an oil-free pump, suitable for long-term operation. Complete with a pressure gauge showing the tank pressure and a pressure reducer with a manometer with which you can set the output pressure and easily read it. Oil-free compressors are characterized by a much higher work culture compared to traditional oil compressors. It is especially recommended for use wherever the compressed air cannot be contaminated with oil.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Air compressor for professionals and not only, it will find application in every garage, home workshop, farm</li><br/><li>Simple construction, low-failure pump without oil</li><br/><li>High mobility - equipped with wheels and a handle, making it very easy to move with it from place to place</li><br/><li>Fitted with a pressure reducer equipped with an innovative adjustment mechanism, 2 large pressure gauges located on the compressor in a position that facilitates reading the parameters</li><br/><li>Characterized by a much greater work culture compared to traditional oil compressors</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><p>Tank capacity: <strong>24l</strong></p><br/><p>Power: <strong>980 W</strong></p><br/><p>Rated Current: <strong>3,2 A</strong></p><br/><p>Theoretical Efficiency: <strong>140</strong><strong> l/min</strong></p><br/><p>Effective Productivity: <strong>108 l/min</strong></p><br/><p>Max. Working Pressure: <strong>8 Bar</strong></p><br/><p>Rated Voltage: <strong>230V, 50Hz</strong></p><br/><p>&nbsp;</p><br/><p>Sprawdź działanie urządzenia na naszym kanale w serwisie Youtube:</p><br/><p><iframe src="//www.youtube.com/embed/ouUjSlSlGgc" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></short_desc>
+                            <description><![CDATA[<h4>Oil-free Air Compressor with a tank capacity of 24 liters.</h4><br/><p>The compressor is equipped with an oil-free pump, suitable for long-term operation. Complete with a pressure gauge showing the tank pressure and a pressure reducer with a manometer with which you can set the output pressure and easily read it. Oil-free compressors are characterized by a much higher work culture compared to traditional oil compressors. It is especially recommended for use wherever the compressed air cannot be contaminated with oil.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Air compressor for professionals and not only, it will find application in every garage, home workshop, farm</li><br/><li>Simple construction, low-failure pump without oil</li><br/><li>High mobility - equipped with wheels and a handle, making it very easy to move with it from place to place</li><br/><li>Fitted with a pressure reducer equipped with an innovative adjustment mechanism, 2 large pressure gauges located on the compressor in a position that facilitates reading the parameters</li><br/><li>Characterized by a much greater work culture compared to traditional oil compressors</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><p>Tank capacity: <strong>24l</strong></p><br/><p>Power: <strong>980 W</strong></p><br/><p>Rated Current: <strong>3,2 A</strong></p><br/><p>Theoretical Efficiency: <strong>140</strong><strong> l/min</strong></p><br/><p>Effective Productivity: <strong>108 l/min</strong></p><br/><p>Max. Working Pressure: <strong>8 Bar</strong></p><br/><p>Rated Voltage: <strong>230V, 50Hz</strong></p><br/><p>&nbsp;</p><br/><p>Sprawdź działanie urządzenia na naszym kanale w serwisie Youtube:</p><br/><p><iframe src="//www.youtube.com/embed/ouUjSlSlGgc" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="84.2" net="84.2"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G80335" weight="15500.00" grossWeight="17000.00">
+                                        <stock id="1" quantity="42,00"/>
+                                                                    <price gross="84.2" net="84.2"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_0_18500567.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500568.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500571.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500572.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500573.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500574.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500575.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500576.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8741_1_18500577.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8742" vat="0" code="G00970" code_on_card="G00970" EAN="5901477170720" code_producer="5901477170720">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107876" name="Counters" path="Tools for The Workshop and Garage\Fuel Handling and Distribution\Counters"/>
+            <category_idosell path="Tools for The Workshop and Garage\Fuel Handling and Distribution\Counters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/universal-oil-meter-lcd-1"/>
+                        <description>
+                            <name><![CDATA[Universal oil meter LCD 1"]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>A modern, universal LDC flow meter for liquids  </strong>perfect for every household, farm, and workshop. The meter has a clear LCD display with the possibility of displaying the measurement in four units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT).</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>four measuring units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT)</li><br/><li>high accuracy + - 0.5%</li><br/><li>the battery lasts for 9000 hours of operation</li><br/><li>control panel with two buttons: CALIBRATE (calibration) and DISPLAY (display)</li><br/><li>working time in standby mode is up to 2 years</li><br/><li>clear LCD display</li><br/><li>powered by two AAA batteries</li><br/><li>designed for fuels such as diesel, gasoline, kerosene</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>A modern, universal LDC flow meter for liquids  </strong>perfect for every household, farm, and workshop. The meter has a clear LCD display with the possibility of displaying the measurement in four units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT).</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>four measuring units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT)</li><br/><li>high accuracy + - 0.5%</li><br/><li>the battery lasts for 9000 hours of operation</li><br/><li>control panel with two buttons: CALIBRATE (calibration) and DISPLAY (display)</li><br/><li>working time in standby mode is up to 2 years</li><br/><li>clear LCD display</li><br/><li>powered by two AAA batteries</li><br/><li>designed for fuels such as diesel, gasoline, kerosene</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>A modern, universal LDC flow meter for liquids  </strong>perfect for every household, farm, and workshop. The meter has a clear LCD display with the possibility of displaying the measurement in four units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT).</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>four measuring units: liters (LTR), gallons (GAL), pints (PT), and quarts (QT)</li><br/><li>high accuracy + - 0.5%</li><br/><li>the battery lasts for 9000 hours of operation</li><br/><li>control panel with two buttons: CALIBRATE (calibration) and DISPLAY (display)</li><br/><li>working time in standby mode is up to 2 years</li><br/><li>clear LCD display</li><br/><li>powered by two AAA batteries</li><br/><li>designed for fuels such as diesel, gasoline, kerosene</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="20.16" net="20.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G00970" weight="400.00" grossWeight="480.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="20.16" net="20.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8742_0_18499897.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8742_1_18499898.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8742_1_18499899.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8743" vat="0" code="G00971" code_on_card="G00971" EAN="5901477170737" code_producer="5901477170737">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107876" name="Counters" path="Tools for The Workshop and Garage\Fuel Handling and Distribution\Counters"/>
+            <category_idosell path="Tools for The Workshop and Garage\Fuel Handling and Distribution\Counters" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/diesel-meter"/>
+                        <description>
+                            <name><![CDATA[Diesel meter]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Universal analog 4-digit flow meter for fuel dispensers</strong> (mini CPN). It has two counters, a large 4-digit main counter and an 8-digit counter showing the total flow. High-quality components used in the production of the meter translate into increased accuracy and durability in relation to the old model.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>made using high-quality components</li><br/><li>large 4-digit master counter</li><br/><li>8-digit total flow meter</li><br/><li>connection 1 "</li><br/><li>oil flow: 20-120 l / min</li><br/><li>maximum pressure: 3.5 bar / 50 PSI</li><br/><li>accuracy level: + / - 1%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Universal analog 4-digit flow meter for fuel dispensers</strong> (mini CPN). It has two counters, a large 4-digit main counter and an 8-digit counter showing the total flow. High-quality components used in the production of the meter translate into increased accuracy and durability in relation to the old model.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>made using high-quality components</li><br/><li>large 4-digit master counter</li><br/><li>8-digit total flow meter</li><br/><li>connection 1 "</li><br/><li>oil flow: 20-120 l / min</li><br/><li>maximum pressure: 3.5 bar / 50 PSI</li><br/><li>accuracy level: + / - 1%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>Universal analog 4-digit flow meter for fuel dispensers</strong> (mini CPN). It has two counters, a large 4-digit main counter and an 8-digit counter showing the total flow. High-quality components used in the production of the meter translate into increased accuracy and durability in relation to the old model.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>made using high-quality components</li><br/><li>large 4-digit master counter</li><br/><li>8-digit total flow meter</li><br/><li>connection 1 "</li><br/><li>oil flow: 20-120 l / min</li><br/><li>maximum pressure: 3.5 bar / 50 PSI</li><br/><li>accuracy level: + / - 1%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="19.38" net="19.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G00971" weight="1900.00" grossWeight="1940.00">
+                                        <stock id="1" quantity="166,00"/>
+                                                                    <price gross="19.38" net="19.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8743_0_18499901.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8743_1_18499902.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8743_1_18499903.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8744" vat="0" code="G01834" code_on_card="G01834" EAN="5901477171178" code_producer="5901477171178">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107811" name="Blades" path="Cutting Tools\Knives and Blades\Blades"/>
+            <category_idosell path="Cutting Tools\Knives and Blades\Blades" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hook-blades-pack-0-6mm-x-19mm-5pcs"/>
+                        <description>
+                            <name><![CDATA[Hook blades pack 0.6mm x 19mm 5pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>5 pc. set of hook trapezoidal blades. </strong>Made of <strong>high-quality tool steel</strong>. Designed for cutting paper, cardboard, plastics, fabrics, tapes, and leather. <strong>Perfect for cutting floor coverings</strong>.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>5 pc. set of hook trapezoidal blades. </strong>Made of <strong>high-quality tool steel</strong>. Designed for cutting paper, cardboard, plastics, fabrics, tapes, and leather. <strong>Perfect for cutting floor coverings</strong>.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>5 pc. set of hook trapezoidal blades. </strong>Made of <strong>high-quality tool steel</strong>. Designed for cutting paper, cardboard, plastics, fabrics, tapes, and leather. <strong>Perfect for cutting floor coverings</strong>.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.72" net="0.72"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01834" weight="20.00" grossWeight="20.00">
+                                        <stock id="1" quantity="877,00"/>
+                                                                    <price gross="0.72" net="0.72"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8744_0_18500446.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8744_1_18500447.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8744_1_18500448.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8745" vat="0" code="G11702" code_on_card="G11702" EAN="5901477171277" code_producer="5901477171277">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-2mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 2mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>2mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>2mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>2mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.07" net="0.07"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11702" weight="95.00" grossWeight="95.00">
+                                        <stock id="1" quantity="1110,00"/>
+                                                                    <price gross="0.07" net="0.07"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8745_0_18500450.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8746" vat="0" code="G11703" code_on_card="G11703" EAN="5901477171321" code_producer="5901477171321">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-3mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 3mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>3mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>3mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>3mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.08" net="0.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11703" weight="5.00" grossWeight="5.00">
+                                        <stock id="1" quantity="428,00"/>
+                                                                    <price gross="0.08" net="0.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8746_0_18500452.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8747" vat="0" code="G11704" code_on_card="G11704" EAN="5901477171338" code_producer="5901477171338">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-4mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 4mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>4mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>4mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>4mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.1" net="0.1"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11704" weight="10.00" grossWeight="10.00">
+                                        <stock id="1" quantity="2858,00"/>
+                                                                    <price gross="0.1" net="0.1"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8747_0_18500454.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8748" vat="0" code="G11705" code_on_card="G11705" EAN="5901477171345" code_producer="5901477171345">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-5mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 5mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>5mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>5mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>5mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.16" net="0.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11705" weight="15.00" grossWeight="15.00">
+                                        <stock id="1" quantity="30,00"/>
+                                                                    <price gross="0.16" net="0.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8748_0_18500456.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8749" vat="0" code="G11706" code_on_card="G11706" EAN="5901477171352" code_producer="5901477171352">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-6mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 6mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>6mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>6mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>6mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.24" net="0.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11706" weight="25.00" grossWeight="25.00">
+                                        <stock id="1" quantity="162,00"/>
+                                                                    <price gross="0.24" net="0.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8749_0_18500458.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8750" vat="0" code="G11707" code_on_card="G11707" EAN="5901477171369" code_producer="5901477171369">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-7mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 7mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>7mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>7mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>7mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.38" net="0.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11707" weight="40.00" grossWeight="40.00">
+                                        <stock id="1" quantity="342,00"/>
+                                                                    <price gross="0.38" net="0.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8750_0_18500460.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8751" vat="0" code="G11708" code_on_card="G11708" EAN="5901477171376" code_producer="5901477171376">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-8mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 8mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>8mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>8mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>8mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.37" net="0.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11708" weight="55.00" grossWeight="55.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="0.37" net="0.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8751_0_18500462.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8752" vat="0" code="G11709" code_on_card="G11709" EAN="5901477171383" code_producer="5901477171383">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-9mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 9mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>9mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>9mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>9mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.54" net="0.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11709" weight="75.00" grossWeight="75.00">
+                                        <stock id="1" quantity="485,00"/>
+                                                                    <price gross="0.54" net="0.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8752_0_18500464.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8753" vat="0" code="G11710" code_on_card="G11710" EAN="5901477171390" code_producer="5901477171390">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-10mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 10mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>10mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>10mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>10mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.57" net="0.57"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11710" weight="100.00" grossWeight="100.00">
+                                        <stock id="1" quantity="605,00"/>
+                                                                    <price gross="0.57" net="0.57"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8753_0_18500466.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8754" vat="0" code="G11711" code_on_card="G11711" EAN="5901477171406" code_producer="5901477171406">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-11mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 11mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>11mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>11mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>11mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.91" net="0.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11711" weight="150.00" grossWeight="150.00">
+                                        <stock id="1" quantity="1248,00"/>
+                                                                    <price gross="0.91" net="0.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8754_0_18500468.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8755" vat="0" code="G11712" code_on_card="G11712" EAN="5901477171413" code_producer="5901477171413">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-12mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 12mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>12mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>12mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>12mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.91" net="0.91"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11712" weight="165.00" grossWeight="165.00">
+                                        <stock id="1" quantity="155,00"/>
+                                                                    <price gross="0.91" net="0.91"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8755_0_18500470.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8756" vat="0" code="G11713" code_on_card="G11713" EAN="5901477171420" code_producer="5901477171420">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-13mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 13mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>13mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>13mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>13mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.25" net="1.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11713" weight="210.00" grossWeight="210.00">
+                                        <stock id="1" quantity="495,00"/>
+                                                                    <price gross="1.25" net="1.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8756_0_18500472.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8757" vat="0" code="G11714" code_on_card="G11714" EAN="5901477171437" code_producer="5901477171437">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-14mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 14mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>14mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>14mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>14mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.33" net="1.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11714" weight="255.00" grossWeight="255.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.33" net="1.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8757_0_18500474.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8758" vat="0" code="G11717" code_on_card="G11717" EAN="5901477171444" code_producer="5901477171444">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-17mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 17mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>17mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>17mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>17mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.21" net="2.21"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11717" weight="405.00" grossWeight="405.00">
+                                        <stock id="1" quantity="188,00"/>
+                                                                    <price gross="2.21" net="2.21"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8758_0_18500476.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8759" vat="0" code="G11719" code_on_card="G11719" EAN="5901477171451" code_producer="5901477171451">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-19mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 19mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>19mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>19mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>19mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.67" net="2.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11719" weight="555.00" grossWeight="555.00">
+                                        <stock id="1" quantity="21,00"/>
+                                                                    <price gross="2.67" net="2.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8759_0_18500478.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8760" vat="0" code="G11722" code_on_card="G11722" EAN="5901477171468" code_producer="5901477171468">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-22mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 22mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>22mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>22mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>22mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.59" net="5.59"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11722" weight="840.00" grossWeight="840.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.59" net="5.59"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8760_0_18500480.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8761" vat="0" code="G11724" code_on_card="G11724" EAN="5901477171475" code_producer="5901477171475">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107881" name="General Mechanical Tools" path="Tools for The Workshop and Garage\General Mechanical Tools"/>
+            <category_idosell path="Tools for The Workshop and Garage\General Mechanical Tools" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hex-key-wrench-24mm"/>
+                        <description>
+                            <name><![CDATA[Hex key wrench 24mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>24mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>24mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>24mm HEX key</strong> made of <strong>durable</strong> <strong>CrV chrome-vanadium</strong> tool steel characterized by high resistance to mechanical damage.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.03" net="6.03"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G11724" weight="1035.00" grossWeight="1035.00">
+                                        <stock id="1" quantity="91,00"/>
+                                                                    <price gross="6.03" net="6.03"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8761_0_18500482.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8761_1_18500483.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8762" vat="0" code="G02425" code_on_card="G02425" EAN="5901477171185" code_producer="5901477171185">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107826" name="Others" path="Tools for The Workshop and Garage\Others"/>
+            <category_idosell path="Tools for The Workshop and Garage\Others" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/neodymium-magnet-50kg-set-with-rope-20m-and-gloves"/>
+                        <description>
+                            <name><![CDATA[Neodymium magnet 50kg set with rope 20m and gloves]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Magnes neodymowy 50kg* z uchwytem g&oacute;rnym, w zestawie z 20m liną, karabińczykiem oraz rękawicami.</strong> Tego typu magnesy z powodzeniem wykorzystywane są to poszukiwań metalowych (metale ferromagnetyczne) przedmiot&oacute;w w wodzie.</p>
+<p>Magnesy neodymowe do najtrwalsze magnesy trwałe. Magnesy neodymowe są bardzo silne i trwałe dzięki odpowiedniej mieszance neodymu (Nd), żelaza (Fe) i Boru (B).</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>trwały i silny magnes neodymowy o udźwigu maksymalnym 50kg*</li>
+<li>wyposażony w odkręcany uchwyt g&oacute;rny</li>
+<li>magnes połączony z obudową przy pomocy żywicy epoksydowej, daje do solidne połączenie kt&oacute;re zapobiega wciekaniu wody do obudowy, a także chroni magnes przed uszkodzeniami mechanicznymi</li>
+<li>w zestawie polipropylenowa lina o długości 20m, karabińczyk oraz rękawice ochronne</li>
+<li>magnes
+oraz obudowa zabezpieczone powłoką antykorozyjną</li>
+</ul>
+<p><strong>*</strong>Podany udźwig dla tego produktu może być mniejszy w skrajnych przypadkach nawet o około 75%. Wpływ na siłę udźwigu ma jakość oraz skład metalu(ferromagnetycznego), jego grubość lub stan (zardzewienia, pokrycie farbą, chropowatości).</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Magnes neodymowy 50kg* z uchwytem g&oacute;rnym, w zestawie z 20m liną, karabińczykiem oraz rękawicami.</strong> Tego typu magnesy z powodzeniem wykorzystywane są to poszukiwań metalowych (metale ferromagnetyczne) przedmiot&oacute;w w wodzie.</p>
+<p>Magnesy neodymowe do najtrwalsze magnesy trwałe. Magnesy neodymowe są bardzo silne i trwałe dzięki odpowiedniej mieszance neodymu (Nd), żelaza (Fe) i Boru (B).</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>trwały i silny magnes neodymowy o udźwigu maksymalnym 50kg*</li>
+<li>wyposażony w odkręcany uchwyt g&oacute;rny</li>
+<li>magnes połączony z obudową przy pomocy żywicy epoksydowej, daje do solidne połączenie kt&oacute;re zapobiega wciekaniu wody do obudowy, a także chroni magnes przed uszkodzeniami mechanicznymi</li>
+<li>w zestawie polipropylenowa lina o długości 20m, karabińczyk oraz rękawice ochronne</li>
+<li>magnes
+oraz obudowa zabezpieczone powłoką antykorozyjną</li>
+</ul>
+<p><strong>*</strong>Podany udźwig dla tego produktu może być mniejszy w skrajnych przypadkach nawet o około 75%. Wpływ na siłę udźwigu ma jakość oraz skład metalu(ferromagnetycznego), jego grubość lub stan (zardzewienia, pokrycie farbą, chropowatości).</p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Magnes neodymowy 50kg* z uchwytem g&oacute;rnym, w zestawie z 20m liną, karabińczykiem oraz rękawicami.</strong> Tego typu magnesy z powodzeniem wykorzystywane są to poszukiwań metalowych (metale ferromagnetyczne) przedmiot&oacute;w w wodzie.</p>
+<p>Magnesy neodymowe do najtrwalsze magnesy trwałe. Magnesy neodymowe są bardzo silne i trwałe dzięki odpowiedniej mieszance neodymu (Nd), żelaza (Fe) i Boru (B).</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>trwały i silny magnes neodymowy o udźwigu maksymalnym 50kg*</li>
+<li>wyposażony w odkręcany uchwyt g&oacute;rny</li>
+<li>magnes połączony z obudową przy pomocy żywicy epoksydowej, daje do solidne połączenie kt&oacute;re zapobiega wciekaniu wody do obudowy, a także chroni magnes przed uszkodzeniami mechanicznymi</li>
+<li>w zestawie polipropylenowa lina o długości 20m, karabińczyk oraz rękawice ochronne</li>
+<li>magnes
+oraz obudowa zabezpieczone powłoką antykorozyjną</li>
+</ul>
+<p><strong>*</strong>Podany udźwig dla tego produktu może być mniejszy w skrajnych przypadkach nawet o około 75%. Wpływ na siłę udźwigu ma jakość oraz skład metalu(ferromagnetycznego), jego grubość lub stan (zardzewienia, pokrycie farbą, chropowatości).</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.25" net="7.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02425" weight="550.00" grossWeight="600.00">
+                                        <stock id="1" quantity="296,00"/>
+                                                                    <price gross="7.25" net="7.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8762_0_18501315.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8762_1_18501316.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8762_1_18501317.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8762_1_18501318.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8762_1_18501319.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8763" vat="0" code="G71130" code_on_card="G71130" EAN="5901477171062" code_producer="5901477171062">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/transport-trolley-foldable-box-35-kg-4"/>
+                        <description>
+                            <name><![CDATA[Transport trolley - foldable box 35 kg (4)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>The foldable box transport trolley</strong> is a highly versatile trolley that allows you to easily transport various types of items with a total weight not exceeding 35 kg. When folded, the stroller <strong>takes up little space</strong>, so it can be successfully stored, for example, in a car boot. It has additional strips stiffening the side walls of the box, the strips just need to be detached from the bottom of the box and put on the top edge of the walls. Equipped with a <strong>telescopic handle</strong> adjustable in two heights.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>telescopic handle adjustable at two heights</li><br/><li>foldable construction takes up little space</li><br/><li>enables easy transport of various types of goods</li><br/><li>universal use, it can be successfully used on a construction site, it will replace a shopping<br />cart, and will be perfect for camping</li><br/><li>strips stiffening the side folded walls</li><br/><li>rubber transport wheels</li><br/></ul><br/><p><br /><strong>Technical Specifications:</strong></p><br/><ul><br/><li>Material: plastic, aluminum, rubber</li><br/><li>Folded dimensions: 455x85x460 mm</li><br/><li>Dimensions after unfolding: 455x380x460 mm</li><br/><li>Internal dimensions of the box: 390x320x340 mm</li><br/><li>The height of the handle: 71/97 cm</li><br/><li>Maximum lifting capacity: 35 kg</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>The foldable box transport trolley</strong> is a highly versatile trolley that allows you to easily transport various types of items with a total weight not exceeding 35 kg. When folded, the stroller <strong>takes up little space</strong>, so it can be successfully stored, for example, in a car boot. It has additional strips stiffening the side walls of the box, the strips just need to be detached from the bottom of the box and put on the top edge of the walls. Equipped with a <strong>telescopic handle</strong> adjustable in two heights.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>telescopic handle adjustable at two heights</li><br/><li>foldable construction takes up little space</li><br/><li>enables easy transport of various types of goods</li><br/><li>universal use, it can be successfully used on a construction site, it will replace a shopping<br />cart, and will be perfect for camping</li><br/><li>strips stiffening the side folded walls</li><br/><li>rubber transport wheels</li><br/></ul><br/><p><br /><strong>Technical Specifications:</strong></p><br/><ul><br/><li>Material: plastic, aluminum, rubber</li><br/><li>Folded dimensions: 455x85x460 mm</li><br/><li>Dimensions after unfolding: 455x380x460 mm</li><br/><li>Internal dimensions of the box: 390x320x340 mm</li><br/><li>The height of the handle: 71/97 cm</li><br/><li>Maximum lifting capacity: 35 kg</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>The foldable box transport trolley</strong> is a highly versatile trolley that allows you to easily transport various types of items with a total weight not exceeding 35 kg. When folded, the stroller <strong>takes up little space</strong>, so it can be successfully stored, for example, in a car boot. It has additional strips stiffening the side walls of the box, the strips just need to be detached from the bottom of the box and put on the top edge of the walls. Equipped with a <strong>telescopic handle</strong> adjustable in two heights.</p><br/><p><strong>Product features:</strong></p><br/><ul><br/><li>high quality</li><br/><li>telescopic handle adjustable at two heights</li><br/><li>foldable construction takes up little space</li><br/><li>enables easy transport of various types of goods</li><br/><li>universal use, it can be successfully used on a construction site, it will replace a shopping<br />cart, and will be perfect for camping</li><br/><li>strips stiffening the side folded walls</li><br/><li>rubber transport wheels</li><br/></ul><br/><p><br /><strong>Technical Specifications:</strong></p><br/><ul><br/><li>Material: plastic, aluminum, rubber</li><br/><li>Folded dimensions: 455x85x460 mm</li><br/><li>Dimensions after unfolding: 455x380x460 mm</li><br/><li>Internal dimensions of the box: 390x320x340 mm</li><br/><li>The height of the handle: 71/97 cm</li><br/><li>Maximum lifting capacity: 35 kg</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.48" net="12.48"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71130" weight="2750.00" grossWeight="2750.00">
+                                        <stock id="1" quantity="685,00"/>
+                                                                    <price gross="12.48" net="12.48"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_0_18499658.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499659.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499660.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499661.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499662.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499663.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8763_1_18499664.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8764" vat="0" code="G10222" code_on_card="G10222" EAN="5901477171192" code_producer="5901477171192">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/impact-mors-pliers-4pcs-set-125mm-250mm"/>
+                        <description>
+                            <name><![CDATA[Impact Mors Pliers 4pcs set (125mm-250mm)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Morse impact crimping pliers set. The set includes pliers in 4 sizes, made of high-quality materials. <strong>Jaws are made of C45 carbon steel </strong>and are subjected to appropriate heat treatment, which is characterized by high strength and high ductility. Handles are made of Q235 steel.</p><br/><p>Walrus pliers are perfect for hydraulic and welding works, as well as in car workshops and locksmith shops.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>jaws made of C45 hardened carbon steel</li><br/><li>the lower self-clamping jaw allows the jaws to be firmly clamped on the selected element, preventing it from slipping and moving</li><br/><li>jaw spacing adjustment screw</li><br/><li>a release mechanism allows the jaws to be opened easily</li><br/><li>the pliers have a comfortable ergonomic handle made of durable Q235 steel</li><br/><li>pliers sizes: 250mm 10 "; 190mm 7"; 170mm 6.5 "; 125mm 5"</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Morse impact crimping pliers set. The set includes pliers in 4 sizes, made of high-quality materials. <strong>Jaws are made of C45 carbon steel </strong>and are subjected to appropriate heat treatment, which is characterized by high strength and high ductility. Handles are made of Q235 steel.</p><br/><p>Walrus pliers are perfect for hydraulic and welding works, as well as in car workshops and locksmith shops.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>jaws made of C45 hardened carbon steel</li><br/><li>the lower self-clamping jaw allows the jaws to be firmly clamped on the selected element, preventing it from slipping and moving</li><br/><li>jaw spacing adjustment screw</li><br/><li>a release mechanism allows the jaws to be opened easily</li><br/><li>the pliers have a comfortable ergonomic handle made of durable Q235 steel</li><br/><li>pliers sizes: 250mm 10 "; 190mm 7"; 170mm 6.5 "; 125mm 5"</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Morse impact crimping pliers set. The set includes pliers in 4 sizes, made of high-quality materials. <strong>Jaws are made of C45 carbon steel </strong>and are subjected to appropriate heat treatment, which is characterized by high strength and high ductility. Handles are made of Q235 steel.</p><br/><p>Walrus pliers are perfect for hydraulic and welding works, as well as in car workshops and locksmith shops.</p><br/><p><strong>Product Features:</strong></p><br/><ul><br/><li>jaws made of C45 hardened carbon steel</li><br/><li>the lower self-clamping jaw allows the jaws to be firmly clamped on the selected element, preventing it from slipping and moving</li><br/><li>jaw spacing adjustment screw</li><br/><li>a release mechanism allows the jaws to be opened easily</li><br/><li>the pliers have a comfortable ergonomic handle made of durable Q235 steel</li><br/><li>pliers sizes: 250mm 10 "; 190mm 7"; 170mm 6.5 "; 125mm 5"</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>14.07.2025</delivery>
+                            <price gross="9.76" net="9.76"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G10222" weight="2900.00" grossWeight="3040.00">
+                                        <stock id="1" quantity="547,00"/>
+                                                                    <price gross="9.76" net="9.76"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8764_0_18499851.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8764_1_18499852.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8764_1_18499853.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8764_1_18499854.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8765" vat="0" code="K00060" code_on_card="K00060" EAN="5901477171550" code_producer="5901477171550">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="107827" name="Shears" path="Cutting Tools\Shears"/>
+            <category_idosell path="Cutting Tools\Shears" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/bolt-cutters-210mm"/>
+                        <description>
+                            <name><![CDATA[Bolt cutters 210mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>Nożyce do cięcia prętów oraz linek stalowych</strong> o grubości <strong>3mm</strong>. Nożyce i długości całkowitej 210, posiadają <strong>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</strong> który poprawia hartowność, a co za tym idzie znacznie poprawia właściwości stali.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>przeznaczone co cięcie prętów oraz linek stalowych o średnicy 3mm</li>
+<li>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</li>
+<li>ergonomiczna rękojeść z tworzywa sztucznego, zapewnia pewny chwyt narzędzia</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Długość całkowita: <strong>210mm</strong></p>
+<p>Maksymalna średnica prętów/linek: <strong>3mm</strong></p>
+<p>Materiał wykonania szczęk: <strong>stal 65Mn</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>Nożyce do cięcia prętów oraz linek stalowych</strong> o grubości <strong>3mm</strong>. Nożyce i długości całkowitej 210, posiadają <strong>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</strong> który poprawia hartowność, a co za tym idzie znacznie poprawia właściwości stali.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>przeznaczone co cięcie prętów oraz linek stalowych o średnicy 3mm</li>
+<li>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</li>
+<li>ergonomiczna rękojeść z tworzywa sztucznego, zapewnia pewny chwyt narzędzia</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Długość całkowita: <strong>210mm</strong></p>
+<p>Maksymalna średnica prętów/linek: <strong>3mm</strong></p>
+<p>Materiał wykonania szczęk: <strong>stal 65Mn</strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong>Nożyce do cięcia prętów oraz linek stalowych</strong> o grubości <strong>3mm</strong>. Nożyce i długości całkowitej 210, posiadają <strong>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</strong> który poprawia hartowność, a co za tym idzie znacznie poprawia właściwości stali.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>przeznaczone co cięcie prętów oraz linek stalowych o średnicy 3mm</li>
+<li>szczęki wykonane ze stali sprężynowej 65Mn z domieszką manganu</li>
+<li>ergonomiczna rękojeść z tworzywa sztucznego, zapewnia pewny chwyt narzędzia</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<p>Długość całkowita: <strong>210mm</strong></p>
+<p>Maksymalna średnica prętów/linek: <strong>3mm</strong></p>
+<p>Materiał wykonania szczęk: <strong>stal 65Mn</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.27" net="2.27"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K00060" weight="300.00" grossWeight="300.00">
+                                        <stock id="1" quantity="83,00"/>
+                                                                    <price gross="2.27" net="2.27"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8765_0_18500703.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8765_1_18500704.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8765_1_18500705.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8765_1_18500706.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8766" vat="0" code="G01821" code_on_card="G01821" EAN="5901477171482" code_producer="5901477171482">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105385" name="Leather Piercers" path="Cutting Tools\Leather Piercers"/>
+            <category_idosell path="Cutting Tools\Leather Piercers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/leather-punch-set-9pcs"/>
+                        <description>
+                            <name><![CDATA[Leather Punch Set 9pcs]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong>9 piece leather punch set. </strong> The punches are made of high-quality tool Carbon Steel.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Made of high quality materials.</li><br/><li>The set includes 9 punches, size 2.5 - 10 mm.</li><br/><li>Suitable for use with leather, rubber, cardboard.</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Material: <strong>Tool Carbon Steel</strong></li><br/><li>Number of elements: <strong>9</strong></li><br/><li>Punch sizes: <strong>2.5 mm; 3 mm; 4 mm; 5 mm; 6 mm; 7 mm; 8 mm; 9 mm; 10 mm</strong></li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong>9 piece leather punch set. </strong> The punches are made of high-quality tool Carbon Steel.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Made of high quality materials.</li><br/><li>The set includes 9 punches, size 2.5 - 10 mm.</li><br/><li>Suitable for use with leather, rubber, cardboard.</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Material: <strong>Tool Carbon Steel</strong></li><br/><li>Number of elements: <strong>9</strong></li><br/><li>Punch sizes: <strong>2.5 mm; 3 mm; 4 mm; 5 mm; 6 mm; 7 mm; 8 mm; 9 mm; 10 mm</strong></li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p><strong>9 piece leather punch set. </strong> The punches are made of high-quality tool Carbon Steel.</p><br/><h3>Product Features:</h3><br/><ul><br/><li>Made of high quality materials.</li><br/><li>The set includes 9 punches, size 2.5 - 10 mm.</li><br/><li>Suitable for use with leather, rubber, cardboard.</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Material: <strong>Tool Carbon Steel</strong></li><br/><li>Number of elements: <strong>9</strong></li><br/><li>Punch sizes: <strong>2.5 mm; 3 mm; 4 mm; 5 mm; 6 mm; 7 mm; 8 mm; 9 mm; 10 mm</strong></li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.08" net="2.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01821" weight="345.00" grossWeight="345.00">
+                                        <stock id="1" quantity="1117,00"/>
+                                                                    <price gross="2.08" net="2.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8766_0_18500696.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8766_1_18500697.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8767" vat="0" code="K02000" code_on_card="K02000" EAN="5901477171642" code_producer="5901477171642">
+                        <producer name="Keltin" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/workshop-lamp-with-5m-cable"/>
+                        <description>
+                            <name><![CDATA[Workshop lamp with 5m cable]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Universal workshop lamp powered from 230V mains, adapted to bulbs with an E27 thread. It has a metal cover that protects the bulb from damage and serves as a reflector directing the light in one direction. Equipped with a built-in switch and a flexible power cord with a length of 5 m. Built-in hook allows you to hang the lamp.</p><br/><p><strong>Technical Data:</strong></p><br/><p>Material: <strong>steel, plastic</strong><br />Light source: <strong>E27 socket bulb </strong>(bulb not included)<br />Power supply: <strong>230V</strong><br />Built-in hook: <strong>Yes</strong><br />Built-in switch: <strong>Yes</strong><br />Power cord length:<strong> 5m</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Universal workshop lamp powered from 230V mains, adapted to bulbs with an E27 thread. It has a metal cover that protects the bulb from damage and serves as a reflector directing the light in one direction. Equipped with a built-in switch and a flexible power cord with a length of 5 m. Built-in hook allows you to hang the lamp.</p><br/><p><strong>Technical Data:</strong></p><br/><p>Material: <strong>steel, plastic</strong><br />Light source: <strong>E27 socket bulb </strong>(bulb not included)<br />Power supply: <strong>230V</strong><br />Built-in hook: <strong>Yes</strong><br />Built-in switch: <strong>Yes</strong><br />Power cord length:<strong> 5m</strong></p>]]></short_desc>
+                            <description><![CDATA[<p>Universal workshop lamp powered from 230V mains, adapted to bulbs with an E27 thread. It has a metal cover that protects the bulb from damage and serves as a reflector directing the light in one direction. Equipped with a built-in switch and a flexible power cord with a length of 5 m. Built-in hook allows you to hang the lamp.</p><br/><p><strong>Technical Data:</strong></p><br/><p>Material: <strong>steel, plastic</strong><br />Light source: <strong>E27 socket bulb </strong>(bulb not included)<br />Power supply: <strong>230V</strong><br />Built-in hook: <strong>Yes</strong><br />Built-in switch: <strong>Yes</strong><br />Power cord length:<strong> 5m</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.21" net="2.21"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="K02000" weight="500.00" grossWeight="520.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="2.21" net="2.21"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8767_0_18499882.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8767_1_18499883.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8767_1_18499884.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8767_1_18499885.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8768" vat="0" code="G01316" code_on_card="G01316" EAN="5901477171659" code_producer="5901477171659">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107957" name="Padlocks" path="Joining Tools\Padlocks"/>
+            <category_idosell path="Joining Tools\Padlocks" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pin-padlock-70mm"/>
+                        <description>
+                            <name><![CDATA[Pin padlock 70mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.84" net="2.84"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01316" weight="415.00" grossWeight="415.00">
+                                        <stock id="1" quantity="715,00"/>
+                                                                    <price gross="2.84" net="2.84"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8768_0_18500690.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8768_1_18500691.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8769" vat="0" code="G01317" code_on_card="G01317" EAN="5901477171666" code_producer="5901477171666">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107957" name="Padlocks" path="Joining Tools\Padlocks"/>
+            <category_idosell path="Joining Tools\Padlocks" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pin-padlock-90mm"/>
+                        <description>
+                            <name><![CDATA[Pin padlock 90mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.54" net="3.54"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01317" weight="530.00" grossWeight="530.00">
+                                        <stock id="1" quantity="564,00"/>
+                                                                    <price gross="3.54" net="3.54"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8769_0_18500693.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/8/8769_1_18500694.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="8770" vat="0" code="G29954" code_on_card="G29954" EAN="5901477171246" code_producer="5901477171246">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105337" name="Carpentry Clamps" path="Joining Tools\Carpentry Clamps"/>
+            <category_idosell path="Joining Tools\Carpentry Clamps" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/ratchet-bar-clamp-600mm-24-in"/>
+                        <description>
+                            <name><![CDATA[Ratchet Bar Clamp 600mm / 24 in.]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Ścisk/rozpierak stolarski jednoręczny 600 mm</h3>
+<p>Wysokiej jakości jednoręczny ścisk stolarski renomowanej marki GEKO. System szybkiego przesuwu umożliwia obsługę ścisku jedną ręką. Posiada możliwość przełożenia górnej szczęki i używanie ścisku jak rozpieraka.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>system szybkiego przesuwu - łatwa obsługa jedną ręką</li>
+<li>plastikowe nakładki na szczęki zabezpieczające ściskany materiał przed uszkodzeniem</li>
+<li>po przełożeniu szczek może być używany jak rozpieraka</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Głębokość ścisku: <strong>60 mm</strong></li>
+<li>Zakres roboczy przy ściskaniu:<strong> 0 - 600 mm</strong></li>
+<li>Zakres roboczy przy rozpieraniu:<strong> 140 – 760 mm</strong></li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Ścisk/rozpierak stolarski jednoręczny 600 mm</h3>
+<p>Wysokiej jakości jednoręczny ścisk stolarski renomowanej marki GEKO. System szybkiego przesuwu umożliwia obsługę ścisku jedną ręką. Posiada możliwość przełożenia górnej szczęki i używanie ścisku jak rozpieraka.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>system szybkiego przesuwu - łatwa obsługa jedną ręką</li>
+<li>plastikowe nakładki na szczęki zabezpieczające ściskany materiał przed uszkodzeniem</li>
+<li>po przełożeniu szczek może być używany jak rozpieraka</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Głębokość ścisku: <strong>60 mm</strong></li>
+<li>Zakres roboczy przy ściskaniu:<strong> 0 - 600 mm</strong></li>
+<li>Zakres roboczy przy rozpieraniu:<strong> 140 – 760 mm</strong></li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Ścisk/rozpierak stolarski jednoręczny 600 mm</h3>
+<p>Wysokiej jakości jednoręczny ścisk stolarski renomowanej marki GEKO. System szybkiego przesuwu umożliwia obsługę ścisku jedną ręką. Posiada możliwość przełożenia górnej szczęki i używanie ścisku jak rozpieraka.</p>
+<h4>Charakterystyka produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>system szybkiego przesuwu - łatwa obsługa jedną ręką</li>
+<li>plastikowe nakładki na szczęki zabezpieczające ściskany materiał przed uszkodzeniem</li>
+<li>po przełożeniu szczek może być używany jak rozpieraka</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Głębokość ścisku: <strong>60 mm</strong></li>
+<li>Zakres roboczy przy ściskaniu:<strong> 0 - 600 mm</strong></li>
+<li>Zakres roboczy przy rozpieraniu:<strong> 140 – 760 mm</strong></li>
+</ul>]]></description>
+                        </description>

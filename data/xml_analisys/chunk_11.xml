@@ -1,0 +1,1500 @@
+                    </product>
+                    <product id="697" vat="0" code="CG81080-102" code_on_card="CG81080-102" EAN="5901477135088" code_producer="5901477135088">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cock-assembly-for-mist-duster"/>
+                        <description>
+                            <name><![CDATA[Cock assembly for mist duster]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.32" net="2.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-102" weight="300.00" grossWeight="320.00">
+                                        <stock id="1" quantity="50,00"/>
+                                                                    <price gross="2.32" net="2.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/697_0_37124.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="698" vat="0" code="CG81080-2" code_on_card="CG81080-2" EAN="5901477135095" code_producer="5901477135095">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter-for-mist-duster"/>
+                        <description>
+                            <name><![CDATA[Starter for mist duster]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.15" net="3.15"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-2" weight="300.00" grossWeight="300.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="3.15" net="3.15"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/698_0_37127.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/698_1_37126.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/698_1_37128.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="699" vat="0" code="CG81080-26" code_on_card="CG81080-26" EAN="5901477142215" code_producer="5901477142215">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/sealing-gasket"/>
+                        <description>
+                            <name><![CDATA[Sealing gasket]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.18" net="1.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-26" weight="10.00" grossWeight="0.00">
+                                        <stock id="1" quantity="37,00"/>
+                                                                    <price gross="1.18" net="1.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/6/699_0_37129.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="700" vat="0" code="CG81080-38" code_on_card="CG81080-38" EAN="5901477135101" code_producer="5901477135101">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/winding-for-mist-duster-38"/>
+                        <description>
+                            <name><![CDATA[Winding for mist duster #38]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.74" net="7.74"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-38" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="20,00"/>
+                                                                    <price gross="7.74" net="7.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/700_0_37125.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="701" vat="0" code="CG81080-43" code_on_card="CG81080-43" EAN="5901477135118" code_producer="5901477135118">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/winding-for-mist-duster-43"/>
+                        <description>
+                            <name><![CDATA[Winding for mist duster #43]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.32" net="4.32"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-43" weight="60.00" grossWeight="70.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="4.32" net="4.32"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/701_0_37132.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="702" vat="0" code="CG81080-44" code_on_card="CG81080-44" EAN="5901477135125" code_producer="5901477135125">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105271" name="Combustion Sprayers" path="Spare Parts\Combustion Sprayers"/>
+            <category_idosell path="Spare Parts\Combustion Sprayers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carbureator-for-mist-duster"/>
+                        <description>
+                            <name><![CDATA[Carbureator for Mist duster]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.35" net="11.35"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81080-44" weight="200.00" grossWeight="200.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="11.35" net="11.35"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/702_0_37130.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/702_1_37131.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="703" vat="0" code="CG81214-1" code_on_card="CG81214-1" EAN="5901477142222" code_producer="5901477142222">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107741" name="Animal Clippers" path="Household Items\Animal Clippers"/>
+            <category_idosell path="Household Items\Animal Clippers" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/cutter-for-sheep-clipping-machine"/>
+                        <description>
+                            <name><![CDATA[Cutter for Sheep Clipping Machine]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.31" net="10.31"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81214-1" weight="78.00" grossWeight="93.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.31" net="10.31"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/703_0_54.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="704" vat="0" code="CG81402A" code_on_card="CG81402A" EAN="5901477142239" code_producer="5901477142239">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/stator-for-g81402-g81424-water-pump"/>
+                        <description>
+                            <name><![CDATA[Stator for G81402 & G81424 Water Pump]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.57" net="13.57"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81402A" weight="5850.00" grossWeight="5940.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="13.57" net="13.57"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/704_0_55.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/704_1_56.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/704_1_57.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/704_1_58.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="705" vat="0" code="CG81403-405" code_on_card="CG81403-405" EAN="5901477142246" code_producer="5901477142246">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105276" name="Other" path="Spare Parts\Other"/>
+            <category_idosell path="Spare Parts\Other" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/copper-rotor-stator-for-pump-g81403-g81405"/>
+                        <description>
+                            <name><![CDATA[Copper Rotor Stator for Pump G81403, G81405]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.92" net="8.92"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG81403-405" weight="1360.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.92" net="8.92"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/705_0_59.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/705_1_60.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/705_1_61.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/705_1_62.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="706" vat="0" code="CG83015-1" code_on_card="CG83015-1" EAN="5901477135903" code_producer="5901477135903">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107897" name="Trimming" path="Garden\Trimming"/>
+            <category_idosell path="Garden\Trimming" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/brush-cutter-spool-line-for-electric-brush-cutter-g83015"/>
+                        <description>
+                            <name><![CDATA[Brush Cutter Spool & Line for Electric Brush Cutter G83015]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.63" net="1.63"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83015-1" weight="24.00" grossWeight="27.00">
+                                        <stock id="1" quantity="182,00"/>
+                                                                    <price gross="1.63" net="1.63"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/706_0_63.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/706_1_64.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="707" vat="0" code="CG83016-1" code_on_card="CG83016-1" EAN="5901477135910" code_producer="5901477135910">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107897" name="Trimming" path="Garden\Trimming"/>
+            <category_idosell path="Garden\Trimming" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/brush-cutter-spool-line-for-electric-brush-cutter-g83016"/>
+                        <description>
+                            <name><![CDATA[Brush Cutter Spool & Line for Electric Brush Cutter G83016]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.19" net="2.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83016-1" weight="35.00" grossWeight="45.00">
+                                        <stock id="1" quantity="85,00"/>
+                                                                    <price gross="2.19" net="2.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/707_0_17301851.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="708" vat="0" code="CG83050-13" code_on_card="CG83050-13" EAN="5901477142321" code_producer="5901477142321">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blades-g83050-13"/>
+                        <description>
+                            <name><![CDATA[Blades  G83050-13]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.37" net="4.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-13" weight="310.00" grossWeight="330.00">
+                                        <stock id="1" quantity="3,00"/>
+                                                                    <price gross="4.37" net="4.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/708_1_14575569.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="709" vat="0" code="CG83050-18" code_on_card="CG83050-18" EAN="5901477142338" code_producer="5901477142338">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheels-cg83050-18"/>
+                        <description>
+                            <name><![CDATA[Wheels CG83050-18]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.14" net="5.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-18" weight="320.00" grossWeight="320.00">
+                                        <stock id="1" quantity="6,00"/>
+                                                                    <price gross="5.14" net="5.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/709_1_10094342.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/709_1_10096772.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="710" vat="0" code="CG83050-51" code_on_card="CG83050-51" EAN="5901477142345" code_producer="5901477142345">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/startup-disk-for-lawn-mower-g83050-g83055"/>
+                        <description>
+                            <name><![CDATA[Startup disk for lawn mower G83050/G83055]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 51
+g83050 i g83055]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 51
+g83050 i g83055]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr części 51
+g83050 i g83055]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.23" net="7.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-51" weight="220.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.23" net="7.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/710_0_18511642.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/710_1_18511643.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="711" vat="0" code="CG83050-77" code_on_card="CG83050-77" EAN="5901477142352" code_producer="5901477142352">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carburetor-for-lawn-mower-g83050-g83055"/>
+                        <description>
+                            <name><![CDATA[Carburetor for lawn mower G83050/G83055]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr cześci 77
+g83050 i g53055]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr cześci 77
+g83050 i g53055]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr cześci 77
+g83050 i g53055]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="13.74" net="13.74"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-77" weight="220.00" grossWeight="0.00">
+                                        <stock id="1" quantity="16,00"/>
+                                                                    <price gross="13.74" net="13.74"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/711_1_14575613.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="712" vat="0" code="CG83050-90" code_on_card="CG83050-90" EAN="5901477142369" code_producer="5901477142369">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/spark-plug-for-lawn-mower-g83050-g83055"/>
+                        <description>
+                            <name><![CDATA[Spark plug for lawn mower g83050/G83055]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.03" net="3.03"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-90" weight="200.00" grossWeight="210.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.03" net="3.03"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/712_0_10094650.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/712_1_10096952.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="713" vat="0" code="CG83050-94" code_on_card="CG83050-94" EAN="5901477142376" code_producer="5901477142376">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/filters-for-g83050"/>
+                        <description>
+                            <name><![CDATA[Filters for G83050]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.26" net="3.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83050-94" weight="220.00" grossWeight="0.00">
+                                        <stock id="1" quantity="12,00"/>
+                                                                    <price gross="3.26" net="3.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="714" vat="0" code="CG83051-101" code_on_card="CG83051-101" EAN="5901477142383" code_producer="5901477142383">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carburetor-for-lawn-mower-g83051"/>
+                        <description>
+                            <name><![CDATA[Carburetor for lawn mower G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 101
+g83051]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 101
+g83051]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr części 101
+g83051]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.61" net="12.61"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-101" weight="240.00" grossWeight="0.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="12.61" net="12.61"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/714_0_10094684.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="715" vat="0" code="CG83051-13" code_on_card="CG83051-13" EAN="5901477142390" code_producer="5901477142390">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blades-for-g83051"/>
+                        <description>
+                            <name><![CDATA[Blades for G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.7" net="8.7"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-13" weight="600.00" grossWeight="640.00">
+                                        <stock id="1" quantity="180,00"/>
+                                                                    <price gross="8.7" net="8.7"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/715_1_14575649.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="716" vat="0" code="CG83051-18" code_on_card="CG83051-18" EAN="5901477142406" code_producer="5901477142406">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheels-8-inch-for-g83051"/>
+                        <description>
+                            <name><![CDATA[wheels (8 inch) for G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.73" net="7.73"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-18" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.73" net="7.73"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/716_0_14577696.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="717" vat="0" code="CG83051-41" code_on_card="CG83051-41" EAN="5901477142413" code_producer="5901477142413">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheels-10-inch-for-g83051"/>
+                        <description>
+                            <name><![CDATA[Wheels (10 inch) for G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.71" net="6.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-41" weight="500.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.71" net="6.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/717_0_14599462.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/717_1_14599497.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="718" vat="0" code="CG83051-59" code_on_card="CG83051-59" EAN="5901477142420" code_producer="5901477142420">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starters-for-g83050"/>
+                        <description>
+                            <name><![CDATA[Starters for G83050]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 59
+g83051]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 59
+g83051]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr części 59
+g83051]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.23" net="7.23"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-59" weight="240.00" grossWeight="0.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.23" net="7.23"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/718_0_37244.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/718_1_14577868.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/718_1_37245.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="719" vat="0" code="CG83051-80" code_on_card="CG83051-80" EAN="5901477142437" code_producer="5901477142437">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/spark-plugs-for-g83051"/>
+                        <description>
+                            <name><![CDATA[Spark plugs for G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.53" net="2.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-80" weight="60.00" grossWeight="60.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.53" net="2.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/719_0_14599836.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="720" vat="0" code="CG83051-84" code_on_card="CG83051-84" EAN="5901477142444" code_producer="5901477142444">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/filters-for-g83051"/>
+                        <description>
+                            <name><![CDATA[Filters   for G83051]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.26" net="3.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83051-84" weight="240.00" grossWeight="0.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="3.26" net="3.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="721" vat="0" code="CG83055-13" code_on_card="CG83055-13" EAN="5901477139888" code_producer="5901477139888">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blade-for-lawn-mower-40cm-jg-g83055-1"/>
+                        <description>
+                            <name><![CDATA[Blade for lawn mower 40cm JG G83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.25" net="3.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-13" weight="450.00" grossWeight="460.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.25" net="3.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/721_0_36912.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="722" vat="0" code="CG83055-18" code_on_card="CG83055-18" EAN="5901477139895" code_producer="5901477139895">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/6-wheel-for-lawn-mower-40cm-jg-83055-1"/>
+                        <description>
+                            <name><![CDATA[6" wheel for lawn mower 40cm JG 83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.87" net="4.87"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-18" weight="300.00" grossWeight="330.00">
+                                        <stock id="1" quantity="8,00"/>
+                                                                    <price gross="4.87" net="4.87"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/722_0_36901.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="723" vat="0" code="CG83055-28" code_on_card="CG83055-28" EAN="5901477139901" code_producer="5901477139901">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gear-box-for-lawn-mower-40cm-jg-g83055-1"/>
+                        <description>
+                            <name><![CDATA[Gear box for lawn mower 40cm JG G83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="25.44" net="25.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-28" weight="585.00" grossWeight="635.00">
+                                        <stock id="1" quantity="1,00"/>
+                                                                    <price gross="25.44" net="25.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/723_0_36909.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/723_1_36910.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="724" vat="0" code="CG83055-35" code_on_card="CG83055-35" EAN="5901477139918" code_producer="5901477139918">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/kolo-8-do-kosiarki-spalinowej-40cm-jg-g83055-1"/>
+                        <description>
+                            <name><![CDATA[Koło 8'' do kosiarki spalinowej 40cm JG G83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.06" net="5.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-35" weight="510.00" grossWeight="570.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.06" net="5.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/724_0_36903.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/724_1_36904.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="725" vat="0" code="CG83055-51" code_on_card="CG83055-51" EAN="5901477139925" code_producer="5901477139925">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter-do-kosiarki-spalinowej-40cm-jg-g83055-1"/>
+                        <description>
+                            <name><![CDATA[Starter do kosiarki spalinowej 40cm JG G83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12" net="12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-51" weight="585.00" grossWeight="635.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12" net="12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/725_0_36906.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/725_1_36907.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="726" vat="0" code="CG83055-77" code_on_card="CG83055-77" EAN="5901477139932" code_producer="5901477139932">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gaznik-do-kosiarki-spalinowej-40cm-jg-g83055-1"/>
+                        <description>
+                            <name><![CDATA[Gaźnik do kosiarki spalinowej 40cm JG G83055 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.12" net="10.12"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-77" weight="200.00" grossWeight="218.00">
+                                        <stock id="1" quantity="7,00"/>
+                                                                    <price gross="10.12" net="10.12"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/726_0_36896.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/726_1_36897.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="727" vat="0" code="CG83055-90" code_on_card="CG83055-90" EAN="5901477139949" code_producer="5901477139949">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/spark-plug-for-lawn-mower-g83055"/>
+                        <description>
+                            <name><![CDATA[Spark plug for lawn mower G83055]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.53" net="2.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83055-90" weight="280.00" grossWeight="290.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.53" net="2.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/727_0_36899.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="728" vat="0" code="CG83056-101" code_on_card="CG83056-101" EAN="5901477139956" code_producer="5901477139956">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/carburetor"/>
+                        <description>
+                            <name><![CDATA[Carburetor]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 101
+g83056]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 101
+g83056]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr części 101
+g83056]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="12.45" net="12.45"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-101" weight="200.00" grossWeight="218.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="12.45" net="12.45"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/728_0_36914.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/728_1_36915.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="729" vat="0" code="CG83056-13" code_on_card="CG83056-13" EAN="5901477139963" code_producer="5901477139963">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blade-46cm-for-lawn-mower"/>
+                        <description>
+                            <name><![CDATA[Blade 46cm for lawn mower]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.55" net="6.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-13" weight="550.00" grossWeight="590.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.55" net="6.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/729_0_36930.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="730" vat="0" code="CG83056-18" code_on_card="CG83056-18" EAN="5901477139970" code_producer="5901477139970">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/kolo-7-do-kosiarki-spalinowej-46cm-jg-g83056-1"/>
+                        <description>
+                            <name><![CDATA[Koło 7'' do kosiarki spalinowej 46cm JG G83056 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.59" net="4.59"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-18" weight="300.00" grossWeight="330.00">
+                                        <stock id="1" quantity="2,00"/>
+                                                                    <price gross="4.59" net="4.59"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/730_0_36919.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="731" vat="0" code="CG83056-34" code_on_card="CG83056-34" EAN="5901477139987" code_producer="5901477139987">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/skrzynia-biegow-do-kosiarki-spalinowej-46cm-jg-g83056-1"/>
+                        <description>
+                            <name><![CDATA[Skrzynia biegów do kosiarki spalinowej 46cm JG G83056 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="23.09" net="23.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-34" weight="870.00" grossWeight="870.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="23.09" net="23.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/731_0_36927.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/731_1_36928.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="732" vat="0" code="CG83056-41" code_on_card="CG83056-41" EAN="5901477139994" code_producer="5901477139994">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/kolo-10-do-kosiarki-spalinowej-46cm-jg-g83056-1"/>
+                        <description>
+                            <name><![CDATA[Koło 10'' do kosiarki spalinowej 46cm JG G83056 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.4" net="6.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-41" weight="510.00" grossWeight="570.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="6.4" net="6.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/732_0_36921.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/732_1_36922.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="733" vat="0" code="CG83056-58" code_on_card="CG83056-58" EAN="5901477140006" code_producer="5901477140006">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter"/>
+                        <description>
+                            <name><![CDATA[Starter]]></name>
+                            <long_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 58
+g83056]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[TBP180013
+Nr części 58
+g83056]]></short_desc>
+                            <description><![CDATA[TBP180013
+Nr części 58
+g83056]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.25" net="7.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-58" weight="280.00" grossWeight="290.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.25" net="7.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/733_0_36924.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/733_1_36925.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="734" vat="0" code="CG83056-78" code_on_card="CG83056-78" EAN="5901477140013" code_producer="5901477140013">
+                        <producer name="John Gardener" id=""/>
+
+
+            <category id="105264" name="Petrol Lawn Mowers" path="Spare Parts\Petrol Lawn Mowers"/>
+            <category_idosell path="Spare Parts\Petrol Lawn Mowers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/swieca-zaplonowe-do-kosiarki-spalinowej-46cm-jg-g83056-1"/>
+                        <description>
+                            <name><![CDATA[Świeca zapłonowe do kosiarki spalinowej 46cm JG G83056 (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.53" net="2.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG83056-78" weight="600.00" grossWeight="600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.53" net="2.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/734_0_36917.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="735" vat="0" code="CG84000/01-108" code_on_card="CG84000/01-108" EAN="5901477139536" code_producer="5901477139536">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gaznik-do-glebogryzarki-spalinowej-5-00h-1"/>
+                        <description>
+                            <name><![CDATA[Gaźnik do glebogryzarki spalinowej 5.00H (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="11.11" net="11.11"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84000/01-108" weight="240.00" grossWeight="250.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="11.11" net="11.11"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/735_0_36180.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/735_1_36181.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="736" vat="0" code="CG84000/01-25" code_on_card="CG84000/01-25" EAN="5901477139543" code_producer="5901477139543">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pasek-klinowy-do-glebogryzarki-spalinowej-5-00h-1"/>
+                        <description>
+                            <name><![CDATA[Pasek klinowy do glebogryzarki spalinowej 5.00H (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.05" net="2.05"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84000/01-25" weight="240.00" grossWeight="250.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="2.05" net="2.05"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/736_0_36183.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="737" vat="0" code="CG84000/01-58" code_on_card="CG84000/01-58" EAN="5901477139550" code_producer="5901477139550">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/starter-do-glebogryzarki-spalinowej-5-00h-1"/>
+                        <description>
+                            <name><![CDATA[Starter do glebogryzarki spalinowej 5.00H (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.83" net="7.83"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84000/01-58" weight="240.00" grossWeight="250.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="7.83" net="7.83"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/737_0_36185.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/7/737_1_36186.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="738" vat="0" code="CG84002-102" code_on_card="CG84002-102" EAN="5901477139567" code_producer="5901477139567">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/regulator-ssania-do-glebogryzarki-spalinowej-7hp-85cm-1"/>
+                        <description>
+                            <name><![CDATA[Regulator ssania do glebogryzarki spalinowej 7HP 85cm (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.43" net="9.43"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84002-102" weight="130.00" grossWeight="150.00">
+                                        <stock id="1" quantity="5,00"/>
+                                                                    <price gross="9.43" net="9.43"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="739" vat="0" code="CG84002-11" code_on_card="CG84002-11" EAN="5901477139574" code_producer="5901477139574">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/przekladnia-zebata-do-glebogryzarki-spalinowej-7hp-85cm-1"/>
+                        <description>
+                            <name><![CDATA[Przekładnia zębata do glebogryzarki spalinowej 7HP 85cm (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.8" net="6.8"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84002-11" weight="130.00" grossWeight="150.00">
+                                        <stock id="1" quantity="4,00"/>
+                                                                    <price gross="6.8" net="6.8"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="740" vat="0" code="CG84002-2-11" code_on_card="CG84002-2-11" EAN="5901477139581" code_producer="5901477139581">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105655" name="Petrol Tillers" path="Spare Parts\Petrol Tillers"/>
+            <category_idosell path="Spare Parts\Petrol Tillers" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/dzwignia-redulatora-obrotow-do-glebogryzarki-spalinowej-7hp-85cm-1"/>
+                        <description>
+                            <name><![CDATA[Dźwignia redulatora obrotów do glebogryzarki spalinowej 7HP 85cm (1)]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.24" net="7.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="CG84002-2-11" weight="130.00" grossWeight="150.00">

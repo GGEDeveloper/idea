@@ -1,0 +1,1500 @@
+                    <product id="3236" vat="0" code="G71008" code_on_card="G71008" EAN="5901477120237" code_producer="5901477120237">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tube-3-00-4"/>
+                        <description>
+                            <name><![CDATA[Tube 3.00-4]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.25" net="1.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71008" weight="160.00" grossWeight="160.00">
+                                        <stock id="1" quantity="3719,00"/>
+                                                                    <price gross="1.25" net="1.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3236_0_6548.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3236_1_6549.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3236_1_6550.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3236_1_6551.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3237" vat="0" code="G71009" code_on_card="G71009" EAN="5901477115172" code_producer="5901477115172">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-tube-4-00-6"/>
+                        <description>
+                            <name><![CDATA[Tyre&tube 4.00-6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Opona z dętką 4.00 - 6 2PR</h3><p>Opona 2PR z dętką o maksymalnym obciążeniu do 136 kg.</p><ul><li>Specyfikacja techniczna:</li><li>Średnica zewnętrzna opony: 320 mm</li><li>Szerokość opony: 90 mm</li><li>Średnica wewnętrzna opony: 170 mm</li><li>Ilość płócien w oponie: 2</li><li>Materiał wykonania: guma</li><li>Maksymalne obciążenie: 136 kg</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Opona z dętką 4.00 - 6 2PR</h3><p>Opona 2PR z dętką o maksymalnym obciążeniu do 136 kg.</p><ul><li>Specyfikacja techniczna:</li><li>Średnica zewnętrzna opony: 320 mm</li><li>Szerokość opony: 90 mm</li><li>Średnica wewnętrzna opony: 170 mm</li><li>Ilość płócien w oponie: 2</li><li>Materiał wykonania: guma</li><li>Maksymalne obciążenie: 136 kg</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Opona z dętką 4.00 - 6 2PR</h3><p>Opona 2PR z dętką o maksymalnym obciążeniu do 136 kg.</p><ul><li>Specyfikacja techniczna:</li><li>Średnica zewnętrzna opony: 320 mm</li><li>Szerokość opony: 90 mm</li><li>Średnica wewnętrzna opony: 170 mm</li><li>Ilość płócien w oponie: 2</li><li>Materiał wykonania: guma</li><li>Maksymalne obciążenie: 136 kg</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.17" net="3.17"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71009" weight="1200.00" grossWeight="1200.00">
+                                        <stock id="1" quantity="1139,00"/>
+                                                                    <price gross="3.17" net="3.17"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3237_0_6552.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3237_1_6553.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3237_1_6554.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3238" vat="0" code="G71010" code_on_card="G71010" EAN="5901477120244" code_producer="5901477120244">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/wheel-bearing-4-8-typ-a"/>
+                        <description>
+                            <name><![CDATA[Wheel Bearing 4-8 TYP A]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.5" net="0.5"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71010" weight="30.00" grossWeight="30.00">
+                                        <stock id="1" quantity="3355,00"/>
+                                                                    <price gross="0.5" net="0.5"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3238_0_35489.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3238_1_35490.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3240" vat="0" code="G71012" code_on_card="G71012" EAN="5901477113666" code_producer="5901477113666">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rubber-wheel-4-00-8-2pr-red-rim"/>
+                        <description>
+                            <name><![CDATA[Rubber Wheel 4.00-8 2PR /red rim/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 2pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 100 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load (kg): 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 2pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 100 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load (kg): 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 2pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 100 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load (kg): 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery>09.06.2025</delivery>
+                            <price gross="5.64" net="5.64"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71012" weight="2000.00" grossWeight="2000.00">
+                                        <stock id="1" quantity="9216,00"/>
+                                                                    <price gross="5.64" net="5.64"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_0_6555.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6556.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6557.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6558.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6559.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6560.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6561.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6562.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6563.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6564.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6565.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6566.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6567.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6568.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6569.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3240_1_6570.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3241" vat="0" code="G71014" code_on_card="G71014" EAN="5901477120268" code_producer="5901477120268">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pneumatic-trolley-wheel-3-00-4-2pr"/>
+                        <description>
+                            <name><![CDATA[Pneumatic Trolley Wheel 3.00-4/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Inflatable 2-ply (2PR) wheel for cart with a maximum load capacity of up to 80 kg. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 255 mm</li><br/><li>Tire Width: 75 mm</li><br/><li>Inner Wheel Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Hub Width: 80 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Steel Rim</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Valve: Car Valve</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Inflatable 2-ply (2PR) wheel for cart with a maximum load capacity of up to 80 kg. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 255 mm</li><br/><li>Tire Width: 75 mm</li><br/><li>Inner Wheel Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Hub Width: 80 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Steel Rim</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Valve: Car Valve</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Inflatable 2-ply (2PR) wheel for cart with a maximum load capacity of up to 80 kg. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 255 mm</li><br/><li>Tire Width: 75 mm</li><br/><li>Inner Wheel Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Hub Width: 80 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Steel Rim</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Valve: Car Valve</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.44" net="4.44"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71014" weight="1300.00" grossWeight="1300.00">
+                                        <stock id="1" quantity="869,00"/>
+                                                                    <price gross="4.44" net="4.44"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_0_6571.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6572.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6573.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6574.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6575.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6576.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3241_1_6577.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3242" vat="0" code="G71015" code_on_card="G71015" EAN="5901477120275" code_producer="5901477120275">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tube-4-00x6"/>
+                        <description>
+                            <name><![CDATA[Tube 4.00x6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tubeá4.00-6</span></strong></p> <p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/data/include/cms/towary/G71007.jpeg" border="0" alt="" width="650" height="594" /></span></strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tubeá4.00-6</span></strong></p> <p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/data/include/cms/towary/G71007.jpeg" border="0" alt="" width="650" height="594" /></span></strong></p>]]></short_desc>
+                            <description><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tubeá4.00-6</span></strong></p> <p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;"><img style="display: block; margin-left: auto; margin-right: auto;" src="/data/include/cms/towary/G71007.jpeg" border="0" alt="" width="650" height="594" /></span></strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.25" net="1.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71015" weight="270.00" grossWeight="300.00">
+                                        <stock id="1" quantity="2642,00"/>
+                                                                    <price gross="1.25" net="1.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3242_0_6578.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3242_1_6579.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3242_1_6580.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3242_1_6581.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3243" vat="0" code="G71018" code_on_card="G71018" EAN="5901477129902" code_producer="5901477129902">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-and-tube-4-00-8-6pr"/>
+                        <description>
+                            <name><![CDATA[Tyre and Tube 4.00-8/6PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá4.00-8/6PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá4.00-8/6PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></short_desc>
+                            <description><![CDATA[<h3>Tyre and tubeá4.00-8/6PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.9" net="3.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71018" weight="1600.00" grossWeight="1600.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.9" net="3.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_0_6582.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_1_6583.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_1_6584.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_1_6585.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_1_6586.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3243_1_6587.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3244" vat="0" code="G71019" code_on_card="G71019" EAN="5901477120282" code_producer="5901477120282">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/blue-new-wheel-4-00-8-6pr-with-axle"/>
+                        <description>
+                            <name><![CDATA[Blue new wheel 4.00-8 6PR with axle]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 6pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 140 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 140 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 99 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 6</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 6pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 140 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 140 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 99 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 6</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 6pr for Wheelbarrow, Cart</h3><br/><p><strong> Wheel for wheelbarrow with a maximum load capacity of up to 140 kg </strong>. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 140 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 99 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 6</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.09" net="7.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71019" weight="2350.00" grossWeight="2350.00">
+                                        <stock id="1" quantity="3013,00"/>
+                                                                    <price gross="7.09" net="7.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_0_6588.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_1_6589.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_1_6590.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_1_6591.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_1_6592.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3244_1_6593.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3245" vat="0" code="G71020" code_on_card="G71020" EAN="5901477120299" code_producer="5901477120299">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-and-tube-4-008-4pr"/>
+                        <description>
+                            <name><![CDATA[Tyre and Tube 4.008/4PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Opona z dętka 4.80 / 4.00 - 8 4pr do taczki, wózka</h3>
+<p>Opona z dętką do taczki o maksymalnym obciążeniu do 120 kg. Wykonana z wysokiej jakości materiałów.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>średnica zewnętrzna 400 mm</li>
+<li>gumowa opona z dętką</li>
+<li>maksymalne obciążenie 120 kg</li>
+<li>opona 4 płócienna</li>
+<li>ciśnienie maksymalne 1.7 bar / 25 psi</li>
+<li>wysoka jakość materiałów</li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Opona z dętka 4.80 / 4.00 - 8 4pr do taczki, wózka</h3>
+<p>Opona z dętką do taczki o maksymalnym obciążeniu do 120 kg. Wykonana z wysokiej jakości materiałów.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>średnica zewnętrzna 400 mm</li>
+<li>gumowa opona z dętką</li>
+<li>maksymalne obciążenie 120 kg</li>
+<li>opona 4 płócienna</li>
+<li>ciśnienie maksymalne 1.7 bar / 25 psi</li>
+<li>wysoka jakość materiałów</li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>Opona z dętka 4.80 / 4.00 - 8 4pr do taczki, wózka</h3>
+<p>Opona z dętką do taczki o maksymalnym obciążeniu do 120 kg. Wykonana z wysokiej jakości materiałów.</p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>średnica zewnętrzna 400 mm</li>
+<li>gumowa opona z dętką</li>
+<li>maksymalne obciążenie 120 kg</li>
+<li>opona 4 płócienna</li>
+<li>ciśnienie maksymalne 1.7 bar / 25 psi</li>
+<li>wysoka jakość materiałów</li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.55" net="3.55"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71020" weight="1100.00" grossWeight="1100.00">
+                                        <stock id="1" quantity="1612,00"/>
+                                                                    <price gross="3.55" net="3.55"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3245_0_6594.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3245_1_6595.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3245_1_6596.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3247" vat="0" code="G71022" code_on_card="G71022" EAN="5901477120312" code_producer="5901477120312">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rubber-wheel-4-00-8-4pr-green-rim"/>
+                        <description>
+                            <name><![CDATA[Rubber wheel  4.00-8 4PR /green rim/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 4PR for Wheelbarrow, Cart</h3><br/><p>4-ply 4.00 - 8 wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 120 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 4</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 4PR for Wheelbarrow, Cart</h3><br/><p>4-ply 4.00 - 8 wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 120 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 4</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 4PR for Wheelbarrow, Cart</h3><br/><p>4-ply 4.00 - 8 wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 120 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 97 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 4</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.1 bar / 30 psi</li><br/><li>Application: Wheelbarrows, Carts</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.16" net="6.16"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71022" weight="2200.00" grossWeight="2200.00">
+                                        <stock id="1" quantity="842,00"/>
+                                                                    <price gross="6.16" net="6.16"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3247_0_6597.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3247_1_6598.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3247_1_6599.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3247_1_6600.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3247_1_6601.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3248" vat="0" code="G71023" code_on_card="G71023" EAN="5901477120329" code_producer="5901477120329">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-wheel-4-00-8-flower"/>
+                        <description>
+                            <name><![CDATA[PU wheel 4.00-8 Flower]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU</h3><br/><p>Tubeless wheel for trolley 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU</h3><br/><p>Tubeless wheel for trolley 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU</h3><br/><p>Tubeless wheel for trolley 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.14" net="9.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71023" weight="2100.00" grossWeight="2100.00">
+                                        <stock id="1" quantity="1509,00"/>
+                                                                    <price gross="9.14" net="9.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_0_6602.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_1_18497976.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_1_6603.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_1_6604.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_1_6605.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3248_1_6606.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3249" vat="0" code="G71024" code_on_card="G71024" EAN="5901477115189" code_producer="5901477115189">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-orange-wheel-4-00-8-with-blue-rim"/>
+                        <description>
+                            <name><![CDATA[PU orange wheel 4.00-8 with blue rim]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU ORANGE</h3><br/><p>Tubeless wheel for trolleys, size 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures enhanced stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load Capacity: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU ORANGE</h3><br/><p>Tubeless wheel for trolleys, size 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures enhanced stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load Capacity: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel 4.80 / 4.00 - 8 for Trolley, Cart Solid PU ORANGE</h3><br/><p>Tubeless wheel for trolleys, size 4.00-8. Made from durable polyurethane material. The reinforced powder-coated metal rim ensures enhanced stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load Capacity: 100 kg</strong></li><br/><li>Outer Tire Diameter: 390 mm</li><br/><li>Tire Width: 95 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.22" net="9.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71024" weight="2150.00" grossWeight="2150.00">
+                                        <stock id="1" quantity="1589,00"/>
+                                                                    <price gross="9.22" net="9.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_0_6607.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_1_6608.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_1_6609.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_1_6610.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_1_6611.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3249_1_6612.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3250" vat="0" code="G71025" code_on_card="G71025" EAN="5901477103933" code_producer="5901477103933">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-foam-wheel-3-00-4"/>
+                        <description>
+                            <name><![CDATA[PU Foam Wheel   3.00-4]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Cart 3.00 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><table><br/><tbody><br/><tr><br/><td>Outer Wheel Diameter</td><br/><td>260 mm</td><br/></tr><br/><tr><br/><td>Tire Width</td><br/><td>75 mm</td><br/></tr><br/><tr><br/><td>Inner Wheel Diameter</td><br/><td>125 mm</td><br/></tr><br/><tr><br/><td>Hub Width</td><br/><td>80 mm</td><br/></tr><br/><tr><br/><td>Axle Hole Diameter</td><br/><td>16 mm</td><br/></tr><br/><tr><br/><td>Bearings</td><br/><td>Ball Bearings</td><br/></tr><br/><tr><br/><td>Number of Plies in Tire</td><br/><td>2</td><br/></tr><br/><tr><br/><td>Material</td><br/><td>Polyurethane, Steel Rim</td><br/></tr><br/><tr><br/><td>Maximum Load</td><br/><td>80 kg</td><br/></tr><br/></tbody><br/></table>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Cart 3.00 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><table><br/><tbody><br/><tr><br/><td>Outer Wheel Diameter</td><br/><td>260 mm</td><br/></tr><br/><tr><br/><td>Tire Width</td><br/><td>75 mm</td><br/></tr><br/><tr><br/><td>Inner Wheel Diameter</td><br/><td>125 mm</td><br/></tr><br/><tr><br/><td>Hub Width</td><br/><td>80 mm</td><br/></tr><br/><tr><br/><td>Axle Hole Diameter</td><br/><td>16 mm</td><br/></tr><br/><tr><br/><td>Bearings</td><br/><td>Ball Bearings</td><br/></tr><br/><tr><br/><td>Number of Plies in Tire</td><br/><td>2</td><br/></tr><br/><tr><br/><td>Material</td><br/><td>Polyurethane, Steel Rim</td><br/></tr><br/><tr><br/><td>Maximum Load</td><br/><td>80 kg</td><br/></tr><br/></tbody><br/></table>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Cart 3.00 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><table><br/><tbody><br/><tr><br/><td>Outer Wheel Diameter</td><br/><td>260 mm</td><br/></tr><br/><tr><br/><td>Tire Width</td><br/><td>75 mm</td><br/></tr><br/><tr><br/><td>Inner Wheel Diameter</td><br/><td>125 mm</td><br/></tr><br/><tr><br/><td>Hub Width</td><br/><td>80 mm</td><br/></tr><br/><tr><br/><td>Axle Hole Diameter</td><br/><td>16 mm</td><br/></tr><br/><tr><br/><td>Bearings</td><br/><td>Ball Bearings</td><br/></tr><br/><tr><br/><td>Number of Plies in Tire</td><br/><td>2</td><br/></tr><br/><tr><br/><td>Material</td><br/><td>Polyurethane, Steel Rim</td><br/></tr><br/><tr><br/><td>Maximum Load</td><br/><td>80 kg</td><br/></tr><br/></tbody><br/></table>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.89" net="5.89"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71025" weight="1250.00" grossWeight="1250.00">
+                                        <stock id="1" quantity="701,00"/>
+                                                                    <price gross="5.89" net="5.89"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_0_18506257.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_1_18506258.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_1_18506259.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_1_18506260.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_1_18506261.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3250_1_18506262.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3251" vat="0" code="G71026" code_on_card="G71026" EAN="5901477120848" code_producer="5901477120848">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-foam-wheel-3-50-4"/>
+                        <description>
+                            <name><![CDATA[PU Foam wheel 3,50-4]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Cart 3.50 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Tire Diameter: 260 mm</li><br/><li>Tire Width: 81 mm</li><br/><li>Inner Tire Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Bearings: Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Cart 3.50 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Tire Diameter: 260 mm</li><br/><li>Tire Width: 81 mm</li><br/><li>Inner Tire Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Bearings: Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Cart 3.50 - 4 Solid PU</h3><br/><p>Solid polyurethane wheel for cart with a maximum load capacity of up to 80 kg. Polyurethane is significantly more durable than rubber and provides a comfortable, smooth ride. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Tire Diameter: 260 mm</li><br/><li>Tire Width: 81 mm</li><br/><li>Inner Tire Diameter: 125 mm</li><br/><li>Axle Hole Diameter: 16 mm</li><br/><li>Bearings: Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.51" net="6.51"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71026" weight="1200.00" grossWeight="1200.00">
+                                        <stock id="1" quantity="1022,00"/>
+                                                                    <price gross="6.51" net="6.51"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_0_18523052.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506264.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506265.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506266.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506267.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506268.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18506269.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18523053.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18523054.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3251_1_18523055.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3252" vat="0" code="G71027" code_on_card="G71027" EAN="5901477122279" code_producer="5901477122279">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-wheel-4-00x6"/>
+                        <description>
+                            <name><![CDATA[PU wheel 4.00x6]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Trolley 4.00 - 6 Solid PU</h3><br/><p>Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 320 mm</li><br/><li>Tire Width: 90 mm</li><br/><li>Inner Wheel Diameter: 170 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Trolley 4.00 - 6 Solid PU</h3><br/><p>Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 320 mm</li><br/><li>Tire Width: 90 mm</li><br/><li>Inner Wheel Diameter: 170 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Trolley 4.00 - 6 Solid PU</h3><br/><p>Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Technical Specifications:</h4><br/><ul><br/><li><strong>Maximum Load: 80 kg</strong></li><br/><li>Outer Wheel Diameter: 320 mm</li><br/><li>Tire Width: 90 mm</li><br/><li>Inner Wheel Diameter: 170 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.67" net="8.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71027" weight="1800.00" grossWeight="1800.00">
+                                        <stock id="1" quantity="1127,00"/>
+                                                                    <price gross="8.67" net="8.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_0_6625.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_1_2394314.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_1_6626.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_1_6627.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_1_6628.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3252_1_6629.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3253" vat="0" code="G71028" code_on_card="G71028" EAN="5901477128769" code_producer="5901477128769">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/pu-wheel-3-50-8-yellow"/>
+                        <description>
+                            <name><![CDATA[PU Wheel 3,50-8  YELLOW]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Trolley 3.50 - 8 Solid PU</h3><br/><p>Tubeless wheel for trolley 3.50 - 8. Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 370 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Trolley 3.50 - 8 Solid PU</h3><br/><p>Tubeless wheel for trolley 3.50 - 8. Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 370 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Trolley 3.50 - 8 Solid PU</h3><br/><p>Tubeless wheel for trolley 3.50 - 8. Made from high-quality polyurethane material. The durable powder-coated metal rim ensures increased stability. Constructed from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 370 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Material: Polyurethane, Steel Rim</li><br/></ul><br/><p>Includes axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.53" net="8.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71028" weight="1980.00" grossWeight="1980.00">
+                                        <stock id="1" quantity="1542,00"/>
+                                                                    <price gross="8.53" net="8.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_0_6630.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_1_6631.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_1_6632.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_1_6633.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_1_6634.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3253_1_6635.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3254" vat="0" code="G71030" code_on_card="G71030" EAN="5901477126222" code_producer="5901477126222">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-and-tube-3-00-4-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre and tube 3.00-4/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá25cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3.0-4á 2PR</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá25cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3.0-4á 2PR</span></p>]]></short_desc>
+                            <description><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá25cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3.0-4á 2PR</span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.58" net="2.58"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71030" weight="800.00" grossWeight="800.00">
+                                        <stock id="1" quantity="1763,00"/>
+                                                                    <price gross="2.58" net="2.58"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3254_0_6636.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3254_1_6637.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3254_1_6638.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3255" vat="0" code="G71031" code_on_card="G71031" EAN="5901477143335" code_producer="5901477143335">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-and-tube-3-5-4-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre and tube   3.5-4/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á:á</span></p> <p><span>- height of the wheelá26cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3,5-4á 2PR</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á:á</span></p> <p><span>- height of the wheelá26cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3,5-4á 2PR</span></p>]]></short_desc>
+                            <description><![CDATA[<p><span>TECHNICAL DATA:á:á</span></p> <p><span>- height of the wheelá26cm</span></p> <p><span>- width of the tyreá8,7cm</span></p> <p><span>-áperfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 3,5-4á 2PR</span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.69" net="2.69"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71031" weight="800.00" grossWeight="800.00">
+                                        <stock id="1" quantity="1550,00"/>
+                                                                    <price gross="2.69" net="2.69"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3255_0_6639.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3255_1_6640.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3255_1_6641.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3256" vat="0" code="G71032" code_on_card="G71032" EAN="5901477126239" code_producer="5901477126239">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-and-tube-4-00-4-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre and tube   4.00-4/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá29cm</span></p> <p><span>- width of the tyreá9cm</span></p> <p><span>- perfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 4.0-4á 2PR</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá29cm</span></p> <p><span>- width of the tyreá9cm</span></p> <p><span>- perfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 4.0-4á 2PR</span></p>]]></short_desc>
+                            <description><![CDATA[<p><span>TECHNICAL DATA:á</span></p> <p><span>- height of the wheelá29cm</span></p> <p><span>- width of the tyreá9cm</span></p> <p><span>- perfect for wheelbarrows and carts</span></p> <p><span>- tyre dimensions: 4.0-4á 2PR</span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.31" net="3.31"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71032" weight="1200.00" grossWeight="1200.00">
+                                        <stock id="1" quantity="101,00"/>
+                                                                    <price gross="3.31" net="3.31"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3256_0_6642.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3256_1_6643.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3257" vat="0" code="G71035" code_on_card="G71035" EAN="5901477126703" code_producer="5901477126703">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-4-00-8-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre 4.00-8 2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tyreá4.00-8 2PR</span></strong></p> <p>á</p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">TECHNICAL SPECIFICATION:á</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's heightá39cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel rim's heightá22cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's widthá8,5cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">-áPerfect for barrows and carts</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Tyre sizes: 4,80/4,00 - 8</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tyreá4.00-8 2PR</span></strong></p> <p>á</p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">TECHNICAL SPECIFICATION:á</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's heightá39cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel rim's heightá22cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's widthá8,5cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">-áPerfect for barrows and carts</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Tyre sizes: 4,80/4,00 - 8</span></p>]]></short_desc>
+                            <description><![CDATA[<p><strong><span style="font-family: verdana, geneva; font-size: 14pt; color: #808080;">Tyreá4.00-8 2PR</span></strong></p> <p>á</p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">TECHNICAL SPECIFICATION:á</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's heightá39cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel rim's heightá22cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Wheel's widthá8,5cm</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">-áPerfect for barrows and carts</span></p> <p><span style="font-family: verdana, geneva; font-size: 12pt; color: #808080;">- Tyre sizes: 4,80/4,00 - 8</span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.36" net="2.36"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71035" weight="1000.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="3029,00"/>
+                                                                    <price gross="2.36" net="2.36"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3257_0_6644.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3257_1_6645.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3257_1_6646.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3258" vat="0" code="G71036" code_on_card="G71036" EAN="5901477126727" code_producer="5901477126727">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-4-00-8-2pr-3258"/>
+                        <description>
+                            <name><![CDATA[Tyre 4.00-8 2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Opona do koła 4.00 - 8 4PR</h3><p>Opona 4PR o maksymalnym obciążeniu do 136 kg.</p><h4>Specyfikacja techniczna:</h4><ul><li>Średnica zewnętrzna koła: 390 mm</li><li>Szerokość opony: 97 mm</li><li>Średnica wewnętrzna koła: 220 mm</li><li>Ilość płócien w oponie: 4</li><li>Materiał wykonania: guma</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Opona do koła 4.00 - 8 4PR</h3><p>Opona 4PR o maksymalnym obciążeniu do 136 kg.</p><h4>Specyfikacja techniczna:</h4><ul><li>Średnica zewnętrzna koła: 390 mm</li><li>Szerokość opony: 97 mm</li><li>Średnica wewnętrzna koła: 220 mm</li><li>Ilość płócien w oponie: 4</li><li>Materiał wykonania: guma</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Opona do koła 4.00 - 8 4PR</h3><p>Opona 4PR o maksymalnym obciążeniu do 136 kg.</p><h4>Specyfikacja techniczna:</h4><ul><li>Średnica zewnętrzna koła: 390 mm</li><li>Szerokość opony: 97 mm</li><li>Średnica wewnętrzna koła: 220 mm</li><li>Ilość płócien w oponie: 4</li><li>Materiał wykonania: guma</li><li>Ciśnienie maksymalne: 2,1 bar / 30 psi</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.56" net="2.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71036" weight="1200.00" grossWeight="1200.00">
+                                        <stock id="1" quantity="614,00"/>
+                                                                    <price gross="2.56" net="2.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3258_0_6647.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3258_1_6648.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3258_1_6649.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3259" vat="0" code="G71040" code_on_card="G71040" EAN="5901477128745" code_producer="5901477128745">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rubber-wheel-3-50-8-2pr"/>
+                        <description>
+                            <name><![CDATA[Rubber wheel 3.50-8/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.50 - 8 2PR</h3><br/><p>Inflatable 3.50-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 375 mm</li><br/><li>Tire Width: 85 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.4 bar / 35 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.50 - 8 2PR</h3><br/><p>Inflatable 3.50-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 375 mm</li><br/><li>Tire Width: 85 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.4 bar / 35 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.50 - 8 2PR</h3><br/><p>Inflatable 3.50-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 100 kg</strong></li><br/><li>Outer Tire Diameter: 375 mm</li><br/><li>Tire Width: 85 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 2.4 bar / 35 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.53" net="5.53"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71040" weight="2100.00" grossWeight="2100.00">
+                                        <stock id="1" quantity="1982,00"/>
+                                                                    <price gross="5.53" net="5.53"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3259_0_6650.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3259_1_6651.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3259_1_6652.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3259_1_6653.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3259_1_6654.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3260" vat="0" code="G71041" code_on_card="G71041" EAN="5901477128752" code_producer="5901477128752">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107936" name="Wheels" path="Garden\Wheels for Wheelbarrows and Carts\Wheels"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Wheels" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/rubber-wheel-3-25-8-2pr"/>
+                        <description>
+                            <name><![CDATA[Rubber wheel 3.25-8/2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.25 - 8 2PR</h3><br/><p>Inflatable 3.25-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 365 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 1.7 bar / 25 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.25 - 8 2PR</h3><br/><p>Inflatable 3.25-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 365 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 1.7 bar / 25 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></short_desc>
+                            <description><![CDATA[<h3>Wheel for Wheelbarrow, Cart 3.25 - 8 2PR</h3><br/><p>Inflatable 3.25-8 2PR wheel for wheelbarrow. The durable powder-coated metal rim ensures increased stability. Made from high-quality materials.</p><br/><h4>Product Features:</h4><br/><ul><br/><li><strong>Maximum Load: 90 kg</strong></li><br/><li>Outer Tire Diameter: 365 mm</li><br/><li>Tire Width: 80 mm</li><br/><li>Inner Tire Diameter: 220 mm</li><br/><li>Axle Hole Diameter: 12 mm</li><br/><li>Hub Width: 97 mm</li><br/><li>Bearings: Double Ball Bearings</li><br/><li>Number of Plies in Tire: 2</li><br/><li>Material: Rubber, Rim - Steel</li><br/><li>Maximum Pressure: 1.7 bar / 25 psi</li><br/></ul><br/><p>The set includes an axle for the wheel</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.47" net="5.47"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71041" weight="1800.00" grossWeight="1800.00">
+                                        <stock id="1" quantity="196,00"/>
+                                                                    <price gross="5.47" net="5.47"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_0_6655.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_1_6656.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_1_6657.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_1_6658.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_1_6659.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3260_1_6660.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3261" vat="0" code="G71042" code_on_card="G71042" EAN="5901477134302" code_producer="5901477134302">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-tube-3-25-8-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre&Tube  3.25-8  2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá3.25-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá3.25-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></short_desc>
+                            <description><![CDATA[<h3>Tyre and tubeá3.25-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.85" net="2.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71042" weight="600.00" grossWeight="600.00">
+                                        <stock id="1" quantity="461,00"/>
+                                                                    <price gross="2.85" net="2.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3261_0_6661.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3261_1_6662.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3261_1_6663.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3262" vat="0" code="G71043" code_on_card="G71043" EAN="5901477134319" code_producer="5901477134319">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107937" name="Tires and Inner Tubes" path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes"/>
+            <category_idosell path="Garden\Wheels for Wheelbarrows and Carts\Tires and Inner Tubes" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/tyre-tube-3-50-8-2pr"/>
+                        <description>
+                            <name><![CDATA[Tyre&Tube  3.50-8  2PR]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá3.50-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Tyre and tubeá3.50-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></short_desc>
+                            <description><![CDATA[<h3>Tyre and tubeá3.50-8 2PR</h3> <p><strong>Set: Tyre and tube.</strong></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.33" net="3.33"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71043" weight="1250.00" grossWeight="1250.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.33" net="3.33"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3262_0_6664.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3262_1_6665.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3262_1_6666.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3264" vat="0" code="G71100" code_on_card="G71100" EAN="5901477121784" code_producer="5901477121784">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hand-trolley-200kg-400x200mm-blue"/>
+                        <description>
+                            <name><![CDATA[Hand trolley 200kg 400x200mm /blue/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>Hand trolleyá200kg</span></p> <p><span><span>400x200mm</span></span></p> <p><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p> <p>á</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>Hand trolleyá200kg</span></p> <p><span><span>400x200mm</span></span></p> <p><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p> <p>á</p>]]></short_desc>
+                            <description><![CDATA[<p><span>Hand trolleyá200kg</span></p> <p><span><span>400x200mm</span></span></p> <p><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p> <p>á</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="30.24" net="30.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71100" weight="11000.00" grossWeight="11000.00">
+                                        <stock id="1" quantity="403,00"/>
+                                                                    <price gross="30.24" net="30.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3264_0_6667.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3264_1_6668.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3264_1_6669.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3264_1_6670.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3265" vat="0" code="G71101" code_on_card="G71101" EAN="5901477121807" code_producer="5901477121807">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hand-trolley-200kg-350x180mm-red"/>
+                        <description>
+                            <name><![CDATA[Hand trolley 200kg  350x180mm /RED/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>Hand trolley 200kg</span></p> <p><span><span>350x180mm</span></span></p> <p><span><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>Hand trolley 200kg</span></p> <p><span><span>350x180mm</span></span></p> <p><span><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p>]]></short_desc>
+                            <description><![CDATA[<p><span>Hand trolley 200kg</span></p> <p><span><span>350x180mm</span></span></p> <p><span><span>Made of tough metal.ááPerfect for carrying heavy loads - packages, cartons, etc.</span></span></p> <p><span><span>Perfect for household use as well as in many work places.</span></span></p> <p><span><span>Strong wheelsáprovide perfect ground adhesion and are equipped with a metal rim and profiledáthread.</span></span></p> <p><span><span>Stable base enables to load up toá200kg</span></span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="26.9" net="26.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71101" weight="8700.00" grossWeight="8700.00">
+                                        <stock id="1" quantity="46,00"/>
+                                                                    <price gross="26.9" net="26.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3265_0_6671.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3265_1_6672.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3265_1_6673.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3265_1_6674.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3266" vat="0" code="G71102" code_on_card="G71102" EAN="5901477121814" code_producer="5901477121814">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hand-trolley-250kg-400x300mm-orange"/>
+                        <description>
+                            <name><![CDATA[Hand trolley 250kg 400x300mm /ORANGE/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="color: #000000; font-family: arial,helvetica,sans-serif; font-size: 10px;"><span>Technical specifications:</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Height: 128cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Width of the platform: 40x30cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Wheel diameter :25cm</span></span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="color: #000000; font-family: arial,helvetica,sans-serif; font-size: 10px;"><span>Technical specifications:</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Height: 128cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Width of the platform: 40x30cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Wheel diameter :25cm</span></span></p>]]></short_desc>
+                            <description><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="color: #000000; font-family: arial,helvetica,sans-serif; font-size: 10px;"><span>Technical specifications:</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Height: 128cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Width of the platform: 40x30cm</span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: 10px; color: #000000;"><span>Wheel diameter :25cm</span></span></p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="39.24" net="39.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71102" weight="13000.00" grossWeight="13000.00">
+                                        <stock id="1" quantity="459,00"/>
+                                                                    <price gross="39.24" net="39.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_0_6675.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_1_6676.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_1_6677.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_1_6678.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_1_6679.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3266_1_6680.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3267" vat="0" code="G71103" code_on_card="G71103" EAN="5901477121821" code_producer="5901477121821">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hand-trolley-folded-90kg-355x240mm"/>
+                        <description>
+                            <name><![CDATA[Hand trolley FOLDED 90kg 355x240mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>Hand trolley, foldable.<br />1. Maximum load: 90kg<br />2. Wheels made of hardened rubber - two wheels of diameter 15cm<br />3. Maximum height after unfolding: 105cm<br />4. Platform dimensions: 35,5x24cm</span></span></h5>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>Hand trolley, foldable.<br />1. Maximum load: 90kg<br />2. Wheels made of hardened rubber - two wheels of diameter 15cm<br />3. Maximum height after unfolding: 105cm<br />4. Platform dimensions: 35,5x24cm</span></span></h5>]]></short_desc>
+                            <description><![CDATA[<h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>Hand trolley, foldable.<br />1. Maximum load: 90kg<br />2. Wheels made of hardened rubber - two wheels of diameter 15cm<br />3. Maximum height after unfolding: 105cm<br />4. Platform dimensions: 35,5x24cm</span></span></h5>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="21.13" net="21.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71103" weight="6030.00" grossWeight="6030.00">
+                                        <stock id="1" quantity="207,00"/>
+                                                                    <price gross="21.13" net="21.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3267_0_6681.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3267_1_6682.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3267_1_6683.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3267_1_6684.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3267_1_6685.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3268" vat="0" code="G71104" code_on_card="G71104" EAN="5901477129186" code_producer="5901477129186">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107070" name="Tools for The Workshop and Garage" path="Tools for The Workshop and Garage"/>
+            <category_idosell path="Tools for The Workshop and Garage" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/platform-hand-truck-150kg"/>
+                        <description>
+                            <name><![CDATA[Platform Hand Truck 150kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Platform Hand Truck 150 kg with folded handle</h3> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 150 kg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Platform Hand Truck 150 kg with folded handle</h3> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 150 kg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></short_desc>
+                            <description><![CDATA[<h3>Platform Hand Truck 150 kg with folded handle</h3> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 150 kg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="21.08" net="21.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71104" weight="7500.00" grossWeight="8300.00">
+                                        <stock id="1" quantity="353,00"/>
+                                                                    <price gross="21.08" net="21.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6687.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6688.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6689.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6690.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6691.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3268_1_6692.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3269" vat="0" code="G71105" code_on_card="G71105" EAN="5901477129193" code_producer="5901477129193">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107070" name="Tools for The Workshop and Garage" path="Tools for The Workshop and Garage"/>
+            <category_idosell path="Tools for The Workshop and Garage" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/platform-hand-truck-300kg"/>
+                        <description>
+                            <name><![CDATA[Platform Hand Truck 300KG]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h1 class="fn">Platform Hand Truck 150 kg with folded handle</h1> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 300ákg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h1 class="fn">Platform Hand Truck 150 kg with folded handle</h1> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 300ákg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></short_desc>
+                            <description><![CDATA[<h1 class="fn">Platform Hand Truck 150 kg with folded handle</h1> <p>GEKO's robust transport trolley is ideal for transporting a variety of goods. The non-slip surface of the platform ensures product stability. Folding handle makes the folded hand truck takes up less space. The truck's edges were covered with plastic to prevent the platform from scratching. Two swivel wheels and two fixed wheels allow for precise steering of the cart.</p> <p>Load of 300ákg<br />Ergonomic folding handle<br />Stable and solid metal powder painted construction<br />Rubber wheels - two rotary and two solid<br />Spring mechanism for folding handle<br />Anti-slip surface of the platform</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="31.37" net="31.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71105" weight="13000.00" grossWeight="13700.00">
+                                        <stock id="1" quantity="440,00"/>
+                                                                    <price gross="31.37" net="31.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6694.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6695.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6696.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6697.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6698.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6699.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3269_1_6700.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3270" vat="0" code="G71110" code_on_card="G71110" EAN="5901477121791" code_producer="5901477121791">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107788" name="Transport Trolleys" path="Tools for The Workshop and Garage\Transport Trolleys"/>
+            <category_idosell path="Tools for The Workshop and Garage\Transport Trolleys" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/garen-cart-350kg"/>
+                        <description>
+                            <name><![CDATA[Garen cart 350kg]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Practical cart - with maximum load up to 350 kg. </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Dimensions:</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">length: 96,5cm </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">width: 51cm</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">height of the load: 25cm</span></span></span><span style="font-family: Arial,sans-serif;"><span style="font-size: x-large;"><span style="text-decoration: none;"> </span></span></span></p> <h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>á</span></span></h5>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Practical cart - with maximum load up to 350 kg. </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Dimensions:</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">length: 96,5cm </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">width: 51cm</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">height of the load: 25cm</span></span></span><span style="font-family: Arial,sans-serif;"><span style="font-size: x-large;"><span style="text-decoration: none;"> </span></span></span></p> <h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>á</span></span></h5>]]></short_desc>
+                            <description><![CDATA[<p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Practical cart - with maximum load up to 350 kg. </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">Dimensions:</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">length: 96,5cm </span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">width: 51cm</span></span></span></p> <p style="margin-bottom: 0cm; text-align: left;"><span style="font-family: arial,helvetica,sans-serif; color: #000000; font-size: 10px;"><span><span style="text-decoration: none;">height of the load: 25cm</span></span></span><span style="font-family: Arial,sans-serif;"><span style="font-size: x-large;"><span style="text-decoration: none;"> </span></span></span></p> <h5 class="western" style="text-align: left;"><span style="font-size: 10px; color: #000000;"><span>á</span></span></h5>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="55.6" net="55.6"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G71110" weight="16000.00" grossWeight="18000.00">
+                                        <stock id="1" quantity="216,00"/>
+                                                                    <price gross="55.6" net="55.6"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3270_0_2397706.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3270_1_2397707.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3270_1_4873138.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3270_1_4873141.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3270_1_4873152.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3272" vat="0" code="G72001" code_on_card="G72001" EAN="5901477114090" code_producer="5901477114090">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107887" name="Garden Secateurs" path="Garden\Trimming and Cutting\Garden Secateurs"/>
+            <category_idosell path="Garden\Trimming and Cutting\Garden Secateurs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/by-pass-pruning-shear-with-spring-and-lock-drop-200mm"/>
+                        <description>
+                            <name><![CDATA[By-pass pruning shear with spring and lock drop 200mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki pokryte antypoślizgowym tworzywem , dzięki czemu narzędzie wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora pokryte antypoślizgowym tworzywem</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, antypoślizgowe tworzywo</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki pokryte antypoślizgowym tworzywem , dzięki czemu narzędzie wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora pokryte antypoślizgowym tworzywem</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, antypoślizgowe tworzywo</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Sekator ogrodowy 200mm</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki pokryte antypoślizgowym tworzywem , dzięki czemu narzędzie wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora pokryte antypoślizgowym tworzywem</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, antypoślizgowe tworzywo</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.38" net="2.38"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72001" weight="310.00" grossWeight="330.00">
+                                        <stock id="1" quantity="470,00"/>
+                                                                    <price gross="2.38" net="2.38"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3272_1_18509946.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3272_1_18509947.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3272_1_18509948.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3272_1_18509949.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3273" vat="0" code="G72002" code_on_card="G72002" EAN="5901477114106" code_producer="5901477114106">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107887" name="Garden Secateurs" path="Garden\Trimming and Cutting\Garden Secateurs"/>
+            <category_idosell path="Garden\Trimming and Cutting\Garden Secateurs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/200mm-by-pass-pruning-shear-drop-wooden-handle"/>
+                        <description>
+                            <name><![CDATA[200MM by-pass pruning shear drop  /wooden handle/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm drewniane rączki</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z drewnianymi wstawkami</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, drewno</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm drewniane rączki</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z drewnianymi wstawkami</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, drewno</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Sekator ogrodowy 200mm drewniane rączki</h3><p>Nożycowy sekator ogrodowy jednoręczny. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS zapewniają lekkie, precyzyjne i szybkie cięcie.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z drewnianymi wstawkami</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 25 mm</li><li>Materiał wykonania ostrza: stal HCS</li><li>Materiał wykonania rękojeści: stal, drewno</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 60 mm</li><li>Długość rękojeści: 90 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.13" net="5.13"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72002" weight="280.00" grossWeight="300.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="5.13" net="5.13"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3273_0_18509951.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3273_1_18509952.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3273_1_18509953.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3273_1_18509954.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3273_1_18509955.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3274" vat="0" code="G72003" code_on_card="G72003" EAN="5901477114113" code_producer="5901477114113">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107887" name="Garden Secateurs" path="Garden\Trimming and Cutting\Garden Secateurs"/>
+            <category_idosell path="Garden\Trimming and Cutting\Garden Secateurs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/200mm-by-pass-pruning-shear-blade-plastic-handle"/>
+                        <description>
+                            <name><![CDATA[200MM by-pass pruning shear blade /plastic handle/]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm rączki z tworzywa</h3><p>Nożycowy sekator ogrodowy jednoręczny marki GEKO. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS pokkrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z wytrzymałego tworzywa sztucznego, dzięki czemu narzędzie jest lekkie oraz wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z wytrzymałego tworzywa sztucznego</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal HCS pokryta teflonem</li><li>Materiał wykonania rękojeści: tworzywo sztuczne</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 50 mm</li><li>Długość rękojeści: 120 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy 200mm rączki z tworzywa</h3><p>Nożycowy sekator ogrodowy jednoręczny marki GEKO. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS pokkrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z wytrzymałego tworzywa sztucznego, dzięki czemu narzędzie jest lekkie oraz wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z wytrzymałego tworzywa sztucznego</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal HCS pokryta teflonem</li><li>Materiał wykonania rękojeści: tworzywo sztuczne</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 50 mm</li><li>Długość rękojeści: 120 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Sekator ogrodowy 200mm rączki z tworzywa</h3><p>Nożycowy sekator ogrodowy jednoręczny marki GEKO. Wykonany został z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali HCS pokkrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z wytrzymałego tworzywa sztucznego, dzięki czemu narzędzie jest lekkie oraz wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane zostały z wysokiej jakości stali HCS pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekotora z wytrzymałego tworzywa sztucznego</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal HCS pokryta teflonem</li><li>Materiał wykonania rękojeści: tworzywo sztuczne</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 50 mm</li><li>Długość rękojeści: 120 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.24" net="1.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72003" weight="130.00" grossWeight="150.00">
+                                        <stock id="1" quantity="1758,00"/>
+                                                                    <price gross="1.24" net="1.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3274_0_18523057.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3274_1_18523058.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3274_1_18523059.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3274_1_18523060.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3276" vat="0" code="G72005" code_on_card="G72005" EAN="5901477114137" code_producer="5901477114137">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107887" name="Garden Secateurs" path="Garden\Trimming and Cutting\Garden Secateurs"/>
+            <category_idosell path="Garden\Trimming and Cutting\Garden Secateurs" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/200mm-by-pass-pruning-shear-blade"/>
+                        <description>
+                            <name><![CDATA[200MM  by-pass pruning shear blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy nożycowy 200mm rączki z aluminium</h3><p>Nożycowy sekator ogrodowy jednoręczny. ;Wykonany z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali 65 Mn pokrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z aluminium , dzięki czemu narzędzie jest lekkie, wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrze wykonane zostały z wysokiej jakości stali 65 Mn pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekatora z aluminium</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal 65 Mn</li><li>Materiał wykonania rękojeści: aluminium, ABS, TPP</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 55 mm</li><li>Długość rękojeści: 130 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Sekator ogrodowy nożycowy 200mm rączki z aluminium</h3><p>Nożycowy sekator ogrodowy jednoręczny. ;Wykonany z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali 65 Mn pokrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z aluminium , dzięki czemu narzędzie jest lekkie, wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrze wykonane zostały z wysokiej jakości stali 65 Mn pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekatora z aluminium</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal 65 Mn</li><li>Materiał wykonania rękojeści: aluminium, ABS, TPP</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 55 mm</li><li>Długość rękojeści: 130 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Sekator ogrodowy nożycowy 200mm rączki z aluminium</h3><p>Nożycowy sekator ogrodowy jednoręczny. ;Wykonany z wysokiej jakości materiałów. Ostrza sekatora z wysokogatunkowej stali 65 Mn pokrytej teflonem zapewniają lekkie, precyzyjne i szybkie cięcie. Rączki wykonane z aluminium , dzięki czemu narzędzie jest lekkie, wygodnie i pewnie leży w dłoni.</p><h4>Cechy produktu:</h4><ul><li>ostrze wykonane zostały z wysokiej jakości stali 65 Mn pokrytej teflonem</li><li>długość całkowita sekatora 200 mm</li><li>rączki sekatora z aluminium</li><li>doskonałe do przycinania kwiatów, pędów drzew i krzewów, itp.</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 20 mm</li><li>Materiał wykonania ostrza: stal 65 Mn</li><li>Materiał wykonania rękojeści: aluminium, ABS, TPP</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 200 mm</li><li>Długość ostrza: 55 mm</li><li>Długość rękojeści: 130 mm</li><li>Zastosowanie: przycinanie kwiatów, drobnych gałązek, pędów drzew i krzewów</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.46" net="3.46"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72005" weight="230.00" grossWeight="246.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="3.46" net="3.46"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3276_0_18509957.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3276_1_18509958.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3276_1_18509959.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3276_1_18509960.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3276_1_18509961.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3278" vat="0" code="G72011" code_on_card="G72011" EAN="5901477114151" code_producer="5901477114151">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107892" name="Manual Hedge Trimmer" path="Garden\Trimming and Cutting\Manual Hedge Trimmer"/>
+            <category_idosell path="Garden\Trimming and Cutting\Manual Hedge Trimmer" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hedge-shear-520mm-wave-blade"/>
+                        <description>
+                            <name><![CDATA[Hedge shear 520mm wave blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Hedge Shears 520mm</h3><br/><p>The hedge shears have 180-mm blades made of 50HCS steel, which are additionally coated with a Teflon layer to prevent corrosion. <br />The handles are made of polypropylene, providing a secure and comfortable grip even when hands are wet or slippery. <br />The combination of HCS steel blades and ergonomic handles ensures comfort during use, and most importantly, delivers precise and even cuts.</p><br/><h4>Key Features:</h4><br/><ul><br/><li>180 mm blades coated with teflon</li><br/><li>Total length of the shears: 520 mm</li><br/><li>Handles made of polypropylene</li><br/><li>Excellent for cutting shrubs and hedges</li><br/><li>Blades with a teflon coating</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Maximum cutting diameter: 35 mm</li><br/><li>Blade material: HCS steel, teflon-coated</li><br/><li>Handle material: steel, polypropylene</li><br/><li>Blade type: straight</li><br/><li>Blade length: 180 mm</li><br/><li>Handle length: 245 mm</li><br/><li>Applications: trimming shrubs, hedges, etc.</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Hedge Shears 520mm</h3><br/><p>The hedge shears have 180-mm blades made of 50HCS steel, which are additionally coated with a Teflon layer to prevent corrosion. <br />The handles are made of polypropylene, providing a secure and comfortable grip even when hands are wet or slippery. <br />The combination of HCS steel blades and ergonomic handles ensures comfort during use, and most importantly, delivers precise and even cuts.</p><br/><h4>Key Features:</h4><br/><ul><br/><li>180 mm blades coated with teflon</li><br/><li>Total length of the shears: 520 mm</li><br/><li>Handles made of polypropylene</li><br/><li>Excellent for cutting shrubs and hedges</li><br/><li>Blades with a teflon coating</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Maximum cutting diameter: 35 mm</li><br/><li>Blade material: HCS steel, teflon-coated</li><br/><li>Handle material: steel, polypropylene</li><br/><li>Blade type: straight</li><br/><li>Blade length: 180 mm</li><br/><li>Handle length: 245 mm</li><br/><li>Applications: trimming shrubs, hedges, etc.</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Hedge Shears 520mm</h3><br/><p>The hedge shears have 180-mm blades made of 50HCS steel, which are additionally coated with a Teflon layer to prevent corrosion. <br />The handles are made of polypropylene, providing a secure and comfortable grip even when hands are wet or slippery. <br />The combination of HCS steel blades and ergonomic handles ensures comfort during use, and most importantly, delivers precise and even cuts.</p><br/><h4>Key Features:</h4><br/><ul><br/><li>180 mm blades coated with teflon</li><br/><li>Total length of the shears: 520 mm</li><br/><li>Handles made of polypropylene</li><br/><li>Excellent for cutting shrubs and hedges</li><br/><li>Blades with a teflon coating</li><br/></ul><br/><h4>Technical Specifications:</h4><br/><ul><br/><li>Maximum cutting diameter: 35 mm</li><br/><li>Blade material: HCS steel, teflon-coated</li><br/><li>Handle material: steel, polypropylene</li><br/><li>Blade type: straight</li><br/><li>Blade length: 180 mm</li><br/><li>Handle length: 245 mm</li><br/><li>Applications: trimming shrubs, hedges, etc.</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.67" net="4.67"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72011" weight="830.00" grossWeight="885.00">
+                                        <stock id="1" quantity="485,00"/>
+                                                                    <price gross="4.67" net="4.67"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_0_18509963.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_1_18509964.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_1_18509965.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_1_18509966.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_1_18509967.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3278_1_18509968.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3279" vat="0" code="G72012" code_on_card="G72012" EAN="5901477114168" code_producer="5901477114168">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107892" name="Manual Hedge Trimmer" path="Garden\Trimming and Cutting\Manual Hedge Trimmer"/>
+            <category_idosell path="Garden\Trimming and Cutting\Manual Hedge Trimmer" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hedge-shear-600mm-with-adjustable-screw-wave-blade"/>
+                        <description>
+                            <name><![CDATA[Hedge shear 600mm with adjustable screw wave blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Nożyce do żywopłotu 640mm ostrze faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. ;Nożyce do żywopłotu wyposażone w ;ostrza o długości 210 mm ze szlifem falistym. Wykonane zei stali HCS ;dodatkowo ;powlekane teflonem zapobiegającym korozji.</p><p>Rękojeści sekatora ;wykonane z polipropylenu (PP) ;oraz ;termoplastycznego kauczuku (TPR), zapewnia to ;pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 210 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 mm</li><li>rękojeści nożyc wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 mm</li><li>Długość ostrza: 210 mm</li><li>Długość rękojeści: 330 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Nożyce do żywopłotu 640mm ostrze faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. ;Nożyce do żywopłotu wyposażone w ;ostrza o długości 210 mm ze szlifem falistym. Wykonane zei stali HCS ;dodatkowo ;powlekane teflonem zapobiegającym korozji.</p><p>Rękojeści sekatora ;wykonane z polipropylenu (PP) ;oraz ;termoplastycznego kauczuku (TPR), zapewnia to ;pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 210 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 mm</li><li>rękojeści nożyc wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 mm</li><li>Długość ostrza: 210 mm</li><li>Długość rękojeści: 330 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Nożyce do żywopłotu 640mm ostrze faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. ;Nożyce do żywopłotu wyposażone w ;ostrza o długości 210 mm ze szlifem falistym. Wykonane zei stali HCS ;dodatkowo ;powlekane teflonem zapobiegającym korozji.</p><p>Rękojeści sekatora ;wykonane z polipropylenu (PP) ;oraz ;termoplastycznego kauczuku (TPR), zapewnia to ;pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 210 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 mm</li><li>rękojeści nożyc wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 mm</li><li>Długość ostrza: 210 mm</li><li>Długość rękojeści: 330 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.06" net="7.06"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72012" weight="1167.00" grossWeight="1250.00">
+                                        <stock id="1" quantity="409,00"/>
+                                                                    <price gross="7.06" net="7.06"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_0_18509970.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_1_18509971.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_1_18509972.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_1_18509973.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_1_18509974.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3279_1_18509975.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3280" vat="0" code="G72014" code_on_card="G72014" EAN="5901477114175" code_producer="5901477114175">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107892" name="Manual Hedge Trimmer" path="Garden\Trimming and Cutting\Manual Hedge Trimmer"/>
+            <category_idosell path="Garden\Trimming and Cutting\Manual Hedge Trimmer" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/telescopic-hedge-shear-with-adjustable-screw-600-825mm-wave-blade"/>
+                        <description>
+                            <name><![CDATA[Telescopic hedge shear with adjustable screw 600-825mm wave blade]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Nożyce do żywopłotu teleskopowe 640 - 870 mm ostrza faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. <br /> Nożyce do żywopłotu wyposażone w ostrza o długości 200mm ze szlifem falistym. Wykonane ze stali HCS dodatkowo powlekane teflonem zapobiegającym korozji. <br /> Rękojeści sekatora wykonane zostały z pianki poliuretanowej, zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 200 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 - 870 mm</li><li>rękojeści sekatora wykonane z pianki poliuretanowej</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, pianka poliuretanowa</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 - 870 mm</li><li>Długość ostrza: 200 mm</li><li>Długość rękojeści: 330 - 560 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Nożyce do żywopłotu teleskopowe 640 - 870 mm ostrza faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. <br /> Nożyce do żywopłotu wyposażone w ostrza o długości 200mm ze szlifem falistym. Wykonane ze stali HCS dodatkowo powlekane teflonem zapobiegającym korozji. <br /> Rękojeści sekatora wykonane zostały z pianki poliuretanowej, zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 200 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 - 870 mm</li><li>rękojeści sekatora wykonane z pianki poliuretanowej</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, pianka poliuretanowa</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 - 870 mm</li><li>Długość ostrza: 200 mm</li><li>Długość rękojeści: 330 - 560 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Nożyce do żywopłotu teleskopowe 640 - 870 mm ostrza faliste</h3><p>Uniwersalne narzędzie do przycinania większych krzewów, żywopłotu itp. <br /> Nożyce do żywopłotu wyposażone w ostrza o długości 200mm ze szlifem falistym. Wykonane ze stali HCS dodatkowo powlekane teflonem zapobiegającym korozji. <br /> Rękojeści sekatora wykonane zostały z pianki poliuretanowej, zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><div><h4>Cechy produktu:</h4><ul><li>ostrza ze szlifem falistym o długości 200 mm pokryte warstwą teflonu</li><li>długość całkowita nożyc 640 - 870 mm</li><li>rękojeści sekatora wykonane z pianki poliuretanowej</li><li>doskonałe do cięcia krzewów i żywopłotów</li><li>ostrze z powłoką teflonową</li></ul></div><h4>Specyfikacja techniczna:</h4><ul><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, pianka poliuretanowa</li><li>Typ ostrza: faliste</li><li>Długość całkowita: 640 - 870 mm</li><li>Długość ostrza: 200 mm</li><li>Długość rękojeści: 330 - 560 mm</li><li>Zastosowanie: przycinanie krzewów, żywopłotów itp</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.25" net="7.25"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G72014" weight="1500.00" grossWeight="1560.00">
+                                        <stock id="1" quantity="625,00"/>
+                                                                    <price gross="7.25" net="7.25"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_0_18523084.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523085.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523086.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523087.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523088.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523089.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523090.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523091.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/3/3280_1_18523092.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="3281" vat="0" code="G72017" code_on_card="G72017" EAN="5901477114182" code_producer="5901477114182">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107890" name="Branch Shears" path="Garden\Trimming and Cutting\Branch Shears"/>
+            <category_idosell path="Garden\Trimming and Cutting\Branch Shears" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/telescopic-by-pass-lopping-shear-small-blade-with-stop-650-975mm"/>
+                        <description>
+                            <name><![CDATA[Telescopic by-pass lopping shear small blade with stop 650-975mm]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>Nożycowy sekator do konarów teleskopowy 650-900 mm</h3><p>Nożycowy sekator do gałęzi z uchwytem teleskopowym to profesjonalne narzędzie, które wykorzystasz do prac pielęgnacyjnych w ogrodzie. Świetnie sprawdzi się podczas czynności przygotowujących ogród na wiosnę. Produkt nadaje się również do przycinania drzewek owocowych, tak by do wnętrza korony dostawało się więcej światła. Produkt został wykonany ze stali utwardzonej, wykończonej teflonem, co sprawia że są odporne na działanie korozji.</p><p>Rękojeści sekatora wykonane zostały z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR), zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane ze stali HCS</li><li>teleskopowe rękojeści</li><li>długość całkowita sekatora 650 &ndash; 900 mm</li><li>rękojeści sekatora wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia twardych pędów i gałęzi</li><li>ostrze z powłoką teflonową</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Producent: GEKO</li><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 650 - 900 mm</li><li>Długość ostrza: 70 mm</li><li>Długość rękojeści: 490 - 740 mm</li><li>Zastosowanie: cięcie gałęzi, konarów</li></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>Nożycowy sekator do konarów teleskopowy 650-900 mm</h3><p>Nożycowy sekator do gałęzi z uchwytem teleskopowym to profesjonalne narzędzie, które wykorzystasz do prac pielęgnacyjnych w ogrodzie. Świetnie sprawdzi się podczas czynności przygotowujących ogród na wiosnę. Produkt nadaje się również do przycinania drzewek owocowych, tak by do wnętrza korony dostawało się więcej światła. Produkt został wykonany ze stali utwardzonej, wykończonej teflonem, co sprawia że są odporne na działanie korozji.</p><p>Rękojeści sekatora wykonane zostały z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR), zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane ze stali HCS</li><li>teleskopowe rękojeści</li><li>długość całkowita sekatora 650 &ndash; 900 mm</li><li>rękojeści sekatora wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia twardych pędów i gałęzi</li><li>ostrze z powłoką teflonową</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Producent: GEKO</li><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 650 - 900 mm</li><li>Długość ostrza: 70 mm</li><li>Długość rękojeści: 490 - 740 mm</li><li>Zastosowanie: cięcie gałęzi, konarów</li></ul>]]></short_desc>
+                            <description><![CDATA[<h3>Nożycowy sekator do konarów teleskopowy 650-900 mm</h3><p>Nożycowy sekator do gałęzi z uchwytem teleskopowym to profesjonalne narzędzie, które wykorzystasz do prac pielęgnacyjnych w ogrodzie. Świetnie sprawdzi się podczas czynności przygotowujących ogród na wiosnę. Produkt nadaje się również do przycinania drzewek owocowych, tak by do wnętrza korony dostawało się więcej światła. Produkt został wykonany ze stali utwardzonej, wykończonej teflonem, co sprawia że są odporne na działanie korozji.</p><p>Rękojeści sekatora wykonane zostały z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR), zapewnia to pewny i wygodny chwyt nawet przy mokrych i śliskich dłoniach.</p><h4>Cechy produktu:</h4><ul><li>ostrza wykonane ze stali HCS</li><li>teleskopowe rękojeści</li><li>długość całkowita sekatora 650 &ndash; 900 mm</li><li>rękojeści sekatora wykonane z polipropylenu (PP) oraz termoplastycznego kauczuku (TPR)</li><li>doskonałe do cięcia twardych pędów i gałęzi</li><li>ostrze z powłoką teflonową</li></ul><h4>Specyfikacja techniczna:</h4><ul><li>Producent: GEKO</li><li>Maksymalna średnica cięcia: 35 mm</li><li>Materiał wykonania ostrza: stal HCS, teflon</li><li>Materiał wykonania rękojeści: stal, polipropylen, kauczuk termoplastyczny</li><li>Typ ostrza: nożycowe</li><li>Długość całkowita: 650 - 900 mm</li><li>Długość ostrza: 70 mm</li><li>Długość rękojeści: 490 - 740 mm</li><li>Zastosowanie: cięcie gałęzi, konarów</li></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.8" net="8.8"/>
+                        <srp gross="" net=""/>

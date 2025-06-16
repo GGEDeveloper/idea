@@ -1,0 +1,1500 @@
+                            <price gross="2.58" net="2.58"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01873" weight="1025.00" grossWeight="1075.00">
+                                        <stock id="1" quantity="2350,00"/>
+                                                                    <price gross="2.58" net="2.58"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1730_0_2755.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1730_1_2756.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1730_1_2757.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1730_1_2758.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1731" vat="0" code="G01874" code_on_card="G01874" EAN="5901477123160" code_producer="5901477123160">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-auto-darkening-filter-solar-lens"/>
+                        <description>
+                            <name><![CDATA[Welding Auto Darkening Filter Solar Lens]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Welding Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92 x 42 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, CE</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Welding Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92 x 42 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, CE</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Welding Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92 x 42 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, CE</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.22" net="4.22"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01874" weight="100.00" grossWeight="110.00">
+                                        <stock id="1" quantity="10,00"/>
+                                                                    <price gross="4.22" net="4.22"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1731_0_18497972.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1731_1_18497973.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1731_1_18497974.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1732" vat="0" code="G01875" code_on_card="G01875" EAN="5901477113086" code_producer="5901477113086">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-helmet-auto-darkening-geko"/>
+                        <description>
+                            <name><![CDATA[Welding Helmet Auto-darkening GEKO]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>GEKO Auto-Darkening Welding Mask</h3><br/><p>The auto-darkening welding helmet is designed to protect the eyes and face during welding from sparks, splashes, and harmful UV and IR radiation. The mask is suitable for welding with all methods using an electric arc - shielded metal arc welding (SMAW) with covered electrodes, as well as semi-automatic gas-shielded welding (MIG-MAG) and tungsten inert gas welding (TIG). Additionally, TIG welding (-) with low current (20A) is also possible.</p><br/><p>In the filter cassette, there are two photosensors that react to the welding arc's light, automatically identifying the start of welding and activating the auto-darkening function. After completing the work, the filter automatically returns to the clear state. The auto-darkening filter is powered by a built-in battery charged by solar cells.</p><br/><p>The possibility to adjust parameters and the mask's size allows for proper adaptation of the product to the type of work and customer expectations.</p><br/><h4>Product Features</h4><br/><ul><br/>  <li>The helmet is made of durable polymer material</li><br/>  <li>Wide field of view</li><br/>  <li>Automatic on/off switch</li><br/>  <li>Adjustment of the darkening level and photosensor sensitivity</li><br/>  <li>Automatic adaptation to the welding mode</li><br/>  <li>Possibility to adjust the mask to the user's head size</li><br/>  <li>Lightweight</li><br/>  <li>Protection against UV and IR radiation</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>  <li>Light state shading level: 4 according to DIN</li><br/>  <li>Dark state shading range: 9 - 13 according to DIN</li><br/>  <li>Switching delay (light to dark): 1/10000 s</li><br/>  <li>Switching delay (dark to light): 0.1 - 0.8</li><br/>  <li>Eye protection according to standard: EN379</li><br/>  <li>Face protection according to standard: EN175</li><br/>  <li>UV/IR protection: full</li><br/>  <li>Operating temperature: -10°C to +65°C</li><br/>  <li>Field of view: 92.5 x 42.5 mm</li><br/>  <li>Filter dimensions: 110 x 90 x 9 mm</li><br/>  <li>Sensitivity: smooth adjustment</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>GEKO Auto-Darkening Welding Mask</h3><br/><p>The auto-darkening welding helmet is designed to protect the eyes and face during welding from sparks, splashes, and harmful UV and IR radiation. The mask is suitable for welding with all methods using an electric arc - shielded metal arc welding (SMAW) with covered electrodes, as well as semi-automatic gas-shielded welding (MIG-MAG) and tungsten inert gas welding (TIG). Additionally, TIG welding (-) with low current (20A) is also possible.</p><br/><p>In the filter cassette, there are two photosensors that react to the welding arc's light, automatically identifying the start of welding and activating the auto-darkening function. After completing the work, the filter automatically returns to the clear state. The auto-darkening filter is powered by a built-in battery charged by solar cells.</p><br/><p>The possibility to adjust parameters and the mask's size allows for proper adaptation of the product to the type of work and customer expectations.</p><br/><h4>Product Features</h4><br/><ul><br/>  <li>The helmet is made of durable polymer material</li><br/>  <li>Wide field of view</li><br/>  <li>Automatic on/off switch</li><br/>  <li>Adjustment of the darkening level and photosensor sensitivity</li><br/>  <li>Automatic adaptation to the welding mode</li><br/>  <li>Possibility to adjust the mask to the user's head size</li><br/>  <li>Lightweight</li><br/>  <li>Protection against UV and IR radiation</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>  <li>Light state shading level: 4 according to DIN</li><br/>  <li>Dark state shading range: 9 - 13 according to DIN</li><br/>  <li>Switching delay (light to dark): 1/10000 s</li><br/>  <li>Switching delay (dark to light): 0.1 - 0.8</li><br/>  <li>Eye protection according to standard: EN379</li><br/>  <li>Face protection according to standard: EN175</li><br/>  <li>UV/IR protection: full</li><br/>  <li>Operating temperature: -10°C to +65°C</li><br/>  <li>Field of view: 92.5 x 42.5 mm</li><br/>  <li>Filter dimensions: 110 x 90 x 9 mm</li><br/>  <li>Sensitivity: smooth adjustment</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<h3>GEKO Auto-Darkening Welding Mask</h3><br/><p>The auto-darkening welding helmet is designed to protect the eyes and face during welding from sparks, splashes, and harmful UV and IR radiation. The mask is suitable for welding with all methods using an electric arc - shielded metal arc welding (SMAW) with covered electrodes, as well as semi-automatic gas-shielded welding (MIG-MAG) and tungsten inert gas welding (TIG). Additionally, TIG welding (-) with low current (20A) is also possible.</p><br/><p>In the filter cassette, there are two photosensors that react to the welding arc's light, automatically identifying the start of welding and activating the auto-darkening function. After completing the work, the filter automatically returns to the clear state. The auto-darkening filter is powered by a built-in battery charged by solar cells.</p><br/><p>The possibility to adjust parameters and the mask's size allows for proper adaptation of the product to the type of work and customer expectations.</p><br/><h4>Product Features</h4><br/><ul><br/>  <li>The helmet is made of durable polymer material</li><br/>  <li>Wide field of view</li><br/>  <li>Automatic on/off switch</li><br/>  <li>Adjustment of the darkening level and photosensor sensitivity</li><br/>  <li>Automatic adaptation to the welding mode</li><br/>  <li>Possibility to adjust the mask to the user's head size</li><br/>  <li>Lightweight</li><br/>  <li>Protection against UV and IR radiation</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>  <li>Light state shading level: 4 according to DIN</li><br/>  <li>Dark state shading range: 9 - 13 according to DIN</li><br/>  <li>Switching delay (light to dark): 1/10000 s</li><br/>  <li>Switching delay (dark to light): 0.1 - 0.8</li><br/>  <li>Eye protection according to standard: EN379</li><br/>  <li>Face protection according to standard: EN175</li><br/>  <li>UV/IR protection: full</li><br/>  <li>Operating temperature: -10°C to +65°C</li><br/>  <li>Field of view: 92.5 x 42.5 mm</li><br/>  <li>Filter dimensions: 110 x 90 x 9 mm</li><br/>  <li>Sensitivity: smooth adjustment</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.08" net="6.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01875" weight="915.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="692,00"/>
+                                                                    <price gross="6.08" net="6.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_0_2766.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_18506826.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2765.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2767.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2768.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2769.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2772.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1732_1_2773.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1733" vat="0" code="G01876" code_on_card="G01876" EAN="5901477115042" code_producer="5901477115042">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-helmet-auto-darkening-profi-grey"/>
+                        <description>
+                            <name><![CDATA[Welding Helmet Auto-darkening PROFI-GREY]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="7.42" net="7.42"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01876" weight="915.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="674,00"/>
+                                                                    <price gross="7.42" net="7.42"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2774.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2776.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2777.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2778.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2779.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2780.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2781.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1733_1_2782.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1734" vat="0" code="G01877" code_on_card="G01877" EAN="5901477115059" code_producer="5901477115059">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-helmet-auto-darkening-profi-flame"/>
+                        <description>
+                            <name><![CDATA[Welding Helmet Auto-darkening PROFI-FLAME]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.56" net="8.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01877" weight="915.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="38,00"/>
+                                                                    <price gross="8.56" net="8.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_0_2784.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2783.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2785.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2786.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2787.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2788.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2789.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2790.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1734_1_2791.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1735" vat="0" code="G01878" code_on_card="G01878" EAN="5901477122880" code_producer="5901477122880">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-helmet-auto-darkening-profi-eagle"/>
+                        <description>
+                            <name><![CDATA[Welding Helmet Auto-darkening PROFI-EAGLE]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Welding Helmet with Auto Darkening Filter. Provides full protection against UV and IR radiation during the entire welding process.</p><br/><h3>Fields of application:</h3><br/><ul><br/>    <li>MMA</li><br/>    <li>MIG/MAG</li><br/>    <li>TIG</li><br/>    <li>Grinding</li><br/></ul><br/><h3>Product Features</h3><br/><ul><br/>    <li>Auto Darkening Filter</li><br/>    <li>Light shade state DIN 4</li><br/>    <li>Externally variable shade DIN 9-13</li><br/>    <li>Shading level / Grinding function switch knob</li><br/>    <li>Field of view 92,5 x 42,5 mm</li><br/>    <li>Filter size 115 x 90 x 9 mm</li><br/>    <li>Adjustable sensitivity</li><br/>    <li>Delay adjustment knob</li><br/>    <li>Solar with built-in battery (2x AAA)</li><br/>    <li>Grinding function</li><br/>    <li>Complies with the harmonized European Standards: EN 379, EN 175, CE</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.56" net="8.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01878" weight="915.00" grossWeight="1000.00">
+                                        <stock id="1" quantity="821,00"/>
+                                                                    <price gross="8.56" net="8.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_0_2792.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_1_2793.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_1_2794.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_1_2795.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_1_2796.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1735_1_2797.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1736" vat="0" code="G01885" code_on_card="G01885" EAN="5901477123122" code_producer="5901477123122">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="105608" name="Welding Masks and Helmets" path="Welding Equipment and Accessories\Welding Masks and Helmets"/>
+            <category_idosell path="Welding Equipment and Accessories\Welding Masks and Helmets" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/welding-mask-with-lift-up-face-shield"/>
+                        <description>
+                            <name><![CDATA[Welding Mask with Lift-up Face Shield]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Welding Shield provides UV ray protection and covers the entire face to protect from sparks and spatter.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>High-density polymer nylon welding face and shield</li><br/>    <li>Flip-up visor</li><br/>    <li>Lens size 108 x 50mm with shade state DIN 11</li><br/>    <li>Adjustable ratchet harness</li><br/>    <li>Complies with the harmonized European Standards: EN 375, CE</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Welding Shield provides UV ray protection and covers the entire face to protect from sparks and spatter.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>High-density polymer nylon welding face and shield</li><br/>    <li>Flip-up visor</li><br/>    <li>Lens size 108 x 50mm with shade state DIN 11</li><br/>    <li>Adjustable ratchet harness</li><br/>    <li>Complies with the harmonized European Standards: EN 375, CE</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Welding Shield provides UV ray protection and covers the entire face to protect from sparks and spatter.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>High-density polymer nylon welding face and shield</li><br/>    <li>Flip-up visor</li><br/>    <li>Lens size 108 x 50mm with shade state DIN 11</li><br/>    <li>Adjustable ratchet harness</li><br/>    <li>Complies with the harmonized European Standards: EN 375, CE</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.9" net="1.9"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01885" weight="465.00" grossWeight="530.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.9" net="1.9"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1736_0_17695977.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1736_1_17695982.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1736_1_17695985.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1736_1_17695988.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1736_1_17695991.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1748" vat="0" code="G01927" code_on_card="G01927" EAN="5901477124914" code_producer="5901477124914">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Royal Blue Tarpaulin. Made of polypropylene, covered on both sides with a layer of polyethylene.<br/><ul><br/><li>Aluminium eyelets at 1 metre intervals</li><br/><li>Rope reinforced hems</li><br/><li>waterproof and <br/>easily washable</li><br/><li>mildew resistant</li><br/></ul><br/></p><br/><p>We offer sizes from 2x3m to 15x20m.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Royal Blue Tarpaulin. Made of polypropylene, covered on both sides with a layer of polyethylene.<br/><ul><br/><li>Aluminium eyelets at 1 metre intervals</li><br/><li>Rope reinforced hems</li><br/><li>waterproof and <br/>easily washable</li><br/><li>mildew resistant</li><br/></ul><br/></p><br/><p>We offer sizes from 2x3m to 15x20m.</p>]]></short_desc>
+                            <description><![CDATA[<p>Royal Blue Tarpaulin. Made of polypropylene, covered on both sides with a layer of polyethylene.<br/><ul><br/><li>Aluminium eyelets at 1 metre intervals</li><br/><li>Rope reinforced hems</li><br/><li>waterproof and <br/>easily washable</li><br/><li>mildew resistant</li><br/></ul><br/></p><br/><p>We offer sizes from 2x3m to 15x20m.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.05" net="1.05"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01927" weight="400.00" grossWeight="403.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.05" net="1.05"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1748_0_19977.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1748_1_19978.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1749" vat="0" code="G01928" code_on_card="G01928" EAN="5901477124921" code_producer="5901477124921">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-3x3m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 3x3m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.18" net="1.18"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01928" weight="400.00" grossWeight="410.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="1.18" net="1.18"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1749_0_19979.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1749_1_19980.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1751" vat="0" code="G01930" code_on_card="G01930" EAN="5901477113246" code_producer="5901477113246">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-2x3m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 2x3m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="0.79" net="0.79"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01930" weight="200.00" grossWeight="210.00">
+                                        <stock id="1" quantity="7745,00"/>
+                                                                    <price gross="0.79" net="0.79"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1751_0_19983.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1751_1_19984.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1752" vat="0" code="G01931" code_on_card="G01931" EAN="5901477113253" code_producer="5901477113253">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-3x4m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 3x4m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.57" net="1.57"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01931" weight="400.00" grossWeight="410.00">
+                                        <stock id="1" quantity="3385,00"/>
+                                                                    <price gross="1.57" net="1.57"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1752_0_19985.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1752_1_19986.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1753" vat="0" code="G01932" code_on_card="G01932" EAN="5901477113260" code_producer="5901477113260">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-3x5m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 3x5m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="1.96" net="1.96"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01932" weight="600.00" grossWeight="610.00">
+                                        <stock id="1" quantity="6299,00"/>
+                                                                    <price gross="1.96" net="1.96"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1753_0_19987.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1753_1_19988.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1754" vat="0" code="G01933" code_on_card="G01933" EAN="5901477113277" code_producer="5901477113277">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-4x5m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 4x5m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="2.62" net="2.62"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01933" weight="800.00" grossWeight="810.00">
+                                        <stock id="1" quantity="2842,00"/>
+                                                                    <price gross="2.62" net="2.62"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1754_0_19989.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1754_1_19990.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1755" vat="0" code="G01934" code_on_card="G01934" EAN="5901477113284" code_producer="5901477113284">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-4x6m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 4x6m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.14" net="3.14"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01934" weight="1000.00" grossWeight="1020.00">
+                                        <stock id="1" quantity="5152,00"/>
+                                                                    <price gross="3.14" net="3.14"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1755_0_19991.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1755_1_19992.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1756" vat="0" code="G01935" code_on_card="G01935" EAN="5901477113291" code_producer="5901477113291">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-5x8m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 5x8m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="5.24" net="5.24"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01935" weight="1600.00" grossWeight="1620.00">
+                                        <stock id="1" quantity="2891,00"/>
+                                                                    <price gross="5.24" net="5.24"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1756_0_19993.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1756_1_19994.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1757" vat="0" code="G01936" code_on_card="G01936" EAN="5903240385065" code_producer="5903240385065">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-6x10m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin  6x10m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="7.85" net="7.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01936" weight="2200.00" grossWeight="2220.00">
+                                        <stock id="1" quantity="1350,00"/>
+                                                                    <price gross="7.85" net="7.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1757_0_19995.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1757_1_19996.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1758" vat="0" code="G01937" code_on_card="G01937" EAN="5901477113314" code_producer="5901477113314">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-8x12m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 8x12m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p><span>The sides of tarpaulin are finished with doubly strengthened with a polypropylene rope. á There are aluminium 12mm holes (at every 100cm) on the whole area of the tarpaulin.</span>á<span><br />CE Certificate<br />real size may differ -+5%</span></p> <p><span>Tarpaulin is:<br />waterproof<br />easily washableá<br />mould resistantá<br />easy to use</span></p> <p><span>colour: blueá<br />Tarpaulins are designed for covering and securing things inside as well as outside</span></p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p><span>The sides of tarpaulin are finished with doubly strengthened with a polypropylene rope. á There are aluminium 12mm holes (at every 100cm) on the whole area of the tarpaulin.</span>á<span><br />CE Certificate<br />real size may differ -+5%</span></p> <p><span>Tarpaulin is:<br />waterproof<br />easily washableá<br />mould resistantá<br />easy to use</span></p> <p><span>colour: blueá<br />Tarpaulins are designed for covering and securing things inside as well as outside</span></p>]]></short_desc>
+                            <description><![CDATA[<p><span>The sides of tarpaulin are finished with doubly strengthened with a polypropylene rope. á There are aluminium 12mm holes (at every 100cm) on the whole area of the tarpaulin.</span>á<span><br />CE Certificate<br />real size may differ -+5%</span></p> <p><span>Tarpaulin is:<br />waterproof<br />easily washableá<br />mould resistantá<br />easy to use</span></p> <p><span>colour: blueá<br />Tarpaulins are designed for covering and securing things inside as well as outside</span></p>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="12.56" net="12.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01937" weight="3800.00" grossWeight="3820.00">
+                                        <stock id="1" quantity="578,00"/>
+                                                                    <price gross="12.56" net="12.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1758_0_19997.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1758_1_19998.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1759" vat="0" code="G01938" code_on_card="G01938" EAN="5901477113321" code_producer="5901477113321">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-10x15m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 10x15m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="19.63" net="19.63"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01938" weight="5600.00" grossWeight="5620.00">
+                                        <stock id="1" quantity="134,00"/>
+                                                                    <price gross="19.63" net="19.63"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1759_0_19999.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1759_1_20000.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1760" vat="0" code="G01939" code_on_card="G01939" EAN="5901477113383" code_producer="5901477113383">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-4x8m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 4x8m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="4.19" net="4.19"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01939" weight="1200.00" grossWeight="1220.00">
+                                        <stock id="1" quantity="670,00"/>
+                                                                    <price gross="4.19" net="4.19"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1760_0_20001.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1760_1_20002.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1761" vat="0" code="G01940" code_on_card="G01940" EAN="5901477113390" code_producer="5901477113390">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-5x6m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 5x6m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="3.93" net="3.93"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01940" weight="1200.00" grossWeight="1220.00">
+                                        <stock id="1" quantity="1391,00"/>
+                                                                    <price gross="3.93" net="3.93"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1761_0_20003.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1761_1_20004.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1762" vat="0" code="G01960" code_on_card="G01960" EAN="5901477113338" code_producer="5901477113338">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-6x8m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 6x8m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.28" net="6.28"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01960" weight="1800.00" grossWeight="1820.00">
+                                        <stock id="1" quantity="806,00"/>
+                                                                    <price gross="6.28" net="6.28"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1762_0_20005.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1762_1_20006.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1763" vat="0" code="G01962" code_on_card="G01962" EAN="5901477124938" code_producer="5901477124938">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-6x12m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 6x12m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulins are designed for covering and securingá</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.42" net="9.42"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01962" weight="2800.00" grossWeight="2820.00">
+                                        <stock id="1" quantity="157,00"/>
+                                                                    <price gross="9.42" net="9.42"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1763_0_20007.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1763_1_20008.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1764" vat="0" code="G01964" code_on_card="G01964" EAN="5901477113345" code_producer="5901477113345">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-8x10m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 8x10m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="10.47" net="10.47"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01964" weight="3200.00" grossWeight="3220.00">
+                                        <stock id="1" quantity="695,00"/>
+                                                                    <price gross="10.47" net="10.47"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1764_0_20009.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1764_1_20010.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1765" vat="0" code="G01966" code_on_card="G01966" EAN="5901477124945" code_producer="5901477124945">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-10x10m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 10x10m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="13.09" net="13.09"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01966" weight="3800.00" grossWeight="3820.00">
+                                        <stock id="1" quantity="261,00"/>
+                                                                    <price gross="13.09" net="13.09"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1765_0_20011.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1765_1_20012.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1766" vat="0" code="G01968" code_on_card="G01968" EAN="5901477113352" code_producer="5901477113352">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-10x12m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 10x12m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="15.71" net="15.71"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01968" weight="4600.00" grossWeight="4620.00">
+                                        <stock id="1" quantity="141,00"/>
+                                                                    <price gross="15.71" net="15.71"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1766_0_20013.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1766_1_20014.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1767" vat="0" code="G01971" code_on_card="G01971" EAN="5901477124952" code_producer="5901477124952">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-15x16m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 15x16m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="31.41" net="31.41"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01971" weight="9000.00" grossWeight="9020.00">
+                                        <stock id="1" quantity="57,00"/>
+                                                                    <price gross="31.41" net="31.41"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1767_0_20015.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1767_1_20016.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1768" vat="0" code="G01972" code_on_card="G01972" EAN="5901477113369" code_producer="5901477113369">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-12x15m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 12x15m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin made of polypropylene cross-woven strands, covered on both sides with a layer of polyethylene. Rope-reinforced hems. Aluminum eyelets at 1 m intervals.</p><br/><p><strong>Application</strong>: Tarpaulins are used in many ways to things from wind, rain, and sunlight.&nbsp;They are used to protect the loads of open trucks and wagons, to keep wood piles dry, and for shelters such as tents or other temporary structures.</p><br/><h3>Product Features</h3><br/><ul><br/><li>Waterproof</li><br/><li>Mold-resistant and easily washable</li><br/><li>Easy to use</li><br/><li>Aluminum eyelets at 1 m&nbsp;intervals</li><br/><li>Manufacturing tolerance +/- 5%</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="23.56" net="23.56"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01972" weight="6650.00" grossWeight="6750.00">
+                                        <stock id="1" quantity="153,00"/>
+                                                                    <price gross="23.56" net="23.56"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1768_0_20017.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1768_1_20018.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1769" vat="0" code="G01973" code_on_card="G01973" EAN="5901477124969" code_producer="5901477124969">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-12x18m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 12x18m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="28.27" net="28.27"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01973" weight="8800.00" grossWeight="9000.00">
+                                        <stock id="1" quantity="23,00"/>
+                                                                    <price gross="28.27" net="28.27"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1769_0_20019.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1769_1_20020.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1770" vat="0" code="G01974" code_on_card="G01974" EAN="5901477117718" code_producer="5901477117718">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107712" name="Garden" path="Garden"/>
+            <category_idosell path="Garden" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/royal-blue-tarpaulin-15x20m-5"/>
+                        <description>
+                            <name><![CDATA[Royal Blue Tarpaulin 15x20m +/-5%]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></short_desc>
+                            <description><![CDATA[<p>Tarpaulin is:</p> <ul> <li>waterproof</li> <li>mould resistant</li> <li>easily washable</li> </ul>]]></description>
+                        </description>
+                        <delivery>04.08.2025</delivery>
+                            <price gross="39.26" net="39.26"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G01974" weight="15000.00" grossWeight="15100.00">
+                                        <stock id="1" quantity="46,00"/>
+                                                                    <price gross="39.26" net="39.26"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1770_0_20021.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1770_1_20022.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1779" vat="0" code="G02002" code_on_card="G02002" EAN="5901477125782" code_producer="5901477125782">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/metal-plate-for-50-ton-hydraulic-press-cylinder"/>
+                        <description>
+                            <name><![CDATA[Metal Plate for 50 Ton Hydraulic Press Cylinder]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Blacha do siłownika prasy 50T.</p>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Blacha do siłownika prasy 50T.</p>]]></short_desc>
+                            <description><![CDATA[<p>Blacha do siłownika prasy 50T.</p>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="8.46" net="8.46"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02002" weight="730.00" grossWeight="760.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="8.46" net="8.46"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1779_0_2815.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1779_1_2813.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1779_1_2814.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1780" vat="0" code="G02003" code_on_card="G02003" EAN="5901477120688" code_producer="5901477120688">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="1409457136565705379" name="kpl." moq="1"/>
+                        <card url="https://b2b.geko.pl/en/20-ton-shop-press-kit-cylinder-2-speed-pump-gauge-with-hose"/>
+                        <description>
+                            <name><![CDATA[20 Ton Shop Press Kit: Cylinder, 2-Speed Pump, Gauge with Hose]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>20 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Shop press cylinder 20 Ton</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>20 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Shop press cylinder 20 Ton</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>20 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>Shop press cylinder 20 Ton</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="94.85" net="94.85"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02003" weight="20000.00" grossWeight="21000.00">
+                                        <stock id="1" quantity="78,00"/>
+                                                                    <price gross="94.85" net="94.85"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_0_2816.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2817.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2818.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2819.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2820.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2821.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2822.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2823.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2824.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1780_1_2825.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1781" vat="0" code="G02004" code_on_card="G02004" EAN="5901477120695" code_producer="5901477120695">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/30-ton-shop-press-kit-cylinder-2-speed-pump-gauge-with-hose"/>
+                        <description>
+                            <name><![CDATA[30 Ton Shop Press Kit: Cylinder, 2-Speed Pump, Gauge with Hose]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>30 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>30 ton Shop press cylinder</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>30 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>30 ton Shop press cylinder</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>30 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>30 ton Shop press cylinder</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="94.41" net="94.41"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02004" weight="21980.00" grossWeight="22180.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="94.41" net="94.41"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_0_2826.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2827.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2828.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2829.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2830.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2831.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2832.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2833.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1781_1_2834.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1782" vat="0" code="G02005" code_on_card="G02005" EAN="5901477120701" code_producer="5901477120701">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/50-ton-shop-press-kit-cylinder-with-springs-2-speed-pump-gauge-with-hose"/>
+                        <description>
+                            <name><![CDATA[50 Ton Shop Press Kit: Cylinder with Springs, 2-Speed Pump, Gauge with Hose]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>50 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>50 ton shop press cylinder with return springs</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>50 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>50 ton shop press cylinder with return springs</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>50 Ton Shop Press Replacement Kit.</p><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>50 ton shop press cylinder with return springs</li><br/>    <li>2-Speed pump</li><br/>    <li>Gauge</li><br/>    <li>Hose with connectors</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>07.07.2025</delivery>
+                            <price gross="110.5" net="110.5"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02005" weight="39000.00" grossWeight="41000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="110.5" net="110.5"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1782_0_2835.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1782_1_2836.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1782_1_2837.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1782_1_2838.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1782_1_2839.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1783" vat="0" code="G02006" code_on_card="G02006" EAN="5901477120589" code_producer="5901477120589">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/sandblaster-air-siphon-gun-4x-ceramic-nozzles"/>
+                        <description>
+                            <name><![CDATA[Sandblaster Air Siphon Gun + 4x Ceramic Nozzles]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Die-cast aluminum body</li><br/>    <li>Minimum air requirement: 6 CFM at 80 PSI</li><br/>    <li>Includes four ceramic nozzles: 4mm, 5mm, 6mm and 7mm</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>1x Ceramic nozzles: 4, 5, 6, 7 mm</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Die-cast aluminum body</li><br/>    <li>Minimum air requirement: 6 CFM at 80 PSI</li><br/>    <li>Includes four ceramic nozzles: 4mm, 5mm, 6mm and 7mm</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>1x Ceramic nozzles: 4, 5, 6, 7 mm</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Die-cast aluminum body</li><br/>    <li>Minimum air requirement: 6 CFM at 80 PSI</li><br/>    <li>Includes four ceramic nozzles: 4mm, 5mm, 6mm and 7mm</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>1x Ceramic nozzles: 4, 5, 6, 7 mm</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.29" net="6.29"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02006" weight="380.00" grossWeight="400.00">
+                                        <stock id="1" quantity="1301,00"/>
+                                                                    <price gross="6.29" net="6.29"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1783_0_2844.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1783_1_2845.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1783_1_2846.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1784" vat="0" code="G02007" code_on_card="G02007" EAN="5901477120572" code_producer="5901477120572">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/sand-blasting-gun-for-sandblasting-4x-ceramic-nozzles"/>
+                        <description>
+                            <name><![CDATA[Sand Blasting Gun for Sandblasting + 4x Ceramic Nozzles]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>This gun fits most pressure and cabinet sandblasters. Sand blasting gun can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Its operating lever is very comfortable and well suited for continuous operation.</li><br/>    <li>Includes four ceramic nozzles: 2mm, 2.5mm, 3mm and 3.5mm</li><br/>    <li>Spring loaded paddle trigger</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Operating pressure: 60 - 120 PSI</li><br/>    <li>Air Inlet: 1/4"</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>4x Ceramic Nozzles: 2, 2.5, 3, 3.5 mm</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>This gun fits most pressure and cabinet sandblasters. Sand blasting gun can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Its operating lever is very comfortable and well suited for continuous operation.</li><br/>    <li>Includes four ceramic nozzles: 2mm, 2.5mm, 3mm and 3.5mm</li><br/>    <li>Spring loaded paddle trigger</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Operating pressure: 60 - 120 PSI</li><br/>    <li>Air Inlet: 1/4"</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>4x Ceramic Nozzles: 2, 2.5, 3, 3.5 mm</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>This gun fits most pressure and cabinet sandblasters. Sand blasting gun can be used for sand glass, sandblasting, surface polishing, processing machinery parts.</p><br/><h3>Product Features</h3><br/><ul><br/>    <li>Its operating lever is very comfortable and well suited for continuous operation.</li><br/>    <li>Includes four ceramic nozzles: 2mm, 2.5mm, 3mm and 3.5mm</li><br/>    <li>Spring loaded paddle trigger</li><br/></ul><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Operating pressure: 60 - 120 PSI</li><br/>    <li>Air Inlet: 1/4"</li><br/></ul><br/><h4>Package Contents:</h4><br/><ul><br/>    <li>1x Siphon Feed Blast Gun</li><br/>    <li>4x Ceramic Nozzles: 2, 2.5, 3, 3.5 mm</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="6.37" net="6.37"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02007" weight="500.00" grossWeight="500.00">
+                                        <stock id="1" quantity="715,00"/>
+                                                                    <price gross="6.37" net="6.37"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1784_0_2847.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1784_1_2848.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1784_1_2849.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1785" vat="0" code="G02008" code_on_card="G02008" EAN="5901477105647" code_producer="5901477105647">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gauge-for-20-ton-shop-press"/>
+                        <description>
+                            <name><![CDATA[Gauge for 20 Ton Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 20 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 2.5" (60mm)</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 20 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 2.5" (60mm)</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 20 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 2.5" (60mm)</li><br/></ul>]]></description>
+                        </description>
+                        <delivery>07.07.2025</delivery>
+                            <price gross="9.08" net="9.08"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02008" weight="300.00" grossWeight="330.00">
+                                        <stock id="1" quantity="81,00"/>
+                                                                    <price gross="9.08" net="9.08"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1785_0_31308.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1786" vat="0" code="G02009" code_on_card="G02009" EAN="5901477110191" code_producer="5901477110191">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gauge-for-30-ton-shop-press"/>
+                        <description>
+                            <name><![CDATA[Gauge for 30 Ton Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 30 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 30 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 30 ton</li><br/>    <li>Mounting Type: Vertical Type</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="10.47" net="10.47"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02009" weight="1100.00" grossWeight="1300.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="10.47" net="10.47"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1786_0_31309.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1787" vat="0" code="G02010" code_on_card="G02010" EAN="5901477113062" code_producer="5901477113062">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/gauge-for-50-ton-shop-press"/>
+                        <description>
+                            <name><![CDATA[Gauge for 50 Ton Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 50 ton</li><br/>    <li>Mounting Type: Panel mounting (rear)</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 50 ton</li><br/>    <li>Mounting Type: Panel mounting (rear)</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></short_desc>
+                            <description><![CDATA[<p>Hydraulic Force Gauge.</p><br/><h4>Technical Data</h4><br/><ul><br/>    <li>Force: 50 ton</li><br/>    <li>Mounting Type: Panel mounting (rear)</li><br/>    <li>Dial Size: 3.0" (75mm)</li><br/></ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="9.04" net="9.04"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02010" weight="170.00" grossWeight="200.00">
+                                        <stock id="1" quantity="394,00"/>
+                                                                    <price gross="9.04" net="9.04"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1787_0_18505270.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1787_1_18505271.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1788" vat="0" code="G02011" code_on_card="G02011" EAN="5901477113215" code_producer="5901477113215">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/20-ton-hydraulic-pump"/>
+                        <description>
+                            <name><![CDATA[20 Ton Hydraulic Pump]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>POMPA HYDRAULICZNA 20T DO PRASY / ROZPIERAKA</h3>
+<p><strong>Pompa hydrauliczna umożliwia wygenerowanie nacisku o sile <strong>20 ton</strong>. <strong>Do stosowania w prasach oraz rozpierakach hydraulicznych.</strong></p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>przeznaczona do stosowania w prasach oraz rozpierakach hydraulicznych</li>
+<li>generuje nacisk o sile 20 ton</li>
+<li>wąż hydrauliczny o długości 1400 mm</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>20T</strong></li>
+<li>Długość przewodów hydraulicznych: <strong>1400 mm</strong></li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>POMPA HYDRAULICZNA 20T DO PRASY / ROZPIERAKA</h3>
+<p><strong>Pompa hydrauliczna umożliwia wygenerowanie nacisku o sile <strong>20 ton</strong>. <strong>Do stosowania w prasach oraz rozpierakach hydraulicznych.</strong></p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>przeznaczona do stosowania w prasach oraz rozpierakach hydraulicznych</li>
+<li>generuje nacisk o sile 20 ton</li>
+<li>wąż hydrauliczny o długości 1400 mm</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>20T</strong></li>
+<li>Długość przewodów hydraulicznych: <strong>1400 mm</strong></li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>POMPA HYDRAULICZNA 20T DO PRASY / ROZPIERAKA</h3>
+<p><strong>Pompa hydrauliczna umożliwia wygenerowanie nacisku o sile <strong>20 ton</strong>. <strong>Do stosowania w prasach oraz rozpierakach hydraulicznych.</strong></p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>przeznaczona do stosowania w prasach oraz rozpierakach hydraulicznych</li>
+<li>generuje nacisk o sile 20 ton</li>
+<li>wąż hydrauliczny o długości 1400 mm</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>20T</strong></li>
+<li>Długość przewodów hydraulicznych: <strong>1400 mm</strong></li>
+</ul>]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="38.4" net="38.4"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02011" weight="7000.00" grossWeight="7500.00">
+                                        <stock id="1" quantity="40,00"/>
+                                                                    <price gross="38.4" net="38.4"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1788_0_32259.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1788_1_32260.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1788_1_32261.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1791" vat="0" code="G02014" code_on_card="G02014" EAN="5901477115264" code_producer="5901477115264">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/hydraulic-2-speed-pump-for-30-ton-shop-press-1791"/>
+                        <description>
+                            <name><![CDATA[Hydraulic 2-Speed Pump for 30 Ton Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[<h3>POMPA HYDRAULICZNA DWUSTOPNIOWA 30T</h3>
+<p>Pompa wyposażona została w <strong>dwa tłoki</strong> umożliwiające <strong>szybki oraz wolny (precyzyjny) wysuw tłoka</strong>. Pompa pozwala na <strong>wygenerowanie nacisku o sile 30T.</strong> </p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>pompa dwustopniowa z szybkim i wolnym biegiem</li>
+<li>generuje nacisk o sile 30T</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>30T</strong></li>
+<li>Wysokość pompy: <strong>ok. 460 mm</strong></li>
+<li>Wymiary podstawy: <strong>110x140 mm</strong></li>
+</ul>]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[<h3>POMPA HYDRAULICZNA DWUSTOPNIOWA 30T</h3>
+<p>Pompa wyposażona została w <strong>dwa tłoki</strong> umożliwiające <strong>szybki oraz wolny (precyzyjny) wysuw tłoka</strong>. Pompa pozwala na <strong>wygenerowanie nacisku o sile 30T.</strong> </p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>pompa dwustopniowa z szybkim i wolnym biegiem</li>
+<li>generuje nacisk o sile 30T</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>30T</strong></li>
+<li>Wysokość pompy: <strong>ok. 460 mm</strong></li>
+<li>Wymiary podstawy: <strong>110x140 mm</strong></li>
+</ul>]]></short_desc>
+                            <description><![CDATA[<h3>POMPA HYDRAULICZNA DWUSTOPNIOWA 30T</h3>
+<p>Pompa wyposażona została w <strong>dwa tłoki</strong> umożliwiające <strong>szybki oraz wolny (precyzyjny) wysuw tłoka</strong>. Pompa pozwala na <strong>wygenerowanie nacisku o sile 30T.</strong> </p>
+<h4>Cechy produktu:</h4>
+<ul>
+<li>wysoka jakość wykonania</li>
+<li>pompa dwustopniowa z szybkim i wolnym biegiem</li>
+<li>generuje nacisk o sile 30T</li>
+</ul>
+<h4>Specyfikacja techniczna:</h4>
+<ul>
+<li>Maksymalny nacisk: <strong>30T</strong></li>
+<li>Wysokość pompy: <strong>ok. 460 mm</strong></li>
+<li>Wymiary podstawy: <strong>110x140 mm</strong></li>
+</ul>]]></description>
+                        </description>
+                        <delivery>07.07.2025</delivery>
+                            <price gross="40.21" net="40.21"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02014" weight="8000.00" grossWeight="9000.00">
+                                        <stock id="1" quantity="0"/>
+                                                                    <price gross="40.21" net="40.21"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1791_0_31314.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1791_1_31315.jpg"/>
+                                        <image url="https://b2b.geko.pl/zasoby/import/1/1791_1_32269.jpg"/>
+                            </large>
+                        </images>
+                    </product>
+                    <product id="1792" vat="0" code="G02015" code_on_card="G02015" EAN="5901477126185" code_producer="5901477126185">
+                        <producer name="GEKO" id=""/>
+
+
+            <category id="107785" name="Service Equipment" path="Tools for The Workshop and Garage\Service Equipment"/>
+            <category_idosell path="Tools for The Workshop and Garage\Service Equipment" />
+        
+
+                            <unit id="4800399769571371698" name="pcs" moq="1"/>
+                        <card url="https://b2b.geko.pl/en/30-ton-hydraulic-cylinder-for-shop-press-1792"/>
+                        <description>
+                            <name><![CDATA[30 Ton Hydraulic Cylinder for Shop Press]]></name>
+                            <long_desc xml:lang="en"><![CDATA[]]></long_desc>
+                            <short_desc xml:lang="en"><![CDATA[]]></short_desc>
+                            <description><![CDATA[]]></description>
+                        </description>
+                        <delivery></delivery>
+                            <price gross="61.15" net="61.15"/>
+                        <srp gross="" net=""/>
+                        <sizes>
+
+                            <size code="G02015" weight="12550.00" grossWeight="13050.00">
+                                        <stock id="1" quantity="9,00"/>
+                                                                    <price gross="61.15" net="61.15"/>
+                                <srp gross="" net=""/>
+                            </size>
+                        </sizes>
+                        <images>
+                            <large>

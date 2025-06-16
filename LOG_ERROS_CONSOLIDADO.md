@@ -1,6 +1,6 @@
 # 📋 LOG DE ERROS E RESOLUÇÕES
 
-> **Última Atualização:** 2025-06-09T02:30:00+01:00  
+> **Última Atualização:** 2025-06-15T18:30:00+01:00  
 > **Responsável:** Equipe de Desenvolvimento  
 > **Versão do Documento:** 2.0.0
 
@@ -482,4 +482,65 @@ Isto eliminou a complexidade da comunicação de estado com o backend a cada int
 **Estado:** ✅ Resolvido
 
 ---
-*Última atualização: 2025-06-13T19:30:00+01:00*
+*Última atualização: 2025-06-15T18:30:00+01:00*
+
+---
+## 2025-06-15 - Erros e Resoluções no Pipeline de Dados Geko
+
+### ID: GEKO-ETL-ERR-001
+**Timestamp:** 2025-06-15T11:00:00+01:00
+**Tipo:** Erro de Configuração de Ambiente / Dependência
+**Descrição:** Falha ao executar scripts Python (`split_xml_script.py`, `populate_geko_products.py`) devido ao comando `python` não encontrado e, subsequentemente, falha na instalação de pacotes com `pip3` (`psycopg2-binary`, `beautifulsoup4`) devido a um ambiente Python gerido externamente.
+**Causa:** 
+1. O alias `python` não apontava para `python3`.
+2. O sistema operativo (Ubuntu via WSL, provavelmente) protege o ambiente Python global, exigindo `sudo apt install python3-<package>` ou o uso de ambientes virtuais para pacotes Python.
+**Solução:**
+1. Scripts Python foram executados usando `python3` explicitamente.
+2. As dependências `psycopg2-binary` e `beautifulsoup4` foram instaladas com sucesso usando `sudo apt install python3-psycopg2` e `sudo apt install python3-bs4`, respetivamente.
+**Arquivos Afetados:** N/A (configuração de ambiente e execução de comandos no terminal).
+**Estado:** ✅ Resolvido
+
+### ID: GEKO-ETL-ERR-002
+**Timestamp:** 2025-06-15T11:30:00+01:00
+**Tipo:** Erro de Base de Dados (Foreign Key Constraint)
+**Descrição:** Ao executar `populate_geko_products.py` pela primeira vez, ocorreram erros de violação da constraint de chave estrangeira `fk_gp_product_ean`.
+**Causa:** A tabela `geko_products` tinha uma FK para `products.ean`. No entanto, `geko_products` é uma tabela de staging e deve ser populada *antes* da tabela `products`. Alguns EANs do feed Geko podiam não existir ainda na tabela `products`.
+**Solução:**
+1. A constraint `fk_gp_product_ean` foi removida da tabela `geko_products` através do script `apply_schema_updates.py` (que executou `ALTER TABLE geko_products DROP CONSTRAINT IF EXISTS fk_gp_product_ean;`).
+2. A documentação do schema (`docs/database_schema.sql`) foi atualizada para refletir esta remoção e explicar a lógica de staging.
+**Arquivos Afetados:** `populate_geko_products.py` (execução), `apply_schema_updates.py` (criação e execução), `docs/database_schema.sql` (atualização).
+**Estado:** ✅ Resolvido
+
+### ID: GEKO-ETL-ERR-003
+**Timestamp:** 2025-06-15T13:20:00+01:00
+**Tipo:** Erro de Base de Dados (Missing Constraint/Column)
+**Descrição:** Ao executar `process_staged_data.py` (após a correção de GEKO-ETL-ERR-002), ocorreram dois erros:
+1. `product_images` upsert: `there is no unique or exclusion constraint matching the ON CONFLICT specification`.
+2. `product_attributes` upsert: `column "updated_at" of relation "product_attributes" does not exist`.
+**Causa:**
+1. A cláusula `ON CONFLICT (ean, "url")` para `product_images` requeria uma constraint `UNIQUE(ean, "url")` na tabela, que não existia.
+2. A cláusula `ON CONFLICT ... DO UPDATE SET updated_at = NOW()` para `product_attributes` requeria a coluna `updated_at`, que não existia.
+**Solução:**
+1. O script `apply_schema_updates.py` foi atualizado e executado para:
+    - Adicionar `UNIQUE (ean, "url")` à tabela `product_images`.
+    - Adicionar colunas `created_at` e `updated_at` à tabela `product_attributes`.
+    - Adicionar um trigger para atualizar automaticamente `product_attributes.updated_at`.
+    - Adicionar `UNIQUE (product_ean, "key")` à tabela `product_attributes` (identificado numa segunda passagem do erro para atributos).
+2. A documentação do schema (`docs/database_schema.sql`) foi atualizada para refletir estas adições.
+**Arquivos Afetados:** `process_staged_data.py` (execução), `apply_schema_updates.py` (atualização e execução), `docs/database_schema.sql` (atualização).
+**Estado:** ✅ Resolvido
+
+### ID: GEKO-ETL-ERR-004
+**Timestamp:** 2025-06-15T16:30:00+01:00
+**Tipo:** Erro de Lógica de Script / Base de Dados
+**Descrição:** Ao executar `process_staged_data.py` após a implementação inicial da função `update_category_parent_ids`, foi encontrado um erro `tuple index out of range`. Além disso, muitas categorias que deveriam ter um `parent_id` atribuído permaneciam como root (parent_id NULL) devido a categorias pai intermédias não existirem na tabela `categories`.
+**Causa:**
+1.  **Erro de Tupla:** A query SQL `UPDATE categories SET parent_id = %s WHERE categoryid = %s AND parent_id IS DISTINCT FROM %s;` esperava três argumentos para `execute_batch`, mas a lista `categories_to_update` estava a ser populada com tuplas de apenas dois elementos `(parent_id, current_category_id)`.
+2.  **Pais Ausentes:** A lógica original de `update_category_parent_ids` não criava proativamente entradas na tabela `categories` para segmentos de caminho intermédios que não correspondiam a uma entrada de categoria explícita do XML Geko. Isto impedia que categorias filhas encontrassem os seus pais diretos no mapa `path_to_id_map`.
+**Solução:**
+1.  **Correção da Tupla:** A linha `categories_to_update.append((parent_id, current_category_id))` foi corrigida para `categories_to_update.append((parent_id, current_category_id, parent_id))` para fornecer o terceiro argumento necessário para a cláusula `AND parent_id IS DISTINCT FROM %s`.
+2.  **Lógica de Criação de Pais e Iteração:** A função `populate_categories_and_links` foi significativamente refatorada para identificar todos os segmentos de caminho e garantir que uma entrada de categoria seja criada para cada um (seja a partir do XML original ou gerada para caminhos intermédios). A função `update_category_parent_ids` foi também refatorada para operar em múltiplas passagens, permitindo que as relações pai-filho sejam estabelecidas progressivamente à medida que as categorias pai (incluindo as intermédias recém-criadas) são processadas e adicionadas ao mapa `path_to_id_map`.
+**Arquivos Afetados:** `process_staged_data.py` (funções `populate_categories_and_links` e `update_category_parent_ids`).
+**Estado:** ✅ Resolvido (Confirmado após a execução bem-sucedida do script em 2025-06-15 ~16:30:00+01:00, onde 240 categorias tiveram o `parent_id` atualizado).
+
+---
