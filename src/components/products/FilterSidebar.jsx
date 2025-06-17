@@ -261,12 +261,6 @@ const FilterSidebar = ({
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [brandSearch, setBrandSearch] = useState('');
-  const [quickFilters, setQuickFilters] = useState({
-    inStock: false,
-    onSale: false,
-    newProducts: false,
-    featured: false
-  });
 
   // Logging helper
   const logFilterEvent = useCallback((event, details) => {
@@ -310,8 +304,9 @@ const FilterSidebar = ({
     return count;
   }, [filters]);
 
-  // Quick Filters handlers
+  // Quick Filters handlers - CORRIGIDO para usar callbacks
   const handleQuickFilter = (filterType) => {
+    logFilterEvent('quick_filter_change', { filterType });
     switch (filterType) {
       case 'stock':
         onStockChange();
@@ -328,7 +323,6 @@ const FilterSidebar = ({
       default:
         return;
     }
-    logFilterEvent('quick_filter_change', { filterType });
   };
 
   // Format currency
@@ -546,14 +540,8 @@ const FilterSidebar = ({
           <button
             onClick={() => {
               onClearFilters();
-                setQuickFilters({
-                  inStock: false,
-                  onSale: false,
-                  newProducts: false,
-                  featured: false
-                });
-                setBrandSearch('');
-                logFilterEvent('clear_all_filters', {});
+              setBrandSearch('');
+              logFilterEvent('clear_all_filters', {});
             }}
               className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-4 rounded-xl transition-all duration-200 flex items-center justify-center"
             >

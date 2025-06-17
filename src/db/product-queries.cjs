@@ -32,17 +32,21 @@ function buildWhereClause(filters, forCount = false) {
     }
   }
 
-  // Filtro por categorias (múltiplas) - Lógica corrigida e simplificada
+  // Filtro por categorias (múltiplas) - Lógica definitiva com CTE Recursiva
   if (filters.categoryId && typeof filters.categoryId === 'string' && filters.categoryId.trim() !== '') {
     const categoryList = filters.categoryId.split(',').map(c => c.trim()).filter(Boolean);
     if (categoryList.length > 0) {
+      
       const categoryConditions = categoryList.map(() => {
         const subquery = `
-          SELECT c.categoryid 
-          FROM categories c 
-          WHERE c.path LIKE (
-            SELECT path FROM categories WHERE categoryid = $${paramIndex++}
-          ) || '%'
+          WITH RECURSIVE category_tree AS (
+            -- Categoria(s) inicial(is)
+            SELECT categoryid FROM categories WHERE categoryid = $${paramIndex++}
+            UNION ALL
+            -- Subcategorias recursivamente
+            SELECT c.categoryid FROM categories c JOIN category_tree ct ON c.parent_id = ct.categoryid
+          )
+          SELECT categoryid FROM category_tree
         `;
         return `pc.category_id IN (${subquery})`;
       });

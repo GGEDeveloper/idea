@@ -93,32 +93,32 @@ const ProductsPage = () => {
   };
 
   const handleStockChange = () => {
-    setFilters({
-      ...filters,
-      hasStock: !filters.hasStock
-    });
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      hasStock: !prevFilters.hasStock
+    }));
   };
 
   // Handlers para os outros quick filters
   const handleOnSaleChange = () => {
-    setFilters({
-      ...filters,
-      onSale: !filters.onSale
-    });
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      onSale: !prevFilters.onSale
+    }));
   };
   
   const handleIsNewChange = () => {
-    setFilters({
-      ...filters,
-      isNew: !filters.isNew
-    });
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      isNew: !prevFilters.isNew
+    }));
   };
   
   const handleFeaturedChange = () => {
-    setFilters({
-      ...filters,
-      featured: !filters.featured
-    });
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      featured: !prevFilters.featured
+    }));
   };
 
   const handleAttributeChange = (attrName, value) => {
