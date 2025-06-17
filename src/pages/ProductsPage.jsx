@@ -95,7 +95,29 @@ const ProductsPage = () => {
   const handleStockChange = () => {
     setFilters({
       ...filters,
-      stock: !filters.stock
+      hasStock: !filters.hasStock
+    });
+  };
+
+  // Handlers para os outros quick filters
+  const handleOnSaleChange = () => {
+    setFilters({
+      ...filters,
+      onSale: !filters.onSale
+    });
+  };
+  
+  const handleIsNewChange = () => {
+    setFilters({
+      ...filters,
+      isNew: !filters.isNew
+    });
+  };
+  
+  const handleFeaturedChange = () => {
+    setFilters({
+      ...filters,
+      featured: !filters.featured
     });
   };
 
@@ -270,11 +292,14 @@ const ProductsPage = () => {
             onClose={() => setIsSidebarOpen(false)}
             filters={filters}
             filterOptions={filterOptions}
-              setFilters={setFilters}
+            setFilters={setFilters}
             onBrandChange={handleBrandChange}
             onPriceChange={handlePriceChange}
             onCategoryChange={handleCategoryChange}
             onStockChange={handleStockChange}
+            onOnSaleChange={handleOnSaleChange}
+            onIsNewChange={handleIsNewChange}
+            onFeaturedChange={handleFeaturedChange}
             onAttributeChange={handleAttributeChange}
             onClearFilters={handleClearFilters}
           />

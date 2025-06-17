@@ -247,11 +247,13 @@ const FilterSidebar = ({
   onClose, 
   filters, 
   filterOptions, 
-  setFilters,
   onBrandChange, 
   onPriceChange,
   onCategoryChange,
   onStockChange,
+  onOnSaleChange,
+  onIsNewChange,
+  onFeaturedChange,
   onAttributeChange,
   onClearFilters 
 }) => {
@@ -310,39 +312,23 @@ const FilterSidebar = ({
 
   // Quick Filters handlers
   const handleQuickFilter = (filterType) => {
-    console.log('[FilterSidebar] handleQuickFilter called with:', filterType);
-    console.log('[FilterSidebar] Current filters:', filters);
-    
-    const newFilters = { ...filters };
-    
     switch (filterType) {
       case 'stock':
-        newFilters.hasStock = !filters.hasStock;
-        console.log('[FilterSidebar] Setting hasStock to:', newFilters.hasStock);
+        onStockChange();
         break;
       case 'sale':
-        newFilters.onSale = !filters.onSale;
-        console.log('[FilterSidebar] Setting onSale to:', newFilters.onSale);
+        onOnSaleChange();
         break;
       case 'new':
-        newFilters.isNew = !filters.isNew;
-        console.log('[FilterSidebar] Setting isNew to:', newFilters.isNew);
+        onIsNewChange();
         break;
       case 'featured':
-        newFilters.featured = !filters.featured;
-        console.log('[FilterSidebar] Setting featured to:', newFilters.featured);
+        onFeaturedChange();
         break;
       default:
-        console.log('[FilterSidebar] Unknown filter type:', filterType);
         return;
     }
-    
-    console.log('[FilterSidebar] Calling setFilters with:', newFilters);
-    if (typeof setFilters === 'function') {
-      setFilters(newFilters);
-    } else {
-      console.error('[FilterSidebar] setFilters is not a function:', setFilters);
-    }
+    logFilterEvent('quick_filter_change', { filterType });
   };
 
   // Format currency
