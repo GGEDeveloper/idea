@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
-import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { 
+  FunnelIcon, 
+  XMarkIcon, 
+  MagnifyingGlassIcon,
+  AdjustmentsHorizontalIcon,
+  EyeIcon,
+  EyeSlashIcon
+} from '@heroicons/react/24/outline';
 import FilterSidebar from '../components/products/FilterSidebar';
+import ActiveFiltersBar from '../components/products/ActiveFiltersBar';
+import SortingControls from '../components/products/SortingControls';
 import ProductCard from '../components/products/ProductCard';
 import ProductGrid from '../components/products/ProductGrid';
 import Pagination from '../components/common/Pagination';
@@ -11,9 +20,11 @@ import '../i18n';
 import { useTranslation } from 'react-i18next';
 
 const ProductsPage = () => {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get('search') || '';
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [viewMode, setViewMode] = useState('grid');
+  const [isFiltersVisible, setIsFiltersVisible] = useState(true);
   
   const {
     products,
@@ -48,7 +59,7 @@ const ProductsPage = () => {
     });
   }, [isAuthenticated, user]);
 
-  // Handlers simplificados
+  // Handlers para filtros
   const handleBrandChange = (brand) => {
     setFilters({
       ...filters,
@@ -72,12 +83,12 @@ const ProductsPage = () => {
   const handleCategoryChange = (category) => {
     const categoryId = typeof category === 'object' ? category.id : category;
     const categories = Array.isArray(filters.categories) ? filters.categories : [];
-      const exists = categories.includes(categoryId);
+    const exists = categories.includes(categoryId);
     setFilters({
       ...filters,
-        categories: exists
-          ? categories.filter(c => c !== categoryId)
-          : [...categories, categoryId]
+      categories: exists
+        ? categories.filter(c => c !== categoryId)
+        : [...categories, categoryId]
     });
   };
 
@@ -90,16 +101,16 @@ const ProductsPage = () => {
 
   const handleAttributeChange = (attrName, value) => {
     const attributes = filters.attributes ? { ...filters.attributes } : {};
-      const values = attributes[attrName] || [];
-      const exists = values.includes(value);
+    const values = attributes[attrName] || [];
+    const exists = values.includes(value);
     setFilters({
       ...filters,
-        attributes: {
-          ...attributes,
-          [attrName]: exists
-            ? values.filter(v => v !== value)
-            : [...values, value]
-        }
+      attributes: {
+        ...attributes,
+        [attrName]: exists
+          ? values.filter(v => v !== value)
+          : [...values, value]
+      }
     });
   };
 
@@ -117,135 +128,222 @@ const ProductsPage = () => {
     });
   };
 
+  // Novo handler para remover filtro específico
+  const handleRemoveFilter = (type, value) => {
+    switch (type) {
+      case 'brand':
+        handleBrandChange(value);
+        break;
+      case 'category':
+        handleCategoryChange(value);
+        break;
+      case 'price':
+        setFilters({
+          ...filters,
+          price: { min: 0, max: 10000 }
+        });
+        break;
+      case 'stock':
+        handleStockChange();
+        break;
+      case 'featured':
+        setFilters({
+          ...filters,
+          featured: false
+        });
+        break;
+      default:
+        break;
+    }
+  };
+
   const clearSearch = () => {
-    window.location.href = '/produtos';
+    setSearchParams({});
+    setSearchQuery('');
   };
 
-  const handleSortChange = (e) => {
-    const [sortBy, order] = e.target.value.split('-');
-    setSorting({ sortBy, order });
+  const handleSortChange = (newSorting) => {
+    setSorting(newSorting);
   };
 
-  // Renderização condicional
+  // Renderização condicional para erro
   if (error) {
     return (
-      <div className="container mx-auto px-4 py-8 text-center">
-        <h2 className="text-2xl font-bold text-red-600 mb-4">Erro ao carregar produtos</h2>
-        <p className="text-text-muted">{error}</p>
-        <button
-          onClick={() => window.location.reload()}
-          className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark"
-        >
-          Tentar novamente
-        </button>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <XMarkIcon className="w-8 h-8 text-red-600" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Erro ao carregar produtos</h2>
+          <p className="text-gray-600 mb-6">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium py-3 px-6 rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-200"
+          >
+            Tentar novamente
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-bg-base min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Cabeçalho */}
-        <header className="mb-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-text-base tracking-tight">
-            {searchQuery ? t('Resultados para: "{{query}}"', { query: searchQuery }) : t('Nossos Produtos')}
-          </h1>
-          <div className="mt-3 flex justify-center items-center flex-wrap">
-            {searchQuery && (
-              <button
-                onClick={clearSearch}
-                className="flex items-center text-sm text-primary hover:text-secondary mr-4 mb-2"
-              >
-                <XMarkIcon className="h-4 w-4 mr-1" />
-                {t('Limpar busca')}
-              </button>
-            )}
-            <p className="text-lg text-text-muted max-w-2xl">
-              {searchQuery
-                ? t('{{count}} resultado(s) encontrado(s)', { count: pagination.totalProducts })
-                : t('Encontre a ferramenta perfeita para o seu projeto, com a ajuda dos nossos filtros especializados.')}
-            </p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Cabeçalho Premium */}
+        <header className="text-center mb-12">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
+              {searchQuery ? (
+                <>
+                  Resultados para{' '}
+                  <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    "{searchQuery}"
+                  </span>
+                </>
+              ) : (
+                <>
+                  Nossos{' '}
+                  <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    Produtos
+                  </span>
+                </>
+              )}
+            </h1>
+            
+            <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
+              {searchQuery && (
+                <button
+                  onClick={clearSearch}
+                  className="inline-flex items-center px-4 py-2 bg-red-50 text-red-700 rounded-xl border border-red-200 hover:bg-red-100 transition-all duration-200"
+                >
+                  <XMarkIcon className="w-4 h-4 mr-2" />
+                  Limpar busca
+                </button>
+              )}
+              
+              <span className="text-lg text-gray-600">
+                {searchQuery
+                  ? `${pagination.totalProducts} resultado(s) encontrado(s)`
+                  : 'Encontre a ferramenta perfeita para o seu projeto'}
+              </span>
+            </div>
           </div>
         </header>
 
-        {/* Conteúdo Principal */}
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* Filtros Mobile */}
-          <button
-            onClick={() => setIsSidebarOpen(true)}
-            className="md:hidden flex items-center justify-center gap-2 bg-white border border-border-base rounded-lg px-4 py-2 text-text-base hover:bg-gray-50"
-          >
-            <FunnelIcon className="h-5 w-5" />
-            <span>Filtros</span>
-          </button>
-
+        {/* Controles da Interface */}
+        <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar de Filtros */}
-          <FilterSidebar
-            isOpen={isSidebarOpen}
-            onClose={() => setIsSidebarOpen(false)}
-            filters={filters}
-            filterOptions={filterOptions}
-            onBrandChange={handleBrandChange}
-            onPriceChange={handlePriceChange}
-            onCategoryChange={handleCategoryChange}
-            onStockChange={handleStockChange}
-            onAttributeChange={handleAttributeChange}
-            onClearFilters={handleClearFilters}
-          />
+          <div className={`lg:w-96 ${isFiltersVisible ? 'block' : 'hidden lg:block'}`}>
+            {/* Botão Mobile para Filtros */}
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-2xl px-6 py-4 text-gray-700 hover:bg-gray-50 mb-6 shadow-sm"
+            >
+              <FunnelIcon className="w-5 h-5" />
+              <span className="font-medium">Abrir Filtros</span>
+            </button>
 
-          {/* Lista de Produtos */}
+            <FilterSidebar
+              isOpen={isSidebarOpen}
+              onClose={() => setIsSidebarOpen(false)}
+              filters={filters}
+              filterOptions={filterOptions}
+              onBrandChange={handleBrandChange}
+              onPriceChange={handlePriceChange}
+              onCategoryChange={handleCategoryChange}
+              onStockChange={handleStockChange}
+              onAttributeChange={handleAttributeChange}
+              onClearFilters={handleClearFilters}
+            />
+          </div>
+
+          {/* Conteúdo Principal */}
           <main className="flex-1 min-w-0">
-            {/* Controles de Ordenação */}
-            <div className="flex justify-end mb-4">
-              <div className="flex items-center">
-                <label htmlFor="sort-by" className="mr-2 text-sm font-medium text-text-muted">
-                  {t('Ordenar por:')}
-                </label>
-                <select
-                  id="sort-by"
-                  name="sort-by"
-                  className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
-                  value={`${sorting.sortBy}-${sorting.order}`}
-                  onChange={handleSortChange}
-                >
-                  <option value="relevance-asc">{t('Relevância')}</option>
-                  <option value="name-asc">{t('Nome (A-Z)')}</option>
-                  <option value="name-desc">{t('Nome (Z-A)')}</option>
-                  {hasPermission('view_price') && (
-                    <>
-                      <option value="price-asc">{t('Preço (Menor para Maior)')}</option>
-                      <option value="price-desc">{t('Preço (Maior para Menor)')}</option>
-                    </>
-                  )}
-                </select>
-              </div>
+            {/* Controle de Visibilidade dos Filtros (Desktop) */}
+            <div className="hidden lg:flex justify-between items-center mb-6">
+              <button
+                onClick={() => setIsFiltersVisible(!isFiltersVisible)}
+                className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                {isFiltersVisible ? (
+                  <>
+                    <EyeSlashIcon className="w-5 h-5" />
+                    <span>Ocultar Filtros</span>
+                  </>
+                ) : (
+                  <>
+                    <EyeIcon className="w-5 h-5" />
+                    <span>Mostrar Filtros</span>
+                  </>
+                )}
+              </button>
             </div>
+
+            {/* Barra de Filtros Ativos */}
+            <ActiveFiltersBar
+              filters={filters}
+              filterOptions={filterOptions}
+              onRemoveFilter={handleRemoveFilter}
+              onClearAll={handleClearFilters}
+              totalProducts={pagination.totalProducts}
+            />
+
+            {/* Controles de Ordenação */}
+            <SortingControls
+              sorting={sorting}
+              onSortChange={handleSortChange}
+              hasPermission={hasPermission}
+              viewMode={viewMode}
+              onViewModeChange={setViewMode}
+              totalProducts={pagination.totalProducts}
+              currentPage={pagination.currentPage}
+              limit={pagination.limit}
+            />
+
+            {/* Grid de Produtos */}
             {loading ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {[...Array(8)].map((_, i) => (
-                  <div key={i} className="bg-white rounded-lg shadow-sm p-4 animate-pulse">
-                    <div className="bg-gray-200 h-48 rounded-md mb-4"></div>
+                  <div key={i} className="bg-white rounded-2xl shadow-sm p-6 animate-pulse">
+                    <div className="bg-gray-200 h-48 rounded-xl mb-4"></div>
                     <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
                     <div className="h-4 bg-gray-200 rounded w-1/2 mb-4"></div>
-                    <div className="h-10 bg-gray-200 rounded"></div>
+                    <div className="h-10 bg-gray-200 rounded-xl"></div>
                   </div>
                 ))}
               </div>
             ) : products.length === 0 ? (
-              <div className="text-center py-12">
-                <h3 className="text-lg font-medium text-text-base mb-2">{t('Nenhum produto encontrado')}</h3>
-                <p className="text-text-muted mb-4">{t('Tente ajustar seus filtros ou busca')}</p>
-                <button
-                  onClick={handleClearFilters}
-                  className="text-primary hover:text-primary-dark font-medium"
-                >
-                  {t('Limpar todos os filtros')}
-                </button>
+              <div className="text-center py-16">
+                <div className="max-w-md mx-auto">
+                  <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <MagnifyingGlassIcon className="w-12 h-12 text-gray-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Nenhum produto encontrado
+                  </h3>
+                  <p className="text-gray-600 mb-8">
+                    Tente ajustar seus filtros ou realizar uma nova busca
+                  </p>
+                  <button
+                    onClick={handleClearFilters}
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-200"
+                  >
+                    <AdjustmentsHorizontalIcon className="w-5 h-5 mr-2" />
+                    Limpar todos os filtros
+                  </button>
+                </div>
               </div>
             ) : (
               <>
-                <ProductGrid products={products} />
-                <div className="mt-10">
+                <ProductGrid 
+                  products={products}
+                  isAuthenticated={isAuthenticated}
+                  hasPermission={hasPermission}
+                />
+                
+                {/* Paginação */}
+                <div className="mt-12">
                   <Pagination
                     pagination={pagination}
                     onPageChange={handlePageChange}
