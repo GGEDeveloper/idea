@@ -5,7 +5,9 @@ import {
   CurrencyEuroIcon, 
   CubeIcon,
   AdjustmentsHorizontalIcon,
-  SparklesIcon
+  SparklesIcon,
+  FireIcon,
+  ClockIcon
 } from '@heroicons/react/24/outline';
 
 const ActiveFiltersBar = ({ 
@@ -32,16 +34,30 @@ const ActiveFiltersBar = ({
     });
   }
 
-  // Adicionar filtros de categoria
+  // Adicionar filtros de categoria - Corrigido para mostrar nomes das categorias
   if (filters.categories && filters.categories.length > 0) {
+    // Função helper para encontrar categoria por ID recursivamente
+    const findCategoryById = (categories, targetId) => {
+      for (const category of categories) {
+        if (category.id === targetId) {
+          return category;
+        }
+        if (category.children && category.children.length > 0) {
+          const found = findCategoryById(category.children, targetId);
+          if (found) return found;
+        }
+      }
+      return null;
+    };
+
     filters.categories.forEach(categoryId => {
-      const category = filterOptions.categories?.find(cat => cat.id === categoryId);
+      const category = findCategoryById(filterOptions.categories || [], categoryId);
       if (category) {
         activeFilters.push({
           type: 'category',
           label: category.name,
           value: categoryId,
-          icon: TagIcon,
+          icon: AdjustmentsHorizontalIcon,
           color: 'green'
         });
       }
@@ -49,100 +65,116 @@ const ActiveFiltersBar = ({
   }
 
   // Adicionar filtro de preço
-  if (filters.price && (filters.price.min > 0 || filters.price.max < 10000)) {
+  if (filters.price && (filters.price.min > filterOptions.price?.min || filters.price.max < filterOptions.price?.max)) {
+    const minPrice = filters.price.min || filterOptions.price?.min || 0;
+    const maxPrice = filters.price.max || filterOptions.price?.max || 10000;
+    
     activeFilters.push({
       type: 'price',
-      label: `€${filters.price.min || 0} - €${filters.price.max || 10000}`,
+      label: `€${minPrice} - €${maxPrice}`,
       value: 'price',
       icon: CurrencyEuroIcon,
       color: 'purple'
     });
   }
 
-  // Adicionar filtro de stock
-  if (filters.stock) {
+  // Adicionar filtros rápidos
+  if (filters.hasStock) {
     activeFilters.push({
-      type: 'stock',
+      type: 'hasStock',
       label: 'Em Stock',
-      value: 'stock',
+      value: 'hasStock',
       icon: CubeIcon,
-      color: 'emerald'
+      color: 'green'
     });
   }
 
-  // Adicionar filtro de produtos em destaque
+  if (filters.onSale) {
+    activeFilters.push({
+      type: 'onSale',
+      label: 'Promoção',
+      value: 'onSale',
+      icon: FireIcon,
+      color: 'red'
+    });
+  }
+
+  if (filters.isNew) {
+    activeFilters.push({
+      type: 'isNew',
+      label: 'Novidades',
+      value: 'isNew',
+      icon: ClockIcon,
+      color: 'blue'
+    });
+  }
+
   if (filters.featured) {
     activeFilters.push({
       type: 'featured',
-      label: 'Em Destaque',
+      label: 'Destaque',
       value: 'featured',
       icon: SparklesIcon,
       color: 'yellow'
     });
   }
 
-  if (activeFilters.length === 0) return null;
+  if (activeFilters.length === 0) {
+    return null;
+  }
 
   const getColorClasses = (color) => {
     const colorMap = {
       blue: 'bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100',
       green: 'bg-green-50 text-green-700 border-green-200 hover:bg-green-100',
       purple: 'bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100',
-      emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100',
+      red: 'bg-red-50 text-red-700 border-red-200 hover:bg-red-100',
       yellow: 'bg-yellow-50 text-yellow-700 border-yellow-200 hover:bg-yellow-100'
     };
     return colorMap[color] || colorMap.blue;
   };
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6 mb-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center">
-          <AdjustmentsHorizontalIcon className="w-5 h-5 text-gray-500 mr-2" />
-          <h3 className="text-lg font-semibold text-gray-900">
-            Filtros Ativos
-          </h3>
-          <span className="ml-2 bg-indigo-100 text-indigo-800 text-sm font-medium px-2 py-1 rounded-full">
-            {activeFilters.length}
+    <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-6 shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm font-medium text-gray-700 mr-2">
+            Filtros ativos:
           </span>
+          
+          {activeFilters.map((filter, index) => {
+            const Icon = filter.icon;
+            return (
+              <div
+                key={`${filter.type}-${filter.value}-${index}`}
+                className={`inline-flex items-center px-3 py-1.5 rounded-lg border text-sm font-medium transition-all duration-200 ${getColorClasses(filter.color)}`}
+              >
+                <Icon className="w-4 h-4 mr-1.5" />
+                <span>{filter.label}</span>
+                <button
+                  onClick={() => onRemoveFilter(filter.type, filter.value)}
+                  className="ml-2 p-0.5 rounded-full hover:bg-black hover:bg-opacity-10 transition-colors"
+                  aria-label={`Remover filtro ${filter.label}`}
+                >
+                  <XMarkIcon className="w-3 h-3" />
+                </button>
+              </div>
+            );
+          })}
         </div>
-        
-        <div className="flex items-center space-x-4">
-          {totalProducts !== undefined && (
-            <span className="text-sm text-gray-500">
-              {totalProducts} {totalProducts === 1 ? 'produto encontrado' : 'produtos encontrados'}
-            </span>
-          )}
+
+        <div className="flex items-center gap-4">
+          <span className="text-sm text-gray-600">
+            {totalProducts} produto{totalProducts !== 1 ? 's' : ''} encontrado{totalProducts !== 1 ? 's' : ''}
+          </span>
           
           <button
             onClick={onClearAll}
-            className="text-sm text-red-600 hover:text-red-800 font-medium transition-colors"
+            className="text-sm text-red-600 hover:text-red-700 font-medium transition-colors"
           >
-            Limpar Todos
+            Limpar todos
           </button>
         </div>
-      </div>
-      
-      <div className="flex flex-wrap gap-2">
-        {activeFilters.map((filter, index) => {
-          const Icon = filter.icon;
-          return (
-            <div
-              key={`${filter.type}-${filter.value}-${index}`}
-              className={`inline-flex items-center px-3 py-2 rounded-xl border text-sm font-medium transition-all duration-200 ${getColorClasses(filter.color)}`}
-            >
-              <Icon className="w-4 h-4 mr-2" />
-              <span>{filter.label}</span>
-              <button
-                onClick={() => onRemoveFilter(filter.type, filter.value)}
-                className="ml-2 w-4 h-4 text-current hover:text-red-600 transition-colors"
-                aria-label={`Remover filtro ${filter.label}`}
-              >
-                <XMarkIcon />
-              </button>
-            </div>
-          );
-        })}
       </div>
     </div>
   );

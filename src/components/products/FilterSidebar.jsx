@@ -290,27 +290,28 @@ const FilterSidebar = ({
     return count;
   }, [filters]);
 
-  // Handle quick filters
+  // Quick Filters handlers
   const handleQuickFilter = (filterType) => {
-    const newState = !quickFilters[filterType];
-    setQuickFilters(prev => ({ ...prev, [filterType]: newState }));
+    const newFilters = { ...filters };
     
     switch (filterType) {
-      case 'inStock':
-        onStockChange();
+      case 'stock':
+        newFilters.hasStock = !filters.hasStock;
         break;
-      case 'onSale':
-        // Implementar filtro de promoções
+      case 'sale':
+        newFilters.onSale = !filters.onSale;
         break;
-      case 'newProducts':
-        // Implementar filtro de produtos novos
+      case 'new':
+        newFilters.isNew = !filters.isNew;
         break;
       case 'featured':
-        // Implementar filtro de produtos em destaque
+        newFilters.featured = !filters.featured;
         break;
+      default:
+        return;
     }
     
-    logFilterEvent('quick_filter_change', { filterType, newState });
+    setFilters(newFilters);
   };
 
   // Format currency
@@ -360,62 +361,52 @@ const FilterSidebar = ({
 
         <div className="p-6 space-y-6">
           {/* Filtros Rápidos */}
-          <PremiumFilterSection 
-            title="Filtros Rápidos" 
-            icon={SparklesIcon}
-            description="Acesso rápido aos filtros mais usados"
-            collapsible={false}
-          >
-            <div className="grid grid-cols-2 gap-3">
-              <button
-                onClick={() => handleQuickFilter('inStock')}
-                className={`p-3 rounded-xl border-2 transition-all duration-200 ${
-                  quickFilters.inStock
-                    ? 'border-green-500 bg-green-50 text-green-700'
-                    : 'border-gray-200 hover:border-green-300 text-gray-600'
-                }`}
-              >
-                <CubeIcon className="w-5 h-5 mx-auto mb-1" />
-                <span className="text-xs font-medium">Em Stock</span>
-              </button>
-              
-              <button
-                onClick={() => handleQuickFilter('onSale')}
-                className={`p-3 rounded-xl border-2 transition-all duration-200 ${
-                  quickFilters.onSale
-                    ? 'border-red-500 bg-red-50 text-red-700'
-                    : 'border-gray-200 hover:border-red-300 text-gray-600'
-                }`}
-              >
-                <FireIcon className="w-5 h-5 mx-auto mb-1" />
-                <span className="text-xs font-medium">Promoção</span>
-              </button>
-              
-              <button
-                onClick={() => handleQuickFilter('newProducts')}
-                className={`p-3 rounded-xl border-2 transition-all duration-200 ${
-                  quickFilters.newProducts
-                    ? 'border-blue-500 bg-blue-50 text-blue-700'
-                    : 'border-gray-200 hover:border-blue-300 text-gray-600'
-                }`}
-              >
-                <ClockIcon className="w-5 h-5 mx-auto mb-1" />
-                <span className="text-xs font-medium">Novidades</span>
-              </button>
-              
-              <button
-                onClick={() => handleQuickFilter('featured')}
-                className={`p-3 rounded-xl border-2 transition-all duration-200 ${
-                  quickFilters.featured
-                    ? 'border-yellow-500 bg-yellow-50 text-yellow-700'
-                    : 'border-gray-200 hover:border-yellow-300 text-gray-600'
-                }`}
-              >
-                <SparklesIcon className="w-5 h-5 mx-auto mb-1" />
-                <span className="text-xs font-medium">Destaque</span>
-              </button>
+          <div className="mb-8">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold text-gray-900 flex items-center">
+                <AdjustmentsHorizontalIcon className="w-5 h-5 mr-2 text-indigo-600" />
+                Filtros Rápidos
+              </h3>
             </div>
-          </PremiumFilterSection>
+            
+            <div className="grid grid-cols-2 gap-3">
+              <QuickFilterButton
+                id="stock-filter"
+                label="Em Stock"
+                active={filters.hasStock}
+                onClick={() => handleQuickFilter('stock')}
+                icon={CubeIcon}
+                ariaLabel="Filtrar produtos em stock"
+              />
+              
+              <QuickFilterButton
+                id="sale-filter"
+                label="Promoção"
+                active={filters.onSale}
+                onClick={() => handleQuickFilter('sale')}
+                icon={FireIcon}
+                ariaLabel="Filtrar produtos em promoção"
+              />
+              
+              <QuickFilterButton
+                id="new-filter"
+                label="Novidades"
+                active={filters.isNew}
+                onClick={() => handleQuickFilter('new')}
+                icon={ClockIcon}
+                ariaLabel="Filtrar produtos novos"
+              />
+              
+              <QuickFilterButton
+                id="featured-filter"
+                label="Destaque"
+                active={filters.featured}
+                onClick={() => handleQuickFilter('featured')}
+                icon={SparklesIcon}
+                ariaLabel="Filtrar produtos em destaque"
+              />
+            </div>
+          </div>
 
           {/* Categorias */}
           <PremiumFilterSection 

@@ -28,6 +28,11 @@ export function useProducts(options = {}) {
   const [priceMaxFilter, setPriceMaxFilter] = useState(initialFilters.priceMax?.toString() || '');
   const [isFeaturedQuery, setIsFeaturedQuery] = useState(initialIsFeatured); // For API query
   
+  // Quick filters
+  const [hasStockFilter, setHasStockFilter] = useState(false);
+  const [onSaleFilter, setOnSaleFilter] = useState(false);
+  const [isNewFilter, setIsNewFilter] = useState(false);
+  
   // Estados de ordenação como strings simples
   const [sortBy, setSortBy] = useState(initialSortBy);
   const [sortOrder, setSortOrder] = useState(initialSortOrder);
@@ -108,6 +113,11 @@ export function useProducts(options = {}) {
       if (categoriesFilter) params.append('categories', categoriesFilter);
       if (isFeaturedQuery) params.append('featured', 'true'); // Send if true
       
+      // Quick filters
+      if (hasStockFilter) params.append('hasStock', 'true');
+      if (onSaleFilter) params.append('onSale', 'true');
+      if (isNewFilter) params.append('isNew', 'true');
+      
       // Use the canViewPrices state for the condition
       if (canViewPrices) {
         if (priceMinFilter) params.append('priceMin', priceMinFilter);
@@ -151,6 +161,9 @@ export function useProducts(options = {}) {
     currentPage,
     limit,
     isFeaturedQuery,
+    hasStockFilter,
+    onSaleFilter,
+    isNewFilter,
     canViewPrices
   ]); // Apenas dependências primitivas
 
@@ -161,12 +174,15 @@ export function useProducts(options = {}) {
       acc[brand.trim()] = true;
       return acc;
     }, {}) : {},
-    categories: categoriesFilter ? categoriesFilter.split(',').map(id => parseInt(id.trim())).filter(id => !isNaN(id)) : [],
+    categories: categoriesFilter ? categoriesFilter.split(',').filter(id => id.trim() !== '') : [],
     price: { 
       min: priceMinFilter ? parseInt(priceMinFilter) : filterOptions.price.min,
       max: priceMaxFilter ? parseInt(priceMaxFilter) : filterOptions.price.max
     },
-    featured: isFeaturedQuery
+    featured: isFeaturedQuery,
+    hasStock: hasStockFilter,
+    onSale: onSaleFilter,
+    isNew: isNewFilter
   };
 
   const sorting = { sortBy, order: sortOrder };
@@ -193,7 +209,7 @@ export function useProducts(options = {}) {
     
     if (newFilters.categories !== undefined) {
       setCategoriesFilter(Array.isArray(newFilters.categories) ? newFilters.categories.join(',') : newFilters.categories || '');
-      }
+    }
       
     if (newFilters.price) {
       setPriceMinFilter(newFilters.price.min?.toString() || '');
@@ -202,6 +218,19 @@ export function useProducts(options = {}) {
     
     if (newFilters.featured !== undefined) {
       setIsFeaturedQuery(!!newFilters.featured);
+    }
+    
+    // Quick filters
+    if (newFilters.hasStock !== undefined) {
+      setHasStockFilter(!!newFilters.hasStock);
+    }
+    
+    if (newFilters.onSale !== undefined) {
+      setOnSaleFilter(!!newFilters.onSale);
+    }
+    
+    if (newFilters.isNew !== undefined) {
+      setIsNewFilter(!!newFilters.isNew);
     }
     
     // Reset para primeira página quando filtros mudam

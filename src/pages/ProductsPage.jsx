@@ -118,11 +118,14 @@ const ProductsPage = () => {
     setFilters({
       brands: {},
       price: {
-        min: 0,
-        max: 1000
+        min: filterOptions.price?.min || 0,
+        max: filterOptions.price?.max || 10000
       },
       categories: [],
-      stock: false,
+      hasStock: false,
+      onSale: false,
+      isNew: false,
+      featured: false,
       attributes: {},
       searchQuery: ''
     });
@@ -140,11 +143,29 @@ const ProductsPage = () => {
       case 'price':
         setFilters({
           ...filters,
-          price: { min: 0, max: 10000 }
+          price: { 
+            min: filterOptions.price?.min || 0, 
+            max: filterOptions.price?.max || 10000 
+          }
         });
         break;
-      case 'stock':
-        handleStockChange();
+      case 'hasStock':
+        setFilters({
+          ...filters,
+          hasStock: false
+        });
+        break;
+      case 'onSale':
+        setFilters({
+          ...filters,
+          onSale: false
+        });
+        break;
+      case 'isNew':
+        setFilters({
+          ...filters,
+          isNew: false
+        });
         break;
       case 'featured':
         setFilters({

@@ -23,24 +23,78 @@ function buildWhereClause(filters, forCount = false) {
   let paramIndex = 1;
   const productAlias = forCount ? 'p_count' : 'p';
 
-  if (filters.brands) {
-    const brandList = filters.brands.split(',');
-    const validBrands = brandList.map(b => b.trim()).filter(b => b !== '');
-    if (validBrands.length > 0) {
-      whereClauses.push(`${productAlias}.brand IN (${validBrands.map(() => `$${paramIndex++}`).join(', ')})`);
-      queryParams.push(...validBrands);
+  // Filtro por marcas (múltiplas)
+  if (filters.brands && typeof filters.brands === 'string' && filters.brands.trim() !== '') {
+    const brandList = filters.brands.split(',').map(b => b.trim()).filter(b => b !== '');
+    if (brandList.length > 0) {
+      whereClauses.push(`${productAlias}.brand IN (${brandList.map(() => `$${paramIndex++}`).join(', ')})`);
+      queryParams.push(...brandList);
     }
   }
 
+  // Filtro por categorias (múltiplas) - Corrigido para processar lista de IDs
+  if (filters.categoryId && typeof filters.categoryId === 'string' && filters.categoryId.trim() !== '') {
+    const categoryList = filters.categoryId.split(',').map(c => c.trim()).filter(c => c !== '' && c !== 'null' && c !== 'undefined');
+    if (categoryList.length > 0) {
+      // Para categorias, queremos incluir produtos de categorias filhas também
+      const categoryConditions = categoryList.map(() => {
+        const condition = `(pc.category_id = $${paramIndex++} OR EXISTS (
+          SELECT 1 FROM categories c_parent 
+          WHERE c_parent.categoryid = pc.category_id 
+          AND c_parent.path LIKE CONCAT((SELECT path FROM categories WHERE categoryid = $${paramIndex++}), '%')
+        ))`;
+        return condition;
+      });
+      
+      whereClauses.push(`EXISTS (
+        SELECT 1 FROM product_categories pc 
+        WHERE pc.product_ean = ${productAlias}.ean 
+        AND (${categoryConditions.join(' OR ')})
+      )`);
+      
+      // Adicionar os parâmetros (cada categoria aparece 2 vezes na query)
+      categoryList.forEach(catId => {
+        queryParams.push(catId, catId);
+      });
+    }
+  }
+
+  // Filtro por destaque
   if (filters.is_featured !== undefined && filters.is_featured !== null && String(filters.is_featured).trim() !== '') {
     const isFeaturedValue = String(filters.is_featured).toLowerCase() === 'true';
     whereClauses.push(`${productAlias}.is_featured = $${paramIndex++}`);
     queryParams.push(isFeaturedValue);
   }
 
+  // Filtros rápidos adicionais
+  // Filtro por stock disponível
+  if (filters.hasStock === true || String(filters.hasStock).toLowerCase() === 'true') {
+    whereClauses.push(`EXISTS (
+      SELECT 1 FROM product_variants pv_stock 
+      WHERE pv_stock.ean = ${productAlias}.ean 
+      AND pv_stock.stockquantity > 0
+    )`);
+  }
+
+  // Filtro por produtos em promoção
+  if (filters.onSale === true || String(filters.onSale).toLowerCase() === 'true') {
+    whereClauses.push(`EXISTS (
+      SELECT 1 FROM product_variants pv_sale 
+      WHERE pv_sale.ean = ${productAlias}.ean 
+      AND pv_sale.is_on_sale = true
+    )`);
+  }
+
+  // Filtro por produtos novos (últimos 30 dias)
+  if (filters.isNew === true || String(filters.isNew).toLowerCase() === 'true') {
+    whereClauses.push(`${productAlias}.created_at >= NOW() - INTERVAL '30 days'`);
+  }
+
+  // Filtro por preços
   if (filters.priceMin || filters.priceMax) {
     const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
     let priceConditions = [];
+    
     if (filters.priceMin) {
         const priceMinNum = parseFloat(String(filters.priceMin).replace(',', '.'));
         if (!isNaN(priceMinNum)) {
@@ -48,13 +102,15 @@ function buildWhereClause(filters, forCount = false) {
             queryParams.push(priceMinNum);
         }
     }
-  if (filters.priceMax) {
+    
+    if (filters.priceMax) {
         const priceMaxNum = parseFloat(String(filters.priceMax).replace(',', '.'));
         if (!isNaN(priceMaxNum)) {
             priceConditions.push(`pr_filter.price <= $${paramIndex++}`);
             queryParams.push(priceMaxNum);
         }
     }
+    
     if (priceConditions.length > 0) {
       whereClauses.push(`
         EXISTS (
@@ -68,6 +124,7 @@ function buildWhereClause(filters, forCount = false) {
     }
   }
 
+  // Filtro por busca textual
   if (filters.searchQuery && typeof filters.searchQuery === 'string' && String(filters.searchQuery).trim() !== '') {
     const searchTerm = `%${String(filters.searchQuery).trim()}%`;
     const searchConditions = [
@@ -81,14 +138,6 @@ function buildWhereClause(filters, forCount = false) {
     for(let i=0; i<5; i++) queryParams.push(searchTerm);
     paramIndex += 5;
   } 
-  
-  if (filters.categoryId) {
-    const categoryIdTrimmed = String(filters.categoryId).trim();
-    if (categoryIdTrimmed && categoryIdTrimmed !== 'null' && categoryIdTrimmed !== 'undefined') {
-        whereClauses.push(`EXISTS (SELECT 1 FROM product_categories pc WHERE pc.product_ean = ${productAlias}.ean AND pc.category_id = $${paramIndex++})`);
-        queryParams.push(categoryIdTrimmed);
-    }
-  }
 
   // Filtro por status ativo/inativo
   if (filters.active !== undefined && filters.active !== null) {
