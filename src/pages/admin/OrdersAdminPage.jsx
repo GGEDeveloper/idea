@@ -8,7 +8,8 @@ import {
   XCircleIcon,
   ClockIcon,
   TruckIcon,
-  CheckIcon
+  CheckIcon,
+  PlusIcon
 } from '@heroicons/react/24/outline';
 import Pagination from '../../components/common/Pagination';
 
@@ -180,7 +181,16 @@ const OrdersAdminPage = () => {
           <span className="mx-2">›</span>
           <span>Encomendas</span>
         </nav>
-        <h1 className="text-3xl font-bold">Gestão de Encomendas ({totalOrders})</h1>
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-bold">Gestão de Encomendas ({totalOrders})</h1>
+          <Link 
+            to="/admin/orders/create" 
+            className="inline-flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors"
+          >
+            <PlusIcon className="h-5 w-5 mr-2" />
+            Criar Nova Encomenda
+          </Link>
+        </div>
       </div>
 
       {/* Filters and Search */}

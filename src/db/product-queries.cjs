@@ -90,6 +90,12 @@ function buildWhereClause(filters, forCount = false) {
     }
   }
 
+  // Filtro por status ativo/inativo
+  if (filters.active !== undefined && filters.active !== null) {
+    whereClauses.push(`${productAlias}.active = $${paramIndex++}`);
+    queryParams.push(filters.active);
+  }
+
   const whereClause = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : "";
   return { whereClause, queryParams, paramIndex };
 }

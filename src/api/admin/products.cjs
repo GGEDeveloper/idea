@@ -9,7 +9,7 @@ router.use(requireAdmin);
 
 /**
  * Rota para listar todos os produtos (para administradores).
- * Suporta paginação e ordenação.
+ * Suporta paginação, ordenação, pesquisa e filtragem por status ativo.
  */
 router.get('/', async (req, res) => {
   try {
@@ -18,31 +18,28 @@ router.get('/', async (req, res) => {
       limit = 20, 
       sortBy = 'name', 
       order = 'asc',
-      // Adicionar aqui quaisquer outros filtros que queiramos expor para o admin
-      // Por exemplo: status (active/inactive), stock_status (in_stock/out_of_stock)
-      // searchQuery, brand, categoryId etc. já são suportados por getProducts
+      search,
+      active
     } = req.query;
 
-    const filters = {
-      // Passar aqui filtros específicos do admin se necessário
-      // Ex: if (req.query.status === 'inactive') filters.active = false;
-      //     if (req.query.status === 'active') filters.active = true;
-      // Por agora, vamos buscar todos, incluindo ativos e inativos,
-      // pois a função getProducts não filtra por 'active' por defeito.
-      // Se quisermos adicionar um filtro explícito por 'active', podemos adicionar ao buildWhereClause
-      // ou passar um filtro 'active: true/false' se productQueries.getProducts o suportar.
-      // No momento, p.active é selecionado, mas não usado para filtrar por defeito em getProducts.
-      searchQuery: req.query.searchQuery,
-      brands: req.query.brands,
-      categoryId: req.query.categoryId,
-      is_featured: req.query.is_featured,
-      priceMin: req.query.priceMin,
-      priceMax: req.query.priceMax,
-    };
+    const filters = {};
     
-    // Remover chaves de filtros com valores undefined ou vazios para não interferir com buildWhereClause
-    Object.keys(filters).forEach(key => (filters[key] === undefined || filters[key] === '') && delete filters[key]);
-
+    // Filtro de pesquisa por nome, EAN ou marca
+    if (search && search.trim()) {
+      filters.searchQuery = search.trim();
+    }
+    
+    // Filtro por status ativo/inativo
+    if (active !== undefined && active !== '') {
+      filters.active = active === 'true';
+    }
+    
+    // Outros filtros existentes (mantidos para compatibilidade)
+    if (req.query.brands) filters.brands = req.query.brands;
+    if (req.query.categoryId) filters.categoryId = req.query.categoryId;
+    if (req.query.is_featured) filters.is_featured = req.query.is_featured;
+    if (req.query.priceMin) filters.priceMin = req.query.priceMin;
+    if (req.query.priceMax) filters.priceMax = req.query.priceMax;
 
     const paginationOptions = {
       page: parseInt(page, 10),

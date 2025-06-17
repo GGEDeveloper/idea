@@ -17,8 +17,10 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import ProductsAdminPage from './pages/admin/ProductsAdminPage';
 import ProductEditPage from './pages/admin/ProductEditPage';
 import ProductCreatePage from './pages/admin/ProductCreatePage';
+import ProductViewPage from './pages/admin/ProductViewPage';
 import OrdersAdminPage from './pages/admin/OrdersAdminPage';
 import OrderDetailPage from './pages/admin/OrderDetailPage';
+import OrderCreatePage from './pages/admin/OrderCreatePage';
 
 // Componente para proteger rotas que requerem autenticação
 const ProtectedRoute = ({ children, adminOnly = false }) => {
@@ -88,7 +90,7 @@ function App() {
           {/* Rotas Públicas */}
           <Route path="/" element={<HomePage />} />
           <Route path="/produtos" element={<ProductsPage />} />
-          <Route path="/produtos/:id" element={<ProductDetailPage />} />
+          <Route path="/produtos/:ean" element={<ProductDetailPage />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/contato" element={<ContactPage />} />
           
@@ -156,6 +158,14 @@ function App() {
             }
           />
           <Route
+            path="/admin/products/view/:ean"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <ProductViewPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
             path="/admin/orders"
             element={
               <ProtectedRoute adminOnly={true}>
@@ -168,6 +178,14 @@ function App() {
             element={
               <ProtectedRoute adminOnly={true}>
                 <OrderDetailPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/orders/create"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <OrderCreatePage />
               </ProtectedRoute>
             }
           />

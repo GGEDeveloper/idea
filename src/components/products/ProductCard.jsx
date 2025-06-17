@@ -26,10 +26,10 @@ const ProductCard = ({ product }) => {
 
   return (
     <Link
-      to={`/produtos/${product.id || product.ean}`}
+      to={`/produtos/${product.ean}`}
       className="group flex h-full flex-col overflow-hidden rounded-lg border border-border-base bg-white shadow-sm transition-shadow duration-200 hover:shadow-md"
       aria-label={product.name || t('Produto sem nome')}
-      data-testid={`product-card-${product.id || product.ean}`}
+      data-testid={`product-card-${product.ean}`}
     >
       {/* Imagem */}
       <div className="relative flex-shrink-0 overflow-hidden bg-gray-100">
@@ -80,7 +80,7 @@ const ProductCard = ({ product }) => {
               const priceExists = product.price != null && product.price !== '' && !isNaN(parseFloat(product.price));
               
               // Log detalhado para depuração do preço
-              console.log(`[ProductCard: ${product.id || product.ean}] Preço Debugging: `,
+              console.log(`[ProductCard: ${product.ean}] Preço Debugging: `,
                 `isAuthenticated: ${isAuthenticated}, `,
                 `canViewPrice (view_price): ${canViewPrice}, `,
                 `priceExists: ${priceExists} (Valor: ${product.price}, Tipo: ${typeof product.price}), `,
@@ -105,7 +105,7 @@ const ProductCard = ({ product }) => {
             onClick={(e) => {
               e.preventDefault();
               // Lógica para adicionar ao carrinho aqui
-              console.log('Adicionar ao carrinho:', product.id);
+              console.log('Adicionar ao carrinho:', product.ean);
             }}
             disabled={!isAuthenticated || !hasPermission('add_to_cart')}
             className="mt-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:bg-gray-300"

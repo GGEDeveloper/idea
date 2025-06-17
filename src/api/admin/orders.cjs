@@ -281,4 +281,90 @@ router.get('/stats/summary', requireAdmin, async (req, res) => {
   }
 });
 
+/**
+ * POST /api/admin/orders
+ * Criar uma nova encomenda (para administradores)
+ */
+router.post('/', requireAdmin, async (req, res) => {
+  const client = await pool.connect();
+  
+  try {
+    const { user_id, order_status = 'pending_approval', items, total_amount } = req.body;
+
+    // Validação básica
+    if (!user_id || !items || !Array.isArray(items) || items.length === 0) {
+      return res.status(400).json({ 
+        error: 'Dados inválidos. user_id e items são obrigatórios.' 
+      });
+    }
+
+    // Validar status
+    const validStatuses = ['pending_approval', 'approved', 'shipped', 'delivered', 'cancelled', 'rejected'];
+    if (!validStatuses.includes(order_status)) {
+      return res.status(400).json({ 
+        error: 'Status inválido. Valores válidos: ' + validStatuses.join(', ') 
+      });
+    }
+
+    // Verificar se o utilizador existe
+    const userCheckQuery = 'SELECT user_id FROM users WHERE user_id = $1';
+    const userCheckResult = await client.query(userCheckQuery, [user_id]);
+    
+    if (userCheckResult.rows.length === 0) {
+      return res.status(404).json({ error: 'Utilizador não encontrado' });
+    }
+
+    await client.query('BEGIN');
+
+    // Calcular total se não fornecido
+    let calculatedTotal = total_amount;
+    if (!calculatedTotal) {
+      calculatedTotal = items.reduce((sum, item) => sum + (item.price_at_purchase * item.quantity), 0);
+    }
+
+    // Criar a encomenda
+    const orderQuery = `
+      INSERT INTO orders (user_id, order_status, total_amount)
+      VALUES ($1, $2, $3)
+      RETURNING *
+    `;
+    
+    const orderResult = await client.query(orderQuery, [user_id, order_status, calculatedTotal]);
+    const newOrder = orderResult.rows[0];
+
+    // Adicionar os itens da encomenda
+    for (const item of items) {
+      if (!item.product_ean || !item.quantity || !item.price_at_purchase || !item.product_name) {
+        throw new Error('Dados de item inválidos. product_ean, quantity, price_at_purchase e product_name são obrigatórios.');
+      }
+
+      const itemQuery = `
+        INSERT INTO order_items (order_id, product_ean, quantity, price_at_purchase, product_name)
+        VALUES ($1, $2, $3, $4, $5)
+      `;
+      
+      await client.query(itemQuery, [
+        newOrder.order_id,
+        item.product_ean,
+        item.quantity,
+        item.price_at_purchase,
+        item.product_name
+      ]);
+    }
+
+    await client.query('COMMIT');
+
+    console.log(`Admin ${req.localUser.email} criou nova encomenda ${newOrder.order_id} para utilizador ${user_id}`);
+
+    res.status(201).json(newOrder);
+
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('Erro ao criar encomenda:', error);
+    res.status(500).json({ error: 'Erro interno do servidor', details: error.message });
+  } finally {
+    client.release();
+  }
+});
+
 module.exports = router; 
