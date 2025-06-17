@@ -196,6 +196,8 @@ export function useProducts(options = {}) {
 
   // Funções de atualização
   const setFilters = (newFilters) => {
+    console.log('[useProducts] setFilters called with:', newFilters);
+    
     if (newFilters.searchQuery !== undefined) {
       setSearchQuery(typeof newFilters.searchQuery === 'string' ? newFilters.searchQuery.trim() : '');
     }
@@ -220,16 +222,19 @@ export function useProducts(options = {}) {
       setIsFeaturedQuery(!!newFilters.featured);
     }
     
-    // Quick filters
+    // Quick filters - corrigido para funcionar corretamente
     if (newFilters.hasStock !== undefined) {
+      console.log('[useProducts] Setting hasStock to:', !!newFilters.hasStock);
       setHasStockFilter(!!newFilters.hasStock);
     }
     
     if (newFilters.onSale !== undefined) {
+      console.log('[useProducts] Setting onSale to:', !!newFilters.onSale);
       setOnSaleFilter(!!newFilters.onSale);
     }
     
     if (newFilters.isNew !== undefined) {
+      console.log('[useProducts] Setting isNew to:', !!newFilters.isNew);
       setIsNewFilter(!!newFilters.isNew);
     }
     

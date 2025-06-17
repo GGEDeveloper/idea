@@ -32,18 +32,18 @@ function buildWhereClause(filters, forCount = false) {
     }
   }
 
-  // Filtro por categorias (múltiplas) - Corrigido para processar lista de IDs
+  // Filtro por categorias (múltiplas) - Corrigido para incluir hierarquia
   if (filters.categoryId && typeof filters.categoryId === 'string' && filters.categoryId.trim() !== '') {
     const categoryList = filters.categoryId.split(',').map(c => c.trim()).filter(c => c !== '' && c !== 'null' && c !== 'undefined');
     if (categoryList.length > 0) {
       // Para categorias, queremos incluir produtos de categorias filhas também
       const categoryConditions = categoryList.map(() => {
-        const condition = `(pc.category_id = $${paramIndex++} OR EXISTS (
-          SELECT 1 FROM categories c_parent 
-          WHERE c_parent.categoryid = pc.category_id 
-          AND c_parent.path LIKE CONCAT((SELECT path FROM categories WHERE categoryid = $${paramIndex++}), '%')
+        return `(pc.category_id = $${paramIndex++} OR pc.category_id IN (
+          SELECT c_child.categoryid 
+          FROM categories c_child 
+          JOIN categories c_parent ON c_child.path LIKE c_parent.path || '%'
+          WHERE c_parent.categoryid = $${paramIndex++}
         ))`;
-        return condition;
       });
       
       whereClauses.push(`EXISTS (

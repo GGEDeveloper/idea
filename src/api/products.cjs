@@ -160,6 +160,7 @@ router.get('/', async (req, res) => {
     // Log filters and pagination
     console.log('[API /api/products GET] Filters:', JSON.stringify(filters));
     console.log('[API /api/products GET] Pagination:', JSON.stringify(pagination));
+    console.log('[API /api/products GET] Quick filters - hasStock:', hasStock, 'onSale:', onSale, 'isNew:', isNew);
 
     const [totalProducts, productsFromDB] = await Promise.all([
       productQueries.countProducts(filters),

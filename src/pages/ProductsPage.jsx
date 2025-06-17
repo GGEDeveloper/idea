@@ -270,6 +270,7 @@ const ProductsPage = () => {
               onClose={() => setIsSidebarOpen(false)}
               filters={filters}
               filterOptions={filterOptions}
+              setFilters={setFilters}
               onBrandChange={handleBrandChange}
               onPriceChange={handlePriceChange}
               onCategoryChange={handleCategoryChange}

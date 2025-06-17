@@ -178,6 +178,23 @@ const PremiumRangeSlider = ({ min, max, value, onChange, formatValue, disabled }
   );
 };
 
+// Componente de Filtro Rápido
+const QuickFilterButton = ({ id, label, active, onClick, icon: Icon, ariaLabel }) => (
+  <button
+    id={id}
+    onClick={onClick}
+    aria-label={ariaLabel}
+    className={`p-3 rounded-xl border-2 transition-all duration-200 ${
+      active
+        ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+        : 'border-gray-200 hover:border-indigo-300 text-gray-600 hover:bg-gray-50'
+    }`}
+  >
+    <Icon className="w-5 h-5 mx-auto mb-1" />
+    <span className="text-xs font-medium block">{label}</span>
+  </button>
+);
+
 // Componente de Busca Premium
 const PremiumSearch = ({ value, onChange, placeholder, disabled }) => {
   const [localValue, setLocalValue] = useState(value || '');
@@ -230,6 +247,7 @@ const FilterSidebar = ({
   onClose, 
   filters, 
   filterOptions, 
+  setFilters,
   onBrandChange, 
   onPriceChange,
   onCategoryChange,
@@ -292,26 +310,39 @@ const FilterSidebar = ({
 
   // Quick Filters handlers
   const handleQuickFilter = (filterType) => {
+    console.log('[FilterSidebar] handleQuickFilter called with:', filterType);
+    console.log('[FilterSidebar] Current filters:', filters);
+    
     const newFilters = { ...filters };
     
     switch (filterType) {
       case 'stock':
         newFilters.hasStock = !filters.hasStock;
+        console.log('[FilterSidebar] Setting hasStock to:', newFilters.hasStock);
         break;
       case 'sale':
         newFilters.onSale = !filters.onSale;
+        console.log('[FilterSidebar] Setting onSale to:', newFilters.onSale);
         break;
       case 'new':
         newFilters.isNew = !filters.isNew;
+        console.log('[FilterSidebar] Setting isNew to:', newFilters.isNew);
         break;
       case 'featured':
         newFilters.featured = !filters.featured;
+        console.log('[FilterSidebar] Setting featured to:', newFilters.featured);
         break;
       default:
+        console.log('[FilterSidebar] Unknown filter type:', filterType);
         return;
     }
     
-    setFilters(newFilters);
+    console.log('[FilterSidebar] Calling setFilters with:', newFilters);
+    if (typeof setFilters === 'function') {
+      setFilters(newFilters);
+    } else {
+      console.error('[FilterSidebar] setFilters is not a function:', setFilters);
+    }
   };
 
   // Format currency
