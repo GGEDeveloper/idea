@@ -40,9 +40,9 @@ const ProductsAdminPage = () => {
     { value: 'created_at-asc', label: 'Mais Antigos' }
   ];
 
-  const fetchProducts = async () => {
-    try {
-      setLoading(true);
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
       setError(null);
 
       const params = new URLSearchParams({
@@ -61,22 +61,22 @@ const ProductsAdminPage = () => {
       }
 
       const response = await fetch(`/api/admin/products?${params}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
       console.log('[Admin Page] Dados recebidos da API admin:', data); 
       setProducts(data.products || []);
       setCurrentPage(data.currentPage || 1);
       setTotalPages(data.totalPages || 1);
       setTotalProducts(data.totalProducts || 0);
-    } catch (e) {
-      setError(e.message);
-      console.error("Erro ao buscar produtos para a área de admin:", e);
-    } finally {
-      setLoading(false);
-    }
-  };
+      } catch (e) {
+        setError(e.message);
+        console.error("Erro ao buscar produtos para a área de admin:", e);
+      } finally {
+        setLoading(false);
+      }
+    };
 
   useEffect(() => {
     fetchProducts();
@@ -186,10 +186,10 @@ const ProductsAdminPage = () => {
 
       {/* Products Table */}
       <div className="bg-white rounded-lg shadow overflow-hidden">
-        <div className="overflow-x-auto">
+      <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
-              <tr>
+            <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Produto
                 </th>
@@ -211,8 +211,8 @@ const ProductsAdminPage = () => {
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Ações
                 </th>
-              </tr>
-            </thead>
+            </tr>
+          </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {products.length > 0 ? (
                 products.map((product) => (
@@ -268,8 +268,8 @@ const ProductsAdminPage = () => {
                         className="text-green-600 hover:text-green-900 flex items-center"
                       >
                         <PencilIcon className="h-4 w-4 mr-1" />
-                        Editar
-                      </Link>
+                    Editar
+                  </Link>
                     </div>
                   </td>
                 </tr>
@@ -283,12 +283,12 @@ const ProductsAdminPage = () => {
                         'Ainda não existem produtos no sistema.'
                       }
                     </div>
-                  </td>
-                </tr>
+                </td>
+              </tr>
               )}
-            </tbody>
-          </table>
-        </div>
+          </tbody>
+        </table>
+      </div>
       </div>
 
       {/* Pagination */}

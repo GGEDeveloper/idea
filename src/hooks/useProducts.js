@@ -211,7 +211,7 @@ export function useProducts(options = {}) {
     
     if (newFilters.categories !== undefined) {
       setCategoriesFilter(Array.isArray(newFilters.categories) ? newFilters.categories.join(',') : newFilters.categories || '');
-    }
+      }
       
     if (newFilters.price) {
       setPriceMinFilter(newFilters.price.min?.toString() || '');

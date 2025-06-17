@@ -83,12 +83,12 @@ const ProductsPage = () => {
   const handleCategoryChange = (category) => {
     const categoryId = typeof category === 'object' ? category.id : category;
     const categories = Array.isArray(filters.categories) ? filters.categories : [];
-    const exists = categories.includes(categoryId);
+      const exists = categories.includes(categoryId);
     setFilters({
       ...filters,
-      categories: exists
-        ? categories.filter(c => c !== categoryId)
-        : [...categories, categoryId]
+        categories: exists
+          ? categories.filter(c => c !== categoryId)
+          : [...categories, categoryId]
     });
   };
 
@@ -101,16 +101,16 @@ const ProductsPage = () => {
 
   const handleAttributeChange = (attrName, value) => {
     const attributes = filters.attributes ? { ...filters.attributes } : {};
-    const values = attributes[attrName] || [];
-    const exists = values.includes(value);
+      const values = attributes[attrName] || [];
+      const exists = values.includes(value);
     setFilters({
       ...filters,
-      attributes: {
-        ...attributes,
-        [attrName]: exists
-          ? values.filter(v => v !== value)
-          : [...values, value]
-      }
+        attributes: {
+          ...attributes,
+          [attrName]: exists
+            ? values.filter(v => v !== value)
+            : [...values, value]
+        }
     });
   };
 
@@ -197,12 +197,12 @@ const ProductsPage = () => {
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Erro ao carregar produtos</h2>
           <p className="text-gray-600 mb-6">{error}</p>
-          <button
-            onClick={() => window.location.reload()}
+        <button
+          onClick={() => window.location.reload()}
             className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium py-3 px-6 rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-200"
-          >
-            Tentar novamente
-          </button>
+        >
+          Tentar novamente
+        </button>
         </div>
       </div>
     );
@@ -230,21 +230,21 @@ const ProductsPage = () => {
                   </span>
                 </>
               )}
-            </h1>
+          </h1>
             
             <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
-              {searchQuery && (
-                <button
-                  onClick={clearSearch}
+            {searchQuery && (
+              <button
+                onClick={clearSearch}
                   className="inline-flex items-center px-4 py-2 bg-red-50 text-red-700 rounded-xl border border-red-200 hover:bg-red-100 transition-all duration-200"
-                >
+              >
                   <XMarkIcon className="w-4 h-4 mr-2" />
                   Limpar busca
-                </button>
-              )}
+              </button>
+            )}
               
               <span className="text-lg text-gray-600">
-                {searchQuery
+              {searchQuery
                   ? `${pagination.totalProducts} resultado(s) encontrado(s)`
                   : 'Encontre a ferramenta perfeita para o seu projeto'}
               </span>
@@ -257,27 +257,27 @@ const ProductsPage = () => {
           {/* Sidebar de Filtros */}
           <div className={`lg:w-96 ${isFiltersVisible ? 'block' : 'hidden lg:block'}`}>
             {/* Botão Mobile para Filtros */}
-            <button
-              onClick={() => setIsSidebarOpen(true)}
+          <button
+            onClick={() => setIsSidebarOpen(true)}
               className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-2xl px-6 py-4 text-gray-700 hover:bg-gray-50 mb-6 shadow-sm"
-            >
+          >
               <FunnelIcon className="w-5 h-5" />
               <span className="font-medium">Abrir Filtros</span>
-            </button>
+          </button>
 
-            <FilterSidebar
-              isOpen={isSidebarOpen}
-              onClose={() => setIsSidebarOpen(false)}
-              filters={filters}
-              filterOptions={filterOptions}
+          <FilterSidebar
+            isOpen={isSidebarOpen}
+            onClose={() => setIsSidebarOpen(false)}
+            filters={filters}
+            filterOptions={filterOptions}
               setFilters={setFilters}
-              onBrandChange={handleBrandChange}
-              onPriceChange={handlePriceChange}
-              onCategoryChange={handleCategoryChange}
-              onStockChange={handleStockChange}
-              onAttributeChange={handleAttributeChange}
-              onClearFilters={handleClearFilters}
-            />
+            onBrandChange={handleBrandChange}
+            onPriceChange={handlePriceChange}
+            onCategoryChange={handleCategoryChange}
+            onStockChange={handleStockChange}
+            onAttributeChange={handleAttributeChange}
+            onClearFilters={handleClearFilters}
+          />
           </div>
 
           {/* Conteúdo Principal */}
@@ -294,11 +294,11 @@ const ProductsPage = () => {
                     <span>Ocultar Filtros</span>
                   </>
                 ) : (
-                  <>
+                    <>
                     <EyeIcon className="w-5 h-5" />
                     <span>Mostrar Filtros</span>
-                  </>
-                )}
+                    </>
+                  )}
               </button>
             </div>
 
@@ -347,13 +347,13 @@ const ProductsPage = () => {
                   <p className="text-gray-600 mb-8">
                     Tente ajustar seus filtros ou realizar uma nova busca
                   </p>
-                  <button
-                    onClick={handleClearFilters}
+                <button
+                  onClick={handleClearFilters}
                     className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-200"
-                  >
+                >
                     <AdjustmentsHorizontalIcon className="w-5 h-5 mr-2" />
                     Limpar todos os filtros
-                  </button>
+                </button>
                 </div>
               </div>
             ) : (

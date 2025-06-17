@@ -54,7 +54,7 @@ const ProductDetailPage = () => {
     };
 
     if (ean) {
-      fetchProduct();
+    fetchProduct();
     }
   }, [ean]);
 
@@ -367,7 +367,7 @@ const ProductDetailPage = () => {
   if (error || !product) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-        <div className="container mx-auto px-4 py-12 text-center">
+      <div className="container mx-auto px-4 py-12 text-center">
           <div className="max-w-lg mx-auto bg-white rounded-2xl shadow-xl p-8">
             <XCircleIcon className="h-20 w-20 text-red-500 mx-auto mb-6" />
             <h1 className="text-3xl font-bold text-gray-900 mb-4">
@@ -381,9 +381,9 @@ const ProductDetailPage = () => {
               to="/produtos" 
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <ChevronLeftIcon className="h-5 w-5 mr-2" />
-              Voltar para Produtos
-            </Link>
+          <ChevronLeftIcon className="h-5 w-5 mr-2" />
+          Voltar para Produtos
+        </Link>
           </div>
         </div>
       </div>
@@ -423,7 +423,7 @@ const ProductDetailPage = () => {
           <div className="lg:flex lg:min-h-[600px]">
             {/* Galeria de Imagens */}
             <div className="lg:w-1/2 lg:flex lg:items-stretch">
-              <ProductImageGallery images={product.images} />
+            <ProductImageGallery images={product.images} />
             </div>
 
             {/* Informações do Produto */}
@@ -562,10 +562,10 @@ const ProductDetailPage = () => {
 
           {/* Tabs com Descrição e Atributos */}
           <div className="border-t border-gray-200">
-            <ProductTabs 
-              description={product.longdescription || product.shortdescription}
-              attributes={product.attributes}
-            />
+          <ProductTabs 
+            description={product.longdescription || product.shortdescription}
+            attributes={product.attributes}
+          />
           </div>
         </div>
       </div>

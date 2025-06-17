@@ -38,12 +38,7 @@ function buildWhereClause(filters, forCount = false) {
     if (categoryList.length > 0) {
       // Para categorias, queremos incluir produtos de categorias filhas também
       const categoryConditions = categoryList.map(() => {
-        return `(pc.category_id = $${paramIndex++} OR pc.category_id IN (
-          SELECT c_child.categoryid 
-          FROM categories c_child 
-          JOIN categories c_parent ON c_child.path LIKE c_parent.path || '%'
-          WHERE c_parent.categoryid = $${paramIndex++}
-        ))`;
+        return `pc.category_id IN (SELECT * FROM get_descendant_categories($${paramIndex++}))`;
       });
       
       whereClauses.push(`EXISTS (
@@ -52,10 +47,8 @@ function buildWhereClause(filters, forCount = false) {
         AND (${categoryConditions.join(' OR ')})
       )`);
       
-      // Adicionar os parâmetros (cada categoria aparece 2 vezes na query)
-      categoryList.forEach(catId => {
-        queryParams.push(catId, catId);
-      });
+      // Adicionar os parâmetros
+      queryParams.push(...categoryList);
     }
   }
 
@@ -103,7 +96,7 @@ function buildWhereClause(filters, forCount = false) {
         }
     }
     
-    if (filters.priceMax) {
+  if (filters.priceMax) {
         const priceMaxNum = parseFloat(String(filters.priceMax).replace(',', '.'));
         if (!isNaN(priceMaxNum)) {
             priceConditions.push(`pr_filter.price <= $${paramIndex++}`);
@@ -138,7 +131,7 @@ function buildWhereClause(filters, forCount = false) {
     for(let i=0; i<5; i++) queryParams.push(searchTerm);
     paramIndex += 5;
   } 
-
+  
   // Filtro por status ativo/inativo
   if (filters.active !== undefined && filters.active !== null) {
     whereClauses.push(`${productAlias}.active = $${paramIndex++}`);
@@ -301,7 +294,7 @@ async function createProduct(productData) {
       supplierPrice,
       false
     ]);
-
+    
     // Inserir o preço na lista de preços 'Base Selling Price'
     if (price) {
       const priceListQuery = "SELECT price_list_id FROM price_lists WHERE name = 'Base Selling Price';";

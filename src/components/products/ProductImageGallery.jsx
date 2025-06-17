@@ -57,9 +57,9 @@ const ProductImageGallery = ({ images = [] }) => {
       {/* Main Image Display */}
       <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] mb-6 group">
         <div className="w-full h-full bg-white rounded-2xl shadow-xl overflow-hidden relative">
-          <img
+        <img
             src={mainImage?.url || '/placeholder-product.jpg'}
-            alt="Imagem principal do produto"
+          alt="Imagem principal do produto"
             className={`w-full h-full object-contain transition-all duration-500 ${
               isZoomed ? 'scale-150 cursor-zoom-out' : 'cursor-zoom-in hover:scale-105'
             }`}
@@ -103,22 +103,22 @@ const ProductImageGallery = ({ images = [] }) => {
       {images.length > 1 && (
         <div className="flex justify-center">
           <div className="flex flex-wrap justify-center gap-3 max-w-md">
-            {images.map((img, idx) => (
-              <button
-                key={img.url + idx}
+          {images.map((img, idx) => (
+            <button
+              key={img.url + idx}
                 onClick={() => handleImageSelect(img, idx)}
                 className={`relative w-20 h-20 rounded-xl overflow-hidden transition-all duration-200 ${
                   mainImage?.url === img.url 
                     ? 'ring-4 ring-indigo-500 ring-offset-2 shadow-lg scale-110' 
                     : 'ring-2 ring-gray-200 hover:ring-indigo-300 hover:scale-105 shadow-md'
                 }`}
-              >
-                <img
+            >
+              <img
                   src={img.url || '/placeholder-product.jpg'}
-                  alt={`Miniatura ${idx + 1}`}
+                alt={`Miniatura ${idx + 1}`}
                   className="w-full h-full object-contain bg-white"
                   onError={(e) => { e.target.onerror = null; e.target.src = '/placeholder-product.jpg'; }}
-                />
+              />
                 {mainImage?.url === img.url && (
                   <div className="absolute inset-0 bg-indigo-500 bg-opacity-20 flex items-center justify-center">
                     <div className="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center">
@@ -126,8 +126,8 @@ const ProductImageGallery = ({ images = [] }) => {
                     </div>
                   </div>
                 )}
-              </button>
-            ))}
+            </button>
+          ))}
           </div>
         </div>
       )}

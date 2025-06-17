@@ -47,9 +47,9 @@ const Pagination = ({ pagination, onPageChange }) => {
     const maxVisiblePages = 7;
     
     if (totalPages <= maxVisiblePages) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
+    for (let i = 1; i <= totalPages; i++) {
+      pages.push(i);
+    }
     } else {
       if (currentPage <= 4) {
         // Início: 1, 2, 3, 4, 5, ..., last
@@ -117,20 +117,20 @@ const Pagination = ({ pagination, onPageChange }) => {
         
         <div className="flex justify-between space-x-3">
           <PaginationButton
-            onClick={handlePrevious}
-            disabled={currentPage === 1}
+          onClick={handlePrevious}
+          disabled={currentPage === 1}
             className="flex-1 rounded-xl"
-          >
+        >
             <ChevronLeftIcon className="w-4 h-4 mr-1" />
-            Anterior
+          Anterior
           </PaginationButton>
           
           <PaginationButton
-            onClick={handleNext}
-            disabled={currentPage === totalPages}
+          onClick={handleNext}
+          disabled={currentPage === totalPages}
             className="flex-1 rounded-xl"
-          >
-            Próximo
+        >
+          Próximo
             <ChevronRightIcon className="w-4 h-4 ml-1" />
           </PaginationButton>
         </div>
@@ -158,8 +158,8 @@ const Pagination = ({ pagination, onPageChange }) => {
 
           {/* Página anterior */}
           <PaginationButton
-            onClick={handlePrevious}
-            disabled={currentPage === 1}
+              onClick={handlePrevious}
+              disabled={currentPage === 1}
           >
             <ChevronLeftIcon className="w-4 h-4" />
             <span className="sr-only">Página anterior</span>
@@ -195,8 +195,8 @@ const Pagination = ({ pagination, onPageChange }) => {
 
           {/* Próxima página */}
           <PaginationButton
-            onClick={handleNext}
-            disabled={currentPage === totalPages}
+              onClick={handleNext}
+              disabled={currentPage === totalPages}
           >
             <ChevronRightIcon className="w-4 h-4" />
             <span className="sr-only">Próxima página</span>
@@ -211,7 +211,7 @@ const Pagination = ({ pagination, onPageChange }) => {
             <ChevronDoubleRightIcon className="w-4 h-4" />
             <span className="sr-only">Última página</span>
           </PaginationButton>
-        </nav>
+          </nav>
       </div>
 
       {/* Informações adicionais */}

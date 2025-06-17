@@ -23,13 +23,13 @@ const PremiumCheckbox = ({ id, label, checked, onChange, disabled, ariaLabel, co
   <div className="group flex items-center justify-between p-3 rounded-xl hover:bg-gray-50 transition-all duration-200">
     <div className="flex items-center flex-1">
       <div className="relative">
-        <input 
-          id={id} 
-          type="checkbox" 
-          checked={checked} 
-          onChange={onChange} 
-          disabled={disabled}
-          aria-label={ariaLabel || label}
+    <input 
+      id={id} 
+      type="checkbox" 
+      checked={checked} 
+      onChange={onChange} 
+      disabled={disabled}
+      aria-label={ariaLabel || label}
           className="sr-only"
         />
         <div className={`w-5 h-5 rounded-lg border-2 flex items-center justify-center transition-all duration-200 ${
@@ -174,8 +174,8 @@ const PremiumRangeSlider = ({ min, max, value, onChange, formatValue, disabled }
       <div className="text-xs text-gray-500 text-center">
         Faixa: {formatValue ? formatValue(min) : `€${min}`} - {formatValue ? formatValue(max) : `€${max}`}
       </div>
-    </div>
-  );
+  </div>
+);
 };
 
 // Componente de Filtro Rápido
@@ -380,14 +380,14 @@ const FilterSidebar = ({
               </div>
             </div>
             
-            <button 
-              onClick={onClose} 
+          <button 
+            onClick={onClose} 
               className="p-2 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100 transition-colors md:hidden"
-              aria-label={t('Fechar filtros')}
-            >
-              <XMarkIcon className="h-6 w-6" />
-            </button>
-          </div>
+            aria-label={t('Fechar filtros')}
+          >
+            <XMarkIcon className="h-6 w-6" />
+          </button>
+        </div>
         </div>
 
         <div className="p-6 space-y-6">
@@ -439,23 +439,23 @@ const FilterSidebar = ({
             </div>
           </div>
 
-          {/* Categorias */}
+        {/* Categorias */}
           <PremiumFilterSection 
             title="Categorias" 
             icon={TagIcon}
             description="Navegue por categoria de produtos"
           >
-            {filterOptions.categories && filterOptions.categories.length > 0 ? (
-              <CategoryTree
-                categories={filterOptions.categories}
-                selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
-                onCategorySelect={onCategoryChange}
-              />
-            ) : (
+          {filterOptions.categories && filterOptions.categories.length > 0 ? (
+            <CategoryTree
+              categories={filterOptions.categories}
+              selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
+              onCategorySelect={onCategoryChange}
+            />
+          ) : (
               <p className="text-sm text-gray-500 text-center py-4">
                 {t('Nenhuma categoria disponível')}
               </p>
-            )}
+          )}
           </PremiumFilterSection>
 
           {/* Marcas */}
@@ -465,7 +465,7 @@ const FilterSidebar = ({
             description="Filtre por marca do produto"
             badge={filterOptions.brands?.length}
           >
-            {filterOptions.brands && filterOptions.brands.length > 0 ? (
+          {filterOptions.brands && filterOptions.brands.length > 0 ? (
               <>
                 <PremiumSearch
                   value={brandSearch}
@@ -476,24 +476,24 @@ const FilterSidebar = ({
                 <div className="max-h-48 overflow-y-auto">
                   {filteredBrands.map((brand) => (
                     <PremiumCheckbox
-                      key={brand}
-                      id={`brand-${brand}`}
-                      label={brand}
-                      checked={filters.brands[brand] || false}
-                      onChange={() => {
-                        onBrandChange(brand);
-                        logFilterEvent('brand_change', { brand });
-                      }}
+                key={brand}
+                id={`brand-${brand}`}
+                label={brand}
+                checked={filters.brands[brand] || false}
+                onChange={() => {
+                  onBrandChange(brand);
+                  logFilterEvent('brand_change', { brand });
+                }}
                       ariaLabel={`Filtrar por marca ${brand}`}
-                    />
+              />
                   ))}
                 </div>
               </>
-            ) : (
+          ) : (
               <p className="text-sm text-gray-500 text-center py-4">
                 {t('Nenhuma marca disponível')}
               </p>
-            )}
+          )}
           </PremiumFilterSection>
 
           {/* Preço */}
@@ -505,7 +505,7 @@ const FilterSidebar = ({
               : "Faça login para filtrar por preço"
             }
           >
-            {isAuthenticated && hasPermission('view_price') ? (
+        {isAuthenticated && hasPermission('view_price') ? (
               <PremiumRangeSlider
                 min={filterOptions.price?.min || 0}
                 max={filterOptions.price?.max || 10000}
@@ -521,14 +521,14 @@ const FilterSidebar = ({
               <div className="text-center py-8">
                 <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CurrencyEuroIcon className="w-8 h-8 text-gray-400" />
-                </div>
+            </div>
                 <p className="text-sm text-gray-500 mb-4">
                   {t('Faça login para ver preços e filtrar por faixa de valores')}
                 </p>
                 <button className="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
                   Fazer Login
                 </button>
-              </div>
+            </div>
             )}
           </PremiumFilterSection>
 
@@ -542,14 +542,14 @@ const FilterSidebar = ({
               <PremiumCheckbox
                 id="stock-filter"
                 label="Apenas produtos em stock"
-                checked={!!filters.stock}
-                onChange={() => {
-                  onStockChange();
-                  logFilterEvent('stock_change', { checked: !filters.stock });
-                }}
+              checked={!!filters.stock}
+              onChange={() => {
+                onStockChange();
+                logFilterEvent('stock_change', { checked: !filters.stock });
+              }}
                 ariaLabel="Mostrar apenas produtos em stock"
                 icon={CubeIcon}
-              />
+            />
             </PremiumFilterSection>
           )}
         </div>
@@ -557,9 +557,9 @@ const FilterSidebar = ({
         {/* Footer com Ações */}
         <div className="sticky bottom-0 bg-white border-t border-gray-200 p-6">
           <div className="space-y-3">
-            <button
-              onClick={() => {
-                onClearFilters();
+          <button
+            onClick={() => {
+              onClearFilters();
                 setQuickFilters({
                   inStock: false,
                   onSale: false,
@@ -568,12 +568,12 @@ const FilterSidebar = ({
                 });
                 setBrandSearch('');
                 logFilterEvent('clear_all_filters', {});
-              }}
+            }}
               className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-4 rounded-xl transition-all duration-200 flex items-center justify-center"
             >
               <AdjustmentsHorizontalIcon className="w-5 h-5 mr-2" />
               {t('Limpar Todos os Filtros')}
-            </button>
+          </button>
             
             {activeFiltersCount > 0 && (
               <div className="text-center">

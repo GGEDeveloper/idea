@@ -102,16 +102,16 @@ router.get('/', async (req, res) => {
       limit, // Default limit will be set based on featured status
       sortBy: querySortBy,
       order: queryOrder,
-      brands,
+    brands,
       categories, 
-      priceMin,
-      priceMax,
+    priceMin,
+    priceMax,
       q: searchQuery,
       featured, // New query parameter for featured products
       hasStock, // Quick filter for products with stock
       onSale,   // Quick filter for products on sale
       isNew     // Quick filter for new products
-    } = req.query;
+  } = req.query;
 
     let defaultSortBy = 'name';
     let defaultOrder = 'asc';
