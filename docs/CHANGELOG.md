@@ -1,5 +1,20 @@
 # Changelog - Projeto IDEA E-commerce
 
+## [v2.4.0] - 2025-01-18
+
+### 🐞 **Correções Críticas no Sistema de Filtragem**
+
+#### **Filtragem Hierárquica de Categorias**
+-   ✅ **Correção Definitiva**: Substituída a lógica de `LIKE` por uma **CTE Recursiva** no SQL, garantindo que o filtro de categorias funcione corretamente para todos os níveis (raiz, intermédio e folha).
+-   ✅ **Consistência de Dados**: Criado e executado um script de migração (`V6__normalize_category_ids.sql`) para normalizar todos os `categoryid`s gerados (`GEN_...`) para IDs numéricos, e reconstruir a hierarquia de `parent_id`s, resolvendo a causa raiz do problema.
+-   ✅ **Validação**: Confirmado que a seleção de qualquer categoria agora retorna todos os produtos de todas as suas subcategorias.
+
+#### **Outros Filtros**
+-   ✅ **Filtros Rápidos e de Marcas**: Corrigida a comunicação de estado entre o `FilterSidebar` e a `ProductsPage`, garantindo que todos os filtros são aplicados corretamente.
+-   ✅ **Lógica Refatorada**: `FilterSidebar` agora é um componente "puro" que depende de callbacks, tornando o sistema mais robusto e previsível.
+
+---
+
 ## [v2.3.0] - 2025-01-14
 
 ### 🎨 **Melhorias na Página de Detalhes do Produto**

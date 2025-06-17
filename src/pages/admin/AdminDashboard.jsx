@@ -83,7 +83,7 @@ const AdminDashboard = () => {
       icon: UsersIcon,
       link: '/admin/users',
       color: 'bg-purple-500',
-      available: false // TODO: Implement
+      available: true
     },
     {
       title: 'Relatórios',

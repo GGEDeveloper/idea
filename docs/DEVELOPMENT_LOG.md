@@ -184,6 +184,68 @@
 
 ---
 
+## 📅 **18 de Janeiro de 2025**
+
+### 🎯 **Sessão: Correção Definitiva do Sistema de Filtros Hierárquicos**
+
+#### **Problema Identificado**
+- Após correções anteriores, o filtro de categorias ainda não funcionava para níveis intermédios (ex: `Raiz > Intermédio > Folha`, o nível "Intermédio" não retornava produtos das folhas).
+- A causa raiz foi uma análise incorreta da estrutura de dados na tabela `categories` e uma query SQL inadequada para lidar com a hierarquia.
+
+#### **Solução Implementada (Definitiva)**
+1.  **Diagnóstico Aprofundado**:
+    - Identificada a inconsistência na coluna `categoryid`, que continha uma mistura de IDs numéricos e IDs gerados (`GEN_...`).
+    - Concluiu-se que remendar a query não era suficiente; era necessário corrigir os dados na sua origem.
+
+2.  **Reconstrução da Hierarquia de Categorias**:
+    - Criado um novo script de migração (`V6__normalize_category_ids.sql`) para:
+        - **Normalizar os IDs**: Substituir todos os `categoryid`s do tipo `GEN_...` por novos IDs numéricos únicos e sequenciais.
+        - **Atualizar Referências**: Atualizar em cascata a coluna `parent_id` e a tabela `product_categories` com os novos IDs.
+        - **Recalcular a Hierarquia**: Após a normalização, recalcular todos os `parent_id`s com base na estrutura de `path`, garantindo 100% de consistência.
+
+3.  **Refatoração da Query de Filtro**:
+    - A query em `product-queries.cjs` foi refatorada para usar uma **CTE Recursiva** (Common Table Expression), que é o método SQL padrão e mais robusto para lidar com hierarquias.
+    - A nova query agora percorre a árvore de `parent_id` de forma eficiente, garantindo que a seleção de qualquer categoria retorna produtos de todos os seus descendentes.
+
+#### **Resultado**
+- ✅ **Base de Dados Consistente**: Tabela `categories` com IDs e hierarquia 100% corretos.
+- ✅ **Filtros 100% Funcionais**: O sistema de filtragem de categorias funciona agora para todos os níveis (raiz, intermédio, folha).
+- ✅ **Performance Otimizada**: A query recursiva é mais eficiente que tentativas anteriores.
+- ✅ **Código Limpo**: Lógica de filtragem mais robusta e fácil de manter.
+
+#### **Arquivos Modificados**
+- `db/migrations/V6__normalize_category_ids.sql` (novo)
+- `src/db/product-queries.cjs` (query de categorias refatorada)
+
+#### **Commit Hash**: `54fb84f`
+#### **Status**: ✅ **PROBLEMA RESOLVIDO DEFINITIVAMENTE**
+
+---
+
+## 📅 **17 de Janeiro de 2025**
+
+### 🎯 **Sessão: Otimização da Página de Detalhes do Produto e Correção de Filtros**
+
+#### **Problema Identificado**
+- Página de produto não funcionava corretamente
+- Rota configurada para `:id` mas sistema usa EAN
+- Função `getProductById` inexistente
+
+#### **Solução Implementada**
+1. **Correção de Rota**:
+   - Alterada de `/produtos/:id` para `/produtos/:ean`
+   - Atualizado `ProductDetailPage` para usar `getProductByEan`
+   - Corrigidos links em `ProductCard`
+
+2. **Melhorias de Funcionalidade**:
+   - Implementado sistema de preços contextual
+   - Adicionado controle de permissões
+   - Melhorado tratamento de erros
+
+#### **Status**: ✅ **CONCLUÍDO COM SUCESSO**
+
+---
+
 **Última atualização**: 14 de Janeiro de 2025  
 **Responsável**: Sistema de Desenvolvimento AI  
 **Status do Projeto**: 🚀 **EM PRODUÇÃO** 

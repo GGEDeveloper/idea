@@ -3,6 +3,7 @@
  * Este módulo centraliza a lógica de acesso a dados para o sistema RBAC e autenticação local.
  */
 const pool = require('../../db/index.cjs');
+const { hashPassword } = require('../utils/passwordUtils.cjs');
 
 /**
  * Encontra um utilizador pelo seu email para fins de autenticação.
@@ -269,8 +270,15 @@ async function getUserById(userId) {
  * @returns {Promise<object>} O utilizador criado.
  */
 async function createUser(userData) {
-  const { email, first_name, last_name, company_name, role_id, password_hash, clerk_id } = userData;
+  const { email, first_name, last_name, company_name, role_id, password, clerk_id } = userData;
   
+  if (!password) {
+    throw new Error('A password é obrigatória para criar um novo utilizador.');
+  }
+
+  // Fazer o hash da password antes de guardar
+  const hashedPassword = await hashPassword(password);
+
   const query = `
     INSERT INTO users (email, first_name, last_name, company_name, role_id, password_hash, clerk_id)
     VALUES ($1, $2, $3, $4, $5, $6, $7)
@@ -279,11 +287,15 @@ async function createUser(userData) {
   
   try {
     const { rows } = await pool.query(query, [
-      email, first_name, last_name, company_name, role_id, password_hash, clerk_id
+      email, first_name, last_name, company_name, role_id, hashedPassword, clerk_id
     ]);
     return rows[0];
   } catch (error) {
     console.error('[user-queries] Error in createUser:', error);
+    // Adicionar verificação para erros de constraint (e.g., email duplicado)
+    if (error.code === '23505') { // 'unique_violation'
+      throw new Error('Já existe um utilizador com este email.');
+    }
     throw error;
   }
 }
