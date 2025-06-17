@@ -189,7 +189,7 @@ async function getProductByEan(ean) {
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
       ) as images,
       (SELECT json_agg(var ORDER BY var.variantid) FROM
-        (SELECT pv_detail.variantid, pv_detail.sku, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
+        (SELECT pv_detail.variantid, pv_detail.name as variant_name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
                 (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${basePriceListId} LIMIT 1) as base_selling_price,
                 (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
          FROM product_variants pv_detail WHERE pv_detail.ean = p.ean
@@ -230,17 +230,34 @@ async function createProduct(productData) {
     `;
     const { rows: [newProduct] } = await client.query(productQuery, [ean, productid, name, shortdescription, longdescription, brand, active]);
     
-    // Inserir o preço na lista de preços 'Preço Base'
+        // Criar uma variante padrão para o produto
+    const defaultVariantId = `${newProduct.ean}_DEFAULT`;
+    const variantQuery = `
+      INSERT INTO product_variants(variantid, ean, name, stockquantity, supplier_price, is_on_sale)
+      VALUES($1, $2, $3, $4, $5, $6)
+      RETURNING *;
+    `;
+    const supplierPrice = price ? price * 0.8 : 0; // Assumir que preço de venda é 25% markup sobre fornecedor
+    const { rows: [newVariant] } = await client.query(variantQuery, [
+      defaultVariantId, 
+      newProduct.ean, 
+      `${newProduct.name} - Default`, 
+      0, // stock inicial
+      supplierPrice,
+      false
+    ]);
+
+    // Inserir o preço na lista de preços 'Base Selling Price'
     if (price) {
-      const priceListQuery = "SELECT price_list_id FROM price_lists WHERE name = 'Preço Base';";
+      const priceListQuery = "SELECT price_list_id FROM price_lists WHERE name = 'Base Selling Price';";
       const { rows: [priceList] } = await client.query(priceListQuery);
-      if (!priceList) throw new Error("A lista de preços 'Preço Base' não foi encontrada.");
+      if (!priceList) throw new Error("A lista de preços 'Base Selling Price' não foi encontrada.");
       
       const priceQuery = `
-        INSERT INTO prices(product_ean, price_list_id, price)
+        INSERT INTO prices(variantid, price_list_id, price)
         VALUES($1, $2, $3);
       `;
-      await client.query(priceQuery, [newProduct.ean, priceList.price_list_id, price]);
+      await client.query(priceQuery, [newVariant.variantid, priceList.price_list_id, price]);
     }
     
     await client.query('COMMIT');

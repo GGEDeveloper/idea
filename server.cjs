@@ -25,6 +25,10 @@ const usersRouter = require('./src/api/users.cjs'); // Contém a rota /me adapta
 const ordersRouter = require('./src/api/orders.cjs');
 const authRouter = require('./src/api/auth.cjs'); // Novo router para autenticação local
 
+// Admin routers
+const adminProductsRouter = require('./src/api/admin/products.cjs');
+const adminOrdersRouter = require('./src/api/admin/orders.cjs');
+
 // Middleware de autenticação local
 const { populateUserFromToken } = require('./src/api/middleware/localAuth.cjs');
 
@@ -53,6 +57,10 @@ app.use('/api/products', productsRouter);
 app.use('/api/categories', categoriesRouter);
 app.use('/api/stock', stockRouter);
 app.use('/api/orders', ordersRouter);
+
+// Admin routes
+app.use('/api/admin/products', adminProductsRouter);
+app.use('/api/admin/orders', adminOrdersRouter);
 
 // A rota de variações é um sub-recurso de produtos (verificar se productsRouter está definido)
 if (productsRouter) { // Adicionar verificação caso productsRouter seja condicionalmente importado/usado

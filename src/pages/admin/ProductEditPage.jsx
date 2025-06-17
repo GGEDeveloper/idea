@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 // Um componente reutilizável para a gestão de stock de uma variação
 const StockManager = ({ productId, variation }) => {
@@ -247,7 +247,16 @@ const ProductEditPage = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-6">Editar Produto: {originalProduct.name} (EAN: {ean})</h1>
+      <div className="mb-6">
+        <nav className="text-sm text-gray-600 mb-2">
+          <Link to="/admin" className="hover:text-blue-600">Admin</Link>
+          <span className="mx-2">›</span>
+          <Link to="/admin/products" className="hover:text-blue-600">Produtos</Link>
+          <span className="mx-2">›</span>
+          <span>Editar</span>
+        </nav>
+        <h1 className="text-3xl font-bold">Editar Produto: {originalProduct.name} (EAN: {ean})</h1>
+      </div>
 
       {formError && <div className="mb-4 p-3 bg-red-100 text-red-700 rounded">{formError}</div>}
       {formSuccess && <div className="mb-4 p-3 bg-green-100 text-green-700 rounded">{formSuccess}</div>}

@@ -1,11 +1,11 @@
 const express = require('express');
 const productQueries = require('../../db/product-queries.cjs');
-const { requireAdminAuth } = require('../middleware/auth.cjs');
+const { requireAdmin } = require('../middleware/localAuth.cjs');
 
 const router = express.Router();
 
 // Aplica o middleware de autenticação de admin a todas as rotas deste router.
-router.use(requireAdminAuth);
+router.use(requireAdmin);
 
 /**
  * Rota para listar todos os produtos (para administradores).

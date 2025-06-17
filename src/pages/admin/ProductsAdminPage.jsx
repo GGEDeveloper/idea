@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Pagination from '../../components/common/Pagination';
 
 const ProductsAdminPage = () => {
   const [products, setProducts] = useState([]);
@@ -38,9 +39,12 @@ const ProductsAdminPage = () => {
     fetchProducts(currentPage);
   }, [currentPage]); // Refetch when currentPage changes
 
-  // TODO: Implement functions to handle page changes (next, previous, specific page)
-  // const handleNextPage = () => { if (currentPage < totalPages) setCurrentPage(currentPage + 1); };
-  // const handlePreviousPage = () => { if (currentPage > 1) setCurrentPage(currentPage - 1); };
+  // Handle page changes
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+    }
+  };
 
   if (loading) {
     return <div className="p-8 text-center">A carregar produtos...</div>;
@@ -55,7 +59,14 @@ const ProductsAdminPage = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Gestão de Produtos ({totalProducts})</h1>
+        <div>
+          <h1 className="text-2xl font-bold">Gestão de Produtos ({totalProducts})</h1>
+          <nav className="text-sm text-gray-600 mt-1">
+            <Link to="/admin" className="hover:text-blue-600">Admin</Link>
+            <span className="mx-2">›</span>
+            <span>Produtos</span>
+          </nav>
+        </div>
         <Link 
           to="/admin/products/create" 
           className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
@@ -116,15 +127,11 @@ const ProductsAdminPage = () => {
           </tbody>
         </table>
       </div>
-      {/* TODO: Add Pagination controls here */}
-      <div className="mt-4 flex justify-between items-center">
-        <span>Página {currentPage} de {totalPages}</span>
-        <div>
-          {/* <button onClick={handlePreviousPage} disabled={currentPage <= 1} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l disabled:opacity-50">Anterior</button> */}
-          {/* <button onClick={handleNextPage} disabled={currentPage >= totalPages} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r disabled:opacity-50">Próxima</button> */}
-          <span>(Placeholder para controlos de paginação)</span>
-        </div>
-      </div>
+      {/* Pagination controls */}
+      <Pagination 
+        pagination={{ currentPage, totalPages }}
+        onPageChange={handlePageChange}
+      />
     </div>
   );
 };
