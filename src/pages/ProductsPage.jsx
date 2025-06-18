@@ -94,50 +94,42 @@ const ProductsPage = () => {
 
   const handleStockChange = () => {
     console.log('[ProductsPage] handleStockChange called. Current hasStock:', filters.hasStock);
-    setFilters(prevFilters => {
-      const newValue = !prevFilters.hasStock;
-      console.log('[ProductsPage] Setting hasStock to:', newValue);
-      return {
-        ...prevFilters,
-        hasStock: newValue
-      };
+    const newValue = !filters.hasStock;
+    console.log('[ProductsPage] Setting hasStock to:', newValue);
+    setFilters({
+      ...filters,
+      hasStock: newValue
     });
   };
 
   // Handlers para os outros quick filters
   const handleOnSaleChange = () => {
     console.log('[ProductsPage] handleOnSaleChange called. Current onSale:', filters.onSale);
-    setFilters(prevFilters => {
-      const newValue = !prevFilters.onSale;
-      console.log('[ProductsPage] Setting onSale to:', newValue);
-      return {
-        ...prevFilters,
-        onSale: newValue
-      };
+    const newValue = !filters.onSale;
+    console.log('[ProductsPage] Setting onSale to:', newValue);
+    setFilters({
+      ...filters,
+      onSale: newValue
     });
   };
   
   const handleIsNewChange = () => {
     console.log('[ProductsPage] handleIsNewChange called. Current isNew:', filters.isNew);
-    setFilters(prevFilters => {
-      const newValue = !prevFilters.isNew;
-      console.log('[ProductsPage] Setting isNew to:', newValue);
-      return {
-        ...prevFilters,
-        isNew: newValue
-      };
+    const newValue = !filters.isNew;
+    console.log('[ProductsPage] Setting isNew to:', newValue);
+    setFilters({
+      ...filters,
+      isNew: newValue
     });
   };
   
   const handleFeaturedChange = () => {
     console.log('[ProductsPage] handleFeaturedChange called. Current featured:', filters.featured);
-    setFilters(prevFilters => {
-      const newValue = !prevFilters.featured;
-      console.log('[ProductsPage] Setting featured to:', newValue);
-      return {
-        ...prevFilters,
-        featured: newValue
-      };
+    const newValue = !filters.featured;
+    console.log('[ProductsPage] Setting featured to:', newValue);
+    setFilters({
+      ...filters,
+      featured: newValue
     });
   };
 
