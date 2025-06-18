@@ -279,6 +279,54 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 
 ---
 
+## [v1.4.0] - 2025-01-20
+
+### ✨ Features Implementadas
+- **🌙 DARK MODE MODULAR**: Implementação completa de sistema de dark mode com estrutura CSS modular
+  - Criada arquitetura CSS modular: `variables.css`, `base.css`, `utilities.css`, `components.css`
+  - Sistema de temas inspirado na Alitools (tema escuro com azuis profissionais + laranja)
+  - Transições suaves entre temas (0.2s ease)
+  - ThemeToggle com variantes: simples, dropdown e com labels
+  - Integração com localStorage e preferências do sistema
+
+### 🎨 Design System
+- **Variáveis CSS**: Sistema completo de custom properties para light/dark themes
+- **Classes Modulares**: `.header-nav`, `.nav-link`, `.product-card`, `.footer-link`, `.theme-toggle-button`
+- **Cores Primárias**: 
+  - Light: `#1f2937` (azul escuro elegante)
+  - Dark: `#f59e0b` (laranja Alitools)
+- **Glassmorphism**: Efeitos de vidro com backdrop-filter
+
+### 🧩 Componentes Convertidos
+- **Header.jsx**: Navegação com classes modulares, skip links acessíveis
+- **ProductCard.jsx**: Cards com hover effects, preços dinâmicos por permissão
+- **Footer.jsx**: Links institucionais com sistema de temas
+- **ThemeToggle.jsx**: Toggle completo com dropdown de opções
+
+### 🔧 Infraestrutura
+- **CSS Build**: Ordem correta de imports (custom CSS antes Tailwind)
+- **Performance**: CSS final otimizado (87.89 kB, comprimido: 16.06 kB)
+- **Modularidade**: Estrutura para fácil debug e manutenção
+- **Build Process**: Testado e funcional sem erros
+
+### 📱 UX/UI Melhorias
+- **Acessibilidade**: Focus management, skip links, ARIA labels
+- **Responsividade**: Design adaptativo em todos os breakpoints
+- **Transições**: Animações suaves para mudanças de estado
+- **Fallbacks**: Estados de loading e error tratados
+
+### 🐛 Fixes
+- Corrigida ordem de imports CSS para evitar warnings PostCSS
+- Removido arquivo `themes.css` monolítico
+- Melhorada estrutura de classes para consistência
+
+### 📚 Documentação
+- Documentada arquitetura CSS modular
+- Mapeamento de classes de componentes
+- Guia de cores e variáveis CSS
+
+---
+
 **Legenda:**
 - ✨ Added: Novas funcionalidades
 - 🔧 Fixed: Correções de bugs
