@@ -93,32 +93,52 @@ const ProductsPage = () => {
   };
 
   const handleStockChange = () => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      hasStock: !prevFilters.hasStock
-    }));
+    console.log('[ProductsPage] handleStockChange called. Current hasStock:', filters.hasStock);
+    setFilters(prevFilters => {
+      const newValue = !prevFilters.hasStock;
+      console.log('[ProductsPage] Setting hasStock to:', newValue);
+      return {
+        ...prevFilters,
+        hasStock: newValue
+      };
+    });
   };
 
   // Handlers para os outros quick filters
   const handleOnSaleChange = () => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      onSale: !prevFilters.onSale
-    }));
+    console.log('[ProductsPage] handleOnSaleChange called. Current onSale:', filters.onSale);
+    setFilters(prevFilters => {
+      const newValue = !prevFilters.onSale;
+      console.log('[ProductsPage] Setting onSale to:', newValue);
+      return {
+        ...prevFilters,
+        onSale: newValue
+      };
+    });
   };
   
   const handleIsNewChange = () => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      isNew: !prevFilters.isNew
-    }));
+    console.log('[ProductsPage] handleIsNewChange called. Current isNew:', filters.isNew);
+    setFilters(prevFilters => {
+      const newValue = !prevFilters.isNew;
+      console.log('[ProductsPage] Setting isNew to:', newValue);
+      return {
+        ...prevFilters,
+        isNew: newValue
+      };
+    });
   };
   
   const handleFeaturedChange = () => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      featured: !prevFilters.featured
-    }));
+    console.log('[ProductsPage] handleFeaturedChange called. Current featured:', filters.featured);
+    setFilters(prevFilters => {
+      const newValue = !prevFilters.featured;
+      console.log('[ProductsPage] Setting featured to:', newValue);
+      return {
+        ...prevFilters,
+        featured: newValue
+      };
+    });
   };
 
   const handleAttributeChange = (attrName, value) => {

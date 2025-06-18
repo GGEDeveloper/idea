@@ -94,6 +94,7 @@ export function useProducts(options = {}) {
   // Buscar produtos com dependências simples
   useEffect(() => {
     console.log('[useProducts] Fetch effect running. User authed:', !!hasPermission, 'Actual canViewPrices state:', canViewPrices, 'isFeaturedQuery:', isFeaturedQuery, 'searchQuery:', searchQuery, 'currentPage:', currentPage, 'limit:', limit, 'sortBy:', sortBy, 'order:', sortOrder);
+    console.log('[useProducts] Quick filters state - hasStock:', hasStockFilter, 'onSale:', onSaleFilter, 'isNew:', isNewFilter);
     if (fetchingRef.current) return;
     
     const fetchProducts = async () => {
@@ -114,9 +115,18 @@ export function useProducts(options = {}) {
       if (isFeaturedQuery) params.append('featured', 'true'); // Send if true
       
       // Quick filters
-      if (hasStockFilter) params.append('hasStock', 'true');
-      if (onSaleFilter) params.append('onSale', 'true');
-      if (isNewFilter) params.append('isNew', 'true');
+      if (hasStockFilter) {
+        console.log('[useProducts] Adding hasStock=true to API call');
+        params.append('hasStock', 'true');
+      }
+      if (onSaleFilter) {
+        console.log('[useProducts] Adding onSale=true to API call');
+        params.append('onSale', 'true');
+      }
+      if (isNewFilter) {
+        console.log('[useProducts] Adding isNew=true to API call');
+        params.append('isNew', 'true');
+      }
       
       // Use the canViewPrices state for the condition
       if (canViewPrices) {
@@ -125,7 +135,9 @@ export function useProducts(options = {}) {
       }
       
       try {
-        const response = await fetch(`http://localhost:3000/api/products?${params.toString()}`, {
+        const apiUrl = `http://localhost:3000/api/products?${params.toString()}`;
+        console.log('[useProducts] Making API call to:', apiUrl);
+        const response = await fetch(apiUrl, {
           credentials: 'include',
         });
         if (!response.ok) {
@@ -185,6 +197,9 @@ export function useProducts(options = {}) {
     isNew: isNewFilter
   };
 
+  // Debug log para verificar o estado dos filtros
+  console.log('[useProducts] Current filters object:', filters);
+
   const sorting = { sortBy, order: sortOrder };
       
   const pagination = {
@@ -197,6 +212,7 @@ export function useProducts(options = {}) {
   // Funções de atualização
   const setFilters = (newFilters) => {
     console.log('[useProducts] setFilters called with:', newFilters);
+    console.log('[useProducts] Current state - hasStock:', hasStockFilter, 'onSale:', onSaleFilter, 'isNew:', isNewFilter);
     
     if (newFilters.searchQuery !== undefined) {
       setSearchQuery(typeof newFilters.searchQuery === 'string' ? newFilters.searchQuery.trim() : '');

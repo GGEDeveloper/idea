@@ -309,21 +309,28 @@ const FilterSidebar = ({
 
   // Quick Filters handlers - CORRIGIDO para usar callbacks
   const handleQuickFilter = (filterType) => {
+    console.log('[FilterSidebar] handleQuickFilter called with:', filterType);
+    console.log('[FilterSidebar] Current filters state:', filters);
     logFilterEvent('quick_filter_change', { filterType });
     switch (filterType) {
       case 'stock':
+        console.log('[FilterSidebar] Calling onStockChange');
         onStockChange();
         break;
       case 'sale':
+        console.log('[FilterSidebar] Calling onOnSaleChange');
         onOnSaleChange();
         break;
       case 'new':
+        console.log('[FilterSidebar] Calling onIsNewChange');
         onIsNewChange();
         break;
       case 'featured':
+        console.log('[FilterSidebar] Calling onFeaturedChange');
         onFeaturedChange();
         break;
       default:
+        console.log('[FilterSidebar] Unknown filter type:', filterType);
         return;
     }
   };
