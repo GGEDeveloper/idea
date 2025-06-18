@@ -39,13 +39,41 @@ const { populateUserFromToken } = require('./src/api/middleware/localAuth.cjs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const NODE_ENV = process.env.NODE_ENV || 'development';
 
-// Middlewares Globais Essenciais
-app.use(cors({ origin: true, credentials: true, allowedHeaders: ['Content-Type', 'Authorization'] }));
-app.use(express.json());
-app.use(cookieParser()); // cookieParser ANTES do populateUserFromToken
+console.log(`[SERVER] Starting in ${NODE_ENV} mode on port ${PORT}`);
 
-// Middleware para popular req.localUser a partir do token JWT (se existir)
+// Security headers for production
+if (NODE_ENV === 'production') {
+  app.use((req, res, next) => {
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+    next();
+  });
+}
+
+// CORS configuration - more restrictive in production
+const corsOptions = NODE_ENV === 'production' 
+  ? {
+      origin: process.env.FRONTEND_URL || false,
+      credentials: true,
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+    }
+  : {
+      origin: true,
+      credentials: true,
+      allowedHeaders: ['Content-Type', 'Authorization']
+    };
+
+app.use(cors(corsOptions));
+app.use(express.json({ limit: '10mb' }));
+app.use(cookieParser());
+
+// Middleware para popular req.localUser a partir do token JWT
 app.use(populateUserFromToken);
 
 // Middleware para adicionar o pool de conexão a cada requisição
@@ -54,9 +82,21 @@ app.use((req, res, next) => {
   next();
 });
 
+// Request logging in production
+if (NODE_ENV === 'production') {
+  app.use((req, res, next) => {
+    const start = Date.now();
+    res.on('finish', () => {
+      const duration = Date.now() - start;
+      console.log(`[${new Date().toISOString()}] ${req.method} ${req.url} - ${res.statusCode} (${duration}ms)`);
+    });
+    next();
+  });
+}
+
 // Rotas da API
-app.use('/api/auth', authRouter); // Novas rotas /api/auth/login, /api/auth/logout
-app.use('/api/users', usersRouter); // Inclui /api/users/me
+app.use('/api/auth', authRouter);
+app.use('/api/users', usersRouter);
 app.use('/api/search', searchRouter);
 app.use('/api/products', productsRouter);
 app.use('/api/categories', categoriesRouter);
@@ -77,47 +117,100 @@ if (productsRouter) { // Adicionar verificação caso productsRouter seja condic
 productsRouter.use('/:productId/variations', variationsRouter);
 }
 
-// Rota de diagnóstico (Health Check)
+// Health check
 app.get('/api/health', async (req, res) => {
   try {
     const dbResult = await req.pool.query('SELECT NOW()');
     res.status(200).json({
       status: 'ok',
+      environment: NODE_ENV,
       dbStatus: 'connected',
       dbTime: dbResult.rows[0].now,
+      uptime: process.uptime(),
+      memory: process.memoryUsage(),
+      version: require('./package.json').version || '1.0.0'
     });
   } catch (error) {
-    console.error('[Health Check] Erro de conexão com o banco de dados:', error);
+    console.error('[Health Check] Database connection error:', error);
     res.status(500).json({
       status: 'error',
+      environment: NODE_ENV,
       dbStatus: 'disconnected',
       errorMessage: error.message,
     });
   }
 });
 
-// Servir ficheiros estáticos e fallback da SPA (TEMPORARIAMENTE COMENTADOS PARA DEPURAÇÃO DA API)
-// app.use(express.static(path.join(__dirname, 'dist')));
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-// });
+// Serve static files in production
+if (NODE_ENV === 'production') {
+  const distPath = path.join(__dirname, 'dist');
+  
+  // Static files with cache headers
+  app.use(express.static(distPath, {
+    maxAge: '1y',
+    etag: true,
+    lastModified: true,
+    setHeaders: (res, path) => {
+      if (path.endsWith('.html')) {
+        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+      }
+    }
+  }));
+  
+  // SPA fallback
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+} else {
+  console.log('[SERVER] Development mode - static files served by Vite');
+}
 
-// Tratamento de erros global
+// Error handling
 app.use((err, req, res, next) => {
-  console.error('[GLOBAL ERROR HANDLER]', err.message, err.stack);
-  // Não há mais err.clerkError para verificar aqui
+  console.error('[ERROR]', {
+    message: err.message,
+    stack: NODE_ENV === 'development' ? err.stack : undefined,
+    url: req.url,
+    method: req.method,
+    timestamp: new Date().toISOString()
+  });
+  
   if (res.headersSent) {
     return next(err);
   }
+  
   res.status(err.status || 500).json({
-    message: err.message || 'Something broke!',
+    message: NODE_ENV === 'production' ? 'Internal Server Error' : err.message,
+    ...(NODE_ENV === 'development' && { stack: err.stack })
   });
 });
 
+// 404 handler for API routes
+app.use('/api/*', (req, res) => {
+  res.status(404).json({ message: 'API endpoint not found' });
+});
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+  console.log('[SERVER] SIGTERM received, shutting down gracefully');
+  process.exit(0);
+});
+
+process.on('SIGINT', () => {
+  console.log('[SERVER] SIGINT received, shutting down gracefully');
+  process.exit(0);
+});
+
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log('Sistema de autenticação local ativo.');
+  console.log(`[SERVER] Running on http://localhost:${PORT}`);
+  console.log(`[SERVER] Environment: ${NODE_ENV}`);
+  console.log('[AUTH] Local JWT authentication system active');
+  
   if (!process.env.JWT_SECRET) {
-    console.warn('AVISO: JWT_SECRET não está definida no .env! Os tokens JWT não serão seguros.');
+    console.warn('[WARNING] JWT_SECRET not defined! Tokens will not be secure.');
+  }
+  
+  if (NODE_ENV === 'production' && !process.env.FRONTEND_URL) {
+    console.warn('[WARNING] FRONTEND_URL not defined for production CORS');
   }
 });
