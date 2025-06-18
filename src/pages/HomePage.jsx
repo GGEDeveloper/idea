@@ -228,7 +228,7 @@ const HomePage = () => {
           </svg>
         </div>
         <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="relative z-10 h-36 md:h-48 w-auto mb-4 drop-shadow-[0_8px_32px_rgba(234,179,8,0.5)] animate-float" />
-        <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-secondary text-center mb-2 drop-shadow-lg">A MARCA DAS MARCAS</h1>
+        <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-white text-center mb-2 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>A MARCA DAS MARCAS</h1>
         <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
         
         {loadingFeatured && (
