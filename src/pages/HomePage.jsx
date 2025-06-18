@@ -220,12 +220,11 @@ const HomePage = () => {
 
   return (
     <div className="space-y-16 bg-bg-base bg-gradient-to-b from-bg-base to-[#e5e7eb]">
-      <section className="relative flex flex-col items-center justify-center py-20 px-4 min-h-[520px] rounded-3xl overflow-hidden bg-gradient-to-br from-yellow-300 via-yellow-100 to-indigo-100 shadow-2xl">
+      <section className="relative flex flex-col items-center justify-center py-20 px-4 min-h-[520px] rounded-3xl overflow-hidden bg-gradient-to-br from-orange-400 via-orange-300 to-red-400 shadow-2xl">
         <div className="absolute inset-0 z-0 animate-gradient-move">
           <svg className="absolute top-0 left-0 w-full h-full opacity-30" style={{filter:'blur(2px)'}}>
-            <circle cx="20%" cy="30%" r="80" fill="#fde047"/>
-            <circle cx="80%" cy="60%" r="120" fill="#818cf8"/>
-            <circle cx="50%" cy="80%" r="60" fill="#fbbf24"/>
+            <circle cx="20%" cy="30%" r="80" fill="#fbbf24"/>
+            <circle cx="50%" cy="80%" r="60" fill="#f97316"/>
           </svg>
         </div>
         <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="relative z-10 h-36 md:h-48 w-auto mb-4 drop-shadow-[0_8px_32px_rgba(234,179,8,0.5)] animate-float" />
@@ -366,35 +365,6 @@ const HomePage = () => {
               })}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Seção Sobre a Marca */}
-      <section className="bg-bg-base py-12">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-text-alt mb-6">{t('Sobre a Marca')}</h2>
-          <div className="flex flex-wrap justify-center -mx-4">
-            <div className="w-full md:w-1/2 xl:w-1/3 p-4">
-              <div className="bg-gray-200 rounded-lg shadow-md p-4 text-center">
-                <h3 className="text-lg font-bold text-text-alt mb-2">{t('Nossa História')}</h3>
-                <p className="text-sm text-text-alt">{t('Conheça nossa trajetória e valores.')}</p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 xl:w-1/3 p-4">
-              <div className="bg-gray-200 rounded-lg shadow-md p-4 text-center">
-                <h3 className="text-lg font-bold text-text-alt mb-2">{t('Nossa Missão')}</h3>
-                <p className="text-sm text-text-alt">{t('Entenda nosso propósito e objetivos.')}</p>
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-6">
-            <Link 
-              to="/sobre"
-              className="bg-secondary hover:bg-secondary-dark text-text-alt font-semibold py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-            >
-              {t('Saiba Mais')}
-            </Link>
-          </div>
         </div>
       </section>
     </div>
