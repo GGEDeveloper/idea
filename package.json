@@ -1,8 +1,11 @@
 {
   "name": "idea",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -18,20 +21,14 @@
     "prod:pm2:restart": "pm2 restart all",
     "prod:pm2:logs": "pm2 logs",
     "health": "curl -f http://localhost:3000/api/health || exit 1",
+    "postinstall": "npm run build",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ecommerce", "b2b", "nodejs", "react", "express"],
+  "author": "IDEA E-commerce Team",
   "license": "ISC",
-  "description": "",
+  "description": "IDEA E-commerce Platform - B2B marketplace with Geko API integration",
   "dependencies": {
-    "@clerk/backend": "^2.0.0",
-    "@clerk/express": "^1.7.0",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@heroicons/react": "^2.2.0",
-    "@vitejs/plugin-react": "^4.5.1",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -50,18 +47,24 @@
     "react-i18next": "^15.5.2",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.2",
-    "swiper": "^11.2.8",
-    "vite": "^6.3.5"
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
+    "@clerk/backend": "^2.0.0",
+    "@clerk/express": "^1.7.0",
     "@eslint/js": "^9.28.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@heroicons/react": "^2.2.0",
     "@playwright/test": "^1.52.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
+    "@vitejs/plugin-react": "^4.5.1",
     "autoprefixer": "^10.4.21",
     "babel-jest": "^30.0.0",
     "concurrently": "^9.1.2",
@@ -76,6 +79,7 @@
     "postcss": "^8.5.4",
     "tailwindcss": "^3.4.17",
     "util": "^0.12.5",
+    "vite": "^6.3.5",
     "vitest": "^3.2.2"
   }
 }

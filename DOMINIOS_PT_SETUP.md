@@ -2,7 +2,8 @@
 
 **Data**: 25 de Janeiro de 2025  
 **Hosting**: Domínios.PT  
-**Tipo**: Node.js Application com Passenger
+**Tipo**: Node.js Application com Passenger  
+**Status**: ✅ Corrigido para Compatibilidade Total
 
 ---
 
@@ -78,7 +79,7 @@ AUDIT_LOG_RETENTION_DAYS=90
 /public_html/
 ├── app.js                    ← STARTUP FILE
 ├── server.cjs               ← Main server
-├── package.json             ← Dependencies
+├── package.json             ← Dependencies (CORRIGIDO)
 ├── passenger.log            ← LOG FILE
 ├── .env                     ← Environment variables
 ├── dist/                    ← DOCUMENT ROOT
@@ -93,7 +94,7 @@ AUDIT_LOG_RETENTION_DAYS=90
 
 ---
 
-## 🚀 **PASSOS DE DEPLOYMENT**
+## 🚀 **PASSOS DE DEPLOYMENT (ATUALIZADOS)**
 
 ### **1. Upload dos Ficheiros**
 ```bash
@@ -118,16 +119,46 @@ No painel, adicionar cada variável:
 - `GEKO_API_KEY` = `4bceff60-32d7-4635-b5e8-ca51353a6e0e`
 - `FRONTEND_URL` = `https://seudominio.pt`
 
-### **4. Instalação e Build**
+### **4. Instalação e Build (ORDEM IMPORTANTE)**
 Via terminal no painel ou SSH:
 ```bash
 cd /public_html
-npm install --production
+
+# 1. Instalar apenas dependências de produção
+npm ci --omit=dev
+
+# 2. Instalar dependências de build temporariamente
+npm install vite @vitejs/plugin-react
+
+# 3. Build da aplicação
 npm run build
+
+# 4. Remover dependências de desenvolvimento
+npm prune --production
+
+# 5. Criar diretório de logs
+mkdir -p logs
 ```
 
 ### **5. Restart da Aplicação**
 No painel: **Node.js Apps** → **Restart**
+
+---
+
+## ⚠️ **PROBLEMAS CORRIGIDOS**
+
+### **Problemas Anteriores:**
+- ❌ `"type": "module"` - Conflito ESM/CommonJS
+- ❌ `"main": "index.js"` - Arquivo incorreto
+- ❌ Vite em dependencies - Deveria estar em devDependencies
+- ❌ Faltava engines specification
+
+### **Soluções Aplicadas:**
+- ✅ **Removido `type: module`** - Compatibilidade CommonJS
+- ✅ **Corrigido `main: app.js`** - Startup file correto
+- ✅ **Reorganizado dependencies** - Produção vs desenvolvimento
+- ✅ **Adicionado engines** - Node 18+ requirement
+- ✅ **Postinstall script** - Build automático
 
 ---
 
@@ -161,11 +192,18 @@ https://seudominio.pt/api/health
 - ✅ Verificar se `app.js` está correto no startup file
 - ✅ Verificar se Node.js 18.x está selecionado
 - ✅ Verificar logs no painel
+- ✅ **NOVO**: Verificar se build foi executado
 
 ### **Erro 500**
 - ✅ Verificar environment variables
-- ✅ Verificar se `npm install` foi executado
+- ✅ Verificar se `npm ci --omit=dev` foi executado
 - ✅ Verificar se `npm run build` foi executado
+- ✅ **NOVO**: Verificar se vite está disponível durante build
+
+### **Module errors**
+- ✅ **NOVO**: Confirmar que `type: module` foi removido
+- ✅ **NOVO**: Verificar compatibilidade CommonJS
+- ✅ **NOVO**: Reinstalar node_modules se necessário
 
 ### **Database connection failed**
 - ✅ Verificar `DATABASE_URL` nas environment variables
@@ -181,17 +219,22 @@ https://seudominio.pt/api/health
 
 ---
 
-## 📊 **MONITORIZAÇÃO**
+## 📊 **COMANDOS DE DIAGNÓSTICO**
 
-### **Logs da Aplicação**
-- **Passenger logs**: Via painel de controlo
-- **Application logs**: `/public_html/logs/`
-- **Health check**: `https://seudominio.pt/api/health`
+### **Verificar Instalação**
+```bash
+# Verificar Node version
+node --version
 
-### **Performance**
-- **Memory usage**: Monitored by Passenger
-- **CPU usage**: Available in hosting panel
-- **Database**: Neon monitoring dashboard
+# Verificar dependencies
+npm list --depth=0
+
+# Verificar build
+ls -la dist/
+
+# Test server
+NODE_ENV=production node server.cjs
+```
 
 ---
 
@@ -209,22 +252,7 @@ https://seudominio.pt/api/health
 
 ---
 
-## 📞 **SUPORTE**
-
-### **Em caso de problemas:**
-1. **Health check**: `https://seudominio.pt/api/health`
-2. **Logs**: Painel domínios.pt → Node.js Apps → View Logs
-3. **Restart**: Painel domínios.pt → Node.js Apps → Restart
-4. **Environment**: Verificar todas as variáveis listadas acima
-
-### **Contactos Úteis:**
-- **Domínios.PT Support**: Via painel de cliente
-- **Database (Neon)**: https://console.neon.tech/
-- **Application**: https://seudominio.pt/api/health
-
----
-
-## ✅ **CHECKLIST FINAL**
+## ✅ **CHECKLIST FINAL (ATUALIZADO)**
 
 Antes de marcar como concluído:
 
@@ -232,8 +260,10 @@ Antes de marcar como concluído:
 - [ ] ✅ `dist/` definido como document root  
 - [ ] ✅ Node.js 18.x selecionado
 - [ ] ✅ Todas as environment variables configuradas
-- [ ] ✅ `npm install --production` executado
-- [ ] ✅ `npm run build` executado
+- [ ] ✅ `npm ci --omit=dev` executado
+- [ ] ✅ **Vite instalado temporariamente para build**
+- [ ] ✅ `npm run build` executado com sucesso
+- [ ] ✅ **Dependencies de dev removidas após build**
 - [ ] ✅ Health check responde OK
 - [ ] ✅ Homepage carrega corretamente
 - [ ] ✅ Admin area acessível
@@ -241,4 +271,19 @@ Antes de marcar como concluído:
 
 ---
 
-*Este documento contém todas as informações necessárias para deployment no domínios.pt. Guarde-o para referência futura.* 
+## 🆘 **RECUPERAÇÃO RÁPIDA**
+
+Se algo falhar:
+
+```bash
+# Reset completo
+rm -rf node_modules
+npm ci --omit=dev
+npm install vite @vitejs/plugin-react
+npm run build
+npm prune --production
+```
+
+---
+
+*Documento atualizado com correções críticas de compatibilidade. Versão: 1.1* 
