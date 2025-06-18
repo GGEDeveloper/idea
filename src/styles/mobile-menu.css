@@ -24,15 +24,19 @@
   padding: 1rem;
   box-shadow: -2px 0 10px var(--shadow-lg);
   border-top: 1px solid var(--color-border-base);
+  visibility: hidden;
+  opacity: 0;
 }
 
+/* Quando o menu está aberto (aria-hidden="false") */
 .mobile-menu-container[aria-hidden="false"] {
   transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Overlay do menu móvel */
 .mobile-menu-overlay {
-  display: none;
   position: fixed;
   top: 4rem; /* Altura do cabeçalho */
   left: 0;
@@ -41,12 +45,16 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 40;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
 }
 
-.mobile-menu-open .mobile-menu-overlay {
-  display: block;
+/* Quando o overlay está ativo */
+.mobile-menu-overlay[aria-hidden="false"] {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* Melhorias de acessibilidade para navegação por teclado */

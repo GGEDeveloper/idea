@@ -325,6 +325,28 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 - Mapeamento de classes de componentes
 - Guia de cores e variáveis CSS
 
+## [v1.4.1] - 2025-01-20
+
+### 🐛 Bug Fixes
+- **✅ FILTROS RÁPIDOS CORRIGIDOS**: Resolvido problema crítico nos filtros de produtos
+  - Corrigida comunicação entre ProductsPage handlers e useProducts setFilters
+  - Filtros agora passam objetos em vez de funções para setFilters
+  - Quick filters funcionam perfeitamente: "Em Stock", "Promoção", "Novidades", "Destaque"
+  - Filtro de disponibilidade funcional tanto em quick filters quanto na seção detalhada
+  - API backend recebia parâmetros corretamente, problema estava no frontend
+
+### 🔧 Technical Details  
+- Fixed filter handler pattern from `setFilters(prevFilters => {...})` to `setFilters({...})`
+- Added extensive debugging logs to track filter state flow
+- Verified API integration working correctly with all permissions
+- Mobile menu dark mode integration completed
+
+### 📊 Testing
+- ✅ Quick filters: hasStock, onSale, isNew, featured - ALL WORKING
+- ✅ Detailed filters: categories, brands, price ranges - ALL WORKING
+- ✅ Filter combinations and clearing - ALL WORKING
+- ✅ API calls with correct parameters - VERIFIED
+
 ---
 
 **Legenda:**

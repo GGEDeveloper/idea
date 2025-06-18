@@ -68,10 +68,11 @@ const Header = ({ onMobileMenuToggle }) => {
   // Fechar menu ao navegar
   useEffect(() => {
     if (isMobileMenuOpen) {
+      console.log('Closing mobile menu due to navigation:', location.pathname);
       setIsMobileMenuOpen(false);
       onMobileMenuToggle?.(false);
     }
-  }, [location.pathname, isMobileMenuOpen, onMobileMenuToggle]);
+  }, [location.pathname]); // Removido isMobileMenuOpen das dependências para evitar loop
 
   // Manipular pesquisa
   const handleSearch = useCallback((e) => {
@@ -195,15 +196,24 @@ const Header = ({ onMobileMenuToggle }) => {
     if (!isMobileMenuOpen) return;
     
     const handleClickOutside = (e) => {
-      if (navRef.current && !navRef.current.contains(e.target) && 
-          e.target !== menuButtonRef.current && 
-          !menuButtonRef.current?.contains(e.target)) {
-        setIsMobileMenuOpen(false);
-      }
+      // Adicionar delay para evitar fechamento imediato após abrir
+      setTimeout(() => {
+        if (navRef.current && !navRef.current.contains(e.target) && 
+            e.target !== menuButtonRef.current && 
+            !menuButtonRef.current?.contains(e.target)) {
+          console.log('Clicking outside mobile menu, closing');
+          setIsMobileMenuOpen(false);
+        }
+      }, 100);
     };
     
-    document.addEventListener('mousedown', handleClickOutside);
+    // Adicionar delay antes de ativar o listener para evitar fechamento imediato
+    const timeoutId = setTimeout(() => {
+      document.addEventListener('mousedown', handleClickOutside);
+    }, 200);
+    
     return () => {
+      clearTimeout(timeoutId);
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMobileMenuOpen]);
@@ -323,16 +333,23 @@ const Header = ({ onMobileMenuToggle }) => {
           <div className="md:hidden">
             <button 
               ref={menuButtonRef}
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 const newState = !isMobileMenuOpen;
+                console.log('Mobile menu button clicked:', { current: isMobileMenuOpen, new: newState });
                 setIsMobileMenuOpen(newState);
                 onMobileMenuToggle?.(newState);
+                
                 if (newState) {
                   // Focar no primeiro item do menu quando abrir
                   setTimeout(() => {
                     const firstItem = document.getElementById('mobile-menu')?.querySelector('a, button, [href]');
-                    firstItem?.focus();
-                  }, 100);
+                    if (firstItem) {
+                      firstItem.focus();
+                      console.log('Focused on first menu item:', firstItem);
+                    }
+                  }, 150);
                 }
               }}
               className="text-muted hover:text-primary focus:outline-none p-2 focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full transition-colors duration-200"
@@ -364,13 +381,15 @@ const Header = ({ onMobileMenuToggle }) => {
       {/* Overlay do menu móvel */}
       <div 
         className="mobile-menu-overlay"
-        onClick={() => {
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log('Overlay clicked, closing menu');
           setIsMobileMenuOpen(false);
           onMobileMenuToggle?.(false);
         }}
         aria-hidden={!isMobileMenuOpen}
         style={{
-          display: isMobileMenuOpen ? 'block' : 'none',
           top: '4rem',
         }}
       />
