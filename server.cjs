@@ -128,7 +128,8 @@ app.get('/api/health', async (req, res) => {
       dbTime: dbResult.rows[0].now,
       uptime: process.uptime(),
       memory: process.memoryUsage(),
-      version: require('./package.json').version || '1.0.0'
+      version: require('./package.json').version || '1.0.0',
+      passenger: process.env.PASSENGER_BASE_URI ? 'enabled' : 'disabled'
     });
   } catch (error) {
     console.error('[Health Check] Database connection error:', error);
@@ -201,16 +202,22 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-app.listen(PORT, () => {
-  console.log(`[SERVER] Running on http://localhost:${PORT}`);
-  console.log(`[SERVER] Environment: ${NODE_ENV}`);
-  console.log('[AUTH] Local JWT authentication system active');
-  
-  if (!process.env.JWT_SECRET) {
-    console.warn('[WARNING] JWT_SECRET not defined! Tokens will not be secure.');
-  }
-  
-  if (NODE_ENV === 'production' && !process.env.FRONTEND_URL) {
-    console.warn('[WARNING] FRONTEND_URL not defined for production CORS');
-  }
-});
+// Only start the server if this file is run directly (not required by Passenger)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`[SERVER] Running on http://localhost:${PORT}`);
+    console.log(`[SERVER] Environment: ${NODE_ENV}`);
+    console.log('[AUTH] Local JWT authentication system active');
+    
+    if (!process.env.JWT_SECRET) {
+      console.warn('[WARNING] JWT_SECRET not defined! Tokens will not be secure.');
+    }
+    
+    if (NODE_ENV === 'production' && !process.env.FRONTEND_URL) {
+      console.warn('[WARNING] FRONTEND_URL not defined for production CORS');
+    }
+  });
+}
+
+// Export the app for Passenger
+module.exports = app;

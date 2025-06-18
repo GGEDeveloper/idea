@@ -1,0 +1,53 @@
+=== PASSENGER LOG FILE FOR IDEA E-COMMERCE ===
+Application: IDEA E-commerce Platform
+Startup File: app.js
+Created: 2025-01-25
+
+=== STARTUP CONFIGURATION ===
+Node.js Version: 18.x (LTS)
+Environment: production
+Application Root: /public_html (or subdirectory)
+Startup File: app.js
+Public Directory: dist/
+
+=== ENVIRONMENT VARIABLES REQUIRED ===
+NODE_ENV=production
+DATABASE_URL=postgres://...
+JWT_SECRET=your-secret-key
+GEKO_API_KEY=your-api-key
+FRONTEND_URL=https://yourdomain.pt
+
+=== PASSENGER SPECIFIC SETTINGS ===
+App Type: Node.js
+Startup File: app.js
+Document Root: dist/
+NodeJS Version: 18.x
+
+=== LOG ENTRIES ===
+[2025-01-25] Application structure created
+[2025-01-25] Passenger startup file (app.js) configured
+[2025-01-25] Server.cjs modified for Passenger compatibility
+[2025-01-25] Environment template (env.example) provided
+[2025-01-25] Production build tested successfully
+
+=== DEPLOYMENT CHECKLIST ===
+[ ] Upload all files to hosting
+[ ] Set app.js as startup file in control panel
+[ ] Configure environment variables
+[ ] Set document root to 'dist' folder
+[ ] Run 'npm install --production'
+[ ] Run 'npm run build'
+[ ] Test health endpoint: /api/health
+
+=== TROUBLESHOOTING ===
+- If app doesn't start: Check app.js path in control panel
+- If database errors: Verify DATABASE_URL environment variable
+- If CORS errors: Set FRONTEND_URL to your domain
+- If assets don't load: Ensure document root points to 'dist' folder
+
+=== SUPPORT INFORMATION ===
+Health Check URL: https://yourdomain.pt/api/health
+Admin Panel: https://yourdomain.pt/admin
+API Base: https://yourdomain.pt/api
+
+Last Updated: 2025-01-25 
