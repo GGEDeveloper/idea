@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-4 mt-8">
       <div className="container mx-auto px-4 text-center space-y-2">
-        <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="mx-auto h-20 w-auto max-h-24 min-h-16 mb-4 drop-shadow-lg" />
+        <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="mx-auto h-44 w-auto mb-4 drop-shadow-lg" />
         <h2 className="text-lg font-bold text-secondary tracking-wide">ALIMAMEDETOOLS — A MARCA DAS MARCAS</h2>
         {/* Links institucionais */}
         <nav aria-label="Links institucionais" className="flex flex-wrap justify-center gap-4 mb-2 text-sm">

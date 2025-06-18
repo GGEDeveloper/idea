@@ -242,11 +242,11 @@ const Header = ({ onMobileMenuToggle }) => {
         </a>
       </div>
 
-      <div className="container mx-auto px-4 flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 flex items-center justify-between min-h-20 lg:min-h-24">
         {console.log('Renderizando Header - isMobileMenuOpen:', isMobileMenuOpen, 'pathname:', location.pathname)}
-        <div className="flex items-center">
+        <div className="flex items-center flex-shrink-0">
           <Link to="/" className="flex-shrink-0" aria-label={t('nav.home')}>
-            <img className="h-44 w-auto" src={Logo} alt="Logo" />
+            <img className="h-32 md:h-44 w-auto" src={Logo} alt="Logo" />
           </Link>
         </div>
 
