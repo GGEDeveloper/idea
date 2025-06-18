@@ -24,6 +24,9 @@ import OrderCreatePage from './pages/admin/OrderCreatePage';
 import UsersAdminPage from './pages/admin/UsersAdminPage';
 import UserCreatePage from './pages/admin/UserCreatePage';
 import UserEditPage from './pages/admin/UserEditPage';
+import ReportsPage from './pages/admin/ReportsPage';
+import RolesPage from './pages/admin/RolesPage';
+import SettingsPage from './pages/admin/SettingsPage';
 
 // Componente para proteger rotas que requerem autenticação
 const ProtectedRoute = ({ children, adminOnly = false }) => {
@@ -213,6 +216,30 @@ function App() {
             element={
               <ProtectedRoute adminOnly={true}>
                 <UserEditPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/reports"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <ReportsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/roles"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <RolesPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/settings"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <SettingsPage />
               </ProtectedRoute>
             }
           />

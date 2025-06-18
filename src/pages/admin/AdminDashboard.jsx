@@ -91,23 +91,23 @@ const AdminDashboard = () => {
       icon: ChartBarIcon,
       link: '/admin/reports',
       color: 'bg-orange-500',
-      available: false // TODO: Implement
+      available: true
     },
     {
-      title: 'Conteúdo',
-      description: 'Banners, promoções e páginas',
+      title: 'Roles e Permissões',
+      description: 'Gerir roles e permissões do sistema',
       icon: ClipboardDocumentListIcon,
-      link: '/admin/content',
+      link: '/admin/roles',
       color: 'bg-indigo-500',
-      available: false // TODO: Implement
+      available: true
     },
     {
       title: 'Configurações',
-      description: 'Roles, permissões e definições',
+      description: 'Configurações de sistema e integrações',
       icon: Cog6ToothIcon,
       link: '/admin/settings',
       color: 'bg-gray-500',
-      available: false // TODO: Implement
+      available: true
     }
   ];
 
@@ -228,37 +228,42 @@ const AdminDashboard = () => {
             >
               Ver Todos os Produtos
             </Link>
-            <button 
-              className="bg-gray-300 text-gray-600 px-4 py-2 rounded-md cursor-not-allowed"
-              disabled
+            <Link 
+              to="/admin/orders" 
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors"
             >
-              Ver Encomendas Pendentes (Em Breve)
-            </button>
-            <button 
-              className="bg-gray-300 text-gray-600 px-4 py-2 rounded-md cursor-not-allowed"
-              disabled
+              Ver Encomendas
+            </Link>
+            <Link 
+              to="/admin/users/create" 
+              className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-md transition-colors"
             >
-              Criar Novo Utilizador (Em Breve)
-            </button>
+              Criar Novo Utilizador
+            </Link>
+            <Link 
+              to="/admin/reports" 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md transition-colors"
+            >
+              Ver Relatórios
+            </Link>
           </div>
         </div>
 
-        {/* Development Notice */}
-        <div className="mt-8 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+        {/* Status Notice */}
+        <div className="mt-8 bg-green-50 border border-green-200 rounded-lg p-4">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              <svg className="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
             </div>
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-yellow-800">
-                Área de Administração em Desenvolvimento
+              <h3 className="text-sm font-medium text-green-800">
+                Área de Administração Completa
               </h3>
-              <div className="mt-2 text-sm text-yellow-700">
+              <div className="mt-2 text-sm text-green-700">
                 <p>
-                  Atualmente apenas a gestão de produtos está disponível. 
-                  Outras funcionalidades serão implementadas gradualmente.
+                  Todas as funcionalidades principais estão agora disponíveis: gestão de produtos, encomendas, utilizadores, relatórios, roles/permissões e configurações do sistema.
                 </p>
               </div>
             </div>
