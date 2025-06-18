@@ -144,4 +144,30 @@
   ring-color: var(--color-primary);
   ring-opacity: 0.2;
   border-color: var(--color-primary);
+}
+
+/* ==========================================
+   MOBILE MENU
+   ========================================== */
+.mobile-menu-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: var(--color-text-base);
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.mobile-menu-item:hover,
+.mobile-menu-item:focus {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary);
+  outline: none;
+}
+
+.mobile-menu-item:active {
+  background-color: var(--color-bg-secondary);
 } 

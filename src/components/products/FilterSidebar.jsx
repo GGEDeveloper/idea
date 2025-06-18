@@ -299,7 +299,10 @@ const FilterSidebar = ({
     if (filters.brands && Object.values(filters.brands).some(Boolean)) count++;
     if (filters.categories && filters.categories.length > 0) count++;
     if (filters.price && (filters.price.min > 0 || filters.price.max < 10000)) count++;
-    if (filters.stock) count++;
+    if (filters.hasStock) count++;
+    if (filters.onSale) count++;
+    if (filters.isNew) count++;
+    if (filters.featured) count++;
     if (filters.attributes && Object.keys(filters.attributes).length > 0) count++;
     return count;
   }, [filters]);
@@ -520,12 +523,12 @@ const FilterSidebar = ({
               description="Filtre por disponibilidade em stock"
             >
               <PremiumCheckbox
-                id="stock-filter"
+                id="stock-filter-detailed"
                 label="Apenas produtos em stock"
-              checked={!!filters.stock}
+              checked={!!filters.hasStock}
               onChange={() => {
                 onStockChange();
-                logFilterEvent('stock_change', { checked: !filters.stock });
+                logFilterEvent('stock_change', { checked: !filters.hasStock });
               }}
                 ariaLabel="Mostrar apenas produtos em stock"
                 icon={CubeIcon}

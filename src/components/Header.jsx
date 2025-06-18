@@ -298,13 +298,13 @@ const Header = ({ onMobileMenuToggle }) => {
         <div className="flex items-center space-x-4">
           <Link 
             to="/carrinho" 
-            className="relative text-text-muted hover:text-secondary transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 p-1 rounded-full"
+            className="relative text-muted hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 p-1 rounded-full"
             aria-label={t('cart.title', { count: totalItems })}
             title={t('cart.title', { count: totalItems })}
           >
             <div className="relative">
               <ShoppingCartIcon 
-                className="h-7 w-7 text-text-base group-hover:text-secondary transition-colors" 
+                className="h-7 w-7 text-base group-hover:text-primary transition-colors" 
                 aria-hidden="true" 
               />
               {totalItems > 0 && (
@@ -335,7 +335,7 @@ const Header = ({ onMobileMenuToggle }) => {
                   }, 100);
                 }
               }}
-              className="text-text-muted hover:text-secondary focus:outline-none p-2 focus:ring-2 focus:ring-secondary focus:ring-offset-2 rounded-full transition-colors duration-200"
+              className="text-muted hover:text-primary focus:outline-none p-2 focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full transition-colors duration-200"
               aria-label={isMobileMenuOpen ? t('menu.close') : t('menu.open')}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
@@ -344,12 +344,12 @@ const Header = ({ onMobileMenuToggle }) => {
             >
               {isMobileMenuOpen ? (
                 <XMarkIcon 
-                  className="h-7 w-7 text-text-base" 
+                  className="h-7 w-7 text-base" 
                   aria-hidden="true" 
                 />
               ) : (
                 <Bars3Icon 
-                  className="h-7 w-7 text-text-base" 
+                  className="h-7 w-7 text-base" 
                   aria-hidden="true" 
                 />
               )}
@@ -396,7 +396,7 @@ const Header = ({ onMobileMenuToggle }) => {
           <Link 
             to="/" 
             role="menuitem"
-            className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" 
+            className="nav-link mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
@@ -411,7 +411,7 @@ const Header = ({ onMobileMenuToggle }) => {
           <Link 
             to="/produtos"
             role="menuitem"
-            className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" 
+            className="nav-link mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
@@ -426,7 +426,7 @@ const Header = ({ onMobileMenuToggle }) => {
           <Link 
             to="/sobre"
             role="menuitem"
-            className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" 
+            className="nav-link mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
@@ -441,7 +441,7 @@ const Header = ({ onMobileMenuToggle }) => {
           <Link 
             to="/contato"
             role="menuitem"
-            className="text-text-base hover:bg-secondary/10 p-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" 
+            className="nav-link mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
