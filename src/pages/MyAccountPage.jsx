@@ -220,24 +220,40 @@ const MyAccountPage = () => {
 
               {activeSection === 'orderHistory' && (
                 <div className="p-6 md:p-8">
-                  <div className="mb-6">
+                  <div className="mb-6 flex justify-between items-center">
+                    <div>
                     <h2 className="text-2xl font-bold text-gray-900">Histórico de Pedidos</h2>
                     <p className="mt-1 text-sm text-gray-500">Acompanhe e gerencie seus pedidos recentes</p>
+                    </div>
+                    <button
+                      onClick={() => navigate('/meus-pedidos')}
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Ver Todas as Encomendas
+                    </button>
                   </div>
                   
                   <div className="bg-gray-50 rounded-lg p-8 text-center">
                     <ClipboardDocumentListIcon className="mx-auto h-12 w-12 text-gray-400" />
-                    <h3 className="mt-3 text-lg font-medium text-gray-900">Nenhum pedido encontrado</h3>
+                    <h3 className="mt-3 text-lg font-medium text-gray-900">Acesse o seu histórico completo</h3>
                     <p className="mt-1 text-gray-500 max-w-md mx-auto">
-                      Você ainda não realizou nenhuma compra. Explore nossa loja e descubra nossos produtos.
+                      Clique no botão acima para ver todas as suas encomendas, filtrar por estado e acompanhar o progresso.
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-6 space-x-4">
+                      <button
+                        type="button"
+                        onClick={() => navigate('/meus-pedidos')}
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        <ClipboardDocumentListIcon className="h-4 w-4 mr-2" />
+                        Ver Encomendas
+                      </button>
                       <button
                         type="button"
                         onClick={() => navigate('/produtos')}
-                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
-                        Ver Produtos
+                        Explorar Produtos
                       </button>
                     </div>
                   </div>

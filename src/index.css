@@ -1,3 +1,20 @@
+/* ==========================================
+   IMPORTAR ESTILOS PERSONALIZADOS (DEVEM VIR PRIMEIRO)
+   ========================================== */
+
+/* 1. Variáveis CSS (devem vir primeiro) */
+@import './styles/variables.css';
+
+/* 2. Estilos base e configuração geral */
+@import './styles/base.css';
+
+/* 3. Classes utilitárias */
+@import './styles/utilities.css';
+
+/* 4. Componentes específicos (por último para override) */
+@import './styles/components.css';
+
+/* Tailwind CSS (após imports personalizados) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,26 +39,4 @@ body.mobile-menu-open {
   outline: none;
 }
 
-:root {
-  /* Light Mode */
-  --color-bg-base: #f5f6fa;     /* HomePage fundo principal: cinza muito claro */
-  --color-bg-alt: #ececec;      /* Header/Footer: cinza leve */
-  --color-bg-card: #f3f4f6;     /* Cards: cinza médio-claro */
-  --color-primary: #ffd600;
-  --color-secondary: #3f3d56;
-  --color-accent: #6366f1;
-  --color-text-base: #22223b;
-  --color-text-alt: #6b7280;
-  --color-border: #e5e7eb;
-}
-
-.dark {
-  /* Dark Mode */
-  --color-primary: #facc15; /* yellow-400 */
-  --color-secondary: #818cf8; /* indigo-400 */
-  --color-text-base: #e5e7eb; /* gray-200 */
-  --color-text-muted: #9ca3af; /* gray-400 */
-  --color-bg-base: #111827; /* gray-900 */
-  --color-bg-alt: #1f2937; /* gray-800 */
-  --color-border-base: #374151; /* gray-700 */
-}
+/* Variáveis legadas - removidas, agora usando themes.css */

@@ -113,7 +113,7 @@
 
 ---
 
-*Documentação completa disponível em `/docs/`*
+*Documentação completa disponível em `/docs/`* 
 
 ## [3.0.0] - 2025-01-18
 

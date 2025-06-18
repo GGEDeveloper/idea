@@ -29,7 +29,7 @@ A área de administração está **COMPLETAMENTE IMPLEMENTADA** com todas as fun
 #### **Páginas:**
 - ✅ **ProductsAdminPage.jsx** - Listagem com filtros e paginação
 - ✅ **ProductEditPage.jsx** - Edição completa de produtos
-- ✅ **ProductCreatePage.jsx** - Criação de novos produtos  
+- ✅ **ProductCreatePage.jsx** - Criação de novos produtos
 - ✅ **ProductViewPage.jsx** - Visualização detalhada
 
 #### **API Endpoints:**

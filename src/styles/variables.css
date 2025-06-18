@@ -1,0 +1,95 @@
+/* ==========================================
+   VARIÁVEIS CSS - TEMA CLARO E ESCURO
+   ========================================== */
+
+/* ==========================================
+   TEMA CLARO (Padrão)
+   ========================================== */
+:root {
+  /* Cores primárias */
+  --color-primary: #1f2937;     /* Azul escuro elegante */
+  --color-primary-dark: #111827;
+  --color-primary-light: #374151;
+  --color-secondary: #f59e0b;   /* Amarelo/laranja da Alitools */
+  --color-secondary-dark: #d97706;
+  --color-secondary-light: #fbbf24;
+
+  /* Cores de fundo */
+  --color-bg-base: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-tertiary: #f3f4f6;
+  --color-bg-accent: #e5e7eb;
+
+  /* Cores de texto */
+  --color-text-base: #111827;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+  --color-text-inverse: #ffffff;
+
+  /* Cores de borda */
+  --color-border-base: #e5e7eb;
+  --color-border-light: #f3f4f6;
+  --color-border-accent: #d1d5db;
+
+  /* Estados */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Overlay e sombras */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================
+   TEMA ESCURO (Inspirado na Alitools)
+   ========================================== */
+.dark {
+  /* Cores primárias - tons mais escuros e profissionais */
+  --color-primary: #f59e0b;     /* Laranja da Alitools como primário no dark */
+  --color-primary-dark: #d97706;
+  --color-primary-light: #fbbf24;
+  --color-secondary: #60a5fa;   /* Azul claro para contraste */
+  --color-secondary-dark: #3b82f6;
+  --color-secondary-light: #93c5fd;
+
+  /* Cores de fundo - inspirado em ferramentas profissionais */
+  --color-bg-base: #0f1419;     /* Preto azulado muito escuro */
+  --color-bg-secondary: #1a1f2e; /* Azul escuro */
+  --color-bg-tertiary: #252a3a;  /* Azul-cinza */
+  --color-bg-accent: #2d3748;    /* Cinza azulado */
+
+  /* Cores de texto */
+  --color-text-base: #e2e8f0;   /* Branco azulado suave */
+  --color-text-muted: #a0aec0;  /* Cinza azulado médio */
+  --color-text-light: #718096;  /* Cinza azulado escuro */
+  --color-text-inverse: #1a202c;
+
+  /* Cores de borda */
+  --color-border-base: #2d3748;
+  --color-border-light: #4a5568;
+  --color-border-accent: #718096;
+
+  /* Estados - cores mais vibrantes para contraste */
+  --color-success: #48bb78;
+  --color-warning: #ed8936;
+  --color-error: #f56565;
+  --color-info: #4299e1;
+
+  /* Overlay e sombras */
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  
+  /* Glassmorphism para dark mode */
+  --glass-bg: rgba(26, 32, 46, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+} 

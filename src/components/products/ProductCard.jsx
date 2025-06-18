@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
+import { CartContext } from '../../contexts/CartContext';
 
 const ProductCard = ({ product }) => {
   const { isAuthenticated, hasPermission } = useAuth();
   const { t } = useTranslation();
+  const { addToCart } = useContext(CartContext);
 
   // Adicionar um log para quando o ProductCard renderiza e com qual produto
   // console.log(`[ProductCard] Renderizando para produto ID: ${product ? product.id : 'N/A'}, EAN: ${product ? product.ean : 'N/A'}`);
 
   if (!product) {
     // Adiciona um fallback para o caso de o produto ser nulo
-    return <div className="h-full w-full animate-pulse rounded-lg bg-gray-200"></div>;
+    return <div className="h-full w-full animate-pulse rounded-lg bg-bg-tertiary"></div>;
   }
 
   // Obter URL da imagem principal
@@ -27,12 +29,12 @@ const ProductCard = ({ product }) => {
   return (
     <Link
       to={`/produtos/${product.ean}`}
-      className="group flex h-full flex-col overflow-hidden rounded-lg border border-border-base bg-white shadow-sm transition-shadow duration-200 hover:shadow-md"
+      className="product-card group flex h-full flex-col overflow-hidden rounded-lg hover-lift"
       aria-label={product.name || t('Produto sem nome')}
       data-testid={`product-card-${product.ean}`}
     >
       {/* Imagem */}
-      <div className="relative flex-shrink-0 overflow-hidden bg-gray-100">
+              <div className="relative flex-shrink-0 overflow-hidden bg-bg-secondary">
         <div className="aspect-square w-full">
         <img
           src={mainImage}
@@ -44,7 +46,7 @@ const ProductCard = ({ product }) => {
         />
         </div>
         {product.brand && (
-          <div className="absolute top-2 left-2 rounded bg-white bg-opacity-80 px-2 py-1 text-xs font-semibold text-gray-800">
+          <div className="absolute top-2 left-2 rounded bg-bg-base bg-opacity-90 px-2 py-1 text-xs font-semibold text-text-base">
             {product.brand}
           </div>
         )}
@@ -52,11 +54,11 @@ const ProductCard = ({ product }) => {
 
       {/* Conteúdo */}
       <div className="flex flex-grow flex-col p-4">
-        <h3 className="truncate text-base font-semibold text-text-base" title={product.name || ''}>
+        <h3 className="product-title truncate text-base font-semibold" title={product.name || ''}>
           {product.name || t('Produto sem nome')}
         </h3>
         <div
-          className="mt-1 text-sm text-text-muted line-clamp-3 h-[60px] overflow-hidden prose prose-sm max-w-none"
+          className="product-description mt-1 text-sm line-clamp-3 h-[60px] overflow-hidden prose prose-sm max-w-none"
           dangerouslySetInnerHTML={{ __html: product.description || '' }}
         />
         <div className="mt-2 flex items-center" aria-label={t('Avaliação')}>
@@ -72,7 +74,7 @@ const ProductCard = ({ product }) => {
           <p className="text-xs text-text-muted ml-2">(24)</p>
         </div>
         <div className="mt-auto pt-4">
-          <div className="text-lg font-bold text-text-base">
+          <div className="product-price text-lg font-bold">
             {(function() {
               if (!product) return <span className="text-sm font-normal text-text-muted">{t('Carregando preço...')}</span>;
 
@@ -104,10 +106,31 @@ const ProductCard = ({ product }) => {
             <button
             onClick={(e) => {
               e.preventDefault();
-              // Lógica para adicionar ao carrinho aqui
-              console.log('Adicionar ao carrinho:', product.ean);
+              e.stopPropagation(); // Prevenir navegação do Link pai
+              
+              // Verificar se tem preço e se pode ver preços
+              const canViewPrice = hasPermission('view_price');
+              const priceExists = product.price != null && product.price !== '' && !isNaN(parseFloat(product.price));
+              
+              if (!canViewPrice || !priceExists) {
+                console.warn('Não é possível adicionar ao carrinho: sem permissão de preço ou preço inexistente');
+                return;
+              }
+              
+              // Preparar dados do produto para o carrinho
+              const cartProduct = {
+                id: product.ean, // Usar EAN como ID
+                ean: product.ean,
+                name: product.name,
+                price: parseFloat(product.price),
+                image: mainImage,
+                brand: product.brand
+              };
+              
+              addToCart(cartProduct, 1);
+              console.log('Produto adicionado ao carrinho:', cartProduct);
             }}
-            disabled={!isAuthenticated || !hasPermission('add_to_cart')}
+            disabled={!isAuthenticated || !hasPermission('view_products') || !hasPermission('view_price') || !product.price}
             className="mt-2 w-full rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:bg-gray-300"
             >
               {t('Adicionar ao Carrinho')}

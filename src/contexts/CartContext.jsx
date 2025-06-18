@@ -3,6 +3,8 @@ import toast from 'react-hot-toast'; // Importar toast
 
 const CartContext = createContext();
 
+export { CartContext };
+
 export const useCart = () => {
   return useContext(CartContext);
 };
@@ -87,6 +89,7 @@ export const CartProvider = ({ children }) => {
 
   const value = {
     cartItems,
+    cart: cartItems, // Alias para compatibilidade
     addToCart,
     removeFromCart,
     updateQuantity,

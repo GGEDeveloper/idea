@@ -10,6 +10,7 @@ import Logo from '../assets/logo_transparente_amarelo.png';
 import './Header.css';
 import UserMenu from './UserMenu';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 import '../components/SearchBar.css';
 
 const Header = ({ onMobileMenuToggle }) => {
@@ -208,24 +209,24 @@ const Header = ({ onMobileMenuToggle }) => {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50" ref={headerRef}>
+          <header className="header-nav shadow-sm sticky top-0 z-50" ref={headerRef}>
       {/* Skip links for keyboard users */}
-      <div className="sr-only focus-within:not-sr-only focus-within:fixed focus-within:top-4 focus-within:left-4 focus-within:z-50 focus-within:p-4 focus-within:bg-white focus-within:shadow-lg focus-within:rounded">
+              <div className="sr-only focus-within:not-sr-only focus-within:fixed focus-within:top-4 focus-within:left-4 focus-within:z-50 focus-within:p-4 focus-within:bg-bg-base focus-within:shadow-lg focus-within:rounded">
         <a 
           href="#main-content" 
-          className="block mb-2 text-blue-600 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:rounded"
+          className="block mb-2 text-primary underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:rounded"
         >
           {t('header.skipToContent')}
         </a>
         <a 
           href="#search" 
-          className="block mb-2 text-blue-600 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:rounded"
+          className="block mb-2 text-primary underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:rounded"
         >
           {t('header.skipToSearch')}
         </a>
         <a 
           href="#cart" 
-          className="block text-blue-600 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:rounded"
+          className="block text-primary underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:rounded"
         >
           {t('header.skipToCart')}
         </a>
@@ -243,7 +244,7 @@ const Header = ({ onMobileMenuToggle }) => {
         <nav className="hidden md:flex items-center space-x-8" aria-label={t('header.mainNavigation')}>
           <Link 
             to="/" 
-            className="text-text-base hover:text-secondary px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
+            className="nav-link px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
             aria-current={location.pathname === '/' ? 'page' : undefined}
           >
             {t('nav.home')}
@@ -253,7 +254,7 @@ const Header = ({ onMobileMenuToggle }) => {
           </Link>
           <Link 
             to="/produtos" 
-            className="text-text-base hover:text-secondary px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
+            className="nav-link px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
             aria-current={location.pathname.startsWith('/produtos') ? 'page' : undefined}
           >
             {t('nav.products')}
@@ -263,7 +264,7 @@ const Header = ({ onMobileMenuToggle }) => {
           </Link>
           <Link 
             to="/sobre" 
-            className="text-text-base hover:text-secondary px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
+            className="nav-link px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
             aria-current={location.pathname.startsWith('/sobre') ? 'page' : undefined}
           >
             {t('nav.about')}
@@ -273,7 +274,7 @@ const Header = ({ onMobileMenuToggle }) => {
           </Link>
           <Link 
             to="/contato" 
-            className="text-text-base hover:text-secondary px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
+            className="nav-link px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
             aria-current={location.pathname.startsWith('/contato') ? 'page' : undefined}
           >
             {t('nav.contact')}
@@ -289,6 +290,7 @@ const Header = ({ onMobileMenuToggle }) => {
             {console.log('Renderizando SearchBar no desktop')}
             <SearchBar />
           </div>
+          <ThemeToggle />
           <UserMenu />
           <LanguageSwitcher />
         </div>
@@ -454,6 +456,9 @@ const Header = ({ onMobileMenuToggle }) => {
           
           {/* Auth Links Mobile */}
           <div className="border-t border-border-base mt-2 pt-2">
+            <div className="flex items-center justify-between px-2 py-2">
+              <ThemeToggle showLabels={true} />
+            </div>
             <div className="px-2 py-1">
               <UserMenu onItemClick={() => setIsMobileMenuOpen(false)} />
             </div>

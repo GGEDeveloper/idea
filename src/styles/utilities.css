@@ -1,0 +1,82 @@
+/* ==========================================
+   CLASSES UTILITÁRIAS
+   ========================================== */
+
+/* ==========================================
+   CORES DE FUNDO
+   ========================================== */
+.bg-base { background-color: var(--color-bg-base); }
+.bg-secondary { background-color: var(--color-bg-secondary); }
+.bg-tertiary { background-color: var(--color-bg-tertiary); }
+.bg-accent { background-color: var(--color-bg-accent); }
+
+/* Classes com prioridade para overrides */
+.bg-bg-base { background-color: var(--color-bg-base) !important; }
+.bg-bg-secondary { background-color: var(--color-bg-secondary) !important; }
+.bg-bg-tertiary { background-color: var(--color-bg-tertiary) !important; }
+
+/* ==========================================
+   CORES DE TEXTO
+   ========================================== */
+.text-base { color: var(--color-text-base); }
+.text-muted { color: var(--color-text-muted); }
+.text-light { color: var(--color-text-light); }
+.text-inverse { color: var(--color-text-inverse); }
+
+/* Classes com prioridade para overrides */
+.text-text-base { color: var(--color-text-base) !important; }
+.text-text-muted { color: var(--color-text-muted) !important; }
+.text-text-light { color: var(--color-text-light) !important; }
+
+/* ==========================================
+   CORES PRIMÁRIAS E SECUNDÁRIAS
+   ========================================== */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+
+/* ==========================================
+   CORES DE BORDA
+   ========================================== */
+.border-base { border-color: var(--color-border-base); }
+.border-light { border-color: var(--color-border-light); }
+.border-accent { border-color: var(--color-border-accent); }
+
+/* Classes com prioridade para overrides */
+.border-border-base { border-color: var(--color-border-base) !important; }
+.border-border-light { border-color: var(--color-border-light) !important; }
+.border-border-accent { border-color: var(--color-border-accent) !important; }
+
+/* ==========================================
+   CORES DE ESTADO
+   ========================================== */
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+.text-info { color: var(--color-info); }
+
+.bg-success { background-color: var(--color-success); }
+.bg-warning { background-color: var(--color-warning); }
+.bg-error { background-color: var(--color-error); }
+.bg-info { background-color: var(--color-info); }
+
+/* ==========================================
+   EFEITOS ESPECIAIS
+   ========================================== */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Efeito hover para elementos interativos */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+} 

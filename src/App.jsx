@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from './contexts/AuthContext'; // USAR NOSSO AUTHCONTEXT
+import { ThemeProvider } from './contexts/ThemeContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -27,6 +28,9 @@ import UserEditPage from './pages/admin/UserEditPage';
 import ReportsPage from './pages/admin/ReportsPage';
 import RolesPage from './pages/admin/RolesPage';
 import SettingsPage from './pages/admin/SettingsPage';
+import CheckoutPage from './pages/CheckoutPage';
+import OrderHistoryPage from './pages/OrderHistoryPage';
+import OrderDetailPageCustomer from './pages/OrderDetailPage';
 
 // Componente para proteger rotas que requerem autenticação
 const ProtectedRoute = ({ children, adminOnly = false }) => {
@@ -89,10 +93,11 @@ function App() {
   }, [isMobileMenuOpen]);
   
   return (
-    <div className="flex flex-col min-h-screen bg-bg-base text-text-base">
-      <Header onMobileMenuToggle={setIsMobileMenuOpen} />
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <Routes>
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen bg-bg-base text-text-base transition-colors duration-200">
+        <Header onMobileMenuToggle={setIsMobileMenuOpen} />
+        <main className="flex-grow container mx-auto px-4 py-8">
+          <Routes>
           {/* Rotas Públicas */}
           <Route path="/" element={<HomePage />} />
           <Route path="/produtos" element={<ProductsPage />} />
@@ -124,6 +129,36 @@ function App() {
           <Route 
             path="/carrinho" 
             element={<CartPage />} // Lógica de autenticação para carrinho pode ser interna ao CartPage ou gerida aqui
+          />
+          
+          {/* Checkout - Requer autenticação */}
+          <Route
+            path="/checkout"
+            element={
+              <ProtectedRoute>
+                <CheckoutPage />
+              </ProtectedRoute>
+            }
+          />
+          
+          {/* Histórico de Encomendas - Requer autenticação */}
+          <Route
+            path="/meus-pedidos"
+            element={
+              <ProtectedRoute>
+                <OrderHistoryPage />
+              </ProtectedRoute>
+            }
+          />
+          
+          {/* Detalhes de Encomenda do Cliente - Requer autenticação */}
+          <Route
+            path="/meus-pedidos/:orderId"
+            element={
+              <ProtectedRoute>
+                <OrderDetailPageCustomer />
+              </ProtectedRoute>
+            }
           />
           
           {/* Rota de Não Autorizado */}
@@ -257,11 +292,12 @@ function App() {
               </Link>
             </div>
           } />
-        </Routes>
-      </main>
-      <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
-      <Footer />
-    </div>
+          </Routes>
+        </main>
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
