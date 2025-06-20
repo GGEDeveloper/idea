@@ -49,12 +49,12 @@ sanitizedProduct.priceStatus = localUser ? 'permission_denied' : 'unauthenticate
   return sanitizedProduct;
 }
 
-// Função auxiliar para calcular o markup
-// Temporariamente, usamos um markup fixo de 30%
-function calculateMarkup(priceString) {
+// Função auxiliar para calcular o markup usando configuração da base de dados
+async function calculateMarkup(priceString) {
   if (typeof priceString !== 'string' || priceString.trim() === '') {
     return null;
   }
+  
   // Tenta converter, substituindo vírgula por ponto para formatos europeus
   const priceNumber = parseFloat(priceString.replace(',', '.'));
   
@@ -62,9 +62,25 @@ function calculateMarkup(priceString) {
     return null;
   }
   
-  // Aplica markup de 30%
-  return priceNumber * 1.30;
+  try {
+    // Buscar margem configurada da base de dados
+    const marginQuery = `
+      SELECT calculate_selling_price($1) as selling_price
+    `;
+    const result = await pool.query(marginQuery, [priceNumber]);
+    
+    if (result.rows.length > 0 && result.rows[0].selling_price) {
+      return parseFloat(result.rows[0].selling_price);
+    }
+    
+    // Fallback para 30% se não conseguir obter da configuração
+    return priceNumber * 1.30;
+  } catch (error) {
+    console.error('Erro ao calcular markup:', error);
+    // Fallback para 30% em caso de erro
+    return priceNumber * 1.30;
   }
+}
 
 // Rota para buscar as opções de filtro (categorias, marcas, preços)
 router.get('/filters', async (req, res) => {

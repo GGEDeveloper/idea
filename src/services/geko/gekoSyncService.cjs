@@ -17,7 +17,6 @@ class GekoSyncService {
   constructor() {
     this.client = new GekoApiClient();
     this.parser = new GekoDataParser();
-    this.marginPercentage = 30; // 30% margem padrão sobre preço fornecedor
     this.stats = {
       startTime: null,
       endTime: null,
@@ -226,40 +225,47 @@ class GekoSyncService {
   }
 
   /**
-   * Atualiza preço aplicando margem
+   * Atualiza preço aplicando margem configurável
    * @param {object} client - Cliente PostgreSQL
    * @param {object} product - Produto da Geko
    */
   async _updateProductPrice(client, product) {
     if (!product.supplierPrice) return;
 
-    // Calcular preço final com margem
-    const finalPrice = product.supplierPrice * (1 + this.marginPercentage / 100);
-
-    // Buscar ou criar lista de preços "Preço Cliente"
-    const priceListQuery = `
-      INSERT INTO price_lists (name, description)
-      VALUES ('Preço Cliente', 'Preços com margem aplicada sobre fornecedor')
-      ON CONFLICT (name) DO NOTHING
-      RETURNING price_list_id
+    // Primeiro, atualizar/inserir o preço de fornecedor na variante
+    const updateVariantQuery = `
+      UPDATE product_variants 
+      SET supplier_price = $2
+      WHERE ean = $1
+      RETURNING variantid
     `;
-    await client.query(priceListQuery);
+    
+    const variantResult = await client.query(updateVariantQuery, [product.ean, product.supplierPrice]);
+    
+    if (variantResult.rows.length === 0) {
+      console.warn(`Nenhuma variante encontrada para EAN ${product.ean}`);
+      return;
+    }
 
-    // Buscar ID da lista de preços
-    const listIdQuery = 'SELECT price_list_id FROM price_lists WHERE name = $1';
-    const listIdResult = await client.query(listIdQuery, ['Preço Cliente']);
-    const priceListId = listIdResult.rows[0].price_list_id;
+    const variantId = variantResult.rows[0].variantid;
 
-    // Upsert do preço
-    const priceQuery = `
-      INSERT INTO prices (product_ean, price_list_id, price)
-      VALUES ($1, $2, $3)
-      ON CONFLICT (product_ean, price_list_id)
-      DO UPDATE SET
-        price = EXCLUDED.price
+    // Inserir/atualizar preço de fornecedor na tabela prices
+    const supplierPriceQuery = `
+      INSERT INTO prices (variantid, price_list_id, price)
+      VALUES ($1, 1, $2)
+      ON CONFLICT (variantid, price_list_id)
+      DO UPDATE SET price = EXCLUDED.price
     `;
+    await client.query(supplierPriceQuery, [variantId, product.supplierPrice]);
 
-    await client.query(priceQuery, [product.ean, priceListId, finalPrice]);
+    // Calcular e inserir preço de venda usando a função SQL com margem configurável
+    const sellingPriceQuery = `
+      INSERT INTO prices (variantid, price_list_id, price)
+      VALUES ($1, 2, calculate_selling_price($2))
+      ON CONFLICT (variantid, price_list_id)
+      DO UPDATE SET price = calculate_selling_price($2)
+    `;
+    await client.query(sellingPriceQuery, [variantId, product.supplierPrice]);
   }
 
   /**
@@ -364,14 +370,7 @@ class GekoSyncService {
     return { ...this.stats };
   }
 
-  /**
-   * Configura percentual de margem
-   * @param {number} percentage - Percentual de margem
-   */
-  setMarginPercentage(percentage) {
-    this.marginPercentage = percentage;
-    console.log(`💰 Margem configurada para ${percentage}%`);
-  }
+
 }
 
 module.exports = GekoSyncService; 

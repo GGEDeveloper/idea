@@ -553,8 +553,8 @@ def populate_prices_table(conn):
                 variant_prices_to_upsert.append((variant_id, PRICE_LIST_ID_SUPPLIER, variant_supplier_price))
 
                 if variant_supplier_price is not None: 
-                    base_selling_price = (variant_supplier_price * Decimal('1.25')).quantize(Decimal('0.01'))
-                    variant_prices_to_upsert.append((variant_id, PRICE_LIST_ID_BASE_SELLING, base_selling_price))
+                    # Usar função SQL para calcular preço de venda com margem configurável
+                    variant_prices_to_upsert.append((variant_id, PRICE_LIST_ID_BASE_SELLING, None))  # Será calculado pela função SQL
             
     except psycopg2.Error as e:
         print(f"[{datetime.now()}] Database error fetching from product_variants for price calculation: {e}")
@@ -565,21 +565,59 @@ def populate_prices_table(conn):
 
     price_entries_upserted = 0
     if variant_prices_to_upsert:
-        # Log a sample of the data to be inserted
-        print(f"[{datetime.now()}] Sample of price data to upsert (first 5 entries): {variant_prices_to_upsert[:5]}")
+        # Separar preços de fornecedor dos que precisam de cálculo
+        supplier_prices = []
+        variants_for_selling_price = []
+        
+        for variant_id, price_list_id, price in variant_prices_to_upsert:
+            if price_list_id == PRICE_LIST_ID_SUPPLIER:
+                supplier_prices.append((variant_id, price_list_id, price))
+            elif price_list_id == PRICE_LIST_ID_BASE_SELLING and price is None:
+                variants_for_selling_price.append(variant_id)
+        
+        print(f"[{datetime.now()}] Processing {len(supplier_prices)} supplier prices and {len(variants_for_selling_price)} calculated selling prices.")
 
-        sql_upsert_prices = """
-        INSERT INTO prices (variantid, price_list_id, price)
-        VALUES (%s, %s, %s)
-        ON CONFLICT (variantid, price_list_id) DO UPDATE SET
-            price = EXCLUDED.price; 
-        """ 
         try:
             with conn.cursor() as cur:
-                psycopg2.extras.execute_batch(cur, sql_upsert_prices, variant_prices_to_upsert, page_size=BATCH_SIZE)
-            price_entries_upserted = len(variant_prices_to_upsert) 
+                # Inserir preços de fornecedor
+                if supplier_prices:
+                    sql_upsert_supplier_prices = """
+                    INSERT INTO prices (variantid, price_list_id, price)
+                    VALUES (%s, %s, %s)
+                    ON CONFLICT (variantid, price_list_id) DO UPDATE SET
+                        price = EXCLUDED.price; 
+                    """
+                    psycopg2.extras.execute_batch(cur, sql_upsert_supplier_prices, supplier_prices, page_size=BATCH_SIZE)
+                    print(f"[{datetime.now()}] Inserted {len(supplier_prices)} supplier prices.")
+                
+                # Calcular e inserir preços de venda usando a função SQL
+                if variants_for_selling_price:
+                    placeholders = ','.join(['%s'] * len(variants_for_selling_price))
+                    sql_calc_selling_prices = f"""
+                    INSERT INTO prices (variantid, price_list_id, price)
+                    SELECT 
+                        pv.variantid, 
+                        %s, 
+                        calculate_selling_price(pv.supplier_price)
+                    FROM product_variants pv
+                    WHERE pv.variantid IN ({placeholders})
+                      AND pv.supplier_price IS NOT NULL
+                      AND pv.supplier_price > 0
+                    ON CONFLICT (variantid, price_list_id) DO UPDATE SET 
+                        price = calculate_selling_price((
+                            SELECT supplier_price 
+                            FROM product_variants 
+                            WHERE variantid = EXCLUDED.variantid
+                        ));
+                    """
+                    cur.execute(sql_calc_selling_prices, [PRICE_LIST_ID_BASE_SELLING] + variants_for_selling_price)
+                    selling_prices_count = cur.rowcount
+                    print(f"[{datetime.now()}] Calculated and inserted {selling_prices_count} selling prices using configurable margin.")
+                
+                price_entries_upserted = len(supplier_prices) + (selling_prices_count if variants_for_selling_price else 0)
+            
             conn.commit() 
-            print(f"[{datetime.now()}] Prices batch processed. Attempted to upsert {price_entries_upserted} variant price entries.")
+            print(f"[{datetime.now()}] Prices batch processed. Total entries: {price_entries_upserted}")
         except psycopg2.Error as e: 
             print(f"[{datetime.now()}] Database batch error during prices upsert: {e}")
             conn.rollback()

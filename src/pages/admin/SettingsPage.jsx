@@ -11,7 +11,10 @@ import {
   MoonIcon,
   ComputerDesktopIcon,
   CheckIcon,
-  InformationCircleIcon
+  InformationCircleIcon,
+  CurrencyEuroIcon,
+  CalculatorIcon,
+  ChartBarIcon
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -46,7 +49,12 @@ const SettingsPage = () => {
       requireTwoFactor: false
     }
   });
+  const [pricingConfig, setPricingConfig] = useState({});
+  const [pricingStats, setPricingStats] = useState({});
+  const [pricingFormData, setPricingFormData] = useState({});
+  const [pricingHasChanges, setPricingHasChanges] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [pricingLoading, setPricingLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [lastSaved, setLastSaved] = useState(null);
   const [activeTab, setActiveTab] = useState('general');
@@ -55,7 +63,24 @@ const SettingsPage = () => {
 
   useEffect(() => {
     loadSettings();
+    loadPricingConfig();
   }, []);
+
+  // Avisar utilizador antes de sair com alterações pendentes
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (pricingHasChanges) {
+        e.preventDefault();
+        e.returnValue = 'Tem alterações por guardar. Deseja realmente sair?';
+        return e.returnValue;
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [pricingHasChanges]);
 
   const loadSettings = async () => {
     try {
@@ -75,6 +100,116 @@ const SettingsPage = () => {
       toast.error('Erro ao carregar configurações');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const loadPricingConfig = async () => {
+    try {
+      setPricingLoading(true);
+      const [configResponse, statsResponse] = await Promise.all([
+        fetch('/api/admin/pricing/config', { credentials: 'include' }),
+        fetch('/api/admin/pricing/stats', { credentials: 'include' })
+      ]);
+      
+      if (configResponse.ok) {
+        const configData = await configResponse.json();
+        setPricingConfig(configData);
+        // Inicializar dados do formulário com os valores atuais
+        setPricingFormData({
+          base_margin_percentage: configData.base_margin_percentage?.value || 25,
+          currency_symbol: configData.currency_symbol?.value || '€',
+          auto_update_prices_on_sync: configData.auto_update_prices_on_sync?.value || false
+        });
+        setPricingHasChanges(false);
+      }
+      
+      if (statsResponse.ok) {
+        const statsData = await statsResponse.json();
+        setPricingStats(statsData);
+      }
+    } catch (error) {
+      console.error('Erro ao carregar configurações de preços:', error);
+      toast.error('Erro ao carregar configurações de preços');
+    } finally {
+      setPricingLoading(false);
+    }
+  };
+
+  const updatePricingFormData = (key, value) => {
+    setPricingFormData(prev => ({
+      ...prev,
+      [key]: value
+    }));
+    setPricingHasChanges(true);
+  };
+
+  const savePricingConfig = async () => {
+    try {
+      setSaving(true);
+      
+      // Preparar lista de configurações para atualizar
+      const configs = [
+        { config_key: 'base_margin_percentage', config_value: pricingFormData.base_margin_percentage },
+        { config_key: 'currency_symbol', config_value: pricingFormData.currency_symbol },
+        { config_key: 'auto_update_prices_on_sync', config_value: pricingFormData.auto_update_prices_on_sync }
+      ];
+
+      const response = await fetch('/api/admin/pricing/config/batch', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({ configs }),
+      });
+      
+      if (response.ok) {
+        const result = await response.json();
+        toast.success(result.message || 'Configurações de preços guardadas com sucesso!');
+        loadPricingConfig(); // Recarregar configurações e estatísticas
+        setPricingHasChanges(false);
+      } else {
+        const errorData = await response.json();
+        toast.error(errorData.error || 'Erro ao guardar configurações de preços');
+      }
+    } catch (error) {
+      console.error('Erro ao guardar configurações de preços:', error);
+      toast.error('Erro ao guardar configurações de preços');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const resetPricingChanges = () => {
+    setPricingFormData({
+      base_margin_percentage: pricingConfig.base_margin_percentage?.value || 25,
+      currency_symbol: pricingConfig.currency_symbol?.value || '€',
+      auto_update_prices_on_sync: pricingConfig.auto_update_prices_on_sync?.value || false
+    });
+    setPricingHasChanges(false);
+  };
+
+  const recalculatePrices = async () => {
+    try {
+      setSaving(true);
+      const response = await fetch('/api/admin/pricing/recalculate', {
+        method: 'POST',
+        credentials: 'include',
+      });
+      
+      if (response.ok) {
+        const result = await response.json();
+        toast.success(`${result.message}. Processadas ${result.processed_variants} variantes em ${result.duration_ms}ms`);
+        loadPricingConfig(); // Recarregar estatísticas
+      } else {
+        const errorData = await response.json();
+        toast.error(errorData.error || 'Erro ao recalcular preços');
+      }
+    } catch (error) {
+      console.error('Erro ao recalcular preços:', error);
+      toast.error('Erro ao recalcular preços');
+    } finally {
+      setSaving(false);
     }
   };
 
@@ -176,12 +311,7 @@ const SettingsPage = () => {
     }
   };
 
-  const tabs = [
-    { id: 'general', name: 'Geral', icon: CogIcon },
-    { id: 'geko', name: 'API Geko', icon: CloudIcon },
-    { id: 'sync', name: 'Sincronização', icon: ClockIcon },
-    { id: 'security', name: 'Segurança', icon: ShieldCheckIcon }
-  ];
+
 
   if (loading) {
     return (
@@ -218,13 +348,21 @@ const SettingsPage = () => {
                 <p className="text-text-muted">Gerir definições gerais da plataforma</p>
               </div>
             </div>
-            <button
-              onClick={handleSave}
-              disabled={saving}
-              className="btn-primary px-6 py-2 rounded-lg font-medium transition-all duration-200 hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {saving ? 'A guardar...' : 'Guardar Alterações'}
-            </button>
+            <div className="flex items-center space-x-3">
+              {(pricingHasChanges || saving) && (
+                <div className="flex items-center space-x-2 text-warning">
+                  <div className="w-2 h-2 bg-warning rounded-full animate-pulse"></div>
+                  <span className="text-xs">Alterações pendentes</span>
+                </div>
+              )}
+              <button
+                onClick={handleSave}
+                disabled={saving}
+                className="btn-primary px-6 py-2 rounded-lg font-medium transition-all duration-200 hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {saving ? 'A guardar...' : 'Guardar Alterações'}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -470,6 +608,230 @@ const SettingsPage = () => {
                 />
               </div>
             </div>
+          </div>
+
+          {/* Configurações de Preços */}
+          <div className="card-glass rounded-lg p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold text-text-base flex items-center">
+                <CurrencyEuroIcon className="h-6 w-6 text-primary mr-2" />
+                Configurações de Preços
+              </h2>
+              {pricingHasChanges && (
+                <div className="flex items-center space-x-2">
+                  <span className="text-xs text-warning">Alterações pendentes</span>
+                  <div className="w-2 h-2 bg-warning rounded-full animate-pulse"></div>
+                </div>
+              )}
+            </div>
+            
+            {pricingLoading ? (
+              <div className="animate-pulse space-y-4">
+                <div className="h-4 bg-bg-tertiary rounded w-3/4"></div>
+                <div className="h-4 bg-bg-tertiary rounded w-1/2"></div>
+                <div className="h-4 bg-bg-tertiary rounded w-2/3"></div>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-text-base mb-1">
+                    Margem Base (%)
+                  </label>
+                  <div className="flex items-center space-x-3">
+                    <input
+                      type="number"
+                      min="0"
+                      max="1000"
+                      step="0.1"
+                      value={pricingFormData.base_margin_percentage || 25}
+                      onChange={(e) => updatePricingFormData('base_margin_percentage', parseFloat(e.target.value))}
+                      className={`input-field flex-1 px-3 py-2 rounded-lg focus:ring-2 focus:ring-primary/20 ${
+                        pricingHasChanges ? 'border-warning/50 bg-warning/5' : ''
+                      }`}
+                      placeholder="25.0"
+                    />
+                    <span className="text-sm text-text-muted">%</span>
+                  </div>
+                  <p className="text-xs text-text-muted mt-1">
+                    Margem aplicada sobre o preço de fornecedor para calcular o preço de venda
+                  </p>
+                  {pricingHasChanges && (
+                    <p className="text-xs text-warning mt-1">
+                      ⚠️ Pressione "Guardar" para aplicar as alterações
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-text-base mb-1">
+                    Símbolo da Moeda
+                  </label>
+                  <input
+                    type="text"
+                    maxLength="3"
+                    value={pricingFormData.currency_symbol || '€'}
+                    onChange={(e) => updatePricingFormData('currency_symbol', e.target.value)}
+                    className={`input-field w-20 px-3 py-2 rounded-lg focus:ring-2 focus:ring-primary/20 ${
+                      pricingHasChanges ? 'border-warning/50 bg-warning/5' : ''
+                    }`}
+                    placeholder="€"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div>
+                    <label className="text-sm font-medium text-text-base">Atualização Automática</label>
+                    <p className="text-xs text-text-muted">Recalcular preços automaticamente na sincronização</p>
+                  </div>
+                  <button
+                    onClick={() => updatePricingFormData('auto_update_prices_on_sync', 
+                      !pricingFormData.auto_update_prices_on_sync)}
+                    className={`
+                      relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200
+                      ${pricingFormData.auto_update_prices_on_sync ? 'bg-primary' : 'bg-border-accent'}
+                      ${pricingHasChanges ? 'ring-2 ring-warning/30' : ''}
+                    `}
+                  >
+                    <span
+                      className={`
+                        inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200
+                        ${pricingFormData.auto_update_prices_on_sync ? 'translate-x-6' : 'translate-x-1'}
+                      `}
+                    />
+                  </button>
+                </div>
+
+                {/* Botões de Ação */}
+                <div className="flex space-x-3 pt-4 border-t border-border-base">
+                  <button
+                    onClick={savePricingConfig}
+                    disabled={saving || !pricingHasChanges}
+                    className={`
+                      px-4 py-2 rounded-lg font-medium transition-all duration-200
+                      ${pricingHasChanges 
+                        ? 'bg-primary text-white hover:bg-primary/80 hover-lift' 
+                        : 'bg-bg-tertiary text-text-muted cursor-not-allowed'
+                      }
+                      disabled:opacity-50 disabled:cursor-not-allowed
+                    `}
+                  >
+                    {saving ? 'A guardar...' : 'Guardar Configurações'}
+                  </button>
+                  
+                  {pricingHasChanges && (
+                    <button
+                      onClick={resetPricingChanges}
+                      disabled={saving}
+                      className="px-4 py-2 border border-border-accent text-text-muted rounded-lg hover:bg-bg-secondary transition-colors disabled:opacity-50"
+                    >
+                      Cancelar
+                    </button>
+                  )}
+                </div>
+
+                <div className="bg-info/10 border border-info/20 rounded-lg p-3">
+                  <div className="flex items-start space-x-2">
+                    <CalculatorIcon className="h-5 w-5 text-info mt-0.5 flex-shrink-0" />
+                    <div className="text-sm">
+                      <p className="text-info font-medium">Recálculo Manual de Preços</p>
+                      <p className="text-text-muted text-xs mt-1">
+                        Use esta opção para forçar o recálculo de todos os preços com a margem atual
+                      </p>
+                      <button
+                        onClick={recalculatePrices}
+                        disabled={saving || pricingHasChanges}
+                        className={`
+                          mt-2 px-3 py-1 rounded text-xs font-medium transition-colors
+                          ${pricingHasChanges 
+                            ? 'bg-bg-tertiary text-text-muted cursor-not-allowed' 
+                            : 'bg-info text-white hover:bg-info/80'
+                          }
+                          disabled:opacity-50
+                        `}
+                      >
+                        {saving ? 'Recalculando...' : 'Recalcular Todos os Preços'}
+                      </button>
+                      {pricingHasChanges && (
+                        <p className="text-xs text-warning mt-1">
+                          Guarde as configurações antes de recalcular
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Estatísticas de Preços */}
+          <div className="card-glass rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-text-base mb-4 flex items-center">
+              <ChartBarIcon className="h-6 w-6 text-success mr-2" />
+              Estatísticas de Preços
+            </h2>
+            
+            {pricingLoading ? (
+              <div className="animate-pulse space-y-3">
+                <div className="h-4 bg-bg-tertiary rounded w-full"></div>
+                <div className="h-4 bg-bg-tertiary rounded w-3/4"></div>
+                <div className="h-4 bg-bg-tertiary rounded w-1/2"></div>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-text-muted">Total de Variantes:</span>
+                  <span className="text-sm font-medium text-text-base">
+                    {pricingStats.total_variants || 0}
+                  </span>
+                </div>
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-text-muted">Com Preço de Fornecedor:</span>
+                  <span className="text-sm font-medium text-text-base">
+                    {pricingStats.variants_with_supplier_price || 0}
+                  </span>
+                </div>
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-text-muted">Com Preço de Venda:</span>
+                  <span className="text-sm font-medium text-text-base">
+                    {pricingStats.variants_with_base_selling_price || 0}
+                  </span>
+                </div>
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-text-muted">Cobertura de Preços:</span>
+                  <span className="text-sm font-medium text-text-base">
+                    {pricingStats.price_coverage_percentage || 0}%
+                  </span>
+                </div>
+                
+                {pricingStats.avg_base_selling_price && (
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-text-muted">Preço Médio:</span>
+                    <span className="text-sm font-medium text-text-base">
+                      {pricingConfig.currency_symbol?.value || '€'}{Number(pricingStats.avg_base_selling_price).toFixed(2)}
+                    </span>
+                  </div>
+                )}
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-text-muted">Margem Atual:</span>
+                  <span className="text-sm font-medium text-primary">
+                    {pricingStats.current_margin_percentage || 25}%
+                  </span>
+                </div>
+                
+                {pricingHasChanges && (
+                  <div className="flex justify-between items-center bg-warning/10 -mx-3 px-3 py-2 rounded">
+                    <span className="text-sm text-warning font-medium">Nova Margem (pendente):</span>
+                    <span className="text-sm font-bold text-warning">
+                      {pricingFormData.base_margin_percentage || 25}%
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="card-glass rounded-lg p-6">
