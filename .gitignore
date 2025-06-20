@@ -28,5 +28,4 @@ node_modules/
 tasks.json
 tasks/ 
 # Build output
-dist/
 build/

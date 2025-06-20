@@ -1,0 +1,132 @@
+{
+  "languageName": "Português",
+  "languages": {
+    "pt": "Português",
+    "en": "Inglês"
+  },
+  "language": {
+    "label": "Idioma",
+    "select": "Selecionar idioma",
+    "changed": "Idioma alterado para {{language}}",
+    "current": "Idioma atual: {{language}}",
+    "selected": "{{language}} (selecionado)",
+    "menuAriaLabel": "Menu de seleção de idioma"
+  },
+
+  "user": {
+    "login": "Entrar",
+    "register": "Registar",
+    "profile": "Meu Perfil",
+    "myAccount": "Minha Conta",
+    "orders": "Meus Pedidos",
+    "logout": "Sair",
+    "administration": "Administração",
+    "adminPanel": "Painel Administrativo",
+    "messages": "Mensagens",
+    "settings": "Configurações",
+    "admin": "Administrador",
+    "guest": "Visitante",
+    "noEmail": "Nenhum email",
+    "menuAriaLabel": "Menu do utilizador"
+  },
+
+  "search": {
+    "placeholder": "Pesquisar produtos...",
+    "noResults": "Nenhum resultado encontrado para",
+    "clear": "Limpar pesquisa",
+    "submit": "Pesquisar",
+    "suggestions": "Tente usar termos diferentes ou verifique a ortografia.",
+    "searching": "Pesquisando...",
+    "clearSearch": "Limpar pesquisa",
+    "seeAllResults": "Ver todos os resultados para",
+    "noResultsTitle": "Nenhum resultado encontrado",
+    "searchError": "Ocorreu um erro ao pesquisar. Por favor, tente novamente.",
+    "minChars": "Digite pelo menos 2 caracteres",
+    "results": "Resultados da pesquisa",
+    "foundItems": "Itens encontrados",
+    "error": "Ocorreu um erro ao pesquisar. Por favor, tente novamente."
+  },
+  "menu": {
+    "open": "Abrir menu de navegação",
+    "close": "Fechar menu de navegação"
+  },
+  "loading": "A carregar...",
+  "header": {
+    "skipToContent": "Saltar para o conteúdo principal",
+    "title": "ALIMAMADETOOLS - Ferramentas Profissionais",
+    "mainHeader": "Cabeçalho principal",
+    "homeLink": "Página Inicial - ALIMAMADETOOLS",
+    "mainNavigation": "Navegação principal",
+    "mobileNavigation": "Navegação móvel",
+    "skipNavigation": "Navegação rápida",
+    "currentPage": "página atual",
+    "skipToMain": "Ir para o conteúdo principal",
+    "skipToSearch": "Ir para a pesquisa",
+    "skipToCart": "Ir para o carrinho",
+    "menuButton": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "openUserMenu": "Abrir menu do utilizador",
+    "closeUserMenu": "Fechar menu do utilizador",
+    "openLanguageMenu": "Abrir menu de idiomas",
+    "closeLanguageMenu": "Fechar menu de idiomas"
+  },
+  
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "categories": "Categorias",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "cart": {
+    "title": "Carrinho de compras ({{count}})",
+    "items": "{{count}} artigos",
+    "item": "1 artigo",
+    "itemsCount": "{{count}} artigos no carrinho",
+    "itemCount": "1 artigo no carrinho",
+    "emptyTitle": "O seu carrinho está vazio!",
+    "emptyMessage": "Parece que ainda não adicionou nenhum produto. Que tal explorar as nossas ferramentas profissionais?",
+    "viewProducts": "Ver Produtos",
+    "pageTitle": "O Seu Carrinho de Compras",
+    "decreaseQuantity": "Diminuir quantidade",
+    "increaseQuantity": "Aumentar quantidade",
+    "removeItem": "Remover artigo",
+    "continueShopping": "Continuar a Comprar",
+    "clearCart": "Limpar Carrinho",
+    "orderSummary": "Resumo da Encomenda",
+    "subtotal": "Subtotal",
+    "shipping": "Envio",
+    "free": "Gratuito",
+    "tax": "IVA (23%)",
+    "total": "Total",
+    "proceedToCheckout": "Finalizar Encomenda",
+    "checkout": "Finalizar Encomenda",
+    "or": "ou",
+    "loginToCheckout": "Inicie sessão para finalizar a encomenda",
+    "moqWarning": "Quantidade mínima para este produto: {{moq}}",
+    "quantityTooLow": "A quantidade deve ser pelo menos {{moq}}",
+    "adjustQuantity": "Ajustar para quantidade mínima",
+    "itemsTotal": "Total de artigos",
+    "saveForLater": "Guardar para mais tarde",
+    "moveToWishlist": "Mover para lista de desejos",
+    "availability": "Disponibilidade",
+    "inStock": "Em stock",
+    "limitedStock": "Stock limitado",
+    "outOfStock": "Sem stock",
+    "estimatedDelivery": "Entrega estimada",
+    "businessDays": "dias úteis"
+  },
+  "theme": {
+    "toggle": "Alterar tema",
+    "light": "Tema claro",
+    "dark": "Tema escuro", 
+    "system": "Sistema",
+    "chooseTheme": "Escolher tema",
+    "currentTheme": "Tema atual: {{theme}}",
+    "description": {
+      "light": "Tema profissional claro",
+      "dark": "Tema escuro inspirado na Alitools",
+      "system": "Seguir preferências do sistema"
+    }
+  }
+}
