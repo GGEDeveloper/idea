@@ -29,3 +29,7 @@ tasks.json
 tasks/ 
 # Build output
 build/
+
+# Build output
+dist/
+build/
