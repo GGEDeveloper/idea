@@ -55,5 +55,5 @@ LOG_LEVEL=info
 AUDIT_LOG_RETENTION_DAYS=90
 
 # --- Variáveis para Debug/Dev ---
-NODE_ENV=development
-PORT=3000
+NODE_ENV=production
+PORT=3001

@@ -63,7 +63,7 @@ export function useProducts(options = {}) {
     
     const loadFilters = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/products/filters', {
+        const response = await fetch('/api/products/filters', {
           credentials: 'include',
         });
         if (response.ok) {
@@ -135,7 +135,7 @@ export function useProducts(options = {}) {
       }
       
       try {
-        const apiUrl = `http://localhost:3000/api/products?${params.toString()}`;
+        const apiUrl = `/api/products?${params.toString()}`;
         console.log('[useProducts] Making API call to:', apiUrl);
         const response = await fetch(apiUrl, {
           credentials: 'include',

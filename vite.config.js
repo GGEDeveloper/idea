@@ -47,7 +47,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // Proxy para a API do backend
         '/api': {
-          target: 'http://localhost:3000',
+          target: 'http://localhost:3001',
           changeOrigin: true,
           secure: false,
           // ws: true, // Manter se realmente usar WebSockets para a API, senão pode remover
@@ -80,6 +80,22 @@ export default defineConfig(({ mode }) => {
         */
       },
     },
+    plugins: [
+      react(),
+      // Plugin customizado para copiar .htaccess
+      {
+        name: 'copy-htaccess',
+        closeBundle() {
+          const htaccessSrc = resolve('.htaccess');
+          const htaccessDest = resolve('dist/.htaccess');
+          
+          if (existsSync(htaccessSrc)) {
+            copyFileSync(htaccessSrc, htaccessDest);
+            console.log('[BUILD] ✅ .htaccess copiado para dist/');
+          }
+        }
+      }
+    ],
     define: {
       // Manter apenas as variáveis de ambiente que a sua aplicação frontend realmente precisa
       // 'import.meta.env.VITE_CLERK_PUBLISHABLE_KEY': JSON.stringify(env.VITE_CLERK_PUBLISHABLE_KEY), // REMOVER

@@ -1,46 +1,1393 @@
-AuthContext.jsx:71 [AuthContext] login INICIADO para: g.art.shine@gmail.com
-AuthContext.jsx:187 [AuthContext] Key State Update: {isLoading: true, isAuthenticated: false, localUserExists: false, authError: null}
-AuthContext.jsx:85 [AuthContext] login - Resposta do backend para /api/auth/login: {message: 'Login bem-sucedido!', user: {…}} Status: 200
-AuthContext.jsx:88 [AuthContext] login - Sucesso no backend. User data da resposta do login: {userId: 'eda5b260-f3e6-47d4-93b1-4b6c699070a8', email: 'g.art.shine@gmail.com', role: 'admin'}
-AuthContext.jsx:114 [AuthContext] login FINALIZADO (bloco finally)
-AuthContext.jsx:92 [AuthContext] login - Após delay, chamando fetchUserProfile...
-AuthContext.jsx:22 [AuthContext] fetchUserProfile INICIADA (source: after_login_success)
-AuthContext.jsx:26 
+index-Bcicd9Zm.js:247 
             
             
-            GET http://localhost:5174/api/users/me 401 (Unauthorized)
-(anonymous) @ AuthContext.jsx:26
-(anonymous) @ AuthContext.jsx:93
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
 setTimeout
-(anonymous) @ AuthContext.jsx:91
-(anonymous) @ AuthContext.jsx:90
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+vite.svg:1 
+            
+            
+           GET https://alitools.pt/vite.svg 500 (Internal Server Error)
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:247 
+            
+            
+           GET https://alitools.pt/locales/pt-PT/common.json 500 (Internal Server Error)
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+setTimeout
+m @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+c @ index-Bcicd9Zm.js:247
+Promise.then
+Kv @ index-Bcicd9Zm.js:247
+ak @ index-Bcicd9Zm.js:247
+rk @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+Promise.then
+value @ index-Bcicd9Zm.js:247
+value @ index-Bcicd9Zm.js:247
+read @ index-Bcicd9Zm.js:247
+loadOne @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+prepareLoading @ index-Bcicd9Zm.js:247
+load @ index-Bcicd9Zm.js:247
+loadResources @ index-Bcicd9Zm.js:247
+d @ index-Bcicd9Zm.js:247
+changeLanguage @ index-Bcicd9Zm.js:247
+f @ index-Bcicd9Zm.js:247
+setTimeout
+init @ index-Bcicd9Zm.js:247
+(anonymous) @ index-Bcicd9Zm.js:247
+index-Bcicd9Zm.js:219 
+            
+            
+           GET https://alitools.pt/api/settings/default-theme 500 (Internal Server Error)
+e @ index-Bcicd9Zm.js:219
+(anonymous) @ index-Bcicd9Zm.js:219
+(anonymous) @ index-Bcicd9Zm.js:219
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 
+            
+            
+           GET https://alitools.pt/api/categories/tree 500 (Internal Server Error)
+s8 @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 [categoryService] getCategories: Falha no fetch para /api/categories/tree {status: 500, statusText: ''}
+overrideMethod @ hook.js:608
+s8 @ index-Bcicd9Zm.js:241
+await in s8
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 [categoryService] getCategories: Erro no catch: Error: Erro ao buscar categorias: 
+    at s8 (index-Bcicd9Zm.js:241:106246)
+    at async index-Bcicd9Zm.js:241:117313
+overrideMethod @ hook.js:608
+s8 @ index-Bcicd9Zm.js:241
+await in s8
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:219 
+            
+            
+           GET https://alitools.pt/api/users/me 500 (Internal Server Error)
+(anonymous) @ index-Bcicd9Zm.js:219
+(anonymous) @ index-Bcicd9Zm.js:219
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:219 [AuthContext] fetchUserProfile - Erro HTTP: 500 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator at 
+ webmaster@alitools.pt.artnshine.pt to inform them of the time this error occurred,
+ and the actions you performed just before this error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<p>Additionally, a 500 Internal Server Error
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+overrideMethod @ hook.js:608
+(anonymous) @ index-Bcicd9Zm.js:219
 await in (anonymous)
-handleSubmit @ LoginPage.jsx:37
-executeDispatch @ react-dom-client.development.js:16368
-runWithFiberInDEV @ react-dom-client.development.js:1519
-processDispatchQueue @ react-dom-client.development.js:16418
-(anonymous) @ react-dom-client.development.js:17016
-batchedUpdates$1 @ react-dom-client.development.js:3262
-dispatchEventForPluginEventSystem @ react-dom-client.development.js:16572
-dispatchEvent @ react-dom-client.development.js:20658
-dispatchDiscreteEvent @ react-dom-client.development.js:20626
-<form>
-exports.createElement @ react.development.js:1033
-LoginPage @ LoginPage.jsx:67
-react-stack-bottom-frame @ react-dom-client.development.js:23863
-renderWithHooksAgain @ react-dom-client.development.js:5629
-renderWithHooks @ react-dom-client.development.js:5541
-updateFunctionComponent @ react-dom-client.development.js:8897
-beginWork @ react-dom-client.development.js:10522
-runWithFiberInDEV @ react-dom-client.development.js:1519
-performUnitOfWork @ react-dom-client.development.js:15140
-workLoopSync @ react-dom-client.development.js:14956
-renderRootSync @ react-dom-client.development.js:14936
-performWorkOnRoot @ react-dom-client.development.js:14419
-performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
-performWorkUntilDeadline @ scheduler.development.js:45
-AuthContext.jsx:33 [AuthContext] fetchUserProfile - Resposta de /api/users/me: Status 401, OK: false
-AuthContext.jsx:46 [AuthContext] fetchUserProfile - Resposta não OK (401) de /api/users/me. Limpando localUser.
-AuthContext.jsx:59 [AuthContext] fetchUserProfile FINALIZADA
-AuthContext.jsx:95 [AuthContext] login - fetchUserProfile chamado após delay.
-AuthContext.jsx:187 [AuthContext] Key State Update: {isLoading: false, isAuthenticated: false, localUserExists: false, authError: null}
+(anonymous) @ index-Bcicd9Zm.js:219
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 
+            
+            
+           GET http://localhost:3000/api/products/filters net::ERR_CONNECTION_REFUSED
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 Erro ao carregar filtros: TypeError: Failed to fetch
+    at index-Bcicd9Zm.js:241:110085
+    at index-Bcicd9Zm.js:241:110365
+    at Qs (index-Bcicd9Zm.js:40:83766)
+    at Ag (index-Bcicd9Zm.js:40:98480)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:99216)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+overrideMethod @ hook.js:608
+(anonymous) @ index-Bcicd9Zm.js:241
+await in (anonymous)
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 
+            
+            
+           GET http://localhost:3000/api/products?page=1&limit=7&sortBy=created_at&order=desc net::ERR_CONNECTION_REFUSED
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 Erro ao buscar produtos: TypeError: Failed to fetch
+    at index-Bcicd9Zm.js:241:111520
+    at index-Bcicd9Zm.js:241:111835
+    at Qs (index-Bcicd9Zm.js:40:83766)
+    at Ag (index-Bcicd9Zm.js:40:98480)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:99216)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+overrideMethod @ hook.js:608
+(anonymous) @ index-Bcicd9Zm.js:241
+await in (anonymous)
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 
+            
+            
+           GET http://localhost:3000/api/products?page=1&limit=24&sortBy=name&order=asc net::ERR_CONNECTION_REFUSED
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 Erro ao buscar produtos: TypeError: Failed to fetch
+    at index-Bcicd9Zm.js:241:111520
+    at index-Bcicd9Zm.js:241:111835
+    at Qs (index-Bcicd9Zm.js:40:83766)
+    at Ag (index-Bcicd9Zm.js:40:98480)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:99216)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+overrideMethod @ hook.js:608
+(anonymous) @ index-Bcicd9Zm.js:241
+await in (anonymous)
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 
+            
+            
+           GET http://localhost:3000/api/products/filters net::ERR_CONNECTION_REFUSED
+(anonymous) @ index-Bcicd9Zm.js:241
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
+index-Bcicd9Zm.js:241 Erro ao carregar filtros: TypeError: Failed to fetch
+    at index-Bcicd9Zm.js:241:110085
+    at index-Bcicd9Zm.js:241:110365
+    at Qs (index-Bcicd9Zm.js:40:83766)
+    at Ag (index-Bcicd9Zm.js:40:98480)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:99216)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+    at ua (index-Bcicd9Zm.js:40:98364)
+    at Ag (index-Bcicd9Zm.js:40:98460)
+overrideMethod @ hook.js:608
+(anonymous) @ index-Bcicd9Zm.js:241
+await in (anonymous)
+(anonymous) @ index-Bcicd9Zm.js:241
+Qs @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+ua @ index-Bcicd9Zm.js:40
+Ag @ index-Bcicd9Zm.js:40
+Yg @ index-Bcicd9Zm.js:40
+(anonymous) @ index-Bcicd9Zm.js:40
+W @ index-Bcicd9Zm.js:17
