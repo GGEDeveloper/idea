@@ -39,7 +39,7 @@ const adminPricingRouter = require('./src/api/admin/pricing.cjs');
 const { populateUserFromToken } = require('./src/api/middleware/localAuth.cjs');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 console.log(`[SERVER] Starting in ${NODE_ENV} mode on port ${PORT}`);
