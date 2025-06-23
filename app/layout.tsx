@@ -3,7 +3,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
-import Header from '../src/components/Header';
+import Header from '../src/components/Header.tsx';
 import Footer from '../src/components/Footer';
 
 // We can't use metadata in client components, so we'll set it differently
