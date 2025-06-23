@@ -1,116 +1,238 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function LoginPage() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    rememberMe: false
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    
+    // Simulate authentication
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    setIsLoading(false);
+    alert('Funcionalidade de login será implementada em breve!');
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="text-center">
-          <img 
-            src="/logo_transparente_amarelo.png" 
-            alt="AliTools Logo" 
-            className="h-16 w-auto mx-auto"
-          />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            Acesso à Área de Parceiros
-          </h2>
-          <p className="mt-2 text-sm text-gray-600">
-            Faça login na sua conta de revendedor
-          </p>
-        </div>
+    <div className="min-h-screen flex flex-col justify-center py-12 px-4"
+         style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
+      
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full opacity-10"
+             style={{ backgroundColor: 'var(--color-primary)' }}></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full opacity-10"
+             style={{ backgroundColor: 'var(--color-secondary)' }}></div>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6">
+      <div className="relative z-10 max-w-md w-full mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <Link href="/" className="inline-block mb-6">
+            <img 
+              src="/logo_transparente_amarelo.png" 
+              alt="AliTools Logo" 
+              className="h-20 w-auto mx-auto drop-shadow-lg"
+            />
+          </Link>
+          <h1 className="text-4xl font-bold mb-3" style={{ color: 'var(--color-text-base)' }}>
+            Área de Parceiros
+          </h1>
+          <p className="text-lg" style={{ color: 'var(--color-text-muted)' }}>
+            Acesso exclusivo para revendedores autorizados
+          </p>
+        </div>
+
+        {/* Main Login Card */}
+        <div className="card-glass">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4"
+                 style={{ backgroundColor: 'var(--color-primary)' }}>
+              <i className="fas fa-user text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+            </div>
+            <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--color-text-base)' }}>
+              Fazer Login
+            </h2>
+            <p style={{ color: 'var(--color-text-muted)' }}>
+              Entre na sua conta de parceiro
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
                 Email
               </label>
-              <div className="mt-1">
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <i className="fas fa-envelope text-sm" style={{ color: 'var(--color-text-muted)' }}></i>
+                </div>
                 <input
                   id="email"
                   name="email"
                   type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   autoComplete="email"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="input-field pl-10"
                   placeholder="o.seu.email@exemplo.com"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="password" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
                 Palavra-passe
               </label>
-              <div className="mt-1">
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <i className="fas fa-lock text-sm" style={{ color: 'var(--color-text-muted)' }}></i>
+                </div>
                 <input
                   id="password"
                   name="password"
                   type="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
                   autoComplete="current-password"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="input-field pl-10"
                   placeholder="••••••••"
                 />
               </div>
             </div>
 
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
+              <label className="flex items-center">
                 <input
-                  id="remember-me"
-                  name="remember-me"
+                  id="rememberMe"
+                  name="rememberMe"
                   type="checkbox"
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  checked={formData.rememberMe}
+                  onChange={handleInputChange}
+                  className="w-4 h-4 rounded focus:ring-2"
+                  style={{ 
+                    accentColor: 'var(--color-primary)',
+                    borderColor: 'var(--color-border-base)'
+                  }}
                 />
-                <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                <span className="ml-2 text-sm" style={{ color: 'var(--color-text-base)' }}>
                   Lembrar-me
-                </label>
-              </div>
+                </span>
+              </label>
 
-              <div className="text-sm">
-                <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
-                  Esqueceu a palavra-passe?
-                </a>
-              </div>
+              <Link href="#" className="text-sm font-medium hover:underline"
+                    style={{ color: 'var(--color-primary)' }}>
+                Esqueceu a palavra-passe?
+              </Link>
             </div>
 
-            <div>
-              <button
-                type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                Entrar
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={isLoading}
+              className={`btn-primary w-full py-3 text-lg ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+            >
+              {isLoading ? (
+                <>
+                  <i className="fas fa-spinner animate-spin mr-2"></i>
+                  A entrar...
+                </>
+              ) : (
+                <>
+                  <i className="fas fa-sign-in-alt mr-2"></i>
+                  Entrar
+                </>
+              )}
+            </button>
           </form>
 
-          <div className="mt-6">
+          {/* Divider */}
+          <div className="mt-8">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300" />
+                <div className="w-full border-t" style={{ borderColor: 'var(--color-border-base)' }}></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">Ainda não é parceiro?</span>
+                <span className="px-4" 
+                      style={{ 
+                        backgroundColor: 'var(--color-bg-base)', 
+                        color: 'var(--color-text-muted)' 
+                      }}>
+                  Ainda não é parceiro?
+                </span>
               </div>
             </div>
 
             <div className="mt-6">
-              <button
-                type="button"
-                className="w-full flex justify-center py-2 px-4 border border-blue-600 rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
+              <Link href="/contacto" className="btn-secondary w-full text-center py-3">
+                <i className="fas fa-handshake mr-2"></i>
                 Solicitar Acesso de Parceiro
-              </button>
+              </Link>
             </div>
           </div>
         </div>
 
+        {/* Additional Information */}
         <div className="mt-8 text-center">
-          <p className="text-xs text-gray-500">
-            Esta área é exclusiva para parceiros autorizados da AliTools.<br />
-            Para se tornar um parceiro, contacte-nos através do nosso formulário de contacto.
+          <div className="card">
+            <h3 className="font-semibold mb-3" style={{ color: 'var(--color-text-base)' }}>
+              <i className="fas fa-shield-alt mr-2" style={{ color: 'var(--color-success)' }}></i>
+              Área Segura e Exclusiva
+            </h3>
+            <p className="text-sm mb-4" style={{ color: 'var(--color-text-muted)' }}>
+              Esta área é exclusiva para parceiros autorizados da AliTools. 
+              Aqui pode aceder a preços especiais, stock em tempo real e suporte técnico.
+            </p>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <i className="fas fa-euro-sign text-lg mb-2" style={{ color: 'var(--color-success)' }}></i>
+                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                  Preços Especiais
+                </p>
+              </div>
+              <div>
+                <i className="fas fa-clock text-lg mb-2" style={{ color: 'var(--color-info)' }}></i>
+                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                  Stock em Tempo Real
+                </p>
+              </div>
+              <div>
+                <i className="fas fa-headset text-lg mb-2" style={{ color: 'var(--color-warning)' }}></i>
+                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                  Suporte Técnico
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-8 text-center">
+          <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+            Para se tornar um parceiro AliTools, entre em{' '}
+            <Link href="/contacto" className="font-medium hover:underline"
+                  style={{ color: 'var(--color-primary)' }}>
+              contacto connosco
+            </Link>
+            {' '}através do nosso formulário.
           </p>
         </div>
       </div>
