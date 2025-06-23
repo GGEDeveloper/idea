@@ -1,7 +1,22 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/admin/orders/route": "app/api/admin/orders/route.js",
+  "/api/admin/products/route": "app/api/admin/products/route.js",
   "/api/auth/login/route": "app/api/auth/login/route.js",
   "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/categories/route": "app/api/categories/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/products/[ean]/route": "app/api/products/[ean]/route.js",
+  "/api/products/route": "app/api/products/route.js",
+  "/api/search/route": "app/api/search/route.js",
+  "/api/users/route": "app/api/users/route.js",
   "/api/health/route": "app/api/health/route.js",
-  "/page": "app/page.js"
+  "/carrinho/page": "app/carrinho/page.js",
+  "/categorias/page": "app/categorias/page.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/produtos/page": "app/produtos/page.js",
+  "/sobre/page": "app/sobre/page.js"
 }

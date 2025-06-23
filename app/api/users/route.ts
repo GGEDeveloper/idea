@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     
     // Import database dependencies
-    const userQueries = await import('../../../src/db/userQueries');
+    const { createUser } = await import('../../../src/db/userQueries');
     const { hashPassword } = await import('../../../src/utils/passwordUtils');
 
     const { email, password, name, role } = body;
@@ -38,19 +38,16 @@ export async function POST(request: NextRequest) {
     const hashedPassword = await hashPassword(password);
 
     // Create user
-    const newUser = await userQueries.default.createUser({
+    const newUser = await createUser({
       email,
       password_hash: hashedPassword,
       name,
-      role: role || 'customer'
-    });
+      role_name: role || 'customer'
+    } as any);
 
-    // Remove password from response
-    const { password_hash, ...userResponse } = newUser;
+    return NextResponse.json(newUser, { status: 201 });
 
-    return NextResponse.json(userResponse, { status: 201 });
-
-  } catch (error) {
+  } catch (error: any) {
     console.error('[API] Error creating user:', error);
     if (error.code === '23505') { // unique_violation
       return NextResponse.json(

@@ -7,26 +7,26 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const isClient = typeof window !== 'undefined';
 
 const i18nConfig = {
-  fallbackLng: 'pt',
-  debug: process.env.NODE_ENV === 'development',
-  defaultNS: 'common',
-  ns: ['common'],
-  interpolation: {
-    escapeValue: false,
-  },
-  backend: {
-    loadPath: '/locales/{{lng}}/common.json',
-    requestOptions: {
-      cache: 'no-store',
+    fallbackLng: 'pt',
+    debug: process.env.NODE_ENV === 'development',
+    defaultNS: 'common',
+    ns: ['common'],
+    interpolation: {
+      escapeValue: false,
     },
-  },
+    backend: {
+      loadPath: '/locales/{{lng}}/common.json',
+      requestOptions: {
+        cache: 'no-store',
+      },
+    },
 };
 
 // Add language detection only on client side
 if (isClient) {
   i18nConfig.detection = {
-    order: ['localStorage', 'navigator'],
-    caches: ['localStorage'],
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
   };
 }
 

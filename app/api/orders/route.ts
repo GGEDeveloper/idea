@@ -1,5 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface OrderResult {
+  orders: any[];
+  pagination: {
+    currentPage: number;
+    totalPages: number;
+    totalOrders: number;
+    limit: number;
+  };
+}
+
 export async function GET(request: NextRequest) {
   try {
     // Get query parameters
@@ -19,17 +29,26 @@ export async function GET(request: NextRequest) {
 
     const pagination = { page, limit };
 
-    // Get orders from database
-    const [totalOrders, orders] = await Promise.all([
-      orderQueries.default.countOrders(filters),
-      orderQueries.default.getOrders(filters, pagination)
-    ]);
+    // Get orders from database using getUserOrders
+    // For now, we'll need userId - in real app this would come from auth
+    if (!userId) {
+      return NextResponse.json(
+        { error: 'User ID is required' },
+        { status: 400 }
+      );
+    }
+
+    const result = await orderQueries.default.getUserOrders(userId, {
+      page,
+      limit,
+      status
+    }) as OrderResult;
 
     return NextResponse.json({
-      orders,
-      totalPages: Math.ceil(totalOrders / limit),
-      currentPage: page,
-      totalOrders
+      orders: result.orders,
+      totalPages: result.pagination.totalPages,
+      currentPage: result.pagination.currentPage,
+      totalOrders: result.pagination.totalOrders
     });
 
   } catch (error) {

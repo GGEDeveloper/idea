@@ -1,6 +1,97 @@
 import { NextRequest } from 'next/server';
-import { createUser } from '../../../../src/db/userQueries';
+import pool from '../../../../db/index.cjs';
 import { hashPassword } from '../../../../src/utils/passwordUtils';
+
+// Local types for this API endpoint
+interface CreateUserData {
+  email: string;
+  password_hash: string;
+  name: string;
+  company?: string | null;
+  phone?: string | null;
+  role_name?: string;
+  is_active?: boolean;
+}
+
+interface User {
+  user_id: string;
+  email: string;
+  name: string;
+  company?: string | null;
+  phone?: string | null;
+  role_name: string;
+  is_active: boolean;
+  created_at: Date;
+  updated_at: Date;
+}
+
+// Local createUser function
+async function createUser(userData: CreateUserData): Promise<User> {
+  // Get role_id from role_name
+  const roleQuery = 'SELECT role_id FROM roles WHERE role_name = $1';
+  const roleResult = await pool.query(roleQuery, [userData.role_name || 'customer']);
+  
+  if (roleResult.rows.length === 0) {
+    throw new Error(`Role ${userData.role_name || 'customer'} not found`);
+  }
+  
+  const roleId = roleResult.rows[0].role_id;
+  
+  const query = `
+    INSERT INTO users (
+      email, 
+      password_hash, 
+      first_name, 
+      last_name, 
+      company_name, 
+      phone, 
+      role_id, 
+      is_active
+    )
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    RETURNING 
+      user_id,
+      email,
+      CONCAT(first_name, ' ', COALESCE(last_name, '')) as name,
+      company_name as company,
+      phone,
+      is_active,
+      created_at,
+      updated_at
+  `;
+  
+  // Split name into first_name and last_name
+  const nameParts = userData.name.trim().split(' ');
+  const firstName = nameParts[0] || '';
+  const lastName = nameParts.slice(1).join(' ') || '';
+  
+  try {
+    const result = await pool.query(query, [
+      userData.email,
+      userData.password_hash,
+      firstName,
+      lastName,
+      userData.company,
+      userData.phone,
+      roleId,
+      userData.is_active !== false
+    ]);
+    
+    const user = result.rows[0];
+    
+    // Get role_name for response
+    const roleNameQuery = 'SELECT role_name FROM roles WHERE role_id = $1';
+    const roleNameResult = await pool.query(roleNameQuery, [roleId]);
+    
+    return {
+      ...user,
+      role_name: roleNameResult.rows[0]?.role_name || 'customer'
+    };
+  } catch (error: any) {
+    console.error('[API] Error creating user:', error);
+    throw error;
+  }
+}
 
 // Types for request/response
 interface RegisterRequest {

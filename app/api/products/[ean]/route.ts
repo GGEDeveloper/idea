@@ -21,7 +21,7 @@ export async function GET(
     }
 
     // Sanitize product for guest users (since no auth yet)
-    const sanitizedProduct = { ...product };
+    const sanitizedProduct: any = { ...product };
     // Remove sensitive fields for non-authenticated users
     delete sanitizedProduct.price;
     delete sanitizedProduct.product_price;

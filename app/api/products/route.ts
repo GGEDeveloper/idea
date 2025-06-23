@@ -1,12 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// Dynamic import to handle CommonJS modules
-async function getProductsHandler() {
-  const { default: express } = await import('express');
-  const productRouter = await import('../../../src/api/products.cjs');
-  return productRouter.default || productRouter;
-}
-
 export async function GET(request: NextRequest) {
   try {
     // Get query parameters from URL
@@ -94,7 +87,7 @@ export async function GET(request: NextRequest) {
     const effectiveLimit = parseInt(limit, 10) || (isFeaturedRequest ? 5 : 20);
     const safeLimit = Math.min(effectiveLimit, 2000);
 
-    const filters = {
+    const filters: any = {
       brands,
       categoryId: categories,
       priceMin,
@@ -132,7 +125,7 @@ export async function GET(request: NextRequest) {
 
     // Sanitize products for guest users (since no auth yet)
     const sanitizedProducts = productsFromDB.map(p => {
-      const sanitized = { ...p };
+      const sanitized: any = { ...p };
       // Remove sensitive fields for non-authenticated users
       delete sanitized.price;
       delete sanitized.product_price;

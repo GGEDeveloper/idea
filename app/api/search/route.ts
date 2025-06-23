@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
 
     // Sanitize products for guest users (since no auth yet)
     const sanitizedProducts = products.map(p => {
-      const sanitized = { ...p };
+      const sanitized: any = { ...p };
       // Remove sensitive fields for non-authenticated users
       delete sanitized.price;
       delete sanitized.product_price;

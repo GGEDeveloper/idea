@@ -13,19 +13,19 @@ export const useCategories = (): UseCategoriesReturn => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchCategories = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const data = await getCategories();
-      setCategories(data);
-    } catch (err) {
-      console.error('Error fetching categories:', err);
+    const fetchCategories = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const data = await getCategories();
+        setCategories(data);
+      } catch (err) {
+        console.error('Error fetching categories:', err);
       setError(err instanceof Error ? err.message : 'Failed to fetch categories');
-    } finally {
-      setLoading(false);
-    }
-  };
+      } finally {
+        setLoading(false);
+      }
+    };
 
   useEffect(() => {
     fetchCategories();
