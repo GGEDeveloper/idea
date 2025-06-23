@@ -2,8 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useCategories } from '../src/hooks/useCategories';
+import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 
 const HomePage = () => {
+  const { categories, loading: isLoadingCategories, error: errorCategories } = useCategories();
+
   return (
     <div className="space-y-16 bg-gray-50 bg-gradient-to-b from-gray-50 to-gray-200">
       {/* Hero Section */}
@@ -38,10 +42,68 @@ const HomePage = () => {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">Explore nossa ampla variedade de categorias de produtos de qualidade</p>
           </div>
           
-          <div className="text-center py-16">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
-            <p className="mt-4 text-gray-600 text-lg">Carregando categorias...</p>
-          </div>
+          {isLoadingCategories ? (
+            <div className="text-center py-16">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
+              <p className="mt-4 text-gray-600 text-lg">Carregando categorias...</p>
+            </div>
+          ) : errorCategories ? (
+            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+              <div className="text-3xl mb-3">⚠️</div>
+              <p className="text-lg font-medium">Não foi possível carregar as categorias</p>
+              <p className="text-sm mt-2">{errorCategories}</p>
+              <button 
+                onClick={() => window.location.reload()} 
+                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+              >
+                Tentar novamente
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+              {categories.map((category) => {
+                const displayName = category.name;
+                const categoryLink = `/produtos?category=${encodeURIComponent(category.id)}`;
+
+                return (
+                  <div key={category.id} className="h-full">
+                    <Link 
+                      href={categoryLink}
+                      className="block h-full group"
+                    >
+                      <div className={`${getCategoryColor(displayName)} rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}>
+                        <div className="p-6 text-center flex-1 flex flex-col items-center justify-center">
+                          <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i className={`${getCategoryIcon(displayName)} text-2xl text-white`}></i>
+                          </div>
+                          <h3 className="text-xl font-bold text-white mb-2">{displayName}</h3>
+                          <p className="text-sm text-white text-opacity-90 mb-3">
+                            {category.productCount || 0} {(category.productCount || 0) === 1 ? 'produto' : 'produtos'}
+                          </p>
+                          <span className="inline-flex items-center text-white text-sm font-medium mt-auto">
+                            Ver produtos
+                            <span className="ml-2 text-xs opacity-70 group-hover:translate-x-1 transition-transform">→</span>
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          
+          {!isLoadingCategories && !errorCategories && categories.length > 0 && (
+            <div className="text-center mt-12">
+              <Link 
+                href="/produtos" 
+                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+              >
+                Ver todas as categorias
+                <span className="ml-2">→</span>
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 
