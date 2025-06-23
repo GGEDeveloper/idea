@@ -1,31 +1,21 @@
-#!/usr/bin/env node
+// app.js - Entry point for Passenger
+// This file serves as the Passenger entry point and imports the main Express app
 
-/**
- * PASSENGER STARTUP FILE FOR DOMÍNIOS.PT
- * 
- * This file is required by Passenger (mod_passenger) to start the Node.js application.
- * It should be referenced as the "Application startup file" in the hosting control panel.
- */
-
-// Load environment variables
 require('dotenv').config();
 
-console.log('[PASSENGER] Starting IDEA E-commerce application...');
-console.log('[PASSENGER] Node version:', process.version);
-console.log('[PASSENGER] Environment:', process.env.NODE_ENV || 'development');
-
-// Ensure production mode for hosting
-process.env.NODE_ENV = process.env.NODE_ENV || 'production';
-
-// Import and start the main server
+// Import the main Express application
 const app = require('./server.cjs');
 
-// Passenger will handle the port automatically
-// But we can set a default if running standalone
-const PORT = process.env.PORT || 3000;
+// Passenger compatibility
+if (typeof(PhusionPassenger) !== 'undefined') {
+    PhusionPassenger.configure({ autoInstall: false });
+}
 
-console.log('[PASSENGER] Application loaded successfully');
-console.log('[PASSENGER] Listening on port:', PORT);
+// Log startup information
+console.log('[APP.JS] Alitools.pt application starting...');
+console.log('[APP.JS] Node.js version:', process.version);
+console.log('[APP.JS] Environment:', process.env.NODE_ENV || 'development');
+console.log('[APP.JS] Port configuration:', process.env.PORT || 3001);
 
 // Export the app for Passenger
 module.exports = app; 
