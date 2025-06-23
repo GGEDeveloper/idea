@@ -28,48 +28,56 @@ export const ThemeProvider = ({ children }) => {
     return 'light';
   };
 
-  // Estado do tema com inicialização inteligente
-  const [theme, setTheme] = useState(() => {
+  // Estado do tema com inicialização SSR-safe
+  const [theme, setTheme] = useState('light'); // Start with light theme for SSR
+  const [isLoading, setIsLoading] = useState(true);
+  const [systemDefault, setSystemDefault] = useState('light');
+  const [isClient, setIsClient] = useState(false);
+
+  // Initialize client-side only
+  useEffect(() => {
+    setIsClient(true);
+    
     // 1. Verificar se há preferência salva no localStorage
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage?.getItem('theme');
     if (savedTheme && ['light', 'dark'].includes(savedTheme)) {
-      return savedTheme;
+      setTheme(savedTheme);
+      setIsLoading(false);
+      return;
     }
 
     // 2. Verificar preferência do sistema
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
+    if (window?.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
     }
 
-    // 3. Padrão é light
-    return 'light';
-  });
-
-  const [isLoading, setIsLoading] = useState(true);
-  const [systemDefault, setSystemDefault] = useState('light');
+    setIsLoading(false);
+  }, []);
 
   // Carregar configuração padrão do sistema
   useEffect(() => {
+    if (!isClient) return;
+    
     const loadSystemDefault = async () => {
       const defaultTheme = await getSystemDefaultTheme();
       setSystemDefault(defaultTheme);
       
       // Se não há preferência salva e não há preferência do sistema, usar padrão do admin
-      const savedTheme = localStorage.getItem('theme');
-      const hasSystemPreference = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedTheme = localStorage?.getItem('theme');
+      const hasSystemPreference = window?.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       
       if (!savedTheme && !hasSystemPreference) {
         setTheme(defaultTheme);
       }
-      
-      setIsLoading(false);
     };
 
     loadSystemDefault();
-  }, []);
+  }, [isClient]);
 
   // Aplicar o tema ao documento
   useEffect(() => {
+    if (!isClient) return;
+    
     const root = document.documentElement;
     
     if (theme === 'dark') {
@@ -81,16 +89,19 @@ export const ThemeProvider = ({ children }) => {
     }
 
     // Salvar no localStorage
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+    localStorage?.setItem('theme', theme);
+  }, [theme, isClient]);
 
   // Escutar mudanças na preferência do sistema
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (!isClient) return;
+    
+    const mediaQuery = window?.matchMedia('(prefers-color-scheme: dark)');
+    if (!mediaQuery) return;
     
     const handleChange = (e) => {
       // Só alterar automaticamente se o utilizador não tem preferência salva
-      const savedTheme = localStorage.getItem('theme');
+      const savedTheme = localStorage?.getItem('theme');
       if (!savedTheme) {
         setTheme(e.matches ? 'dark' : 'light');
       }
@@ -98,7 +109,7 @@ export const ThemeProvider = ({ children }) => {
 
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
+  }, [isClient]);
 
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
@@ -108,8 +119,10 @@ export const ThemeProvider = ({ children }) => {
   const setDarkTheme = () => setTheme('dark');
 
   const resetToSystem = () => {
-    localStorage.removeItem('theme');
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (!isClient) return;
+    
+    localStorage?.removeItem('theme');
+    if (window?.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark');
     } else {
       setTheme(systemDefault);

@@ -3,10 +3,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
-import { AuthProvider } from '../src/contexts/AuthContext';
-import { CartProvider } from '../src/contexts/CartContext';
-import { ThemeProvider } from '../src/contexts/ThemeContext';
-import '../src/i18n'; // Initialize i18n
 
 // We can't use metadata in client components, so we'll set it differently
 // export const metadata: Metadata = {
@@ -42,15 +38,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <ThemeProvider>
-          <AuthProvider>
-            <CartProvider>
-              <div className="min-h-screen bg-gray-50">
-                {children}
-              </div>
-            </CartProvider>
-          </AuthProvider>
-        </ThemeProvider>
+        <div className="min-h-screen bg-gray-50">
+          {children}
+        </div>
       </body>
     </html>
   );

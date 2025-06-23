@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const AuthContext = createContext();
 
@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [localUser, setLocalUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Inicia como true para verificar a sessão no carregamento
   const [authError, setAuthError] = useState(null);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   // Função para carregar o perfil do utilizador a partir do backend (/api/users/me)
   const fetchUserProfile = useCallback(async (source = 'unknown') => {
@@ -115,7 +115,7 @@ export const AuthProvider = ({ children }) => {
       // setIsLoading(false); // Agora é tratado por fetchUserProfile ou no bloco de erro
       console.log('[AuthContext] login FINALIZADO (bloco finally)');
     }
-  }, [fetchUserProfile, navigate]); // Adicionado navigate se for usado no futuro, senão pode remover
+  }, [fetchUserProfile]); // Removed navigate dependency
 
   const logout = useCallback(async () => {
     console.log('[AuthContext] logout INICIADO');
@@ -128,20 +128,20 @@ export const AuthProvider = ({ children }) => {
       });
       // Mesmo que o servidor falhe, limpamos o estado local e o cookie
       setLocalUser(null);
-      navigate('/login'); 
+      router.push('/login'); 
       console.log('[AuthContext] logout - Sucesso (ou tentativa), utilizador e cookie limpos/instruídos para limpar.');
       return { success: true };
     } catch (error) {
       setLocalUser(null); 
       console.error('[AuthContext] logout - Erro de fetch:', error);
       setAuthError('Erro de comunicação durante o logout.');
-      navigate('/login'); // Garantir que o utilizador é redirecionado
+      router.push('/login'); // Garantir que o utilizador é redirecionado
       return { success: false, error: 'Erro de comunicação no logout' };
     } finally {
       setIsLoading(false);
       console.log('[AuthContext] logout FINALIZADO');
     }
-  }, [navigate]);
+  }, [router]);
 
   const isAuthenticated = useMemo(() => {
     const authStatus = !!localUser && !!localUser.user_id;

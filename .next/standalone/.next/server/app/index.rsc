@@ -1,18 +1,25 @@
 1:"$Sreact.fragment"
-2:I[7555,[],""]
-3:I[1295,[],""]
-4:"$Sreact.suspense"
-5:I[9665,[],"OutletBoundary"]
-8:I[4911,[],"AsyncMetadataOutlet"]
-a:I[9665,[],"ViewportBoundary"]
-c:I[9665,[],"MetadataBoundary"]
-e:I[6614,[],""]
+2:I[4970,[],"ClientSegmentRoot"]
+3:I[3414,["177","static/chunks/app/layout-9d1ef576b02a78e7.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+7:I[894,[],"ClientPageRoot"]
+8:I[1057,["974","static/chunks/app/page-80c75362b737cb4f.js"],"default"]
+b:I[9665,[],"OutletBoundary"]
+e:I[4911,[],"AsyncMetadataOutlet"]
+10:I[9665,[],"ViewportBoundary"]
+12:I[9665,[],"MetadataBoundary"]
+14:I[6614,[],""]
 :HL["/_next/static/css/fa4ff44ea7d5b68f.css","style"]
-0:{"P":null,"b":"6m-bMHeCHxOGR--nex-6K","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fa4ff44ea7d5b68f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","meta",null,{"charSet":"utf-8"}],["$","link",null,{"rel":"icon","href":"/favicon.ico"}]]}],["$","body",null,{"className":"min-h-screen bg-gray-50","children":["$","div",null,{"id":"root","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$4",null,{"fallback":["$","div",null,{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"}]}],"children":["$","main",null,{"className":"container mx-auto px-4 py-8","children":["$","div",null,{"className":"text-center","children":[["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6","children":"🚀 IDEA E-commerce Platform"}],["$","p",null,{"className":"text-xl text-gray-600 mb-8","children":"Modern B2B marketplace powered by Next.js 15.2 + React 19"}],["$","div",null,{"className":"bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto","children":[["$","h2",null,{"className":"text-2xl font-semibold mb-4","children":"🔥 Stack Cutting-Edge 2024/2025"}],["$","ul",null,{"className":"text-left space-y-2","children":[["$","li",null,{"children":"✅ Next.js 15.2 (Latest)"}],["$","li",null,{"children":"✅ React 19 (Stable)"}],["$","li",null,{"children":"✅ TypeScript 5.7"}],["$","li",null,{"children":"✅ Node.js 22 Support"}],["$","li",null,{"children":"✅ Vercel Edge Runtime"}],["$","li",null,{"children":"✅ Turbopack (57.6% faster builds)"}],["$","li",null,{"children":"✅ Web Standard APIs"}],["$","li",null,{"children":"✅ Streaming Metadata"}]]}]]}],["$","div",null,{"className":"mt-8","children":["$","a",null,{"href":"/api/health","className":"bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors","children":"Test API Health"}]}]]}]}]}],null,["$","$L5",null,{"children":["$L6","$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","K2BVXb-iF-4lHi4z9FGrbv",{"children":[["$","$La",null,{"children":"$Lb"}],null]}],["$","$Lc",null,{"children":"$Ld"}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
-f:I[4911,[],"AsyncMetadata"]
-d:["$","div",null,{"hidden":true,"children":["$","$4",null,{"fallback":null,"children":["$","$Lf",null,{"promise":"$@10"}]}]}]
-7:null
-b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-6:null
-9:{"metadata":[["$","title","0",{"children":"IDEA E-commerce Platform"}],["$","meta","1",{"name":"description","content":"B2B marketplace with Geko API integration"}],["$","meta","2",{"name":"author","content":"IDEA E-commerce Team"}],["$","meta","3",{"name":"keywords","content":"ecommerce,b2b,marketplace,geko"}],["$","meta","4",{"name":"robots","content":"index, follow"}]],"error":null,"digest":"$undefined"}
-10:{"metadata":"$9:metadata","error":null,"digest":"$undefined"}
+0:{"P":null,"b":"RElV_usUjanl7KUVamDTP","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fa4ff44ea7d5b68f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]},"params":{},"promise":"$@6"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L7",null,{"Component":"$8","searchParams":{},"params":"$0:f:0:1:1:props:children:1:props:params","promises":["$@9","$@a"]}],null,["$","$Lb",null,{"children":["$Lc","$Ld",["$","$Le",null,{"promise":"$@f"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","zpSDD91xoNW0-azo93a7Qv",{"children":[["$","$L10",null,{"children":"$L11"}],null]}],["$","$L12",null,{"children":"$L13"}]]}],false]],"m":"$undefined","G":["$14","$undefined"],"s":false,"S":true}
+15:"$Sreact.suspense"
+16:I[4911,[],"AsyncMetadata"]
+6:{}
+9:{}
+a:{}
+13:["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":["$","$L16",null,{"promise":"$@17"}]}]}]
+d:null
+11:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:null
+f:{"metadata":[],"error":null,"digest":"$undefined"}
+17:{"metadata":"$f:metadata","error":null,"digest":"$undefined"}
