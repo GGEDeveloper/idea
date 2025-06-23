@@ -3,6 +3,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
 
 // We can't use metadata in client components, so we'll set it differently
 // export const metadata: Metadata = {
@@ -38,8 +40,12 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <div className="min-h-screen bg-gray-50">
-          {children}
+        <div className="min-h-screen bg-gray-50 flex flex-col">
+          <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
         </div>
       </body>
     </html>
