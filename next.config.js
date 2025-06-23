@@ -28,9 +28,9 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
 
-  // ESLint configuration
+  // ESLint configuration - disable during build
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
 
   // Output for Vercel

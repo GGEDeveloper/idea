@@ -37,7 +37,7 @@ NEXT_PUBLIC_DEFAULT_LOCALE=pt
 NEXT_PUBLIC_SUPPORTED_LOCALES=pt,en
 
 # --- Vercel (Deploy Cloud) ---
-VERCEL_PROJECT_ID=
+VERCEL_PROJECT_ID=prj_QCOENREzHzWRZ0DjKXJZkOl8E85q
 VERCEL_TOKEN=wKBWxNoYGzYUStwQxtgbVGVO
 
 # --- Github (integração CI/CD, se aplicável) ---
