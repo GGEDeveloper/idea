@@ -1,137 +1,156 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface Product {
-  id: string;
   ean: string;
   name: string;
-  description: string;
-  price: number;
-  brand: string;
-  category: string;
-  image: string;
-  inStock: boolean;
+  shortdescription?: string;
+  longdescription?: string;
+  brand?: string;
+  categoryname?: string;
+  stockquantity?: number;
+  priceStatus?: string;
+  image_url?: string;
+  is_featured?: boolean;
+}
+
+interface FilterOptions {
+  categories: any[];
+  brands: string[];
+  price: {
+    min: number;
+    max: number;
+  };
 }
 
 export default function ProdutosPage() {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [filterOptions, setFilterOptions] = useState<FilterOptions | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedBrand, setSelectedBrand] = useState('');
   const [priceRange, setPriceRange] = useState('');
   const [sortBy, setSortBy] = useState('name');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalProducts, setTotalProducts] = useState(0);
 
-  // Mock data - this would come from API
-  const products: Product[] = [
-    {
-      id: '1',
-      ean: '1234567890123',
-      name: 'Berbequim Profissional 18V',
-      description: 'Berbequim sem fios com bateria de lítio de alta duração. Ideal para trabalhos profissionais.',
-      price: 149.99,
-      brand: 'PowerTools Pro',
-      category: 'Ferramentas Elétricas',
-      image: '/produtos/berbequim_profissional.png',
-      inStock: true
-    },
-    {
-      id: '2',
-      ean: '2345678901234',
-      name: 'Compressor Industrial 50L',
-      description: 'Compressor de ar profissional com tanque de 50 litros. Pressão máxima 8 bar.',
-      price: 399.99,
-      brand: 'AirMax',
-      category: 'Oficina',
-      image: '/produtos/compressor_industrial.png',
-      inStock: true
-    },
-    {
-      id: '3',
-      ean: '3456789012345',
-      name: 'Corta-relva Automático',
-      description: 'Corta-relva robótico com navegação inteligente e bateria de longa duração.',
-      price: 899.99,
-      brand: 'GreenBot',
-      category: 'Jardim',
-      image: '/produtos/corta_relva_auto.png',
-      inStock: false
-    },
-    {
-      id: '4',
-      ean: '4567890123456',
-      name: 'Kit Segurança Completo',
-      description: 'Kit completo de EPI incluindo capacete, óculos, luvas e colete refletor.',
-      price: 79.99,
-      brand: 'SafeWork',
-      category: 'Segurança',
-      image: '/produtos/kit_seguranca.png',
-      inStock: true
-    },
-    {
-      id: '5',
-      ean: '5678901234567',
-      name: 'Alicate Universal Profissional',
-      description: 'Alicate universal com isolamento até 1000V. Fabricado em aço forjado.',
-      price: 34.99,
-      brand: 'ToolMaster',
-      category: 'Ferramentas Manuais',
-      image: '/placeholder-product.jpg',
-      inStock: true
-    },
-    {
-      id: '6',
-      ean: '6789012345678',
-      name: 'Gerador Portátil 2000W',
-      description: 'Gerador a gasolina portátil silencioso. Ideal para obras e emergências.',
-      price: 549.99,
-      brand: 'PowerGen',
-      category: 'Elétrica',
-      image: '/placeholder-product.jpg',
-      inStock: true
-    }
-  ];
-
-  const categories = [
-    'Ferramentas Elétricas',
-    'Oficina', 
-    'Jardim',
-    'Segurança',
-    'Ferramentas Manuais',
-    'Elétrica',
-    'Construção',
-    'Hidráulica'
-  ];
-
-  // Filter and sort products
-  const filteredProducts = products
-    .filter(product => 
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.description.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-    .filter(product => 
-      selectedCategory === '' || product.category === selectedCategory
-    )
-    .filter(product => {
-      if (priceRange === '') return true;
-      const price = product.price;
-      switch (priceRange) {
-        case 'under-50': return price < 50;
-        case '50-100': return price >= 50 && price < 100;
-        case '100-300': return price >= 100 && price < 300;
-        case '300-500': return price >= 300 && price < 500;
-        case 'over-500': return price >= 500;
-        default: return true;
+  // Fetch filter options on component mount
+  useEffect(() => {
+    const fetchFilterOptions = async () => {
+      try {
+        const response = await fetch('/api/products?filters=true');
+        if (response.ok) {
+          const data = await response.json();
+          setFilterOptions(data);
+        }
+      } catch (error) {
+        console.error('Error fetching filter options:', error);
       }
-    })
-    .sort((a, b) => {
-      switch (sortBy) {
-        case 'price-low': return a.price - b.price;
-        case 'price-high': return b.price - a.price;
-        case 'name': return a.name.localeCompare(b.name);
-        case 'brand': return a.brand.localeCompare(b.brand);
-        default: return 0;
+    };
+
+    fetchFilterOptions();
+  }, []);
+
+  // Fetch products when filters change
+  useEffect(() => {
+    const fetchProducts = async () => {
+      setLoading(true);
+      try {
+        const params = new URLSearchParams();
+        
+        params.append('page', currentPage.toString());
+        params.append('limit', '20');
+        
+        if (searchTerm) params.append('q', searchTerm);
+        if (selectedCategory) params.append('categories', selectedCategory);
+        if (selectedBrand) params.append('brands', selectedBrand);
+        if (sortBy !== 'name') {
+          switch (sortBy) {
+            case 'price-low':
+              params.append('sortBy', 'price');
+              params.append('order', 'asc');
+              break;
+            case 'price-high':
+              params.append('sortBy', 'price');
+              params.append('order', 'desc');
+              break;
+            case 'brand':
+              params.append('sortBy', 'brand');
+              params.append('order', 'asc');
+              break;
+          }
+        }
+
+        // Handle price range filtering
+        if (priceRange && filterOptions) {
+          const { min, max } = filterOptions.price;
+          switch (priceRange) {
+            case 'under-50':
+              params.append('priceMax', '50');
+              break;
+            case '50-100':
+              params.append('priceMin', '50');
+              params.append('priceMax', '100');
+              break;
+            case '100-300':
+              params.append('priceMin', '100');
+              params.append('priceMax', '300');
+              break;
+            case '300-500':
+              params.append('priceMin', '300');
+              params.append('priceMax', '500');
+              break;
+            case 'over-500':
+              params.append('priceMin', '500');
+              break;
+          }
+        }
+
+        const response = await fetch(`/api/products?${params.toString()}`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch products');
+        }
+
+        const data = await response.json();
+        setProducts(data.products || []);
+        setTotalPages(data.totalPages || 1);
+        setTotalProducts(data.totalProducts || 0);
+        setError(null);
+      } catch (err) {
+        setError('Erro ao carregar produtos. Tente novamente.');
+        console.error('Error fetching products:', err);
+      } finally {
+        setLoading(false);
       }
-    });
+    };
+
+    // Add debounce for search
+    const timeoutId = setTimeout(fetchProducts, searchTerm ? 500 : 0);
+    return () => clearTimeout(timeoutId);
+  }, [searchTerm, selectedCategory, selectedBrand, priceRange, sortBy, currentPage, filterOptions]);
+
+  const handleClearFilters = () => {
+    setSearchTerm('');
+    setSelectedCategory('');
+    setSelectedBrand('');
+    setPriceRange('');
+    setCurrentPage(1);
+  };
+
+  const getProductImage = (product: Product) => {
+    if (product.image_url) return product.image_url;
+    return '/placeholder-product.jpg';
+  };
+
+  const hasStock = (product: Product) => {
+    return product.stockquantity && product.stockquantity > 0;
+  };
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
@@ -170,22 +189,44 @@ export default function ProdutosPage() {
               </div>
 
               {/* Category Filter */}
-              <div className="mb-6">
-                <label htmlFor="category" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
-                  Categoria
-                </label>
-                <select
-                  id="category"
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="input-field"
-                >
-                  <option value="">Todas as categorias</option>
-                  {categories.map(category => (
-                    <option key={category} value={category}>{category}</option>
-                  ))}
-                </select>
-              </div>
+              {filterOptions && filterOptions.categories && (
+                <div className="mb-6">
+                  <label htmlFor="category" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
+                    Categoria
+                  </label>
+                  <select
+                    id="category"
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    className="input-field"
+                  >
+                    <option value="">Todas as categorias</option>
+                    {filterOptions.categories.map((category: any) => (
+                      <option key={category.id} value={category.id}>{category.name}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              {/* Brand Filter */}
+              {filterOptions && filterOptions.brands && filterOptions.brands.length > 0 && (
+                <div className="mb-6">
+                  <label htmlFor="brand" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
+                    Marca
+                  </label>
+                  <select
+                    id="brand"
+                    value={selectedBrand}
+                    onChange={(e) => setSelectedBrand(e.target.value)}
+                    className="input-field"
+                  >
+                    <option value="">Todas as marcas</option>
+                    {filterOptions.brands.map((brand: string) => (
+                      <option key={brand} value={brand}>{brand}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               {/* Price Range Filter */}
               <div className="mb-6">
@@ -209,11 +250,7 @@ export default function ProdutosPage() {
 
               {/* Clear Filters */}
               <button 
-                onClick={() => {
-                  setSearchTerm('');
-                  setSelectedCategory('');
-                  setPriceRange('');
-                }}
+                onClick={handleClearFilters}
                 className="btn-secondary w-full"
               >
                 Limpar Filtros
@@ -226,9 +263,15 @@ export default function ProdutosPage() {
             {/* Sort and Results Count */}
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 card">
               <div>
-                <p style={{ color: 'var(--color-text-muted)' }}>
-                  A mostrar {filteredProducts.length} de {products.length} produtos
-                </p>
+                {loading ? (
+                  <p style={{ color: 'var(--color-text-muted)' }}>
+                    A carregar produtos...
+                  </p>
+                ) : (
+                  <p style={{ color: 'var(--color-text-muted)' }}>
+                    A mostrar {products.length} de {totalProducts} produtos
+                  </p>
+                )}
               </div>
               <div className="mt-4 sm:mt-0">
                 <label htmlFor="sort" className="text-sm font-medium mr-2" style={{ color: 'var(--color-text-base)' }}>
@@ -248,71 +291,137 @@ export default function ProdutosPage() {
               </div>
             </div>
 
-            {/* Products Grid */}
-            {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredProducts.map((product) => (
-                  <Link 
-                    key={product.id} 
-                    href={`/produtos/${product.ean}`}
-                    className="card hover-lift group"
-                  >
-                    {/* Product Image */}
-                    <div className="relative aspect-square mb-4 overflow-hidden rounded-lg" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-                        onError={(e) => {
-                          e.currentTarget.src = '/placeholder-product.jpg';
-                        }}
-                      />
-                      {product.brand && (
-                        <div className="absolute top-2 left-2 px-2 py-1 text-xs font-semibold rounded" 
-                             style={{ 
-                               backgroundColor: 'var(--color-bg-base)', 
-                               color: 'var(--color-text-base)',
-                               opacity: 0.9
-                             }}>
-                          {product.brand}
-                        </div>
-                      )}
-                      {!product.inStock && (
-                        <div className="absolute top-2 right-2 px-2 py-1 text-xs font-semibold rounded"
-                             style={{ 
-                               backgroundColor: 'var(--color-error)', 
-                               color: 'var(--color-text-inverse)'
-                             }}>
-                          Esgotado
-                        </div>
-                      )}
-                    </div>
+            {/* Error Message */}
+            {error && (
+              <div className="card text-center py-8 mb-6" style={{ backgroundColor: 'var(--color-error)', color: 'var(--color-text-inverse)' }}>
+                <p>{error}</p>
+              </div>
+            )}
 
-                    {/* Product Info */}
-                    <div>
-                      <h3 className="font-semibold mb-2 line-clamp-2" style={{ color: 'var(--color-text-base)' }}>
-                        {product.name}
-                      </h3>
-                      <p className="text-sm mb-3 line-clamp-2" style={{ color: 'var(--color-text-muted)' }}>
-                        {product.description}
-                      </p>
-                      <div className="flex justify-between items-center">
-                        <span className="text-lg font-bold" style={{ color: 'var(--color-primary)' }}>
-                          €{product.price.toFixed(2)}
-                        </span>
-                        <span className="text-xs px-2 py-1 rounded"
-                              style={{ 
-                                backgroundColor: 'var(--color-bg-accent)', 
-                                color: 'var(--color-text-muted)'
-                              }}>
-                          {product.category}
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
+            {/* Loading State */}
+            {loading && (
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {[...Array(6)].map((_, index) => (
+                  <div key={index} className="card animate-pulse">
+                    <div className="aspect-square mb-4 rounded-lg" style={{ backgroundColor: 'var(--color-bg-accent)' }}></div>
+                    <div className="h-4 mb-2 rounded" style={{ backgroundColor: 'var(--color-bg-accent)' }}></div>
+                    <div className="h-3 mb-3 rounded w-3/4" style={{ backgroundColor: 'var(--color-bg-accent)' }}></div>
+                    <div className="h-4 rounded w-1/2" style={{ backgroundColor: 'var(--color-bg-accent)' }}></div>
+                  </div>
                 ))}
               </div>
-            ) : (
+            )}
+
+            {/* Products Grid */}
+            {!loading && products.length > 0 && (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {products.map((product) => (
+                    <Link 
+                      key={product.ean} 
+                      href={`/produtos/${product.ean}`}
+                      className="card hover-lift group"
+                    >
+                      {/* Product Image */}
+                      <div className="relative aspect-square mb-4 overflow-hidden rounded-lg" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
+                        <img
+                          src={getProductImage(product)}
+                          alt={product.name}
+                          className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                          onError={(e) => {
+                            e.currentTarget.src = '/placeholder-product.jpg';
+                          }}
+                        />
+                        {product.brand && (
+                          <div className="absolute top-2 left-2 px-2 py-1 text-xs font-semibold rounded" 
+                               style={{ 
+                                 backgroundColor: 'var(--color-bg-base)', 
+                                 color: 'var(--color-text-base)',
+                                 opacity: 0.9
+                               }}>
+                            {product.brand}
+                          </div>
+                        )}
+                        {!hasStock(product) && (
+                          <div className="absolute top-2 right-2 px-2 py-1 text-xs font-semibold rounded"
+                               style={{ 
+                                 backgroundColor: 'var(--color-error)', 
+                                 color: 'var(--color-text-inverse)'
+                               }}>
+                            Esgotado
+                          </div>
+                        )}
+                        {product.is_featured && (
+                          <div className="absolute bottom-2 left-2 px-2 py-1 text-xs font-semibold rounded"
+                               style={{ 
+                                 backgroundColor: 'var(--color-primary)', 
+                                 color: 'var(--color-text-inverse)'
+                               }}>
+                            Destaque
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Product Info */}
+                      <div>
+                        <h3 className="font-semibold mb-2 line-clamp-2" style={{ color: 'var(--color-text-base)' }}>
+                          {product.name}
+                        </h3>
+                        <p className="text-sm mb-3 line-clamp-2" style={{ color: 'var(--color-text-muted)' }}>
+                          {product.shortdescription || product.longdescription || 'Sem descrição disponível'}
+                        </p>
+                        <div className="flex justify-between items-center">
+                          {product.priceStatus === 'unauthenticated' ? (
+                            <span className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>
+                              Faça login para ver preços
+                            </span>
+                          ) : (
+                            <span className="text-lg font-bold" style={{ color: 'var(--color-primary)' }}>
+                              Preço disponível
+                            </span>
+                          )}
+                          {product.categoryname && (
+                            <span className="text-xs px-2 py-1 rounded"
+                                  style={{ 
+                                    backgroundColor: 'var(--color-bg-accent)', 
+                                    color: 'var(--color-text-muted)'
+                                  }}>
+                              {product.categoryname}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+
+                {/* Pagination */}
+                {totalPages > 1 && (
+                  <div className="flex justify-center items-center space-x-4 mt-8">
+                    <button
+                      onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                      disabled={currentPage === 1}
+                      className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      Anterior
+                    </button>
+                    <span style={{ color: 'var(--color-text-base)' }}>
+                      Página {currentPage} de {totalPages}
+                    </span>
+                    <button
+                      onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                      disabled={currentPage === totalPages}
+                      className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      Próxima
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+
+            {/* No Products Found */}
+            {!loading && products.length === 0 && !error && (
               <div className="text-center py-12 card">
                 <div className="w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center"
                      style={{ backgroundColor: 'var(--color-bg-accent)' }}>
