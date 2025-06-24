@@ -193,13 +193,25 @@ export default function ProductDetailPage() {
 
           {/* Product Information */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <ProductInfo product={product as any} />
+            <ProductInfo 
+              product={product as any}
+              addToCart={() => {
+                // TODO: Implement add to cart functionality
+                console.log('Add to cart:', product.name);
+                alert('Funcionalidade de carrinho será implementada em breve!');
+              }}
+              isAuthenticated={false} // For now, assuming guest user
+              hasPermission={() => false} // For now, no permissions for guests
+            />
           </div>
         </div>
 
         {/* Product Details Tabs */}
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <ProductTabs product={product as any} />
+          <ProductTabs 
+            description={product.longdescription || product.shortdescription || ''}
+            attributes={product.attributes || []}
+          />
         </div>
 
         {/* Related Products Section */}
