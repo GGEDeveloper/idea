@@ -3,6 +3,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { useAuth } from '../contexts/AuthContext';
 import ProductGrid from '../components/products/ProductGrid';
 import FilterSidebar from '../components/products/FilterSidebar';
 
@@ -54,6 +55,7 @@ interface Filters {
 // Component that uses useSearchParams - wrapped in Suspense
 function ProductsPageContent() {
   const searchParams = useSearchParams();
+  const { isAuthenticated, hasPermission } = useAuth();
   const [products, setProducts] = useState<Product[]>([]);
   const [filterOptions, setFilterOptions] = useState<FilterOptions>({});
   const [loading, setLoading] = useState(true);
@@ -367,11 +369,17 @@ function ProductsPageContent() {
                       id="sort"
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
-                      className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                      className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white text-gray-900 min-w-[140px]"
                     >
-                      <option value="name">Nome (A-Z)</option>
-                      <option value="brand">Marca</option>
-                      <option value="created_at">Mais Recentes</option>
+                      <option value="name" className="text-gray-900 bg-white">Nome (A-Z)</option>
+                      <option value="brand" className="text-gray-900 bg-white">Marca</option>
+                      <option value="created_at" className="text-gray-900 bg-white">Mais Recentes</option>
+                      {isAuthenticated && hasPermission('view_price') && (
+                        <>
+                          <option value="price-low" className="text-gray-900 bg-white">Preço (Menor → Maior)</option>
+                          <option value="price-high" className="text-gray-900 bg-white">Preço (Maior → Menor)</option>
+                        </>
+                      )}
                     </select>
                   </div>
                 </div>

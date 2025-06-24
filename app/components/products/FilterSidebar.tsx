@@ -17,7 +17,7 @@ import {
   AdjustmentsHorizontalIcon
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
-import SimpleCategoryFilter from './SimpleCategoryFilter';
+import HierarchicalCategoryFilter from './HierarchicalCategoryFilter';
 
 // Types
 interface Category {
@@ -497,15 +497,15 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
         <div>
           <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
             <TagIcon className="w-4 h-4 mr-1" />
-            Categorias Principais
+            Categorias
             {filterOptions.categories && (
-              <span className="ml-auto text-xs text-gray-500 bg-blue-100 px-2 py-1 rounded-full">
-                Simplificado
+              <span className="ml-auto text-xs text-gray-500 bg-green-100 px-2 py-1 rounded-full">
+                Hierárquico
               </span>
             )}
           </h3>
           {filterOptions.categories && filterOptions.categories.length > 0 ? (
-            <SimpleCategoryFilter
+            <HierarchicalCategoryFilter
               categories={filterOptions.categories}
               selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
               onCategorySelect={onCategoryChange}
