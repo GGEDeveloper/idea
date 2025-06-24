@@ -70,7 +70,10 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
     return '/placeholder-product.jpg';
   };
 
-  if (!products || products.length === 0) {
+  // Ensure products is always an array
+  const safeProducts = Array.isArray(products) ? products : [];
+
+  if (!safeProducts || safeProducts.length === 0) {
     return (
       <div className="bg-gray-100 rounded-xl p-8 text-center">
         <div className="w-16 h-16 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
@@ -81,8 +84,8 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
     );
   }
 
-  const visibleProducts = products.length >= 3 ? 3 : products.length;
-  const showNavigation = products.length > visibleProducts;
+  const visibleProducts = safeProducts.length >= 3 ? 3 : safeProducts.length;
+  const showNavigation = safeProducts.length > visibleProducts;
 
   return (
     <div className="relative bg-white rounded-xl shadow-lg overflow-hidden">
@@ -95,7 +98,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
         
         {/* Controls */}
         <div className="flex items-center space-x-2">
-          {products.length > 1 && (
+          {safeProducts.length > 1 && (
             <button
               onClick={toggleAutoplay}
               className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"
@@ -142,14 +145,14 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
           className="flex transition-transform duration-500 ease-in-out"
           style={{ 
             transform: `translateX(-${currentIndex * (100 / visibleProducts)}%)`,
-            width: `${(products.length * 100) / visibleProducts}%`
+            width: `${(safeProducts.length * 100) / visibleProducts}%`
           }}
         >
-          {products.map((product, index) => (
+          {safeProducts.map((product, index) => (
             <div 
               key={product.ean || index} 
               className="p-6"
-              style={{ width: `${100 / products.length}%` }}
+              style={{ width: `${100 / safeProducts.length}%` }}
             >
               <Link 
                 href={`/produtos/${product.ean}`}
@@ -160,7 +163,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                   <div className="relative aspect-square bg-white">
                     <img
                       src={getProductImage(product)}
-                      alt={product.name}
+                      alt={product.name || 'Produto'}
                       className="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-110"
                       onError={(e) => {
                         e.currentTarget.src = '/placeholder-product.jpg';
@@ -184,7 +187,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                   {/* Product Info */}
                   <div className="p-4 flex-1 flex flex-col">
                     <h4 className="font-semibold text-gray-800 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
-                      {product.name}
+                      {product.name || 'Produto sem nome'}
                     </h4>
                     
                     <p className="text-sm text-gray-600 mb-3 line-clamp-2 flex-1">
@@ -224,7 +227,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
       {/* Dots Indicator */}
       {showNavigation && (
         <div className="flex justify-center space-x-2 p-4 bg-gray-50">
-          {Array.from({ length: Math.ceil(products.length / visibleProducts) }).map((_, index) => (
+          {Array.from({ length: Math.ceil(safeProducts.length / visibleProducts) }).map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}

@@ -254,7 +254,7 @@ const HomePage = () => {
                   </div>
                 }>
                   <ProductCarousel 
-                    products={featuredProducts}
+                    products={featuredProducts as any}
                     autoplay={true}
                     autoplayInterval={6000} 
                   />

@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/admin/orders/route": "app/api/admin/orders/route.js",
   "/api/admin/products/route": "app/api/admin/products/route.js",
   "/api/auth/login/route": "app/api/auth/login/route.js",
@@ -8,6 +7,7 @@
   "/api/categories/route": "app/api/categories/route.js",
   "/api/orders/route": "app/api/orders/route.js",
   "/api/products/[ean]/route": "app/api/products/[ean]/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/products/route": "app/api/products/route.js",
   "/api/search/route": "app/api/search/route.js",
   "/api/users/route": "app/api/users/route.js",
@@ -17,6 +17,7 @@
   "/contacto/page": "app/contacto/page.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
+  "/produtos/[ean]/page": "app/produtos/[ean]/page.js",
   "/produtos/page": "app/produtos/page.js",
   "/sobre/page": "app/sobre/page.js"
 }

@@ -188,18 +188,18 @@ export default function ProductDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Product Images */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <ProductImageGallery images={product.images || []} />
+            <ProductImageGallery images={(product.images || []) as any} />
           </div>
 
           {/* Product Information */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <ProductInfo product={product} />
+            <ProductInfo product={product as any} />
           </div>
         </div>
 
         {/* Product Details Tabs */}
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <ProductTabs product={product} />
+          <ProductTabs product={product as any} />
         </div>
 
         {/* Related Products Section */}
