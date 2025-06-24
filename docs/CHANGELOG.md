@@ -1,5 +1,24 @@
 # Changelog - AliTools Project
 
+## [1.5.5] - 2025-01-27 - Otimização UX Home Page
+
+### ✨ **Melhorias de Experiência do Utilizador**
+- **UX-HOME-001**: Removido elemento AuthStatus redundante da página principal
+- **UX-HOME-002**: Seção "Como se tornar parceiro?" agora só aparece para utilizadores não logados
+- **UX-HOME-003**: Experiência melhorada para utilizadores autenticados
+
+### 📊 **Performance**
+- Redução do tamanho da página principal: 8.89kB → 7.72kB
+- Menos elementos desnecessários na interface
+- Carregamento mais rápido da home page
+
+### 🎯 **Lógica Condicional**
+- Seção B2B só é exibida quando não há utilizador autenticado
+- Interface mais limpa para utilizadores logados
+- Melhor foco no conteúdo relevante para cada tipo de utilizador
+
+---
+
 ## [1.5.4] - 2025-01-27 - Correções de Hidratação AuthContext
 
 ### 🔧 **Correções Críticas**
