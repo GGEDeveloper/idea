@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/admin/content/route": "app/api/admin/content/route.js",
   "/api/admin/orders/[orderId]/route": "app/api/admin/orders/[orderId]/route.js",
   "/api/admin/orders/route": "app/api/admin/orders/route.js",
@@ -23,10 +22,11 @@
   "/api/search/route": "app/api/search/route.js",
   "/api/users/me/route": "app/api/users/me/route.js",
   "/api/users/route": "app/api/users/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/health/route": "app/api/health/route.js",
   "/carrinho/page": "app/carrinho/page.js",
-  "/contacto/page": "app/contacto/page.js",
   "/categorias/page": "app/categorias/page.js",
+  "/contacto/page": "app/contacto/page.js",
   "/login/page": "app/login/page.js",
   "/minha-conta/page": "app/minha-conta/page.js",
   "/minhas-encomendas/page": "app/minhas-encomendas/page.js",

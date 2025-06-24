@@ -1,4 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { verifyToken } from '../../../src/utils/jwtUtils.cjs';
+
+// Type for decoded token
+interface DecodedToken {
+  userId: string;
+  email: string;
+  role?: string;
+  iat?: number;
+  exp?: number;
+}
+
+const TOKEN_COOKIE_NAME = 'idea_session_token';
 
 interface OrderResult {
   orders: any[];
@@ -12,43 +24,86 @@ interface OrderResult {
 
 export async function GET(request: NextRequest) {
   try {
+    // Verify authentication
+    const authToken = request.cookies.get(TOKEN_COOKIE_NAME)?.value;
+    
+    if (!authToken) {
+      return NextResponse.json(
+        { error: 'No authentication token provided' },
+        { status: 401 }
+      );
+    }
+
+    const decodedToken = verifyToken(authToken) as DecodedToken | null;
+    if (!decodedToken || !decodedToken.userId) {
+      return NextResponse.json(
+        { error: 'Invalid or expired token' },
+        { status: 401 }
+      );
+    }
+
     // Get query parameters
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1', 10);
     const limit = parseInt(searchParams.get('limit') || '20', 10);
     const status = searchParams.get('status');
-    const userId = searchParams.get('userId');
 
-    // Import database dependencies
-    const orderQueries = await import('../../../src/db/order-queries.cjs');
+    // Import database pool directly for orders query
+    const pool = await import('../../../db/index.cjs');
 
-    // Build filters object
-    const filters: any = {};
-    if (status) filters.status = status;
-    if (userId) filters.userId = userId;
+    // Query orders for the authenticated user
+    let orderQuery = `
+      SELECT 
+        o.order_id,
+        o.order_status,
+        o.total_amount,
+        o.order_date,
+        COUNT(oi.order_item_id) as item_count
+      FROM orders o
+      LEFT JOIN order_items oi ON o.order_id = oi.order_id
+      WHERE o.user_id = $1
+    `;
 
-    const pagination = { page, limit };
+    const queryParams: any[] = [decodedToken.userId];
 
-    // Get orders from database using getUserOrders
-    // For now, we'll need userId - in real app this would come from auth
-    if (!userId) {
-      return NextResponse.json(
-        { error: 'User ID is required' },
-        { status: 400 }
-      );
+    if (status) {
+      orderQuery += ` AND o.order_status = $${queryParams.length + 1}`;
+      queryParams.push(status);
     }
 
-    const result = await orderQueries.default.getUserOrders(userId, {
-      page,
-      limit,
-      status
-    }) as OrderResult;
+    orderQuery += `
+      GROUP BY o.order_id, o.order_status, o.total_amount, o.order_date
+      ORDER BY o.order_date DESC
+      LIMIT $${queryParams.length + 1} OFFSET $${queryParams.length + 2}
+    `;
+
+    queryParams.push(limit, (page - 1) * limit);
+
+    const result = await pool.default.query(orderQuery, queryParams);
+
+    // Count total orders for pagination
+    let countQuery = `
+      SELECT COUNT(*) as total
+      FROM orders o
+      WHERE o.user_id = $1
+    `;
+
+    const countParams: any[] = [decodedToken.userId];
+
+    if (status) {
+      countQuery += ` AND o.order_status = $2`;
+      countParams.push(status);
+    }
+
+    const countResult = await pool.default.query(countQuery, countParams);
+    const totalOrders = parseInt(countResult.rows[0].total, 10);
+    const totalPages = Math.ceil(totalOrders / limit);
 
     return NextResponse.json({
-      orders: result.orders,
-      totalPages: result.pagination.totalPages,
-      currentPage: result.pagination.currentPage,
-      totalOrders: result.pagination.totalOrders
+      orders: result.rows,
+      totalPages,
+      currentPage: page,
+      totalOrders
     });
 
   } catch (error) {
@@ -62,10 +117,30 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    // TODO: Add authentication check
+    // Verify authentication
+    const authToken = request.cookies.get(TOKEN_COOKIE_NAME)?.value;
+    
+    if (!authToken) {
+      return NextResponse.json(
+        { error: 'No authentication token provided' },
+        { status: 401 }
+      );
+    }
+
+    const decodedToken = verifyToken(authToken) as DecodedToken | null;
+    if (!decodedToken || !decodedToken.userId) {
+      return NextResponse.json(
+        { error: 'Invalid or expired token' },
+        { status: 401 }
+      );
+    }
+
+    // TODO: Implement order creation logic
+    const body = await request.json();
+    
     return NextResponse.json(
-      { error: 'Authentication required' },
-      { status: 401 }
+      { error: 'Order creation not implemented yet' },
+      { status: 501 }
     );
 
   } catch (error) {

@@ -23,7 +23,7 @@ interface DecodedToken {
 
 export async function GET(request: NextRequest) {
   try {
-    const authToken = request.cookies.get('auth-token')?.value;
+    const authToken = request.cookies.get(TOKEN_COOKIE_NAME)?.value;
     
     if (!authToken) {
       return NextResponse.json(
@@ -89,7 +89,7 @@ export async function GET(request: NextRequest) {
 
 export async function PUT(request: NextRequest) {
   try {
-    const authToken = request.cookies.get('auth-token')?.value;
+    const authToken = request.cookies.get(TOKEN_COOKIE_NAME)?.value;
     
     if (!authToken) {
       return NextResponse.json(
