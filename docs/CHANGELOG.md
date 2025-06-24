@@ -1,5 +1,39 @@
 # Changelog - AliTools Project
 
+## [1.5.7] - 2025-01-27 - Melhorias Categorias e Navegação
+
+### ✨ **Melhorias UX - Categorias da Home Page**
+- **CATEGORY-UX-001**: Reduzido tamanho das caixas de categorias para layout mais compacto
+- **CATEGORY-UX-002**: Aumentada densidade do grid: 2-8 colunas (era 1-5 colunas)
+- **CATEGORY-UX-003**: Otimizados tamanhos de ícones, fontes e espaçamentos
+- **CATEGORY-UX-004**: Melhor aproveitamento do espaço disponível
+
+### 🔗 **Nova Funcionalidade - Navegação Inteligente**
+- **NAV-001**: Implementada navegação automática da home page para produtos com filtro ativo
+- **NAV-002**: Adicionado useSearchParams para ler categoria da URL na página de produtos
+- **NAV-003**: Filtro de categoria aplicado automaticamente quando vem da home page
+- **NAV-004**: URL parameters funcionando corretamente (`/produtos?category=ID`)
+
+### 🛠️ **Correções Técnicas**
+- **TECH-001**: Envolvido useSearchParams em Suspense boundary para compliance do Next.js
+- **TECH-002**: Resolvidos warnings de SSR e hydration
+- **TECH-003**: Melhorada performance de loading da página de produtos
+
+### 📊 **Mudanças Visuais**
+- **Grid Layout**: 2 cols (mobile) → 3 cols (sm) → 4 cols (md) → 6 cols (lg) → 8 cols (xl)
+- **Ícones**: Reduzidos de w-16 h-16 para w-10 h-10 
+- **Fontes**: Títulos de text-xl para text-sm, texto de ação otimizado
+- **Espaçamento**: Padding reduzido de p-6 para p-3, gaps de 6 para 4
+- **Texto**: Limitado títulos a 2 linhas com line-clamp-2
+
+### 🎯 **Resultado**
+- Interface de categorias muito mais limpa e compacta
+- Navegação fluida da home para produtos filtrados
+- Melhor experiência de descoberta de produtos
+- URLs semânticas e navegação direta
+
+---
+
 ## [1.5.6] - 2025-01-27 - Correção Página Detalhes Produto
 
 ### 🔧 **Correção Crítica - Página de Produto**
@@ -117,11 +151,20 @@
 - **Autenticação**: Sistema JWT local robusto
 - **Página de Produtos**: Listagem, filtros, paginação, busca
 - **Página de Detalhes**: Preços, carrinho, validações de permissões ✅ **CORRIGIDO**
-- **Sistema de Categorias**: Filtros simplificados e navegação otimizada
+- **Sistema de Categorias**: Filtros simplificados e navegação otimizada ✅ **MELHORADO**
+- **Navegação Inteligente**: Home → Produtos com filtro automático ✅ **NOVO**
 - **Dark Mode**: Sistema modular completo
 
 ### 🚀 **PRONTO PARA PRODUÇÃO**
 - Sistema completamente testado e validado
 - Todas as funcionalidades de e-commerce operacionais
 - Interface otimizada para utilizadores B2B
-- Documentação completa e atualizadas 
+- **Navegação intuitiva** e descoberta de produtos melhorada
+- **UX otimizada** com categorias compactas e visuais
+- Documentação completa e atualizada
+
+### 📱 **Experiência do Utilizador Aprimorada**
+- **Home Page**: Categorias compactas com navegação direta
+- **Descoberta**: Filtros automáticos ao navegar por categorias
+- **Performance**: URLs semânticas e loading otimizado
+- **Visual**: Layout responsivo 2-8 colunas conforme dispositivo 
