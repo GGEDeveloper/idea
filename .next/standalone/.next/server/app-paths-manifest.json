@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/api/admin/content/route": "app/api/admin/content/route.js",
-  "/api/admin/orders/route": "app/api/admin/orders/route.js",
   "/api/admin/orders/[orderId]/route": "app/api/admin/orders/[orderId]/route.js",
+  "/api/admin/orders/route": "app/api/admin/orders/route.js",
   "/api/admin/permissions/route": "app/api/admin/permissions/route.js",
   "/api/admin/pricing/route": "app/api/admin/pricing/route.js",
   "/api/admin/products/route": "app/api/admin/products/route.js",
@@ -23,9 +23,10 @@
   "/api/search/route": "app/api/search/route.js",
   "/api/users/me/route": "app/api/users/me/route.js",
   "/api/users/route": "app/api/users/route.js",
+  "/api/health/route": "app/api/health/route.js",
   "/carrinho/page": "app/carrinho/page.js",
-  "/categorias/page": "app/categorias/page.js",
   "/contacto/page": "app/contacto/page.js",
+  "/categorias/page": "app/categorias/page.js",
   "/login/page": "app/login/page.js",
   "/minha-conta/page": "app/minha-conta/page.js",
   "/minhas-encomendas/page": "app/minhas-encomendas/page.js",
@@ -33,9 +34,8 @@
   "/produtos/[ean]/page": "app/produtos/[ean]/page.js",
   "/produtos/page": "app/produtos/page.js",
   "/sobre/page": "app/sobre/page.js",
-  "/api/health/route": "app/api/health/route.js",
   "/admin/orders/page": "app/admin/orders/page.js",
   "/admin/page": "app/admin/page.js",
-  "/admin/users/page": "app/admin/users/page.js",
-  "/admin/products/page": "app/admin/products/page.js"
+  "/admin/products/page": "app/admin/products/page.js",
+  "/admin/users/page": "app/admin/users/page.js"
 }

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   UserIcon, 
   EnvelopeIcon,
@@ -19,9 +20,13 @@ interface UserProfile {
 }
 
 const MyAccountPage = () => {
+  const { user, isAuthenticated, isLoading: authLoading } = useAuth();
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
+  const [updateLoading, setUpdateLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -29,27 +34,33 @@ const MyAccountPage = () => {
   });
 
   useEffect(() => {
-    fetchProfile();
-  }, []);
+    if (isAuthenticated && user) {
+      fetchProfile();
+    }
+  }, [isAuthenticated, user]);
 
   const fetchProfile = async () => {
     try {
-      // TODO: Get actual user profile from API
-      setProfile({
-        user_id: '1',
-        email: 'cliente@example.com',
-        first_name: 'João',
-        last_name: 'Silva',
-        company_name: 'Silva & Associados Lda.',
-        created_at: '2024-01-15T10:00:00Z'
+      setLoading(true);
+      const response = await fetch('/api/users/me', {
+        method: 'GET',
+        credentials: 'include',
       });
+
+      if (!response.ok) {
+        throw new Error('Erro ao carregar perfil');
+      }
+
+      const userData = await response.json();
+      setProfile(userData);
       setFormData({
-        first_name: 'João',
-        last_name: 'Silva',
-        company_name: 'Silva & Associados Lda.'
+        first_name: userData.first_name || '',
+        last_name: userData.last_name || '',
+        company_name: userData.company_name || ''
       });
     } catch (error) {
       console.error('Error fetching profile:', error);
+      setError('Erro ao carregar perfil do utilizador');
     } finally {
       setLoading(false);
     }
@@ -57,15 +68,60 @@ const MyAccountPage = () => {
 
   const handleSave = async () => {
     try {
-      // TODO: Update profile via API
-      console.log('Updating profile:', formData);
+      setUpdateLoading(true);
+      setError(null);
+      setSuccess(null);
+
+      const response = await fetch('/api/users/me', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Erro ao atualizar perfil');
+      }
+
+      const updatedUser = await response.json();
+      setProfile(updatedUser);
       setEditing(false);
-    } catch (error) {
+      setSuccess('Perfil atualizado com sucesso!');
+      
+      // Clear success message after 3 seconds
+      setTimeout(() => setSuccess(null), 3000);
+      
+    } catch (error: any) {
       console.error('Error updating profile:', error);
+      setError(error.message || 'Erro ao atualizar perfil');
+    } finally {
+      setUpdateLoading(false);
     }
   };
 
-  if (loading) {
+  const handleCancel = () => {
+    if (profile) {
+      setFormData({
+        first_name: profile.first_name || '',
+        last_name: profile.last_name || '',
+        company_name: profile.company_name || ''
+      });
+    }
+    setEditing(false);
+    setError(null);
+    setSuccess(null);
+  };
+
+  // Redirect to login if not authenticated
+  if (!authLoading && !isAuthenticated) {
+    window.location.href = '/login';
+    return null;
+  }
+
+  if (authLoading || loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
@@ -114,13 +170,27 @@ const MyAccountPage = () => {
                     Informações Pessoais
                   </h3>
                   <button
-                    onClick={() => setEditing(!editing)}
+                    onClick={() => editing ? handleCancel() : setEditing(true)}
+                    disabled={updateLoading}
                     className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                   >
                     <PencilIcon className="-ml-0.5 mr-2 h-4 w-4" />
                     {editing ? 'Cancelar' : 'Editar'}
                   </button>
                 </div>
+
+                {/* Messages */}
+                {error && (
+                  <div className="mb-4 p-4 rounded-md bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+                    <p className="text-sm text-red-800 dark:text-red-200">{error}</p>
+                  </div>
+                )}
+
+                {success && (
+                  <div className="mb-4 p-4 rounded-md bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+                    <p className="text-sm text-green-800 dark:text-green-200">{success}</p>
+                  </div>
+                )}
 
                 {editing ? (
                   <div className="space-y-6">
@@ -161,16 +231,25 @@ const MyAccountPage = () => {
                     </div>
                     <div className="flex justify-end space-x-3">
                       <button
-                        onClick={() => setEditing(false)}
+                        onClick={handleCancel}
+                        disabled={updateLoading}
                         className="bg-white dark:bg-gray-700 py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                       >
                         Cancelar
                       </button>
                       <button
                         onClick={handleSave}
-                        className="bg-orange-600 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                        disabled={updateLoading}
+                        className="bg-orange-600 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50"
                       >
-                        Guardar
+                        {updateLoading ? (
+                          <>
+                            <i className="fas fa-spinner animate-spin mr-2"></i>
+                            A guardar...
+                          </>
+                        ) : (
+                          'Guardar'
+                        )}
                       </button>
                     </div>
                   </div>
@@ -185,6 +264,9 @@ const MyAccountPage = () => {
                     <div>
                       <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Email</dt>
                       <dd className="mt-1 text-sm text-gray-900 dark:text-white">{profile?.email}</dd>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                        O email não pode ser alterado
+                      </p>
                     </div>
                     <div>
                       <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Empresa</dt>

@@ -14,16 +14,22 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
-  const { login, isAuthenticated, isLoading: authLoading } = useAuth();
+  const { login, isAuthenticated, isLoading: authLoading, user } = useAuth();
   const router = useRouter();
 
   // Redirect if already authenticated
   useEffect(() => {
-    if (isAuthenticated && !authLoading) {
-      console.log('[LoginPage] User is authenticated, redirecting to dashboard');
-      router.push('/admin');
+    if (isAuthenticated && !authLoading && user) {
+      console.log('[LoginPage] User is authenticated, role:', user.role_name);
+      if (user.role_name === 'admin') {
+        console.log('[LoginPage] Admin user, redirecting to dashboard');
+        router.push('/admin');
+      } else {
+        console.log('[LoginPage] Customer user, redirecting to home');
+        router.push('/');
+      }
     }
-  }, [isAuthenticated, authLoading, router]);
+  }, [isAuthenticated, authLoading, user, router]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
@@ -46,7 +52,16 @@ export default function LoginPage() {
       
       if (result.success) {
         console.log('[LoginPage] Login successful, user data:', result.user);
-        // AuthContext will handle the redirect via useEffect above
+        // Redirect based on user role after a short delay to allow AuthContext to update
+        setTimeout(() => {
+          if (result.user?.role_name === 'admin') {
+            console.log('[LoginPage] Admin login, redirecting to dashboard');
+            router.push('/admin');
+          } else {
+            console.log('[LoginPage] Customer login, redirecting to home');
+            router.push('/');
+          }
+        }, 200);
       } else {
         console.log('[LoginPage] Login failed:', result.error);
         setError(result.error || 'Falha no login. Verifique as suas credenciais.');

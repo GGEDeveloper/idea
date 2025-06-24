@@ -6,10 +6,25 @@ export async function GET(request: NextRequest) {
     const pool = await import('../../../db/index.cjs');
     const { buildCategoryTreeFromPaths } = await import('../../../src/api/utils/category-utils.cjs');
 
-    // Get categories from database
-    const categoryData = await pool.default.query(
-      'SELECT categoryid as id, name, "path", parent_id FROM categories ORDER BY "path"'
-    );
+    // Get categories from database with product count
+    const categoryData = await pool.default.query(`
+      SELECT 
+        c.categoryid as id, 
+        c.name, 
+        c."path", 
+        c.parent_id,
+        COALESCE(pc.product_count, 0) as product_count
+      FROM categories c
+      LEFT JOIN (
+        SELECT 
+          pc.category_id,
+          COUNT(DISTINCT pc.product_ean) as product_count
+        FROM product_categories pc
+        JOIN products p ON pc.product_ean = p.ean AND p.active = true
+        GROUP BY pc.category_id
+      ) pc ON c.categoryid = pc.category_id
+      ORDER BY c."path"
+    `);
 
     // Build category tree structure
     const categoryTree = buildCategoryTreeFromPaths(categoryData.rows);

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   EyeIcon,
   CheckCircleIcon,
@@ -18,41 +19,36 @@ interface Order {
 }
 
 const MyOrdersPage = () => {
+  const { user, isAuthenticated, isLoading: authLoading } = useAuth();
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchOrders();
-  }, []);
+    if (isAuthenticated && user) {
+      fetchOrders();
+    }
+  }, [isAuthenticated, user]);
 
   const fetchOrders = async () => {
     try {
-      // TODO: Fetch user orders from API
-      setOrders([
-        {
-          order_id: '550e8400-e29b-41d4-a716-446655440001',
-          order_status: 'pending_approval',
-          total_amount: 156.50,
-          order_date: '2024-12-20T10:00:00Z',
-          item_count: 3
-        },
-        {
-          order_id: '550e8400-e29b-41d4-a716-446655440002',
-          order_status: 'approved',
-          total_amount: 89.30,
-          order_date: '2024-12-15T14:30:00Z',
-          item_count: 1
-        },
-        {
-          order_id: '550e8400-e29b-41d4-a716-446655440003',
-          order_status: 'delivered',
-          total_amount: 245.70,
-          order_date: '2024-12-10T09:15:00Z',
-          item_count: 5
-        }
-      ]);
-    } catch (error) {
+      setLoading(true);
+      setError(null);
+
+      const response = await fetch('/api/orders', {
+        method: 'GET',
+        credentials: 'include',
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao carregar encomendas');
+      }
+
+      const data = await response.json();
+      setOrders(data.orders || []);
+    } catch (error: any) {
       console.error('Error fetching orders:', error);
+      setError(error.message || 'Erro ao carregar encomendas');
     } finally {
       setLoading(false);
     }
@@ -63,6 +59,8 @@ const MyOrdersPage = () => {
       case 'pending_approval':
         return <ClockIcon className="h-5 w-5 text-yellow-500" />;
       case 'approved':
+      case 'shipped':
+        return <CheckCircleIcon className="h-5 w-5 text-blue-500" />;
       case 'delivered':
         return <CheckCircleIcon className="h-5 w-5 text-green-500" />;
       case 'cancelled':
@@ -102,7 +100,13 @@ const MyOrdersPage = () => {
     }
   };
 
-  if (loading) {
+  // Redirect to login if not authenticated
+  if (!authLoading && !isAuthenticated) {
+    window.location.href = '/login';
+    return null;
+  }
+
+  if (authLoading || loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
@@ -136,16 +140,33 @@ const MyOrdersPage = () => {
           </nav>
         </div>
 
+        {/* Error Message */}
+        {error && (
+          <div className="mb-6 p-4 rounded-md bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+            <p className="text-sm text-red-800 dark:text-red-200">{error}</p>
+            <button 
+              onClick={fetchOrders}
+              className="mt-2 text-sm font-medium text-red-800 dark:text-red-200 hover:underline"
+            >
+              Tentar novamente
+            </button>
+          </div>
+        )}
+
         {/* Orders List */}
         {orders.length === 0 ? (
           <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 text-center">
-            <p className="text-gray-500 dark:text-gray-400">
-              Ainda não tem encomendas.
+            <div className="text-gray-400 mb-4">
+              <i className="fas fa-shopping-cart text-4xl"></i>
+            </div>
+            <p className="text-gray-500 dark:text-gray-400 mb-4">
+              {error ? 'Não foi possível carregar as encomendas.' : 'Ainda não tem encomendas.'}
             </p>
             <Link
               href="/produtos"
-              className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700"
             >
+              <i className="fas fa-search mr-2"></i>
               Explorar Produtos
             </Link>
           </div>
@@ -163,7 +184,9 @@ const MyOrdersPage = () => {
                         {new Date(order.order_date).toLocaleDateString('pt-PT', {
                           year: 'numeric',
                           month: 'long',
-                          day: 'numeric'
+                          day: 'numeric',
+                          hour: '2-digit',
+                          minute: '2-digit'
                         })}
                       </p>
                     </div>
@@ -198,7 +221,32 @@ const MyOrdersPage = () => {
                   
                   {order.order_status === 'pending_approval' && (
                     <p className="text-sm text-gray-500 dark:text-gray-400">
+                      <i className="fas fa-clock mr-1"></i>
                       Aguardando aprovação do administrador
+                    </p>
+                  )}
+                  {order.order_status === 'approved' && (
+                    <p className="text-sm text-blue-600 dark:text-blue-400">
+                      <i className="fas fa-check mr-1"></i>
+                      Encomenda aprovada e a ser processada
+                    </p>
+                  )}
+                  {order.order_status === 'shipped' && (
+                    <p className="text-sm text-blue-600 dark:text-blue-400">
+                      <i className="fas fa-truck mr-1"></i>
+                      Encomenda enviada
+                    </p>
+                  )}
+                  {order.order_status === 'delivered' && (
+                    <p className="text-sm text-green-600 dark:text-green-400">
+                      <i className="fas fa-check-circle mr-1"></i>
+                      Encomenda entregue
+                    </p>
+                  )}
+                  {(order.order_status === 'cancelled' || order.order_status === 'rejected') && (
+                    <p className="text-sm text-red-600 dark:text-red-400">
+                      <i className="fas fa-times-circle mr-1"></i>
+                      Encomenda {order.order_status === 'cancelled' ? 'cancelada' : 'rejeitada'}
                     </p>
                   )}
                 </div>

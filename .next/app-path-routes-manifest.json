@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "/_not-found",
   "/api/admin/content/route": "/api/admin/content",
-  "/api/admin/orders/route": "/api/admin/orders",
   "/api/admin/orders/[orderId]/route": "/api/admin/orders/[orderId]",
+  "/api/admin/orders/route": "/api/admin/orders",
   "/api/admin/permissions/route": "/api/admin/permissions",
   "/api/admin/pricing/route": "/api/admin/pricing",
   "/api/admin/products/route": "/api/admin/products",
@@ -23,9 +23,10 @@
   "/api/search/route": "/api/search",
   "/api/users/me/route": "/api/users/me",
   "/api/users/route": "/api/users",
+  "/api/health/route": "/api/health",
   "/carrinho/page": "/carrinho",
-  "/categorias/page": "/categorias",
   "/contacto/page": "/contacto",
+  "/categorias/page": "/categorias",
   "/login/page": "/login",
   "/minha-conta/page": "/minha-conta",
   "/minhas-encomendas/page": "/minhas-encomendas",
@@ -33,9 +34,8 @@
   "/produtos/[ean]/page": "/produtos/[ean]",
   "/produtos/page": "/produtos",
   "/sobre/page": "/sobre",
-  "/api/health/route": "/api/health",
   "/admin/orders/page": "/admin/orders",
   "/admin/page": "/admin",
-  "/admin/users/page": "/admin/users",
-  "/admin/products/page": "/admin/products"
+  "/admin/products/page": "/admin/products",
+  "/admin/users/page": "/admin/users"
 }
