@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
+import { useAuth } from './AuthContext';
 
 // Tipos para os itens do carrinho
 export interface CartItem {
@@ -47,6 +48,59 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isInitialized, setIsInitialized] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const { registerCartClearCallback, isAuthenticated } = useAuth();
+
+  // Função para limpar completamente o carrinho
+  const clearCartCompletely = () => {
+    console.log('[CartContext] Limpando carrinho completamente...');
+    setCartItems([]);
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('cartItems');
+    }
+  };
+
+  // Função para sincronizar carrinho com servidor
+  const syncCartWithServer = async () => {
+    if (!isAuthenticated || cartItems.length === 0) return;
+    
+    try {
+      console.log('[CartContext] Sincronizando carrinho com servidor...');
+      for (const item of cartItems) {
+        await fetch('/api/cart', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({
+            productId: item.id,
+            name: item.name,
+            price: item.price,
+            quantity: item.quantity,
+            image: item.image,
+            brand: item.brand,
+            ean: item.ean
+          })
+        });
+      }
+      console.log('[CartContext] Sincronização com servidor concluída');
+    } catch (error) {
+      console.error('[CartContext] Erro na sincronização com servidor:', error);
+    }
+  };
+
+  // Registrar função de limpeza no AuthContext
+  useEffect(() => {
+    if (registerCartClearCallback && isInitialized) {
+      registerCartClearCallback(clearCartCompletely);
+      console.log('[CartContext] Função de limpeza registrada no AuthContext');
+    }
+  }, [registerCartClearCallback, isInitialized]);
+
+  // Sincronizar carrinho quando utilizador faz login
+  useEffect(() => {
+    if (isAuthenticated && isInitialized && cartItems.length > 0) {
+      syncCartWithServer();
+    }
+  }, [isAuthenticated, isInitialized]);
 
   // Inicializa o carrinho do localStorage apenas no cliente
   useEffect(() => {
@@ -189,8 +243,8 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       return;
     }
     
-    console.log('[CartContext] Carrinho limpo');
-    setCartItems([]);
+    clearCartCompletely();
+    console.log('[CartContext] Carrinho limpo pelo utilizador');
   };
 
   const getCartTotal = (): number => {

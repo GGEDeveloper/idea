@@ -197,7 +197,7 @@ export async function PUT(request: NextRequest) {
   }
 }
 
-// DELETE /api/cart - Remove item from cart
+// DELETE /api/cart - Remove item from cart OR clear entire cart (for logout)
 export async function DELETE(request: NextRequest) {
   try {
     const user = await verifyToken(request);
@@ -208,10 +208,6 @@ export async function DELETE(request: NextRequest) {
     const url = new URL(request.url);
     const productId = url.searchParams.get('productId');
 
-    if (!productId) {
-      return NextResponse.json({ error: 'ID do produto é obrigatório' }, { status: 400 });
-    }
-
     const cartSessions = getCartSessions();
     const userSession = cartSessions.get(user.userId);
 
@@ -219,6 +215,19 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: 'Carrinho não encontrado' }, { status: 404 });
     }
 
+    // If no productId, clear entire cart (for logout)
+    if (!productId) {
+      console.log(`[Cart API] Limpando carrinho completo para utilizador ${user.userId}`);
+      cartSessions.delete(user.userId);
+      return NextResponse.json({
+        message: 'Carrinho limpo completamente',
+        items: [],
+        totalItems: 0,
+        totalAmount: 0
+      });
+    }
+
+    // Remove specific item
     userSession.items = userSession.items.filter(item => item.id !== productId);
     userSession.lastActivity = new Date();
     cartSessions.set(user.userId, userSession);
@@ -233,7 +242,7 @@ export async function DELETE(request: NextRequest) {
       totalAmount
     });
   } catch (error) {
-    console.error('Error removing from cart:', error);
+    console.error('Error in cart DELETE:', error);
     return NextResponse.json({ error: 'Erro interno do servidor' }, { status: 500 });
   }
 } 

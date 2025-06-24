@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useAuth } from '../contexts/AuthContext';
 import {
   Bars3Icon,
   XMarkIcon,
@@ -41,11 +42,18 @@ interface AdminLayoutProps {
 const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
+  const { logout } = useAuth();
 
-  const handleLogout = () => {
-    // TODO: Implement proper logout
-    localStorage.removeItem('adminToken');
-    window.location.href = '/login';
+  const handleLogout = async () => {
+    try {
+      console.log('[AdminLayout] Iniciando logout...');
+      await logout();
+      console.log('[AdminLayout] Logout concluído com sucesso');
+    } catch (error) {
+      console.error('[AdminLayout] Erro durante logout:', error);
+      // Even if logout fails, redirect to login
+      window.location.href = '/login';
+    }
   };
 
   return (

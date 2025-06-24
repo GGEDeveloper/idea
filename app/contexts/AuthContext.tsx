@@ -24,6 +24,7 @@ interface AuthContextType {
   hasRole: (role: string) => boolean;
   hasPermission: (permission: string) => boolean;
   fetchUserProfile: (source?: string) => Promise<void>;
+  registerCartClearCallback?: (clearFn: () => void) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -44,7 +45,13 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [localUser, setLocalUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [authError, setAuthError] = useState<string | null>(null);
+  const [clearCartCallback, setClearCartCallback] = useState<(() => void) | undefined>(undefined);
   const router = useRouter();
+
+  // Allow CartContext to register its clear function
+  const registerCartClearCallback = useCallback((clearFn: () => void) => {
+    setClearCartCallback(() => clearFn);
+  }, []);
 
   // Função para carregar o perfil do utilizador a partir do backend
   const fetchUserProfile = useCallback(async (source = 'unknown') => {
@@ -158,26 +165,52 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     setAuthError(null);
     
     try {
+      // Call server logout endpoint
       await fetch('/api/auth/logout', {
         method: 'POST',
         credentials: 'include',
       });
       
+      // Clear local user state
       setLocalUser(null);
+      
+      // Clear cart if callback is registered
+      if (clearCartCallback) {
+        console.log('[AuthContext] Limpando carrinho durante logout...');
+        clearCartCallback();
+      }
+      
+      // Clear server-side cart session
+      try {
+        await fetch('/api/cart', {
+          method: 'DELETE',
+          credentials: 'include',
+        });
+        console.log('[AuthContext] Sessão do carrinho no servidor limpa');
+      } catch (cartError) {
+        console.warn('[AuthContext] Aviso: Não foi possível limpar sessão do carrinho no servidor:', cartError);
+      }
+      
       router.push('/login');
-      console.log('[AuthContext] logout - Sucesso, utilizador limpo.');
+      console.log('[AuthContext] logout - Sucesso, utilizador e carrinho limpos.');
       return { success: true };
     } catch (error) {
       setLocalUser(null);
       console.error('[AuthContext] logout - Erro de fetch:', error);
       setAuthError('Erro de comunicação durante o logout.');
+      
+      // Still clear cart on error
+      if (clearCartCallback) {
+        clearCartCallback();
+      }
+      
       router.push('/login');
       return { success: false, error: 'Erro de comunicação no logout' };
     } finally {
       setIsLoading(false);
       console.log('[AuthContext] logout FINALIZADO');
     }
-  }, [router]);
+  }, [router, clearCartCallback]);
 
   const isAuthenticated = useMemo(() => {
     const authStatus = !!localUser && !!localUser.user_id;
@@ -207,7 +240,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     logout,
     hasRole,
     hasPermission,
-    fetchUserProfile
+    fetchUserProfile,
+    registerCartClearCallback
   }), [
     localUser,
     isAuthenticated,
@@ -217,7 +251,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     logout,
     hasRole,
     hasPermission,
-    fetchUserProfile
+    fetchUserProfile,
+    registerCartClearCallback
   ]);
 
   useEffect(() => {
