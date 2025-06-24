@@ -5,238 +5,151 @@ import Link from 'next/link';
 
 export default function SobrePage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
-      <div className="container mx-auto py-12">
-        {/* Hero Section */}
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto py-12 px-6">
+        {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6"
-               style={{ backgroundColor: 'var(--color-secondary)' }}>
-            <i className="fas fa-tools text-3xl" style={{ color: 'var(--color-text-inverse)' }}></i>
-          </div>
-          <h1 className="text-5xl font-bold mb-6" style={{ color: 'var(--color-text-base)' }}>
+          <h1 className="text-5xl font-bold text-gray-800 mb-6">
             Sobre a AliTools
           </h1>
-          <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--color-text-muted)' }}>
-            A Marca das Marcas em Ferramentas Profissionais — Fornecemos soluções completas 
-            para profissionais e revendedores exigentes há mais de uma década.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A marca das marcas em ferramentas profissionais, com foco no mercado B2B 
+            e parcerias estratégicas com revendedores de confiança
           </p>
         </div>
 
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* Company Story */}
-          <div className="card-glass">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                   style={{ backgroundColor: 'var(--color-primary)' }}>
-                <i className="fas fa-history text-xl" style={{ color: 'var(--color-text-inverse)' }}></i>
-              </div>
-              <h2 className="text-3xl font-bold" style={{ color: 'var(--color-text-base)' }}>
-                Nossa História
+        {/* Mission Section */}
+        <section className="bg-white rounded-xl shadow-lg p-12 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                <i className="fas fa-bullseye text-blue-600 mr-3"></i>
+                A Nossa Missão
               </h2>
-            </div>
-            <div className="space-y-4" style={{ color: 'var(--color-text-muted)' }}>
-              <p>
-                A AliTools nasceu com a missão de revolucionar o mercado de ferramentas profissionais em Portugal. 
-                Fundada por especialistas da indústria, rapidamente nos estabelecemos como a referência em qualidade 
-                e inovação para profissionais de todas as áreas.
+              <p className="text-lg text-gray-600 mb-6">
+                Fornecer ferramentas profissionais de alta qualidade através de uma rede 
+                exclusiva de revendedores autorizados, garantindo sempre o melhor preço, 
+                qualidade e serviço aos profissionais.
               </p>
-              <p>
-                Com mais de uma década de experiência, desenvolvemos parcerias estratégicas com as marcas mais 
-                reconhecidas mundialmente, garantindo que nossos clientes tenham sempre acesso às tecnologias 
-                mais avançadas do mercado.
-              </p>
-              <p>
-                Hoje, servimos milhares de profissionais e revendedores em todo o país, mantendo nosso compromisso 
-                inabalável com a excelência e a satisfação do cliente.
+              <p className="text-gray-600">
+                Acreditamos que o sucesso dos nossos parceiros é o nosso sucesso. Por isso, 
+                trabalhamos exclusivamente no modelo B2B, oferecendo condições especiais 
+                e suporte dedicado.
               </p>
             </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-full w-64 h-64 mx-auto flex items-center justify-center">
+                <i className="fas fa-tools text-6xl text-blue-600"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why B2B Section */}
+        <section className="mb-12">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Porquê Apenas B2B?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              O nosso modelo de negócio foca-se exclusivamente em parcerias estratégicas 
+              com revendedores profissionais
+            </p>
           </div>
 
-          {/* Vision & Values */}
-          <div className="card-glass">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                   style={{ backgroundColor: 'var(--color-secondary)' }}>
-                <i className="fas fa-eye text-xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-handshake text-2xl text-white"></i>
               </div>
-              <h2 className="text-3xl font-bold" style={{ color: 'var(--color-text-base)' }}>
-                Visão & Valores
-              </h2>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Parcerias Duradouras</h3>
+              <p className="text-gray-600">
+                Construímos relações de longo prazo com revendedores que conhecem 
+                verdadeiramente o mercado e as necessidades dos profissionais.
+              </p>
             </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
-                  Nossa Visão
-                </h3>
-                <p style={{ color: 'var(--color-text-muted)' }}>
-                  Ser o fornecedor líder de ferramentas profissionais, reconhecido pela qualidade 
-                  excepcional e inovação contínua.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
-                  Nossa Missão
-                </h3>
-                <p style={{ color: 'var(--color-text-muted)' }}>
-                  Capacitar profissionais com as melhores ferramentas, oferecendo soluções completas 
-                  que aumentam produtividade e garantem resultados excepcionais.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Core Values */}
-        <div className="mb-16">
-          <h2 className="text-4xl font-bold text-center mb-12" style={{ color: 'var(--color-text-base)' }}>
-            Nossos Pilares
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card text-center hover-lift">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                   style={{ backgroundColor: 'var(--color-success)' }}>
-                <i className="fas fa-medal text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-chart-line text-2xl text-white"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--color-text-base)' }}>
-                Excelência
-              </h3>
-              <p style={{ color: 'var(--color-text-muted)' }}>
-                Compromisso inabalável com a mais alta qualidade em cada produto e serviço que oferecemos.
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Crescimento Mútuo</h3>
+              <p className="text-gray-600">
+                O sucesso dos nossos parceiros é fundamental. Oferecemos margens 
+                competitivas e suporte para maximizar as vendas.
               </p>
             </div>
-            
-            <div className="card text-center hover-lift">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                   style={{ backgroundColor: 'var(--color-info)' }}>
-                <i className="fas fa-handshake text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-shield-alt text-2xl text-white"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--color-text-base)' }}>
-                Parceria
-              </h3>
-              <p style={{ color: 'var(--color-text-muted)' }}>
-                Construímos relacionamentos duradouros baseados na confiança, transparência e sucesso mútuo.
-              </p>
-            </div>
-            
-            <div className="card text-center hover-lift">
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                   style={{ backgroundColor: 'var(--color-warning)' }}>
-                <i className="fas fa-rocket text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
-              </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--color-text-base)' }}>
-                Inovação
-              </h3>
-              <p style={{ color: 'var(--color-text-muted)' }}>
-                Estamos sempre na vanguarda da tecnologia, trazendo as mais recentes inovações para nossos clientes.
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Qualidade Garantida</h3>
+              <p className="text-gray-600">
+                Trabalhamos apenas com produtos testados e aprovados, 
+                garantindo a confiança dos consumidores finais.
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Stats Section */}
-        <div className="card-glass mb-16">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: 'var(--color-text-base)' }}>
-            A AliTools em Números
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>
-                15+
-              </div>
-              <p style={{ color: 'var(--color-text-muted)' }}>Anos de Experiência</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>
-                5000+
-              </div>
-              <p style={{ color: 'var(--color-text-muted)' }}>Produtos em Catálogo</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>
-                800+
-              </div>
-              <p style={{ color: 'var(--color-text-muted)' }}>Parceiros Ativos</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>
-                50+
-              </div>
-              <p style={{ color: 'var(--color-text-muted)' }}>Marcas Exclusivas</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Certifications & Quality */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="card">
-            <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--color-text-base)' }}>
-              Certificações & Qualidade
-            </h3>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
-                     style={{ backgroundColor: 'var(--color-success)' }}>
-                  <i className="fas fa-check text-sm" style={{ color: 'var(--color-text-inverse)' }}></i>
-                </div>
-                <span style={{ color: 'var(--color-text-muted)' }}>ISO 9001:2015 - Gestão da Qualidade</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
-                     style={{ backgroundColor: 'var(--color-success)' }}>
-                  <i className="fas fa-check text-sm" style={{ color: 'var(--color-text-inverse)' }}></i>
-                </div>
-                <span style={{ color: 'var(--color-text-muted)' }}>CE - Conformidade Europeia</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
-                     style={{ backgroundColor: 'var(--color-success)' }}>
-                  <i className="fas fa-check text-sm" style={{ color: 'var(--color-text-inverse)' }}></i>
-                </div>
-                <span style={{ color: 'var(--color-text-muted)' }}>Garantia Oficial de Todas as Marcas</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--color-text-base)' }}>
-              Compromisso Ambiental
-            </h3>
-            <p className="mb-4" style={{ color: 'var(--color-text-muted)' }}>
-              A sustentabilidade é parte integral da nossa estratégia empresarial. Trabalhamos 
-              ativamente para minimizar o nosso impacto ambiental através de:
+        <section className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl p-12 mb-12 text-white">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">AliTools em Números</h2>
+            <p className="text-gray-300">
+              A confiança dos profissionais traduzida em números
             </p>
-            <ul className="space-y-2" style={{ color: 'var(--color-text-muted)' }}>
-              <li>• Embalagens recicláveis e biodegradáveis</li>
-              <li>• Parcerias com fornecedores sustentáveis</li>
-              <li>• Programas de reciclagem de ferramentas</li>
-              <li>• Operações com energia renovável</li>
-            </ul>
           </div>
-        </div>
 
-        {/* Call to Action */}
-        <div className="card-glass text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6" style={{ color: 'var(--color-text-base)' }}>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">1000+</div>
+              <p className="text-gray-300">Produtos em Catálogo</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-green-400 mb-2">50+</div>
+              <p className="text-gray-300">Marcas Representadas</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-purple-400 mb-2">200+</div>
+              <p className="text-gray-300">Parceiros Ativos</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-orange-400 mb-2">15+</div>
+              <p className="text-gray-300">Anos de Experiência</p>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="text-center">
+          <div className="bg-blue-50 rounded-xl p-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">
               Pronto para ser nosso parceiro?
             </h2>
-            <p className="text-lg mb-8" style={{ color: 'var(--color-text-muted)' }}>
-              Junte-se a centenas de profissionais e revendedores que confiam na AliTools. 
-              Descubra como podemos impulsionar o seu negócio com as melhores ferramentas do mercado.
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Junte-se à nossa rede de parceiros e tenha acesso a condições especiais, 
+              suporte dedicado e uma vasta gama de produtos profissionais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contacto" className="btn-primary inline-flex items-center justify-center">
-                <i className="fas fa-envelope mr-2"></i>
-                Falar Connosco
+              <Link 
+                href="/contacto" 
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors"
+              >
+                <i className="fas fa-handshake mr-2"></i>
+                Candidatar-me a Parceiro
               </Link>
-              <Link href="/produtos" className="btn-secondary inline-flex items-center justify-center">
-                <i className="fas fa-search mr-2"></i>
+              <Link 
+                href="/produtos" 
+                className="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              >
+                <i className="fas fa-eye mr-2"></i>
                 Ver Catálogo
               </Link>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

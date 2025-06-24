@@ -228,24 +228,47 @@ export default function ProdutosPage() {
                 </div>
               )}
 
-              {/* Price Range Filter */}
-              <div className="mb-6">
-                <label htmlFor="price" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
-                  Faixa de Preço
-                </label>
-                <select
-                  id="price"
-                  value={priceRange}
-                  onChange={(e) => setPriceRange(e.target.value)}
-                  className="input-field"
-                >
-                  <option value="">Todos os preços</option>
-                  <option value="under-50">Até €50</option>
-                  <option value="50-100">€50 - €100</option>
-                  <option value="100-300">€100 - €300</option>
-                  <option value="300-500">€300 - €500</option>
-                  <option value="over-500">Mais de €500</option>
-                </select>
+              {/* Price Range Filter - HIDE FOR UNAUTHENTICATED USERS */}
+              {false && ( // Temporarily disabled for guest users
+                <div className="mb-6">
+                  <label htmlFor="price" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
+                    Faixa de Preço
+                  </label>
+                  <select
+                    id="price"
+                    value={priceRange}
+                    onChange={(e) => setPriceRange(e.target.value)}
+                    className="input-field"
+                  >
+                    <option value="">Todos os preços</option>
+                    <option value="under-50">Até €50</option>
+                    <option value="50-100">€50 - €100</option>
+                    <option value="100-300">€100 - €300</option>
+                    <option value="300-500">€300 - €500</option>
+                    <option value="over-500">Mais de €500</option>
+                  </select>
+                </div>
+              )}
+
+              {/* B2B Information for Guest Users */}
+              <div className="mb-6 p-4 rounded-lg" style={{ backgroundColor: 'var(--color-info)', opacity: 0.1 }}>
+                <div className="text-center">
+                  <i className="fas fa-handshake text-3xl mb-3" style={{ color: 'var(--color-primary)' }}></i>
+                  <h3 className="font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
+                    Plataforma B2B
+                  </h3>
+                  <p className="text-sm mb-4" style={{ color: 'var(--color-text-muted)' }}>
+                    Preços especiais e condições exclusivas para revendedores autorizados
+                  </p>
+                  <Link href="/login" className="btn-primary text-sm">
+                    <i className="fas fa-sign-in-alt mr-1"></i>
+                    Entrar
+                  </Link>
+                  <Link href="/contacto" className="btn-secondary text-sm mt-2">
+                    <i className="fas fa-user-plus mr-1"></i>
+                    Ser Parceiro
+                  </Link>
+                </div>
               </div>
 
               {/* Clear Filters */}
@@ -284,9 +307,9 @@ export default function ProdutosPage() {
                   className="input-field w-auto"
                 >
                   <option value="name">Nome (A-Z)</option>
-                  <option value="price-low">Preço (Menor)</option>
-                  <option value="price-high">Preço (Maior)</option>
+                  {/* Hide price sorting for guest users */}
                   <option value="brand">Marca</option>
+                  <option value="created_at">Mais Recentes</option>
                 </select>
               </div>
             </div>
@@ -372,9 +395,15 @@ export default function ProdutosPage() {
                         </p>
                         <div className="flex justify-between items-center">
                           {product.priceStatus === 'unauthenticated' ? (
-                            <span className="text-sm font-medium" style={{ color: 'var(--color-text-muted)' }}>
-                              Faça login para ver preços
-                            </span>
+                            <div className="flex flex-col">
+                              <span className="text-sm font-medium" style={{ color: 'var(--color-primary)' }}>
+                                <i className="fas fa-lock mr-1"></i>
+                                Preços para Parceiros
+                              </span>
+                              <Link href="/login" className="text-xs hover:underline" style={{ color: 'var(--color-text-muted)' }}>
+                                Entrar para ver preços
+                              </Link>
+                            </div>
                           ) : (
                             <span className="text-lg font-bold" style={{ color: 'var(--color-primary)' }}>
                               Preço disponível
