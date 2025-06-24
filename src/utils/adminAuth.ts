@@ -1,6 +1,5 @@
 import { NextRequest } from 'next/server';
 import { verifyToken } from './jwtUtils';
-import { findUserByIdWithPermissions } from '../db/userQueries';
 
 const TOKEN_COOKIE_NAME = 'idea_session_token';
 
@@ -9,6 +8,55 @@ export interface AdminUser {
   email: string;
   role: string;
   permissions: string[];
+}
+
+/**
+ * Fast admin check using lightweight database query
+ */
+async function checkUserIsAdmin(userId: string): Promise<{user: any, permissions: string[]} | null> {
+  try {
+    // Import database pool
+    const pool = await import('../../db/index.cjs');
+
+    // Lightweight query to check if user is admin and get basic info
+    const userQuery = `
+      SELECT 
+        u.user_id,
+        u.email,
+        u.first_name,
+        u.last_name,
+        r.role_name
+      FROM users u
+      JOIN roles r ON u.role_id = r.role_id
+      WHERE u.user_id = $1 AND r.role_name = 'admin' AND u.is_active = true
+    `;
+
+    const userResult = await pool.default.query(userQuery, [userId]);
+    
+    if (userResult.rows.length === 0) {
+      return null; // Not admin or user doesn't exist
+    }
+
+    const user = userResult.rows[0];
+
+    // Get admin permissions in a separate, simpler query
+    const permissionsQuery = `
+      SELECT p.permission_name
+      FROM role_permissions rp
+      JOIN permissions p ON rp.permission_id = p.permission_id
+      JOIN roles r ON rp.role_id = r.role_id
+      WHERE r.role_name = 'admin'
+    `;
+
+    const permissionsResult = await pool.default.query(permissionsQuery);
+    const permissions = permissionsResult.rows.map(row => row.permission_name);
+
+    return { user, permissions };
+
+  } catch (error) {
+    console.error('[AdminAuth] Error in lightweight admin check:', error);
+    return null;
+  }
 }
 
 /**
@@ -41,28 +89,24 @@ export async function checkAdminAuth(
       return null;
     }
 
-    // Get user from database with permissions
-    const user = await findUserByIdWithPermissions(decodedToken.userId);
+    // Use lightweight admin check
+    const adminCheck = await checkUserIsAdmin(decodedToken.userId);
 
-    if (!user) {
-      console.log('[AdminAuth] User not found for ID:', decodedToken.userId);
+    if (!adminCheck) {
+      console.log('[AdminAuth] User is not admin or not found:', decodedToken.userId);
       return null;
     }
 
-    // Check if user has admin role
-    if (user.role_name !== 'admin') {
-      console.log('[AdminAuth] User does not have admin role:', user.email, 'Role:', user.role_name);
-      return null;
-    }
+    const { user, permissions } = adminCheck;
 
     // Check required permissions if specified
     if (requiredPermissions.length > 0) {
       const hasAllPermissions = requiredPermissions.every(permission => 
-        user.permissions.includes(permission)
+        permissions.includes(permission)
       );
       
       if (!hasAllPermissions) {
-        console.log('[AdminAuth] User lacks required permissions:', requiredPermissions, 'User permissions:', user.permissions);
+        console.log('[AdminAuth] User lacks required permissions:', requiredPermissions, 'User permissions:', permissions);
         return null;
       }
     }
@@ -73,7 +117,7 @@ export async function checkAdminAuth(
       userId: user.user_id,
       email: user.email,
       role: user.role_name,
-      permissions: user.permissions
+      permissions: permissions
     };
 
   } catch (error) {

@@ -1,4 +1,5 @@
 {
+  "/_not-found/page": "/_not-found",
   "/api/admin/content/route": "/api/admin/content",
   "/api/admin/orders/[orderId]/route": "/api/admin/orders/[orderId]",
   "/api/admin/orders/route": "/api/admin/orders",
@@ -22,7 +23,6 @@
   "/api/search/route": "/api/search",
   "/api/users/me/route": "/api/users/me",
   "/api/users/route": "/api/users",
-  "/_not-found/page": "/_not-found",
   "/api/health/route": "/api/health",
   "/carrinho/page": "/carrinho",
   "/categorias/page": "/categorias",
