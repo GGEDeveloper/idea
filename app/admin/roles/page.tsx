@@ -1,0 +1,506 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { 
+  UserGroupIcon, 
+  PlusIcon, 
+  PencilIcon, 
+  TrashIcon,
+  ShieldCheckIcon,
+  UsersIcon,
+  CheckIcon,
+  XMarkIcon
+} from '@heroicons/react/24/outline';
+
+interface Role {
+  role_id: number;
+  role_name: string;
+  description: string;
+  user_count: number;
+  permissions: Permission[];
+  created_at: string;
+}
+
+interface Permission {
+  permission_id: number;
+  permission_name: string;
+  description: string;
+}
+
+interface RoleStats {
+  totalRoles: number;
+  totalUsers: number;
+  totalPermissions: number;
+  customRoles: number;
+}
+
+export default function AdminRolesPage() {
+  const [roles, setRoles] = useState<Role[]>([]);
+  const [permissions, setPermissions] = useState<Permission[]>([]);
+  const [stats, setStats] = useState<RoleStats | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [editingRole, setEditingRole] = useState<Role | null>(null);
+  const [showForm, setShowForm] = useState(false);
+  const [saveLoading, setSaveLoading] = useState(false);
+  const [selectedPermissions, setSelectedPermissions] = useState<number[]>([]);
+
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const [rolesRes, permissionsRes] = await Promise.all([
+        fetch('/api/admin/roles'),
+        fetch('/api/admin/permissions')
+      ]);
+
+      const rolesData = await rolesRes.json();
+      const permissionsData = await permissionsRes.json();
+
+      if (rolesRes.ok && permissionsRes.ok) {
+        setRoles(rolesData.roles || []);
+        setPermissions(permissionsData.permissions || []);
+        setStats(rolesData.stats);
+        setError(null);
+      } else {
+        setError('Erro ao carregar dados');
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setError('Erro de conexão');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleSaveRole = async (formData: any) => {
+    try {
+      setSaveLoading(true);
+      const method = editingRole ? 'PUT' : 'POST';
+      const payload = {
+        ...formData,
+        permissions: selectedPermissions,
+        ...(editingRole && { role_id: editingRole.role_id })
+      };
+
+      const response = await fetch('/api/admin/roles', {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        await fetchData();
+        setShowForm(false);
+        setEditingRole(null);
+        setSelectedPermissions([]);
+      } else {
+        const data = await response.json();
+        alert(data.error || 'Erro ao salvar role');
+      }
+    } catch (error) {
+      console.error('Error saving role:', error);
+      alert('Erro de conexão');
+    } finally {
+      setSaveLoading(false);
+    }
+  };
+
+  const handleDeleteRole = async (roleId: number, roleName: string) => {
+    if (['admin', 'customer'].includes(roleName)) {
+      alert('Não é possível excluir roles do sistema (admin, customer)');
+      return;
+    }
+
+    if (!confirm('Tem certeza que deseja excluir este role? Todos os utilizadores com este role perderão essas permissões.')) return;
+
+    try {
+      const response = await fetch(`/api/admin/roles/${roleId}`, {
+        method: 'DELETE'
+      });
+
+      if (response.ok) {
+        await fetchData();
+      } else {
+        const data = await response.json();
+        alert(data.error || 'Erro ao excluir role');
+      }
+    } catch (error) {
+      console.error('Error deleting role:', error);
+      alert('Erro de conexão');
+    }
+  };
+
+  const formatDate = (dateString: string) => {
+    return new Intl.DateTimeFormat('pt-PT', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    }).format(new Date(dateString));
+  };
+
+  const handleEditRole = (role: Role) => {
+    setEditingRole(role);
+    setSelectedPermissions(role.permissions.map(p => p.permission_id));
+    setShowForm(true);
+  };
+
+  const handleNewRole = () => {
+    setEditingRole(null);
+    setSelectedPermissions([]);
+    setShowForm(true);
+  };
+
+  const togglePermission = (permissionId: number) => {
+    setSelectedPermissions(prev => 
+      prev.includes(permissionId)
+        ? prev.filter(id => id !== permissionId)
+        : [...prev, permissionId]
+    );
+  };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4 py-8">
+        {/* Header */}
+        <div className="mb-8 flex justify-between items-center">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+              Gestão de Roles
+            </h1>
+            <p className="text-gray-600 dark:text-gray-400">
+              Configure cargos e suas permissões no sistema
+            </p>
+          </div>
+
+          <button
+            onClick={handleNewRole}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+          >
+            <PlusIcon className="h-5 w-5" />
+            <span>Novo Role</span>
+          </button>
+        </div>
+
+        {/* Stats Cards */}
+        {stats && (
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <UserGroupIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-400">Total de Roles</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white">{stats.totalRoles}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <UsersIcon className="h-8 w-8 text-green-600 dark:text-green-400" />
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-400">Utilizadores Ativos</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white">{stats.totalUsers}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <ShieldCheckIcon className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-400">Permissões</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white">{stats.totalPermissions}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <i className="fas fa-cog text-2xl text-purple-600 dark:text-purple-400"></i>
+                <div className="ml-4">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-400">Roles Personalizados</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-white">{stats.customRoles}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-md">
+            <p className="text-red-600 dark:text-red-400">{error}</p>
+          </div>
+        )}
+
+        {/* Roles List */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+          <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Roles do Sistema
+            </h2>
+          </div>
+
+          {roles.length === 0 ? (
+            <div className="p-12 text-center">
+              <UserGroupIcon className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                Nenhum role encontrado
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Crie seu primeiro role para começar.
+              </p>
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                <thead className="bg-gray-50 dark:bg-gray-700">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                      Role
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                      Utilizadores
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                      Permissões
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                      Criado
+                    </th>
+                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                      Ações
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                  {roles.map((role) => (
+                    <tr key={role.role_id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <div>
+                          <div className="flex items-center">
+                            <div className={`flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center ${
+                              ['admin', 'customer'].includes(role.role_name)
+                                ? 'bg-blue-100 dark:bg-blue-900/20'
+                                : 'bg-gray-100 dark:bg-gray-700'
+                            }`}>
+                              {['admin', 'customer'].includes(role.role_name) ? (
+                                <ShieldCheckIcon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                              ) : (
+                                <UserGroupIcon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+                              )}
+                            </div>
+                            <div className="ml-4">
+                              <div className="text-sm font-medium text-gray-900 dark:text-white flex items-center">
+                                {role.role_name}
+                                {['admin', 'customer'].includes(role.role_name) && (
+                                  <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400">
+                                    Sistema
+                                  </span>
+                                )}
+                              </div>
+                              <div className="text-sm text-gray-500 dark:text-gray-400">
+                                {role.description}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="flex items-center">
+                          <UsersIcon className="h-4 w-4 text-gray-400 mr-2" />
+                          <span className="text-sm text-gray-900 dark:text-white font-medium">
+                            {role.user_count}
+                          </span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4">
+                        <div className="flex flex-wrap gap-1">
+                          {role.permissions.slice(0, 3).map((permission) => (
+                            <span
+                              key={permission.permission_id}
+                              className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400"
+                            >
+                              {permission.permission_name}
+                            </span>
+                          ))}
+                          {role.permissions.length > 3 && (
+                            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400">
+                              +{role.permissions.length - 3} mais
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
+                        {formatDate(role.created_at)}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <div className="flex items-center justify-end space-x-2">
+                          <button
+                            onClick={() => handleEditRole(role)}
+                            className="text-blue-600 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                            title="Editar"
+                          >
+                            <PencilIcon className="h-4 w-4" />
+                          </button>
+                          {!['admin', 'customer'].includes(role.role_name) && (
+                            <button
+                              onClick={() => handleDeleteRole(role.role_id, role.role_name)}
+                              className="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-300 p-2 rounded-full hover:bg-red-50 dark:hover:bg-red-900/20"
+                              title="Excluir"
+                            >
+                              <TrashIcon className="h-4 w-4" />
+                            </button>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+
+        {/* Form Modal */}
+        {showForm && (
+          <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+            <div className="relative top-10 mx-auto p-5 border max-w-2xl shadow-lg rounded-md bg-white dark:bg-gray-800">
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const data = {
+                  role_name: formData.get('role_name'),
+                  description: formData.get('description')
+                };
+                handleSaveRole(data);
+              }}>
+                <div className="mt-3">
+                  <div className="flex justify-between items-center mb-4">
+                    <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+                      {editingRole ? 'Editar' : 'Novo'} Role
+                    </h3>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowForm(false);
+                        setEditingRole(null);
+                        setSelectedPermissions([]);
+                      }}
+                      className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                    >
+                      <XMarkIcon className="h-6 w-6" />
+                    </button>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        Nome do Role
+                      </label>
+                      <input
+                        type="text"
+                        name="role_name"
+                        required
+                        disabled={editingRole ? ['admin', 'customer'].includes(editingRole.role_name) : false}
+                        defaultValue={editingRole?.role_name || ''}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white disabled:opacity-50"
+                        placeholder="Ex: manager, editor, viewer"
+                      />
+                      {editingRole && ['admin', 'customer'].includes(editingRole.role_name) && (
+                        <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                          Roles do sistema não podem ter o nome alterado
+                        </p>
+                      )}
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        Descrição
+                      </label>
+                      <textarea
+                        name="description"
+                        rows={3}
+                        defaultValue={editingRole?.description || ''}
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                        placeholder="Descrição do role e suas responsabilidades"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                        Permissões
+                      </label>
+                      <div className="max-h-64 overflow-y-auto border border-gray-300 dark:border-gray-600 rounded-md p-3 space-y-2">
+                        {permissions.map((permission) => (
+                          <label key={permission.permission_id} className="flex items-start space-x-3">
+                            <input
+                              type="checkbox"
+                              checked={selectedPermissions.includes(permission.permission_id)}
+                              onChange={() => togglePermission(permission.permission_id)}
+                              className="mt-1 rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                            />
+                            <div className="flex-1 min-w-0">
+                              <div className="text-sm font-medium text-gray-900 dark:text-white">
+                                {permission.permission_name}
+                              </div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">
+                                {permission.description}
+                              </div>
+                            </div>
+                          </label>
+                        ))}
+                      </div>
+                      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                        Selecione as permissões que este role deve ter
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 flex justify-end space-x-3">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setShowForm(false);
+                        setEditingRole(null);
+                        setSelectedPermissions([]);
+                      }}
+                      className="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500"
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      type="submit"
+                      disabled={saveLoading}
+                      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+                    >
+                      {saveLoading ? (
+                        <div className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></div>
+                      ) : (
+                        <CheckIcon className="h-4 w-4" />
+                      )}
+                      <span>{saveLoading ? 'Salvando...' : 'Salvar'}</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+} 
