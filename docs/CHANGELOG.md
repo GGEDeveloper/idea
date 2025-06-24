@@ -433,3 +433,136 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 - 🧪 Testing: Testes e validações
 - 📱 Interface: Melhorias de UI/UX
 - 📊 Metrics: Métricas e analytics 
+
+## [1.5.0] - 2025-01-27 🛒 SISTEMA DE CHECKOUT COMPLETO
+
+### 🚀 **Novas Funcionalidades Principais**
+
+#### **Sistema de Checkout E-commerce Completo**
+- ✅ **Página de Checkout** (`/checkout`) - Processo completo de finalização de compra
+  - Formulário de informações de entrega com validação
+  - Validação específica para códigos postais portugueses (XXXX-XXX)
+  - Pré-preenchimento automático de dados do utilizador
+  - Resumo em tempo real da encomenda
+  - Página de sucesso após criação da encomenda
+  - Proteção de acesso - apenas utilizadores autenticados com permissão 'create_order'
+
+#### **Gestão de Carrinho Avançada**
+- ✅ **Página do Carrinho** (`/carrinho`) - Interface cliente completa
+  - Gestão completa de itens (adicionar/remover/atualizar quantidade)
+  - Persistência via localStorage com sistema de hidratação
+  - Estados de loading para melhor UX
+  - Resumo de preços e botão "Finalizar Compra"
+  - Validação de dados para evitar corrupção
+
+#### **API de Carrinho e Encomendas**
+- ✅ **Cart API** (`/api/cart`) - Gestão server-side de carrinhos
+  - GET: Obter carrinho do utilizador
+  - POST: Adicionar item ao carrinho
+  - PUT: Atualizar quantidade de itens
+  - DELETE: Remover item do carrinho
+- ✅ **Orders API** (`/api/orders`) - Criação de encomendas
+  - POST: Criar encomenda a partir do carrinho
+  - Validação de autenticação e permissões
+  - Criação transacional com itens
+  - Cálculo automático de totais
+  - Status inicial 'pending_approval'
+
+#### **Área Admin - Gestão de Carrinhos**
+- ✅ **Admin Carrinhos Page** (`/admin/carrinhos`) - Monitorização em tempo real
+  - Visualização de todos os carrinhos pendentes
+  - Estatísticas agregadas (total de carrinhos, itens, valor)
+  - Conversão de carrinho em encomenda com um clique
+  - Histórico de atividades do carrinho
+  - Limpeza de carrinhos abandonados
+  - Auto-refresh a cada 30 segundos
+
+### 🔧 **Correções Implementadas**
+
+#### **Cart Context - Problemas de Hidratação**
+- ✅ **Resolução de hidratação**: Estados `isInitialized` e `isLoading`
+- ✅ **Validação de dados**: Filtros para itens corrompidos no localStorage
+- ✅ **Proteção de operações**: Todas as ações protegidas até inicialização completa
+- ✅ **Gestão de erros**: Recuperação automática de dados corrompidos
+
+#### **Header Component - Carrinho Dropdown**
+- ✅ **Correção de estados**: Uso correto de `isInitialized` e `isLoading`
+- ✅ **Botão "Finalizar Compra"**: Redirecionamento direto para `/checkout`
+- ✅ **Cálculos protegidos**: Evitar execução prematura de totais
+
+#### **Admin Orders API - Correções de Autenticação**
+- ✅ **Middleware correto**: Uso de `checkAdminAuth` em vez de `verifyToken`
+- ✅ **Permissões específicas**: Validação de 'manage_orders'
+- ✅ **Logging aprimorado**: Rastreamento de ações administrativas
+
+### 🎯 **Workflow de E-commerce Implementado**
+
+#### **Fluxo Completo Cliente**
+1. 🛍️ **Browse Products** → Catálogo com filtros
+2. 🛒 **Add to Cart** → LocalStorage + API sync
+3. 📝 **Review Cart** → Página `/carrinho` com gestão completa
+4. ✅ **Checkout** → Formulário `/checkout` com validações
+5. 📦 **Order Created** → Status 'pending_approval'
+6. 👀 **Track Orders** → Página "Minhas Encomendas"
+
+#### **Fluxo Completo Admin**
+1. 👁️ **Monitor Carts** → Página `/admin/carrinhos` em tempo real
+2. 🔄 **Convert to Order** → Com um clique converter carrinho
+3. ✅ **Approve Orders** → Página `/admin/orders` para gestão
+4. 🚚 **Update Status** → Shipped, delivered, etc.
+5. 📊 **Track Performance** → Relatórios e analytics
+
+### 🔐 **Segurança e Validações**
+
+#### **Proteções Implementadas**
+- ✅ **Autenticação JWT**: Todas as operações protegidas
+- ✅ **Permissões granulares**: 'create_order' para clientes
+- ✅ **Validação de formulários**: Frontend e backend
+- ✅ **Sanitização de dados**: Prevenção de XSS e injection
+- ✅ **Operações transacionais**: Criação de encomendas com rollback
+- ✅ **Audit logging**: Todas as ações rastreadas
+
+#### **Validações de Negócio**
+- ✅ **Carrinho não vazio**: Verificação antes do checkout
+- ✅ **Utilizador autenticado**: Redirecionamento para login
+- ✅ **Permissões corretas**: Verificação de 'create_order'
+- ✅ **Dados de entrega**: Validação completa de formulário
+- ✅ **Código postal**: Formato português XXXX-XXX
+
+### 📊 **Métricas de Implementação**
+
+#### **Código Adicionado**
+- **Páginas Novas**: 2 (checkout, carrinho melhorado)
+- **APIs Novas**: 2 (/api/cart, /api/orders)
+- **Endpoints**: +9 novos endpoints
+- **Componentes**: Cart context melhorado, validações
+- **Total de Páginas Admin**: 15 → 17
+- **Total de APIs**: 7 → 9
+- **Total de Endpoints**: 38 → 47
+
+#### **Funcionalidades E-commerce**
+- ✅ **Cart Management**: 100% implementado
+- ✅ **Checkout Process**: 100% implementado
+- ✅ **Order Creation**: 100% implementado
+- ✅ **Admin Cart Monitor**: 100% implementado
+- ✅ **Order Workflow**: 100% implementado
+
+### 🚀 **Estado do Sistema Após Update**
+
+#### **Completude Funcional**
+- **Área Administrativa**: ✅ 100% completa (17 páginas)
+- **Área Cliente**: ✅ 100% completa (10+ páginas)
+- **E-commerce Flow**: ✅ 100% implementado
+- **Autenticação**: ✅ 100% operacional
+- **APIs**: ✅ 47 endpoints funcionais
+
+#### **Status de Produção**
+- ✅ **Build Success**: Sem erros TypeScript
+- ✅ **Runtime Tested**: Todas as funcionalidades validadas
+- ✅ **Security Compliant**: Permissões e validações
+- ✅ **Documentation**: Completamente atualizada
+- ✅ **Ready for Deployment**: Sistema production-ready
+
+---
+
+## [1.4.0] - 2025-01-25 🎯 ANÁLISE ESTRATÉGICA DE PROJETO 

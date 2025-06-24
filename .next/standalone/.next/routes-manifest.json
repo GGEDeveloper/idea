@@ -158,6 +158,12 @@
       "namedRegex": "^/categorias(?:/)?$"
     },
     {
+      "page": "/checkout",
+      "regex": "^/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/checkout(?:/)?$"
+    },
+    {
       "page": "/contacto",
       "regex": "^/contacto(?:/)?$",
       "routeKeys": {},

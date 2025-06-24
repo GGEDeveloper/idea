@@ -412,8 +412,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
                         <button
                           onClick={() => {
                             setIsCartDropdownOpen(false);
-                            // TODO: Implement checkout functionality
-                            router.push('/carrinho');
+                            router.push('/checkout');
                           }}
                           className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
                         >

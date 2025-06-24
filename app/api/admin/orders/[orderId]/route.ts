@@ -1,16 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import pool from '../../../../../db/index.cjs';
-
-// Helper function to check admin auth
-async function checkAdminAuth(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return null;
-  }
-  
-  // TODO: Implement JWT verification for admin
-  return null;
-}
+import { checkAdminAuth } from '../../../../../src/utils/adminAuth';
 
 /**
  * GET /api/admin/orders/[orderId] - Get specific order details
@@ -20,10 +10,10 @@ export async function GET(
   { params }: { params: Promise<{ orderId: string }> }
 ) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required' },
+        { error: 'Admin authentication required with manage_orders permission' },
         { status: 403 }
       );
     }
@@ -100,10 +90,10 @@ export async function PUT(
   { params }: { params: Promise<{ orderId: string }> }
 ) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required' },
+        { error: 'Admin authentication required with manage_orders permission' },
         { status: 403 }
       );
     }
@@ -141,6 +131,8 @@ export async function PUT(
       );
     }
 
+    const currentStatus = existingOrder.rows[0].order_status;
+
     // Update order status
     const updateQuery = `
       UPDATE orders 
@@ -153,13 +145,13 @@ export async function PUT(
 
     const result = await pool.query(updateQuery, [status, orderId]);
 
-    // TODO: Add order status history/notes table if needed
-    if (notes) {
-      // Could add to an order_notes table here
-      console.log(`Order ${orderId} status changed to ${status}. Notes: ${notes}`);
-    }
+    console.log(`[API] Admin ${adminUser.email} changed order ${orderId} status from '${currentStatus}' to '${status}'${notes ? ` with notes: ${notes}` : ''}`);
 
-    return NextResponse.json(result.rows[0]);
+    return NextResponse.json({
+      ...result.rows[0],
+      previousStatus: currentStatus,
+      message: 'Order status updated successfully'
+    });
 
   } catch (error) {
     console.error('[API] Admin error updating order:', error);
@@ -178,10 +170,10 @@ export async function DELETE(
   { params }: { params: Promise<{ orderId: string }> }
 ) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required' },
+        { error: 'Admin authentication required with manage_orders permission' },
         { status: 403 }
       );
     }
@@ -229,6 +221,8 @@ export async function DELETE(
       }
 
       await client.query('COMMIT');
+
+      console.log(`[API] Admin ${adminUser.email} deleted order ${orderId}`);
 
       return NextResponse.json({ message: 'Order deleted successfully' });
     } catch (error) {

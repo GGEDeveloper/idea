@@ -2,6 +2,10 @@
 
 Este índice serve para rápida navegação e consulta por humanos e IA. Atualize sempre que novos documentos forem criados ou movidos.
 
+## Documentação Principal
+
+- [README.md](../README.md): ✅ **PRINCIPAL** Visão geral completa do projeto, quick start e funcionalidades
+
 ## Documentação Técnica
 
 ### Environment
@@ -19,6 +23,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 
 - [PROJECT_STATUS_SUMMARY.md](./PROJECT_STATUS_SUMMARY.md): ✅ **NOVO (25/01/2025)** Resumo executivo completo do estado do projeto
 - [DATABASE_REFORMULATION_PLAN.md](./DATABASE_REFORMULATION_PLAN.md): ✅ **NOVO (14/06/2025)** Plano estratégico de reformulação da base de dados
+- [FEATURES_COMPLETE_REFERENCE.md](./FEATURES_COMPLETE_REFERENCE.md): ✅ **NOVO (27/01/2025)** Referência completa de todas as funcionalidades implementadas
 
 ### Sistema de Preços e Configuração
 
@@ -58,6 +63,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 ### Implementação e Dark Mode
 
 - [DARK_MODE_IMPLEMENTATION_GUIDE.md](./DARK_MODE_IMPLEMENTATION_GUIDE.md): ✅ **NOVO (20/01/2025)** Guia completo de implementação do Dark Mode Modular
+- [CHECKOUT_SYSTEM_IMPLEMENTATION.md](./CHECKOUT_SYSTEM_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Documentação completa do sistema de checkout e e-commerce implementado
 
 ## Logs e Registros
 - [LOG_ERROS_CONSOLIDADO.md](../LOG_ERROS_CONSOLIDADO.md): Log consolidado de erros e resoluções. **(Atualizado: 18/01/2025 - Incluída correção de filtros)**
@@ -71,18 +77,27 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **NOVO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **NOVO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-25)
+## Status Atual do Sistema (2025-01-27)
 
 ### ✅ Funcionalidades Completamente Operacionais
-- **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos e encomendas
+- **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
+- **Sistema de E-commerce Completo**: ✅ **100% FUNCIONAL** - Carrinho → Checkout → Encomenda → Aprovação
 - **Página de Produtos (`/produtos`)**: Totalmente funcional com listagem, filtros, paginação e busca
-- **Sistema de Categorias**: Árvore hierárquica com nomes visíveis e navegação funcional, seleção de categorias sem erros.
-- **Filtros Laterais**: **TODOS FUNCIONANDO** - Marcas, categorias (hierárquico), preço, stock e filtros rápidos.
+- **Sistema de Categorias**: Árvore hierárquica com nomes visíveis e navegação funcional, seleção de categorias sem erros
+- **Filtros Laterais**: **TODOS FUNCIONANDO** - Marcas, categorias (hierárquico), preço, stock e filtros rápidos
+- **Gestão de Carrinho**: ✅ **100% FUNCIONAL** - LocalStorage + API, hidratação, validações
+- **Sistema de Checkout**: ✅ **100% FUNCIONAL** - Formulário completo, validações, criação de encomendas
 - **Autenticação**: Sistema JWT local robusto com controle de acesso baseado em roles
-- **API Backend**: Todos os endpoints principais funcionando (`/api/products`, `/api/products/filters`, `/api/admin/*`)
+- **API Backend**: Todos os endpoints principais funcionando (`/api/products`, `/api/cart`, `/api/orders`, `/api/admin/*`)
 - **Dashboard Administrativo**: Estatísticas em tempo real e gestão completa
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
+
+### 🆕 Funcionalidades Recentes (27/01/2025)
+- **CHECKOUT-001**: Sistema de checkout completo implementado
+- **CART-001**: Gestão avançada de carrinho com hydratação
+- **ORDER-001**: API de criação de encomendas com validações
+- **ADMIN-CART-001**: Monitorização de carrinhos pendentes em tempo real
 
 ### 🔧 Correções Recentes (18/01/2025)
 - **FILTER-ERR-001**: Resolvido bug de filtragem hierárquica de categorias com CTE Recursiva
@@ -102,7 +117,8 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de deployment**: Documentação completa e procedimentos testados
 - **Configuração para dominios.pt**: Guias específicos baseados em experiências anteriores
 - **Rollback procedures**: Comandos de emergência documentados
+- **E-commerce completo**: Todo o workflow implementado e testado
 
 ---
 
-> **IMPORTANTE**: Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes. O sistema está agora completamente funcional para as funcionalidades principais de e-commerce e **PRONTO PARA DEPLOYMENT SEGURO**.
+> **IMPORTANTE**: Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes. O sistema está agora **COMPLETAMENTE FUNCIONAL** para todas as funcionalidades de e-commerce B2B e **PRONTO PARA DEPLOYMENT SEGURO**. Implementação inclui carrinho, checkout, gestão de encomendas e aprovação administrativa - um workflow completo de e-commerce.

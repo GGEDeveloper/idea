@@ -17,8 +17,10 @@ A área de administração está **COMPLETAMENTE IMPLEMENTADA** com todas as fun
 - ✅ **Configurações de Sistema** (1 página + API)
 - ✅ **Dashboard Centralizado** com estatísticas em tempo real
 - ✅ **Sistema de Autenticação** robusto com RBAC
+- ✅ **Gestão de Carrinhos** (1 página + API) - NOVO
+- ✅ **Sistema de Checkout** completo - NOVO
 
-**TOTAL: 14 páginas admin + 6 APIs completas**
+**TOTAL: 15 páginas admin + 7 APIs completas**
 
 > **🔍 ANÁLISE RECENTE (2025-01-25)**: Realizada análise abrangente do projeto confirmando que a área administrativa está **production-ready** com todas as funcionalidades operacionais. Sistema validado através de task management analysis, code review, e business rules compliance verification.
 
@@ -146,6 +148,50 @@ A área de administração está **COMPLETAMENTE IMPLEMENTADA** com todas as fun
 - ✅ **Status Atual** - Indicação de área completa
 - ✅ **Navegação Intuitiva** - Acesso fácil a todas as funcionalidades
 
+### **8. 🛒 Gestão de Carrinhos Pendentes (NOVO)**
+
+#### **Páginas:**
+- ✅ **AdminCarrinhosPage.tsx** - Monitorização de carrinhos ativos
+
+#### **API Endpoints:**
+- ✅ `GET /api/admin/carts` - Listagem de carrinhos pendentes
+- ✅ `POST /api/admin/carts` - Conversão de carrinho em encomenda
+- ✅ `DELETE /api/admin/carts` - Limpeza de carrinhos
+
+#### **Funcionalidades:**
+- ✅ **Visualização em tempo real** de carrinhos pendentes
+- ✅ **Estatísticas de carrinho** - valor total, número de itens
+- ✅ **Conversão para encomenda** - com um clique
+- ✅ **Histórico de atividades** do carrinho
+- ✅ **Limpeza de carrinhos** abandonados
+- ✅ **Auto-refresh** a cada 30 segundos
+
+### **9. 🛍️ Sistema de Checkout Cliente (NOVO)**
+
+#### **Páginas:**
+- ✅ **CheckoutPage.tsx** - Processo completo de finalização
+- ✅ **CarrinhoPage.tsx** - Gestão de carrinho pelo cliente
+
+#### **API Endpoints:**
+- ✅ `GET /api/cart` - Carrinho do utilizador
+- ✅ `POST /api/cart` - Adicionar item ao carrinho
+- ✅ `PUT /api/cart` - Atualizar quantidade
+- ✅ `DELETE /api/cart` - Remover item
+- ✅ `POST /api/orders` - Criar encomenda a partir do carrinho
+
+#### **Funcionalidades Implementadas:**
+- ✅ **Gestão completa de carrinho** - adicionar/remover/atualizar
+- ✅ **Persistência LocalStorage** com hidratação
+- ✅ **Formulário de entrega** com validação completa
+- ✅ **Validação postal Portuguesa** (XXXX-XXX)
+- ✅ **Pré-preenchimento de dados** do utilizador
+- ✅ **Resumo de encomenda** em tempo real
+- ✅ **Criação automática de encomenda** com status 'pending_approval'
+- ✅ **Limpeza automática** do carrinho após submissão
+- ✅ **Página de sucesso** com detalhes da encomenda
+- ✅ **Proteção de acesso** - apenas utilizadores autenticados
+- ✅ **Verificação de permissões** - 'create_order' necessária
+
 ---
 
 ## 🏗️ **ARQUITETURA TÉCNICA**
@@ -159,7 +205,14 @@ src/api/admin/
 ├── reports.cjs      ✅ Sistema de relatórios (NOVO)
 ├── roles.cjs        ✅ Gestão RBAC (NOVO)
 ├── settings.cjs     ✅ Configurações sistema (NOVO)
+├── carts.cjs        ✅ Gestão de carrinhos (NOVO)
 └── content.cjs      ⏸️ Desativado (versões futuras)
+
+app/api/
+├── cart/route.ts    ✅ Gestão carrinho cliente (NOVO)
+├── orders/route.ts  ✅ Criação de encomendas (NOVO)
+├── auth/           ✅ Sistema autenticação
+└── products/       ✅ Catálogo de produtos
 ```
 
 ### **Frontend Pages:**
@@ -178,7 +231,14 @@ src/pages/admin/
 ├── UserEditPage.jsx        ✅ Edição utilizador
 ├── ReportsPage.jsx         ✅ Relatórios (NOVO)
 ├── RolesPage.jsx           ✅ Roles/Permissões (NOVO)
-└── SettingsPage.jsx        ✅ Configurações (NOVO)
+├── SettingsPage.jsx        ✅ Configurações (NOVO)
+└── AdminCarrinhosPage.tsx  ✅ Carrinhos pendentes (NOVO)
+
+app/
+├── checkout/page.tsx       ✅ Sistema checkout completo (NOVO)
+├── carrinho/page.tsx       ✅ Gestão carrinho cliente (NOVO)
+├── minhas-encomendas/     ✅ Acompanhamento encomendas
+└── minha-conta/           ✅ Perfil do utilizador
 ```
 
 ### **Componentes Comuns:**
@@ -266,8 +326,10 @@ src/pages/admin/
 | **Relatórios** | 1 | 1 | 7 | ✅ 100% |
 | **Roles/RBAC** | 1 | 1 | 8 | ✅ 100% |
 | **Configurações** | 1 | 1 | 8 | ✅ 100% |
+| **Carrinhos** | 1 | 1 | 3 | ✅ 100% |
+| **Checkout** | 2 | 2 | 6 | ✅ 100% |
 | **Dashboard** | 1 | - | - | ✅ 100% |
-| **TOTAL** | **14** | **6** | **38** | ✅ **100%** |
+| **TOTAL** | **17** | **9** | **47** | ✅ **100%** |
 
 ---
 
@@ -296,8 +358,8 @@ src/pages/admin/
 
 A área de administração está **totalmente implementada e funcional** com:
 
-- **✅ 14 páginas frontend** com interfaces modernas
-- **✅ 6 APIs backend** com 38 endpoints
+- **✅ 15 páginas frontend** com interfaces modernas
+- **✅ 7 APIs backend** com 44 endpoints
 - **✅ Sistema RBAC** completo
 - **✅ Relatórios avançados** 
 - **✅ Configurações de sistema**

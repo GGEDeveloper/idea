@@ -19,9 +19,8 @@ export default function CarrinhoPage() {
   };
 
   const handleCheckout = () => {
-    // TODO: Implement checkout functionality
-    // For now, redirect to login if needed or create order
-    router.push('/login');
+    // Redirect to checkout page
+    router.push('/checkout');
   };
 
   // Loading state - mostrar enquanto está inicializando
