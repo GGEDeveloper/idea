@@ -15,8 +15,17 @@ export const getCategories = async (): Promise<Category[]> => {
     
     const data = await response.json();
     
+    // Check if data has categories array (API returns {categories: [...], totalCategories: number})
+    const categoriesArray = data.categories || data;
+    
+    // Ensure we have an array to work with
+    if (!Array.isArray(categoriesArray)) {
+      console.warn('API response is not in expected format:', data);
+      throw new Error('Invalid API response format');
+    }
+    
     // Transform API response to our Category interface and add UI properties
-    return data.map((cat: any) => ({
+    return categoriesArray.map((cat: any) => ({
       id: cat.categoryid || cat.id,
       categoryid: cat.categoryid || cat.id,
       name: cat.name,
@@ -50,11 +59,13 @@ export const getCategories = async (): Promise<Category[]> => {
  */
 export const getCategoryTree = async () => {
   try {
-    const response = await fetch('/api/categories/tree');
+    const response = await fetch('/api/categories');
     if (!response.ok) {
       throw new Error('Erro ao buscar a árvore de categorias');
     }
-    return await response.json();
+    const data = await response.json();
+    // Return the categories array from the API response
+    return data.categories || [];
   } catch (error) {
     console.error('Erro ao buscar a árvore de categorias:', error);
     return [];
