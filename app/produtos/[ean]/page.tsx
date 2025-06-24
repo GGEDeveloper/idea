@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { useAuth } from '../../../src/contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
+import { useCart } from '../../contexts/CartContext';
 import ProductImageGallery from '../../components/products/ProductImageGallery';
 import ProductTabs from '../../components/products/ProductTabs';
 import ProductInfo from '../../components/products/ProductInfo';
@@ -18,6 +19,7 @@ interface Product {
   stockquantity?: number;
   priceStatus?: string;
   price?: number;
+  product_price?: number;
   images?: any[];
   attributes?: any[];
   variants?: any[];
@@ -31,21 +33,9 @@ export default function ProductDetailPage() {
   const params = useParams();
   const ean = params?.ean as string;
   
-  // Extra safe auth hook usage with try-catch
-  let authContext;
-  let isAuthenticated = false;
-  let hasPermission = (permission: string): boolean => false;
-  
-  try {
-    authContext = useAuth();
-    isAuthenticated = authContext?.isAuthenticated || false;
-    hasPermission = authContext?.hasPermission || ((permission: string): boolean => false);
-  } catch (error) {
-    console.error('[ProductDetail] Error using auth context:', error);
-    // Use fallback values if AuthContext fails
-    isAuthenticated = false;
-    hasPermission = (permission: string): boolean => false;
-  }
+  // Use auth and cart contexts safely
+  const { isAuthenticated, hasPermission, isLoading: authLoading } = useAuth();
+  const { addToCart, isInitialized: cartInitialized } = useCart();
   
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -57,7 +47,9 @@ export default function ProductDetailPage() {
       
       setLoading(true);
       try {
-        const response = await fetch(`/api/products/${ean}`);
+        const response = await fetch(`/api/products/${ean}`, {
+          credentials: 'include' // Important for authentication
+        });
         
         if (!response.ok) {
           if (response.status === 404) {
@@ -67,6 +59,7 @@ export default function ProductDetailPage() {
         }
 
         const data = await response.json();
+        console.log('[ProductDetail] Product data received:', data);
         setProduct(data);
         setError(null);
       } catch (err) {
@@ -78,9 +71,50 @@ export default function ProductDetailPage() {
     };
 
     fetchProduct();
-  }, [ean]); // Removed isAuthenticated dependency to prevent unnecessary re-fetches
+  }, [ean]);
 
-  if (loading) {
+  const handleAddToCart = () => {
+    if (!isAuthenticated) {
+      alert('Por favor, faça login para adicionar produtos ao carrinho.');
+      return;
+    }
+    
+    if (!hasPermission('view_price')) {
+      alert('Sem permissão para adicionar produtos ao carrinho.');
+      return;
+    }
+
+    if (!product) {
+      alert('Erro: Produto não encontrado.');
+      return;
+    }
+
+    // Check if product has a price
+    const price = product.product_price || product.price;
+    if (!price || price <= 0) {
+      alert('Erro: Produto sem preço definido.');
+      return;
+    }
+
+    try {
+      // Use the cart context to add product
+      addToCart({
+        id: product.ean,
+        ean: product.ean,
+        name: product.name,
+        price: price,
+        image: product.images && product.images.length > 0 ? product.images[0].url : undefined,
+        brand: product.brand
+      });
+      
+      alert(`"${product.name}" foi adicionado ao carrinho!`);
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+      alert('Erro ao adicionar produto ao carrinho. Tente novamente.');
+    }
+  };
+
+  if (loading || authLoading) {
     return (
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto py-8 px-6">
@@ -166,24 +200,6 @@ export default function ProductDetailPage() {
     ? product.categories[0] 
     : null;
 
-  const handleAddToCart = () => {
-    if (!isAuthenticated) {
-      alert('Por favor, faça login para adicionar produtos ao carrinho.');
-      return;
-    }
-    
-    // Safe permission check
-    const canViewPrice = typeof hasPermission === 'function' ? hasPermission('view_price') : false;
-    if (!canViewPrice) {
-      alert('Sem permissão para adicionar produtos ao carrinho.');
-      return;
-    }
-    
-    // TODO: Implement add to cart functionality
-    console.log('Add to cart:', product.name);
-    alert('Produto adicionado ao carrinho! (Funcionalidade será completamente implementada em breve)');
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8 px-6">
@@ -224,77 +240,26 @@ export default function ProductDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Product Images */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            {(() => {
-              try {
-                return <ProductImageGallery images={(product.images || []) as any} />;
-              } catch (error) {
-                console.error('[ProductDetail] Error rendering ProductImageGallery:', error);
-                return (
-                  <div className="h-96 flex items-center justify-center bg-gray-100">
-                    <p className="text-gray-500">Erro ao carregar galeria de imagens</p>
-                  </div>
-                );
-              }
-            })()}
+            <ProductImageGallery images={(product.images || []) as any} />
           </div>
 
           {/* Product Information */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            {(() => {
-              try {
-                return (
-                  <ProductInfo 
-                    product={product as any}
-                    addToCart={handleAddToCart}
-                    isAuthenticated={isAuthenticated}
-                    hasPermission={(permission: string) => {
-                      // Safe permission check with fallback
-                      if (typeof hasPermission === 'function') {
-                        try {
-                          return hasPermission(permission);
-                        } catch (error) {
-                          console.error('Error checking permission:', permission, error);
-                          return false;
-                        }
-                      }
-                      return false;
-                    }}
-                  />
-                );
-              } catch (error) {
-                console.error('[ProductDetail] Error rendering ProductInfo:', error);
-                return (
-                  <div className="p-8">
-                    <h1 className="text-2xl font-bold mb-4">{product.name}</h1>
-                    <p className="text-gray-600 mb-4">EAN: {product.ean}</p>
-                    <p className="text-gray-500">Erro ao carregar informações do produto</p>
-                  </div>
-                );
-              }
-            })()}
+            <ProductInfo 
+              product={product as any}
+              addToCart={handleAddToCart}
+              isAuthenticated={isAuthenticated}
+              hasPermission={hasPermission}
+            />
           </div>
         </div>
 
         {/* Product Details Tabs */}
         <div className="bg-white rounded-xl shadow-lg p-8">
-          {(() => {
-            try {
-              return (
-                <ProductTabs 
-                  description={product.longdescription || product.shortdescription || ''}
-                  attributes={product.attributes || []}
-                />
-              );
-            } catch (error) {
-              console.error('[ProductDetail] Error rendering ProductTabs:', error);
-              return (
-                <div className="p-8">
-                  <h2 className="text-xl font-bold mb-4">Detalhes do Produto</h2>
-                  <p className="text-gray-500">Erro ao carregar detalhes do produto</p>
-                </div>
-              );
-            }
-          })()}
+          <ProductTabs 
+            description={product.longdescription || product.shortdescription || ''}
+            attributes={product.attributes || []}
+          />
         </div>
 
         {/* Related Products Section */}
