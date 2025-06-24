@@ -13,9 +13,9 @@ import {
 interface Order {
   order_id: string;
   order_status: string;
-  total_amount: number;
+  total_amount: number | string;
   order_date: string;
-  item_count: number;
+  item_count: number | string;
 }
 
 const MyOrdersPage = () => {
@@ -200,10 +200,10 @@ const MyOrdersPage = () => {
                   
                   <div className="text-right">
                     <p className="text-lg font-medium text-gray-900 dark:text-white">
-                      €{order.total_amount.toFixed(2)}
+                      €{Number(order.total_amount).toFixed(2)}
                     </p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {order.item_count} item{order.item_count !== 1 ? 's' : ''}
+                      {Number(order.item_count)} item{Number(order.item_count) !== 1 ? 's' : ''}
                     </p>
                   </div>
                 </div>

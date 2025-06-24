@@ -12,13 +12,13 @@ import {
 interface Order {
   order_id: string;
   order_status: string;
-  total_amount: number;
+  total_amount: number | string;
   order_date: string;
   email: string;
   first_name: string;
   last_name: string;
   company_name: string;
-  item_count: number;
+  item_count: number | string;
 }
 
 const OrdersAdminPage = () => {
@@ -171,7 +171,7 @@ const OrdersAdminPage = () => {
                           #{order.order_id.slice(0, 8)}
                         </div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">
-                          {order.item_count} item(s)
+                          {Number(order.item_count)} item(s)
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -197,7 +197,7 @@ const OrdersAdminPage = () => {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm font-medium text-gray-900 dark:text-white">
-                          €{order.total_amount.toFixed(2)}
+                          €{Number(order.total_amount).toFixed(2)}
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
