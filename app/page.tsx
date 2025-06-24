@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 import ProductCarousel from '../src/components/products/ProductCarousel';
+import BannerCarousel from './components/BannerCarousel';
 
 interface Product {
   ean: string;
@@ -52,27 +53,36 @@ const HomePage = () => {
     return '/placeholder-product.jpg';
   };
 
+  // Fallback content for BannerCarousel (shown when no banners available)
+  const heroFallbackContent = (
+    <section className="relative flex flex-col items-center justify-center py-20 px-4 min-h-[520px] rounded-3xl overflow-hidden bg-gradient-to-br from-orange-400 via-orange-300 to-red-400 shadow-2xl">
+      <div className="absolute inset-0 z-0">
+        <svg className="absolute top-0 left-0 w-full h-full opacity-30" style={{filter:'blur(2px)'}}>
+          <circle cx="20%" cy="30%" r="80" fill="#fbbf24"/>
+          <circle cx="50%" cy="80%" r="60" fill="#f97316"/>
+        </svg>
+      </div>
+      <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="relative z-10 h-36 md:h-48 w-auto mb-4 drop-shadow-[0_8px_32px_rgba(234,179,8,0.5)]" />
+      <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-white text-center mb-2 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>A MARCA DAS MARCAS</h1>
+      <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
+      
+      <Link 
+        href="/produtos"
+        className="relative z-10 inline-block px-8 py-4 mt-8 rounded-full bg-gray-600 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 text-white font-bold text-lg shadow-xl transition-colors"
+      >
+        Ver Produtos
+      </Link>
+    </section>
+  );
+
   return (
     <div className="space-y-16 bg-gray-50 bg-gradient-to-b from-gray-50 to-gray-200">
-      {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center py-20 px-4 min-h-[520px] rounded-3xl overflow-hidden bg-gradient-to-br from-orange-400 via-orange-300 to-red-400 shadow-2xl">
-        <div className="absolute inset-0 z-0">
-          <svg className="absolute top-0 left-0 w-full h-full opacity-30" style={{filter:'blur(2px)'}}>
-            <circle cx="20%" cy="30%" r="80" fill="#fbbf24"/>
-            <circle cx="50%" cy="80%" r="60" fill="#f97316"/>
-          </svg>
-        </div>
-        <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="relative z-10 h-36 md:h-48 w-auto mb-4 drop-shadow-[0_8px_32px_rgba(234,179,8,0.5)]" />
-        <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-white text-center mb-2 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>A MARCA DAS MARCAS</h1>
-        <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
-        
-        <Link 
-          href="/produtos"
-          className="relative z-10 inline-block px-8 py-4 mt-8 rounded-full bg-blue-600 text-white font-bold text-lg shadow-xl hover:bg-gray-800 hover:text-blue-600 transition-colors"
-        >
-          Ver Produtos
-        </Link>
-      </section>
+      {/* Hero Section with Banner Carousel */}
+      <BannerCarousel 
+        autoplay={true}
+        autoplayInterval={8000}
+        fallbackContent={heroFallbackContent}
+      />
 
       {/* B2B Value Proposition Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">

@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import ProductImageGallery from '../../../src/components/products/ProductImageGallery';
-import ProductTabs from '../../../src/components/products/ProductTabs';
-import ProductInfo from '../../../src/components/products/ProductInfo';
+import ProductImageGallery from '../../components/products/ProductImageGallery';
+import ProductTabs from '../../components/products/ProductTabs';
+import ProductInfo from '../../components/products/ProductInfo';
 
 interface Product {
   ean: string;

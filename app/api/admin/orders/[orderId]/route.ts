@@ -1,0 +1,248 @@
+import { NextRequest, NextResponse } from 'next/server';
+import pool from '../../../../../db/index.cjs';
+
+// Helper function to check admin auth
+async function checkAdminAuth(request: NextRequest) {
+  const authHeader = request.headers.get('authorization');
+  if (!authHeader?.startsWith('Bearer ')) {
+    return null;
+  }
+  
+  // TODO: Implement JWT verification for admin
+  return null;
+}
+
+/**
+ * GET /api/admin/orders/[orderId] - Get specific order details
+ */
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ orderId: string }> }
+) {
+  try {
+    const adminAuth = await checkAdminAuth(request);
+    if (!adminAuth) {
+      return NextResponse.json(
+        { error: 'Admin authentication required' },
+        { status: 403 }
+      );
+    }
+
+    const { orderId } = await params;
+
+    // Get order with user information
+    const orderQuery = `
+      SELECT 
+        o.order_id,
+        o.order_status,
+        o.total_amount,
+        o.order_date,
+        o.updated_at,
+        u.user_id,
+        u.email,
+        u.first_name,
+        u.last_name,
+        u.company_name
+      FROM orders o
+      LEFT JOIN users u ON o.user_id = u.user_id
+      WHERE o.order_id = $1
+    `;
+
+    // Get order items
+    const itemsQuery = `
+      SELECT 
+        oi.order_item_id,
+        oi.product_ean,
+        oi.quantity,
+        oi.price_at_purchase,
+        oi.product_name,
+        p.name as current_product_name,
+        p.brand,
+        pi.url as image_url
+      FROM order_items oi
+      LEFT JOIN products p ON oi.product_ean = p.ean
+      LEFT JOIN product_images pi ON p.ean = pi.ean AND pi.is_primary = true
+      WHERE oi.order_id = $1
+      ORDER BY oi.order_item_id
+    `;
+
+    const [orderResult, itemsResult] = await Promise.all([
+      pool.query(orderQuery, [orderId]),
+      pool.query(itemsQuery, [orderId])
+    ]);
+
+    if (orderResult.rows.length === 0) {
+      return NextResponse.json(
+        { error: 'Order not found' },
+        { status: 404 }
+      );
+    }
+
+    const order = orderResult.rows[0];
+    order.items = itemsResult.rows;
+
+    return NextResponse.json(order);
+
+  } catch (error) {
+    console.error('[API] Admin error fetching order details:', error);
+    return NextResponse.json(
+      { error: 'Internal server error while fetching order details.' },
+      { status: 500 }
+    );
+  }
+}
+
+/**
+ * PUT /api/admin/orders/[orderId] - Update order status
+ */
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: Promise<{ orderId: string }> }
+) {
+  try {
+    const adminAuth = await checkAdminAuth(request);
+    if (!adminAuth) {
+      return NextResponse.json(
+        { error: 'Admin authentication required' },
+        { status: 403 }
+      );
+    }
+
+    const { orderId } = await params;
+    const body = await request.json();
+    const { status, notes } = body;
+
+    if (!status) {
+      return NextResponse.json(
+        { error: 'Status is required' },
+        { status: 400 }
+      );
+    }
+
+    // Validate status
+    const validStatuses = ['pending_approval', 'approved', 'shipped', 'delivered', 'cancelled', 'rejected'];
+    if (!validStatuses.includes(status)) {
+      return NextResponse.json(
+        { error: 'Invalid status' },
+        { status: 400 }
+      );
+    }
+
+    // Check if order exists
+    const existingOrder = await pool.query(
+      'SELECT order_id, order_status FROM orders WHERE order_id = $1',
+      [orderId]
+    );
+
+    if (existingOrder.rows.length === 0) {
+      return NextResponse.json(
+        { error: 'Order not found' },
+        { status: 404 }
+      );
+    }
+
+    // Update order status
+    const updateQuery = `
+      UPDATE orders 
+      SET 
+        order_status = $1,
+        updated_at = NOW()
+      WHERE order_id = $2
+      RETURNING order_id, order_status, total_amount, order_date, updated_at
+    `;
+
+    const result = await pool.query(updateQuery, [status, orderId]);
+
+    // TODO: Add order status history/notes table if needed
+    if (notes) {
+      // Could add to an order_notes table here
+      console.log(`Order ${orderId} status changed to ${status}. Notes: ${notes}`);
+    }
+
+    return NextResponse.json(result.rows[0]);
+
+  } catch (error) {
+    console.error('[API] Admin error updating order:', error);
+    return NextResponse.json(
+      { error: 'Internal server error while updating order.' },
+      { status: 500 }
+    );
+  }
+}
+
+/**
+ * DELETE /api/admin/orders/[orderId] - Delete order (admin only)
+ */
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ orderId: string }> }
+) {
+  try {
+    const adminAuth = await checkAdminAuth(request);
+    if (!adminAuth) {
+      return NextResponse.json(
+        { error: 'Admin authentication required' },
+        { status: 403 }
+      );
+    }
+
+    const { orderId } = await params;
+
+    // Check if order exists and is deletable
+    const orderCheck = await pool.query(
+      'SELECT order_id, order_status FROM orders WHERE order_id = $1',
+      [orderId]
+    );
+
+    if (orderCheck.rows.length === 0) {
+      return NextResponse.json(
+        { error: 'Order not found' },
+        { status: 404 }
+      );
+    }
+
+    // Prevent deletion of delivered orders
+    if (orderCheck.rows[0].order_status === 'delivered') {
+      return NextResponse.json(
+        { error: 'Cannot delete delivered orders' },
+        { status: 400 }
+      );
+    }
+
+    const client = await pool.connect();
+    
+    try {
+      await client.query('BEGIN');
+
+      // Delete order items first (due to foreign key constraint)
+      await client.query('DELETE FROM order_items WHERE order_id = $1', [orderId]);
+
+      // Delete order
+      const deleteResult = await client.query('DELETE FROM orders WHERE order_id = $1', [orderId]);
+
+      if (deleteResult.rowCount === 0) {
+        await client.query('ROLLBACK');
+        return NextResponse.json(
+          { error: 'Order not found' },
+          { status: 404 }
+        );
+      }
+
+      await client.query('COMMIT');
+
+      return NextResponse.json({ message: 'Order deleted successfully' });
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+
+  } catch (error) {
+    console.error('[API] Admin error deleting order:', error);
+    return NextResponse.json(
+      { error: 'Internal server error while deleting order.' },
+      { status: 500 }
+    );
+  }
+} 

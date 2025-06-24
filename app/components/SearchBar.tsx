@@ -4,22 +4,22 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { MagnifyingGlassIcon, XMarkIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
+import '../styles/SearchBar.css';
+
+interface SearchBarProps {
+  onResultSelect?: (item: any) => void;
+  className?: string;
+}
 
 interface SearchResult {
   ean: string;
   name: string;
-  shortdescription?: string;
-  brand?: string;
-  image_url?: string;
   price?: number;
+  shortdescription?: string;
+  image_url?: string;
 }
 
-interface SearchBarProps {
-  onResultSelect?: (item: SearchResult) => void;
-  className?: string;
-}
-
-const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' }) => {
+function SearchBar({ onResultSelect, className = '' }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
@@ -40,12 +40,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
+      // Navigate to products page with search query
       router.push(`/produtos?search=${encodeURIComponent(query.trim())}`);
       setShowDropdown(false);
     }
   };
 
-  // Debounced search function
+  // Debounced search effect
   const performSearch = useCallback(async (searchTerm: string) => {
     if (!searchTerm || searchTerm.length < 2) {
       setResults([]);
@@ -58,7 +59,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
     
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
       
       const res = await fetch(`/api/search?q=${encodeURIComponent(searchTerm)}`, {
         signal: controller.signal
@@ -67,15 +68,36 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
       clearTimeout(timeoutId);
       
       if (!res.ok) {
-        throw new Error(`Erro ${res.status}: ${res.statusText}`);
+        try {
+          const errorData = await res.json();
+          throw new Error(errorData.error || 'Erro ao realizar a pesquisa', {
+            cause: {
+              code: errorData.code || 'UNKNOWN_ERROR',
+              details: errorData.details
+            } as any
+          });
+        } catch (jsonError) {
+          throw new Error(`Erro ${res.status}: ${res.statusText}`, {
+            cause: { code: 'NETWORK_ERROR' } as any
+          });
+        }
       }
       
       const data = await res.json();
       setResults(Array.isArray(data) ? data : []);
       setShowDropdown(Array.isArray(data) && data.length > 0);
-    } catch (err) {
-      console.error('Search error:', err);
-      setError('Não foi possível realizar a pesquisa. Tente novamente mais tarde.');
+    } catch (err: any) {
+      console.error('Search error:', {
+        message: err.message,
+        code: err.cause?.code || 'UNKNOWN_ERROR',
+        timestamp: new Date().toISOString()
+      });
+      
+      setError(
+        err.cause?.code === 'NETWORK_ERROR'
+          ? 'Erro de conexão. Verifique sua internet e tente novamente.'
+          : 'Não foi possível realizar a pesquisa. Tente novamente mais tarde.'
+      );
       setResults([]);
       setShowDropdown(false);
     } finally {
@@ -116,7 +138,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
     setQuery(item.name);
     setShowDropdown(false);
     if (onResultSelect) onResultSelect(item);
-    // Navigate to product page
+    // Navigate to product detail page
     router.push(`/produtos/${item.ean}`);
   };
 
@@ -128,23 +150,23 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
   };
 
   return (
-    <div className={`relative ${className}`} ref={searchRef}>
+    <div className={`search-bar-container ${className}`} ref={searchRef}>
       <form onSubmit={handleSubmit} className="relative">
-        <div className="relative">
+        <div className="search-input-container">
           <button 
             type="submit" 
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+            className="search-submit"
             aria-label="Pesquisar"
           >
             <MagnifyingGlassIcon 
-              className="h-4 w-4" 
+              className="h-4 w-4 text-gray-400" 
               aria-hidden="true"
             />
           </button>
           <input
             ref={inputRef}
             type="search"
-            className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:focus:ring-blue-400"
+            className="search-input"
             placeholder="Pesquisar produtos..."
             value={query}
             onChange={handleInput}
@@ -163,19 +185,19 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
             autoComplete="off"
           />
           {loading && (
-            <div className="absolute right-10 top-1/2 transform -translate-y-1/2" role="status" aria-live="polite">
+            <div className="search-loading" role="status" aria-live="polite">
               <ArrowPathIcon 
                 className="h-4 w-4 text-gray-400 animate-spin" 
                 aria-hidden="true"
               />
-              <span className="sr-only">Pesquisando...</span>
+              <span className="sr-only">A pesquisar...</span>
             </div>
           )}
           {query && !loading && (
             <button 
               type="button"
               onClick={clearSearch}
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
+              className="clear-search"
               aria-label="Limpar pesquisa"
             >
               <XMarkIcon className="h-4 w-4" />
@@ -184,7 +206,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
         </div>
         
         {error && (
-          <div className="absolute top-full left-0 right-0 mt-1 p-2 bg-red-50 border border-red-200 rounded-md text-red-600 text-sm dark:bg-red-900 dark:border-red-800 dark:text-red-200" role="alert">
+          <div className="search-error" role="alert">
             {error}
           </div>
         )}
@@ -193,7 +215,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
       {showDropdown && (
         <div 
           id="search-results"
-          className="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg max-h-96 overflow-y-auto z-50" 
+          className="search-dropdown" 
           ref={dropdownRef}
           role="region"
           aria-live="polite"
@@ -205,57 +227,46 @@ const SearchBar: React.FC<SearchBarProps> = ({ onResultSelect, className = '' })
                 <li 
                   key={item.ean} 
                   onClick={() => handleSelect(item)}
-                  className="p-3 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer border-b border-gray-100 dark:border-gray-700 last:border-b-0"
                   role="option"
                   aria-selected="false"
                 >
-                  <div className="flex items-center space-x-3">
-                    {item.image_url && (
-                      <img 
-                        src={item.image_url} 
-                        alt={item.name} 
-                        className="w-12 h-12 object-cover rounded-md flex-shrink-0"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = 'none';
-                        }}
-                      />
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <div className="font-medium text-gray-900 dark:text-white truncate">
-                        {item.name}
+                  {item.image_url && (
+                    <img 
+                      src={item.image_url} 
+                      alt={item.name} 
+                      className="search-result-image"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  )}
+                  <div className="search-result-details">
+                    <div className="search-result-name">{item.name}</div>
+                    {item.price && (
+                      <div className="search-result-price">
+                        {parseFloat(item.price.toString()).toFixed(2)} €
                       </div>
-                      {item.brand && (
-                        <div className="text-sm text-gray-500 dark:text-gray-400">
-                          {item.brand}
-                        </div>
-                      )}
-                      {item.shortdescription && (
-                        <div className="text-sm text-gray-600 dark:text-gray-300 truncate">
-                          {item.shortdescription.length > 60 
-                            ? `${item.shortdescription.substring(0, 60)}...` 
-                            : item.shortdescription}
-                        </div>
-                      )}
-                      {item.price && (
-                        <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-                          €{Number(item.price).toFixed(2)}
-                        </div>
-                      )}
-                    </div>
+                    )}
+                    {item.shortdescription && (
+                      <div className="search-result-desc">
+                        {item.shortdescription.length > 60 
+                          ? `${item.shortdescription.substring(0, 60)}...` 
+                          : item.shortdescription}
+                      </div>
+                    )}
                   </div>
                 </li>
               ))}
             </ul>
           ) : query.length >= 2 && !loading ? (
-            <div className="p-4 text-center text-gray-500 dark:text-gray-400" role="status">
-              <p>Nenhum resultado encontrado para "{query}".</p>
-              <p className="text-sm mt-1">Tente termos diferentes ou verifique a ortografia.</p>
+            <div className="search-no-results" role="status">
+              <p>Nenhum resultado encontrado para "{query}". Tente outras palavras-chave.</p>
             </div>
           ) : null}
         </div>
       )}
     </div>
   );
-};
+}
 
 export default SearchBar; 

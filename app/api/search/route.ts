@@ -1,63 +1,50 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { query } from '@/db';
 
 export async function GET(request: NextRequest) {
   try {
-    // Get query parameters
     const { searchParams } = new URL(request.url);
-    const query = searchParams.get('q');
-    const limit = parseInt(searchParams.get('limit') || '10', 10);
-    const category = searchParams.get('category');
+    const q = searchParams.get('q');
 
-    if (!query || query.trim().length < 2) {
-      return NextResponse.json(
-        { error: 'Search query must be at least 2 characters long.' },
-        { status: 400 }
-      );
+    if (!q || q.length < 2) {
+      return NextResponse.json([], { status: 200 });
     }
 
-    // Import database dependencies
-    const productQueries = await import('../../../src/db/product-queries.cjs');
+    // Search query with ILIKE for partial matching
+    const searchQuery = `
+      SELECT DISTINCT 
+        p.ean,
+        p.name,
+        p.shortdescription,
+        pi.url as image_url,
+        pr.price
+      FROM products p
+      LEFT JOIN product_images pi ON p.ean = pi.ean AND pi.is_primary = true
+      LEFT JOIN product_variants pv ON p.ean = pv.ean
+      LEFT JOIN prices pr ON pv.variantid = pr.variantid AND pr.price_list_id = 2
+      WHERE 
+        p.active = true 
+        AND (
+          p.name ILIKE $1 
+          OR p.shortdescription ILIKE $1
+          OR p.brand ILIKE $1
+        )
+      ORDER BY p.name
+      LIMIT 10
+    `;
 
-    // Build search filters
-    const filters = {
-      searchQuery: query.trim(),
-      categoryId: category,
-    };
+    const searchTerm = `%${q}%`;
+    const results = await query(searchQuery, [searchTerm]);
 
-    const pagination = { 
-      page: 1, 
-      limit: Math.min(limit, 50), 
-      sortBy: 'relevance', 
-      order: 'desc' 
-    };
-
-    // Search products
-    const [totalResults, products] = await Promise.all([
-      productQueries.default.countProducts(filters),
-      productQueries.default.getProducts(filters, pagination)
-    ]);
-
-    // Sanitize products for guest users (since no auth yet)
-    const sanitizedProducts = products.map(p => {
-      const sanitized: any = { ...p };
-      // Remove sensitive fields for non-authenticated users
-      delete sanitized.price;
-      delete sanitized.product_price;
-      sanitized.priceStatus = 'unauthenticated';
-      return sanitized;
-    });
-
-    return NextResponse.json({
-      query,
-      products: sanitizedProducts,
-      totalResults,
-      resultsShown: sanitizedProducts.length
-    });
-
+    return NextResponse.json(results.rows, { status: 200 });
   } catch (error) {
-    console.error('[API] Error during search:', error);
+    console.error('Search API error:', error);
     return NextResponse.json(
-      { message: 'Internal server error during search.' },
+      { 
+        error: 'Erro interno do servidor',
+        code: 'INTERNAL_ERROR',
+        details: process.env.NODE_ENV === 'development' ? error : undefined
+      },
       { status: 500 }
     );
   }

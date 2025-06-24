@@ -10,6 +10,7 @@ import SearchBar from './SearchBar';
 import UserMenu from './UserMenu';
 import ThemeToggle from './ThemeToggle';
 import { useCart } from '../contexts/CartContext';
+import '../styles/mobile-menu.css';
 
 interface HeaderAdvancedProps {
   onMobileMenuToggle?: (isOpen: boolean) => void;
@@ -126,18 +127,15 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           </a>
         </div>
 
-        <div className="container mx-auto px-4 flex items-center justify-between min-h-20 lg:min-h-24">
+        <div className="container mx-auto px-4 flex items-center justify-between min-h-36 lg:min-h-48">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex-shrink-0 flex items-center" aria-label="Página inicial">
               <img 
-                className="h-12 w-auto" 
+                className="h-32 md:h-44 w-auto" 
                 src="/logo_transparente_amarelo.png" 
                 alt="AliTools Logo" 
               />
-              <span className="ml-3 text-xl font-bold text-gray-800 dark:text-white">
-                AliTools
-              </span>
             </Link>
           </div>
 
@@ -276,45 +274,41 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
       </header>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div 
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            setIsMobileMenuOpen(false);
-            onMobileMenuToggle?.(false);
-          }}
-          aria-hidden="true"
-        />
-      )}
+      <div 
+        className="mobile-menu-overlay"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setIsMobileMenuOpen(false);
+          onMobileMenuToggle?.(false);
+        }}
+        aria-hidden={!isMobileMenuOpen}
+      />
       
       {/* Mobile Menu */}
       <div 
         id="mobile-menu"
         ref={navRef}
-        className={`fixed top-20 left-0 right-0 z-50 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
-          isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
-        }`}
+        className="mobile-menu-container"
         role="menu"
         aria-hidden={!isMobileMenuOpen}
         aria-label="Navegação móvel"
       >
         {/* Mobile Search */}
-        <div className="px-4 pt-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+        <div className="px-4 pt-3 pb-1">
           <SearchBar />
         </div>
         
         {/* Mobile Navigation */}
         <nav 
-          className="flex flex-col py-2"
+          className="flex flex-col space-y-2 px-4 py-3"
           aria-label="Navegação móvel"
           role="menu"
         >
           <Link 
             href="/" 
             role="menuitem"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400" 
+            className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Início
@@ -322,7 +316,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           <Link 
             href="/produtos"
             role="menuitem"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400" 
+            className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Produtos
@@ -330,7 +324,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           <Link 
             href="/categorias"
             role="menuitem"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400" 
+            className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Categorias
@@ -338,7 +332,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           <Link 
             href="/sobre"
             role="menuitem"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400" 
+            className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Sobre Nós
@@ -346,7 +340,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           <Link 
             href="/contacto"
             role="menuitem"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400" 
+            className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contacto
@@ -354,13 +348,11 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           
           {/* Mobile Auth/Tools */}
           <div className="border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
-            <div className="px-4 py-2">
-              <div className="flex items-center justify-between mb-3">
-                <ThemeToggle showLabels={true} />
-              </div>
-              <div className="mt-2">
-                <UserMenu onItemClick={() => setIsMobileMenuOpen(false)} />
-              </div>
+            <div className="flex items-center justify-between px-2 py-2">
+              <ThemeToggle showLabels={true} />
+            </div>
+            <div className="px-2 py-1">
+              <UserMenu onItemClick={() => setIsMobileMenuOpen(false)} />
             </div>
           </div>
         </nav>

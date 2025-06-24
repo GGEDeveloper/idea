@@ -1,17 +1,29 @@
 'use client';
 
 import React, { useState } from 'react';
+import { 
+  PhoneIcon, 
+  EnvelopeIcon, 
+  MapPinIcon, 
+  ClockIcon,
+  ChatBubbleLeftRightIcon,
+  BuildingOffice2Icon,
+  UserGroupIcon
+} from '@heroicons/react/24/outline';
 
 export default function ContactoPage() {
   const [formData, setFormData] = useState({
-    name: '',
+    nome: '',
     email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    telefone: '',
+    empresa: '',
+    assunto: '',
+    mensagem: '',
+    tipo: 'geral'
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -24,343 +36,344 @@ export default function ContactoPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
-    
-    setIsSubmitting(false);
-    alert('Mensagem enviada com sucesso! Entraremos em contacto brevemente.');
+    setSubmitStatus('idle');
+
+    try {
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Here you would normally send the data to your backend
+      console.log('Form data:', formData);
+      
+      setSubmitStatus('success');
+      setFormData({
+        nome: '',
+        email: '',
+        telefone: '',
+        empresa: '',
+        assunto: '',
+        mensagem: '',
+        tipo: 'geral'
+      });
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
-      <div className="container mx-auto py-12">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6"
-               style={{ backgroundColor: 'var(--color-primary)' }}>
-            <i className="fas fa-envelope text-3xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700">
+        <div className="container mx-auto px-4 py-16">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Contacte-nos
+            </h1>
+            <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
+              Estamos aqui para ajudar. Entre em contacto connosco para qualquer questão, 
+              orçamento ou suporte técnico.
+            </p>
           </div>
-          <h1 className="text-5xl font-bold mb-6" style={{ color: 'var(--color-text-base)' }}>
-            Contacto
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--color-text-muted)' }}>
-            Estamos aqui para ajudar! Entre em contacto connosco e descubra como podemos 
-            impulsionar o seu negócio com as melhores ferramentas profissionais.
-          </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div className="card-glass">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                   style={{ backgroundColor: 'var(--color-secondary)' }}>
-                <i className="fas fa-paper-plane text-xl" style={{ color: 'var(--color-text-inverse)' }}></i>
-              </div>
-              <h2 className="text-3xl font-bold" style={{ color: 'var(--color-text-base)' }}>
-                Envie-nos uma Mensagem
-              </h2>
-            </div>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-3" style={{ color: 'var(--color-text-base)' }}>
-                    Nome Completo *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="input-field"
-                    placeholder="O seu nome completo"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-3" style={{ color: 'var(--color-text-base)' }}>
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="input-field"
-                    placeholder="o.seu.email@exemplo.com"
-                  />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-3" style={{ color: 'var(--color-text-base)' }}>
-                    Telefone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="input-field"
-                    placeholder="+351 XXX XXX XXX"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-3" style={{ color: 'var(--color-text-base)' }}>
-                    Assunto *
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    className="input-field"
-                  >
-                    <option value="">Selecione um assunto</option>
-                    <option value="parceria">Tornar-se Parceiro</option>
-                    <option value="produto">Informações sobre Produtos</option>
-                    <option value="orcamento">Pedido de Orçamento</option>
-                    <option value="suporte">Suporte Técnico</option>
-                    <option value="reclamacao">Reclamação</option>
-                    <option value="outro">Outro</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-3" style={{ color: 'var(--color-text-base)' }}>
-                  Mensagem *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows={6}
-                  required
-                  className="input-field resize-none"
-                  placeholder="Descreva a sua necessidade ou questão em detalhe..."
-                ></textarea>
-              </div>
-              
-              <div className="bg-opacity-50 p-4 rounded-lg" style={{ backgroundColor: 'var(--color-bg-tertiary)' }}>
-                <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-                  <i className="fas fa-info-circle mr-2"></i>
-                  Os campos marcados com * são obrigatórios. Responderemos no prazo de 24 horas.
-                </p>
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`btn-primary w-full py-4 text-lg ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
-              >
-                {isSubmitting ? (
-                  <>
-                    <i className="fas fa-spinner animate-spin mr-2"></i>
-                    A enviar...
-                  </>
-                ) : (
-                  <>
-                    <i className="fas fa-paper-plane mr-2"></i>
-                    Enviar Mensagem
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
-          
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="card">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                     style={{ backgroundColor: 'var(--color-info)' }}>
-                  <i className="fas fa-building text-xl" style={{ color: 'var(--color-text-inverse)' }}></i>
-                </div>
-                <h2 className="text-3xl font-bold" style={{ color: 'var(--color-text-base)' }}>
-                  Informações de Contacto
-                </h2>
-              </div>
-              
+          <div className="lg:col-span-1">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+                Informações de Contacto
+              </h2>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                       style={{ backgroundColor: 'var(--color-success)' }}>
-                    <i className="fas fa-phone" style={{ color: 'var(--color-text-inverse)' }}></i>
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPinIcon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1" style={{ color: 'var(--color-text-base)' }}>
-                      Telefone
-                    </h3>
-                    <p className="font-medium" style={{ color: 'var(--color-primary)' }}>
-                      +351 220 123 456
-                    </p>
-                    <p className="text-sm mt-1" style={{ color: 'var(--color-text-muted)' }}>
-                      Segunda a Sexta: 8h30 - 18h00<br />
-                      Sábado: 9h00 - 13h00
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                       style={{ backgroundColor: 'var(--color-warning)' }}>
-                    <i className="fas fa-envelope" style={{ color: 'var(--color-text-inverse)' }}></i>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1" style={{ color: 'var(--color-text-base)' }}>
-                      Email
-                    </h3>
-                    <p className="font-medium" style={{ color: 'var(--color-primary)' }}>
-                      info@alitools.pt
-                    </p>
-                    <p className="text-sm mt-1" style={{ color: 'var(--color-text-muted)' }}>
-                      Resposta garantida em 24h<br />
-                      Suporte técnico especializado
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                       style={{ backgroundColor: 'var(--color-error)' }}>
-                    <i className="fas fa-map-marker-alt" style={{ color: 'var(--color-text-inverse)' }}></i>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1" style={{ color: 'var(--color-text-base)' }}>
-                      Morada
-                    </h3>
-                    <p style={{ color: 'var(--color-text-muted)' }}>
-                      Zona Industrial da Maia<br />
-                      Rua das Ferramentas, 123<br />
-                      4470-000 Maia, Porto<br />
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Morada</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                      Centro Empresarial Cacém / Paço de Arcos<br />
+                      Pavilhão I<br />
+                      Estrada Nacional 249-3 KM 1.8 E<br />
+                      São Marcos, 2735-307 Cacém<br />
                       Portugal
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                       style={{ backgroundColor: 'var(--color-secondary)' }}>
-                    <i className="fas fa-clock" style={{ color: 'var(--color-text-inverse)' }}></i>
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <PhoneIcon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1" style={{ color: 'var(--color-text-base)' }}>
-                      Horário de Funcionamento
-                    </h3>
-                    <div className="text-sm space-y-1" style={{ color: 'var(--color-text-muted)' }}>
-                      <p><strong>Segunda a Sexta:</strong> 8h30 - 18h00</p>
-                      <p><strong>Sábado:</strong> 9h00 - 13h00</p>
-                      <p><strong>Domingo:</strong> Fechado</p>
-                      <p className="mt-2" style={{ color: 'var(--color-warning)' }}>
-                        <i className="fas fa-exclamation-triangle mr-1"></i>
-                        Feriados: Consultar disponibilidade
-                      </p>
-                    </div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Telefone</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      <a href="tel:+351963965903" className="hover:text-orange-500 transition-colors">
+                        (+351) 96 396 59 03
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <EnvelopeIcon className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      <a 
+                        href="mailto:alitools@gmail.com" 
+                        className="hover:text-orange-500 transition-colors"
+                      >
+                        alitools@gmail.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <ClockIcon className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Horário</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
+                      Segunda a Sexta<br />
+                      9:00 às 12:30 — 14:00 às 18:30
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Quick Contact Options */}
-            <div className="card">
-              <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--color-text-base)' }}>
-                Contacto Rápido
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <a 
-                  href="tel:+351220123456"
-                  className="btn-secondary text-center py-3 hover-lift"
-                >
-                  <i className="fas fa-phone mr-2"></i>
-                  Ligar Agora
-                </a>
-                <a 
-                  href="mailto:info@alitools.pt"
-                  className="btn-secondary text-center py-3 hover-lift"
-                >
-                  <i className="fas fa-envelope mr-2"></i>
-                  Enviar Email
-                </a>
+              {/* Quick Contact Options */}
+              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Contacto Rápido</h3>
+                <div className="space-y-3">
+                  <a 
+                    href="tel:+351963965903"
+                    className="flex items-center justify-center w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+                  >
+                    <PhoneIcon className="w-4 h-4 mr-2" />
+                    Ligar Agora
+                  </a>
+                  <a 
+                    href="mailto:alitools@gmail.com"
+                    className="flex items-center justify-center w-full px-4 py-2 bg-gray-600 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+                  >
+                    <EnvelopeIcon className="w-4 h-4 mr-2" />
+                    Enviar Email
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Partnership CTA */}
-            <div className="card text-center" style={{ backgroundColor: 'var(--color-primary)', color: 'var(--color-text-inverse)' }}>
-              <i className="fas fa-handshake text-4xl mb-4"></i>
-              <h3 className="text-xl font-bold mb-3">
-                Quer tornar-se nosso parceiro?
-              </h3>
-              <p className="mb-4 opacity-90">
-                Contacte-nos para conhecer as nossas condições especiais para revendedores 
-                e distribuidores.
-              </p>
-              <button className="btn-secondary">
-                <i className="fas fa-users mr-2"></i>
-                Informações de Parceria
-              </button>
+          {/* Contact Form */}
+          <div className="lg:col-span-2">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+                Envie-nos uma Mensagem
+              </h2>
+
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700 rounded-lg">
+                  <p className="text-green-700 dark:text-green-300">
+                    ✅ Mensagem enviada com sucesso! Entraremos em contacto brevemente.
+                  </p>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-700 rounded-lg">
+                  <p className="text-red-700 dark:text-red-300">
+                    ❌ Erro ao enviar mensagem. Tente novamente ou contacte-nos diretamente.
+                  </p>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Contact Type */}
+                <div>
+                  <label htmlFor="tipo" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Tipo de Contacto
+                  </label>
+                  <select
+                    id="tipo"
+                    name="tipo"
+                    value={formData.tipo}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                    required
+                  >
+                    <option value="geral">Informações Gerais</option>
+                    <option value="orcamento">Pedido de Orçamento</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="parceria">Oportunidade de Parceria</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+
+                {/* Name and Email */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="nome" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Nome Completo *
+                    </label>
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      value={formData.nome}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Phone and Company */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="telefone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Telefone
+                    </label>
+                    <input
+                      type="tel"
+                      id="telefone"
+                      name="telefone"
+                      value={formData.telefone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="empresa" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Empresa
+                    </label>
+                    <input
+                      type="text"
+                      id="empresa"
+                      name="empresa"
+                      value={formData.empresa}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                {/* Subject */}
+                <div>
+                  <label htmlFor="assunto" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Assunto *
+                  </label>
+                  <input
+                    type="text"
+                    id="assunto"
+                    name="assunto"
+                    value={formData.assunto}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                    required
+                  />
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Mensagem *
+                  </label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    value={formData.mensagem}
+                    onChange={handleInputChange}
+                    rows={6}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:text-white"
+                    placeholder="Descreva a sua questão ou pedido..."
+                    required
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <div>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full md:w-auto px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? (
+                      <span className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        A enviar...
+                      </span>
+                    ) : (
+                      'Enviar Mensagem'
+                    )}
+                  </button>
+                </div>
+              </form>
+
+              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  * Campos obrigatórios. Os seus dados serão tratados com confidencialidade e utilizados apenas para responder ao seu contacto.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Additional Information */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="card text-center hover-lift">
-            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                 style={{ backgroundColor: 'var(--color-success)' }}>
-              <i className="fas fa-shipping-fast text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+            <div className="w-16 h-16 bg-gray-600 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ChatBubbleLeftRightIcon className="w-8 h-8 text-white" />
             </div>
-            <h3 className="font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
-              Entrega Rápida
-            </h3>
-            <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-              Entregas em 24-48h para parceiros em todo o território nacional
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Suporte Técnico</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              Equipa especializada pronta para ajudar com questões técnicas e aconselhamento sobre produtos.
             </p>
           </div>
-          
-          <div className="card text-center hover-lift">
-            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                 style={{ backgroundColor: 'var(--color-info)' }}>
-              <i className="fas fa-shield-alt text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+            <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <BuildingOffice2Icon className="w-8 h-8 text-white" />
             </div>
-            <h3 className="font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
-              Garantia Total
-            </h3>
-            <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-              Todos os produtos com garantia oficial das marcas representadas
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Parcerias</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              Interessado em ser nosso parceiro? Contacte-nos para conhecer as oportunidades de colaboração.
             </p>
           </div>
-          
-          <div className="card text-center hover-lift">
-            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                 style={{ backgroundColor: 'var(--color-warning)' }}>
-              <i className="fas fa-headset text-2xl" style={{ color: 'var(--color-text-inverse)' }}></i>
+
+          <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+            <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <UserGroupIcon className="w-8 h-8 text-white" />
             </div>
-            <h3 className="font-semibold mb-2" style={{ color: 'var(--color-text-base)' }}>
-              Suporte Especializado
-            </h3>
-            <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-              Equipa técnica especializada para apoio e aconselhamento profissional
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Atendimento Personalizado</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              Cada cliente é único. Oferecemos soluções personalizadas para atender às suas necessidades específicas.
             </p>
           </div>
         </div>
