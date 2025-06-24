@@ -208,7 +208,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                         </div>
                       ) : (
                         <span className="text-lg font-bold text-blue-600">
-                          {product.price ? `€${product.price.toFixed(2)}` : 'Consulte preço'}
+                          {product.price ? `€${parseFloat(product.price).toFixed(2)}` : 'Consulte preço'}
                         </span>
                       )}
                       

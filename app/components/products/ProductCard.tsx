@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { useCart } from '../../contexts/CartContext';
+import { useAuth } from '../../contexts/AuthContext';
 
 interface Product {
   ean: string;
@@ -23,16 +24,11 @@ interface Product {
 
 interface ProductCardProps {
   product: Product;
-  isAuthenticated?: boolean;
-  hasPermission?: (permission: string) => boolean;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ 
-  product, 
-  isAuthenticated = false, 
-  hasPermission = () => false 
-}) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
+  const { isAuthenticated, hasPermission } = useAuth();
 
   if (!product) {
     return <div className="h-full w-full animate-pulse rounded-lg bg-gray-200"></div>;

@@ -1,7 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { verifyToken } from '../../../src/utils/jwtUtils';
 
 export async function GET(request: NextRequest) {
   try {
+    // Check if user is authenticated
+    const token = request.cookies.get('idea_session_token')?.value;
+    let isAuthenticated = false;
+    let userPermissions: string[] = [];
+
+    if (token) {
+      try {
+        const decodedToken = verifyToken(token);
+        if (decodedToken) {
+          isAuthenticated = true;
+          // Get user permissions
+          const pool = await import('../../../db/index.cjs');
+          const userQuery = `
+            SELECT u.user_id, u.email, p.permission_name
+            FROM users u
+            LEFT JOIN roles r ON u.role_id = r.role_id
+            LEFT JOIN role_permissions rp ON r.role_id = rp.role_id
+            LEFT JOIN permissions p ON rp.permission_id = p.permission_id
+            WHERE u.email = $1
+          `;
+          const userResult = await pool.default.query(userQuery, [decodedToken.email]);
+          if (userResult.rows.length > 0) {
+            userPermissions = userResult.rows.map(row => row.permission_name).filter(Boolean);
+          }
+        }
+      } catch (error) {
+        console.error('[API] Error verifying token:', error);
+        // Continue as unauthenticated user
+      }
+    }
+
+    const canViewPrices = isAuthenticated && userPermissions.includes('view_price');
+
     // Get query parameters from URL
     const { searchParams } = new URL(request.url);
     const queryParams: Record<string, string> = {};
@@ -15,7 +49,7 @@ export async function GET(request: NextRequest) {
     const req = {
       query: queryParams,
       method: 'GET',
-      localUser: null, // TODO: Add authentication middleware
+      localUser: isAuthenticated ? { permissions: userPermissions } : null,
       params: {},
       body: {}
     };
@@ -123,21 +157,34 @@ export async function GET(request: NextRequest) {
       productQueries.default.getProducts(filters, pagination)
     ]);
 
-    // Sanitize products for guest users (since no auth yet)
-    const sanitizedProducts = productsFromDB.map(p => {
-      const sanitized: any = { ...p };
-      // Remove sensitive fields for non-authenticated users
-      delete sanitized.price;
-      delete sanitized.product_price;
-      sanitized.priceStatus = 'unauthenticated';
-      return sanitized;
+    // Handle product data based on authentication and permissions
+    const processedProducts = productsFromDB.map(p => {
+      const processed: any = { ...p };
+      
+      if (canViewPrices) {
+        // User is authenticated and has view_price permission
+        processed.priceStatus = 'authenticated';
+        // Keep price and product_price fields as they are
+      } else {
+        // User is not authenticated or doesn't have permission
+        delete processed.price;
+        delete processed.product_price;
+        processed.priceStatus = isAuthenticated ? 'no_permission' : 'unauthenticated';
+      }
+      
+      return processed;
     });
 
     return NextResponse.json({
-      products: sanitizedProducts,
+      products: processedProducts,
       totalPages: Math.ceil(totalProducts / safeLimit),
       currentPage: parseInt(page, 10),
-      totalProducts
+      totalProducts,
+      userInfo: {
+        isAuthenticated,
+        canViewPrices,
+        permissions: userPermissions
+      }
     });
 
   } catch (error) {

@@ -1,7 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
@@ -10,6 +12,18 @@ export default function LoginPage() {
     rememberMe: false
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  
+  const { login, isAuthenticated, isLoading: authLoading } = useAuth();
+  const router = useRouter();
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (isAuthenticated && !authLoading) {
+      console.log('[LoginPage] User is authenticated, redirecting to dashboard');
+      router.push('/admin');
+    }
+  }, [isAuthenticated, authLoading, router]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
@@ -17,18 +31,45 @@ export default function LoginPage() {
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
+    setError(null); // Clear error when user starts typing
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
+    setError(null);
     
-    // Simulate authentication
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    console.log('[LoginPage] Attempting login for:', formData.email);
     
-    setIsLoading(false);
-    alert('Funcionalidade de login será implementada em breve!');
+    try {
+      const result = await login(formData.email, formData.password);
+      
+      if (result.success) {
+        console.log('[LoginPage] Login successful, user data:', result.user);
+        // AuthContext will handle the redirect via useEffect above
+      } else {
+        console.log('[LoginPage] Login failed:', result.error);
+        setError(result.error || 'Falha no login. Verifique as suas credenciais.');
+      }
+    } catch (error) {
+      console.error('[LoginPage] Login error:', error);
+      setError('Erro de comunicação. Tente novamente.');
+    } finally {
+      setIsLoading(false);
+    }
   };
+
+  // Show loading while checking authentication status
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-400">A verificar autenticação...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex flex-col justify-center py-12 px-4"
@@ -75,6 +116,22 @@ export default function LoginPage() {
             </p>
           </div>
 
+          {/* Error Message */}
+          {error && (
+            <div className="mb-6 p-4 rounded-md bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <i className="fas fa-exclamation-triangle text-red-400" aria-hidden="true"></i>
+                </div>
+                <div className="ml-3">
+                  <p className="text-sm text-red-800 dark:text-red-200">
+                    {error}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-2" style={{ color: 'var(--color-text-base)' }}>
@@ -92,6 +149,7 @@ export default function LoginPage() {
                   onChange={handleInputChange}
                   autoComplete="email"
                   required
+                  disabled={isLoading}
                   className="input-field pl-10"
                   placeholder="o.seu.email@exemplo.com"
                 />
@@ -114,6 +172,7 @@ export default function LoginPage() {
                   onChange={handleInputChange}
                   autoComplete="current-password"
                   required
+                  disabled={isLoading}
                   className="input-field pl-10"
                   placeholder="••••••••"
                 />
@@ -128,6 +187,7 @@ export default function LoginPage() {
                   type="checkbox"
                   checked={formData.rememberMe}
                   onChange={handleInputChange}
+                  disabled={isLoading}
                   className="w-4 h-4 rounded focus:ring-2"
                   style={{ 
                     accentColor: 'var(--color-primary)',

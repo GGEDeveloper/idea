@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useAuth } from '../../../src/contexts/AuthContext';
 import ProductImageGallery from '../../components/products/ProductImageGallery';
 import ProductTabs from '../../components/products/ProductTabs';
 import ProductInfo from '../../components/products/ProductInfo';
@@ -23,11 +24,13 @@ interface Product {
   categories?: any[];
   is_featured?: boolean;
   active?: boolean;
+  userInfo?: any;
 }
 
 export default function ProductDetailPage() {
   const params = useParams();
   const ean = params?.ean as string;
+  const { isAuthenticated, hasPermission } = useAuth();
   
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -49,6 +52,7 @@ export default function ProductDetailPage() {
         }
 
         const data = await response.json();
+        console.log('[ProductDetail] Product data received:', data);
         setProduct(data);
         setError(null);
       } catch (err) {
@@ -60,7 +64,7 @@ export default function ProductDetailPage() {
     };
 
     fetchProduct();
-  }, [ean]);
+  }, [ean, isAuthenticated]); // Refetch when auth status changes
 
   if (loading) {
     return (
@@ -148,6 +152,22 @@ export default function ProductDetailPage() {
     ? product.categories[0] 
     : null;
 
+  const handleAddToCart = () => {
+    if (!isAuthenticated) {
+      alert('Por favor, faça login para adicionar produtos ao carrinho.');
+      return;
+    }
+    
+    if (!hasPermission('view_price')) {
+      alert('Sem permissão para adicionar produtos ao carrinho.');
+      return;
+    }
+    
+    // TODO: Implement add to cart functionality
+    console.log('Add to cart:', product.name);
+    alert('Produto adicionado ao carrinho! (Funcionalidade será completamente implementada em breve)');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8 px-6">
@@ -195,13 +215,9 @@ export default function ProductDetailPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <ProductInfo 
               product={product as any}
-              addToCart={() => {
-                // TODO: Implement add to cart functionality
-                console.log('Add to cart:', product.name);
-                alert('Funcionalidade de carrinho será implementada em breve!');
-              }}
-              isAuthenticated={false} // For now, assuming guest user
-              hasPermission={() => false} // For now, no permissions for guests
+              addToCart={handleAddToCart}
+              isAuthenticated={isAuthenticated}
+              hasPermission={hasPermission}
             />
           </div>
         </div>

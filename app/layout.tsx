@@ -3,6 +3,7 @@ import './globals.css';
 import HeaderAdvanced from './components/HeaderAdvanced';
 import Footer from '../src/components/Footer';
 import { CartProvider } from './contexts/CartContext';
+import { AuthProvider } from './contexts/AuthContext';
 
 export const metadata = {
   title: 'AliTools - Ferramentas Profissionais B2B',
@@ -22,15 +23,17 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       </head>
       <body className="font-sans antialiased">
-        <CartProvider>
-          <HeaderAdvanced />
-          <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
-            <main className="flex-1" id="main-content">
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </CartProvider>
+        <AuthProvider>
+          <CartProvider>
+            <HeaderAdvanced />
+            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
+              <main className="flex-1" id="main-content">
+                {children}
+              </main>
+              <Footer />
+            </div>
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

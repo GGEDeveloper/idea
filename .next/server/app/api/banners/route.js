@@ -1,34 +1,188 @@
-(()=>{var e={};e.id=6003,e.ids=[1484,6003],e.modules={3295:e=>{"use strict";e.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},10846:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},21484:(e,t,r)=>{"use strict";r(97329).config();let{Pool:n}=r(42449);e.exports=new n({connectionString:process.env.DATABASE_URL,ssl:{rejectUnauthorized:!1}})},21820:e=>{"use strict";e.exports=require("os")},29021:e=>{"use strict";e.exports=require("fs")},29294:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-async-storage.external.js")},33873:e=>{"use strict";e.exports=require("path")},42449:e=>{"use strict";e.exports=require("pg")},44870:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-route.runtime.prod.js")},55511:e=>{"use strict";e.exports=require("crypto")},63033:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},67828:(e,t,r)=>{"use strict";r.r(t),r.d(t,{patchFetch:()=>f,routeModule:()=>u,serverHooks:()=>v,workAsyncStorage:()=>d,workUnitAsyncStorage:()=>E});var n={};r.r(n),r.d(n,{GET:()=>c});var o=r(96559),s=r(48088),a=r(37719),i=r(32190),p=r(21484),l=r.n(p);async function c(e){try{let t=e.nextUrl.searchParams.get("position")||"homepage",r=`
-      CREATE TABLE IF NOT EXISTS content_banners (
-        banner_id SERIAL PRIMARY KEY,
-        title VARCHAR(255) NOT NULL,
-        subtitle TEXT,
-        image_url TEXT,
-        link_url TEXT,
-        button_text VARCHAR(100),
-        position VARCHAR(50) DEFAULT 'homepage' CHECK (position IN ('homepage', 'category', 'product')),
-        is_active BOOLEAN DEFAULT true,
-        display_order INTEGER DEFAULT 0,
-        start_date TIMESTAMPTZ,
-        end_date TIMESTAMPTZ,
-        created_at TIMESTAMPTZ DEFAULT NOW(),
-        updated_at TIMESTAMPTZ DEFAULT NOW()
-      );
-    `;await l().query(r);let n=`
-      SELECT 
-        banner_id,
-        title,
-        subtitle,
-        image_url,
-        link_url,
-        button_text,
-        position,
-        display_order
-      FROM content_banners
-      WHERE 
-        is_active = true 
-        AND position = $1
-        AND (start_date IS NULL OR start_date <= NOW())
-        AND (end_date IS NULL OR end_date >= NOW())
-      ORDER BY display_order ASC, created_at DESC
-    `,o=await l().query(n,[t]);return i.NextResponse.json({banners:o.rows,count:o.rows.length})}catch(e){return console.error("Erro ao buscar banners:",e),i.NextResponse.json({error:"Erro interno do servidor"},{status:500})}}let u=new o.AppRouteRouteModule({definition:{kind:s.RouteKind.APP_ROUTE,page:"/api/banners/route",pathname:"/api/banners",filename:"route",bundlePath:"app/api/banners/route"},resolvedPagePath:"/home/pixie/idea/app/api/banners/route.ts",nextConfigOutput:"standalone",userland:n}),{workAsyncStorage:d,workUnitAsyncStorage:E,serverHooks:v}=u;function f(){return(0,a.patchFetch)({workAsyncStorage:d,workUnitAsyncStorage:E})}},77336:e=>{"use strict";e.exports=JSON.parse('{"name":"dotenv","version":"16.5.0","description":"Loads environment variables from .env file","main":"lib/main.js","types":"lib/main.d.ts","exports":{".":{"types":"./lib/main.d.ts","require":"./lib/main.js","default":"./lib/main.js"},"./config":"./config.js","./config.js":"./config.js","./lib/env-options":"./lib/env-options.js","./lib/env-options.js":"./lib/env-options.js","./lib/cli-options":"./lib/cli-options.js","./lib/cli-options.js":"./lib/cli-options.js","./package.json":"./package.json"},"scripts":{"dts-check":"tsc --project tests/types/tsconfig.json","lint":"standard","pretest":"npm run lint && npm run dts-check","test":"tap run --allow-empty-coverage --disable-coverage --timeout=60000","test:coverage":"tap run --show-full-coverage --timeout=60000 --coverage-report=lcov","prerelease":"npm test","release":"standard-version"},"repository":{"type":"git","url":"git://github.com/motdotla/dotenv.git"},"homepage":"https://github.com/motdotla/dotenv#readme","funding":"https://dotenvx.com","keywords":["dotenv","env",".env","environment","variables","config","settings"],"readmeFilename":"README.md","license":"BSD-2-Clause","devDependencies":{"@types/node":"^18.11.3","decache":"^4.6.2","sinon":"^14.0.1","standard":"^17.0.0","standard-version":"^9.5.0","tap":"^19.2.0","typescript":"^4.8.4"},"engines":{"node":">=12"},"browser":{"fs":false}}')},78335:()=>{},96487:()=>{},97329:(e,t,r)=>{let n=r(29021),o=r(33873),s=r(21820),a=r(55511),i=r(77336).version,p=/(?:^|^)\s*(?:export\s+)?([\w.-]+)(?:\s*=\s*?|:\s+?)(\s*'(?:\\'|[^'])*'|\s*"(?:\\"|[^"])*"|\s*`(?:\\`|[^`])*`|[^#\r\n]+)?\s*(?:#.*)?(?:$|$)/mg;function l(e){console.log(`[dotenv@${i}][DEBUG] ${e}`)}function c(e){return e&&e.DOTENV_KEY&&e.DOTENV_KEY.length>0?e.DOTENV_KEY:process.env.DOTENV_KEY&&process.env.DOTENV_KEY.length>0?process.env.DOTENV_KEY:""}function u(e){let t=null;if(e&&e.path&&e.path.length>0)if(Array.isArray(e.path))for(let r of e.path)n.existsSync(r)&&(t=r.endsWith(".vault")?r:`${r}.vault`);else t=e.path.endsWith(".vault")?e.path:`${e.path}.vault`;else t=o.resolve(process.cwd(),".env.vault");return n.existsSync(t)?t:null}function d(e){return"~"===e[0]?o.join(s.homedir(),e.slice(1)):e}let E={configDotenv:function(e){let t,r=o.resolve(process.cwd(),".env"),s="utf8",a=!!(e&&e.debug);e&&e.encoding?s=e.encoding:a&&l("No encoding is specified. UTF-8 is used by default");let i=[r];if(e&&e.path)if(Array.isArray(e.path))for(let t of(i=[],e.path))i.push(d(t));else i=[d(e.path)];let p={};for(let r of i)try{let t=E.parse(n.readFileSync(r,{encoding:s}));E.populate(p,t,e)}catch(e){a&&l(`Failed to load ${r} ${e.message}`),t=e}let c=process.env;return(e&&null!=e.processEnv&&(c=e.processEnv),E.populate(c,p,e),t)?{parsed:p,error:t}:{parsed:p}},_configVault:function(e){e&&e.debug&&l("Loading env from encrypted .env.vault");let t=E._parseVault(e),r=process.env;return e&&null!=e.processEnv&&(r=e.processEnv),E.populate(r,t,e),{parsed:t}},_parseVault:function(e){let t,r=u(e),n=E.configDotenv({path:r});if(!n.parsed){let e=Error(`MISSING_DATA: Cannot parse ${r} for an unknown reason`);throw e.code="MISSING_DATA",e}let o=c(e).split(","),s=o.length;for(let e=0;e<s;e++)try{let r=o[e].trim(),s=function(e,t){let r;try{r=new URL(t)}catch(e){if("ERR_INVALID_URL"===e.code){let e=Error("INVALID_DOTENV_KEY: Wrong format. Must be in valid uri format like dotenv://:key_1234@dotenvx.com/vault/.env.vault?environment=development");throw e.code="INVALID_DOTENV_KEY",e}throw e}let n=r.password;if(!n){let e=Error("INVALID_DOTENV_KEY: Missing key part");throw e.code="INVALID_DOTENV_KEY",e}let o=r.searchParams.get("environment");if(!o){let e=Error("INVALID_DOTENV_KEY: Missing environment part");throw e.code="INVALID_DOTENV_KEY",e}let s=`DOTENV_VAULT_${o.toUpperCase()}`,a=e.parsed[s];if(!a){let e=Error(`NOT_FOUND_DOTENV_ENVIRONMENT: Cannot locate environment ${s} in your .env.vault file.`);throw e.code="NOT_FOUND_DOTENV_ENVIRONMENT",e}return{ciphertext:a,key:n}}(n,r);t=E.decrypt(s.ciphertext,s.key);break}catch(t){if(e+1>=s)throw t}return E.parse(t)},config:function(e){if(0===c(e).length)return E.configDotenv(e);let t=u(e);if(!t){var r;return r=`You set DOTENV_KEY but you are missing a .env.vault file at ${t}. Did you forget to build it?`,console.log(`[dotenv@${i}][WARN] ${r}`),E.configDotenv(e)}return E._configVault(e)},decrypt:function(e,t){let r=Buffer.from(t.slice(-64),"hex"),n=Buffer.from(e,"base64"),o=n.subarray(0,12),s=n.subarray(-16);n=n.subarray(12,-16);try{let e=a.createDecipheriv("aes-256-gcm",r,o);return e.setAuthTag(s),`${e.update(n)}${e.final()}`}catch(n){let e=n instanceof RangeError,t="Invalid key length"===n.message,r="Unsupported state or unable to authenticate data"===n.message;if(e||t){let e=Error("INVALID_DOTENV_KEY: It must be 64 characters long (or more)");throw e.code="INVALID_DOTENV_KEY",e}if(r){let e=Error("DECRYPTION_FAILED: Please check your DOTENV_KEY");throw e.code="DECRYPTION_FAILED",e}throw n}},parse:function(e){let t,r={},n=e.toString();for(n=n.replace(/\r\n?/mg,"\n");null!=(t=p.exec(n));){let e=t[1],n=t[2]||"",o=(n=n.trim())[0];n=n.replace(/^(['"`])([\s\S]*)\1$/mg,"$2"),'"'===o&&(n=(n=n.replace(/\\n/g,"\n")).replace(/\\r/g,"\r")),r[e]=n}return r},populate:function(e,t,r={}){let n=!!(r&&r.debug),o=!!(r&&r.override);if("object"!=typeof t){let e=Error("OBJECT_REQUIRED: Please check the processEnv argument being passed to populate");throw e.code="OBJECT_REQUIRED",e}for(let r of Object.keys(t))Object.prototype.hasOwnProperty.call(e,r)?(!0===o&&(e[r]=t[r]),n&&(!0===o?l(`"${r}" is already defined and WAS overwritten`):l(`"${r}" is already defined and was NOT overwritten`))):e[r]=t[r]}};e.exports.configDotenv=E.configDotenv,e.exports._configVault=E._configVault,e.exports._parseVault=E._parseVault,e.exports.config=E.config,e.exports.decrypt=E.decrypt,e.exports.parse=E.parse,e.exports.populate=E.populate,e.exports=E}};var t=require("../../../webpack-runtime.js");t.C(e);var r=e=>t(t.s=e),n=t.X(0,[7719,580],()=>r(67828));module.exports=n})();
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "app/api/banners/route";
+exports.ids = ["app/api/banners/route"];
+exports.modules = {
+
+/***/ "(rsc)/./app/api/banners/route.ts":
+/*!**********************************!*\
+  !*** ./app/api/banners/route.ts ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GET: () => (/* binding */ GET)\n/* harmony export */ });\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"(rsc)/./node_modules/next/dist/api/server.js\");\n/* harmony import */ var _db_index_cjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../db/index.cjs */ \"(rsc)/./db/index.cjs\");\n/* harmony import */ var _db_index_cjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_db_index_cjs__WEBPACK_IMPORTED_MODULE_1__);\n\n\nasync function GET(request) {\n    try {\n        const searchParams = request.nextUrl.searchParams;\n        const position = searchParams.get('position') || 'homepage';\n        // Criar tabela de banners se não existir (failsafe)\n        const createTableQuery = `\n      CREATE TABLE IF NOT EXISTS content_banners (\n        banner_id SERIAL PRIMARY KEY,\n        title VARCHAR(255) NOT NULL,\n        subtitle TEXT,\n        image_url TEXT,\n        link_url TEXT,\n        button_text VARCHAR(100),\n        position VARCHAR(50) DEFAULT 'homepage' CHECK (position IN ('homepage', 'category', 'product')),\n        is_active BOOLEAN DEFAULT true,\n        display_order INTEGER DEFAULT 0,\n        start_date TIMESTAMPTZ,\n        end_date TIMESTAMPTZ,\n        created_at TIMESTAMPTZ DEFAULT NOW(),\n        updated_at TIMESTAMPTZ DEFAULT NOW()\n      );\n    `;\n        await _db_index_cjs__WEBPACK_IMPORTED_MODULE_1___default().query(createTableQuery);\n        // Buscar banners ativos para a posição especificada\n        const bannersQuery = `\n      SELECT \n        banner_id,\n        title,\n        subtitle,\n        image_url,\n        link_url,\n        button_text,\n        position,\n        display_order\n      FROM content_banners\n      WHERE \n        is_active = true \n        AND position = $1\n        AND (start_date IS NULL OR start_date <= NOW())\n        AND (end_date IS NULL OR end_date >= NOW())\n      ORDER BY display_order ASC, created_at DESC\n    `;\n        const result = await _db_index_cjs__WEBPACK_IMPORTED_MODULE_1___default().query(bannersQuery, [\n            position\n        ]);\n        return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n            banners: result.rows,\n            count: result.rows.length\n        });\n    } catch (error) {\n        console.error('Erro ao buscar banners:', error);\n        return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n            error: 'Erro interno do servidor'\n        }, {\n            status: 500\n        });\n    }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvYXBpL2Jhbm5lcnMvcm91dGUudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUF3RDtBQUNmO0FBRWxDLGVBQWVFLElBQUlDLE9BQW9CO0lBQzVDLElBQUk7UUFDRixNQUFNQyxlQUFlRCxRQUFRRSxPQUFPLENBQUNELFlBQVk7UUFDakQsTUFBTUUsV0FBV0YsYUFBYUcsR0FBRyxDQUFDLGVBQWU7UUFFakQsb0RBQW9EO1FBQ3BELE1BQU1DLG1CQUFtQixDQUFDOzs7Ozs7Ozs7Ozs7Ozs7O0lBZ0IxQixDQUFDO1FBRUQsTUFBTVAsMERBQVUsQ0FBQ087UUFFakIsb0RBQW9EO1FBQ3BELE1BQU1FLGVBQWUsQ0FBQzs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFpQnRCLENBQUM7UUFFRCxNQUFNQyxTQUFTLE1BQU1WLDBEQUFVLENBQUNTLGNBQWM7WUFBQ0o7U0FBUztRQUV4RCxPQUFPTixxREFBWUEsQ0FBQ1ksSUFBSSxDQUFDO1lBQ3ZCQyxTQUFTRixPQUFPRyxJQUFJO1lBQ3BCQyxPQUFPSixPQUFPRyxJQUFJLENBQUNFLE1BQU07UUFDM0I7SUFFRixFQUFFLE9BQU9DLE9BQU87UUFDZEMsUUFBUUQsS0FBSyxDQUFDLDJCQUEyQkE7UUFDekMsT0FBT2pCLHFEQUFZQSxDQUFDWSxJQUFJLENBQ3RCO1lBQUVLLE9BQU87UUFBMkIsR0FDcEM7WUFBRUUsUUFBUTtRQUFJO0lBRWxCO0FBQ0YiLCJzb3VyY2VzIjpbIi9ob21lL3BpeGllL2lkZWEvYXBwL2FwaS9iYW5uZXJzL3JvdXRlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5leHRSZXF1ZXN0LCBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcic7XG5pbXBvcnQgcG9vbCBmcm9tICcuLi8uLi8uLi9kYi9pbmRleC5janMnO1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcXVlc3Q6IE5leHRSZXF1ZXN0KSB7XG4gIHRyeSB7XG4gICAgY29uc3Qgc2VhcmNoUGFyYW1zID0gcmVxdWVzdC5uZXh0VXJsLnNlYXJjaFBhcmFtcztcbiAgICBjb25zdCBwb3NpdGlvbiA9IHNlYXJjaFBhcmFtcy5nZXQoJ3Bvc2l0aW9uJykgfHwgJ2hvbWVwYWdlJztcblxuICAgIC8vIENyaWFyIHRhYmVsYSBkZSBiYW5uZXJzIHNlIG7Do28gZXhpc3RpciAoZmFpbHNhZmUpXG4gICAgY29uc3QgY3JlYXRlVGFibGVRdWVyeSA9IGBcbiAgICAgIENSRUFURSBUQUJMRSBJRiBOT1QgRVhJU1RTIGNvbnRlbnRfYmFubmVycyAoXG4gICAgICAgIGJhbm5lcl9pZCBTRVJJQUwgUFJJTUFSWSBLRVksXG4gICAgICAgIHRpdGxlIFZBUkNIQVIoMjU1KSBOT1QgTlVMTCxcbiAgICAgICAgc3VidGl0bGUgVEVYVCxcbiAgICAgICAgaW1hZ2VfdXJsIFRFWFQsXG4gICAgICAgIGxpbmtfdXJsIFRFWFQsXG4gICAgICAgIGJ1dHRvbl90ZXh0IFZBUkNIQVIoMTAwKSxcbiAgICAgICAgcG9zaXRpb24gVkFSQ0hBUig1MCkgREVGQVVMVCAnaG9tZXBhZ2UnIENIRUNLIChwb3NpdGlvbiBJTiAoJ2hvbWVwYWdlJywgJ2NhdGVnb3J5JywgJ3Byb2R1Y3QnKSksXG4gICAgICAgIGlzX2FjdGl2ZSBCT09MRUFOIERFRkFVTFQgdHJ1ZSxcbiAgICAgICAgZGlzcGxheV9vcmRlciBJTlRFR0VSIERFRkFVTFQgMCxcbiAgICAgICAgc3RhcnRfZGF0ZSBUSU1FU1RBTVBUWixcbiAgICAgICAgZW5kX2RhdGUgVElNRVNUQU1QVFosXG4gICAgICAgIGNyZWF0ZWRfYXQgVElNRVNUQU1QVFogREVGQVVMVCBOT1coKSxcbiAgICAgICAgdXBkYXRlZF9hdCBUSU1FU1RBTVBUWiBERUZBVUxUIE5PVygpXG4gICAgICApO1xuICAgIGA7XG5cbiAgICBhd2FpdCBwb29sLnF1ZXJ5KGNyZWF0ZVRhYmxlUXVlcnkpO1xuXG4gICAgLy8gQnVzY2FyIGJhbm5lcnMgYXRpdm9zIHBhcmEgYSBwb3Npw6fDo28gZXNwZWNpZmljYWRhXG4gICAgY29uc3QgYmFubmVyc1F1ZXJ5ID0gYFxuICAgICAgU0VMRUNUIFxuICAgICAgICBiYW5uZXJfaWQsXG4gICAgICAgIHRpdGxlLFxuICAgICAgICBzdWJ0aXRsZSxcbiAgICAgICAgaW1hZ2VfdXJsLFxuICAgICAgICBsaW5rX3VybCxcbiAgICAgICAgYnV0dG9uX3RleHQsXG4gICAgICAgIHBvc2l0aW9uLFxuICAgICAgICBkaXNwbGF5X29yZGVyXG4gICAgICBGUk9NIGNvbnRlbnRfYmFubmVyc1xuICAgICAgV0hFUkUgXG4gICAgICAgIGlzX2FjdGl2ZSA9IHRydWUgXG4gICAgICAgIEFORCBwb3NpdGlvbiA9ICQxXG4gICAgICAgIEFORCAoc3RhcnRfZGF0ZSBJUyBOVUxMIE9SIHN0YXJ0X2RhdGUgPD0gTk9XKCkpXG4gICAgICAgIEFORCAoZW5kX2RhdGUgSVMgTlVMTCBPUiBlbmRfZGF0ZSA+PSBOT1coKSlcbiAgICAgIE9SREVSIEJZIGRpc3BsYXlfb3JkZXIgQVNDLCBjcmVhdGVkX2F0IERFU0NcbiAgICBgO1xuXG4gICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgcG9vbC5xdWVyeShiYW5uZXJzUXVlcnksIFtwb3NpdGlvbl0pO1xuXG4gICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHtcbiAgICAgIGJhbm5lcnM6IHJlc3VsdC5yb3dzLFxuICAgICAgY291bnQ6IHJlc3VsdC5yb3dzLmxlbmd0aFxuICAgIH0pO1xuXG4gIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgY29uc29sZS5lcnJvcignRXJybyBhbyBidXNjYXIgYmFubmVyczonLCBlcnJvcik7XG4gICAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKFxuICAgICAgeyBlcnJvcjogJ0Vycm8gaW50ZXJubyBkbyBzZXJ2aWRvcicgfSxcbiAgICAgIHsgc3RhdHVzOiA1MDAgfVxuICAgICk7XG4gIH1cbn0gIl0sIm5hbWVzIjpbIk5leHRSZXNwb25zZSIsInBvb2wiLCJHRVQiLCJyZXF1ZXN0Iiwic2VhcmNoUGFyYW1zIiwibmV4dFVybCIsInBvc2l0aW9uIiwiZ2V0IiwiY3JlYXRlVGFibGVRdWVyeSIsInF1ZXJ5IiwiYmFubmVyc1F1ZXJ5IiwicmVzdWx0IiwianNvbiIsImJhbm5lcnMiLCJyb3dzIiwiY291bnQiLCJsZW5ndGgiLCJlcnJvciIsImNvbnNvbGUiLCJzdGF0dXMiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./app/api/banners/route.ts\n");
+
+/***/ }),
+
+/***/ "(rsc)/./db/index.cjs":
+/*!**********************!*\
+  !*** ./db/index.cjs ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("\n(__webpack_require__(/*! dotenv */ \"(rsc)/./node_modules/dotenv/lib/main.js\").config)();\nconst { Pool } = __webpack_require__(/*! pg */ \"pg\");\nconst pool = new Pool({\n    connectionString: process.env.DATABASE_URL,\n    ssl: {\n        rejectUnauthorized: false\n    }\n});\nmodule.exports = pool;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9kYi9pbmRleC5janMiLCJtYXBwaW5ncyI6IjtBQUFBQSxxRkFBd0I7QUFDeEIsTUFBTSxFQUFFRSxJQUFJLEVBQUUsR0FBR0YsbUJBQU9BLENBQUMsY0FBSTtBQUU3QixNQUFNRyxPQUFPLElBQUlELEtBQUs7SUFDcEJFLGtCQUFrQkMsUUFBUUMsR0FBRyxDQUFDQyxZQUFZO0lBQzFDQyxLQUFLO1FBQ0hDLG9CQUFvQjtJQUN0QjtBQUNGO0FBRUFDLE9BQU9DLE9BQU8sR0FBR1IiLCJzb3VyY2VzIjpbIi9ob21lL3BpeGllL2lkZWEvZGIvaW5kZXguY2pzIl0sInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoJ2RvdGVudicpLmNvbmZpZygpO1xuY29uc3QgeyBQb29sIH0gPSByZXF1aXJlKCdwZycpO1xuXG5jb25zdCBwb29sID0gbmV3IFBvb2woe1xuICBjb25uZWN0aW9uU3RyaW5nOiBwcm9jZXNzLmVudi5EQVRBQkFTRV9VUkwsXG4gIHNzbDoge1xuICAgIHJlamVjdFVuYXV0aG9yaXplZDogZmFsc2UsXG4gIH0sXG59KTtcblxubW9kdWxlLmV4cG9ydHMgPSBwb29sOyAiXSwibmFtZXMiOlsicmVxdWlyZSIsImNvbmZpZyIsIlBvb2wiLCJwb29sIiwiY29ubmVjdGlvblN0cmluZyIsInByb2Nlc3MiLCJlbnYiLCJEQVRBQkFTRV9VUkwiLCJzc2wiLCJyZWplY3RVbmF1dGhvcml6ZWQiLCJtb2R1bGUiLCJleHBvcnRzIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./db/index.cjs\n");
+
+/***/ }),
+
+/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fbanners%2Froute&page=%2Fapi%2Fbanners%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fbanners%2Froute.ts&appDir=%2Fhome%2Fpixie%2Fidea%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fpixie%2Fidea&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fbanners%2Froute&page=%2Fapi%2Fbanners%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fbanners%2Froute.ts&appDir=%2Fhome%2Fpixie%2Fidea%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fpixie%2Fidea&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D! ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   patchFetch: () => (/* binding */ patchFetch),\n/* harmony export */   routeModule: () => (/* binding */ routeModule),\n/* harmony export */   serverHooks: () => (/* binding */ serverHooks),\n/* harmony export */   workAsyncStorage: () => (/* binding */ workAsyncStorage),\n/* harmony export */   workUnitAsyncStorage: () => (/* binding */ workUnitAsyncStorage)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_route_modules_app_route_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/route-modules/app-route/module.compiled */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-route/module.compiled.js\");\n/* harmony import */ var next_dist_server_route_modules_app_route_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_route_modules_app_route_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/route-kind */ \"(rsc)/./node_modules/next/dist/server/route-kind.js\");\n/* harmony import */ var next_dist_server_lib_patch_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/server/lib/patch-fetch */ \"(rsc)/./node_modules/next/dist/server/lib/patch-fetch.js\");\n/* harmony import */ var next_dist_server_lib_patch_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_lib_patch_fetch__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _home_pixie_idea_app_api_banners_route_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/api/banners/route.ts */ \"(rsc)/./app/api/banners/route.ts\");\n\n\n\n\n// We inject the nextConfigOutput here so that we can use them in the route\n// module.\nconst nextConfigOutput = \"standalone\"\nconst routeModule = new next_dist_server_route_modules_app_route_module_compiled__WEBPACK_IMPORTED_MODULE_0__.AppRouteRouteModule({\n    definition: {\n        kind: next_dist_server_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.APP_ROUTE,\n        page: \"/api/banners/route\",\n        pathname: \"/api/banners\",\n        filename: \"route\",\n        bundlePath: \"app/api/banners/route\"\n    },\n    resolvedPagePath: \"/home/pixie/idea/app/api/banners/route.ts\",\n    nextConfigOutput,\n    userland: _home_pixie_idea_app_api_banners_route_ts__WEBPACK_IMPORTED_MODULE_3__\n});\n// Pull out the exports that we need to expose from the module. This should\n// be eliminated when we've moved the other routes to the new format. These\n// are used to hook into the route.\nconst { workAsyncStorage, workUnitAsyncStorage, serverHooks } = routeModule;\nfunction patchFetch() {\n    return (0,next_dist_server_lib_patch_fetch__WEBPACK_IMPORTED_MODULE_2__.patchFetch)({\n        workAsyncStorage,\n        workUnitAsyncStorage\n    });\n}\n\n\n//# sourceMappingURL=app-route.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWFwcC1sb2FkZXIvaW5kZXguanM/bmFtZT1hcHAlMkZhcGklMkZiYW5uZXJzJTJGcm91dGUmcGFnZT0lMkZhcGklMkZiYW5uZXJzJTJGcm91dGUmYXBwUGF0aHM9JnBhZ2VQYXRoPXByaXZhdGUtbmV4dC1hcHAtZGlyJTJGYXBpJTJGYmFubmVycyUyRnJvdXRlLnRzJmFwcERpcj0lMkZob21lJTJGcGl4aWUlMkZpZGVhJTJGYXBwJnBhZ2VFeHRlbnNpb25zPXRzeCZwYWdlRXh0ZW5zaW9ucz10cyZwYWdlRXh0ZW5zaW9ucz1qc3gmcGFnZUV4dGVuc2lvbnM9anMmcm9vdERpcj0lMkZob21lJTJGcGl4aWUlMkZpZGVhJmlzRGV2PXRydWUmdHNjb25maWdQYXRoPXRzY29uZmlnLmpzb24mYmFzZVBhdGg9JmFzc2V0UHJlZml4PSZuZXh0Q29uZmlnT3V0cHV0PXN0YW5kYWxvbmUmcHJlZmVycmVkUmVnaW9uPSZtaWRkbGV3YXJlQ29uZmlnPWUzMCUzRCEiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBK0Y7QUFDdkM7QUFDcUI7QUFDUDtBQUN0RTtBQUNBO0FBQ0E7QUFDQSx3QkFBd0IseUdBQW1CO0FBQzNDO0FBQ0EsY0FBYyxrRUFBUztBQUN2QjtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBO0FBQ0EsWUFBWTtBQUNaLENBQUM7QUFDRDtBQUNBO0FBQ0E7QUFDQSxRQUFRLHNEQUFzRDtBQUM5RDtBQUNBLFdBQVcsNEVBQVc7QUFDdEI7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUMwRjs7QUFFMUYiLCJzb3VyY2VzIjpbIiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBcHBSb3V0ZVJvdXRlTW9kdWxlIH0gZnJvbSBcIm5leHQvZGlzdC9zZXJ2ZXIvcm91dGUtbW9kdWxlcy9hcHAtcm91dGUvbW9kdWxlLmNvbXBpbGVkXCI7XG5pbXBvcnQgeyBSb3V0ZUtpbmQgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9yb3V0ZS1raW5kXCI7XG5pbXBvcnQgeyBwYXRjaEZldGNoIGFzIF9wYXRjaEZldGNoIH0gZnJvbSBcIm5leHQvZGlzdC9zZXJ2ZXIvbGliL3BhdGNoLWZldGNoXCI7XG5pbXBvcnQgKiBhcyB1c2VybGFuZCBmcm9tIFwiL2hvbWUvcGl4aWUvaWRlYS9hcHAvYXBpL2Jhbm5lcnMvcm91dGUudHNcIjtcbi8vIFdlIGluamVjdCB0aGUgbmV4dENvbmZpZ091dHB1dCBoZXJlIHNvIHRoYXQgd2UgY2FuIHVzZSB0aGVtIGluIHRoZSByb3V0ZVxuLy8gbW9kdWxlLlxuY29uc3QgbmV4dENvbmZpZ091dHB1dCA9IFwic3RhbmRhbG9uZVwiXG5jb25zdCByb3V0ZU1vZHVsZSA9IG5ldyBBcHBSb3V0ZVJvdXRlTW9kdWxlKHtcbiAgICBkZWZpbml0aW9uOiB7XG4gICAgICAgIGtpbmQ6IFJvdXRlS2luZC5BUFBfUk9VVEUsXG4gICAgICAgIHBhZ2U6IFwiL2FwaS9iYW5uZXJzL3JvdXRlXCIsXG4gICAgICAgIHBhdGhuYW1lOiBcIi9hcGkvYmFubmVyc1wiLFxuICAgICAgICBmaWxlbmFtZTogXCJyb3V0ZVwiLFxuICAgICAgICBidW5kbGVQYXRoOiBcImFwcC9hcGkvYmFubmVycy9yb3V0ZVwiXG4gICAgfSxcbiAgICByZXNvbHZlZFBhZ2VQYXRoOiBcIi9ob21lL3BpeGllL2lkZWEvYXBwL2FwaS9iYW5uZXJzL3JvdXRlLnRzXCIsXG4gICAgbmV4dENvbmZpZ091dHB1dCxcbiAgICB1c2VybGFuZFxufSk7XG4vLyBQdWxsIG91dCB0aGUgZXhwb3J0cyB0aGF0IHdlIG5lZWQgdG8gZXhwb3NlIGZyb20gdGhlIG1vZHVsZS4gVGhpcyBzaG91bGRcbi8vIGJlIGVsaW1pbmF0ZWQgd2hlbiB3ZSd2ZSBtb3ZlZCB0aGUgb3RoZXIgcm91dGVzIHRvIHRoZSBuZXcgZm9ybWF0LiBUaGVzZVxuLy8gYXJlIHVzZWQgdG8gaG9vayBpbnRvIHRoZSByb3V0ZS5cbmNvbnN0IHsgd29ya0FzeW5jU3RvcmFnZSwgd29ya1VuaXRBc3luY1N0b3JhZ2UsIHNlcnZlckhvb2tzIH0gPSByb3V0ZU1vZHVsZTtcbmZ1bmN0aW9uIHBhdGNoRmV0Y2goKSB7XG4gICAgcmV0dXJuIF9wYXRjaEZldGNoKHtcbiAgICAgICAgd29ya0FzeW5jU3RvcmFnZSxcbiAgICAgICAgd29ya1VuaXRBc3luY1N0b3JhZ2VcbiAgICB9KTtcbn1cbmV4cG9ydCB7IHJvdXRlTW9kdWxlLCB3b3JrQXN5bmNTdG9yYWdlLCB3b3JrVW5pdEFzeW5jU3RvcmFnZSwgc2VydmVySG9va3MsIHBhdGNoRmV0Y2gsICB9O1xuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1hcHAtcm91dGUuanMubWFwIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fbanners%2Froute&page=%2Fapi%2Fbanners%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fbanners%2Froute.ts&appDir=%2Fhome%2Fpixie%2Fidea%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fpixie%2Fidea&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!\n");
+
+/***/ }),
+
+/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true!":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true! ***!
+  \******************************************************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true!":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?server=true! ***!
+  \******************************************************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "../app-render/after-task-async-storage.external":
+/*!***********************************************************************************!*\
+  !*** external "next/dist/server/app-render/after-task-async-storage.external.js" ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/after-task-async-storage.external.js");
+
+/***/ }),
+
+/***/ "../app-render/work-async-storage.external":
+/*!*****************************************************************************!*\
+  !*** external "next/dist/server/app-render/work-async-storage.external.js" ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/work-async-storage.external.js");
+
+/***/ }),
+
+/***/ "./work-unit-async-storage.external":
+/*!**********************************************************************************!*\
+  !*** external "next/dist/server/app-render/work-unit-async-storage.external.js" ***!
+  \**********************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/work-unit-async-storage.external.js");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
+/*!*************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js");
+
+/***/ }),
+
+/***/ "next/dist/compiled/next-server/app-route.runtime.dev.js":
+/*!**************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/app-route.runtime.dev.js" ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/compiled/next-server/app-route.runtime.dev.js");
+
+/***/ }),
+
+/***/ "os":
+/*!*********************!*\
+  !*** external "os" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("os");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "pg":
+/*!*********************!*\
+  !*** external "pg" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("pg");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/dotenv"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fbanners%2Froute&page=%2Fapi%2Fbanners%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Fbanners%2Froute.ts&appDir=%2Fhome%2Fpixie%2Fidea%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fpixie%2Fidea&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=standalone&preferredRegion=&middlewareConfig=e30%3D!")));
+module.exports = __webpack_exports__;
+
+})();

@@ -2,34 +2,25 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { UserIcon, ArrowRightOnRectangleIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
+import { useAuth } from '../contexts/AuthContext';
+import { 
+  UserIcon, 
+  ChevronDownIcon,
+  ArrowRightOnRectangleIcon,
+  UserCircleIcon,
+  ShoppingBagIcon,
+  CogIcon
+} from '@heroicons/react/24/outline';
 
 interface UserMenuProps {
   onItemClick?: () => void;
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({ onItemClick }) => {
+  const { isAuthenticated, user, logout, isLoading } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser] = useState<{ name?: string; email?: string } | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // Check authentication status
-  useEffect(() => {
-    // TODO: Replace with actual authentication check
-    const checkAuth = () => {
-      const token = localStorage.getItem('authToken');
-      if (token) {
-        setIsAuthenticated(true);
-        // TODO: Get user info from token or API
-        setUser({ name: 'Utilizador', email: 'user@example.com' });
-      }
-    };
-
-    checkAuth();
-  }, []);
-
-  // Handle click outside to close menu
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -43,35 +34,38 @@ const UserMenu: React.FC<UserMenuProps> = ({ onItemClick }) => {
     };
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('authToken');
-    setIsAuthenticated(false);
-    setUser(null);
+  const handleItemClick = () => {
     setIsOpen(false);
-    if (onItemClick) onItemClick();
+    onItemClick?.();
   };
 
-  const handleMenuItemClick = () => {
-    setIsOpen(false);
-    if (onItemClick) onItemClick();
+  const handleLogout = async () => {
+    try {
+      await logout();
+      handleItemClick();
+    } catch (error) {
+      console.error('[UserMenu] Logout error:', error);
+    }
   };
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center">
+        <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-orange-500"></div>
+      </div>
+    );
+  }
 
   if (!isAuthenticated) {
     return (
       <div className="flex items-center space-x-2">
-        <Link 
+        <Link
           href="/login"
-          onClick={onItemClick}
-          className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium transition-colors"
+          className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-colors"
+          onClick={handleItemClick}
         >
+          <UserIcon className="h-4 w-4 mr-2" />
           Entrar
-        </Link>
-        <Link 
-          href="/contacto"
-          onClick={onItemClick}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
-        >
-          Ser Parceiro
         </Link>
       </div>
     );
@@ -81,76 +75,83 @@ const UserMenu: React.FC<UserMenuProps> = ({ onItemClick }) => {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors p-1 rounded-md"
-        aria-label="Menu do utilizador"
+        className="flex items-center space-x-2 text-gray-700 dark:text-gray-200 hover:text-orange-600 dark:hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-md p-2 transition-colors"
         aria-expanded={isOpen}
         aria-haspopup="menu"
       >
-        <UserIcon className="h-6 w-6" />
-        {user?.name && (
-          <span className="hidden md:block text-sm font-medium">
-            {user.name}
-          </span>
-        )}
+        <UserCircleIcon className="h-6 w-6" />
+        <span className="hidden md:block text-sm font-medium">
+          {user?.first_name || user?.email?.split('@')[0] || 'Utilizador'}
+        </span>
+        <ChevronDownIcon className="h-4 w-4" />
       </button>
 
       {isOpen && (
-        <>
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 z-10" 
-            onClick={() => setIsOpen(false)}
-          ></div>
-          
-          {/* Menu */}
-          <div className="absolute right-0 top-full mt-2 z-20 min-w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
+        <div className="absolute right-0 mt-2 w-56 origin-top-right bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+          <div className="py-1" role="menu">
             {/* User Info */}
             <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700">
-              <div className="text-sm font-medium text-gray-900 dark:text-white">
-                {user?.name || 'Utilizador'}
-              </div>
-              {user?.email && (
-                <div className="text-sm text-gray-500 dark:text-gray-400 truncate">
-                  {user.email}
-                </div>
+              <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                {user?.first_name && user?.last_name 
+                  ? `${user.first_name} ${user.last_name}`
+                  : user?.email?.split('@')[0] || 'Utilizador'
+                }
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {user?.email}
+              </p>
+              {user?.role_name && (
+                <p className="text-xs text-orange-600 dark:text-orange-400 font-medium mt-1">
+                  {user.role_name === 'admin' ? 'Administrador' : 'Cliente'}
+                </p>
               )}
             </div>
 
             {/* Menu Items */}
-            <div className="py-1">
-              <Link
-                href="/perfil"
-                onClick={handleMenuItemClick}
-                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
-                role="menuitem"
-              >
-                <UserIcon className="h-4 w-4 mr-3" />
-                Perfil
-              </Link>
-              
-              <Link
-                href="/configuracoes"
-                onClick={handleMenuItemClick}
-                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
-                role="menuitem"
-              >
-                <Cog6ToothIcon className="h-4 w-4 mr-3" />
-                Configurações
-              </Link>
+            <Link
+              href="/minha-conta"
+              className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              role="menuitem"
+              onClick={handleItemClick}
+            >
+              <UserIcon className="h-4 w-4 mr-3" />
+              Minha Conta
+            </Link>
 
-              <hr className="my-1 border-gray-200 dark:border-gray-700" />
+            <Link
+              href="/minhas-encomendas"
+              className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              role="menuitem"
+              onClick={handleItemClick}
+            >
+              <ShoppingBagIcon className="h-4 w-4 mr-3" />
+              Minhas Encomendas
+            </Link>
 
-              <button
-                onClick={handleLogout}
-                className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20 transition-colors"
+            {user?.role_name === 'admin' && (
+              <Link
+                href="/admin"
+                className="flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
                 role="menuitem"
+                onClick={handleItemClick}
               >
-                <ArrowRightOnRectangleIcon className="h-4 w-4 mr-3" />
-                Sair
-              </button>
-            </div>
+                <CogIcon className="h-4 w-4 mr-3" />
+                Área de Administração
+              </Link>
+            )}
+
+            <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>
+
+            <button
+              onClick={handleLogout}
+              className="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              role="menuitem"
+            >
+              <ArrowRightOnRectangleIcon className="h-4 w-4 mr-3" />
+              Sair
+            </button>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

@@ -1,69 +1,59 @@
 import { NextRequest, NextResponse } from 'next/server';
 import pool from '../../../../db/index.cjs';
-
-// Helper function to check admin auth
-async function checkAdminAuth(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return null;
-  }
-  
-  // TODO: Implement JWT verification for admin
-  return null;
-}
+import { checkAdminAuth } from '../../../../src/utils/adminAuth';
 
 /**
- * GET /api/admin/orders - List all orders with pagination and filters
+ * GET /api/admin/orders - List all orders with pagination and filtering
  */
 export async function GET(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required' },
+        { error: 'Admin authentication required with manage_orders permission' },
         { status: 403 }
       );
     }
 
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
-    const limit = parseInt(searchParams.get('limit') || '20');
+    const limit = parseInt(searchParams.get('limit') || '10');
     const status = searchParams.get('status');
     const search = searchParams.get('search');
-    const sortBy = searchParams.get('sortBy') || 'order_date';
-    const sortOrder = searchParams.get('sortOrder') || 'DESC';
+    const offset = (page - 1) * limit;
 
-    let whereClause = '';
-    let queryParams: any[] = [];
+    // Build WHERE clause
+    let whereClause = 'WHERE 1=1';
+    const params: any[] = [];
     let paramIndex = 1;
 
-    // Build WHERE clause for filters
-    const whereConditions = [];
-
     if (status) {
-      whereConditions.push(`o.order_status = $${paramIndex}`);
-      queryParams.push(status);
+      whereClause += ` AND o.order_status = $${paramIndex}`;
+      params.push(status);
       paramIndex++;
     }
 
     if (search) {
-      whereConditions.push(`(
-        u.email ILIKE $${paramIndex} OR 
-        u.first_name ILIKE $${paramIndex} OR 
-        u.last_name ILIKE $${paramIndex} OR 
-        u.company_name ILIKE $${paramIndex} OR
-        o.order_id::text ILIKE $${paramIndex}
-      )`);
-      queryParams.push(`%${search}%`);
+      whereClause += ` AND (
+        LOWER(COALESCE(u.first_name, '')) LIKE LOWER($${paramIndex}) OR
+        LOWER(COALESCE(u.last_name, '')) LIKE LOWER($${paramIndex}) OR
+        LOWER(u.email) LIKE LOWER($${paramIndex}) OR
+        LOWER(COALESCE(u.company_name, '')) LIKE LOWER($${paramIndex}) OR
+        o.order_id::text LIKE $${paramIndex}
+      )`;
+      params.push(`%${search}%`);
       paramIndex++;
     }
 
-    if (whereConditions.length > 0) {
-      whereClause = 'WHERE ' + whereConditions.join(' AND ');
-    }
+    // Count total orders
+    const countQuery = `
+      SELECT COUNT(*)
+      FROM orders o
+      LEFT JOIN users u ON o.user_id = u.user_id
+      ${whereClause}
+    `;
 
-    // Main query
-    const offset = (page - 1) * limit;
+    // Get orders with pagination
     const ordersQuery = `
       SELECT 
         o.order_id,
@@ -71,45 +61,41 @@ export async function GET(request: NextRequest) {
         o.total_amount,
         o.order_date,
         o.updated_at,
-        u.user_id,
         u.email,
-        u.first_name,
-        u.last_name,
-        u.company_name,
+        COALESCE(u.first_name, '') as first_name,
+        COALESCE(u.last_name, '') as last_name,
+        COALESCE(u.company_name, '') as company_name,
         COUNT(oi.order_item_id) as item_count
       FROM orders o
       LEFT JOIN users u ON o.user_id = u.user_id
       LEFT JOIN order_items oi ON o.order_id = oi.order_id
       ${whereClause}
-      GROUP BY o.order_id, o.order_status, o.total_amount, o.order_date, o.updated_at,
-               u.user_id, u.email, u.first_name, u.last_name, u.company_name
-      ORDER BY ${sortBy} ${sortOrder}
+      GROUP BY o.order_id, o.order_status, o.total_amount, o.order_date, o.updated_at, 
+               u.email, u.first_name, u.last_name, u.company_name
+      ORDER BY o.order_date DESC
       LIMIT $${paramIndex} OFFSET $${paramIndex + 1}
     `;
 
-    queryParams.push(limit, offset);
+    params.push(limit, offset);
 
-    // Count query
-    const countQuery = `
-      SELECT COUNT(DISTINCT o.order_id) as total
-      FROM orders o
-      LEFT JOIN users u ON o.user_id = u.user_id
-      ${whereClause}
-    `;
-
-    const [ordersResult, countResult] = await Promise.all([
-      pool.query(ordersQuery, queryParams),
-      pool.query(countQuery, queryParams.slice(0, -2)) // Remove limit and offset for count
+    const [countResult, ordersResult] = await Promise.all([
+      pool.query(countQuery, params.slice(0, -2)), // Remove limit and offset for count
+      pool.query(ordersQuery, params)
     ]);
 
-    const totalOrders = parseInt(countResult.rows[0].total);
+    const totalOrders = parseInt(countResult.rows[0].count);
     const totalPages = Math.ceil(totalOrders / limit);
 
     return NextResponse.json({
       orders: ordersResult.rows,
-      totalPages,
-      currentPage: page,
-      totalOrders
+      pagination: {
+        page,
+        limit,
+        totalOrders,
+        totalPages,
+        hasNext: page < totalPages,
+        hasPrev: page > 1
+      }
     });
 
   } catch (error) {
@@ -126,10 +112,10 @@ export async function GET(request: NextRequest) {
  */
 export async function POST(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required' },
+        { error: 'Admin authentication required with manage_orders permission' },
         { status: 403 }
       );
     }
@@ -190,18 +176,64 @@ export async function POST(request: NextRequest) {
   }
 }
 
+/**
+ * PUT /api/admin/orders - Update order status (bulk update)
+ */
 export async function PUT(request: NextRequest) {
   try {
-    // TODO: Add admin authentication middleware
-    return NextResponse.json(
-      { error: 'Admin authentication required' },
-      { status: 401 }
-    );
+    const adminUser = await checkAdminAuth(request, ['manage_orders']);
+    if (!adminUser) {
+      return NextResponse.json(
+        { error: 'Admin authentication required with manage_orders permission' },
+        { status: 403 }
+      );
+    }
+
+    const body = await request.json();
+    const { orderIds, status } = body;
+
+    if (!orderIds || !Array.isArray(orderIds) || orderIds.length === 0) {
+      return NextResponse.json(
+        { error: 'Order IDs array is required' },
+        { status: 400 }
+      );
+    }
+
+    if (!status) {
+      return NextResponse.json(
+        { error: 'Status is required' },
+        { status: 400 }
+      );
+    }
+
+    const validStatuses = ['pending_approval', 'approved', 'shipped', 'delivered', 'cancelled', 'rejected'];
+    if (!validStatuses.includes(status)) {
+      return NextResponse.json(
+        { error: 'Invalid status' },
+        { status: 400 }
+      );
+    }
+
+    const placeholders = orderIds.map((_, index) => `$${index + 1}`).join(',');
+    const updateQuery = `
+      UPDATE orders 
+      SET order_status = $${orderIds.length + 1}, updated_at = NOW()
+      WHERE order_id::text IN (${placeholders})
+      RETURNING order_id, order_status
+    `;
+
+    const params = [...orderIds, status];
+    const result = await pool.query(updateQuery, params);
+
+    return NextResponse.json({
+      message: `Successfully updated ${result.rows.length} orders`,
+      updatedOrders: result.rows
+    });
 
   } catch (error) {
-    console.error('[API] Admin error updating order:', error);
+    console.error('[API] Admin error updating orders:', error);
     return NextResponse.json(
-      { error: 'Error updating order.' },
+      { error: 'Internal server error while updating orders.' },
       { status: 500 }
     );
   }

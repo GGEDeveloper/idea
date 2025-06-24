@@ -6,6 +6,7 @@ import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 import ProductCarousel from '../src/components/products/ProductCarousel';
 import BannerCarousel from './components/BannerCarousel';
+import AuthStatus from './components/AuthStatus';
 
 interface Product {
   ean: string;
@@ -83,6 +84,11 @@ const HomePage = () => {
         autoplayInterval={8000}
         fallbackContent={heroFallbackContent}
       />
+
+      {/* Authentication Status Section */}
+      <section className="container mx-auto px-6">
+        <AuthStatus />
+      </section>
 
       {/* B2B Value Proposition Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">

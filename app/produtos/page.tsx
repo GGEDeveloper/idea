@@ -283,8 +283,6 @@ export default function ProdutosPage() {
               onIsNewChange={handleIsNewChange}
               onFeaturedChange={handleFeaturedChange}
               onClearFilters={handleClearFilters}
-              isAuthenticated={false}
-              hasPermission={() => false}
             />
           </div>
 
@@ -386,8 +384,6 @@ export default function ProdutosPage() {
               <>
                 <ProductGrid 
                   products={products}
-                  isAuthenticated={false}
-                  hasPermission={() => false}
                 />
 
                 {/* Pagination */}

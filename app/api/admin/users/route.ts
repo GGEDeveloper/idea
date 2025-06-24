@@ -1,25 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import pool from '../../../../db/index.cjs';
-
-// Helper function to check admin auth
-async function checkAdminAuth(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return null;
-  }
-  
-  // TODO: Implement JWT verification for admin
-  // For now, return 403 to maintain security
-  return null;
-}
+import { checkAdminAuth } from '../../../../src/utils/adminAuth';
 
 /**
  * GET /api/admin/users - List all users with pagination and filters
  */
 export async function GET(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_users']);
+    if (!adminUser) {
       return NextResponse.json(
         { error: 'Admin authentication required' },
         { status: 403 }
@@ -60,6 +49,7 @@ export async function GET(request: NextRequest) {
         u.last_name,
         u.company_name,
         r.role_name,
+        u.is_active,
         u.created_at,
         u.updated_at
       FROM users u
@@ -108,8 +98,8 @@ export async function GET(request: NextRequest) {
  */
 export async function POST(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_users']);
+    if (!adminUser) {
       return NextResponse.json(
         { error: 'Admin authentication required' },
         { status: 403 }
@@ -140,13 +130,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Hash password (TODO: implement proper hashing)
-    const hashedPassword = password; // Placeholder
+    // Import password hashing
+    const { hashPassword } = await import('../../../../src/utils/passwordUtils');
+    const hashedPassword = await hashPassword(password);
 
     // Insert new user
     const newUserQuery = `
-      INSERT INTO users (email, first_name, last_name, company_name, role_id, password_hash)
-      VALUES ($1, $2, $3, $4, $5, $6)
+      INSERT INTO users (email, first_name, last_name, company_name, role_id, password_hash, is_active)
+      VALUES ($1, $2, $3, $4, $5, $6, $7)
       RETURNING user_id, email, first_name, last_name, company_name, created_at
     `;
 
@@ -156,7 +147,8 @@ export async function POST(request: NextRequest) {
       lastName,
       companyName,
       roleId || null,
-      hashedPassword
+      hashedPassword,
+      true
     ]);
 
     return NextResponse.json(result.rows[0], { status: 201 });

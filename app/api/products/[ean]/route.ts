@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { verifyToken } from '../../../../src/utils/jwtUtils';
 
 export async function GET(
   request: NextRequest,
@@ -6,6 +7,39 @@ export async function GET(
 ) {
   try {
     const { ean } = await params;
+
+    // Check if user is authenticated
+    const token = request.cookies.get('idea_session_token')?.value;
+    let isAuthenticated = false;
+    let userPermissions: string[] = [];
+
+    if (token) {
+      try {
+        const decodedToken = verifyToken(token);
+        if (decodedToken) {
+          isAuthenticated = true;
+          // Get user permissions
+          const pool = await import('../../../../db/index.cjs');
+          const userQuery = `
+            SELECT u.user_id, u.email, p.permission_name
+            FROM users u
+            LEFT JOIN roles r ON u.role_id = r.role_id
+            LEFT JOIN role_permissions rp ON r.role_id = rp.role_id
+            LEFT JOIN permissions p ON rp.permission_id = p.permission_id
+            WHERE u.email = $1
+          `;
+          const userResult = await pool.default.query(userQuery, [decodedToken.email]);
+          if (userResult.rows.length > 0) {
+            userPermissions = userResult.rows.map(row => row.permission_name).filter(Boolean);
+          }
+        }
+      } catch (error) {
+        console.error('[API] Error verifying token:', error);
+        // Continue as unauthenticated user
+      }
+    }
+
+    const canViewPrices = isAuthenticated && userPermissions.includes('view_price');
 
     // Import database dependencies
     const productQueries = await import('../../../../src/db/product-queries.cjs');
@@ -20,14 +54,28 @@ export async function GET(
       );
     }
 
-    // Sanitize product for guest users (since no auth yet)
-    const sanitizedProduct: any = { ...product };
-    // Remove sensitive fields for non-authenticated users
-    delete sanitizedProduct.price;
-    delete sanitizedProduct.product_price;
-    sanitizedProduct.priceStatus = 'unauthenticated';
+    // Handle product data based on authentication and permissions
+    const processedProduct: any = { ...product };
+    
+    if (canViewPrices) {
+      // User is authenticated and has view_price permission
+      processedProduct.priceStatus = 'authenticated';
+      // Keep price and product_price fields as they are
+    } else {
+      // User is not authenticated or doesn't have permission
+      delete processedProduct.price;
+      delete processedProduct.product_price;
+      processedProduct.priceStatus = isAuthenticated ? 'no_permission' : 'unauthenticated';
+    }
 
-    return NextResponse.json(sanitizedProduct);
+    // Add user info for debugging
+    processedProduct.userInfo = {
+      isAuthenticated,
+      canViewPrices,
+      permissions: userPermissions
+    };
+
+    return NextResponse.json(processedProduct);
 
   } catch (error) {
     console.error(`[API] Error fetching product with EAN:`, error);

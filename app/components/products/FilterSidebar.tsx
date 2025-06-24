@@ -17,6 +17,7 @@ import {
   AdjustmentsHorizontalIcon
 } from '@heroicons/react/24/outline';
 import CategoryTree from './CategoryTree';
+import { useAuth } from '../../contexts/AuthContext';
 
 // Types
 interface Category {
@@ -61,8 +62,6 @@ interface FilterSidebarProps {
   onFeaturedChange: () => void;
   onAttributeChange?: (attribute: string, value: string) => void;
   onClearFilters: () => void;
-  isAuthenticated?: boolean;
-  hasPermission?: (permission: string) => boolean;
 }
 
 // Componente de Checkbox Premium
@@ -378,9 +377,8 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   onIsNewChange,
   onFeaturedChange,
   onClearFilters,
-  isAuthenticated = false,
-  hasPermission = () => false
 }) => {
+  const { isAuthenticated, hasPermission } = useAuth();
   const [isMobile, setIsMobile] = useState(false);
   const [brandSearch, setBrandSearch] = useState('');
 

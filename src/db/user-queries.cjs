@@ -330,6 +330,7 @@ async function updateUser(userId, userData) {
 module.exports = {
   findUserByEmailForAuth,
   findUserByIdForSession,
+  findUserByIdWithPermissions: findUserByIdForSession, // Alias for API compatibility
   searchUsers,
   getUsers,
   countUsers,

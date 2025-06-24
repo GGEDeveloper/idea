@@ -21,15 +21,9 @@ interface Product {
 
 interface ProductGridProps {
   products: Product[];
-  isAuthenticated?: boolean;
-  hasPermission?: (permission: string) => boolean;
 }
 
-const ProductGrid: React.FC<ProductGridProps> = ({ 
-  products, 
-  isAuthenticated = false, 
-  hasPermission = () => false 
-}) => (
+const ProductGrid: React.FC<ProductGridProps> = ({ products }) => (
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
     {products.map((product) => {
       const uniqueKey = product.ean || `product-${Math.random().toString(36).substr(2, 9)}`;
@@ -37,8 +31,6 @@ const ProductGrid: React.FC<ProductGridProps> = ({
         <ProductCard
           key={uniqueKey}
           product={product}
-          isAuthenticated={isAuthenticated}
-          hasPermission={hasPermission}
         />
       );
     })}
