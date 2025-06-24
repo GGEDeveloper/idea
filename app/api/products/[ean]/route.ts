@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { ean: string } }
+  { params }: { params: Promise<{ ean: string }> }
 ) {
   try {
-    const { ean } = params;
+    const { ean } = await params;
 
     // Import database dependencies
     const productQueries = await import('../../../../src/db/product-queries.cjs');
@@ -30,7 +30,7 @@ export async function GET(
     return NextResponse.json(sanitizedProduct);
 
   } catch (error) {
-    console.error(`[API] Error fetching product with EAN ${params?.ean}:`, error);
+    console.error(`[API] Error fetching product with EAN:`, error);
     return NextResponse.json(
       { message: 'Internal server error while fetching product.' },
       { status: 500 }
@@ -40,9 +40,11 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { ean: string } }
+  { params }: { params: Promise<{ ean: string }> }
 ) {
   try {
+    const { ean } = await params;
+    
     // TODO: Add admin authentication check
     return NextResponse.json(
       { error: 'Authentication required' },
@@ -50,7 +52,7 @@ export async function PUT(
     );
 
   } catch (error) {
-    console.error(`[API] Error updating product with EAN ${params?.ean}:`, error);
+    console.error(`[API] Error updating product with EAN ${ean}:`, error);
     return NextResponse.json(
       { error: 'Error updating product.' },
       { status: 500 }
@@ -60,9 +62,11 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { ean: string } }
+  { params }: { params: Promise<{ ean: string }> }
 ) {
   try {
+    const { ean } = await params;
+    
     // TODO: Add admin authentication check
     return NextResponse.json(
       { error: 'Authentication required' },
@@ -70,7 +74,7 @@ export async function DELETE(
     );
 
   } catch (error) {
-    console.error(`[API] Error deleting product with EAN ${params?.ean}:`, error);
+    console.error(`[API] Error deleting product with EAN ${ean}:`, error);
     return NextResponse.json(
       { error: 'Error deleting product.' },
       { status: 500 }

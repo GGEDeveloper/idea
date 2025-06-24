@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { StarIcon } from '@heroicons/react/20/solid';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
@@ -21,14 +21,14 @@ const ProductCard = ({ product }) => {
   // Obter URL da imagem principal
   const mainImage =
     Array.isArray(product.images) && product.images.length > 0
-      ? product.images.find(img => img.is_main)?.url ||
+      ? product.images.find(img => img.is_primary)?.url ||
         product.images[0]?.url ||
         '/placeholder-product.jpg'
       : product.image_url || '/placeholder-product.jpg';
 
   return (
     <Link
-      to={`/produtos/${product.ean}`}
+      href={`/produtos/${product.ean}`}
       className="product-card group flex h-full flex-col overflow-hidden rounded-lg hover-lift"
       aria-label={product.name || t('Produto sem nome')}
       data-testid={`product-card-${product.ean}`}
