@@ -603,7 +603,14 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 - `app/contexts/CartContext.tsx` - Registro de callback e sincronização
 - `app/api/cart/route.ts` - Suporte para limpeza completa do carrinho
 - `app/admin/layout.tsx` - Logout usando sistema de autenticação principal
+- `src/components/products/ProductCarousel.jsx` - **NOVO**: Correção de preços visíveis sem autenticação
 - `docs/LOGOUT_CART_FIX_IMPLEMENTATION.md` - Documentação completa da correção
+
+#### **Correção Adicional: Preços na Home Page**
+- ✅ **CRÍTICO**: ProductCarousel mostrava preços sem verificar autenticação/permissões
+- ✅ **INTEGRAÇÃO**: Adicionado useAuth hook ao carousel de produtos em destaque
+- ✅ **CONSISTÊNCIA**: Lógica de preços agora igual em toda a aplicação
+- ✅ **SEGURANÇA**: Utilizadores não autenticados vêem "Preços para Parceiros"
 
 ---
 

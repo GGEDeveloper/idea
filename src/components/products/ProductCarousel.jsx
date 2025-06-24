@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronLeftIcon, ChevronRightIcon, PlayIcon, PauseIcon } from '@heroicons/react/24/outline';
+import { useAuth } from '../../contexts/AuthContext';
 
 const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,6 +9,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState(0);
   const autoplayRef = useRef(null);
+  const { isAuthenticated, hasPermission } = useAuth();
 
   // Auto-play functionality
   useEffect(() => {
@@ -196,21 +198,46 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                     
                     {/* Price */}
                     <div className="flex justify-between items-center">
-                      {product.priceStatus === 'unauthenticated' ? (
-                        <div className="flex flex-col">
-                          <span className="text-sm font-medium text-blue-600">
-                            <i className="fas fa-lock mr-1"></i>
-                            Preços para Parceiros
-                          </span>
-                          <span className="text-xs text-gray-500">
-                            Entre para ver preços
-                          </span>
-                        </div>
-                      ) : (
-                        <span className="text-lg font-bold text-blue-600">
-                          {product.price ? `€${parseFloat(product.price).toFixed(2)}` : 'Consulte preço'}
-                        </span>
-                      )}
+                      {(() => {
+                        // Check authentication and permissions
+                        if (!isAuthenticated) {
+                          return (
+                            <div className="flex flex-col">
+                              <span className="text-sm font-medium text-blue-600">
+                                <i className="fas fa-lock mr-1"></i>
+                                Preços para Parceiros
+                              </span>
+                              <span className="text-xs text-gray-500">
+                                Entre para ver preços
+                              </span>
+                            </div>
+                          );
+                        }
+                        
+                        // User is authenticated, check permissions
+                        const canViewPrice = hasPermission('view_price');
+                        const priceExists = product.price != null && product.price !== '' && !isNaN(parseFloat(product.price));
+                        
+                        if (canViewPrice && priceExists) {
+                          return (
+                            <span className="text-lg font-bold text-blue-600">
+                              €{parseFloat(product.price).toFixed(2)}
+                            </span>
+                          );
+                        } else if (canViewPrice && !priceExists) {
+                          return (
+                            <span className="text-sm font-medium text-gray-500">
+                              Preço indisponível
+                            </span>
+                          );
+                        } else {
+                          return (
+                            <span className="text-sm font-medium text-gray-500">
+                              Preço sob consulta
+                            </span>
+                          );
+                        }
+                      })()}
                       
                       <div className="text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
                         <i className="fas fa-arrow-right"></i>

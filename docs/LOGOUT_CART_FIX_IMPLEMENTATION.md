@@ -202,6 +202,47 @@ const handleLogout = async () => {
 - **Build:** Compilação sem warnings ou erros
 - **Performance:** Impacto mínimo no tempo de carregamento (<100ms adicional)
 
+---
+
+## 🔧 **CORREÇÃO ADICIONAL: Preços Visíveis na Home Page**
+
+### **Problema Identificado (27/01/2025)**
+- ProductCarousel na página inicial mostrava preços sem verificar autenticação
+- Dependia apenas do campo `priceStatus` que nem sempre era definido corretamente
+- Não usava o sistema de permissões do frontend (`view_price`)
+
+### **Correção Implementada**
+**Arquivo:** `src/components/products/ProductCarousel.jsx`
+```javascript
+import { useAuth } from '../../contexts/AuthContext';
+
+const { isAuthenticated, hasPermission } = useAuth();
+
+// Lógica corrigida de preços
+{(() => {
+  if (!isAuthenticated) {
+    return "Preços para Parceiros - Entre para ver preços";
+  }
+  
+  const canViewPrice = hasPermission('view_price');
+  const priceExists = product.price != null && !isNaN(parseFloat(product.price));
+  
+  if (canViewPrice && priceExists) {
+    return `€${parseFloat(product.price).toFixed(2)}`;
+  } else if (canViewPrice && !priceExists) {
+    return "Preço indisponível";
+  } else {
+    return "Preço sob consulta";
+  }
+})()}
+```
+
+### **Resultado**
+- ✅ Utilizadores não autenticados: Vêem "Preços para Parceiros"
+- ✅ Utilizadores autenticados sem permissão: Vêem "Preço sob consulta"
+- ✅ Utilizadores autenticados com permissão: Vêem preços reais
+- ✅ Consistência total com resto da aplicação
+
 **Desenvolvido por:** AI Assistant  
 **Validado em:** Next.js 15.3.4, Node.js 18+, PostgreSQL 15+  
 **Status do Build:** ✅ Sucesso (101kB first load JS) 
