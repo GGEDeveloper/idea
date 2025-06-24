@@ -23,6 +23,8 @@ interface CartContextType {
   clearCart: () => void;
   getCartTotal: () => number;
   getTotalItems: () => number;
+  isInitialized: boolean;
+  isLoading: boolean;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -44,87 +46,173 @@ interface CartProviderProps {
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isInitialized, setIsInitialized] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Inicializa o carrinho do localStorage apenas no cliente
   useEffect(() => {
+    console.log('[CartContext] Inicializando carrinho...');
+    setIsLoading(true);
+    
     if (typeof window !== 'undefined') {
-      const localData = localStorage.getItem('cartItems');
-      if (localData) {
-        try {
-          const parsedData = JSON.parse(localData);
-          // Garante que o que foi parseado é um array, caso contrário retorna array vazio
-          setCartItems(Array.isArray(parsedData) ? parsedData : []);
-        } catch (error) {
-          console.error("Erro ao ler 'cartItems' do localStorage:", error);
-          localStorage.removeItem('cartItems'); // Limpa dados corrompidos
+      try {
+        const localData = localStorage.getItem('cartItems');
+        
+        if (localData && localData !== 'undefined' && localData !== 'null') {
+          try {
+            const parsedData = JSON.parse(localData);
+            
+            // Garantir que é um array válido
+            if (Array.isArray(parsedData)) {
+              // Validar que todos os itens têm as propriedades necessárias
+              const validItems = parsedData.filter(item => 
+                item && 
+                typeof item === 'object' && 
+                item.id && 
+                item.name && 
+                typeof item.price === 'number' && 
+                typeof item.quantity === 'number'
+              );
+              
+              console.log(`[CartContext] ${validItems.length} itens válidos carregados do localStorage`);
+              setCartItems(validItems);
+              
+              if (validItems.length !== parsedData.length) {
+                console.warn('[CartContext] Alguns itens inválidos foram filtrados');
+                // Salvar apenas os dados válidos
+                localStorage.setItem('cartItems', JSON.stringify(validItems));
+              }
+            } else {
+              console.warn('[CartContext] Dados não são um array, resetando carrinho');
+              localStorage.removeItem('cartItems');
+              setCartItems([]);
+            }
+          } catch (error) {
+            console.error("[CartContext] Erro ao fazer parse dos dados do localStorage:", error);
+            localStorage.removeItem('cartItems'); // Limpa dados corrompidos
+            setCartItems([]);
+          }
+        } else {
+          console.log('[CartContext] Carrinho vazio inicializado');
           setCartItems([]);
         }
+      } catch (error) {
+        console.error('[CartContext] Erro geral na inicialização:', error);
+        setCartItems([]);
       }
+      
       setIsInitialized(true);
+      setIsLoading(false);
+      console.log('[CartContext] Inicialização completa');
     }
   }, []);
 
-  // Salva o carrinho no localStorage sempre que ele mudar (apenas no cliente)
+  // Salva o carrinho no localStorage sempre que ele mudar (apenas no cliente e após inicialização)
   useEffect(() => {
-    if (isInitialized && typeof window !== 'undefined') {
-      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    if (isInitialized && !isLoading && typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      } catch (error) {
+        console.error('[CartContext] Erro ao salvar no localStorage:', error);
+      }
     }
-  }, [cartItems, isInitialized]);
+  }, [cartItems, isInitialized, isLoading]);
 
   const addToCart = (product: Omit<CartItem, 'quantity'>, quantity: number = 1) => {
+    if (!isInitialized) {
+      console.warn('[CartContext] Tentativa de adicionar ao carrinho antes da inicialização');
+      return;
+    }
+    
+    // Validar dados do produto
+    if (!product.id || !product.name || typeof product.price !== 'number') {
+      console.error('[CartContext] Dados do produto inválidos:', product);
+      return;
+    }
+    
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
       if (existingItem) {
         // Se o item já existe, atualiza a quantidade
-        return prevItems.map(item =>
+        const updatedItems = prevItems.map(item =>
           item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item
         );
+        console.log(`[CartContext] ${product.name} quantidade atualizada para ${existingItem.quantity + quantity}`);
+        return updatedItems;
       } else {
         // Se o item não existe, adiciona ao carrinho
-        return [...prevItems, { ...product, quantity }];
+        const newItem = { ...product, quantity };
+        const newItems = [...prevItems, newItem];
+        console.log(`[CartContext] ${product.name} adicionado ao carrinho`);
+        return newItems;
       }
     });
-    
-    // Mostra notificação (pode usar toast se disponível)
-    if (typeof window !== 'undefined') {
-      console.log(`${product.name} (x${quantity}) adicionado ao carrinho!`);
-    }
   };
 
   const removeFromCart = (productId: string) => {
-    const itemToRemove = cartItems.find(item => item.id === productId);
-    setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+    if (!isInitialized) {
+      console.warn('[CartContext] Tentativa de remover do carrinho antes da inicialização');
+      return;
+    }
     
-    if (itemToRemove && typeof window !== 'undefined') {
-      console.log(`${itemToRemove.name} removido do carrinho.`);
+    const itemToRemove = cartItems.find(item => item.id === productId);
+    setCartItems(prevItems => {
+      const newItems = prevItems.filter(item => item.id !== productId);
+      return newItems;
+    });
+    
+    if (itemToRemove) {
+      console.log(`[CartContext] ${itemToRemove.name} removido do carrinho`);
     }
   };
 
   const updateQuantity = (productId: string, newQuantity: number) => {
+    if (!isInitialized) {
+      console.warn('[CartContext] Tentativa de atualizar quantidade antes da inicialização');
+      return;
+    }
+    
     if (newQuantity <= 0) {
       removeFromCart(productId);
     } else {
-      setCartItems(prevItems =>
-        prevItems.map(item =>
+      setCartItems(prevItems => {
+        const newItems = prevItems.map(item =>
           item.id === productId ? { ...item, quantity: newQuantity } : item
-        )
-      );
+        );
+        return newItems;
+      });
     }
   };
 
   const clearCart = () => {
-    setCartItems([]);
-    if (typeof window !== 'undefined') {
-      console.log('Carrinho esvaziado!');
+    if (!isInitialized) {
+      console.warn('[CartContext] Tentativa de limpar carrinho antes da inicialização');
+      return;
     }
+    
+    console.log('[CartContext] Carrinho limpo');
+    setCartItems([]);
   };
 
   const getCartTotal = (): number => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    if (!isInitialized) return 0;
+    const total = cartItems.reduce((total, item) => {
+      if (typeof item.price === 'number' && typeof item.quantity === 'number') {
+        return total + (item.price * item.quantity);
+      }
+      return total;
+    }, 0);
+    return total;
   };
   
   const getTotalItems = (): number => {
-    return cartItems.reduce((total, item) => total + item.quantity, 0);
+    if (!isInitialized) return 0;
+    const total = cartItems.reduce((total, item) => {
+      if (typeof item.quantity === 'number') {
+        return total + item.quantity;
+      }
+      return total;
+    }, 0);
+    return total;
   };
 
   const value: CartContextType = {
@@ -136,6 +224,8 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     clearCart,
     getCartTotal,
     getTotalItems,
+    isInitialized,
+    isLoading,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

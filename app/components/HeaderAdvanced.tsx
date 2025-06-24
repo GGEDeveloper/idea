@@ -24,8 +24,8 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
   const [darkMode, setDarkMode] = useState(false);
   
   // Get cart data from context
-  const { cartItems, getTotalItems, getCartTotal, removeFromCart, updateQuantity } = useCart();
-  const totalItems = getTotalItems();
+  const { cartItems, getTotalItems, getCartTotal, removeFromCart, updateQuantity, isInitialized, isLoading } = useCart();
+  const totalItems = isInitialized && !isLoading ? getTotalItems() : 0;
 
   // Refs for header elements
   const headerRef = useRef<HTMLElement>(null);

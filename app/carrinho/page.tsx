@@ -8,11 +8,8 @@ import { TrashIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 
 export default function CarrinhoPage() {
   const router = useRouter();
-  const { cartItems, removeFromCart, updateQuantity, clearCart, getCartTotal, getTotalItems } = useCart();
+  const { cartItems, removeFromCart, updateQuantity, clearCart, getCartTotal, getTotalItems, isInitialized, isLoading } = useCart();
   
-  const totalItems = getTotalItems();
-  const totalAmount = getCartTotal();
-
   const handleQuantityChange = (productId: string, newQuantity: number) => {
     if (newQuantity < 1) {
       removeFromCart(productId);
@@ -27,6 +24,28 @@ export default function CarrinhoPage() {
     router.push('/login');
   };
 
+  // Loading state - mostrar enquanto está inicializando
+  if (isLoading || !isInitialized) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
+            Carrinho de Compras
+          </h1>
+          <div className="text-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600 dark:text-gray-400">Carregando carrinho...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Calcular totais após garantir que está inicializado
+  const totalItems = getTotalItems();
+  const totalAmount = getCartTotal();
+  
+  // Estado de carrinho vazio
   if (cartItems.length === 0) {
     return (
       <div className="container mx-auto px-4 py-8">
@@ -71,22 +90,34 @@ export default function CarrinhoPage() {
 
           {/* Information Section */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <i className="fas fa-shipping-fast text-2xl text-blue-600 dark:text-blue-400 mb-3"></i>
-              <h3 className="font-medium text-gray-800 dark:text-white mb-2">Envio Rápido</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Entrega em 24-48h para parceiros</p>
+            <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-shipping-fast text-xl text-blue-600 dark:text-blue-400"></i>
+              </div>
+              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Envio Rápido</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Entrega em todo o território nacional
+              </p>
             </div>
             
-            <div className="text-center p-6 bg-green-50 dark:bg-green-900/20 rounded-lg">
-              <i className="fas fa-shield-alt text-2xl text-green-600 dark:text-green-400 mb-3"></i>
-              <h3 className="font-medium text-gray-800 dark:text-white mb-2">Garantia</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Produtos com garantia oficial</p>
+            <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-shield-alt text-xl text-green-600 dark:text-green-400"></i>
+              </div>
+              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Compra Segura</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Pagamentos 100% seguros e protegidos
+              </p>
             </div>
             
-            <div className="text-center p-6 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
-              <i className="fas fa-headset text-2xl text-yellow-600 dark:text-yellow-400 mb-3"></i>
-              <h3 className="font-medium text-gray-800 dark:text-white mb-2">Suporte</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Apoio técnico especializado</p>
+            <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+              <div className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-tools text-xl text-yellow-600 dark:text-yellow-400"></i>
+              </div>
+              <h3 className="font-semibold text-gray-800 dark:text-white mb-2">Qualidade Premium</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Ferramentas profissionais de alta qualidade
+              </p>
             </div>
           </div>
         </div>
@@ -222,73 +253,77 @@ export default function CarrinhoPage() {
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
                 Resumo do Pedido
               </h3>
-              
+
               <div className="space-y-4 mb-6">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">Subtotal ({totalItems} {totalItems === 1 ? 'item' : 'itens'}):</span>
-                  <span className="text-gray-900 dark:text-white font-medium">€{totalAmount.toFixed(2)}</span>
+                <div className="flex justify-between text-gray-600 dark:text-gray-400">
+                  <span>Subtotal ({totalItems} {totalItems === 1 ? 'item' : 'itens'})</span>
+                  <span>€{totalAmount.toFixed(2)}</span>
                 </div>
                 
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">Portes de envio:</span>
-                  <span className="text-green-600 dark:text-green-400 font-medium">Grátis</span>
+                <div className="flex justify-between text-gray-600 dark:text-gray-400">
+                  <span>Envio</span>
+                  <span className="text-green-600 dark:text-green-400">Gratuito</span>
                 </div>
                 
                 <div className="border-t border-gray-200 dark:border-gray-600 pt-4">
-                  <div className="flex justify-between">
-                    <span className="text-lg font-semibold text-gray-900 dark:text-white">Total:</span>
-                    <span className="text-xl font-bold text-gray-900 dark:text-white">€{totalAmount.toFixed(2)}</span>
+                  <div className="flex justify-between text-lg font-semibold text-gray-800 dark:text-white">
+                    <span>Total</span>
+                    <span>€{totalAmount.toFixed(2)}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-3">
-                <button
-                  onClick={handleCheckout}
-                  className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center justify-center space-x-2"
-                >
-                  <ShoppingBagIcon className="h-5 w-5" />
-                  <span>Finalizar Compra</span>
-                </button>
-                
-                <Link
+              <button
+                onClick={handleCheckout}
+                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg"
+              >
+                <ShoppingBagIcon className="h-5 w-5 inline mr-2" />
+                Finalizar Compra
+              </button>
+
+              <div className="mt-4 text-center">
+                <Link 
                   href="/produtos"
-                  className="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors font-medium text-center block"
+                  className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm transition-colors"
                 >
-                  Continuar a Comprar
+                  ← Continuar a Comprar
                 </Link>
               </div>
 
-              {/* Security Info */}
-              <div className="mt-6 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                <div className="flex items-start space-x-3">
-                  <i className="fas fa-shield-alt text-green-600 dark:text-green-400 mt-1"></i>
-                  <div>
-                    <h4 className="text-sm font-medium text-green-800 dark:text-green-200">
-                      Compra Segura
-                    </h4>
-                    <p className="text-xs text-green-700 dark:text-green-300 mt-1">
-                      Os seus dados estão protegidos e a transação é 100% segura.
-                    </p>
-                  </div>
+              {/* Security Information */}
+              <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                  <i className="fas fa-shield-alt text-green-500 mr-2"></i>
+                  Compra 100% segura e protegida
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Continue Shopping Section */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Precisa de mais alguma coisa?
-          </p>
-          <Link
-            href="/produtos"
-            className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-          >
-            <i className="fas fa-arrow-left"></i>
-            <span>Voltar aos Produtos</span>
-          </Link>
+        {/* Additional Information */}
+        <div className="mt-12 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
+            Informações Importantes
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-600 dark:text-gray-400">
+            <div>
+              <h4 className="font-medium text-gray-800 dark:text-white mb-2">Entrega</h4>
+              <ul className="space-y-1">
+                <li>• Entrega gratuita em encomendas superiores a €50</li>
+                <li>• Prazo de entrega: 3-5 dias úteis</li>
+                <li>• Entrega em todo o território nacional</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium text-gray-800 dark:text-white mb-2">Garantias</h4>
+              <ul className="space-y-1">
+                <li>• Garantia de 2 anos em todas as ferramentas</li>
+                <li>• Política de devolução de 30 dias</li>
+                <li>• Suporte técnico especializado</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
