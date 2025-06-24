@@ -30,7 +30,22 @@ interface Product {
 export default function ProductDetailPage() {
   const params = useParams();
   const ean = params?.ean as string;
-  const { isAuthenticated, hasPermission } = useAuth();
+  
+  // Extra safe auth hook usage with try-catch
+  let authContext;
+  let isAuthenticated = false;
+  let hasPermission = (permission: string): boolean => false;
+  
+  try {
+    authContext = useAuth();
+    isAuthenticated = authContext?.isAuthenticated || false;
+    hasPermission = authContext?.hasPermission || ((permission: string): boolean => false);
+  } catch (error) {
+    console.error('[ProductDetail] Error using auth context:', error);
+    // Use fallback values if AuthContext fails
+    isAuthenticated = false;
+    hasPermission = (permission: string): boolean => false;
+  }
   
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -52,7 +67,6 @@ export default function ProductDetailPage() {
         }
 
         const data = await response.json();
-        console.log('[ProductDetail] Product data received:', data);
         setProduct(data);
         setError(null);
       } catch (err) {
@@ -64,7 +78,7 @@ export default function ProductDetailPage() {
     };
 
     fetchProduct();
-  }, [ean, isAuthenticated]); // Refetch when auth status changes
+  }, [ean]); // Removed isAuthenticated dependency to prevent unnecessary re-fetches
 
   if (loading) {
     return (
@@ -158,7 +172,9 @@ export default function ProductDetailPage() {
       return;
     }
     
-    if (!hasPermission('view_price')) {
+    // Safe permission check
+    const canViewPrice = typeof hasPermission === 'function' ? hasPermission('view_price') : false;
+    if (!canViewPrice) {
       alert('Sem permissão para adicionar produtos ao carrinho.');
       return;
     }
@@ -190,7 +206,7 @@ export default function ProductDetailPage() {
                 <li className="text-gray-400">/</li>
                 <li>
                   <Link 
-                    href={`/produtos?category=${primaryCategory.id}`} 
+                    href={`/produtos?category=${primaryCategory.id || primaryCategory.categoryid}`} 
                     className="hover:text-blue-600 transition-colors"
                   >
                     {primaryCategory.name}
@@ -208,26 +224,77 @@ export default function ProductDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Product Images */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <ProductImageGallery images={(product.images || []) as any} />
+            {(() => {
+              try {
+                return <ProductImageGallery images={(product.images || []) as any} />;
+              } catch (error) {
+                console.error('[ProductDetail] Error rendering ProductImageGallery:', error);
+                return (
+                  <div className="h-96 flex items-center justify-center bg-gray-100">
+                    <p className="text-gray-500">Erro ao carregar galeria de imagens</p>
+                  </div>
+                );
+              }
+            })()}
           </div>
 
           {/* Product Information */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <ProductInfo 
-              product={product as any}
-              addToCart={handleAddToCart}
-              isAuthenticated={isAuthenticated}
-              hasPermission={hasPermission}
-            />
+            {(() => {
+              try {
+                return (
+                  <ProductInfo 
+                    product={product as any}
+                    addToCart={handleAddToCart}
+                    isAuthenticated={isAuthenticated}
+                    hasPermission={(permission: string) => {
+                      // Safe permission check with fallback
+                      if (typeof hasPermission === 'function') {
+                        try {
+                          return hasPermission(permission);
+                        } catch (error) {
+                          console.error('Error checking permission:', permission, error);
+                          return false;
+                        }
+                      }
+                      return false;
+                    }}
+                  />
+                );
+              } catch (error) {
+                console.error('[ProductDetail] Error rendering ProductInfo:', error);
+                return (
+                  <div className="p-8">
+                    <h1 className="text-2xl font-bold mb-4">{product.name}</h1>
+                    <p className="text-gray-600 mb-4">EAN: {product.ean}</p>
+                    <p className="text-gray-500">Erro ao carregar informações do produto</p>
+                  </div>
+                );
+              }
+            })()}
           </div>
         </div>
 
         {/* Product Details Tabs */}
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <ProductTabs 
-            description={product.longdescription || product.shortdescription || ''}
-            attributes={product.attributes || []}
-          />
+          {(() => {
+            try {
+              return (
+                <ProductTabs 
+                  description={product.longdescription || product.shortdescription || ''}
+                  attributes={product.attributes || []}
+                />
+              );
+            } catch (error) {
+              console.error('[ProductDetail] Error rendering ProductTabs:', error);
+              return (
+                <div className="p-8">
+                  <h2 className="text-xl font-bold mb-4">Detalhes do Produto</h2>
+                  <p className="text-gray-500">Erro ao carregar detalhes do produto</p>
+                </div>
+              );
+            }
+          })()}
         </div>
 
         {/* Related Products Section */}
@@ -244,7 +311,7 @@ export default function ProductDetailPage() {
             
             <div className="text-center">
               <Link 
-                href={`/produtos?category=${primaryCategory.id}`}
+                href={`/produtos?category=${primaryCategory.id || primaryCategory.categoryid}`}
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
                 <i className="fas fa-th-large mr-2"></i>
