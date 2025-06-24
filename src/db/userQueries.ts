@@ -35,6 +35,16 @@ export interface UserForAuth {
   permissions: string[];
 }
 
+export interface UserWithPermissions {
+  user_id: string;
+  email: string;
+  first_name?: string;
+  last_name?: string;
+  company_name?: string;
+  role_name: string;
+  permissions: string[];
+}
+
 /**
  * Create a new user
  */
@@ -64,7 +74,7 @@ export async function createUser(userData: CreateUserData): Promise<User> {
     RETURNING 
       user_id,
       email,
-      CONCAT(first_name, ' ', COALESCE(last_name, '')) as name,
+      TRIM(CONCAT(COALESCE(first_name, ''), ' ', COALESCE(last_name, ''))) as name,
       company_name as company,
       phone,
       is_active,
@@ -114,8 +124,12 @@ export async function findUserByEmailForAuth(email: string): Promise<UserForAuth
       u.user_id,
       u.email,
       u.password_hash,
-      CONCAT(u.first_name, ' ', COALESCE(u.last_name, '')) as name,
-      r.role_name,
+      CASE 
+        WHEN u.first_name IS NOT NULL OR u.last_name IS NOT NULL 
+        THEN TRIM(CONCAT(COALESCE(u.first_name, ''), ' ', COALESCE(u.last_name, '')))
+        ELSE COALESCE(u.email, 'User')
+      END as name,
+      COALESCE(r.role_name, 'customer') as role_name,
       COALESCE(ARRAY_REMOVE(ARRAY_AGG(p.permission_name), NULL), '{}') as permissions
     FROM users u
     LEFT JOIN roles r ON u.role_id = r.role_id
@@ -142,13 +156,17 @@ export async function findUserById(userId: string): Promise<User | null> {
     SELECT 
       u.user_id,
       u.email,
-      CONCAT(u.first_name, ' ', COALESCE(u.last_name, '')) as name,
+      CASE 
+        WHEN u.first_name IS NOT NULL OR u.last_name IS NOT NULL 
+        THEN TRIM(CONCAT(COALESCE(u.first_name, ''), ' ', COALESCE(u.last_name, '')))
+        ELSE COALESCE(u.email, 'User')
+      END as name,
       u.company_name as company,
       u.phone,
       u.is_active,
       u.created_at,
       u.updated_at,
-      r.role_name
+      COALESCE(r.role_name, 'customer') as role_name
     FROM users u
     LEFT JOIN roles r ON u.role_id = r.role_id
     WHERE u.user_id = $1
@@ -162,3 +180,32 @@ export async function findUserById(userId: string): Promise<User | null> {
     throw error;
   }
 } 
+/**
+ * Find user by ID with permissions for profile
+ */
+export async function findUserByIdWithPermissions(userId: string): Promise<UserWithPermissions | null> {
+  const query = `
+    SELECT 
+      u.user_id,
+      u.email,
+      u.first_name,
+      u.last_name,
+      u.company_name,
+      COALESCE(r.role_name, 'customer') as role_name,
+      COALESCE(ARRAY_REMOVE(ARRAY_AGG(p.permission_name), NULL), '{}') as permissions
+    FROM users u
+    LEFT JOIN roles r ON u.role_id = r.role_id
+    LEFT JOIN role_permissions rp ON r.role_id = rp.role_id
+    LEFT JOIN permissions p ON rp.permission_id = p.permission_id
+    WHERE u.user_id = $1 AND u.is_active = true
+    GROUP BY u.user_id, u.email, u.first_name, u.last_name, u.company_name, r.role_name
+  `;
+  
+  try {
+    const result = await pool.query(query, [userId]);
+    return result.rows.length > 0 ? result.rows[0] : null;
+  } catch (error) {
+    console.error('[userQueries] Error finding user by ID with permissions:', error);
+    throw error;
+  }
+}
