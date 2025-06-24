@@ -54,8 +54,8 @@ export async function GET(request: NextRequest) {
       };
 
       // Merge with actual settings
-      const config = { ...defaultConfig };
-      configResult.rows.forEach(row => {
+      const config: any = { ...defaultConfig };
+      configResult.rows.forEach((row: any) => {
         let value = row.setting_value;
         switch (row.setting_type) {
           case 'number':

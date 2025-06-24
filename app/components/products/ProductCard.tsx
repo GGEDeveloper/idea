@@ -98,7 +98,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
               const actualPrice = product.product_price || product.price;
               const canViewPrice = hasPermission('view_price');
-              const priceExists = actualPrice != null && actualPrice !== '' && !isNaN(parseFloat(String(actualPrice)));
+              const priceExists = actualPrice != null && String(actualPrice) !== '' && !isNaN(parseFloat(String(actualPrice)));
 
               if (isAuthenticated) {
                 if (canViewPrice && priceExists) {
@@ -121,7 +121,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               
               const actualPrice = product.product_price || product.price;
               const canViewPrice = hasPermission('view_price');
-              const priceExists = actualPrice != null && actualPrice !== '' && !isNaN(parseFloat(String(actualPrice)));
+              const priceExists = actualPrice != null && String(actualPrice) !== '' && !isNaN(parseFloat(String(actualPrice)));
               
               if (!canViewPrice || !priceExists) {
                 console.warn('Não é possível adicionar ao carrinho: sem permissão de preço ou preço inexistente');

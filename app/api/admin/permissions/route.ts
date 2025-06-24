@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('[API] Admin error creating permission:', error);
-    if (error.code === '23505') { // Unique violation
+    if (error && typeof error === 'object' && 'code' in error && error.code === '23505') { // Unique violation
       return NextResponse.json(
         { error: 'Permission with this name already exists' },
         { status: 409 }

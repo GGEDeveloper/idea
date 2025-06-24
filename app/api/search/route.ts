@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { query } from '@/db';
+import pool from '../../../db/index.cjs';
 
 export async function GET(request: NextRequest) {
   try {
@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
     `;
 
     const searchTerm = `%${q}%`;
-    const results = await query(searchQuery, [searchTerm]);
+    const results = await pool.query(searchQuery, [searchTerm]);
 
     return NextResponse.json(results.rows, { status: 200 });
   } catch (error) {

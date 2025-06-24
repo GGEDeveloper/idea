@@ -50,8 +50,8 @@ export async function GET(request: NextRequest) {
     const result = await pool.query(settingsQuery);
     
     // Convert to key-value object
-    const settings = {};
-    result.rows.forEach(row => {
+    const settings: any = {};
+    result.rows.forEach((row: any) => {
       let value = row.setting_value;
       
       // Parse value based on type

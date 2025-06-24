@@ -364,7 +364,7 @@ const AdminDashboard = () => {
         </div>
 
         {/* Alerts */}
-        {stats?.inventory?.low_stock_products > 0 && (
+        {stats?.inventory?.low_stock_products && stats.inventory.low_stock_products > 0 && (
           <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 mb-8">
             <div className="flex">
               <div className="flex-shrink-0">

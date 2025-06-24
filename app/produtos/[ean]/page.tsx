@@ -27,7 +27,7 @@ interface Product {
 
 export default function ProductDetailPage() {
   const params = useParams();
-  const ean = params.ean as string;
+  const ean = params?.ean as string;
   
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);

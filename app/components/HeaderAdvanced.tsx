@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
-import { Bars3Icon, XMarkIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, ShoppingCartIcon, SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
 // Import real components
 import SearchBar from './SearchBar';
@@ -20,6 +20,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
   const router = useRouter();
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   
   // Get cart data from context
   const { getTotalItems } = useCart();
@@ -37,8 +38,6 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
       onMobileMenuToggle?.(false);
     }
   }, [pathname]);
-
-
 
   // Effect for mobile menu
   useEffect(() => {
@@ -102,6 +101,36 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
     };
   }, [isMobileMenuOpen]);
 
+  useEffect(() => {
+    // Check for saved dark mode preference or default to system preference
+    const savedDarkMode = localStorage.getItem('darkMode');
+    const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = savedDarkMode ? savedDarkMode === 'true' : systemDarkMode;
+    
+    setDarkMode(isDark);
+    
+    // Apply theme to document
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', String(newDarkMode));
+    
+    if (newDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
+
+  const closeMenu = () => setIsMobileMenuOpen(false);
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900" ref={headerRef}>
@@ -155,44 +184,44 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
             <Link 
               href="/produtos" 
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-                pathname.startsWith('/produtos') 
+                pathname && pathname.startsWith('/produtos') 
                   ? 'text-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-blue-300' 
                   : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
               }`}
-              aria-current={pathname.startsWith('/produtos') ? 'page' : undefined}
+              aria-current={pathname && pathname.startsWith('/produtos') ? 'page' : undefined}
             >
               Produtos
             </Link>
             <Link 
               href="/categorias" 
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-                pathname.startsWith('/categorias') 
+                pathname && pathname.startsWith('/categorias') 
                   ? 'text-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-blue-300' 
                   : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
               }`}
-              aria-current={pathname.startsWith('/categorias') ? 'page' : undefined}
+              aria-current={pathname && pathname.startsWith('/categorias') ? 'page' : undefined}
             >
               Categorias
             </Link>
             <Link 
               href="/sobre" 
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-                pathname.startsWith('/sobre') 
+                pathname && pathname.startsWith('/sobre') 
                   ? 'text-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-blue-300' 
                   : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
               }`}
-              aria-current={pathname.startsWith('/sobre') ? 'page' : undefined}
+              aria-current={pathname && pathname.startsWith('/sobre') ? 'page' : undefined}
             >
               Sobre Nós
             </Link>
             <Link 
               href="/contacto" 
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-                pathname.startsWith('/contacto') 
+                pathname && pathname.startsWith('/contacto') 
                   ? 'text-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-blue-300' 
                   : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
               }`}
-              aria-current={pathname.startsWith('/contacto') ? 'page' : undefined}
+              aria-current={pathname && pathname.startsWith('/contacto') ? 'page' : undefined}
             >
               Contacto
             </Link>
@@ -229,6 +258,19 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
                 )}
               </div>
             </Link>
+
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? (
+                <SunIcon className="h-5 w-5" />
+              ) : (
+                <MoonIcon className="h-5 w-5" />
+              )}
+            </button>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">

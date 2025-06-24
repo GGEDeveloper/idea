@@ -1,123 +1,110 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-800 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div>
-            <div className="flex items-center mb-4">
-              <img 
-                src="/logo_transparente_amarelo.png" 
-                alt="AliTools Logo" 
-                className="h-8 w-auto"
-              />
-              <span className="ml-2 text-xl font-bold">AliTools</span>
-            </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              A marca das marcas em ferramentas, bricolage, construção, jardim e proteção. 
-              Inovação, variedade e preços competitivos para revendedores exigentes.
-            </p>
-          </div>
+    <footer className="footer w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-4 mt-8">
+      <div className="container mx-auto px-4 text-center space-y-2">
+        <img 
+          src="/logo_transparente_amarelo.png" 
+          alt="ALITOOLS logotipo" 
+          className="mx-auto h-44 w-auto mb-4 drop-shadow-lg" 
+        />
+        <h2 className="text-lg font-bold text-orange-500 tracking-wide">ALITOOLS — A MARCA DAS MARCAS</h2>
+        
+        {/* Links institucionais */}
+        <nav aria-label="Links institucionais" className="flex flex-wrap justify-center gap-4 mb-2 text-sm">
+          <Link 
+            href="/" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Início
+          </Link>
+          <Link 
+            href="/sobre" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Sobre
+          </Link>
+          <Link 
+            href="/produtos" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Produtos
+          </Link>
+          <Link 
+            href="/contacto" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Contacto
+          </Link>
+          <Link 
+            href="/privacidade" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Privacidade
+          </Link>
+          <Link 
+            href="/termos" 
+            className="text-gray-600 hover:text-orange-500 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 rounded dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            Termos
+          </Link>
+        </nav>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Início
-                </Link>
-              </li>
-              <li>
-                <Link href="/produtos" className="text-gray-300 hover:text-white transition-colors">
-                  Produtos
-                </Link>
-              </li>
-              <li>
-                <Link href="/categorias" className="text-gray-300 hover:text-white transition-colors">
-                  Categorias
-                </Link>
-              </li>
-              <li>
-                <Link href="/sobre" className="text-gray-300 hover:text-white transition-colors">
-                  Sobre Nós
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Suporte</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/contacto" className="text-gray-300 hover:text-white transition-colors">
-                  Contacto
-                </Link>
-              </li>
-              <li>
-                <Link href="/ajuda" className="text-gray-300 hover:text-white transition-colors">
-                  Centro de Ajuda
-                </Link>
-              </li>
-              <li>
-                <Link href="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">
-                  Política de Privacidade
-                </Link>
-              </li>
-              <li>
-                <Link href="/termos" className="text-gray-300 hover:text-white transition-colors">
-                  Termos de Serviço
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contacto</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <i className="fas fa-envelope text-blue-400 mr-3"></i>
-                <span className="text-gray-300 text-sm">info@alitools.pt</span>
-              </div>
-              <div className="flex items-center">
-                <i className="fas fa-phone text-blue-400 mr-3"></i>
-                <span className="text-gray-300 text-sm">+351 123 456 789</span>
-              </div>
-              <div className="flex items-center">
-                <i className="fas fa-map-marker-alt text-blue-400 mr-3"></i>
-                <span className="text-gray-300 text-sm">Portugal</span>
-              </div>
-            </div>
-            
-            {/* Social Media */}
-            <div className="mt-6">
-              <h4 className="text-sm font-semibold mb-3">Siga-nos</h4>
-              <div className="flex space-x-3">
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <i className="fab fa-facebook text-xl"></i>
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <i className="fab fa-instagram text-xl"></i>
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  <i className="fab fa-linkedin text-xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Redes sociais */}
+        <div className="flex justify-center gap-6 mb-2" aria-label="Redes sociais">
+          <button 
+            aria-label="Facebook" 
+            className="text-xl text-gray-500 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-full transition-colors dark:text-gray-400 dark:hover:text-orange-400" 
+            tabIndex={0} 
+            type="button"
+          >
+            <FaFacebook />
+          </button>
+          <button 
+            aria-label="Instagram" 
+            className="text-xl text-gray-500 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-full transition-colors dark:text-gray-400 dark:hover:text-orange-400" 
+            tabIndex={0} 
+            type="button"
+          >
+            <FaInstagram />
+          </button>
+          <button 
+            aria-label="LinkedIn" 
+            className="text-xl text-gray-500 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-full transition-colors dark:text-gray-400 dark:hover:text-orange-400" 
+            tabIndex={0} 
+            type="button"
+          >
+            <FaLinkedin />
+          </button>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} AliTools. Todos os direitos reservados.
-          </p>
-        </div>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Centro Empresarial Cacém / Paço de Arcos - Pavilhão I; Estrada Nacional 249-3 KM 1.8 E, São Marcos, 2735-307 Cacém, Portugal
+        </p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          <a 
+            href="mailto:alitools@gmail.com" 
+            className="text-gray-600 hover:text-orange-500 underline transition-colors dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            alitools@gmail.com
+          </a> · <a 
+            href="tel:+351963965903" 
+            className="text-gray-600 hover:text-orange-500 underline transition-colors dark:text-gray-300 dark:hover:text-orange-400"
+          >
+            (+351) 96 396 59 03
+          </a>
+        </p>
+        <p className="text-xs text-gray-500 dark:text-gray-400">
+          Seg a Sex: 9:00 às 12:30 — 14:00 às 18:30
+        </p>
+        <p className="text-xs text-gray-500 mt-1 dark:text-gray-400">
+          &copy; {currentYear} ALITOOLS. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/produtos": {
+    "/carrinho": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/produtos",
-      "dataRoute": "/produtos.rsc",
+      "srcRoute": "/carrinho",
+      "dataRoute": "/carrinho.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,6 +73,78 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/minha-conta": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/minha-conta",
+      "dataRoute": "/minha-conta.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/categorias": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/categorias",
+      "dataRoute": "/categorias.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/minhas-encomendas": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/minhas-encomendas",
+      "dataRoute": "/minhas-encomendas.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -97,7 +169,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/carrinho": {
+    "/produtos": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,8 +182,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/carrinho",
-      "dataRoute": "/carrinho.rsc",
+      "srcRoute": "/produtos",
+      "dataRoute": "/produtos.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -145,7 +217,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/categorias": {
+    "/admin/orders": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -158,8 +230,80 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/categorias",
-      "dataRoute": "/categorias.rsc",
+      "srcRoute": "/admin/orders",
+      "dataRoute": "/admin/orders.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/admin": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin",
+      "dataRoute": "/admin.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/admin/users": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin/users",
+      "dataRoute": "/admin/users.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/admin/products": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin/products",
+      "dataRoute": "/admin/products.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -173,8 +317,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "ab7560d103b571590b08d0db689fdd00",
-    "previewModeSigningKey": "ed7a2eb18ea2a16e14325904e6bc71952744d71887e7f1cba7cbdf8477bd8152",
-    "previewModeEncryptionKey": "26c3309976610c164a4dc7c725268eb7fd47637f50b25b4cbaa25fade4755f91"
+    "previewModeId": "40122f7681d4da89e6cb81cc2602ccc3",
+    "previewModeSigningKey": "b0310fd6384b1ac89f0239bcc3876da73152f7c5d9acf17d82699aa525a804bb",
+    "previewModeEncryptionKey": "e981d238b41bf7bd62c3fe8ef720dbbfd945361d3022947b9eb6e45a35ef5483"
   }
 }

@@ -83,7 +83,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
           </div>
           <nav className="mt-5 px-2 space-y-1">
             {navigation.map((item) => {
-              const isActive = pathname === item.href || (item.href !== '/admin' && pathname.startsWith(item.href));
+              const isActive = pathname === item.href || (item.href !== '/admin' && pathname && pathname.startsWith(item.href));
               return (
                 <Link
                   key={item.name}
@@ -134,7 +134,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
               </div>
               <nav className="mt-5 flex-1 px-2 space-y-1">
                 {navigation.map((item) => {
-                  const isActive = pathname === item.href || (item.href !== '/admin' && pathname.startsWith(item.href));
+                  const isActive = pathname === item.href || (item.href !== '/admin' && pathname && pathname.startsWith(item.href));
                   return (
                     <Link
                       key={item.name}

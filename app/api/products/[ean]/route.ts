@@ -42,8 +42,10 @@ export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ ean: string }> }
 ) {
+  let ean = 'unknown';
   try {
-    const { ean } = await params;
+    const resolvedParams = await params;
+    ean = resolvedParams.ean;
     
     // TODO: Add admin authentication check
     return NextResponse.json(
@@ -64,8 +66,10 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ ean: string }> }
 ) {
+  let ean = 'unknown';
   try {
-    const { ean } = await params;
+    const resolvedParams = await params;
+    ean = resolvedParams.ean;
     
     // TODO: Add admin authentication check
     return NextResponse.json(

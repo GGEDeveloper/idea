@@ -26,6 +26,30 @@
   ],
   "dynamicRoutes": [
     {
+      "page": "/api/admin/orders/[orderId]",
+      "regex": "^/api/admin/orders/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPorderId": "nxtPorderId"
+      },
+      "namedRegex": "^/api/admin/orders/(?<nxtPorderId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/roles/[roleId]",
+      "regex": "^/api/admin/roles/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtProleId": "nxtProleId"
+      },
+      "namedRegex": "^/api/admin/roles/(?<nxtProleId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/users/[userId]",
+      "regex": "^/api/admin/users/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPuserId": "nxtPuserId"
+      },
+      "namedRegex": "^/api/admin/users/(?<nxtPuserId>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/api/products/[ean]",
       "regex": "^/api/products/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -56,6 +80,30 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/orders",
+      "regex": "^/admin/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/orders(?:/)?$"
+    },
+    {
+      "page": "/admin/products",
+      "regex": "^/admin/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/products(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
       "page": "/carrinho",
       "regex": "^/carrinho(?:/)?$",
       "routeKeys": {},
@@ -78,6 +126,18 @@
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/minha-conta",
+      "regex": "^/minha\\-conta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/minha\\-conta(?:/)?$"
+    },
+    {
+      "page": "/minhas-encomendas",
+      "regex": "^/minhas\\-encomendas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/minhas\\-encomendas(?:/)?$"
     },
     {
       "page": "/produtos",
