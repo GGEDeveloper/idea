@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import ProductGrid from '../components/products/ProductGrid';
 import FilterSidebar from '../components/products/FilterSidebar';
 
@@ -50,7 +51,9 @@ interface Filters {
   attributes: { [key: string]: string };
 }
 
-export default function ProdutosPage() {
+// Component that uses useSearchParams - wrapped in Suspense
+function ProductsPageContent() {
+  const searchParams = useSearchParams();
   const [products, setProducts] = useState<Product[]>([]);
   const [filterOptions, setFilterOptions] = useState<FilterOptions>({});
   const [loading, setLoading] = useState(true);
@@ -73,6 +76,25 @@ export default function ProdutosPage() {
     featured: false,
     attributes: {}
   });
+
+  // Initialize filters from URL parameters
+  useEffect(() => {
+    if (!searchParams) return;
+    
+    const categoryFromUrl = searchParams.get('category');
+    const searchFromUrl = searchParams.get('q');
+    
+    if (categoryFromUrl) {
+      setFilters(prev => ({
+        ...prev,
+        categories: [categoryFromUrl]
+      }));
+    }
+    
+    if (searchFromUrl) {
+      setSearchTerm(searchFromUrl);
+    }
+  }, [searchParams]);
 
   // Fetch filter options on component mount
   useEffect(() => {
@@ -435,5 +457,13 @@ export default function ProdutosPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ProdutosPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductsPageContent />
+    </Suspense>
   );
 } 

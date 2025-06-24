@@ -186,7 +186,7 @@ const HomePage = () => {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
               {categories.map((category) => {
                 const displayName = category.name;
                 const categoryLink = `/produtos?category=${encodeURIComponent(category.id)}`;
@@ -197,18 +197,18 @@ const HomePage = () => {
                       href={categoryLink}
                       className="block h-full group"
                     >
-                      <div className={`${getCategoryColor(displayName)} rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}>
-                        <div className="p-6 text-center flex-1 flex flex-col items-center justify-center">
-                          <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                            <i className={`${getCategoryIcon(displayName)} text-2xl text-white`}></i>
+                      <div className={`${getCategoryColor(displayName)} rounded-lg shadow-md overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-xl`}>
+                        <div className="p-3 text-center flex-1 flex flex-col items-center justify-center">
+                          <div className="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center mb-2">
+                            <i className={`${getCategoryIcon(displayName)} text-lg text-white`}></i>
                           </div>
-                          <h3 className="text-xl font-bold text-white mb-2">{displayName}</h3>
-                          <p className="text-sm text-white text-opacity-90 mb-3">
+                          <h3 className="text-sm font-bold text-white mb-1 line-clamp-2 leading-tight">{displayName}</h3>
+                          <p className="text-xs text-white text-opacity-80 mb-2">
                             {category.productCount || 0} {(category.productCount || 0) === 1 ? 'produto' : 'produtos'}
                           </p>
-                          <span className="inline-flex items-center text-white text-sm font-medium mt-auto">
-                            Ver produtos
-                            <span className="ml-2 text-xs opacity-70 group-hover:translate-x-1 transition-transform">→</span>
+                          <span className="inline-flex items-center text-white text-xs font-medium mt-auto opacity-80 group-hover:opacity-100">
+                            Ver
+                            <span className="ml-1 text-xs group-hover:translate-x-0.5 transition-transform">→</span>
                           </span>
                         </div>
                       </div>
