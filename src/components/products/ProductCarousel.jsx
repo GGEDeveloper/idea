@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronLeftIcon, ChevronRightIcon, PlayIcon, PauseIcon } from '@heroicons/react/24/outline';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../../app/contexts/AuthContext';
 
 const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -12,11 +12,30 @@ import {
   CogIcon
 } from '@heroicons/react/24/outline';
 
+// Client-only wrapper to prevent hydration issues
+const ClientOnly: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [hasMounted, setHasMounted] = useState(false);
+  
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  
+  if (!hasMounted) {
+    return (
+      <div className="flex items-center">
+        <div className="animate-pulse bg-gray-200 dark:bg-gray-700 h-8 w-20 rounded"></div>
+      </div>
+    );
+  }
+  
+  return <>{children}</>;
+};
+
 interface UserMenuProps {
   onItemClick?: () => void;
 }
 
-const UserMenu: React.FC<UserMenuProps> = ({ onItemClick }) => {
+const UserMenuContent: React.FC<UserMenuProps> = ({ onItemClick }) => {
   const { isAuthenticated, user, logout, isLoading } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -154,6 +173,14 @@ const UserMenu: React.FC<UserMenuProps> = ({ onItemClick }) => {
         </div>
       )}
     </div>
+  );
+};
+
+const UserMenu: React.FC<UserMenuProps> = (props) => {
+  return (
+    <ClientOnly>
+      <UserMenuContent {...props} />
+    </ClientOnly>
   );
 };
 

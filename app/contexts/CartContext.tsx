@@ -48,7 +48,25 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isInitialized, setIsInitialized] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const { registerCartClearCallback, isAuthenticated } = useAuth();
+  const [authHydrated, setAuthHydrated] = useState(false);
+  
+  // Safely access auth context
+  let registerCartClearCallback: any = undefined;
+  let isAuthenticated = false;
+  
+  try {
+    const authContext = useAuth();
+    registerCartClearCallback = authContext.registerCartClearCallback;
+    isAuthenticated = authContext.isAuthenticated;
+    
+    // Mark auth as hydrated once we can successfully use it
+    if (!authHydrated) {
+      setAuthHydrated(true);
+    }
+  } catch (error) {
+    // Auth context not ready yet, use defaults
+    console.log('[CartContext] AuthContext não disponível ainda, usando valores padrão');
+  }
 
   // Função para limpar completamente o carrinho
   const clearCartCompletely = () => {
@@ -89,18 +107,18 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
 
   // Registrar função de limpeza no AuthContext
   useEffect(() => {
-    if (registerCartClearCallback && isInitialized) {
+    if (authHydrated && registerCartClearCallback && isInitialized) {
       registerCartClearCallback(clearCartCompletely);
       console.log('[CartContext] Função de limpeza registrada no AuthContext');
     }
-  }, [registerCartClearCallback, isInitialized]);
+  }, [registerCartClearCallback, isInitialized, authHydrated]);
 
   // Sincronizar carrinho quando utilizador faz login
   useEffect(() => {
-    if (isAuthenticated && isInitialized && cartItems.length > 0) {
+    if (authHydrated && isAuthenticated && isInitialized && cartItems.length > 0) {
       syncCartWithServer();
     }
-  }, [isAuthenticated, isInitialized]);
+  }, [isAuthenticated, isInitialized, authHydrated]);
 
   // Inicializa o carrinho do localStorage apenas no cliente
   useEffect(() => {
