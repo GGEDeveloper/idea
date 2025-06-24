@@ -6,7 +6,7 @@ import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 import ProductCarousel from '../src/components/products/ProductCarousel';
 import BannerCarousel from './components/BannerCarousel';
-import AuthStatus from './components/AuthStatus';
+import { useAuth } from './contexts/AuthContext';
 
 interface Product {
   ean: string;
@@ -21,6 +21,7 @@ interface Product {
 
 const HomePage = () => {
   const { categories, loading: isLoadingCategories, error: errorCategories } = useCategories();
+  const { isAuthenticated, isLoading: authLoading } = useAuth();
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const [loadingProducts, setLoadingProducts] = useState(true);
   const [productsError, setProductsError] = useState<string | null>(null);
@@ -85,82 +86,79 @@ const HomePage = () => {
         fallbackContent={heroFallbackContent}
       />
 
-      {/* Authentication Status Section */}
-      <section className="container mx-auto px-6">
-        <AuthStatus />
-      </section>
+      {/* B2B Value Proposition Section - só aparece quando não há login */}
+      {!authLoading && !isAuthenticated && (
+        <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-white mb-4">
+                🏢 Plataforma B2B Exclusiva
+              </h2>
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Ferramentas profissionais com preços especiais e condições preferenciais para revendedores autorizados
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-euro-sign text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Preços Especiais</h3>
+                <p className="text-blue-100">
+                  Acesso a preços de grossista e condições preferenciais de pagamento
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-boxes text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Stock em Tempo Real</h3>
+                <p className="text-blue-100">
+                  Consulte disponibilidade em tempo real e reserve produtos
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i className="fas fa-headset text-2xl text-white"></i>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Suporte Dedicado</h3>
+                <p className="text-blue-100">
+                  Apoio técnico especializado e gestor de conta dedicado
+                </p>
+              </div>
+            </div>
 
-      {/* B2B Value Proposition Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              🏢 Plataforma B2B Exclusiva
-            </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Ferramentas profissionais com preços especiais e condições preferenciais para revendedores autorizados
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-euro-sign text-2xl text-white"></i>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Preços Especiais</h3>
-              <p className="text-blue-100">
-                Acesso a preços de grossista e condições preferenciais de pagamento
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-boxes text-2xl text-white"></i>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Stock em Tempo Real</h3>
-              <p className="text-blue-100">
-                Consulte disponibilidade em tempo real e reserve produtos
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-headset text-2xl text-white"></i>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Suporte Dedicado</h3>
-              <p className="text-blue-100">
-                Apoio técnico especializado e gestor de conta dedicado
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-white bg-opacity-10 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Como se tornar parceiro?
-              </h3>
-              <p className="text-blue-100 mb-6">
-                O processo é simples e rápido. Preencha o formulário de contacto com os dados da sua empresa 
-                e a nossa equipa entrará em contacto consigo num prazo de 24 horas.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link 
-                  href="/contacto" 
-                  className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
-                >
-                  <i className="fas fa-handshake mr-2"></i>
-                  Candidatar-me a Parceiro
-                </Link>
-                <Link 
-                  href="/login" 
-                  className="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors"
-                >
-                  <i className="fas fa-sign-in-alt mr-2"></i>
-                  Já sou Parceiro
-                </Link>
+              <div className="bg-white bg-opacity-10 rounded-lg p-8 max-w-2xl mx-auto">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  Como se tornar parceiro?
+                </h3>
+                <p className="text-blue-100 mb-6">
+                  O processo é simples e rápido. Preencha o formulário de contacto com os dados da sua empresa 
+                  e a nossa equipa entrará em contacto consigo num prazo de 24 horas.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link 
+                    href="/contacto" 
+                    className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                  >
+                    <i className="fas fa-handshake mr-2"></i>
+                    Candidatar-me a Parceiro
+                  </Link>
+                  <Link 
+                    href="/login" 
+                    className="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors"
+                  >
+                    <i className="fas fa-sign-in-alt mr-2"></i>
+                    Já sou Parceiro
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Categories Section */}
       <section className="bg-white py-12">
