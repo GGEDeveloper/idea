@@ -1,12 +1,55 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 
+interface Product {
+  ean: string;
+  name: string;
+  shortdescription?: string;
+  brand?: string;
+  product_price?: number;
+  priceStatus?: string;
+  images?: any[];
+  is_featured?: boolean;
+}
+
 const HomePage = () => {
   const { categories, loading: isLoadingCategories, error: errorCategories } = useCategories();
+  const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
+  const [loadingProducts, setLoadingProducts] = useState(true);
+  const [productsError, setProductsError] = useState<string | null>(null);
+
+  // Fetch featured products
+  useEffect(() => {
+    const fetchFeaturedProducts = async () => {
+      try {
+        const response = await fetch('/api/products?featured=true&limit=8');
+        if (response.ok) {
+          const data = await response.json();
+          setFeaturedProducts(data.products || []);
+        } else {
+          throw new Error('Failed to fetch featured products');
+        }
+      } catch (error) {
+        console.error('Error fetching featured products:', error);
+        setProductsError('Erro ao carregar produtos em destaque');
+      } finally {
+        setLoadingProducts(false);
+      }
+    };
+
+    fetchFeaturedProducts();
+  }, []);
+
+  const getProductImage = (product: Product) => {
+    if (product.images && product.images.length > 0) {
+      return product.images[0].url;
+    }
+    return '/placeholder-product.jpg';
+  };
 
   return (
     <div className="space-y-16 bg-gray-50 bg-gradient-to-b from-gray-50 to-gray-200">
@@ -22,10 +65,6 @@ const HomePage = () => {
         <h1 className="relative z-10 text-5xl md:text-7xl font-extrabold text-white text-center mb-2 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>A MARCA DAS MARCAS</h1>
         <p className="relative z-10 text-xl md:text-2xl text-gray-700 font-medium text-center max-w-2xl mb-6">Ferramentas, bricolage, construção, jardim e proteção com inovação, variedade e preços competitivos para revendedores exigentes.</p>
         
-        <div className="text-center py-8">
-          <p className="text-gray-600">A carregar produtos em destaque...</p>
-        </div>
-
         <Link 
           href="/produtos"
           className="relative z-10 inline-block px-8 py-4 mt-8 rounded-full bg-blue-600 text-white font-bold text-lg shadow-xl hover:bg-gray-800 hover:text-blue-600 transition-colors"
@@ -107,18 +146,105 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Novidades Section */}
+      {/* Featured Products Section */}
       <section className="bg-white py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Novidades</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Confira os produtos mais recentes adicionados ao nosso catálogo.</p>
+            <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Produtos em Destaque</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Confira os produtos mais populares e recomendados pelos nossos clientes.</p>
           </div>
           
-          <div className="text-center py-16">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
-            <p className="mt-4 text-blue-600 text-lg">Carregando novidades...</p>
-          </div>
+          {loadingProducts ? (
+            <div className="text-center py-16">
+              <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
+              <p className="mt-4 text-blue-600 text-lg">Carregando produtos em destaque...</p>
+            </div>
+          ) : productsError ? (
+            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+              <div className="text-3xl mb-3">⚠️</div>
+              <p className="text-lg font-medium">{productsError}</p>
+              <button 
+                onClick={() => window.location.reload()} 
+                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+              >
+                Tentar novamente
+              </button>
+            </div>
+          ) : featuredProducts.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {featuredProducts.map((product) => (
+                  <Link 
+                    key={product.ean} 
+                    href={`/produtos/${product.ean}`}
+                    className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
+                  >
+                    <div className="aspect-square relative overflow-hidden bg-gray-100">
+                      <img
+                        src={getProductImage(product)}
+                        alt={product.name}
+                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                        onError={(e) => {
+                          e.currentTarget.src = '/placeholder-product.jpg';
+                        }}
+                      />
+                      {product.brand && (
+                        <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded">
+                          {product.brand}
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2">
+                        {product.name}
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">
+                        {product.shortdescription || 'Produto de qualidade profissional'}
+                      </p>
+                      <div className="flex justify-between items-center">
+                        {product.priceStatus === 'unauthenticated' ? (
+                          <span className="text-sm font-medium text-gray-500">
+                            Faça login para ver preços
+                          </span>
+                        ) : (
+                          <span className="text-lg font-bold text-blue-600">
+                            Consulte preço
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mt-12">
+                <Link 
+                  href="/produtos" 
+                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+                >
+                  Ver todos os produtos
+                  <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-12">
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <i className="fas fa-tools text-3xl text-gray-400"></i>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Nenhum produto em destaque encontrado
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Os produtos em destaque aparecerão aqui quando estiverem disponíveis.
+              </p>
+              <Link 
+                href="/produtos" 
+                className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors"
+              >
+                Ver catálogo completo
+              </Link>
+            </div>
+          )}
         </div>
       </section>
     </div>
