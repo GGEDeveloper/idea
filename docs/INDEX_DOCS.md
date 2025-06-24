@@ -66,6 +66,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [CHECKOUT_SYSTEM_IMPLEMENTATION.md](./CHECKOUT_SYSTEM_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Documentação completa do sistema de checkout e e-commerce implementado
 - [LOGOUT_CART_FIX_IMPLEMENTATION.md](./LOGOUT_CART_FIX_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Correção crítica do sistema de logout e gestão de carrinho
 - [SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md](./SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Implementação do filtro simplificado de categorias para melhor UX
+- [ABOUT_PAGE_REBRANDING_IMPLEMENTATION.md](./ABOUT_PAGE_REBRANDING_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Reformulação completa da página "Sobre" com rebranding AliTools
 
 ## Logs e Registros
 - [LOG_ERROS_CONSOLIDADO.md](../LOG_ERROS_CONSOLIDADO.md): Log consolidado de erros e resoluções. **(Atualizado: 18/01/2025 - Incluída correção de filtros)**

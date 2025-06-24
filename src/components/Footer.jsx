@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer className="footer w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-4 mt-8">
       <div className="container mx-auto px-4 text-center space-y-2">
-        <img src="/logo_transparente_amarelo.png" alt="ALIMAMEDETOOLS logotipo" className="mx-auto h-44 w-auto mb-4 drop-shadow-lg" />
-        <h2 className="text-lg font-bold text-secondary tracking-wide">ALIMAMEDETOOLS — A MARCA DAS MARCAS</h2>
+        <img src="/logo_transparente_amarelo.png" alt="ALITOOLS logotipo" className="mx-auto h-44 w-auto mb-4 drop-shadow-lg" />
+        <h2 className="text-lg font-bold text-secondary tracking-wide">ALITOOLS — A MARCA DAS MARCAS</h2>
         {/* Links institucionais */}
         <nav aria-label="Links institucionais" className="flex flex-wrap justify-center gap-4 mb-2 text-sm">
           <Link to="/" className="footer-link focus:outline-none focus:ring-2 focus:ring-secondary rounded">Início</Link>
@@ -35,13 +35,13 @@ const Footer = () => {
           Centro Empresarial Cacém / Paço de Arcos - Pavilhão I; Estrada Nacional 249-3 KM 1.8 E, São Marcos, 2735-307 Cacém, Portugal
         </p>
         <p className="text-sm text-text-muted">
-          <a href="mailto:alimamedetools@gmail.com" className="footer-link underline">alimamedetools@gmail.com</a> · <a href="tel:+351963965903" className="footer-link underline">(+351) 96 396 59 03</a>
+          <a href="mailto:alitools@gmail.com" className="footer-link underline">alitools@gmail.com</a> · <a href="tel:+351963965903" className="footer-link underline">(+351) 96 396 59 03</a>
         </p>
         <p className="text-xs text-text-muted">
           Seg a Sex: 9:00 às 12:30 — 14:00 às 18:30
         </p>
         <p className="text-xs text-text-muted mt-1">
-          &copy; {currentYear} ALIMAMEDETOOLS. Todos os direitos reservados.
+          &copy; {currentYear} ALITOOLS. Todos os direitos reservados.
         </p>
       </div>
     </footer>

@@ -52,18 +52,56 @@ export default function SobrePage() {
               </div>
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  A <strong>AliTools</strong> é uma empresa portuguesa dedicada ao fornecimento de ferramentas 
-                  e equipamentos de alta qualidade para profissionais da construção, bricolage, jardinagem 
-                  e indústria em geral.
+                  A <strong>AliTools Lda</strong> está situada em Lisboa e detém a distribuição exclusiva 
+                  dos seus produtos e marcas, bem como a distribuição de várias marcas nacionais e 
+                  estrangeiras do mercado europeu, de forma a garantir o fornecimento completo dos 
+                  artigos da necessidade do cliente.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Com anos de experiência no mercado, estabelecemos parcerias sólidas com as principais 
-                  marcas mundiais, garantindo aos nossos clientes acesso aos melhores produtos com 
-                  preços competitivos e serviço de excelência.
+                  A empresa está vocacionada para o <strong>comércio por grosso</strong> dos seus produtos. 
+                  Nesse sentido, os seus clientes são distribuidores nacionais, distribuidores locais, 
+                  retalhistas e todo o comércio local de ferragens, ferramentas e drogarias.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  A nossa missão é ser o parceiro de confiança dos profissionais, fornecendo soluções 
-                  completas e inovadoras que contribuam para o sucesso dos seus projetos.
+                  Os clientes AliTools sabem que cada cliente é tratado de uma forma especial. 
+                  Isto não seria possível se não tivéssemos uma equipa forte e profissional, que abraça 
+                  os valores familiares da nossa empresa e que compreende que cada cliente é único.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nossa Missão */}
+      <section className="py-16 bg-white dark:bg-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+              Nossa Missão
+            </h2>
+            
+            <div className="space-y-8">
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8">
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                  A empresa pretende oferecer aos seus clientes uma <strong>solução global de fornecimento</strong> 
+                  com o intuito de ser o principal fornecedor. Esta posição permite apresentar uma 
+                  elevada qualidade de serviço, preços competitivos e desenvolver uma relação sólida.
+                </p>
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Através do nosso departamento comercial e de produção, fornecemos ferramentas de qualidade 
+                  com bons materiais a preços sempre muito competitivos. Especializamo-nos em ferramentas 
+                  para construção, ferramentas manuais, ferramentas para mecânica e eletricidade, 
+                  ferramentas para jardim e produtos de proteção e segurança.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-500 rounded-full mb-6">
+                  <StarIcon className="w-10 h-10 text-white" />
+                </div>
+                <p className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  "Seja qual for a sua necessidade, estamos no mercado para bem servir."
                 </p>
               </div>
             </div>
@@ -131,62 +169,86 @@ export default function SobrePage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Ferramentas Elétricas</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Berbequins, aparafusadoras, rebarbadoras, serras e equipamentos profissionais das melhores marcas.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BuildingOfficeIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Ferramentas para Construção</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Equipamentos profissionais para construção civil, obras públicas e acabamentos. 
+                Distribuição para empresas do setor.
               </p>
-              <Link href="/produtos?categories=ferramentas-eletricas" className="text-orange-500 hover:text-orange-600 font-medium">
+              <Link href="/produtos?categories=construcao" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
                 Ver produtos →
               </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Construção</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Equipamentos e ferramentas para construção civil, acabamentos e obras públicas.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TruckIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Ferramentas Manuais</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Ampla gama de ferramentas manuais de qualidade para distribuidores, 
+                retalhistas e comércio local de ferragens.
               </p>
-              <Link href="/produtos?categories=construcao" className="text-orange-500 hover:text-orange-600 font-medium">
+              <Link href="/produtos?categories=ferramentas-manuais" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
                 Ver produtos →
               </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Jardim</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Cortadores de relva, motosserras, equipamentos de jardinagem e manutenção de espaços verdes.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserGroupIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Mecânica e Eletricidade</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Ferramentas especializadas para mecânica e eletricidade, fornecimento 
+                para distribuidores nacionais e locais.
               </p>
-              <Link href="/produtos?categories=jardim" className="text-orange-500 hover:text-orange-600 font-medium">
+              <Link href="/produtos?categories=mecanica-eletricidade" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
                 Ver produtos →
               </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Equipamentos de Proteção</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                EPIs, capacetes, luvas, óculos de proteção e equipamentos de segurança laboral.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ShieldCheckIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Proteção e Segurança</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Produtos de proteção individual e segurança laboral para distribuição 
+                a empresas e comércio especializado.
               </p>
-              <Link href="/produtos?categories=protecao" className="text-orange-500 hover:text-orange-600 font-medium">
+              <Link href="/produtos?categories=protecao" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
                 Ver produtos →
               </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Compressores</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Compressores de ar, equipamentos pneumáticos e acessórios para uso profissional.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <StarIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Ferramentas para Jardim</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Equipamentos para jardinagem e manutenção de espaços verdes, 
+                distribuição para revendedores especializados.
               </p>
-              <Link href="/produtos?categories=compressores" className="text-orange-500 hover:text-orange-600 font-medium">
+              <Link href="/produtos?categories=jardim" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
                 Ver produtos →
               </Link>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Bricolage</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Ferramentas manuais, kits de bricolage, organizadores e soluções para uso doméstico.
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <UserGroupIcon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Distribuição Nacional</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Rede especializada de distribuição para ferragens, ferramentas e drogarias 
+                em todo o território nacional.
               </p>
-              <Link href="/produtos?categories=bricolage" className="text-orange-500 hover:text-orange-600 font-medium">
-                Ver produtos →
+              <Link href="/contacto" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
+                Tornar-se parceiro →
               </Link>
             </div>
           </div>

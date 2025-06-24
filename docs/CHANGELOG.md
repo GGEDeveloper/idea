@@ -662,4 +662,71 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 
 ---
 
-## [1.5.1] - 2025-01-27 🔧 CORREÇÃO CRÍTICA DE LOGOUT 
+## [1.5.3] - 2025-01-27 🏢 REFORMULAÇÃO PÁGINA "SOBRE" + REBRANDING COMPLETO
+
+### 🎯 **Reformulação Corporativa - Página "Sobre" AliTools**
+
+#### **Solicitação do Cliente: Rebranding e Conteúdo Empresarial**
+- ✅ **REBRANDING**: Mudança completa de "AlimamedeTools" para "AliTools"
+- ✅ **CONTEÚDO REAL**: Implementação de informações específicas da empresa
+- ✅ **FOCO B2B**: Linguagem adaptada para comércio por grosso e distribuição
+- ✅ **MISSÃO CORPORATIVA**: Nova seção dedicada à missão da empresa
+
+#### **Informações Empresariais Implementadas**
+- ✅ **ATIVIDADE**: "AliTools Lda está situada em Lisboa e detém distribuição exclusiva..."
+- ✅ **COMÉRCIO POR GROSSO**: Clientes são distribuidores, retalhistas, ferragens e drogarias
+- ✅ **MISSÃO**: "Solução global de fornecimento para ser o principal fornecedor..."
+- ✅ **ESPECIALIZAÇÃO**: Ferramentas para construção, manuais, mecânica, jardim, proteção
+
+#### **Nova Estrutura da Página "Sobre"**
+- ✅ **Seção "Quem Somos"** - Informações específicas sobre localização e atividade
+- ✅ **Nova Seção "Nossa Missão"** - Objetivos e especialização da empresa
+- ✅ **Áreas de Especialização** - Atualizadas com foco em distribuição B2B
+- ✅ **Valores Corporativos** - Atendimento personalizado e relação familiar
+
+### 🔄 **Rebranding Completo do Sistema**
+
+#### **Mudanças de Identidade Visual**
+- ✅ **Nome da Empresa**: ALIMAMEDETOOLS → ALITOOLS
+- ✅ **Email Corporativo**: alimamedetools@gmail.com → alitools@gmail.com
+- ✅ **Alt Text Imagens**: "ALIMAMEDETOOLS logotipo" → "ALITOOLS logotipo"
+- ✅ **Footer Text**: "ALIMAMEDETOOLS — A MARCA DAS MARCAS" → "ALITOOLS — A MARCA DAS MARCAS"
+- ✅ **Copyright**: "© 2025 ALIMAMEDETOOLS" → "© 2025 ALITOOLS"
+
+#### **Consistência em Todo o Sistema**
+- ✅ **Homepage** - Logo e referências atualizadas
+- ✅ **Banner Carousel** - Alt text atualizado
+- ✅ **Footer Components** - Tanto app/ quanto src/ atualizados
+- ✅ **Página Sobre** - Conteúdo completamente reformulado
+
+### 📁 **Arquivos Modificados**
+- `app/sobre/page.tsx` - **REFORMULAÇÃO COMPLETA**: Nova estrutura e conteúdo empresarial
+- `src/components/Footer.jsx` - **REBRANDING**: Nome, email e copyright atualizados
+- `app/page.tsx` - **REBRANDING**: Alt text da imagem atualizado
+- `app/components/BannerCarousel.tsx` - **REBRANDING**: Alt text atualizado
+- `docs/ABOUT_PAGE_REBRANDING_IMPLEMENTATION.md` - **NOVA documentação completa**
+
+#### **Conteúdo Corporativo Implementado**
+- 🏢 **Informação da Empresa**: Localização em Lisboa, distribuição exclusiva
+- 🎯 **Target B2B**: Distribuidores nacionais, locais, retalhistas, ferragens
+- 🤝 **Relacionamento**: "Cada cliente é tratado de forma especial"
+- 🔧 **Especialização**: 6 áreas técnicas claramente definidas
+- 📞 **Contactos**: Email e informações atualizadas
+
+#### **Melhorias de UX/UI**
+- ✅ **Design mantido** - Layout visual preservado com novo conteúdo
+- ✅ **Responsividade** - Funciona perfeitamente em todos os dispositivos
+- ✅ **Dark mode** - Suporte completo mantido
+- ✅ **Performance** - 4.36kB página sobre (otimizada)
+- ✅ **Acessibilidade** - ARIA labels e navegação por teclado mantidas
+
+### 🎯 **Resultado Final**
+- Página "Sobre" **completamente reformulada** com informações reais da empresa
+- **Rebranding consistente** em todo o sistema: AliTools em vez de AlimamedeTools
+- **Foco B2B claro** com linguagem adequada para parceiros comerciais
+- **Credibilidade empresarial** aumentada com detalhes específicos
+- **Identidade visual unificada** em todas as páginas e componentes
+
+---
+
+## [1.5.2] - 2025-01-27 📂 FILTRO SIMPLIFICADO DE CATEGORIAS 
