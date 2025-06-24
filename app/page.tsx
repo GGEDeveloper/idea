@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
+import ProductCarousel from '../src/components/products/ProductCarousel';
 
 interface Product {
   ean: string;
@@ -242,80 +243,42 @@ const HomePage = () => {
                 Tentar novamente
               </button>
             </div>
-          ) : featuredProducts.length > 0 ? (
-            <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {featuredProducts.map((product) => (
-                  <Link 
-                    key={product.ean} 
-                    href={`/produtos/${product.ean}`}
-                    className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
-                  >
-                    <div className="aspect-square relative overflow-hidden bg-gray-100">
-                      <img
-                        src={getProductImage(product)}
-                        alt={product.name}
-                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
-                        onError={(e) => {
-                          e.currentTarget.src = '/placeholder-product.jpg';
-                        }}
-                      />
-                      {product.brand && (
-                        <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 text-xs font-semibold rounded">
-                          {product.brand}
-                        </div>
-                      )}
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2">
-                        {product.name}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                        {product.shortdescription || 'Produto de qualidade profissional'}
-                      </p>
-                      <div className="flex justify-between items-center">
-                        {product.priceStatus === 'unauthenticated' ? (
-                          <span className="text-sm font-medium text-gray-500">
-                            Faça login para ver preços
-                          </span>
-                        ) : (
-                          <span className="text-lg font-bold text-blue-600">
-                            Consulte preço
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="text-center mt-12">
-                <Link 
-                  href="/produtos" 
-                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
-                >
-                  Ver todos os produtos
-                  <span className="ml-2">→</span>
-                </Link>
-              </div>
-            </>
           ) : (
-            <div className="text-center py-12">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
-                <i className="fas fa-tools text-3xl text-gray-400"></i>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Nenhum produto em destaque encontrado
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Os produtos em destaque aparecerão aqui quando estiverem disponíveis.
-              </p>
-              <Link 
-                href="/produtos" 
-                className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors"
-              >
-                Ver catálogo completo
-              </Link>
-            </div>
+            <>
+              {/* Carousel de produtos em destaque */}
+              {featuredProducts.length > 0 ? (
+                <Suspense fallback={
+                  <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600 mx-auto mb-4"></div>
+                    <p className="text-gray-600">Carregando carousel...</p>
+                  </div>
+                }>
+                  <ProductCarousel 
+                    products={featuredProducts}
+                    autoplay={true}
+                    autoplayInterval={6000} 
+                  />
+                </Suspense>
+              ) : (
+                <div className="text-center py-12">
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i className="fas fa-tools text-3xl text-gray-400"></i>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                    Nenhum produto em destaque encontrado
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    Os produtos em destaque aparecerão aqui quando estiverem disponíveis.
+                  </p>
+                  <Link 
+                    href="/produtos" 
+                    className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors"
+                  >
+                    Ver catálogo completo
+                  </Link>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>

@@ -366,13 +366,17 @@ export default function ProdutosPage() {
                           </div>
                         )}
                         {!hasStock(product) && (
-                          <div className="absolute top-2 right-2 px-2 py-1 text-xs font-semibold rounded"
-                               style={{ 
-                                 backgroundColor: 'var(--color-error)', 
-                                 color: 'var(--color-text-inverse)'
-                               }}>
-                            Esgotado
-                          </div>
+                          // Only show stock status to authenticated users with permission
+                          // For guests, we don't show stock information at all
+                          false && (
+                            <div className="absolute top-2 right-2 px-2 py-1 text-xs font-semibold rounded"
+                                 style={{ 
+                                   backgroundColor: 'var(--color-error)', 
+                                   color: 'var(--color-text-inverse)'
+                                 }}>
+                              Esgotado
+                            </div>
+                          )
                         )}
                         {product.is_featured && (
                           <div className="absolute bottom-2 left-2 px-2 py-1 text-xs font-semibold rounded"
