@@ -16,7 +16,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
-import CategoryTree from './CategoryTree';
+import SimpleCategoryFilter from '../../../app/components/products/SimpleCategoryFilter';
 
 // Componente de Checkbox Premium
 const PremiumCheckbox = ({ id, label, checked, onChange, disabled, ariaLabel, count, icon: Icon }) => (
@@ -431,12 +431,13 @@ const FilterSidebar = ({
 
         {/* Categorias */}
           <PremiumFilterSection 
-            title="Categorias" 
+            title="Categorias Principais" 
             icon={TagIcon}
-            description="Navegue por categoria de produtos"
+            description="Navegue pelas categorias principais de produtos"
+            badge="Simplificado"
           >
           {filterOptions.categories && filterOptions.categories.length > 0 ? (
-            <CategoryTree
+            <SimpleCategoryFilter
               categories={filterOptions.categories}
               selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
               onCategorySelect={onCategoryChange}

@@ -614,4 +614,52 @@ A área de administração está agora **100% completa e funcional**, incluindo 
 
 ---
 
-## [1.4.0] - 2025-01-25 🎯 ANÁLISE ESTRATÉGICA DE PROJETO 
+## [1.5.2] - 2025-01-27 📂 FILTRO SIMPLIFICADO DE CATEGORIAS
+
+### 🎯 **Melhoria de UX - Sistema de Filtros Simplificado**
+
+#### **Problema Resolvido: Filtro de categorias complexo demais**
+- ✅ **UX**: Simplificado filtro de categorias na página de produtos
+- ✅ **NAVEGAÇÃO**: Removida hierarquia complexa, foco nas categorias principais
+- ✅ **PERFORMANCE**: Componente mais leve sem lógica recursiva
+- ✅ **USABILIDADE**: Interface intuitiva para consulta rápida de produtos
+
+#### **Novo Componente: SimpleCategoryFilter**
+- ✅ **Criado**: `app/components/products/SimpleCategoryFilter.tsx`
+- ✅ **Funcionalidades**: Busca integrada, contador de produtos, design moderno
+- ✅ **Lógica**: Filtro apenas categorias principais (root) sem subcategorias
+- ✅ **Visual**: Checkboxes customizados, estados hover, feedback visual
+
+#### **Melhorias na Interface**
+- ✅ **FilterSidebar atualizado** - Usa novo componente SimpleCategoryFilter
+- ✅ **Título alterado** - "Categorias Principais" em vez de "Categorias"
+- ✅ **Badge visual** - Indicador "Simplificado" para clareza
+- ✅ **Busca integrada** - Campo de pesquisa para encontrar categorias
+
+### 📁 **Arquivos Modificados**
+- `app/components/products/SimpleCategoryFilter.tsx` - **NOVO**: Componente simplificado
+- `app/components/products/FilterSidebar.tsx` - Integração com novo componente
+- `src/components/products/FilterSidebar.jsx` - Atualização para compatibilidade
+- `docs/SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md` - **NOVO**: Documentação completa
+
+#### **Benefícios para o Utilizador**
+- 🔍 **Consulta mais fácil** - Categorias principais visíveis de imediato
+- ⚡ **Navegação rápida** - Sem necessidade de expandir/colapsar hierarquias
+- 📱 **Interface limpa** - Design simplificado e intuitivo
+- 📊 **Informação útil** - Contagem de produtos por categoria
+
+#### **Melhorias Técnicas**
+- ⚡ **Performance melhorada** - Componente linear em vez de recursivo
+- 🔧 **Manutenção simplificada** - Código mais limpo e fácil de manter
+- 📱 **Responsividade mantida** - Funciona bem em todos os dispositivos
+- ✅ **TypeScript completo** - Tipagem robusta implementada
+
+### 🎯 **Resultado Final**
+- Sistema de filtros de categorias **mais simples, rápido e intuitivo**
+- Foco nas categorias principais para **facilitar consulta de produtos**
+- **Redução da complexidade** visual sem perder funcionalidade
+- **Melhoria significativa** na experiência do utilizador
+
+---
+
+## [1.5.1] - 2025-01-27 🔧 CORREÇÃO CRÍTICA DE LOGOUT 
