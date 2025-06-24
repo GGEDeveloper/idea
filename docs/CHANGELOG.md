@@ -1,5 +1,42 @@
 # Changelog - AliTools Project
 
+## [1.5.8] - 2025-01-27 - Melhorias Filtros e Ordenação
+
+### 🔧 **Correções Dropdown "Ordenar por"**
+- **DROPDOWN-001**: Corrigida visibilidade do texto das opções com cores adequadas
+- **DROPDOWN-002**: Adicionada largura mínima (min-w-[140px]) para melhor layout
+- **DROPDOWN-003**: Implementadas opções de ordenação por preço para utilizadores autenticados
+- **DROPDOWN-004**: Integração com useAuth para verificar permissão `view_price`
+
+### 🌳 **Nova Funcionalidade - Filtro Hierárquico de Categorias**
+- **HIERARCHY-001**: Criado `HierarchicalCategoryFilter` com árvore expandível
+- **HIERARCHY-002**: Categorias principais aparecem condensadas inicialmente
+- **HIERARCHY-003**: Botões de expansão com ícones de seta (▶/▼) e pasta (📁/📂)
+- **HIERARCHY-004**: Busca inteligente que auto-expande categorias relevantes
+- **HIERARCHY-005**: Suporte completo para hierarquia multi-nível
+- **HIERARCHY-006**: Layout com indentação visual proporcional ao nível
+
+### ✨ **Melhorias de Interface**
+- **Dropdown Ordenação**: Opções "Preço (Menor → Maior)" e "Preço (Maior → Menor)" para utilizadores logados
+- **Navegação Visual**: Ícones de pasta aberta/fechada conforme estado de expansão
+- **Busca Inteligente**: Filtro que preserva hierarquia e expande automaticamente
+- **Contador de Produtos**: Número de produtos por categoria visível
+- **Badge Identificador**: "Hierárquico" em vez de "Simplificado"
+
+### 🎯 **Funcionalidades Implementadas**
+- **Ordenação por Preço**: Disponível apenas para utilizadores com permissão `view_price`
+- **Expansão/Contração**: Clique nas setas para navegar pela árvore de categorias
+- **Filtragem Hierárquica**: Selecção de categorias específicas em qualquer nível
+- **Busca Contextual**: Pesquisa que mantém estrutura hierárquica
+
+### 📱 **Experiência do Utilizador**
+- **Dropdown Funcional**: Todas as opções claramente visíveis e acessíveis
+- **Navegação Intuitiva**: Estrutura de pastas familiar para explorar categorias
+- **Feedback Visual**: Estados claros (expandido/contraído, selecionado/não selecionado)
+- **Performance**: Filtragem rápida e responsiva com lazy loading visual
+
+---
+
 ## [1.5.7] - 2025-01-27 - Melhorias Categorias e Navegação
 
 ### ✨ **Melhorias UX - Categorias da Home Page**
@@ -149,22 +186,32 @@
 - **E-commerce Completo**: Carrinho → Checkout → Encomenda → Aprovação
 - **Área Administrativa**: 17 páginas + 9 APIs + 47 endpoints
 - **Autenticação**: Sistema JWT local robusto
-- **Página de Produtos**: Listagem, filtros, paginação, busca
+- **Página de Produtos**: Listagem, filtros, paginação, busca ✅ **MELHORADO v1.5.8**
 - **Página de Detalhes**: Preços, carrinho, validações de permissões ✅ **CORRIGIDO**
-- **Sistema de Categorias**: Filtros simplificados e navegação otimizada ✅ **MELHORADO**
-- **Navegação Inteligente**: Home → Produtos com filtro automático ✅ **NOVO**
+- **Sistema de Categorias**: Filtros hierárquicos expansíveis ✅ **NOVO v1.5.8**
+- **Navegação Inteligente**: Home → Produtos com filtro automático ✅ **IMPLEMENTADO**
+- **Ordenação Avançada**: Por preço para utilizadores autenticados ✅ **NOVO v1.5.8**
 - **Dark Mode**: Sistema modular completo
 
 ### 🚀 **PRONTO PARA PRODUÇÃO**
 - Sistema completamente testado e validado
 - Todas as funcionalidades de e-commerce operacionais
 - Interface otimizada para utilizadores B2B
-- **Navegação intuitiva** e descoberta de produtos melhorada
-- **UX otimizada** com categorias compactas e visuais
+- **Filtros avançados** com navegação hierárquica intuitiva
+- **Ordenação inteligente** baseada em permissões
+- **UX otimizada** com categorias expansíveis e busca contextual
 - Documentação completa e atualizada
 
 ### 📱 **Experiência do Utilizador Aprimorada**
 - **Home Page**: Categorias compactas com navegação direta
 - **Descoberta**: Filtros automáticos ao navegar por categorias
+- **Filtros Hierárquicos**: Estrutura de árvore expandível por nível ✅ **NOVO**
+- **Ordenação por Preço**: Disponível para utilizadores autenticados ✅ **NOVO**
 - **Performance**: URLs semânticas e loading otimizado
-- **Visual**: Layout responsivo 2-8 colunas conforme dispositivo 
+- **Visual**: Layout responsivo 2-8 colunas conforme dispositivo
+
+### 🔧 **Últimas Correções v1.5.8**
+- **Dropdown "Ordenar por"**: Texto visível e opções de preço funcionais
+- **Categorias Hierárquicas**: Navegação em árvore com expansão/contração
+- **Busca Inteligente**: Filtragem que preserva estrutura hierárquica
+- **Feedback Visual**: Ícones de estado e indentação por nível 
