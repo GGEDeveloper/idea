@@ -1,5 +1,38 @@
 # Changelog - AliTools Project
 
+## [1.6.2] - 2025-01-27 - Melhorias UX Página de Login
+
+### 🎨 **Melhorias de Interface - Login**
+- **LOGIN-UX-001**: Reposicionamento dos ícones dos campos de entrada
+  - **Ícone Email**: Movido da esquerda para a direita da caixa de texto
+  - **Ícone Password**: Movido da esquerda para a direita da caixa de texto
+  - **Técnico**: `left-0 pl-3` → `right-0 pr-3` e `pl-10` → `pr-10`
+  - **UX**: Layout mais moderno e consistente com padrões atuais
+
+- **LOGIN-UX-002**: Correção do alinhamento do botão "Solicitar Acesso de Parceiro"
+  - **Problema**: Botão não estava perfeitamente centrado no seu contentor
+  - **Solução**: Adicionada classe `block` ao componente Link
+  - **Resultado**: Botão agora ocupa toda a largura e está corretamente alinhado
+  - **Consistência**: Visual uniforme com botão "Entrar" acima
+
+### 🔧 **Melhorias Técnicas**
+- **CSS-FIX-001**: Classes Tailwind otimizadas para melhor posicionamento
+- **COMPONENT-FIX-001**: Link do Next.js comportando-se como elemento de bloco apropriado
+- **LAYOUT-FIX-001**: Largura completa garantida com `w-full text-center block`
+
+### 📱 **Impacto na Experiência**
+- **Visual**: Interface mais polida e profissional
+- **Usabilidade**: Melhor alinhamento visual dos elementos
+- **Consistência**: Layout harmonioso entre todos os componentes
+- **Modernização**: Ícones à direita seguem tendências UX atuais
+
+### 📊 **Build Status**
+- **TypeScript**: ✅ Compilação sem erros em 3.0s
+- **Bundle**: ✅ 48 páginas estáticas geradas com sucesso
+- **Otimização**: ✅ Finalização sem warnings
+- **Production Ready**: ✅ Sistema pronto para deployment
+
+
 ## [1.6.1] - 2025-01-27 - Correções Críticas e Seletor de Quantidade
 
 ### 🐛 **Correções Críticas**

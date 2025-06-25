@@ -153,7 +153,7 @@ export default function LoginPage() {
                 Email
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                   <i className="fas fa-envelope text-sm" style={{ color: 'var(--color-text-muted)' }}></i>
                 </div>
                 <input
@@ -165,7 +165,7 @@ export default function LoginPage() {
                   autoComplete="email"
                   required
                   disabled={isLoading}
-                  className="input-field pl-10"
+                  className="input-field pr-10"
                   placeholder="o.seu.email@exemplo.com"
                 />
               </div>
@@ -176,7 +176,7 @@ export default function LoginPage() {
                 Palavra-passe
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                   <i className="fas fa-lock text-sm" style={{ color: 'var(--color-text-muted)' }}></i>
                 </div>
                 <input
@@ -188,7 +188,7 @@ export default function LoginPage() {
                   autoComplete="current-password"
                   required
                   disabled={isLoading}
-                  className="input-field pl-10"
+                  className="input-field pr-10"
                   placeholder="••••••••"
                 />
               </div>
@@ -257,7 +257,7 @@ export default function LoginPage() {
             </div>
 
             <div className="mt-6">
-              <Link href="/contacto" className="btn-secondary w-full text-center py-3">
+              <Link href="/contacto" className="btn-secondary w-full text-center py-3 block">
                 <i className="fas fa-handshake mr-2"></i>
                 Solicitar Acesso de Parceiro
               </Link>

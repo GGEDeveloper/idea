@@ -22,6 +22,9 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 ### Análise de Projeto e Status
 
 - [PROJECT_STATUS_SUMMARY.md](./PROJECT_STATUS_SUMMARY.md): ✅ **ATUALIZADO (27/01/2025)** Resumo executivo completo do estado do projeto v1.5.9
+- [ROLES_AUTHORIZATION_COMPLETE_REPORT.md](./ROLES_AUTHORIZATION_COMPLETE_REPORT.md): ✅ **NOVO (27/01/2025)** Relatório completo do sistema de roles e autorizações - 7 APIs admin quebradas identificadas e RESOLVIDAS (100% funcionais)
+- [ADMIN_APIS_URGENT_FIXES_LOG.md](./ADMIN_APIS_URGENT_FIXES_LOG.md): ✅ **NOVO (27/01/2025)** Log de correções urgentes - 7 APIs admin corrigidas e 100% funcionais
+- [DOCUMENTATION_UPDATE_LOG.md](./DOCUMENTATION_UPDATE_LOG.md): ✅ **NOVO (27/01/2025)** Log de atualizações de documentação - remoção de info desatualizada/redundante
 - [DATABASE_REFORMULATION_PLAN.md](./DATABASE_REFORMULATION_PLAN.md): ✅ **NOVO (14/06/2025)** Plano estratégico de reformulação da base de dados
 - [FEATURES_COMPLETE_REFERENCE.md](./FEATURES_COMPLETE_REFERENCE.md): ✅ **NOVO (27/01/2025)** Referência completa de todas as funcionalidades implementadas
 
@@ -56,7 +59,11 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [MEMORIA_DESCRITIVA_SITE.md](./MEMORIA_DESCRITIVA_SITE.md): Memória descritiva de todas as páginas, áreas e funcionalidades do site.
 - [RASCUNHO_ESTRUTURA_PROJETO.md](./RASCUNHO_ESTRUTURA_PROJETO.md): Roadmap e estrutura macro do projeto.
 - [RASCUNHO_RULES_PROJETO.md](./RASCUNHO_RULES_PROJETO.md): Regras e políticas do projeto.
-- [database_schema.sql](./database_schema.sql): Especificação detalhada das tabelas, colunas e relacionamentos do banco de dados. **(Atualizado: árvore de categorias baseada em path, ver comentários no início do arquivo)**
+- [database_schema.sql](./database_schema.sql): ✅ **ATUALIZADO (25/01/2025)** Schema real da base de dados baseado em inspeção (23 tabelas, 87.839 registos)
+- [DATABASE_ANALYSIS_REPORT.md](./DATABASE_ANALYSIS_REPORT.md): ✅ **ATUALIZADO (25/01/2025)** Relatório completo - Sistema 100% funcional, problemas são otimizações opcionais
+- [EAN_PRIMARY_KEY_ANALYSIS.md](./EAN_PRIMARY_KEY_ANALYSIS.md): ✅ **ATUALIZADO (25/01/2025)** Análise EAN vs PKs artificiais - Sistema funcional, migração opcional
+- [EAN_CONSISTENCY_REPORT.md](./EAN_CONSISTENCY_REPORT.md): ✅ **ATUALIZADO (25/01/2025)** Consistência EAN confirmada - Stock funciona via product_variants
+- [SCHEMA_DISCREPANCY_REPORT.md](./SCHEMA_DISCREPANCY_REPORT.md): ✅ **NOVO (25/01/2025)** Comparação documentado vs real - Schema real é superior
 - [data_import_sync_plan.md](./data_import_sync_plan.md): Estratégia e plano para importação e sincronização de dados do feed XML Geko.
 - [FLUXO_DADOS_ARQUITETURA.md](./FLUXO_DADOS_ARQUITETURA.md): Fluxo de dados e arquitetura do sistema.
 - [FRONTEND_CATEGORIES_IMPLEMENTATION.md](./FRONTEND_CATEGORIES_IMPLEMENTATION.md): Detalhes de implementação das categorias no frontend. **(Atualizado: árvore de categorias baseada em path, estrutura esperada e exemplos)**
@@ -103,6 +110,13 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Dark Mode**: Sistema modular completo implementado
 
 ### 🆕 Funcionalidades Recentes (v1.6.1 - 27/01/2025)
+
+### 🎨 **Melhorias UX Mais Recentes (v1.6.2 - 27/01/2025)**
+- **LOGIN-UX-IMPROVEMENTS**: Melhorias na página de login
+  - **Ícones Repositionados**: Email e password com ícones do lado direito (padrão moderno)
+  - **Botão Centrado**: "Solicitar Acesso de Parceiro" perfeitamente alinhado
+  - **Interface Polida**: Layout mais profissional e consistente
+  - **Build Validado**: ✅ Compilação TypeScript sem erros em 3.0s
 - **QUANTITY-SELECTOR-001**: Seletor de quantidade na página de detalhes de produtos
 - **PRICE-VALIDATION-FIX**: Correção crítica da validação de preços (incluindo preços zero)
 - **LEGAL-PAGES-001**: Páginas completas de Termos e Condições + Política de Privacidade GDPR
@@ -150,6 +164,10 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Rollback procedures**: Comandos de emergência documentados
 - **E-commerce completo**: Todo o workflow implementado e testado
 - **Build System**: TypeScript compilation 100% successful
+
+### Scripts de Manutenção
+
+- [cleanup-unused-tables.sql](../scripts/cleanup-unused-tables.sql): ✅ **NOVO (25/01/2025)** Script seguro para remover código morto e otimizar performance
 
 ---
 
