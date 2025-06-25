@@ -205,7 +205,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
                 type="button"
                 onClick={() => setQuantity(Math.max(1, quantity - 1))}
                 disabled={quantity <= 1}
-                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 hover:text-gray-900 disabled:text-gray-400"
               >
                 <span className="text-lg font-bold">−</span>
               </button>
@@ -229,7 +229,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
                 type="button"
                 onClick={() => setQuantity(Math.min(totalStock, quantity + 1))}
                 disabled={quantity >= totalStock}
-                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 hover:text-gray-900 disabled:text-gray-400"
               >
                 <span className="text-lg font-bold">+</span>
               </button>
