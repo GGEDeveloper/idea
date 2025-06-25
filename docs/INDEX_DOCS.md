@@ -84,11 +84,12 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **NOVO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **NOVO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-27 - v1.5.9)
+## Status Atual do Sistema (2025-01-27 - v1.6.0)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
 - **Sistema de E-commerce Completo**: ✅ **100% FUNCIONAL** - Carrinho → Checkout → Encomenda → Aprovação
+- **Browsing Avançado de Produtos**: ✅ **100% FUNCIONAL** - Modo grid/lista com paginação dinâmica
 - **Filtros Hierárquicos**: ✅ **100% FUNCIONAIS** - Navegação expandível em árvore com busca inteligente
 - **Página de Produtos (`/produtos`)**: Totalmente funcional com listagem, filtros, paginação e busca
 - **Sistema de Categorias**: Árvore hierárquica com nomes visíveis, navegação funcional e expansão/colapso
@@ -101,11 +102,12 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
 
-### 🆕 Funcionalidades Recentes (v1.5.9 - 27/01/2025)
-- **HIERARCH-FIX-001**: Filtros hierárquicos 100% funcionais com expansão/colapso
-- **TYPESCRIPT-FIX-001**: Build system sem erros de compilação TypeScript
-- **UX-ENHANCEMENT-001**: Melhorias visuais e de navegação em toda a aplicação
-- **DOCUMENTATION-001**: Relatório completo de roadmap para melhorias do sistema de filtros
+### 🆕 Funcionalidades Recentes (v1.6.0 - 27/01/2025)
+- **PRODUTO-VIEW-001**: Sistema completo de modo lista + grid com toggle visual
+- **PRODUTO-PAGINATION-001**: Selector dinâmico de produtos por página (10, 20, 50, 100)
+- **SSR-PREFERENCES-001**: Hook SSR-safe para persistência de preferências de utilizador
+- **RESPONSIVE-UX-001**: Layout adaptativo otimizado para mobile em ambos os modos
+- **PERFORMANCE-001**: CSS will-change optimization + skeleton loading específico por modo
 
 ### 🔧 Correções Recentes (27/01/2025)
 - **HIERARCH-FIX-001**: Resolvido problema de botões de expansão nos filtros hierárquicos
