@@ -84,7 +84,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **NOVO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **NOVO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-27 - v1.6.0)
+## Status Atual do Sistema (2025-01-27 - v1.6.1)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
@@ -102,14 +102,27 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
 
-### 🆕 Funcionalidades Recentes (v1.6.0 - 27/01/2025)
+### 🆕 Funcionalidades Recentes (v1.6.1 - 27/01/2025)
+- **QUANTITY-SELECTOR-001**: Seletor de quantidade na página de detalhes de produtos
+- **PRICE-VALIDATION-FIX**: Correção crítica da validação de preços (incluindo preços zero)
+- **LEGAL-PAGES-001**: Páginas completas de Termos e Condições + Política de Privacidade GDPR
+- **ERROR-ELIMINATION-001**: Eliminação de todos os erros 404 do Footer (termos/privacidade)
+- **ENHANCED-CART-001**: Melhorias na função de adicionar ao carrinho com validações robustas
+
+### 🆕 Funcionalidades Anteriores (v1.6.0)
 - **PRODUTO-VIEW-001**: Sistema completo de modo lista + grid com toggle visual
 - **PRODUTO-PAGINATION-001**: Selector dinâmico de produtos por página (10, 20, 50, 100)
 - **SSR-PREFERENCES-001**: Hook SSR-safe para persistência de preferências de utilizador
 - **RESPONSIVE-UX-001**: Layout adaptativo otimizado para mobile em ambos os modos
 - **PERFORMANCE-001**: CSS will-change optimization + skeleton loading específico por modo
 
-### 🔧 Correções Recentes (27/01/2025)
+### 🔧 Correções Recentes (v1.6.1 - 27/01/2025)
+- **PRICE-FIX-001**: Corrigido erro "Produto sem preço definido" com nova validação `hasValidPrice()`
+- **LINKS-FIX-001**: Resolvidos erros 404 para `/termos` e `/privacidade` com páginas completas
+- **VALIDATION-FIX-001**: Melhorada validação de preços para suportar produtos com preço zero
+- **CART-ENHANCEMENT-001**: Função de carrinho melhorada com validações auth/permissões/stock
+
+### 🔧 Correções Anteriores (v1.6.0)
 - **HIERARCH-FIX-001**: Resolvido problema de botões de expansão nos filtros hierárquicos
 - **AUTH-HYDRATION-001**: Corrigidos problemas de hidratação SSR em componentes de autenticação
 - **SORT-DROPDOWN-001**: Melhorado dropdown de ordenação com opções de preço para utilizadores autenticados

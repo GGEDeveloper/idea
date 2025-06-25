@@ -73,44 +73,32 @@ export default function ProductDetailPage() {
     fetchProduct();
   }, [ean]);
 
-  const handleAddToCart = () => {
-    if (!isAuthenticated) {
-      alert('Por favor, faça login para adicionar produtos ao carrinho.');
-      return;
-    }
-    
-    if (!hasPermission('view_price')) {
-      alert('Sem permissão para adicionar produtos ao carrinho.');
-      return;
-    }
-
+  const handleAddToCart = (productData: Product, quantity: number = 1) => {
     if (!product) {
       alert('Erro: Produto não encontrado.');
       return;
     }
 
-    // Check if product has a price
-    const price = product.product_price || product.price;
-    if (!price || price <= 0) {
-      alert('Erro: Produto sem preço definido.');
-      return;
-    }
+    // Get the price to display (product_price or from variants)
+    const price = product.product_price || 
+      product.variants?.[0]?.base_selling_price || 
+      product.variants?.[0]?.promotional_price;
 
     try {
-      // Use the cart context to add product
-      addToCart({
-        id: product.ean,
-        ean: product.ean,
-        name: product.name,
-        price: price,
-        image: product.images && product.images.length > 0 ? product.images[0].url : undefined,
-        brand: product.brand
-      });
-      
-      alert(`"${product.name}" foi adicionado ao carrinho!`);
+      // Use the cart context to add product with quantity
+      for (let i = 0; i < quantity; i++) {
+        addToCart({
+          id: product.ean,
+          ean: product.ean,
+          name: product.name,
+          price: price,
+          image: product.images && product.images.length > 0 ? product.images[0].url : undefined,
+          brand: product.brand
+        });
+      }
     } catch (error) {
       console.error('Error adding to cart:', error);
-      alert('Erro ao adicionar produto ao carrinho. Tente novamente.');
+      throw error; // Let ProductInfo handle the error message
     }
   };
 

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 interface Variant {
@@ -31,7 +31,7 @@ interface Product {
 
 interface ProductInfoProps {
   product: Product;
-  addToCart?: (product: Product) => void;
+  addToCart?: (product: Product, quantity?: number) => void;
   isAuthenticated?: boolean;
   hasPermission?: (permission: string) => boolean;
 }
@@ -42,6 +42,9 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   isAuthenticated = false, 
   hasPermission = () => false 
 }) => {
+  // State for quantity selection
+  const [quantity, setQuantity] = useState(1);
+  
   // Fallbacks for essential data
   const name = product.name || 'Produto sem nome';
   const brand = product.brand || '';
@@ -55,11 +58,14 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
     product.variants?.[0]?.base_selling_price || 
     product.variants?.[0]?.promotional_price;
 
+  // Check if product has valid price (including zero price products)
+  const hasValidPrice = displayPrice !== undefined && displayPrice !== null && !isNaN(Number(displayPrice));
+
   // Logic for displaying price based on auth and permissions
   const renderPrice = () => {
     if (isAuthenticated) {
       if (hasPermission('view_price')) {
-        return displayPrice ? (
+        return hasValidPrice ? (
           <span className="text-4xl font-bold text-blue-600">
             {new Intl.NumberFormat('pt-PT', { style: 'currency', currency: 'EUR' }).format(displayPrice)}
           </span>
@@ -86,10 +92,41 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   };
 
   const handleAddToCart = () => {
-    if (totalStock > 0) {
-      addToCart(product);
-    } else {
+    // Validate authentication and permissions
+    if (!isAuthenticated) {
+      alert('Por favor, faça login para adicionar produtos ao carrinho.');
+      return;
+    }
+    
+    if (!hasPermission('view_price')) {
+      alert('Sem permissão para adicionar produtos ao carrinho.');
+      return;
+    }
+
+    // Validate price
+    if (!hasValidPrice) {
+      alert('Erro: Produto sem preço definido.');
+      return;
+    }
+
+    // Validate stock
+    if (totalStock <= 0) {
       alert('Este produto está indisponível.');
+      return;
+    }
+
+    // Validate quantity
+    if (quantity > totalStock) {
+      alert(`Quantidade solicitada (${quantity}) excede o stock disponível (${totalStock}).`);
+      return;
+    }
+
+    try {
+      addToCart(product, quantity);
+      alert(`${quantity} unidade(s) de "${product.name}" adicionada(s) ao carrinho!`);
+    } catch (error) {
+      console.error('Error adding to cart:', error);
+      alert('Erro ao adicionar produto ao carrinho. Tente novamente.');
     }
   };
 
@@ -157,13 +194,60 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       )}
 
       <div className="mt-auto">
+        {/* Quantity Selector */}
+        {isAuthenticated && hasPermission('view_price') && hasValidPrice && totalStock > 0 && (
+          <div className="mb-4">
+            <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-2">
+              Quantidade:
+            </label>
+            <div className="flex items-center space-x-3">
+              <button
+                type="button"
+                onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                disabled={quantity <= 1}
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed"
+              >
+                <span className="text-lg font-bold">−</span>
+              </button>
+              
+              <input
+                id="quantity"
+                type="number"
+                min="1"
+                max={totalStock}
+                value={quantity}
+                onChange={(e) => {
+                  const newQuantity = parseInt(e.target.value);
+                  if (!isNaN(newQuantity) && newQuantity >= 1 && newQuantity <= totalStock) {
+                    setQuantity(newQuantity);
+                  }
+                }}
+                className="w-20 text-center border border-gray-300 rounded-lg py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              />
+              
+              <button
+                type="button"
+                onClick={() => setQuantity(Math.min(totalStock, quantity + 1))}
+                disabled={quantity >= totalStock}
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed"
+              >
+                <span className="text-lg font-bold">+</span>
+              </button>
+              
+              <span className="text-sm text-gray-500">
+                (máx: {totalStock})
+              </span>
+            </div>
+          </div>
+        )}
+
         <button
           type="button"
           onClick={handleAddToCart}
-          disabled={!isAuthenticated || !hasPermission('view_price') || !displayPrice || totalStock <= 0}
+          disabled={!isAuthenticated || !hasPermission('view_price') || !hasValidPrice || totalStock <= 0}
           className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
-          Adicionar ao Carrinho
+          {quantity > 1 ? `Adicionar ${quantity} ao Carrinho` : 'Adicionar ao Carrinho'}
         </button>
         
         {!isAuthenticated && (

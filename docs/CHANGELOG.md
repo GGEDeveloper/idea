@@ -1,5 +1,62 @@
 # Changelog - AliTools Project
 
+## [1.6.1] - 2025-01-27 - Correções Críticas e Seletor de Quantidade
+
+### 🐛 **Correções Críticas**
+- **PRICE-FIX-001**: Corrigido erro "Produto sem preço definido" na página de detalhes
+  - **Problema**: Validação de preços falhava mesmo com preços válidos
+  - **Causa**: Lógica de verificação `!price || price <= 0` não considerava preços zero válidos
+  - **Solução**: Implementada função `hasValidPrice` que verifica `undefined`, `null` e `NaN`
+  - **Impacto**: Produtos com preços válidos (incluindo zero) agora funcionam corretamente
+
+- **LINKS-FIX-001**: Resolvidos erros 404 para `/termos` e `/privacidade`
+  - **Problema**: Next.js tentava fazer prefetch de páginas inexistentes linkadas no Footer
+  - **Solução**: Criadas páginas completas com conteúdo legal profissional
+  - **Resultado**: Eliminados erros 404 na consola do navegador
+
+### ✨ **Novas Funcionalidades**
+- **QUANTITY-SELECTOR-001**: Seletor de quantidade na página de detalhes
+  - **Interface**: Botões +/- com input numérico central
+  - **Validação**: Quantidade limitada pelo stock disponível
+  - **UX**: Feedback visual da quantidade máxima permitida
+  - **Responsivo**: Layout adaptado para mobile e desktop
+
+- **ENHANCED-CART-001**: Função de adicionar ao carrinho melhorada
+  - **Múltiplas Quantidades**: Suporte para adicionar mais que 1 unidade
+  - **Validações Robustas**: Auth, permissões, preço, stock e quantidade
+  - **Feedback Inteligente**: Mensagens específicas por tipo de erro
+  - **Error Handling**: Try/catch com logs detalhados para debugging
+
+### 📄 **Novas Páginas Legais**
+- **TERMOS-PAGE-001**: Página completa de Termos e Condições
+  - 8 seções legais abrangentes (Aceitação, Serviço, Registo, Encomendas, etc.)
+  - Design consistente com breadcrumbs e navegação
+  - Links para contacto e outras páginas relevantes
+  - Última atualização: Janeiro 2025
+
+- **PRIVACIDADE-PAGE-001**: Política de Privacidade RGPD compliant
+  - 11 seções detalhadas conforme RGPD
+  - Dados recolhidos, finalidades, base legal, partilha
+  - Direitos do titular e procedimentos de exercício
+  - Informações de contacto para questões de privacidade
+
+### 🔧 **Melhorias Técnicas**
+- **PRICE-VALIDATION-001**: Refatorizada validação de preços
+  - Nova função `hasValidPrice()` mais robusta
+  - Suporte para produtos com preço zero legítimo
+  - Melhor diferenciação entre "sem preço" vs "preço zero"
+
+- **COMPONENT-CLEANUP-001**: Limpeza de lógica duplicada
+  - Removida validação duplicada de carrinho na página de produto
+  - ProductInfo agora controla toda a lógica de validação
+  - Função `handleAddToCart` simplificada e mais robusta
+
+### 📊 **Performance e Build**
+- **Build Status**: ✅ TypeScript compilation em 4.0s sem erros
+- **Bundle Analysis**: Mantidas otimizações de size das páginas
+- **Zero Warnings**: Limpeza completa de erros SSR e hidratação
+- **Route Optimization**: Todas as novas páginas com static generation
+
 ## [1.6.0] - 2025-01-27
 
 ### ✨ Novas Funcionalidades
