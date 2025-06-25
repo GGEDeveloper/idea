@@ -18,12 +18,25 @@ export async function PUT(
       );
     }
 
-    const { orderId } = params;
+    const { orderId } = await params;
     const body = await request.json();
-    const { status } = body;
+    const { status, notes } = body;
 
-    // Validate status
-    const validStatuses = ['pending_approval', 'approved', 'rejected', 'shipped', 'delivered'];
+    // Expanded valid statuses for better order management
+    const validStatuses = [
+      'pending_approval',    // Aguarda aprovação admin
+      'approved',           // Aprovada pelo admin
+      'processing',         // Em processamento/preparação
+      'ready_to_ship',      // Pronta para envio
+      'shipped',            // Enviada/Em trânsito
+      'in_transit',         // Em rota/transporte
+      'out_for_delivery',   // Saiu para entrega
+      'delivered',          // Entregue
+      'rejected',           // Rejeitada pelo admin
+      'cancelled',          // Cancelada
+      'returned'            // Devolvida
+    ];
+
     if (!status || !validStatuses.includes(status)) {
       return NextResponse.json(
         { error: 'Invalid status. Must be one of: ' + validStatuses.join(', ') },
@@ -46,7 +59,7 @@ export async function PUT(
 
     const currentStatus = existingOrder.rows[0].order_status;
 
-    // Business logic validations
+    // Business logic validations - Enhanced
     if (currentStatus === status) {
       return NextResponse.json(
         { error: 'Order is already in this status' },
@@ -54,17 +67,28 @@ export async function PUT(
       );
     }
 
-    // Prevent certain status transitions
-    if (currentStatus === 'delivered') {
-      return NextResponse.json(
-        { error: 'Cannot change status of delivered orders' },
-        { status: 400 }
-      );
-    }
+    // Define valid status transitions
+    const validTransitions: Record<string, string[]> = {
+      'pending_approval': ['approved', 'rejected'],
+      'approved': ['processing', 'cancelled'],
+      'processing': ['ready_to_ship', 'cancelled'],
+      'ready_to_ship': ['shipped', 'cancelled'],
+      'shipped': ['in_transit', 'delivered'],
+      'in_transit': ['out_for_delivery', 'delivered'],
+      'out_for_delivery': ['delivered', 'returned'],
+      'delivered': ['returned'], // Only allow returns after delivery
+      'rejected': [], // Final state
+      'cancelled': [], // Final state
+      'returned': [] // Final state
+    };
 
-    if (currentStatus === 'shipped' && status === 'pending_approval') {
+    // Check if transition is valid
+    const allowedTransitions = validTransitions[currentStatus] || [];
+    if (!allowedTransitions.includes(status)) {
       return NextResponse.json(
-        { error: 'Cannot revert shipped orders to pending approval' },
+        { 
+          error: `Invalid status transition from '${currentStatus}' to '${status}'. Allowed transitions: ${allowedTransitions.join(', ') || 'none'}` 
+        },
         { status: 400 }
       );
     }
@@ -75,10 +99,15 @@ export async function PUT(
       [status, orderId]
     );
 
+    // Log the status change
+    console.log(`[ORDER-STATUS] Admin ${adminUser.email} changed order ${orderId} status from '${currentStatus}' to '${status}'${notes ? ` with notes: ${notes}` : ''}`);
+
     return NextResponse.json({
       message: 'Order status updated successfully',
       order: result.rows[0],
-      previousStatus: currentStatus
+      previousStatus: currentStatus,
+      transition: `${currentStatus} → ${status}`,
+      notes: notes || null
     });
 
   } catch (error) {

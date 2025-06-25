@@ -46,39 +46,96 @@ interface Order {
 const statusConfig = {
   pending_approval: {
     label: 'Pendente de Aprovação',
+    description: 'Aguarda aprovação do administrador',
     color: 'text-yellow-700 bg-yellow-50 dark:bg-yellow-900/20 dark:text-yellow-400',
     icon: ClockIcon,
-    canApprove: true,
-    canReject: true
+    progress: 10
   },
   approved: {
     label: 'Aprovada',
+    description: 'Aprovada e pronta para processamento',
     color: 'text-green-700 bg-green-50 dark:bg-green-900/20 dark:text-green-400',
     icon: CheckCircleIcon,
-    canApprove: false,
-    canReject: false
+    progress: 20
   },
-  rejected: {
-    label: 'Rejeitada',
-    color: 'text-red-700 bg-red-50 dark:bg-red-900/20 dark:text-red-400',
-    icon: XCircleIcon,
-    canApprove: true,
-    canReject: false
+  processing: {
+    label: 'Em Processamento',
+    description: 'A ser preparada para envio',
+    color: 'text-blue-700 bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400',
+    icon: DocumentTextIcon,
+    progress: 30
+  },
+  ready_to_ship: {
+    label: 'Pronta para Envio',
+    description: 'Preparada e pronta para ser enviada',
+    color: 'text-purple-700 bg-purple-50 dark:bg-purple-900/20 dark:text-purple-400',
+    icon: MapPinIcon,
+    progress: 40
   },
   shipped: {
     label: 'Enviada',
-    color: 'text-blue-700 bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400',
+    description: 'Enviada e em trânsito',
+    color: 'text-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 dark:text-indigo-400',
     icon: DocumentTextIcon,
-    canApprove: false,
-    canReject: false
+    progress: 60
+  },
+  in_transit: {
+    label: 'Em Rota',
+    description: 'Em transporte para destino',
+    color: 'text-cyan-700 bg-cyan-50 dark:bg-cyan-900/20 dark:text-cyan-400',
+    icon: MapPinIcon,
+    progress: 70
+  },
+  out_for_delivery: {
+    label: 'Saiu para Entrega',
+    description: 'Saiu para entrega final',
+    color: 'text-orange-700 bg-orange-50 dark:bg-orange-900/20 dark:text-orange-400',
+    icon: MapPinIcon,
+    progress: 85
   },
   delivered: {
     label: 'Entregue',
+    description: 'Entregue com sucesso',
     color: 'text-green-700 bg-green-50 dark:bg-green-900/20 dark:text-green-400',
     icon: CheckCircleIcon,
-    canApprove: false,
-    canReject: false
+    progress: 100
+  },
+  rejected: {
+    label: 'Rejeitada',
+    description: 'Rejeitada pelo administrador',
+    color: 'text-red-700 bg-red-50 dark:bg-red-900/20 dark:text-red-400',
+    icon: XCircleIcon,
+    progress: 0
+  },
+  cancelled: {
+    label: 'Cancelada',
+    description: 'Cancelada durante processamento',
+    color: 'text-gray-700 bg-gray-50 dark:bg-gray-900/20 dark:text-gray-400',
+    icon: XCircleIcon,
+    progress: 0
+  },
+  returned: {
+    label: 'Devolvida',
+    description: 'Devolvida após entrega',
+    color: 'text-yellow-700 bg-yellow-50 dark:bg-yellow-900/20 dark:text-yellow-400',
+    icon: ArrowLeftIcon,
+    progress: 0
   }
+};
+
+// Valid transitions mapping
+const validTransitions = {
+  'pending_approval': ['approved', 'rejected'],
+  'approved': ['processing', 'cancelled'],
+  'processing': ['ready_to_ship', 'cancelled'],
+  'ready_to_ship': ['shipped', 'cancelled'],
+  'shipped': ['in_transit', 'delivered'],
+  'in_transit': ['out_for_delivery', 'delivered'],
+  'out_for_delivery': ['delivered', 'returned'],
+  'delivered': ['returned'],
+  'rejected': [],
+  'cancelled': [],
+  'returned': []
 };
 
 const OrderDetailPage = () => {
@@ -90,6 +147,9 @@ const OrderDetailPage = () => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [order, setOrder] = useState<Order | null>(null);
+  const [selectedStatus, setSelectedStatus] = useState<string>('');
+  const [statusNotes, setStatusNotes] = useState<string>('');
+  const [showStatusModal, setShowStatusModal] = useState(false);
 
   useEffect(() => {
     if (orderId) {
@@ -118,7 +178,7 @@ const OrderDetailPage = () => {
     }
   };
 
-  const updateOrderStatus = async (newStatus: string) => {
+  const updateOrderStatus = async (newStatus: string, notes?: string) => {
     setUpdating(true);
     setError(null);
     setSuccess(null);
@@ -130,7 +190,10 @@ const OrderDetailPage = () => {
           'Content-Type': 'application/json'
         },
         credentials: 'include',
-        body: JSON.stringify({ status: newStatus })
+        body: JSON.stringify({ 
+          status: newStatus,
+          notes: notes || statusNotes
+        })
       });
 
       if (!response.ok) {
@@ -138,7 +201,11 @@ const OrderDetailPage = () => {
         throw new Error(errorData.error || 'Erro ao atualizar estado da encomenda');
       }
 
-      setSuccess(`Encomenda ${newStatus === 'approved' ? 'aprovada' : 'rejeitada'} com sucesso!`);
+      const result = await response.json();
+      setSuccess(`Estado atualizado: ${result.transition}`);
+      setShowStatusModal(false);
+      setSelectedStatus('');
+      setStatusNotes('');
       await fetchOrderData(); // Refresh data
 
     } catch (error) {
@@ -146,6 +213,18 @@ const OrderDetailPage = () => {
       setError(error instanceof Error ? error.message : 'Erro ao atualizar encomenda');
     } finally {
       setUpdating(false);
+    }
+  };
+
+  const getAvailableTransitions = (currentStatus: string) => {
+    return validTransitions[currentStatus as keyof typeof validTransitions] || [];
+  };
+
+  const openStatusModal = () => {
+    const availableTransitions = getAvailableTransitions(order?.order_status || '');
+    if (availableTransitions.length > 0) {
+      setSelectedStatus(availableTransitions[0]);
+      setShowStatusModal(true);
     }
   };
 
@@ -295,34 +374,65 @@ const OrderDetailPage = () => {
           </div>
 
           {/* Action Buttons */}
-          {(currentStatus?.canApprove || currentStatus?.canReject) && (
+          {getAvailableTransitions(order.order_status).length > 0 && (
             <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
               <h2 className="text-lg font-medium text-gray-900 dark:text-white mb-6">
-                Ações da Encomenda
+                Gestão de Estado da Encomenda
               </h2>
               
-              <div className="flex space-x-3">
-                {currentStatus?.canReject && (
-                  <button
-                    onClick={() => updateOrderStatus('rejected')}
-                    disabled={updating}
-                    className="bg-red-600 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
-                  >
-                    <XCircleIcon className="h-4 w-4 mr-2" />
-                    {updating ? 'A rejeitar...' : 'Rejeitar'}
-                  </button>
-                )}
-                
-                {currentStatus?.canApprove && (
-                  <button
-                    onClick={() => updateOrderStatus('approved')}
-                    disabled={updating}
-                    className="bg-green-600 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
-                  >
-                    <CheckCircleIcon className="h-4 w-4 mr-2" />
-                    {updating ? 'A aprovar...' : 'Aprovar'}
-                  </button>
-                )}
+              {/* Progress Bar */}
+              <div className="mb-6">
+                <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  <span>Progresso da Encomenda</span>
+                  <span>{currentStatus?.progress || 0}%</span>
+                </div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div 
+                    className="bg-orange-600 h-2 rounded-full transition-all duration-500" 
+                    style={{ width: `${currentStatus?.progress || 0}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Current Status */}
+              <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <StatusIcon className="h-5 w-5 mr-2 text-orange-500" />
+                    <div>
+                      <h3 className="font-medium text-gray-900 dark:text-white">
+                        {currentStatus?.label}
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {currentStatus?.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Available Transitions */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white">
+                  Próximos Estados Disponíveis:
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {getAvailableTransitions(order.order_status).map((status) => {
+                    const statusInfo = statusConfig[status as keyof typeof statusConfig];
+                    return (
+                      <button
+                        key={status}
+                        onClick={() => {
+                          setSelectedStatus(status);
+                          setShowStatusModal(true);
+                        }}
+                        className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                      >
+                        {statusInfo?.label || status}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           )}
@@ -432,6 +542,77 @@ const OrderDetailPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Status Update Modal */}
+      {showStatusModal && (
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+          <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800">
+            <div className="mt-3">
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
+                Atualizar Estado da Encomenda
+              </h3>
+              
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Novo Estado:
+                </label>
+                <select
+                  value={selectedStatus}
+                  onChange={(e) => setSelectedStatus(e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                >
+                  {getAvailableTransitions(order.order_status).map((status) => {
+                    const statusInfo = statusConfig[status as keyof typeof statusConfig];
+                    return (
+                      <option key={status} value={status}>
+                        {statusInfo?.label || status}
+                      </option>
+                    );
+                  })}
+                </select>
+                {selectedStatus && (
+                  <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                    {statusConfig[selectedStatus as keyof typeof statusConfig]?.description}
+                  </p>
+                )}
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Notas/Observações (opcional):
+                </label>
+                <textarea
+                  value={statusNotes}
+                  onChange={(e) => setStatusNotes(e.target.value)}
+                  rows={3}
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                  placeholder="Adicione observações sobre esta mudança de estado..."
+                />
+              </div>
+
+              <div className="flex justify-end space-x-3">
+                <button
+                  onClick={() => {
+                    setShowStatusModal(false);
+                    setSelectedStatus('');
+                    setStatusNotes('');
+                  }}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-500"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={() => updateOrderStatus(selectedStatus)}
+                  disabled={updating || !selectedStatus}
+                  className="px-4 py-2 text-sm font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {updating ? 'A atualizar...' : 'Confirmar Mudança'}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

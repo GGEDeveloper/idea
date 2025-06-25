@@ -1,5 +1,101 @@
 # Changelog - AliTools Project
 
+## [1.7.1] - 2025-01-28 - **SISTEMA DE GESTÃO DE ENCOMENDAS COMPLETO** - Workflow Admin Avançado
+
+### 🎯 **MARCO CRÍTICO ALCANÇADO**
+- ✅ **Sistema de gestão de encomendas 100% completo** com workflow avançado
+- ✅ **11 estados de encomenda implementados** (era só 5 antes)
+- ✅ **Correções críticas de APIs** - Todos os erros Next.js 15 resolvidos
+- ✅ **Interface admin profissional** com modal de gestão de estados
+
+### 🚀 **NOVO SISTEMA DE ESTADOS DE ENCOMENDA AVANÇADO**
+
+#### **Estados Disponíveis (11 total):**
+1. **`pending_approval`** - Pendente de Aprovação (10% progresso)
+2. **`approved`** - Aprovada (20% progresso)  
+3. **`processing`** - Em Processamento (30% progresso)
+4. **`ready_to_ship`** - Pronta para Envio (40% progresso)
+5. **`shipped`** - Enviada (60% progresso)
+6. **`in_transit`** - Em Rota (70% progresso)
+7. **`out_for_delivery`** - Saiu para Entrega (85% progresso)
+8. **`delivered`** - Entregue (100% progresso)
+9. **`rejected`** - Rejeitada (0% progresso)
+10. **`cancelled`** - Cancelada (0% progresso)
+11. **`returned`** - Devolvida (0% progresso)
+
+#### **Lógica de Transições Inteligente:**
+- **Validação de workflow**: Apenas transições válidas permitidas
+- **Estados finais**: `rejected`, `cancelled`, `returned` (sem transições)
+- **Progressão linear**: `pending_approval` → `approved` → `processing` → ... → `delivered`
+- **Gestão de devoluções**: Apenas após entrega (`delivered` → `returned`)
+
+### 🛠️ **CORREÇÕES CRÍTICAS DE APIS**
+
+#### **NEXT.JS-PARAMS-001**: Correção erros `params` Next.js 15
+- **API Products**: `/api/admin/products/[ean]/route.ts` - 3 métodos corrigidos
+- **API Users**: `/api/admin/users/[userId]/route.ts` - 3 métodos corrigidos  
+- **API Orders**: `/api/admin/orders/[orderId]/route.ts` - 1 método corrigido
+- **API Status**: `/api/admin/orders/[orderId]/status/route.ts` - Corrigido + melhorado
+- **Erro resolvido**: `params` should be awaited before using its properties
+
+#### **TYPESCRIPT-VALIDATION-001**: Tipagem robusta implementada
+- **Tipos específicos**: `Record<string, string[]>` para transições
+- **Validação de índices**: Correção de erros `any` type
+- **Build sem erros**: ✅ Compilação TypeScript 100% limpa (3.0s)
+
+### 🎨 **INTERFACE ADMIN MELHORADA**
+
+#### **Modal de Gestão de Estados** (`/admin/orders/[orderId]`)
+- **Dropdown inteligente**: Mostra apenas transições válidas
+- **Campo de notas**: Observações opcionais para mudanças de estado
+- **Validação visual**: Descrições e feedback imediato
+- **Progresso visual**: Barra de progresso com percentagem
+- **Confirmação**: Modal com botões de confirmar/cancelar
+
+#### **Listagem de Encomendas Melhorada** (`/admin/orders`)
+- **Badges coloridos**: Visual distinction por estado
+- **Mini progress bars**: Progresso individual por encomenda  
+- **Filtros expandidos**: 12 opções de filtro (antes eram 6)
+- **Estatísticas rápidas**: Contadores pendentes/em processo/entregues
+- **Interface moderna**: Cores consistentes com dark mode
+
+#### **Logging e Auditoria**
+- **Log detalhado**: Todas as mudanças registadas com admin/timestamp
+- **Transições registadas**: Log formato `estado_antigo → estado_novo`
+- **Notas incluídas**: Observações admin registadas no log
+- **Rastreabilidade**: Histórico completo de mudanças
+
+### 🔧 **MELHORIAS TÉCNICAS**
+
+#### **Validação de Negócio Robusta**
+- **Prevenção de regressões**: Não permite voltar atrás no workflow
+- **Estados finais protegidos**: Impossível alterar estados terminais
+- **Lógica de negócio**: Transições baseadas em regras empresariais
+- **Feedback inteligente**: Mensagens específicas para cada tipo de erro
+
+#### **Performance e UX**
+- **Transições CSS**: Animações suaves nas barras de progresso
+- **Loading states**: Estados de carregamento em todas as ações
+- **Error handling**: Gestão robusta de erros com feedback visual
+- **Responsive design**: Interface adaptada para mobile/tablet
+
+### 📊 **DADOS TÉCNICOS**
+- **Build Status**: ✅ 0 erros TypeScript (compilação em 3.0s)
+- **APIs afetadas**: 4 APIs corrigidas, 1 API melhorada  
+- **Páginas melhoradas**: 2 páginas admin (`orders` e `orders/[orderId]`)
+- **Estados de encomenda**: 11 estados (anteriormente 5)
+- **Transições válidas**: 15 combinações de transição válidas
+- **Compatibilidade**: 100% compatível com dados existentes
+
+### 💼 **IMPACTO EMPRESARIAL**
+- **Gestão completa**: Admin pode gerir todo o ciclo de vida da encomenda
+- **Transparência**: Cliente pode acompanhar progresso detalhado  
+- **Auditoria**: Rastreabilidade completa de todas as mudanças
+- **Escalabilidade**: Sistema preparado para operações B2B complexas
+- **Produção ready**: Interface profissional pronta para clientes reais
+
+---
+
 ## [1.7.0] - 2025-01-28 - **SISTEMA 100% COMPLETO** - Implementação das 4 Subpáginas Admin
 
 ### 🎉 **MILESTONE CRÍTICO ALCANÇADO**

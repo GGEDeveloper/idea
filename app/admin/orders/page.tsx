@@ -6,7 +6,10 @@ import {
   EyeIcon,
   CheckCircleIcon,
   XCircleIcon,
-  ClockIcon
+  ClockIcon,
+  DocumentTextIcon,
+  MapPinIcon,
+  ArrowLeftIcon
 } from '@heroicons/react/24/outline';
 
 interface Order {
@@ -20,6 +23,76 @@ interface Order {
   company_name: string;
   item_count: number | string;
 }
+
+// Status configuration matching the detail page
+const statusConfig = {
+  pending_approval: {
+    label: 'Pendente de Aprovação',
+    color: 'text-yellow-700 bg-yellow-50 dark:bg-yellow-900/20 dark:text-yellow-400',
+    icon: ClockIcon,
+    progress: 10
+  },
+  approved: {
+    label: 'Aprovada',
+    color: 'text-green-700 bg-green-50 dark:bg-green-900/20 dark:text-green-400',
+    icon: CheckCircleIcon,
+    progress: 20
+  },
+  processing: {
+    label: 'Em Processamento',
+    color: 'text-blue-700 bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400',
+    icon: DocumentTextIcon,
+    progress: 30
+  },
+  ready_to_ship: {
+    label: 'Pronta para Envio',
+    color: 'text-purple-700 bg-purple-50 dark:bg-purple-900/20 dark:text-purple-400',
+    icon: MapPinIcon,
+    progress: 40
+  },
+  shipped: {
+    label: 'Enviada',
+    color: 'text-indigo-700 bg-indigo-50 dark:bg-indigo-900/20 dark:text-indigo-400',
+    icon: DocumentTextIcon,
+    progress: 60
+  },
+  in_transit: {
+    label: 'Em Rota',
+    color: 'text-cyan-700 bg-cyan-50 dark:bg-cyan-900/20 dark:text-cyan-400',
+    icon: MapPinIcon,
+    progress: 70
+  },
+  out_for_delivery: {
+    label: 'Saiu para Entrega',
+    color: 'text-orange-700 bg-orange-50 dark:bg-orange-900/20 dark:text-orange-400',
+    icon: MapPinIcon,
+    progress: 85
+  },
+  delivered: {
+    label: 'Entregue',
+    color: 'text-green-700 bg-green-50 dark:bg-green-900/20 dark:text-green-400',
+    icon: CheckCircleIcon,
+    progress: 100
+  },
+  rejected: {
+    label: 'Rejeitada',
+    color: 'text-red-700 bg-red-50 dark:bg-red-900/20 dark:text-red-400',
+    icon: XCircleIcon,
+    progress: 0
+  },
+  cancelled: {
+    label: 'Cancelada',
+    color: 'text-gray-700 bg-gray-50 dark:bg-gray-900/20 dark:text-gray-400',
+    icon: XCircleIcon,
+    progress: 0
+  },
+  returned: {
+    label: 'Devolvida',
+    color: 'text-yellow-700 bg-yellow-50 dark:bg-yellow-900/20 dark:text-yellow-400',
+    icon: ArrowLeftIcon,
+    progress: 0
+  }
+};
 
 const OrdersAdminPage = () => {
   const [orders, setOrders] = useState<Order[]>([]);
@@ -66,30 +139,29 @@ const OrdersAdminPage = () => {
   };
 
   const getStatusIcon = (status: string) => {
-    switch (status) {
-      case 'pending_approval':
-        return <ClockIcon className="h-4 w-4 text-yellow-500" />;
-      case 'approved':
-      case 'delivered':
-        return <CheckCircleIcon className="h-4 w-4 text-green-500" />;
-      case 'cancelled':
-      case 'rejected':
-        return <XCircleIcon className="h-4 w-4 text-red-500" />;
-      default:
-        return <ClockIcon className="h-4 w-4 text-gray-500" />;
-    }
+    const config = statusConfig[status as keyof typeof statusConfig];
+    const IconComponent = config?.icon || ClockIcon;
+    const color = config?.progress === 100 ? 'text-green-500' : 
+                  config?.progress === 0 && status !== 'pending_approval' ? 'text-red-500' : 
+                  'text-yellow-500';
+    return <IconComponent className={`h-4 w-4 ${color}`} />;
   };
 
   const getStatusText = (status: string) => {
-    const statusMap = {
-      'pending_approval': 'Pendente',
-      'approved': 'Aprovada',
-      'shipped': 'Enviada',
-      'delivered': 'Entregue',
-      'cancelled': 'Cancelada',
-      'rejected': 'Rejeitada'
-    };
-    return statusMap[status as keyof typeof statusMap] || status;
+    const config = statusConfig[status as keyof typeof statusConfig];
+    return config?.label || status;
+  };
+
+  const getStatusBadge = (status: string) => {
+    const config = statusConfig[status as keyof typeof statusConfig];
+    const IconComponent = config?.icon || ClockIcon;
+    
+    return (
+      <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${config?.color || 'text-gray-700 bg-gray-50'}`}>
+        <IconComponent className="h-3 w-3 mr-1" />
+        {config?.label || status}
+      </span>
+    );
   };
 
   const filteredOrders = orders.filter(order => 
@@ -117,20 +189,41 @@ const OrdersAdminPage = () => {
       </div>
 
       {/* Filters */}
-      <div className="mt-8">
-        <select
-          value={statusFilter}
-          onChange={(e) => setStatusFilter(e.target.value)}
-          className="block w-full max-w-xs pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-orange-500 focus:border-orange-500 rounded-md"
-        >
-          <option value="all">Todas as encomendas</option>
-          <option value="pending_approval">Pendentes</option>
-          <option value="approved">Aprovadas</option>
-          <option value="shipped">Enviadas</option>
-          <option value="delivered">Entregues</option>
-          <option value="cancelled">Canceladas</option>
-          <option value="rejected">Rejeitadas</option>
-        </select>
+      <div className="mt-8 flex space-x-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Filtrar por Estado:
+          </label>
+          <select
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+            className="block w-full max-w-xs pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-orange-500 focus:border-orange-500 rounded-md"
+          >
+            <option value="all">Todas as encomendas</option>
+            <option value="pending_approval">Pendente de Aprovação</option>
+            <option value="approved">Aprovada</option>
+            <option value="processing">Em Processamento</option>
+            <option value="ready_to_ship">Pronta para Envio</option>
+            <option value="shipped">Enviada</option>
+            <option value="in_transit">Em Rota</option>
+            <option value="out_for_delivery">Saiu para Entrega</option>
+            <option value="delivered">Entregue</option>
+            <option value="rejected">Rejeitada</option>
+            <option value="cancelled">Cancelada</option>
+            <option value="returned">Devolvida</option>
+          </select>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Total de encomendas: {filteredOrders.length}
+          </label>
+          <div className="text-sm text-gray-600 dark:text-gray-400">
+            Pendentes: {filteredOrders.filter(o => o.order_status === 'pending_approval').length} | 
+            Em processo: {filteredOrders.filter(o => ['approved', 'processing', 'ready_to_ship', 'shipped', 'in_transit', 'out_for_delivery'].includes(o.order_status)).length} | 
+            Entregues: {filteredOrders.filter(o => o.order_status === 'delivered').length}
+          </div>
+        </div>
       </div>
 
       {/* Orders Table */}
@@ -186,11 +279,21 @@ const OrdersAdminPage = () => {
                         )}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center space-x-2">
-                          {getStatusIcon(order.order_status)}
-                          <span className="text-sm text-gray-900 dark:text-white">
-                            {getStatusText(order.order_status)}
-                          </span>
+                        <div className="flex items-center justify-between">
+                          <div>
+                            {getStatusBadge(order.order_status)}
+                          </div>
+                          <div className="ml-2">
+                            <div className="w-16 bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+                              <div 
+                                className="bg-orange-600 h-1.5 rounded-full transition-all duration-300" 
+                                style={{ width: `${statusConfig[order.order_status as keyof typeof statusConfig]?.progress || 0}%` }}
+                              ></div>
+                            </div>
+                            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                              {statusConfig[order.order_status as keyof typeof statusConfig]?.progress || 0}%
+                            </div>
+                          </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">

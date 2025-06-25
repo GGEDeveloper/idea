@@ -18,7 +18,7 @@ export async function GET(
       );
     }
 
-    const { ean } = params;
+    const { ean } = await params;
 
     // Get product with related data
     const productQuery = `
@@ -159,7 +159,7 @@ export async function PUT(
       );
     }
 
-    const { ean } = params;
+    const { ean } = await params;
     const body = await request.json();
     const { 
       name, 
@@ -235,7 +235,7 @@ export async function DELETE(
       );
     }
 
-    const { ean } = params;
+    const { ean } = await params;
 
     // Check if product exists
     const existingProduct = await pool.query(

@@ -18,7 +18,7 @@ export async function GET(
       );
     }
 
-    const { orderId } = params;
+    const { orderId } = await params;
 
     // Get order with user information
     const orderQuery = `

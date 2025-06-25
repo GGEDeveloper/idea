@@ -18,7 +18,7 @@ export async function GET(
       );
     }
 
-    const { userId } = params;
+    const { userId } = await params;
 
     const userQuery = `
       SELECT 
@@ -74,7 +74,7 @@ export async function PUT(
       );
     }
 
-    const { userId } = params;
+    const { userId } = await params;
     const body = await request.json();
     const { 
       email, 
@@ -174,7 +174,7 @@ export async function DELETE(
       );
     }
 
-    const { userId } = params;
+    const { userId } = await params;
 
     // Check if user exists
     const existingUser = await pool.query(
