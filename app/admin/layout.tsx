@@ -52,7 +52,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
     } catch (error) {
       console.error('[AdminLayout] Erro durante logout:', error);
       // Even if logout fails, redirect to login
-      window.location.href = '/login';
+    window.location.href = '/login';
     }
   };
 

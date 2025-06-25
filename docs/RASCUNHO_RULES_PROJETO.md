@@ -3,6 +3,7 @@
 > **Este documento é um rascunho e está sujeito a alterações.**
 
 ## Princípios Gerais
+- NAO FAZER ALTERACOES, ADICOES, REMOÇÕES, ETC RELATIVAMENTE A BD - TUDO RELATIVAMENTE A BD TEM DE SER PREVIAMENTE E CATEGORICAMENTE APROVADO PELO USER.
 - Garantir máxima fidelidade na clonagem do site Geko B2B, respeitando as regras de segurança, privacidade e compliance.
 - Autonomia do agente limitada por regras de segurança, rastreabilidade e validação humana.
 - Nunca expor dados sensíveis, credenciais ou preços de fornecedor diretamente ao cliente.

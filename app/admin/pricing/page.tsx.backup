@@ -49,30 +49,16 @@ export default function AdminPricingPage() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      
-      // Fetch price lists
-      const listsResponse = await fetch('/api/admin/pricing?type=lists', { credentials: 'include' });
-      const listsData = await listsResponse.json();
-      
-      // Fetch pricing rules  
-      const rulesResponse = await fetch('/api/admin/pricing?type=rules', { credentials: 'include' });
-      const rulesData = await rulesResponse.json();
+      const response = await fetch('/api/admin/pricing');
+      const data = await response.json();
 
-      if (listsResponse.ok && rulesResponse.ok) {
-        setPriceLists(listsData.priceLists || []);
-        setPricingRules(rulesData.rules || []);
-        
-        // Calculate stats
-        setStats({
-          totalPriceLists: listsData.priceLists?.length || 0,
-          totalRules: rulesData.rules?.length || 0,
-          averageMarkup: 25.0, // Default until calculated
-          lastUpdated: new Date().toISOString()
-        });
-        
+      if (response.ok) {
+        setPriceLists(data.priceLists || []);
+        setPricingRules(data.pricingRules || []);
+        setStats(data.stats);
         setError(null);
       } else {
-        setError('Erro ao carregar configurações de preços');
+        setError(data.error || 'Erro ao carregar configurações de preços');
       }
     } catch (error) {
       console.error('Error fetching pricing data:', error);
@@ -90,7 +76,7 @@ export default function AdminPricingPage() {
     try {
       setSaveLoading(true);
       const method = editingItem ? 'PUT' : 'POST';
-      const response = await fetch('/api/admin/pricing/lists', { credentials: 'include',
+      const response = await fetch('/api/admin/pricing/lists', {
         method,
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editingItem ? { ...formData, id: editingItem.price_list_id } : formData)
@@ -116,7 +102,7 @@ export default function AdminPricingPage() {
     if (!confirm('Tem certeza que deseja excluir esta lista de preços?')) return;
 
     try {
-      const response = await fetch(`/api/admin/pricing/lists/${id}`, { credentials: 'include',
+      const response = await fetch(`/api/admin/pricing/lists/${id}`, {
         method: 'DELETE'
       });
 

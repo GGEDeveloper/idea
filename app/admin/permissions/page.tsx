@@ -50,7 +50,7 @@ export default function AdminPermissionsPage() {
   const fetchPermissions = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/api/admin/permissions');
+      const response = await fetch('/api/admin/permissions', { credentials: 'include' });
       const data = await response.json();
 
       if (response.ok) {
@@ -81,7 +81,7 @@ export default function AdminPermissionsPage() {
         ...(editingPermission && { permission_id: editingPermission.permission_id })
       };
 
-      const response = await fetch('/api/admin/permissions', {
+      const response = await fetch('/api/admin/permissions', { credentials: 'include',
         method,
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

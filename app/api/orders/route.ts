@@ -253,10 +253,10 @@ export async function POST(request: NextRequest) {
     } catch (dbError) {
       await client.query('ROLLBACK');
       console.error('[API] Database error creating order:', dbError);
-      return NextResponse.json(
+    return NextResponse.json(
         { error: 'Erro ao criar encomenda na base de dados' },
         { status: 500 }
-      );
+    );
     } finally {
       client.release();
     }

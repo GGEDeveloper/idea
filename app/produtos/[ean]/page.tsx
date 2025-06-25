@@ -241,21 +241,21 @@ export default function ProductDetailPage() {
 
           {/* Product Information */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <ProductInfo 
-              product={product as any}
-              addToCart={handleAddToCart}
-              isAuthenticated={isAuthenticated}
+                  <ProductInfo 
+                    product={product as any}
+                    addToCart={handleAddToCart}
+                    isAuthenticated={isAuthenticated}
               hasPermission={hasPermission}
-            />
+                  />
           </div>
         </div>
 
         {/* Product Details Tabs */}
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <ProductTabs 
-            description={product.longdescription || product.shortdescription || ''}
-            attributes={product.attributes || []}
-          />
+                <ProductTabs 
+                  description={product.longdescription || product.shortdescription || ''}
+                  attributes={product.attributes || []}
+                />
         </div>
 
         {/* Related Products Section */}

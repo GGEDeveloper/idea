@@ -127,11 +127,11 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     
     if (typeof window !== 'undefined') {
       try {
-        const localData = localStorage.getItem('cartItems');
+      const localData = localStorage.getItem('cartItems');
         
         if (localData && localData !== 'undefined' && localData !== 'null') {
-          try {
-            const parsedData = JSON.parse(localData);
+        try {
+          const parsedData = JSON.parse(localData);
             
             // Garantir que é um array válido
             if (Array.isArray(parsedData)) {
@@ -158,9 +158,9 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
               localStorage.removeItem('cartItems');
               setCartItems([]);
             }
-          } catch (error) {
+        } catch (error) {
             console.error("[CartContext] Erro ao fazer parse dos dados do localStorage:", error);
-            localStorage.removeItem('cartItems'); // Limpa dados corrompidos
+          localStorage.removeItem('cartItems'); // Limpa dados corrompidos
             setCartItems([]);
           }
         } else {
@@ -182,7 +182,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   useEffect(() => {
     if (isInitialized && !isLoading && typeof window !== 'undefined') {
       try {
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
       } catch (error) {
         console.error('[CartContext] Erro ao salvar no localStorage:', error);
       }
@@ -249,7 +249,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       setCartItems(prevItems => {
         const newItems = prevItems.map(item =>
           item.id === productId ? { ...item, quantity: newQuantity } : item
-        );
+      );
         return newItems;
       });
     }

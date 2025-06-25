@@ -1,0 +1,1 @@
+{"message":"Login successful!","user":{"userId":"eda5b260-f3e6-47d4-93b1-4b6c699070a8","email":"g.art.shine@gmail.com","role":"admin"}}

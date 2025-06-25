@@ -1,24 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import pool from '../../../../db/index.cjs';
-
-// Helper function to check admin auth
-async function checkAdminAuth(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  if (!authHeader?.startsWith('Bearer ')) {
-    return null;
-  }
-  
-  // TODO: Implement JWT verification for admin
-  return null;
-}
+import { checkAdminAuth } from '../../../../src/utils/adminAuth';
 
 /**
  * GET /api/admin/pricing - Get pricing configuration and rules
  */
 export async function GET(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_settings']);
+    if (!adminUser) {
       return NextResponse.json(
         { error: 'Admin authentication required' },
         { status: 403 }
@@ -145,8 +135,8 @@ export async function GET(request: NextRequest) {
  */
 export async function POST(request: NextRequest) {
   try {
-    const adminAuth = await checkAdminAuth(request);
-    if (!adminAuth) {
+    const adminUser = await checkAdminAuth(request, ['manage_settings']);
+    if (!adminUser) {
       return NextResponse.json(
         { error: 'Admin authentication required' },
         { status: 403 }

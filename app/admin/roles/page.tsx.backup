@@ -86,9 +86,10 @@ export default function AdminRolesPage() {
         ...(editingRole && { role_id: editingRole.role_id })
       };
 
-      const response = await fetch('/api/admin/roles', { credentials: 'include',
+      const response = await fetch('/api/admin/roles', {
         method,
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(payload)
       });
 

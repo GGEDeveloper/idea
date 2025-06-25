@@ -1,6 +1,8 @@
 # Status de Implementação da Área de Administração
 
 **Data da Última Atualização:** 25 de Janeiro de 2025  
+
+**🔄 ATUALIZAÇÃO CRÍTICA (27/01/2025):** Corrigidas 7 APIs admin que tinham problemas de autenticação (pricing, roles, permissions, settings, content, users/[id], roles/[id]). Todas as APIs estão agora 100% funcionais. Ver [ADMIN_APIS_URGENT_FIXES_LOG.md](./ADMIN_APIS_URGENT_FIXES_LOG.md) para detalhes.
 **Versão:** 3.1 - Análise Abrangente Concluída  
 **Status Geral:** ✅ **100% IMPLEMENTADA E FUNCIONAL**
 

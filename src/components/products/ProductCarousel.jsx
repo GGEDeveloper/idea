@@ -202,15 +202,15 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                         // Check authentication and permissions
                         if (!isAuthenticated) {
                           return (
-                            <div className="flex flex-col">
-                              <span className="text-sm font-medium text-blue-600">
-                                <i className="fas fa-lock mr-1"></i>
-                                Preços para Parceiros
-                              </span>
-                              <span className="text-xs text-gray-500">
-                                Entre para ver preços
-                              </span>
-                            </div>
+                        <div className="flex flex-col">
+                          <span className="text-sm font-medium text-blue-600">
+                            <i className="fas fa-lock mr-1"></i>
+                            Preços para Parceiros
+                          </span>
+                          <span className="text-xs text-gray-500">
+                            Entre para ver preços
+                          </span>
+                        </div>
                           );
                         }
                         
@@ -220,7 +220,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                         
                         if (canViewPrice && priceExists) {
                           return (
-                            <span className="text-lg font-bold text-blue-600">
+                        <span className="text-lg font-bold text-blue-600">
                               €{parseFloat(product.price).toFixed(2)}
                             </span>
                           );
@@ -234,7 +234,7 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                           return (
                             <span className="text-sm font-medium text-gray-500">
                               Preço sob consulta
-                            </span>
+                        </span>
                           );
                         }
                       })()}

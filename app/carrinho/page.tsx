@@ -9,7 +9,7 @@ import { TrashIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 export default function CarrinhoPage() {
   const router = useRouter();
   const { cartItems, removeFromCart, updateQuantity, clearCart, getCartTotal, getTotalItems, isInitialized, isLoading } = useCart();
-  
+
   const handleQuantityChange = (productId: string, newQuantity: number) => {
     if (newQuantity < 1) {
       removeFromCart(productId);
@@ -252,7 +252,7 @@ export default function CarrinhoPage() {
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
                 Resumo do Pedido
               </h3>
-
+              
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>Subtotal ({totalItems} {totalItems === 1 ? 'item' : 'itens'})</span>
@@ -272,16 +272,16 @@ export default function CarrinhoPage() {
                 </div>
               </div>
 
-              <button
-                onClick={handleCheckout}
+                <button
+                  onClick={handleCheckout}
                 className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg"
-              >
+                >
                 <ShoppingBagIcon className="h-5 w-5 inline mr-2" />
                 Finalizar Compra
-              </button>
-
+                </button>
+                
               <div className="mt-4 text-center">
-                <Link 
+                <Link
                   href="/produtos"
                   className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm transition-colors"
                 >
