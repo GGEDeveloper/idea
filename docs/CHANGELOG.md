@@ -1,5 +1,53 @@
 # Changelog - AliTools Project
 
+## [1.6.0] - 2025-01-27
+
+### ✨ Novas Funcionalidades
+- **PRODUTO-VIEW-001**: Implementado modo de lista na página de produtos
+  - **Componente**: Criado `ProductList.tsx` com layout otimizado para visualização em lista
+  - **Hook**: Criado `useProductViewPreferences.ts` SSR-safe para persistir preferências
+  - **Toggle**: Botões de alternância entre vista em grelha (grid) e lista
+  - **Responsive**: Layout adaptativo com breakpoints para mobile
+  - **Persistência**: Preferências guardadas em localStorage de forma segura
+
+- **PRODUTO-PAGINATION-001**: Implementado selector de produtos por página
+  - **Opções**: 10, 20, 50, 100 produtos por página
+  - **Dinâmico**: Atualização automática da API conforme seleção
+  - **Reset Inteligente**: Volta à página 1 quando muda quantidade por página
+  - **Persistência**: Preferência guardada junto com modo de visualização
+
+### 🎨 Melhorias de UX
+- **LOADING-STATES-001**: Estados de carregamento específicos para cada modo de visualização
+  - Skeleton loading diferenciado para grid vs lista
+  - Melhor feedback visual durante carregamentos
+  - Transições suaves entre modos de visualização
+
+- **RESPONSIVE-DESIGN-001**: Melhorias significativas na responsividade
+  - Layout mobile otimizado para modo lista
+  - Controles de visualização adaptáveis
+  - Dropdowns responsivos com melhor usabilidade
+
+### 🔧 Melhorias Técnicas
+- **CSS-OPTIMIZATION-001**: Criado `products.css` com estilos específicos
+  - Classes utilitárias para line-clamp
+  - Hover effects melhorados
+  - Animações de transição suaves
+  - Otimizações de performance com will-change
+
+- **ACCESSIBILITY-001**: Melhorias de acessibilidade
+  - Focus states visíveis nos controles
+  - Tooltips informativos nos botões
+  - Navegação por teclado melhorada
+  - Labels descritivos para screen readers
+
+### 📊 Impacto da Atualização
+- **UX**: Utilizadores podem escolher a visualização preferida (lista mais compacta ou grid visual)
+- **Performance**: Carregamento dinâmico baseado na quantidade de produtos escolhida
+- **Mobile**: Experiência significativamente melhorada em dispositivos móveis
+- **Persistência**: Preferências mantidas entre sessões para melhor UX
+
+---
+
 ## [1.5.9] - 2025-01-27
 
 ### 🔧 Correções

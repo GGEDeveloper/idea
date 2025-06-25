@@ -5,7 +5,15 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useAuth } from '../contexts/AuthContext';
 import ProductGrid from '../components/products/ProductGrid';
+import ProductList from '../components/products/ProductList';
 import FilterSidebar from '../components/products/FilterSidebar';
+import { useProductViewPreferences } from '../hooks/useProductViewPreferences';
+import { 
+  Bars3Icon, 
+  Squares2X2Icon,
+  ChevronDownIcon
+} from '@heroicons/react/24/outline';
+import '../styles/products.css';
 
 interface Product {
   ean: string;
@@ -56,6 +64,14 @@ interface Filters {
 function ProductsPageContent() {
   const searchParams = useSearchParams();
   const { isAuthenticated, hasPermission } = useAuth();
+  const { 
+    viewMode, 
+    productsPerPage, 
+    isLoaded: preferencesLoaded,
+    setViewMode, 
+    setProductsPerPage 
+  } = useProductViewPreferences();
+  
   const [products, setProducts] = useState<Product[]>([]);
   const [filterOptions, setFilterOptions] = useState<FilterOptions>({});
   const [loading, setLoading] = useState(true);
@@ -123,7 +139,7 @@ function ProductsPageContent() {
         const params = new URLSearchParams();
         
         params.append('page', currentPage.toString());
-        params.append('limit', '20');
+        params.append('limit', productsPerPage.toString());
         
         if (searchTerm) params.append('q', searchTerm);
         
@@ -192,7 +208,7 @@ function ProductsPageContent() {
     // Add debounce for search
     const timeoutId = setTimeout(fetchProducts, searchTerm ? 500 : 0);
     return () => clearTimeout(timeoutId);
-  }, [searchTerm, filters, sortBy, currentPage]);
+  }, [searchTerm, filters, sortBy, currentPage, productsPerPage, preferencesLoaded]);
 
   // Filter handlers
   const handleBrandChange = (brand: string) => {
@@ -278,6 +294,13 @@ function ProductsPageContent() {
     setCurrentPage(1);
   };
 
+  // Reset current page when productsPerPage changes
+  useEffect(() => {
+    if (preferencesLoaded && currentPage > 1) {
+      setCurrentPage(1);
+    }
+  }, [productsPerPage, preferencesLoaded]);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8 px-4">
@@ -313,8 +336,9 @@ function ProductsPageContent() {
           {/* Products Grid */}
           <div className="lg:col-span-3">
             {/* Controls Header */}
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 bg-white rounded-lg shadow-md p-4">
-              <div className="flex items-center space-x-4">
+            <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+              {/* First Row: Mobile Filter Button + Search */}
+              <div className="flex items-center space-x-4 mb-4 sm:mb-0">
                 {/* Mobile Filter Button */}
                 <button
                   onClick={() => setIsFilterOpen(true)}
@@ -334,35 +358,80 @@ function ProductsPageContent() {
                   />
                 </div>
               </div>
-              
-              <div className="flex items-center justify-between mt-4 sm:mt-0 sm:ml-4">
-                <div className="sm:hidden">
-                  {loading ? (
-                    <p className="text-gray-600 text-sm">
-                      A carregar...
-                    </p>
-                  ) : (
-                    <p className="text-gray-600 text-sm">
-                      {products.length} de {totalProducts}
-                    </p>
-                  )}
-                </div>
-                
+
+              {/* Second Row: View Controls, Results Count, Sorting, and Per Page */}
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                {/* Left side: View Mode Toggle + Results Count */}
                 <div className="flex items-center space-x-4">
-                  <div className="hidden sm:block">
+                  {/* View Mode Toggle */}
+                  {preferencesLoaded && (
+                    <div className="flex rounded-lg border border-gray-300 p-1">
+                      <button
+                        onClick={() => setViewMode('grid')}
+                        className={`p-2 rounded-md transition-colors ${
+                          viewMode === 'grid'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-600 hover:bg-gray-100'
+                        }`}
+                        title="Vista em grelha"
+                      >
+                        <Squares2X2Icon className="h-5 w-5" />
+                      </button>
+                      <button
+                        onClick={() => setViewMode('list')}
+                        className={`p-2 rounded-md transition-colors ${
+                          viewMode === 'list'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-600 hover:bg-gray-100'
+                        }`}
+                        title="Vista em lista"
+                      >
+                        <Bars3Icon className="h-5 w-5" />
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Results Count */}
+                  <div className="text-gray-600 text-sm">
                     {loading ? (
-                      <p className="text-gray-600">
-                        A carregar produtos...
-                      </p>
+                      <span>A carregar produtos...</span>
                     ) : (
-                      <p className="text-gray-600">
+                      <span>
                         A mostrar {products.length} de {totalProducts} produtos
-                      </p>
+                      </span>
                     )}
                   </div>
-                  
+                </div>
+                
+                {/* Right side: Products per page + Sort */}
+                <div className="flex items-center space-x-4">
+                  {/* Products per page */}
+                  {preferencesLoaded && (
+                    <div className="flex items-center space-x-2">
+                      <label htmlFor="productsPerPage" className="text-sm font-medium text-gray-700 whitespace-nowrap">
+                        Por página:
+                      </label>
+                      <select
+                        id="productsPerPage"
+                        value={productsPerPage}
+                        onChange={(e) => {
+                          const newPerPage = parseInt(e.target.value) as 10 | 20 | 50 | 100;
+                          setProductsPerPage(newPerPage);
+                          setCurrentPage(1); // Reset to first page
+                        }}
+                        className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white text-gray-900"
+                      >
+                        <option value={10}>10</option>
+                        <option value={20}>20</option>
+                        <option value={50}>50</option>
+                        <option value={100}>100</option>
+                      </select>
+                    </div>
+                  )}
+
+                  {/* Sort */}
                   <div className="flex items-center space-x-2">
-                    <label htmlFor="sort" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="sort" className="text-sm font-medium text-gray-700 whitespace-nowrap">
                       Ordenar:
                     </label>
                     <select
@@ -395,26 +464,52 @@ function ProductsPageContent() {
 
             {/* Loading State */}
             {loading && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {[...Array(8)].map((_, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gray-200"></div>
-                    <div className="p-4">
-                      <div className="h-4 bg-gray-200 rounded mb-2"></div>
-                      <div className="h-3 bg-gray-200 rounded mb-3 w-3/4"></div>
-                      <div className="h-4 bg-gray-200 rounded w-1/2"></div>
-                    </div>
+              <>
+                {preferencesLoaded && viewMode === 'list' ? (
+                  // Loading skeleton for list view
+                  <div className="space-y-4">
+                    {[...Array(6)].map((_, index) => (
+                      <div key={index} className="flex items-center bg-white rounded-lg shadow-md p-4 border border-gray-200 animate-pulse">
+                        <div className="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-lg"></div>
+                        <div className="flex-1 ml-4">
+                          <div className="h-4 bg-gray-200 rounded mb-2 w-3/4"></div>
+                          <div className="h-3 bg-gray-200 rounded mb-3 w-full"></div>
+                          <div className="h-3 bg-gray-200 rounded mb-3 w-5/6"></div>
+                          <div className="h-4 bg-gray-200 rounded w-1/3"></div>
+                        </div>
+                        <div className="flex flex-col items-end space-y-2">
+                          <div className="h-6 bg-gray-200 rounded w-20"></div>
+                          <div className="h-8 bg-gray-200 rounded w-32"></div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                ) : (
+                  // Loading skeleton for grid view
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {[...Array(8)].map((_, index) => (
+                      <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden animate-pulse">
+                        <div className="aspect-square bg-gray-200"></div>
+                        <div className="p-4">
+                          <div className="h-4 bg-gray-200 rounded mb-2"></div>
+                          <div className="h-3 bg-gray-200 rounded mb-3 w-3/4"></div>
+                          <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
             )}
 
-            {/* Products Grid */}
+            {/* Products Display */}
             {!loading && products.length > 0 && (
               <>
-                <ProductGrid 
-                  products={products}
-                />
+                {preferencesLoaded && viewMode === 'list' ? (
+                  <ProductList products={products} />
+                ) : (
+                  <ProductGrid products={products} />
+                )}
 
                 {/* Pagination */}
                 {totalPages > 1 && (
