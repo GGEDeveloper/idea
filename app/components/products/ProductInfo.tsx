@@ -222,7 +222,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
                     setQuantity(newQuantity);
                   }
                 }}
-                className="w-20 text-center border border-gray-300 rounded-lg py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-20 text-center border border-gray-300 rounded-lg py-2 px-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 font-medium"
               />
               
               <button

@@ -80,9 +80,17 @@ export default function ProductDetailPage() {
     }
 
     // Get the price to display (product_price or from variants)
-    const price = product.product_price || 
+    const rawPrice = product.product_price || 
       product.variants?.[0]?.base_selling_price || 
       product.variants?.[0]?.promotional_price;
+
+    // Ensure price is a number
+    const price = typeof rawPrice === 'string' ? parseFloat(rawPrice) : Number(rawPrice);
+    
+    if (isNaN(price)) {
+      alert('Erro: Preço do produto inválido.');
+      return;
+    }
 
     try {
       // Use the cart context to add product with quantity
@@ -91,7 +99,7 @@ export default function ProductDetailPage() {
           id: product.ean,
           ean: product.ean,
           name: product.name,
-          price: price,
+          price: price, // Now guaranteed to be a number
           image: product.images && product.images.length > 0 ? product.images[0].url : undefined,
           brand: product.brand
         });
