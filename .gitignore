@@ -33,3 +33,4 @@ build/
 # Build output
 dist/
 build/
+.next/
