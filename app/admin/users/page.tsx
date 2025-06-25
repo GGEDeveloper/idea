@@ -32,9 +32,7 @@ const UsersAdminPage = () => {
   const fetchUsers = async () => {
     try {
       const response = await fetch('/api/admin/users', {
-        headers: {
-          'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
-        }
+        credentials: 'include'
       });
       if (response.ok) {
         const data = await response.json();

@@ -3,38 +3,39 @@ import pool from '../../../../../db/index.cjs';
 import { checkAdminAuth } from '../../../../../src/utils/adminAuth';
 
 /**
- * GET /api/admin/orders/[orderId] - Get specific order details
+ * GET /api/admin/orders/[orderId] - Get specific order details with items and user info
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ orderId: string }> }
+  { params }: { params: { orderId: string } }
 ) {
   try {
     const adminUser = await checkAdminAuth(request, ['manage_orders']);
     if (!adminUser) {
       return NextResponse.json(
-        { error: 'Admin authentication required with manage_orders permission' },
+        { error: 'Admin authentication required' },
         { status: 403 }
       );
     }
 
-    const { orderId } = await params;
+    const { orderId } = params;
 
     // Get order with user information
     const orderQuery = `
       SELECT 
         o.order_id,
+        o.user_id,
         o.order_status,
         o.total_amount,
         o.order_date,
         o.updated_at,
-        u.user_id,
-        u.email,
-        u.first_name,
-        u.last_name,
-        u.company_name
+        u.email as user_email,
+        u.first_name as user_first_name,
+        u.last_name as user_last_name,
+        u.company_name as user_company_name,
+        u.phone as user_phone
       FROM orders o
-      LEFT JOIN users u ON o.user_id = u.user_id
+      JOIN users u ON o.user_id = u.user_id
       WHERE o.order_id = $1
     `;
 
@@ -43,17 +44,13 @@ export async function GET(
       SELECT 
         oi.order_item_id,
         oi.product_ean,
+        oi.product_name,
         oi.quantity,
         oi.price_at_purchase,
-        oi.product_name,
-        p.name as current_product_name,
-        p.brand,
-        pi.url as image_url
+        (oi.quantity * oi.price_at_purchase) as total_item_price
       FROM order_items oi
-      LEFT JOIN products p ON oi.product_ean = p.ean
-      LEFT JOIN product_images pi ON p.ean = pi.ean AND pi.is_primary = true
       WHERE oi.order_id = $1
-      ORDER BY oi.order_item_id
+      ORDER BY oi.product_name
     `;
 
     const [orderResult, itemsResult] = await Promise.all([
@@ -68,15 +65,17 @@ export async function GET(
       );
     }
 
-    const order = orderResult.rows[0];
-    order.items = itemsResult.rows;
+    const order = {
+      ...orderResult.rows[0],
+      items: itemsResult.rows
+    };
 
     return NextResponse.json(order);
 
   } catch (error) {
-    console.error('[API] Admin error fetching order details:', error);
+    console.error('[API] Admin error fetching order:', error);
     return NextResponse.json(
-      { error: 'Internal server error while fetching order details.' },
+      { error: 'Internal server error while fetching order.' },
       { status: 500 }
     );
   }

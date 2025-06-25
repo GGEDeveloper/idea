@@ -4,6 +4,8 @@ import HeaderAdvanced from './components/HeaderAdvanced';
 import Footer from '../src/components/Footer';
 import { CartProvider } from './contexts/CartContext';
 import { AuthProvider } from './contexts/AuthContext';
+import { NotificationProvider } from './contexts/NotificationContext';
+import NotificationToast from './components/common/NotificationToast';
 
 export const metadata = {
   title: 'AliTools - Ferramentas Profissionais B2B',
@@ -24,15 +26,18 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <AuthProvider>
-          <CartProvider>
-            <HeaderAdvanced />
-            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
-              <main className="flex-1" id="main-content">
-                {children}
-              </main>
-              <Footer />
-            </div>
-          </CartProvider>
+          <NotificationProvider>
+            <CartProvider>
+              <HeaderAdvanced />
+              <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
+                <main className="flex-1" id="main-content">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+              <NotificationToast />
+            </CartProvider>
+          </NotificationProvider>
         </AuthProvider>
       </body>
     </html>

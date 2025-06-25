@@ -14,7 +14,8 @@ import {
   SparklesIcon,
   ClockIcon,
   FireIcon,
-  AdjustmentsHorizontalIcon
+  AdjustmentsHorizontalIcon,
+  InformationCircleIcon
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import HierarchicalCategoryFilter from './HierarchicalCategoryFilter';
@@ -439,7 +440,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
       </div>
 
       <div className="space-y-6">
-        {/* Filtros Rápidos */}
+        {/* Filtros Rápidos - Sempre visíveis */}
         <div>
           <h3 className="text-sm font-medium text-gray-900 mb-3">Filtros Rápidos</h3>
           <div className="grid grid-cols-2 gap-2">
@@ -478,140 +479,141 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
               <ClockIcon className="w-4 h-4 mx-auto mb-1" />
               Novidades
             </button>
-            
-            <button
-              onClick={onFeaturedChange}
-              className={`p-2 rounded-lg border text-xs transition-colors ${
-                filters.featured
-                  ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
-                  : 'border-gray-200 hover:border-indigo-300 text-gray-600'
-              }`}
-            >
-              <SparklesIcon className="w-4 h-4 mx-auto mb-1" />
-              Destaque
-            </button>
+
+            {/* Destaque - só para utilizadores autenticados */}
+            {isAuthenticated && (
+              <button
+                onClick={onFeaturedChange}
+                className={`p-2 rounded-lg border text-xs transition-colors ${
+                  filters.featured
+                    ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+                    : 'border-gray-200 hover:border-indigo-300 text-gray-600'
+                }`}
+              >
+                <SparklesIcon className="w-4 h-4 mx-auto mb-1" />
+                Destaque
+              </button>
+            )}
           </div>
         </div>
 
-        {/* Categorias */}
-        <div>
-          <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-            <TagIcon className="w-4 h-4 mr-1" />
-            Categorias
-            {filterOptions.categories && (
-              <span className="ml-auto text-xs text-gray-500 bg-green-100 px-2 py-1 rounded-full">
-                Hierárquico
-              </span>
-            )}
-          </h3>
-          {filterOptions.categories && filterOptions.categories.length > 0 ? (
-            <HierarchicalCategoryFilter
-              categories={filterOptions.categories}
-              selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
-              onCategorySelect={onCategoryChange}
-            />
-          ) : (
-            <p className="text-sm text-gray-500 text-center py-4">
-              Nenhuma categoria disponível
-            </p>
-          )}
-        </div>
+        {/* Aviso para visitantes */}
+        {!isAuthenticated && (
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <div className="flex items-start">
+              <InformationCircleIcon className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+              <div>
+                <h4 className="text-sm font-medium text-blue-900 mb-1">
+                  Acesso Limitado
+                </h4>
+                <p className="text-xs text-blue-700">
+                  Faça login para aceder a filtros avançados como marcas, categorias e preços.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
 
-        {/* Marcas */}
-        <div>
-          <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-            <TagIcon className="w-4 h-4 mr-1" />
-            Marcas
-            {filterOptions.brands && (
-              <span className="ml-auto text-xs text-gray-500">
-                {filterOptions.brands.length}
-              </span>
-            )}
-          </h3>
-          
-          {filterOptions.brands && filterOptions.brands.length > 0 ? (
-            <>
-              {/* Search */}
-              <div className="relative mb-3">
-                <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                <input
-                  type="text"
-                  value={brandSearch}
-                  onChange={(e) => setBrandSearch(e.target.value)}
-                  placeholder="Buscar marca..."
-                  className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
+        {/* Filtros Avançados - Só Para Utilizadores Autenticados */}
+        {isAuthenticated && (
+          <>
+            {/* Categorias */}
+            {filterOptions.categories && filterOptions.categories.length > 0 && (
+              <div>
+                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
+                  <TagIcon className="w-4 h-4 mr-1" />
+                  Categorias
+                  <span className="ml-auto text-xs text-gray-500 bg-green-100 px-2 py-1 rounded-full">
+                    Hierárquico
+                  </span>
+                </h3>
+                <HierarchicalCategoryFilter
+                  categories={filterOptions.categories}
+                  selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
+                  onCategorySelect={onCategoryChange}
                 />
               </div>
-              
-              {/* Brand List */}
-              <div className="max-h-48 overflow-y-auto space-y-2">
-                {filteredBrands.map((brand) => (
-                  <label key={brand} className="flex items-center p-2 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={filters.brands[brand] || false}
-                      onChange={() => onBrandChange(brand)}
-                      className="h-4 w-4 text-indigo-600 rounded border-gray-300 focus:ring-indigo-500"
-                    />
-                    <span className="ml-2 text-sm text-gray-700">{brand}</span>
-                  </label>
-                ))}
-              </div>
-            </>
-          ) : (
-            <p className="text-sm text-gray-500 text-center py-4">
-              Nenhuma marca disponível
-            </p>
-          )}
-        </div>
+            )}
 
-        {/* Preço */}
-        <div>
-          <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-            <CurrencyEuroIcon className="w-4 h-4 mr-1" />
-            Preço
-          </h3>
-          
-          {isAuthenticated && hasPermission('view_price') ? (
-            <div className="space-y-3">
-              <div className="flex space-x-2">
-                <div className="flex-1">
-                  <label className="block text-xs text-gray-700 mb-1">Mínimo</label>
+            {/* Marcas */}
+            {filterOptions.brands && filterOptions.brands.length > 0 && (
+              <div>
+                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
+                  <TagIcon className="w-4 h-4 mr-1" />
+                  Marcas
+                  <span className="ml-auto text-xs text-gray-500">
+                    {filterOptions.brands.length}
+                  </span>
+                </h3>
+                
+                {/* Search */}
+                <div className="relative mb-3">
+                  <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
                   <input
-                    type="number"
-                    min={0}
-                    value={filters.price?.min || ''}
-                    onChange={(e) => onPriceChange('min', Number(e.target.value))}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
-                    placeholder="0"
+                    type="text"
+                    value={brandSearch}
+                    onChange={(e) => setBrandSearch(e.target.value)}
+                    placeholder="Buscar marca..."
+                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
                   />
                 </div>
                 
-                <div className="flex-1">
-                  <label className="block text-xs text-gray-700 mb-1">Máximo</label>
-                  <input
-                    type="number"
-                    min={0}
-                    value={filters.price?.max || ''}
-                    onChange={(e) => onPriceChange('max', Number(e.target.value))}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
-                    placeholder="1000"
-                  />
+                {/* Brand List */}
+                <div className="max-h-48 overflow-y-auto space-y-2">
+                  {filteredBrands.map((brand) => (
+                    <label key={brand} className="flex items-center p-2 hover:bg-gray-50 rounded-lg cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={filters.brands[brand] || false}
+                        onChange={() => onBrandChange(brand)}
+                        className="h-4 w-4 text-indigo-600 rounded border-gray-300 focus:ring-indigo-500"
+                      />
+                      <span className="ml-2 text-sm text-gray-700">{brand}</span>
+                    </label>
+                  ))}
                 </div>
               </div>
-            </div>
-          ) : (
-            <div className="text-center py-6">
-              <CurrencyEuroIcon className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-              <p className="text-sm text-gray-500 mb-3">
-                Faça login para filtrar por preço
-              </p>
-              <button className="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
-                Fazer Login
-              </button>
-            </div>
-          )}
-        </div>
+            )}
+
+            {/* Preços - Só para utilizadores com permissão view_price */}
+            {hasPermission('view_price') && filterOptions.price && (
+              <div>
+                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
+                  <CurrencyEuroIcon className="w-4 h-4 mr-1" />
+                  Preço
+                </h3>
+                
+                <div className="space-y-3">
+                  <div className="flex space-x-2">
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-700 mb-1">Mínimo</label>
+                      <input
+                        type="number"
+                        min={0}
+                        value={filters.price?.min || ''}
+                        onChange={(e) => onPriceChange('min', Number(e.target.value))}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
+                        placeholder="0"
+                      />
+                    </div>
+                    
+                    <div className="flex-1">
+                      <label className="block text-xs text-gray-700 mb-1">Máximo</label>
+                      <input
+                        type="number"
+                        min={0}
+                        value={filters.price?.max || ''}
+                        onChange={(e) => onPriceChange('max', Number(e.target.value))}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm"
+                        placeholder="1000"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       {/* Footer com Ações */}

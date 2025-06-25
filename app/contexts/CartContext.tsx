@@ -2,6 +2,7 @@
 
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
 import { useAuth } from './AuthContext';
+import { useNotification } from './NotificationContext';
 
 // Tipos para os itens do carrinho
 export interface CartItem {
@@ -49,6 +50,9 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [isInitialized, setIsInitialized] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [authHydrated, setAuthHydrated] = useState(false);
+  
+  // Hook de notificações
+  const { addNotification } = useNotification();
   
   // Safely access auth context
   let registerCartClearCallback: any = undefined;
@@ -198,13 +202,26 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     // Validar dados do produto
     if (!product.id || !product.name || typeof product.price !== 'number') {
       console.error('[CartContext] Dados do produto inválidos:', product);
+      
+      // Use setTimeout para evitar setState durante render
+      setTimeout(() => {
+        addNotification({
+          type: 'error',
+          title: 'Erro ao adicionar produto',
+          message: 'Dados do produto são inválidos.'
+        });
+      }, 0);
       return;
     }
+    
+    let wasUpdated = false;
+    let wasAdded = false;
     
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
       if (existingItem) {
         // Se o item já existe, atualiza a quantidade
+        wasUpdated = true;
         const updatedItems = prevItems.map(item =>
           item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item
         );
@@ -212,12 +229,30 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
         return updatedItems;
       } else {
         // Se o item não existe, adiciona ao carrinho
+        wasAdded = true;
         const newItem = { ...product, quantity };
         const newItems = [...prevItems, newItem];
         console.log(`[CartContext] ${product.name} adicionado ao carrinho`);
         return newItems;
       }
     });
+    
+    // Notificações fora do setState
+    setTimeout(() => {
+      if (wasUpdated) {
+        addNotification({
+          type: 'success',
+          title: 'Quantidade atualizada',
+          message: `${product.name} - ${quantity > 1 ? `${quantity} unidades` : '1 unidade'} adicionada${quantity > 1 ? 's' : ''}`
+        });
+      } else if (wasAdded) {
+        addNotification({
+          type: 'success',
+          title: 'Produto adicionado',
+          message: `${product.name} - ${quantity > 1 ? `${quantity} unidades` : '1 unidade'} adicionada${quantity > 1 ? 's' : ''} ao carrinho`
+        });
+      }
+    }, 0);
   };
 
   const removeFromCart = (productId: string) => {
@@ -227,6 +262,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     }
     
     const itemToRemove = cartItems.find(item => item.id === productId);
+    
     setCartItems(prevItems => {
       const newItems = prevItems.filter(item => item.id !== productId);
       return newItems;
@@ -234,6 +270,15 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     
     if (itemToRemove) {
       console.log(`[CartContext] ${itemToRemove.name} removido do carrinho`);
+      
+      // Notificação fora do setState
+      setTimeout(() => {
+        addNotification({
+          type: 'info',
+          title: 'Produto removido',
+          message: `${itemToRemove.name} foi removido do carrinho`
+        });
+      }, 0);
     }
   };
 
@@ -242,6 +287,8 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       console.warn('[CartContext] Tentativa de atualizar quantidade antes da inicialização');
       return;
     }
+    
+    const item = cartItems.find(item => item.id === productId);
     
     if (newQuantity <= 0) {
       removeFromCart(productId);
@@ -252,6 +299,17 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       );
         return newItems;
       });
+      
+      if (item) {
+        // Notificação fora do setState
+        setTimeout(() => {
+          addNotification({
+            type: 'info',
+            title: 'Quantidade alterada',
+            message: `${item.name} - Nova quantidade: ${newQuantity}`
+          });
+        }, 0);
+      }
     }
   };
 
@@ -261,8 +319,20 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       return;
     }
     
+    const itemCount = cartItems.length;
     clearCartCompletely();
     console.log('[CartContext] Carrinho limpo pelo utilizador');
+    
+    if (itemCount > 0) {
+      // Notificação fora do setState
+      setTimeout(() => {
+        addNotification({
+          type: 'warning',
+          title: 'Carrinho limpo',
+          message: `Todos os ${itemCount} ${itemCount === 1 ? 'produto foi removido' : 'produtos foram removidos'} do carrinho`
+        });
+      }, 0);
+    }
   };
 
   const getCartTotal = (): number => {
@@ -300,5 +370,5 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     isLoading,
   };
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }; 

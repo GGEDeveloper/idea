@@ -28,8 +28,8 @@ export function useProducts(options = {}) {
   const [priceMaxFilter, setPriceMaxFilter] = useState(initialFilters.priceMax?.toString() || '');
   const [isFeaturedQuery, setIsFeaturedQuery] = useState(initialIsFeatured); // For API query
   
-  // Quick filters
-  const [hasStockFilter, setHasStockFilter] = useState(false);
+  // Quick filters - Em Stock vem pré-selecionado como padrão estratégico
+  const [hasStockFilter, setHasStockFilter] = useState(true);
   const [onSaleFilter, setOnSaleFilter] = useState(false);
   const [isNewFilter, setIsNewFilter] = useState(false);
   

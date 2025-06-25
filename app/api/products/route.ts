@@ -35,6 +35,7 @@ export async function GET(request: NextRequest) {
     }
 
     const canViewPrices = isAuthenticated && userPermissions.includes('view_price');
+    const canViewStock = isAuthenticated && userPermissions.includes('view_stock');
 
     // Get query parameters from URL
     const { searchParams } = new URL(request.url);
@@ -133,8 +134,15 @@ export async function GET(request: NextRequest) {
       filters.is_featured = true;
     }
 
-    if (hasStock === 'true') {
+    // **ESTRATÉGIA VISITANTES**: Visitantes não autenticados só veem produtos com stock
+    if (!isAuthenticated) {
+      console.log('[API] Visitante não autenticado - aplicando hasStock=true automaticamente');
       filters.hasStock = true;
+    } else {
+      // Para utilizadores autenticados, aplicar filtro hasStock apenas se explicitamente definido
+      if (hasStock === 'true') {
+        filters.hasStock = true;
+      }
     }
     
     if (onSale === 'true') {
@@ -171,6 +179,18 @@ export async function GET(request: NextRequest) {
         delete processed.product_price;
         processed.priceStatus = isAuthenticated ? 'no_permission' : 'unauthenticated';
       }
+
+      if (canViewStock) {
+        // User is authenticated and has view_stock permission
+        processed.stockStatus = 'authenticated';
+        // Keep total_stock field as is
+        processed.stock = processed.total_stock || 0;
+      } else {
+        // User is not authenticated or doesn't have permission
+        delete processed.total_stock;
+        processed.stockStatus = isAuthenticated ? 'no_permission' : 'unauthenticated';
+        processed.stock = null;
+      }
       
       return processed;
     });
@@ -183,6 +203,7 @@ export async function GET(request: NextRequest) {
       userInfo: {
         isAuthenticated,
         canViewPrices,
+        canViewStock,
         permissions: userPermissions
       }
     });

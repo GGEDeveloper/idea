@@ -181,7 +181,6 @@ const ProductCarousel = ({ products = [], autoplay = true, autoplayInterval = 50
                     
                     {/* Featured Badge */}
                     <div className="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded">
-                      <i className="fas fa-star mr-1"></i>
                       Destaque
                     </div>
                   </div>

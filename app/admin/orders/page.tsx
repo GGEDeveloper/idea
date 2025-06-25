@@ -33,9 +33,7 @@ const OrdersAdminPage = () => {
   const fetchOrders = async () => {
     try {
       const response = await fetch('/api/admin/orders', {
-        headers: {
-          'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
-        }
+        credentials: 'include'
       });
       if (response.ok) {
         const data = await response.json();
@@ -53,9 +51,9 @@ const OrdersAdminPage = () => {
       const response = await fetch(`/api/admin/orders/${orderId}`, {
         method: 'PUT',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({ status })
       });
       

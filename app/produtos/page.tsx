@@ -83,12 +83,12 @@ function ProductsPageContent() {
   const [totalProducts, setTotalProducts] = useState(0);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  // Estado dos filtros
+  // Estado dos filtros - Em Stock vem pré-selecionado como padrão estratégico
   const [filters, setFilters] = useState<Filters>({
     brands: {},
     categories: [],
     price: { min: 0, max: 10000 },
-    hasStock: false,
+    hasStock: true,
     onSale: false,
     isNew: false,
     featured: false,
@@ -284,7 +284,7 @@ function ProductsPageContent() {
       brands: {},
       categories: [],
       price: { min: 0, max: 10000 },
-      hasStock: false,
+      hasStock: true,
       onSale: false,
       isNew: false,
       featured: false,

@@ -316,36 +316,36 @@ $$ LANGUAGE plpgsql;
 -- Trigger para categories
 DROP TRIGGER IF EXISTS set_timestamp_categories ON categories;
 CREATE TRIGGER set_timestamp_categories
-    BEFORE UPDATE ON categories
-    FOR EACH ROW
+BEFORE UPDATE ON categories
+FOR EACH ROW
     EXECUTE FUNCTION trigger_set_timestamp();
 
 -- Trigger para geko_products
 DROP TRIGGER IF EXISTS set_timestamp_geko_products ON geko_products;
 CREATE TRIGGER set_timestamp_geko_products
     BEFORE UPDATE ON geko_products
-    FOR EACH ROW
+FOR EACH ROW
     EXECUTE FUNCTION trigger_set_timestamp();
 
 -- Trigger para orders
 DROP TRIGGER IF EXISTS set_timestamp_orders ON orders;
 CREATE TRIGGER set_timestamp_orders
-    BEFORE UPDATE ON orders
-    FOR EACH ROW
+BEFORE UPDATE ON orders
+FOR EACH ROW
     EXECUTE FUNCTION trigger_set_timestamp();
 
 -- Trigger para pricing_config
 DROP TRIGGER IF EXISTS set_timestamp_pricing_config ON pricing_config;
 CREATE TRIGGER set_timestamp_pricing_config
     BEFORE UPDATE ON pricing_config
-    FOR EACH ROW
+FOR EACH ROW
     EXECUTE FUNCTION trigger_set_timestamp();
 
 -- Trigger para product_attributes
 DROP TRIGGER IF EXISTS set_timestamp_product_attributes ON product_attributes;
 CREATE TRIGGER set_timestamp_product_attributes
-    BEFORE UPDATE ON product_attributes
-    FOR EACH ROW
+BEFORE UPDATE ON product_attributes
+FOR EACH ROW
     EXECUTE FUNCTION trigger_set_timestamp();
 
 -- Trigger para products

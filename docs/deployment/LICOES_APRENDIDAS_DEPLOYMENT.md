@@ -1,5 +1,5 @@
 # 📚 LIÇÕES APRENDIDAS: DEPLOYMENT MULTI-DOMÍNIO
-**Baseado na Recuperação Bem-Sucedida do Artnshine.pt - 20 Junho 2025**
+**Baseado na Recuperação Bem-Sucedida do Artnshine.pt - 20 Janeiro 2025**
 
 ---
 
