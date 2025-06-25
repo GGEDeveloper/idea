@@ -21,9 +21,15 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 
 ### Análise de Projeto e Status
 
-- [PROJECT_STATUS_SUMMARY.md](./PROJECT_STATUS_SUMMARY.md): ✅ **NOVO (25/01/2025)** Resumo executivo completo do estado do projeto
+- [PROJECT_STATUS_SUMMARY.md](./PROJECT_STATUS_SUMMARY.md): ✅ **ATUALIZADO (27/01/2025)** Resumo executivo completo do estado do projeto v1.5.9
 - [DATABASE_REFORMULATION_PLAN.md](./DATABASE_REFORMULATION_PLAN.md): ✅ **NOVO (14/06/2025)** Plano estratégico de reformulação da base de dados
 - [FEATURES_COMPLETE_REFERENCE.md](./FEATURES_COMPLETE_REFERENCE.md): ✅ **NOVO (27/01/2025)** Referência completa de todas as funcionalidades implementadas
+
+### Sistema de Filtragem e UX
+
+- [HIERARCHICAL_FILTER_ENHANCEMENT_REPORT.md](./HIERARCHICAL_FILTER_ENHANCEMENT_REPORT.md): ✅ **NOVO (27/01/2025)** Relatório completo de melhorias para sistema de filtros hierárquicos
+- [FILTERING_SYSTEM_STATUS.md](./FILTERING_SYSTEM_STATUS.md): ✅ **NOVO (14/01/2025)** Status detalhado do sistema de filtros
+- [SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md](./SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Implementação do filtro simplificado de categorias para melhor UX
 
 ### Sistema de Preços e Configuração
 
@@ -56,16 +62,14 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [FRONTEND_CATEGORIES_IMPLEMENTATION.md](./FRONTEND_CATEGORIES_IMPLEMENTATION.md): Detalhes de implementação das categorias no frontend. **(Atualizado: árvore de categorias baseada em path, estrutura esperada e exemplos)**
 - [ADMIN_AREA_IMPLEMENTATION_STATUS.md](./ADMIN_AREA_IMPLEMENTATION_STATUS.md): ✅ **NOVO (17/01/2025)** Status completo da área de administração - 100% funcional
 - [DEVELOPMENT_LOG.md](./DEVELOPMENT_LOG.md): ✅ **NOVO (18/01/2025)** Log detalhado de desenvolvimento e correções
-- [CHANGELOG.md](./CHANGELOG.md): ✅ **NOVO (18/01/2025)** Histórico de versões e alterações
+- [CHANGELOG.md](./CHANGELOG.md): ✅ **ATUALIZADO (27/01/2025)** Histórico de versões e alterações - v1.5.9
 - [PRODUCT_DETAIL_PAGE_STATUS.md](./PRODUCT_DETAIL_PAGE_STATUS.md): ✅ **NOVO (14/01/2025)** Status detalhado da página de produto
-- [FILTERING_SYSTEM_STATUS.md](./FILTERING_SYSTEM_STATUS.md): ✅ **NOVO (14/01/2025)** Status detalhado do sistema de filtros
 
 ### Implementação e Dark Mode
 
 - [DARK_MODE_IMPLEMENTATION_GUIDE.md](./DARK_MODE_IMPLEMENTATION_GUIDE.md): ✅ **NOVO (20/01/2025)** Guia completo de implementação do Dark Mode Modular
 - [CHECKOUT_SYSTEM_IMPLEMENTATION.md](./CHECKOUT_SYSTEM_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Documentação completa do sistema de checkout e e-commerce implementado
 - [LOGOUT_CART_FIX_IMPLEMENTATION.md](./LOGOUT_CART_FIX_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Correção crítica do sistema de logout e gestão de carrinho
-- [SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md](./SIMPLIFIED_CATEGORY_FILTER_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Implementação do filtro simplificado de categorias para melhor UX
 - [ABOUT_PAGE_REBRANDING_IMPLEMENTATION.md](./ABOUT_PAGE_REBRANDING_IMPLEMENTATION.md): ✅ **NOVO (27/01/2025)** Reformulação completa da página "Sobre" com rebranding AliTools
 
 ## Logs e Registros
@@ -80,13 +84,14 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **NOVO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **NOVO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-27)
+## Status Atual do Sistema (2025-01-27 - v1.5.9)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
 - **Sistema de E-commerce Completo**: ✅ **100% FUNCIONAL** - Carrinho → Checkout → Encomenda → Aprovação
+- **Filtros Hierárquicos**: ✅ **100% FUNCIONAIS** - Navegação expandível em árvore com busca inteligente
 - **Página de Produtos (`/produtos`)**: Totalmente funcional com listagem, filtros, paginação e busca
-- **Sistema de Categorias**: Árvore hierárquica com nomes visíveis e navegação funcional, seleção de categorias sem erros
+- **Sistema de Categorias**: Árvore hierárquica com nomes visíveis, navegação funcional e expansão/colapso
 - **Filtros Laterais**: **TODOS FUNCIONANDO** - Marcas, categorias (hierárquico), preço, stock e filtros rápidos
 - **Gestão de Carrinho**: ✅ **100% FUNCIONAL** - LocalStorage + API, hidratação, validações
 - **Sistema de Checkout**: ✅ **100% FUNCIONAL** - Formulário completo, validações, criação de encomendas
@@ -96,18 +101,21 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
 
-### 🆕 Funcionalidades Recentes (27/01/2025)
-- **CHECKOUT-001**: Sistema de checkout completo implementado
-- **CART-001**: Gestão avançada de carrinho com hydratação
-- **ORDER-001**: API de criação de encomendas com validações
-- **ADMIN-CART-001**: Monitorização de carrinhos pendentes em tempo real
+### 🆕 Funcionalidades Recentes (v1.5.9 - 27/01/2025)
+- **HIERARCH-FIX-001**: Filtros hierárquicos 100% funcionais com expansão/colapso
+- **TYPESCRIPT-FIX-001**: Build system sem erros de compilação TypeScript
+- **UX-ENHANCEMENT-001**: Melhorias visuais e de navegação em toda a aplicação
+- **DOCUMENTATION-001**: Relatório completo de roadmap para melhorias do sistema de filtros
 
-### 🔧 Correções Recentes (18/01/2025)
+### 🔧 Correções Recentes (27/01/2025)
+- **HIERARCH-FIX-001**: Resolvido problema de botões de expansão nos filtros hierárquicos
+- **AUTH-HYDRATION-001**: Corrigidos problemas de hidratação SSR em componentes de autenticação
+- **SORT-DROPDOWN-001**: Melhorado dropdown de ordenação com opções de preço para utilizadores autenticados
+
+### 🔧 Correções Anteriores
 - **FILTER-ERR-001**: Resolvido bug de filtragem hierárquica de categorias com CTE Recursiva
 - **FILTER-ERR-002**: Corrigidos handlers de filtros rápidos e de marcas
 - **DATA-ERR-001**: Normalizados IDs de categorias na base de dados com migração V6
-
-### 🔧 Correções Anteriores
 - **ADMIN-ERR-001**: Resolvido erro `column pv_detail.sku does not exist`
 - **ADMIN-ERR-002**: Implementada paginação real substituindo placeholders
 - **ADMIN-ERR-003**: Corrigida criação de produtos para nova estrutura de preços com variantes
@@ -116,12 +124,18 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **FRONT-ERR-010**: Resolvido problema de exibição de categorias sem nomes
 - **FRONT-ERR-011**: Resolvido erro `TypeError: selectedCategories.some is not a function` no filtro de categorias.
 
+### 🚀 Roadmap de Melhorias Definido
+- **PHASE-1**: Persistência de estado + Expansão inteligente (1-2 semanas)
+- **PHASE-2**: Filtros avançados + Performance + Acessibilidade (2-4 semanas)
+- **PHASE-3**: Analytics + Sugestões IA + Otimizações avançadas (1-3 meses)
+
 ### 🚀 Pronto para Deployment
 - **Sistema de deployment**: Documentação completa e procedimentos testados
 - **Configuração para dominios.pt**: Guias específicos baseados em experiências anteriores
 - **Rollback procedures**: Comandos de emergência documentados
 - **E-commerce completo**: Todo o workflow implementado e testado
+- **Build System**: TypeScript compilation 100% successful
 
 ---
 
-> **IMPORTANTE**: Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes. O sistema está agora **COMPLETAMENTE FUNCIONAL** para todas as funcionalidades de e-commerce B2B e **PRONTO PARA DEPLOYMENT SEGURO**. Implementação inclui carrinho, checkout, gestão de encomendas e aprovação administrativa - um workflow completo de e-commerce.
+> **IMPORTANTE**: Consulte SEMPRE este índice e os documentos referenciados antes de tomar decisões técnicas, implementar código ou responder a prompts relevantes. O sistema está agora **COMPLETAMENTE FUNCIONAL** para todas as funcionalidades de e-commerce B2B, incluindo **filtros hierárquicos totalmente operacionais**, e **PRONTO PARA DEPLOYMENT SEGURO**. A versão v1.5.9 inclui melhorias significativas de UX e um roadmap detalhado para futuras implementações. Implementação inclui carrinho, checkout, gestão de encomendas, aprovação administrativa e navegação hierárquica avançada - um workflow completo de e-commerce B2B moderno.

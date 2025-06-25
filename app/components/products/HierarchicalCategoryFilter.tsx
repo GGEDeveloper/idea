@@ -19,6 +19,11 @@ interface Category {
   children?: Category[];
 }
 
+interface ExpandableCategory extends Omit<Category, 'children'> {
+  _shouldExpand?: boolean;
+  children?: ExpandableCategory[];
+}
+
 interface HierarchicalCategoryFilterProps {
   categories?: Category[];
   selectedCategories?: string[];
@@ -45,7 +50,7 @@ const CategoryCheckbox = ({
 }) => (
   <div 
     className="group flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-all duration-200"
-    style={{ paddingLeft: `${0.75 + level * 0.75}rem` }}
+    style={{ paddingLeft: `${0.5 + level * 0.5}rem` }}
   >
     <div className="flex items-center flex-1">
       <div className="relative">
@@ -83,6 +88,30 @@ const CategoryCheckbox = ({
   </div>
 );
 
+// Função recursiva para filtrar e marcar categorias como expandidas quando há busca
+const filterAndExpandCategories = (categories: Category[], searchTerm: string): ExpandableCategory[] => {
+  const results: ExpandableCategory[] = [];
+  
+  for (const category of categories) {
+    const matchesSearch = category.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         category.path?.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const filteredChildren = category.children ? filterAndExpandCategories(category.children, searchTerm) : [];
+    const hasMatchingChildren = filteredChildren.length > 0;
+    
+    // Se a categoria ou algum filho corresponde à busca, incluir na árvore filtrada
+    if (matchesSearch || hasMatchingChildren) {
+      results.push({
+        ...category,
+        children: filteredChildren,
+        _shouldExpand: searchTerm.length > 0 && hasMatchingChildren // Marcar para expansão automática
+      });
+    }
+  }
+  
+  return results;
+};
+
 // Componente para categoria expandível
 const ExpandableCategory = ({ 
   category, 
@@ -91,43 +120,41 @@ const ExpandableCategory = ({
   level = 0,
   searchTerm = ''
 }: {
-  category: Category;
+  category: ExpandableCategory;
   selectedCategories: string[];
   onCategorySelect: (categoryId: string) => void;
   level?: number;
   searchTerm?: string;
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  // Inicializar como expandido se há termo de busca e categoria deve expandir
+  const [isExpanded, setIsExpanded] = useState(category._shouldExpand || false);
   
   const hasChildren = category.children && category.children.length > 0;
   const isSelected = selectedCategories.includes(category.id);
   
-  // Filtrar children baseado na busca
-  const filteredChildren = useMemo(() => {
-    if (!hasChildren || !searchTerm) return category.children || [];
-    
-    return category.children!.filter(child => 
-      child.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      child.path?.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [category.children, searchTerm, hasChildren]);
-
-  // Se há termo de busca, mostrar automaticamente expandido se há children que correspondem
-  const shouldShowExpanded = searchTerm ? filteredChildren.length > 0 : isExpanded;
+  // Atualizar expansão quando há mudança no termo de busca
+  React.useEffect(() => {
+    if (searchTerm && category._shouldExpand) {
+      setIsExpanded(true);
+    } else if (!searchTerm) {
+      setIsExpanded(false);
+    }
+  }, [searchTerm, category._shouldExpand]);
 
   return (
-    <div>
+    <div className="relative">
       {/* Categoria principal */}
       <div className="flex items-center">
         {/* Botão de expansão */}
         {hasChildren && (
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="p-1 hover:bg-gray-100 rounded mr-1 transition-colors"
+            className="p-1 hover:bg-gray-100 rounded mr-1 transition-colors z-10"
             style={{ marginLeft: `${level * 0.75}rem` }}
+            type="button"
           >
-            {shouldShowExpanded ? (
-              <ChevronDownIcon className="w-4 h-4 text-gray-500" />
+            {isExpanded ? (
+              <ChevronDownIcon className="w-4 h-4 text-gray-600" />
             ) : (
               <ChevronRightIcon className="w-4 h-4 text-gray-500" />
             )}
@@ -135,9 +162,9 @@ const ExpandableCategory = ({
         )}
         
         {/* Ícone da pasta */}
-        <div style={{ marginLeft: hasChildren ? '0' : `${0.5 + level * 0.75}rem` }}>
+        <div style={{ marginLeft: hasChildren ? '0' : `${1 + level * 0.75}rem` }}>
           {hasChildren ? (
-            shouldShowExpanded ? (
+            isExpanded ? (
               <FolderOpenIcon className="w-4 h-4 text-indigo-500 mr-2" />
             ) : (
               <FolderIcon className="w-4 h-4 text-gray-500 mr-2" />
@@ -154,17 +181,17 @@ const ExpandableCategory = ({
             label={category.name || category.path || 'Categoria sem nome'}
             checked={isSelected}
             onChange={() => onCategorySelect(category.id)}
-            count={category.directProductCount || category.productCount}
+            count={category.productCount || category.directProductCount}
             isParent={hasChildren}
             level={0} // Não usar level aqui pois já aplicámos o padding acima
           />
         </div>
       </div>
       
-      {/* Children */}
-      {shouldShowExpanded && hasChildren && (
-        <div className="mt-1">
-          {filteredChildren.map((child) => (
+      {/* Children - renderizar apenas se expandido E tem children */}
+      {isExpanded && hasChildren && (
+        <div className="mt-1 border-l border-gray-200 ml-4" style={{ marginLeft: `${0.5 + level * 0.75}rem` }}>
+          {category.children!.map((child) => (
             <ExpandableCategory
               key={child.id}
               category={child}
@@ -187,81 +214,18 @@ const HierarchicalCategoryFilter: React.FC<HierarchicalCategoryFilterProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Criar árvore hierárquica de categorias
-  const categoryTree = useMemo(() => {
-    if (!categories || categories.length === 0) return [];
-    
-    // Separar categorias principais (root) das subcategorias
-    const rootCategories = categories.filter(cat => 
-      cat.path && !cat.path.includes('\\')
-    );
-    
-    const subCategories = categories.filter(cat => 
-      cat.path && cat.path.includes('\\')
-    );
-    
-    // Função para construir a árvore
-    const buildTree = (parentPath: string = ''): Category[] => {
-      const children = subCategories.filter(cat => {
-        if (!cat.path) return false;
-        const pathParts = cat.path.split('\\');
-        return pathParts.length === (parentPath ? parentPath.split('\\').length + 1 : 1) &&
-               (parentPath ? cat.path.startsWith(parentPath + '\\') : true);
-      });
-      
-      return children.map(child => ({
-        ...child,
-        children: buildTree(child.path!)
-      }));
-    };
-    
-    // Construir árvore para cada categoria principal
-    const tree = rootCategories.map(root => ({
-      ...root,
-      children: buildTree(root.path!)
-    }));
-    
-    return tree.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
-  }, [categories]);
-
-  // Filtrar categorias baseado na busca
-  const filteredTree = useMemo(() => {
-    if (!searchTerm.trim()) return categoryTree;
-    
-    // Se há busca, mostrar todas as categorias que correspondem ou têm children que correspondem
-    const filterTree = (cats: Category[]): Category[] => {
-      return cats.filter(cat => {
-        const matchesSearch = cat.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                             cat.path?.toLowerCase().includes(searchTerm.toLowerCase());
-        
-        const hasMatchingChildren = cat.children && cat.children.some(child =>
-          filterTree([child]).length > 0
-        );
-        
-        return matchesSearch || hasMatchingChildren;
-      }).map(cat => ({
-        ...cat,
-        children: cat.children ? filterTree(cat.children) : []
-      }));
-    };
-    
-    return filterTree(categoryTree);
-  }, [categoryTree, searchTerm]);
+  // Usar diretamente as categorias da API (que já vêm em formato de árvore)
+  // e aplicar filtro apenas quando há busca
+  const filteredCategories = useMemo((): ExpandableCategory[] => {
+    if (!searchTerm.trim()) return categories.map(cat => ({ ...cat }));
+    return filterAndExpandCategories(categories, searchTerm.trim());
+  }, [categories, searchTerm]);
 
   if (!categories || categories.length === 0) {
     return (
       <div className="text-sm text-gray-500 text-center py-8">
         <div className="text-gray-400 mb-2">📦</div>
         Nenhuma categoria disponível
-      </div>
-    );
-  }
-
-  if (categoryTree.length === 0) {
-    return (
-      <div className="text-sm text-gray-500 text-center py-8">
-        <div className="text-gray-400 mb-2">📂</div>
-        Nenhuma categoria encontrada
       </div>
     );
   }
@@ -281,9 +245,9 @@ const HierarchicalCategoryFilter: React.FC<HierarchicalCategoryFilterProps> = ({
       </div>
 
       {/* Árvore de categorias */}
-      <div className="max-h-80 overflow-y-auto space-y-1 border border-gray-200 rounded-lg p-2">
-        {filteredTree.length > 0 ? (
-          filteredTree.map((category) => (
+      <div className="max-h-80 overflow-y-auto space-y-1 border border-gray-200 rounded-lg p-3">
+        {filteredCategories.length > 0 ? (
+          filteredCategories.map((category) => (
             <ExpandableCategory
               key={category.id}
               category={category}
@@ -312,7 +276,7 @@ const HierarchicalCategoryFilter: React.FC<HierarchicalCategoryFilterProps> = ({
 
       {/* Informação adicional */}
       <div className="text-xs text-gray-500 text-center pt-2">
-        💡 Clique nas setas para expandir subcategorias
+        💡 Clique nas setas ▶/▼ para expandir subcategorias
       </div>
     </div>
   );

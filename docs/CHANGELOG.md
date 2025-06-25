@@ -1,5 +1,41 @@
 # Changelog - AliTools Project
 
+## [1.5.9] - 2025-01-27
+
+### 🔧 Correções
+- **HIERARCH-FIX-001**: Corrigido problema nos filtros hierárquicos de categorias
+  - **Problema**: Botões de expansão (▶/▼) não funcionavam para abrir subcategorias
+  - **Causa**: Lógica duplicada de construção de árvore no componente HierarchicalCategoryFilter
+  - **Solução**: Removida lógica desnecessária, usando diretamente a árvore hierárquica da API
+  - **Impacto**: Navegação hierárquica agora totalmente funcional
+  - **Arquivo**: `app/components/products/HierarchicalCategoryFilter.tsx`
+
+- **TYPESCRIPT-FIX-001**: Corrigido erro de compilação TypeScript no filtro hierárquico
+  - **Problema**: Build failing com erro de tipo em `filterAndExpandCategories`
+  - **Causa**: Função retornava array com valores `null` não compatível com tipo `Category[]`
+  - **Solução**: Criada interface `ExpandableCategory` e refatorada lógica para evitar `null`
+  - **Resultado**: ✅ Build passa sem erros, tipos consistentes
+
+### 📋 Documentação
+- **DOC-ENH-001**: Criado relatório completo de enriquecimento dos filtros hierárquicos
+  - **Arquivo**: `docs/HIERARCHICAL_FILTER_ENHANCEMENT_REPORT.md`
+  - **Conteúdo**: 6 propostas detalhadas de melhorias com roadmap de 3 fases
+  - **Prioridades**: Persistência de estado, expansão inteligente, filtros avançados
+  - **Métricas**: KPIs técnicos, de utilizador e de business definidos
+
+### 🎨 Melhorias de UX
+- **UX-IMP-001**: Melhorada aparência visual dos filtros hierárquicos
+  - Ícones de pasta mais intuitivos (📁 fechada / 📂 aberta)
+  - Melhor alinhamento e indentação de níveis hierárquicos
+  - Indicadores visuais mais claros para estado de expansão
+  - Linhas de conexão entre níveis da árvore
+
+### 📊 Estado do Sistema
+- **Filtros Hierárquicos**: ✅ **100% FUNCIONAIS**
+- **Navegação por Categorias**: ✅ **COMPLETAMENTE OPERACIONAL**
+- **Build TypeScript**: ✅ **SEM ERROS DE COMPILAÇÃO**
+- **Sistema de E-commerce**: ✅ **MANTIDO FUNCIONAL**
+
 ## [1.5.8] - 2025-01-27 - Melhorias Filtros e Ordenação
 
 ### 🔧 **Correções Dropdown "Ordenar por"**
