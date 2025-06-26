@@ -141,7 +141,7 @@ export default function CheckoutPage() {
       }
     } catch (error: any) {
       console.error('Erro ao criar encomenda:', error);
-      alert(`Erro ao criar encomenda: ${error.message}`);
+              alert(`Erro ao criar encomenda: ${error instanceof Error ? error.message : 'Erro desconhecido'}`);
     } finally {
       setIsSubmitting(false);
     }

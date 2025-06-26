@@ -189,7 +189,7 @@ export default function PedidoCooperacao() {
         router.push('/pedido-enviado');
       } else {
         const error = await response.json();
-        setErrors({ submit: error.message || 'Erro ao submeter pedido' });
+        setErrors({ submit: error instanceof Error ? error.message : 'Erro ao submeter pedido' });
       }
     } catch (error) {
       setErrors({ submit: 'Erro de conexão. Tente novamente.' });

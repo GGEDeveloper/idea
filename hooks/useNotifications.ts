@@ -63,7 +63,7 @@ export function useNotifications() {
 
       const data: NotificationsResponse = await response.json();
       
-      if (options?.append && options.offset > 0) {
+      if (options?.append && options.offset && options.offset > 0) {
         setNotifications(prev => [...prev, ...data.notifications]);
       } else {
         setNotifications(data.notifications);

@@ -126,7 +126,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: false,
         error: 'Falha na conexão SMTP',
-        details: error.message
+        details: error instanceof Error ? error.message : 'Erro desconhecido'
       }, { status: 400 });
     }
 
@@ -251,7 +251,7 @@ export async function POST(request: NextRequest) {
         test_email,
         testEmailContent.subject,
         'failed',
-        error.message,
+        error instanceof Error ? error.message : 'Erro desconhecido',
         JSON.stringify({
           smtp_host: emailConfig.smtp_host,
           smtp_port: emailConfig.smtp_port,
@@ -262,7 +262,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: false,
         error: 'Falha ao enviar email de teste',
-        details: error.message
+        details: error instanceof Error ? error.message : 'Erro desconhecido'
       }, { status: 400 });
     }
 

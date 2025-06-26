@@ -48,7 +48,7 @@ const MyOrdersPage = () => {
       setOrders(data.orders || []);
     } catch (error: any) {
       console.error('Error fetching orders:', error);
-      setError(error.message || 'Erro ao carregar encomendas');
+              setError(error instanceof Error ? error.message : 'Erro ao carregar encomendas');
     } finally {
       setLoading(false);
     }

@@ -101,11 +101,15 @@ export async function POST(request: NextRequest) {
     await client.query('ROLLBACK');
     console.error('❌ Erro detalhado:', error);
     
+    // Type assertion para acessar propriedades do error
+    const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
+    const errorStack = error instanceof Error ? error.stack : undefined;
+    
     return NextResponse.json(
       { 
         error: 'Erro no teste',
-        details: error.message,
-        stack: error.stack 
+        details: errorMessage,
+        stack: errorStack 
       },
       { status: 500 }
     );

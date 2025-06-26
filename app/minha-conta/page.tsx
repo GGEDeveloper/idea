@@ -96,7 +96,7 @@ const MyAccountPage = () => {
       
     } catch (error: any) {
       console.error('Error updating profile:', error);
-      setError(error.message || 'Erro ao atualizar perfil');
+              setError(error instanceof Error ? error.message : 'Erro ao atualizar perfil');
     } finally {
       setUpdateLoading(false);
     }
