@@ -1,6 +1,23 @@
 # Changelog - AliTools Project
 
 
+## [1.9.2.1] - 2025-01-28 - **UX MOBILE ADMIN FIX** - Navegação Auto-Close
+
+### 🎯 **CORREÇÃO DE UX MOBILE ADMIN**
+- ✅ **Problema resolvido**: Sidebar admin não fechava após clique em link mobile
+- ✅ **Auto-close implementado**: onClick={() => setSidebarOpen(false)} em todos links
+- ✅ **Logout melhorado**: Sidebar fecha antes do logout para consistência
+- ✅ **Build Status**: TypeScript compilation 0 erros (4.0s)
+
+### 🔧 **MELHORIAS IMPLEMENTADAS**
+- **Mobile Navigation**: Sidebar fecha automaticamente após navegação
+- **Consistent UX**: Comportamento igual ao site principal
+- **Professional Feel**: Experiência móvel admin polida
+- **Zero Friction**: Sem necessidade de fechar sidebar manualmente
+
+---
+
+
 ## [1.9.2] - 2025-01-28 - **FOOTER MODERNO E COMPACTO** - Design System Melhorado
 
 ### 🎨 **REDESIGN COMPLETO DO FOOTER**
