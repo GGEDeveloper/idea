@@ -55,7 +55,7 @@ export default function AdminSettingsPage() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'general' | 'business' | 'security' | 'system'>('general');
+  const [activeTab, setActiveTab] = useState<'general' | 'business' | 'email' | 'security' | 'system'>('general');
 
   const fetchSettings = async () => {
     try {
