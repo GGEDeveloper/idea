@@ -64,6 +64,7 @@ const getStatusLabel = (status: string) => {
 };
 
 export default function CustomerApplicationsPage() {
+  const [highlightId, setHighlightId] = useState<string | null>(null);
   const [applications, setApplications] = useState<CustomerApplication[]>([]);
   const [statistics, setStatistics] = useState<Statistics>({});
   const [loading, setLoading] = useState(true);
@@ -74,9 +75,33 @@ export default function CustomerApplicationsPage() {
   const [showModal, setShowModal] = useState(false);
   const [updating, setUpdating] = useState(false);
 
+  // Effect para ler parâmetros da URL
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const highlight = urlParams.get('highlight');
+      setHighlightId(highlight);
+    }
+  }, []);
+
+  const openApplicationModal = (application: CustomerApplication) => {
+    setSelectedApplication(application);
+    setShowModal(true);
+  };
+
   useEffect(() => {
     fetchApplications();
   }, [statusFilter, search]);
+
+  // Effect para abrir automaticamente o modal se há um highlight
+  useEffect(() => {
+    if (highlightId && applications.length > 0) {
+      const targetApplication = applications.find(app => app.user_id === highlightId);
+      if (targetApplication) {
+        openApplicationModal(targetApplication);
+      }
+    }
+  }, [highlightId, applications]);
 
   const fetchApplications = async () => {
     setLoading(true);
@@ -141,11 +166,6 @@ export default function CustomerApplicationsPage() {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     fetchApplications();
-  };
-
-  const openApplicationModal = (application: CustomerApplication) => {
-    setSelectedApplication(application);
-    setShowModal(true);
   };
 
   const formatCurrency = (value: number) => {
@@ -300,7 +320,11 @@ export default function CustomerApplicationsPage() {
                 {applications.map((application) => (
                   <tr
                     key={application.user_id}
-                    className="hover:bg-gray-50 dark:hover:bg-gray-700"
+                    className={`hover:bg-gray-50 dark:hover:bg-gray-700 ${
+                      highlightId === application.user_id 
+                        ? 'bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500' 
+                        : ''
+                    }`}
                   >
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div>

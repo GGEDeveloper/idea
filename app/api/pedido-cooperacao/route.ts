@@ -168,7 +168,7 @@ export async function POST(request: NextRequest) {
     `, [
       `Nova empresa ${data.company_name} (${data.vat_number}) submeteu pedido de cooperação. Previsão mensal: €${data.monthly_purchase_forecast}`,
       userId,
-      `/admin/pedidos/${userId}`
+      `/admin/customer-applications?highlight=${userId}`
     ]);
 
     // 7. Log de auditoria
