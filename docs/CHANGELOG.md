@@ -1,6 +1,8 @@
 # Changelog - AliTools Project
 
 
+## [1.9.2.2] - 2025-01-28 - **CORREÇÃO CRÍTICA SISTEMA DE PREÇOS** - Recálculo Automático\n\n### 🔧 **PROBLEMA IDENTIFICADO E RESOLVIDO**\n- ❌ **Problema**: Configurações de markup no painel admin não afetavam preços reais da plataforma\n- ❌ **Causa**: Faltava integração entre configuração e recálculo automático de preços\n- ❌ **Impacto**: Clientes viam preços desatualizados mesmo após mudanças de margem\n\n### ✅ **SOLUÇÕES IMPLEMENTADAS**\n- **Nova API**: `/api/admin/pricing/recalculate` para recálculo de todos os preços\n- **Interface Admin**: Botão "🔄 Recalcular Preços" no painel de configuração\n- **Recálculo Inteligente**: Baseado nas configurações atuais (markup_base_selling_price, markup_customer_price)\n- **Validação de Segurança**: Confirmação obrigatória antes do recálculo\n- **Feedback Detalhado**: Relatório completo de preços atualizados/inseridos\n\n### 🎯 **FUNCIONALIDADES TÉCNICAS**\n- **Recálculo SQL**: Queries otimizadas para atualizar preços base (lista 2) e cliente (lista 4)\n- **Inserção Automática**: Preços em falta são criados automaticamente\n- **Performance**: Operação em batch com transações seguras\n- **TypeScript**: Validação completa com 0 erros de compilação\n- **Interface Responsiva**: Layout adaptável para desktop/mobile\n\n### 📊 **RESULTADO FINAL**\n- ✅ **Sistema 100% Funcional**: Configurações de preços aplicam-se imediatamente\n- ✅ **Build Status**: TypeScript compilation 0 erros (4.0s)\n- ✅ **UX Melhorada**: Feedback claro do processo de recálculo\n- ✅ **Segurança**: Validação e confirmação antes de alterar preços\n\n---\n
+
 ## [1.9.2.1] - 2025-01-28 - **UX MOBILE ADMIN FIX** - Navegação Auto-Close
 
 ### 🎯 **CORREÇÃO DE UX MOBILE ADMIN**
