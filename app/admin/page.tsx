@@ -355,6 +355,15 @@ const AdminDashboard = () => {
                   </span>
                   <ChartBarIcon className="h-5 w-5 text-gray-400" />
                 </Link>
+                <Link
+                  href="/admin/settings/email"
+                  className="w-full flex items-center justify-between p-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <span className="text-sm font-medium text-gray-900 dark:text-white">
+                    Configurar Email/SMTP
+                  </span>
+                  <i className="fas fa-envelope h-5 w-5 text-gray-400"></i>
+                </Link>
               </div>
             </div>
           </div>

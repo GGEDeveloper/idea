@@ -244,6 +244,7 @@ export default function AdminSettingsPage() {
               {[
                 { key: 'general', label: 'Geral', icon: CogIcon },
                 { key: 'business', label: 'Negócio', icon: CurrencyEuroIcon },
+                { key: 'email', label: 'Email', icon: EnvelopeIcon },
                 { key: 'security', label: 'Segurança', icon: ShieldCheckIcon },
                 { key: 'system', label: 'Sistema', icon: ServerIcon }
               ].map(tab => (
@@ -481,6 +482,210 @@ export default function AdminSettingsPage() {
                         Atualização automática de stock
                       </span>
                     </label>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Email Tab */}
+            {activeTab === 'email' && (
+              <div className="space-y-6">
+                {/* SMTP Configuration */}
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                        <EnvelopeIcon className="h-5 w-5 mr-2 text-orange-500" />
+                        Configurações SMTP
+                      </h2>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Configure o servidor de email para envio automático de notificações
+                      </p>
+                    </div>
+                    <a
+                      href="/admin/settings/email"
+                      className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors"
+                    >
+                      <CogIcon className="h-4 w-4 mr-2" />
+                      Configurar SMTP
+                    </a>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
+                          <i className="fas fa-server text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div className="ml-3">
+                          <p className="text-sm font-medium text-gray-900 dark:text-white">Servidor SMTP</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">Configure host e porta</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
+                          <i className="fas fa-shield-alt text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div className="ml-3">
+                          <p className="text-sm font-medium text-gray-900 dark:text-white">Autenticação</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">SSL/TLS e credenciais</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
+                          <i className="fas fa-vial text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div className="ml-3">
+                          <p className="text-sm font-medium text-gray-900 dark:text-white">Teste de Email</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">Validar configurações</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email Templates */}
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                        <DocumentTextIcon className="h-5 w-5 mr-2 text-orange-500" />
+                        Templates de Email
+                      </h2>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Gerir templates personalizados para notificações automáticas
+                      </p>
+                    </div>
+                    <button
+                      className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-400 bg-gray-100 dark:bg-gray-700 cursor-not-allowed"
+                      disabled
+                    >
+                      <DocumentTextIcon className="h-4 w-4 mr-2" />
+                      Em Desenvolvimento
+                    </button>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-orange-100 dark:bg-orange-900 rounded-lg">
+                          <i className="fas fa-user-plus text-orange-600 dark:text-orange-400"></i>
+                        </div>
+                        <div className="ml-3">
+                          <p className="text-sm font-medium text-gray-900 dark:text-white">Novos Pedidos B2B</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">Template para candidaturas</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
+                          <i className="fas fa-shopping-cart text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div className="ml-3">
+                          <p className="text-sm font-medium text-gray-900 dark:text-white">Estado Encomendas</p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">Updates de encomendas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email Notifications */}
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
+                  <div className="mb-6">
+                    <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                      <BellIcon className="h-5 w-5 mr-2 text-orange-500" />
+                      Notificações por Email
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      Configure quando e para quem enviar notificações automáticas
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_new_orders"
+                          defaultChecked={true}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Notificar sobre novas encomendas
+                        </span>
+                      </label>
+
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_b2b_applications"
+                          defaultChecked={true}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Notificar sobre pedidos de cooperação B2B
+                        </span>
+                      </label>
+
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_order_status_changes"
+                          defaultChecked={true}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Notificar clientes sobre mudanças de estado
+                        </span>
+                      </label>
+                    </div>
+
+                    <div className="space-y-4">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_low_stock"
+                          defaultChecked={false}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Alertas de stock baixo
+                        </span>
+                      </label>
+
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_system_errors"
+                          defaultChecked={true}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Alertas de sistema e erros críticos
+                        </span>
+                      </label>
+
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          name="notify_daily_summary"
+                          defaultChecked={false}
+                          className="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        />
+                        <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                          Relatório diário de atividade
+                        </span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>

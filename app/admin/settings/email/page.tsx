@@ -181,14 +181,24 @@ export default function EmailSettingsPage() {
     <div className="p-6">
       {/* Header */}
       <div className="mb-6">
+        <div className="flex items-center space-x-4 mb-4">
+          <a
+            href="/admin/settings"
+            className="flex items-center text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+          >
+            <i className="fas fa-arrow-left h-4 w-4 mr-1"></i>
+            Voltar às Configurações
+          </a>
+        </div>
+        
         <div className="flex items-center space-x-3">
           <EnvelopeIcon className="h-8 w-8 text-orange-600" />
           <div>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Configurações de Email
+              Configurações de Email SMTP
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Configure o servidor SMTP para envio de emails automáticos
+              Configure o servidor SMTP para envio automático de notificações e emails do sistema
             </p>
           </div>
         </div>
