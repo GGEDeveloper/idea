@@ -269,6 +269,7 @@ function getConfigDescription(key: string): string {
   const descriptions: Record<string, string> = {
     'default_customer_price_list': 'Lista de preços padrão exibida aos clientes',
     'default_admin_price_list': 'Lista de preços padrão exibida ao admin',
+    'base_transport_price': 'Preço base de transporte aplicado às encomendas',
     'markup_supplier_price': 'Markup base aplicado sobre preço de fornecedor (Lista ID: 1)',
     'markup_base_selling_price': 'Markup base aplicado sobre preço base de venda (Lista ID: 2)',
     'markup_customer_price': 'Markup base aplicado sobre preço final ao cliente (Lista ID: 4)'

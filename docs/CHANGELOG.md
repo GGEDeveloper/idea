@@ -1,5 +1,55 @@
 # CHANGELOG
 
+## [1.9.2.3] - 2025-01-29 - CONFIGURAÇÃO ADMIN + TRANSPORTE + UX MOBILE 🎯
+
+### ✅ **CORREÇÕES IMPLEMENTADAS**
+
+#### **1. Configuração de Lista de Preços para Admin (CORRIGIDA)**
+- **Problema**: Admin via hardcoded `priceListId: '4'` em vez da configuração `default_admin_price_list`
+- **Arquivo**: `app/admin/pricing/page.tsx` - `ProductPriceEditor` component
+- **Correção**: Implementada função `fetchAdminConfig()` que busca configuração dinâmica
+- **Fluxo**: Carrega configuração → Atualiza filtros → Busca produtos com lista correta
+- **Estado**: `configLoading` e `defaultAdminPriceList` para controlo do processo
+- **Resultado**: ✅ Admin agora vê preços da lista configurada (independente dos clientes)
+
+#### **2. Nova Configuração: Preço Base de Transporte**
+- **Nova Config**: `base_transport_price` na tabela `pricing_config`
+- **Valor Padrão**: €5.00 (configurável)
+- **Interface Admin**: Seção "🚚 Preço Base de Transporte" na aba Configurações
+- **Input**: Número com validação (€0-€999.99) e símbolo de euro 
+- **API**: Suporte em `/api/admin/pricing/config` para nova configuração
+- **Base de Dados**: Script `add_transport_config.js` para inserção automática
+- **Resultado**: ✅ Configuração disponível para futura integração com sistema de transportes
+
+#### **3. Layout Mobile dos Tabs (CORRIGIDO)**
+- **Problema**: Tabs do painel de preços mal adaptados para telas pequenas
+- **Arquivo**: `app/admin/pricing/page.tsx` - seção de navegação tabs
+- **Implementação**: 
+  - Scroll horizontal responsivo com `overflow-x-auto`
+  - Textos adaptativos: completos (desktop) → abreviados (mobile)
+  - Ícones sempre visíveis com spacing adequado
+  - CSS `.scrollbar-hide` para ocultar scrollbar
+- **CSS**: `src/styles/globals.css` com suporte cross-browser
+- **Breakpoints**: `sm:hidden/inline` para alternância de texto
+- **Resultado**: ✅ Navegação fluida em dispositivos móveis e pequenos
+
+### 🔧 **MELHORIAS TÉCNICAS**
+- **State Management**: Separação entre `configLoading` e `loading` para UX otimizada
+- **Error Handling**: Fallbacks para configurações padrão se API falhar
+- **Responsive Design**: Tabs adaptativos com mínimo 7 opções em layout mobile
+- **Cross-browser**: CSS scrollbar oculta em Safari, Chrome, Firefox e IE10+
+
+### 📊 **FEATURES ADICIONAIS**
+- **Transport Config**: Base para cálculos de transporte por zona/peso
+- **Admin Independence**: Preços admin completamente independentes dos clientes
+- **Mobile UX**: Interface profissional em todos os tamanhos de tela
+- **Future Ready**: Estrutura preparada para configurações avançadas de transporte
+
+### 🚀 **STATUS v1.9.2.3**
+Sistema de preços 100% funcional com configurações flexíveis, interface mobile otimizada e base para sistema de transportes implementada.
+
+---
+
 ## [1.9.2.2] - 2025-01-29 - CORREÇÃO CRÍTICA SISTEMA DE PREÇOS 🔧
 
 ### 🎯 **PROBLEMA CRÍTICO RESOLVIDO**

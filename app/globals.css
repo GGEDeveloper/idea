@@ -299,4 +299,14 @@ img {
 /* Aplicar margin-top automático para todas as páginas */
 main#main-content {
   margin-top: 100px;
+}
+
+/* Scrollbar customizado para tabs mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 } 

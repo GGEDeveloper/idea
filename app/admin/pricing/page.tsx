@@ -54,16 +54,46 @@ interface ProductPrice {
 function ProductPriceEditor() {
   const [products, setProducts] = useState<ProductPrice[]>([]);
   const [loading, setLoading] = useState(true);
+  const [configLoading, setConfigLoading] = useState(true);
+  const [defaultAdminPriceList, setDefaultAdminPriceList] = useState('4');
   const [filters, setFilters] = useState({
     search: '',
     brand: '',
     category: '',
-    priceListId: '4', // Preço Cliente por default
+    priceListId: '4', // Será atualizado com a configuração
     page: 1,
     limit: 20
   });
   const [editingPrices, setEditingPrices] = useState<Record<string, number>>({});
   const [availableFilters, setAvailableFilters] = useState<any>({});
+
+  // Buscar configuração do admin
+  const fetchAdminConfig = async () => {
+    try {
+      setConfigLoading(true);
+      const configResponse = await fetch('/api/admin/pricing?type=config', { credentials: 'include' });
+      if (configResponse.ok) {
+        const configData = await configResponse.json();
+        const configMap = configData.configs?.reduce((acc: any, config: any) => {
+          acc[config.config_key] = config.config_value;
+          return acc;
+        }, {}) || {};
+        
+        const adminPriceList = configMap['default_admin_price_list'] || '4';
+        setDefaultAdminPriceList(adminPriceList);
+        
+        // Atualizar filtros com a configuração
+        setFilters(prev => ({
+          ...prev,
+          priceListId: adminPriceList
+        }));
+      }
+    } catch (error) {
+      console.error('Error fetching admin config:', error);
+    } finally {
+      setConfigLoading(false);
+    }
+  };
 
   const fetchProducts = async () => {
     try {
@@ -90,8 +120,14 @@ function ProductPriceEditor() {
   };
 
   useEffect(() => {
-    fetchProducts();
-  }, [filters]);
+    fetchAdminConfig();
+  }, []);
+
+  useEffect(() => {
+    if (!configLoading) {
+      fetchProducts();
+    }
+  }, [filters, configLoading]);
 
   const handlePriceChange = (variantid: string, newPrice: number) => {
     setEditingPrices(prev => ({
@@ -1446,6 +1482,7 @@ function PricingConfigManager() {
   const [settings, setSettings] = useState({
     defaultPriceList: '',
     defaultAdminPriceList: '',
+    baseTransportPrice: '5.00',
     markups: {} as Record<string, string>
   });
 
@@ -1474,6 +1511,7 @@ function PricingConfigManager() {
         setSettings({
           defaultPriceList: configMap['default_customer_price_list'] || '4',
           defaultAdminPriceList: configMap['default_admin_price_list'] || '4',
+          baseTransportPrice: configMap['base_transport_price'] || '5.00',
           markups: {
             '1': configMap['markup_supplier_price'] || '0',
             '2': configMap['markup_base_selling_price'] || '25',
@@ -1501,7 +1539,8 @@ function PricingConfigManager() {
         { key: 'default_admin_price_list', value: settings.defaultAdminPriceList },
         { key: 'markup_supplier_price', value: settings.markups['1'] || '0' },
         { key: 'markup_base_selling_price', value: settings.markups['2'] || '25' },
-        { key: 'markup_customer_price', value: settings.markups['4'] || '35' }
+        { key: 'markup_customer_price', value: settings.markups['4'] || '35' },
+        { key: 'base_transport_price', value: settings.baseTransportPrice }
       ];
 
       const response = await fetch('/api/admin/pricing/config', {
@@ -1620,6 +1659,57 @@ function PricingConfigManager() {
                   <div className="text-amber-600 dark:text-amber-400">💡</div>
                   <div className="text-sm text-amber-700 dark:text-amber-300">
                     <strong>Recomendação:</strong> Use "Supplier Price" para ver custos ou "Preço Cliente" para ver preços finais
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Transport Base Price Configuration */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            🚚 Preço Base de Transporte
+          </h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Configure o preço base aplicado automaticamente às encomendas para transporte
+          </p>
+        </div>
+
+        <div className="p-6">
+          {loading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar configurações...</p>
+            </div>
+          ) : (
+            <div className="max-w-md">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Preço Base (€)
+              </label>
+              <div className="relative">
+                <input
+                  type="number"
+                  step="0.01"
+                  min="0"
+                  max="999.99"
+                  value={settings.baseTransportPrice}
+                  onChange={(e) => setSettings(prev => ({ ...prev, baseTransportPrice: e.target.value }))}
+                  className="w-full px-3 py-2 pl-8 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  placeholder="5.00"
+                />
+                <span className="absolute left-3 top-2.5 text-sm text-gray-500 dark:text-gray-400">€</span>
+              </div>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                Este valor será aplicado automaticamente como base para cálculo de transporte
+              </p>
+              <div className="mt-3 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                <div className="flex items-start space-x-2">
+                  <div className="text-blue-600 dark:text-blue-400">ℹ️</div>
+                  <div className="text-sm text-blue-700 dark:text-blue-300">
+                    <strong>Nota:</strong> Pode ser ajustado por zona geográfica ou peso na configuração avançada de transportes
                   </div>
                 </div>
               </div>
@@ -1997,77 +2087,107 @@ export default function AdminPricingPage() {
         {/* Tabs */}
         <div className="mb-6">
           <div className="border-b border-gray-200 dark:border-gray-700">
-            <nav className="-mb-px flex space-x-8">
-              <button
-                onClick={() => setActiveTab('products')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'products'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                🛍️ Editar Preços
-              </button>
-              <button
-                onClick={() => setActiveTab('bulk')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'bulk'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                ⚡ Operações em Massa
-              </button>
-              <button
-                onClick={() => setActiveTab('campaigns')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'campaigns'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                🎯 Campanhas Promocionais
-              </button>
-              <button
-                onClick={() => setActiveTab('lists')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'lists'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                📋 Listas ({priceLists.length})
-              </button>
-              <button
-                onClick={() => setActiveTab('config')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'config'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                ⚙️ Configurações
-              </button>
-              <button
-                onClick={() => setActiveTab('geko-approvals')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'geko-approvals'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                🔄 Aprovações Geko
-              </button>
-              <button
-                onClick={() => setActiveTab('rules')}
-                className={`py-2 px-1 border-b-2 font-medium text-sm ${
-                  activeTab === 'rules'
-                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                }`}
-              >
-                🔧 Regras ({pricingRules.length})
-              </button>
+            <nav className="-mb-px flex overflow-x-auto scrollbar-hide">
+              <div className="flex space-x-2 sm:space-x-4 md:space-x-8 min-w-max px-2 sm:px-0">
+                <button
+                  onClick={() => setActiveTab('products')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'products'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>🛍️</span>
+                    <span className="hidden sm:inline">Editar Preços</span>
+                    <span className="sm:hidden">Editar</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('bulk')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'bulk'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>⚡</span>
+                    <span className="hidden sm:inline">Operações em Massa</span>
+                    <span className="sm:hidden">Massa</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('campaigns')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'campaigns'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>🎯</span>
+                    <span className="hidden sm:inline">Campanhas Promocionais</span>
+                    <span className="sm:hidden">Campanhas</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('lists')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'lists'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>📋</span>
+                    <span className="hidden sm:inline">Listas ({priceLists.length})</span>
+                    <span className="sm:hidden">Listas</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('config')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'config'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>⚙️</span>
+                    <span className="hidden sm:inline">Configurações</span>
+                    <span className="sm:hidden">Config</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('geko-approvals')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'geko-approvals'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>🔄</span>
+                    <span className="hidden sm:inline">Aprovações Geko</span>
+                    <span className="sm:hidden">Geko</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('rules')}
+                  className={`py-2 px-2 sm:px-1 border-b-2 font-medium text-xs sm:text-sm whitespace-nowrap ${
+                    activeTab === 'rules'
+                      ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                  }`}
+                >
+                  <span className="flex items-center space-x-1">
+                    <span>🔧</span>
+                    <span className="hidden sm:inline">Regras ({pricingRules.length})</span>
+                    <span className="sm:hidden">Regras</span>
+                  </span>
+                </button>
+              </div>
             </nav>
           </div>
         </div>
