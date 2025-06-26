@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## [1.9.2.4] - 2025-01-20 - CORREÇÃO ESTATÍSTICAS CATEGORIAS
+
+### 🐛 Bug Fixes
+- **Página Categorias**: Corrigido problema crítico onde "Visão Geral do Catálogo" mostrava "0 Subcategorias"
+- **categoryService.ts**: Função `getCategories()` agora preserva campos `children` e `directProductCount` da API
+- **Transformação Recursiva**: Implementada transformação recursiva para manter estrutura hierárquica completa
+- **Interface Category**: Atualizada com campos `children?: Category[]` e `directProductCount?: number`
+- **Loading States**: Adicionadas verificações para evitar cálculos antes dos dados carregarem
+
+### ✅ Resultados
+- **20 Categorias Principais** ✅
+- **394 Subcategorias** ✅  
+- **8.088 Produtos no Catálogo** ✅
+- **20 Com Stock Ativo** ✅
+
+### 🔧 Technical Details
+- **Problema Raiz**: O `categoryService.ts` estava removendo o campo `children` durante a transformação dos dados da API
+- **Solução**: Criada função `transformCategory()` recursiva que preserva toda a estrutura hierárquica
+- **Impacto**: Página de categorias agora mostra estatísticas corretas em tempo real
+
 ## [1.9.2.3] - 2025-01-29 - CONFIGURAÇÃO ADMIN + TRANSPORTE + UX MOBILE 🎯
 
 ### ✅ **CORREÇÕES IMPLEMENTADAS**
