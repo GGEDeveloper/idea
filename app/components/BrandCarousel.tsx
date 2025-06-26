@@ -35,66 +35,143 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
-  // Brand logos and information based on research
+  // Brand logos and information based on research from https://b2b.geko.pl/marki
   const brandInfo: Record<string, { 
     logo: string; 
     description: string; 
-    color: string; 
+    color: string;
+    lightColor?: string;
+    darkColor?: string;
     website?: string; 
+    established?: string;
   }> = {
     'GEKO': {
-      logo: `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="15" width="35" height="30" rx="3" fill="#1e40af" stroke="#ffffff" stroke-width="2"/>
-        <text x="50" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e40af">GEKO</text>
-        <text x="50" y="48" font-family="Arial, sans-serif" font-size="8" fill="#64748b">POWER TOOLS</text>
-        <circle cx="27" cy="25" r="3" fill="#fbbf24"/>
-        <circle cx="27" cy="35" r="2" fill="#f59e0b"/>
+      logo: `<svg viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gekoGradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+          </linearGradient>
+          <filter id="gekoShadowMain" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+          </filter>
+        </defs>
+        <rect x="5" y="8" width="50" height="54" rx="8" fill="url(#gekoGradMain)" filter="url(#gekoShadowMain)"/>
+        <text x="70" y="35" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#1e40af" letter-spacing="1px">GEKO</text>
+        <text x="70" y="50" font-family="Arial, sans-serif" font-size="10" fill="#64748b" font-weight="600">GOTOWOŚĆ • ENERGIA • KORZYŚĆ • ODPORNOŚĆ</text>
+        <text x="70" y="60" font-family="Arial, sans-serif" font-size="8" fill="#94a3b8">EST. 1990</text>
+        <circle cx="20" cy="25" r="4" fill="#fbbf24"/>
+        <circle cx="30" cy="35" r="3" fill="#f59e0b"/>
+        <circle cx="40" cy="45" r="4" fill="#fbbf24"/>
+        <polygon points="15,40 25,40 20,50" fill="#ffffff"/>
       </svg>`,
-      description: "Ferramentas elétricas e jardim - Marca polaca estabelecida em 1990",
+      description: "Marca polaca de ferramentas elétricas e jardim. Gotowość, Energia, Korzyść, Odporność - valores fundamentais desde 1990.",
       color: "#1e40af",
-      website: "geko.pl"
+      lightColor: "#3b82f6",
+      darkColor: "#1d4ed8",
+      website: "geko.pl",
+      established: "1990"
     },
-    'Heidmann': {
-      logo: `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="10" width="190" height="40" rx="5" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
-        <text x="100" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">HEIDMANN</text>
-        <text x="100" y="46" font-family="Arial, sans-serif" font-size="7" fill="#fecaca" text-anchor="middle">PROFESSIONAL TOOLS</text>
+    'TVARDY': {
+      logo: `<svg viewBox="0 0 240 70" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="tvardyGradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+          </linearGradient>
+          <filter id="tvardyShadowMain" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+          </filter>
+        </defs>
+        <rect x="8" y="8" width="224" height="54" rx="6" fill="url(#tvardyGradMain)" filter="url(#tvardyShadowMain)"/>
+        <text x="120" y="38" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2px">TVARDY</text>
+        <text x="120" y="52" font-family="Arial, sans-serif" font-size="9" fill="#fecaca" text-anchor="middle" font-weight="600">FERRAMENTAS PARA OS MAIS EXIGENTES</text>
+        <text x="120" y="60" font-family="Arial, sans-serif" font-size="7" fill="#fed7d7" text-anchor="middle">GARANTIA ATÉ 25 ANOS</text>
+        <rect x="20" y="18" width="6" height="26" fill="#fbbf24" rx="2"/>
+        <rect x="214" y="18" width="6" height="26" fill="#fbbf24" rx="2"/>
+        <polygon points="35,25 45,20 45,30" fill="#ffffff"/>
+        <polygon points="195,25 205,20 205,30" fill="#ffffff"/>
       </svg>`,
-      description: "Ferramentas profissionais e equipamentos industriais",
-      color: "#dc2626"
+      description: "Marca polaca premium para profissionais exigentes. Produtos testados em laboratórios externos com garantia até 25 anos.",
+      color: "#dc2626",
+      lightColor: "#ef4444",
+      darkColor: "#b91c1c",
+      established: "Marca Premium"
     },
     'John Gardener': {
-      logo: `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="8" width="184" height="44" rx="22" fill="#15803d" stroke="#ffffff" stroke-width="2"/>
-        <text x="100" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">John Gardener</text>
-        <text x="100" y="42" font-family="Arial, sans-serif" font-size="8" fill="#bbf7d0" text-anchor="middle">GARDEN & OUTDOOR TOOLS</text>
-        <circle cx="25" cy="30" r="6" fill="#22d3ee"/>
-        <circle cx="175" cy="30" r="6" fill="#22d3ee"/>
+      logo: `<svg viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="jgGradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+          </linearGradient>
+          <filter id="jgShadowMain" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+          </filter>
+        </defs>
+        <ellipse cx="130" cy="35" rx="125" ry="30" fill="url(#jgGradMain)" filter="url(#jgShadowMain)"/>
+        <text x="130" y="32" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">John Gardener</text>
+        <text x="130" y="45" font-family="Arial, sans-serif" font-size="8" fill="#bbf7d0" text-anchor="middle" font-weight="600">FERRAMENTAS DE JARDIM • OUTDOOR • PROFISSIONAL</text>
+        <text x="130" y="54" font-family="Arial, sans-serif" font-size="7" fill="#dcfce7" text-anchor="middle">SUBMARCA GEKO</text>
+        <circle cx="30" cy="35" r="8" fill="#22d3ee" opacity="0.8"/>
+        <circle cx="230" cy="35" r="8" fill="#22d3ee" opacity="0.8"/>
+        <path d="M25 35 L35 30 L35 40 Z" fill="#ffffff"/>
+        <path d="M235 35 L225 30 L225 40 Z" fill="#ffffff"/>
+        <circle cx="40" cy="25" r="3" fill="#fbbf24"/>
+        <circle cx="220" cy="25" r="3" fill="#fbbf24"/>
       </svg>`,
-      description: "Ferramentas de jardim e equipamentos para exterior - Submarca GEKO",
-      color: "#15803d"
+      description: "Especialista em ferramentas de jardim e exterior. Potência adequada com máximo silêncio para profissionais e amadores.",
+      color: "#15803d",
+      lightColor: "#22c55e",
+      darkColor: "#166534",
+      established: "Submarca GEKO"
     },
     'Keltin': {
-      logo: `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="12" width="180" height="36" rx="18" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
-        <text x="100" y="33" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">KELTIN</text>
-        <text x="100" y="44" font-family="Arial, sans-serif" font-size="7" fill="#ddd6fe" text-anchor="middle">PRECISION TOOLS</text>
-        <polygon points="25,20 35,20 30,35" fill="#fbbf24"/>
-        <polygon points="165,20 175,20 170,35" fill="#fbbf24"/>
+      logo: `<svg viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="keltinGradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+          </linearGradient>
+          <filter id="keltinShadowMain" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity:"0.2"/>
+          </filter>
+        </defs>
+        <rect x="15" y="12" width="170" height="46" rx="23" fill="url(#keltinGradMain)" filter="url(#keltinShadowMain)"/>
+        <text x="100" y="38" font-family="Arial Black, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1px">KELTIN</text>
+        <text x="100" y="50" font-family="Arial, sans-serif" font-size="8" fill="#ddd6fe" text-anchor="middle" font-weight="600">SOLUÇÕES ACESSÍVEIS PARA AMADORES</text>
+        <polygon points="35,25 45,20 40,35" fill="#fbbf24"/>
+        <polygon points="165,25 155,20 160,35" fill="#fbbf24"/>
+        <circle cx="30" cy="40" r="2" fill="#ffffff"/>
+        <circle cx="170" cy="40" r="2" fill="#ffffff"/>
       </svg>`,
-      description: "Ferramentas de precisão e equipamentos especializados",
-      color: "#7c3aed"
+      description: "Marca com preços acessíveis criada para amadores e entusiastas do bricolage. Nome deriva da cidade onde nasceu a GEKO.",
+      color: "#7c3aed",
+      lightColor: "#a855f7",
+      darkColor: "#6d28d9",
+      established: "Marca Acessível"
     },
-    'Tvardy': {
-      logo: `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="10" width="184" height="40" rx="4" fill="#ea580c" stroke="#ffffff" stroke-width="2"/>
-        <text x="100" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">TVARDY</text>
-        <text x="100" y="44" font-family="Arial, sans-serif" font-size="8" fill="#fed7aa" text-anchor="middle">INDUSTRIAL TOOLS</text>
-        <rect x="20" y="18" width="8" height="24" fill="#fbbf24"/>
-        <rect x="172" y="18" width="8" height="24" fill="#fbbf24"/>
+    'Heidmann': {
+      logo: `<svg viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heidGradMain" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+          </linearGradient>
+          <filter id="heidShadowMain" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+          </filter>
+        </defs>
+        <rect x="8" y="10" width="204" height="50" rx="8" fill="url(#heidGradMain)" filter="url(#heidShadowMain)"/>
+        <text x="110" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1px">HEIDMANN</text>
+        <text x="110" y="50" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle" font-weight="600">FERRAMENTAS PROFISSIONAIS & INDUSTRIAIS</text>
+        <rect x="20" y="20" width="4" height="30" fill="#f59e0b"/>
+        <rect x="196" y="20" width="4" height="30" fill="#f59e0b"/>
       </svg>`,
-      description: "Ferramentas industriais e equipamentos para profissionais - Marca polaca",
-      color: "#ea580c"
+      description: "Ferramentas profissionais e equipamentos industriais de alta qualidade",
+      color: "#374151",
+      lightColor: "#4b5563",
+      darkColor: "#1f2937"
     }
   };
 
@@ -127,7 +204,7 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
     if (!isDragging) return;
     
     const threshold = 50;
-    const visibleBrands = isMobile ? 1 : 6;
+    const visibleBrands = getVisibleBrands();
     const maxIndex = Math.max(0, brands.length - visibleBrands);
     
     if (Math.abs(dragOffset) > threshold) {
@@ -199,7 +276,18 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
 
   // Auto-play functionality
   useEffect(() => {
-    const visibleBrands = isMobile ? 1 : 6;
+    // Responsive brands per view - ajustado para não ficar muito estreito
+    const getVisibleBrands = () => {
+      if (isMobile) return 1; // Mobile: 1 marca
+      const width = window.innerWidth;
+      if (width >= 1536) return 4; // 2XL: 4 marcas (max 25% cada)
+      if (width >= 1280) return 4; // XL: 4 marcas
+      if (width >= 1024) return 3; // LG: 3 marcas (~33% cada)
+      if (width >= 768) return 2;  // MD: 2 marcas (50% cada)
+      return 1; // SM: 1 marca
+    };
+
+    const visibleBrands = getVisibleBrands();
     const shouldAutoplay = isAutoPlaying && brands.length > visibleBrands && !isDragging;
     
     if (shouldAutoplay) {
@@ -218,18 +306,28 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
     };
   }, [isAutoPlaying, brands.length, autoplayInterval, isMobile, isDragging]);
 
+  const getVisibleBrands = () => {
+    if (isMobile) return 1;
+    const width = typeof window !== 'undefined' ? window.innerWidth : 1024;
+    if (width >= 1536) return 4; // 2XL: 4 marcas 
+    if (width >= 1280) return 4; // XL: 4 marcas
+    if (width >= 1024) return 3; // LG: 3 marcas
+    if (width >= 768) return 2;  // MD: 2 marcas
+    return 1;
+  };
+
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
   const goToNext = () => {
-    const visibleBrands = isMobile ? 1 : 6;
+    const visibleBrands = getVisibleBrands();
     const maxIndex = Math.max(0, brands.length - visibleBrands);
     setCurrentIndex((prev) => prev >= maxIndex ? 0 : prev + 1);
   };
 
   const goToPrev = () => {
-    const visibleBrands = isMobile ? 1 : 6;
+    const visibleBrands = getVisibleBrands();
     const maxIndex = Math.max(0, brands.length - visibleBrands);
     setCurrentIndex((prev) => prev <= 0 ? maxIndex : prev - 1);
   };
@@ -273,50 +371,57 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
     );
   }
 
-  const visibleBrands = isMobile ? 1 : 6; // Show 1 brand on mobile, 6 on desktop
+  const visibleBrands = getVisibleBrands();
   const maxIndex = Math.max(0, brands.length - visibleBrands);
   const showNavigation = brands.length > visibleBrands;
 
   return (
     <div className={`relative bg-white rounded-xl shadow-lg overflow-hidden ${className}`}>
       {/* Header */}
-      <div className="flex justify-between items-center p-6 border-b border-gray-100">
-        <div>
-          <h3 className="text-2xl font-bold text-gray-800">Nossas Marcas</h3>
-          <p className="text-gray-600">Marcas de confiança que trabalhamos</p>
-        </div>
-        
-        {/* Controls */}
-        {showNavigation && (
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={toggleAutoplay}
-              className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"
-              title={isAutoPlaying ? "Pausar rotação automática" : "Iniciar rotação automática"}
-            >
-              {isAutoPlaying ? (
-                <PauseIcon className="h-4 w-4" />
-              ) : (
-                <PlayIcon className="h-4 w-4" />
-              )}
-            </button>
-            
-            <button
-              onClick={goToPrev}
-              className="p-2 rounded-lg bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 transition-colors"
-              title="Marcas anteriores"
-            >
-              <ChevronLeftIcon className="h-4 w-4" />
-            </button>
-            <button
-              onClick={goToNext}
-              className="p-2 rounded-lg bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 transition-colors"
-              title="Próximas marcas"
-            >
-              <ChevronRightIcon className="h-4 w-4" />
-            </button>
+      <div className="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white p-8 border-b-4 border-orange-400">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="text-center mb-4 md:mb-0 flex-1">
+            <h3 className="text-3xl font-bold mb-2 flex items-center justify-center">
+              <i className="fas fa-award text-orange-400 mr-3"></i>
+              Nossas Marcas de Confiança
+            </h3>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              Parceiras estratégicas com tradição e qualidade comprovada para profissionais exigentes
+            </p>
           </div>
-        )}
+          
+          {/* Controls */}
+          {showNavigation && (
+            <div className="flex items-center space-x-3 flex-shrink-0">
+              <button
+                onClick={toggleAutoplay}
+                className="p-3 rounded-lg bg-orange-500 hover:bg-orange-600 text-white transition-colors shadow-lg"
+                title={isAutoPlaying ? "Pausar rotação automática" : "Iniciar rotação automática"}
+              >
+                {isAutoPlaying ? (
+                  <PauseIcon className="h-5 w-5" />
+                ) : (
+                  <PlayIcon className="h-5 w-5" />
+                )}
+              </button>
+              
+              <button
+                onClick={goToPrev}
+                className="p-3 rounded-lg bg-gray-600 hover:bg-gray-500 text-white transition-colors shadow-lg"
+                title="Marcas anteriores"
+              >
+                <ChevronLeftIcon className="h-5 w-5" />
+              </button>
+              <button
+                onClick={goToNext}
+                className="p-3 rounded-lg bg-gray-600 hover:bg-gray-500 text-white transition-colors shadow-lg"
+                title="Próximas marcas"
+              >
+                <ChevronRightIcon className="h-5 w-5" />
+              </button>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Carousel Content */}
@@ -340,66 +445,116 @@ const BrandCarousel: React.FC<BrandCarouselProps> = ({
           }}
         >
           {brands.map((brand, index) => (
-            <div 
-              key={brand.name} 
+            <div
+              key={brand.name}
               className="flex-shrink-0"
               style={{ width: `${100 / visibleBrands}%` }}
             >
-              <div className="p-3 md:p-4 h-full">
-                <Link 
-                  href={`/produtos?brands=${encodeURIComponent(brand.name)}`}
-                  className="block group h-full"
-                  onClick={(e) => {
-                    // Prevent navigation if dragging
-                    if (isDragging || Math.abs(dragOffset) > 10) {
-                      e.preventDefault();
-                    }
-                  }}
-                >
-                  <div className="bg-white hover:bg-gray-50 rounded-lg p-3 sm:p-4 transition-all duration-300 group-hover:shadow-lg group-hover:scale-105 h-full flex flex-col items-center justify-center min-h-[120px] sm:min-h-[160px] border border-gray-200">
-                    {/* Brand Logo */}
-                    <div className="w-full h-16 sm:h-20 mb-2 sm:mb-3 flex items-center justify-center">
-                      <div 
-                        className="h-full w-full max-w-[140px] sm:max-w-[160px] flex items-center justify-center"
-                        style={{ 
-                          filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))'
-                        }}
+              <div className="p-3 md:p-4 h-full max-w-sm mx-auto">
+                <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 min-h-[280px] flex flex-col relative overflow-hidden transform hover:scale-105 hover:-translate-y-2 group">
+                  {/* Background hover effect with brand color */}
+                  <div 
+                    className="absolute inset-0 opacity-0 group-hover:opacity-5 dark:group-hover:opacity-10 transition-all duration-500 rounded-xl"
+                    style={{
+                      background: `linear-gradient(135deg, ${brandInfo[brand.name]?.lightColor || brandInfo[brand.name]?.color || '#f59e0b'}, ${brandInfo[brand.name]?.darkColor || brandInfo[brand.name]?.color || '#ea580c'})`
+                    }}
+                  ></div>
+                  
+                  {/* Brand Color Header */}
+                  <div 
+                    className="w-full h-2 rounded-t-lg mb-4 transition-all duration-500 group-hover:h-3 shadow-sm"
+                    style={{
+                      background: `linear-gradient(90deg, ${brandInfo[brand.name]?.lightColor || brandInfo[brand.name]?.color || '#f59e0b'}, ${brandInfo[brand.name]?.darkColor || brandInfo[brand.name]?.color || '#ea580c'})`
+                    }}
+                  ></div>
+                  
+                  {/* Logo Section - Increased size and prominence */}
+                  <div className="mb-6 text-center relative z-10">
+                    <div 
+                      className="w-full h-20 flex items-center justify-center p-2 rounded-lg bg-gray-50 dark:bg-gray-700/50 backdrop-blur-sm transition-all duration-500 group-hover:bg-white dark:group-hover:bg-gray-600/70 group-hover:shadow-lg group-hover:scale-105"
+                      style={{
+                        background: `linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,250,252,0.9))`,
+                      }}
+                    >
+                      <div
+                        className="w-full h-full transition-all duration-500 group-hover:scale-110"
                         dangerouslySetInnerHTML={{ 
-                          __html: brandInfo[brand.name]?.logo || `<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="5" y="15" width="190" height="30" rx="5" fill="#6b7280"/>
-                            <text x="100" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">${brand.name}</text>
-                          </svg>`
+                          __html: brandInfo[brand.name]?.logo || `<div class="text-2xl font-bold text-gray-800">${brand.name}</div>` 
                         }}
                       />
                     </div>
-                    
-                    {/* Brand Description - Hidden on mobile */}
-                    <p className="hidden sm:block text-xs text-gray-500 text-center mb-2 leading-relaxed px-1">
-                      {brandInfo[brand.name]?.description || "Marca de ferramentas profissionais"}
+                  </div>
+                  
+                  {/* Brand Name and Established */}
+                  <div className="mb-4 text-center relative z-10">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1 transition-colors duration-300 group-hover:text-gray-900 dark:group-hover:text-white">
+                      {brand.name}
+                    </h3>
+                    {brandInfo[brand.name]?.established && (
+                      <p 
+                        className="text-sm font-semibold transition-all duration-300 group-hover:font-bold"
+                        style={{
+                          color: brandInfo[brand.name]?.color || '#f59e0b'
+                        }}
+                      >
+                        {brandInfo[brand.name].established}
+                      </p>
+                    )}
+                  </div>
+                  
+                  {/* Description */}
+                  <div className="flex-1 mb-4 relative z-10">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 transition-all duration-300 group-hover:text-gray-700 dark:group-hover:text-gray-200">
+                      {brandInfo[brand.name]?.description || 
+                       `Produtos de qualidade da marca ${brand.name} com ${brand.product_count} itens disponíveis.`}
                     </p>
-                    
-                    {/* Product Count */}
-                    {showProductCount && brand.product_count && (
-                      <p className="text-xs font-semibold text-center mb-2" style={{ color: brandInfo[brand.name]?.color || '#6b7280' }}>
-                        {brand.product_count} {brand.product_count === 1 ? 'produto' : 'produtos'}
-                      </p>
-                    )}
-                    
-                    {/* Website */}
-                    {brandInfo[brand.name]?.website && (
-                      <p className="text-xs text-gray-400 text-center mb-2">
-                        {brandInfo[brand.name]?.website}
-                      </p>
-                    )}
-                    
-                    {/* Hover Arrow */}
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
-                      <span className="text-xs font-medium" style={{ color: brandInfo[brand.name]?.color || '#2563eb' }}>
-                        Ver produtos →
+                  </div>
+                  
+                  {/* Product Count and CTA */}
+                  <div className="space-y-3 relative z-10">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600 dark:text-gray-400 font-medium">
+                        Produtos disponíveis:
+                      </span>
+                      <span 
+                        className="font-bold text-lg transition-all duration-300 group-hover:scale-110"
+                        style={{
+                          color: brandInfo[brand.name]?.color || '#f59e0b'
+                        }}
+                      >
+                        {brand.product_count}
                       </span>
                     </div>
+                    
+                    <Link 
+                      href={`/produtos?brand=${encodeURIComponent(brand.name)}`} 
+                      className="block w-full text-center py-3 px-4 rounded-lg font-medium transition-all duration-300 border-2 transform hover:scale-105 hover:shadow-lg relative overflow-hidden"
+                      style={{
+                        borderColor: brandInfo[brand.name]?.color || '#f59e0b',
+                        color: brandInfo[brand.name]?.color || '#f59e0b',
+                        background: 'transparent'
+                      }}
+                      onMouseEnter={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.background = brandInfo[brand.name]?.lightColor || brandInfo[brand.name]?.color || '#f59e0b';
+                        target.style.color = 'white';
+                        target.style.borderColor = brandInfo[brand.name]?.darkColor || brandInfo[brand.name]?.color || '#ea580c';
+                      }}
+                      onMouseLeave={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.background = 'transparent';
+                        target.style.color = brandInfo[brand.name]?.color || '#f59e0b';
+                        target.style.borderColor = brandInfo[brand.name]?.color || '#f59e0b';
+                      }}
+                    >
+                      <span className="flex items-center justify-center">
+                        <i className="fas fa-search mr-2"></i>
+                        Ver Produtos
+                        <i className="fas fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+                      </span>
+                    </Link>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           ))}

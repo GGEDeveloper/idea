@@ -3,6 +3,21 @@
  */
 
 /**
+ * Função auxiliar para transformar categoria recursivamente
+ */
+const transformCategory = (cat: any): Category => ({
+  id: cat.categoryid || cat.id,
+  categoryid: cat.categoryid || cat.id,
+  name: cat.name,
+  path: cat.path || cat.categoryid,
+  productCount: cat.productCount || 0,
+  icon: getCategoryIcon(cat.name),
+  color: getCategoryColor(cat.name),
+  children: cat.children ? cat.children.map(transformCategory) : [], // ✅ Transformar recursivamente
+  directProductCount: cat.directProductCount || 0
+});
+
+/**
  * Busca as categorias disponíveis da API real
  * @returns {Promise<Category[]>} Lista de categorias com contagens reais
  */
@@ -24,16 +39,8 @@ export const getCategories = async (): Promise<Category[]> => {
       throw new Error('Invalid API response format');
     }
     
-    // Transform API response to our Category interface and add UI properties
-    return categoriesArray.map((cat: any) => ({
-      id: cat.categoryid || cat.id,
-      categoryid: cat.categoryid || cat.id,
-      name: cat.name,
-      path: cat.path || cat.categoryid,
-      productCount: cat.productCount || 0, // Real count from API
-      icon: getCategoryIcon(cat.name),
-      color: getCategoryColor(cat.name)
-    }));
+    // Transform API response to our Category interface and add UI properties recursively
+    return categoriesArray.map(transformCategory);
     
   } catch (error) {
     console.error('Error fetching categories:', error);
@@ -81,6 +88,8 @@ export interface Category {
   productCount?: number;
   icon?: string;
   color?: string;
+  children?: Category[]; // ✅ Adicionar campo children
+  directProductCount?: number; // ✅ Adicionar contagem direta
 }
 
 // Get category by ID
@@ -295,20 +304,124 @@ export const getCategorySVGIcon = (categoryName: string): string => {
 
 // Get category color by name
 export const getCategoryColor = (categoryName: string): string => {
-  const colorMap: { [key: string]: string } = {
-    'Ferramentas Elétricas': 'bg-gradient-to-br from-blue-500 to-blue-700',
-    'Ferramentas': 'bg-gradient-to-br from-blue-500 to-blue-700',
-    'Construção': 'bg-gradient-to-br from-orange-500 to-orange-700',
-    'Jardim': 'bg-gradient-to-br from-green-500 to-green-700',
-    'Segurança': 'bg-gradient-to-br from-red-500 to-red-700',
-    'Oficina': 'bg-gradient-to-br from-purple-500 to-purple-700',
-    'Elétrica': 'bg-gradient-to-br from-yellow-500 to-yellow-700',
-    'Hidráulica': 'bg-gradient-to-br from-cyan-500 to-cyan-700',
-    'Bricolage': 'bg-gradient-to-br from-indigo-500 to-indigo-700',
-    'Proteção': 'bg-gradient-to-br from-red-500 to-red-700',
+  if (!categoryName) return 'bg-gradient-to-br from-gray-500 to-gray-700';
+  
+  const normalizedName = categoryName.toLowerCase();
+  
+  // Cores mais específicas baseadas em palavras-chave
+  const keywordColorMap: { [key: string]: string } = {
+    // Ferramentas e workshop - tons de azul
+    'tools': 'bg-gradient-to-br from-blue-600 to-blue-800',
+    'workshop': 'bg-gradient-to-br from-blue-700 to-indigo-800', 
+    'garage': 'bg-gradient-to-br from-slate-600 to-slate-800',
+    'mechanic': 'bg-gradient-to-br from-blue-600 to-blue-800',
+    
+    // Soldadura - vermelho/laranja intenso
+    'welding': 'bg-gradient-to-br from-red-600 to-orange-700',
+    'weld': 'bg-gradient-to-br from-red-600 to-orange-700',
+    
+    // Ferramentas elétricas - amarelo/laranja
+    'power': 'bg-gradient-to-br from-amber-500 to-orange-600',
+    'drill': 'bg-gradient-to-br from-amber-500 to-orange-600',
+    'cordless': 'bg-gradient-to-br from-amber-500 to-orange-600',
+    
+    // Jardim - verde
+    'garden': 'bg-gradient-to-br from-green-600 to-emerald-700',
+    'lawn': 'bg-gradient-to-br from-green-500 to-green-700',
+    'trimmer': 'bg-gradient-to-br from-green-600 to-green-800',
+    
+    // Segurança - vermelho forte
+    'safety': 'bg-gradient-to-br from-red-600 to-red-800',
+    'health': 'bg-gradient-to-br from-red-600 to-red-800',
+    'protection': 'bg-gradient-to-br from-red-500 to-red-700',
+    
+    // Elétrica - amarelo
+    'electric': 'bg-gradient-to-br from-yellow-500 to-amber-600',
+    'electrical': 'bg-gradient-to-br from-yellow-500 to-amber-600',
+    'laser': 'bg-gradient-to-br from-red-500 to-pink-600',
+    
+    // Pneumática - azul claro
+    'pneumatic': 'bg-gradient-to-br from-sky-500 to-cyan-600',
+    'air': 'bg-gradient-to-br from-sky-500 to-cyan-600',
+    'compressor': 'bg-gradient-to-br from-sky-600 to-sky-800',
+    
+    // Hidráulica/Plumbing - azul
+    'plumb': 'bg-gradient-to-br from-blue-500 to-blue-700',
+    'hydraulic': 'bg-gradient-to-br from-blue-500 to-blue-700',
+    'pipe': 'bg-gradient-to-br from-blue-500 to-blue-700',
+    
+    // Corte - cinza/preto
+    'cutting': 'bg-gradient-to-br from-gray-600 to-gray-800',
+    'blade': 'bg-gradient-to-br from-gray-600 to-gray-800',
+    'knife': 'bg-gradient-to-br from-gray-600 to-gray-800',
+    
+    // Medição - roxo
+    'measuring': 'bg-gradient-to-br from-purple-600 to-purple-800',
+    'measure': 'bg-gradient-to-br from-purple-600 to-purple-800',
+    'gauge': 'bg-gradient-to-br from-purple-500 to-purple-700',
+    
+    // Abrasivos - marrom/terra
+    'abrasive': 'bg-gradient-to-br from-amber-700 to-orange-800',
+    'grinding': 'bg-gradient-to-br from-amber-700 to-orange-800',
+    'polishing': 'bg-gradient-to-br from-amber-600 to-amber-800',
+    
+    // Construção - laranja
+    'construction': 'bg-gradient-to-br from-orange-600 to-orange-800',
+    'renovation': 'bg-gradient-to-br from-orange-500 to-orange-700',
+    'building': 'bg-gradient-to-br from-orange-600 to-red-700',
+    
+    // Veículos - preto/cinza escuro
+    'vehicle': 'bg-gradient-to-br from-gray-800 to-black',
+    'automotive': 'bg-gradient-to-br from-gray-800 to-black',
+    'car': 'bg-gradient-to-br from-gray-700 to-gray-900',
+    
+    // Casa/doméstico - rosa/roxo claro
+    'household': 'bg-gradient-to-br from-pink-500 to-rose-600',
+    'cleaning': 'bg-gradient-to-br from-pink-500 to-rose-600',
+    'vacuum': 'bg-gradient-to-br from-purple-500 to-purple-700',
+    
+    // Aquecimento - vermelho/laranja
+    'heater': 'bg-gradient-to-br from-red-500 to-orange-600',
+    'heating': 'bg-gradient-to-br from-red-500 to-orange-600',
+    
+    // Turismo - azul/verde
+    'tourist': 'bg-gradient-to-br from-teal-500 to-cyan-600',
+    'camping': 'bg-gradient-to-br from-teal-600 to-green-700',
+    'portable': 'bg-gradient-to-br from-teal-500 to-teal-700',
+    
+    // União/junção - roxo
+    'joining': 'bg-gradient-to-br from-violet-600 to-purple-700',
+    'clamp': 'bg-gradient-to-br from-violet-600 to-purple-700',
+    'rivet': 'bg-gradient-to-br from-violet-500 to-violet-700',
+    
+    // Serviço - azul escuro
+    'service': 'bg-gradient-to-br from-indigo-600 to-indigo-800',
+    'lift': 'bg-gradient-to-br from-indigo-600 to-indigo-800',
+    'diagnostic': 'bg-gradient-to-br from-indigo-500 to-indigo-700'
   };
   
-  return colorMap[categoryName] || 'bg-gradient-to-br from-gray-500 to-gray-700';
+  // Primeiro verifica por palavras-chave específicas
+  for (const [keyword, color] of Object.entries(keywordColorMap)) {
+    if (normalizedName.includes(keyword)) {
+      return color;
+    }
+  }
+  
+  // Fallback para categorias específicas por nome exato
+  const exactColorMap: { [key: string]: string } = {
+    'ferramentas elétricas': 'bg-gradient-to-br from-blue-600 to-blue-800',
+    'ferramentas': 'bg-gradient-to-br from-blue-600 to-blue-800',
+    'construção': 'bg-gradient-to-br from-orange-600 to-orange-800',
+    'jardim': 'bg-gradient-to-br from-green-600 to-emerald-700',
+    'segurança': 'bg-gradient-to-br from-red-600 to-red-800',
+    'oficina': 'bg-gradient-to-br from-purple-600 to-purple-800',
+    'elétrica': 'bg-gradient-to-br from-yellow-500 to-amber-600',
+    'hidráulica': 'bg-gradient-to-br from-cyan-500 to-cyan-700',
+    'bricolage': 'bg-gradient-to-br from-indigo-500 to-indigo-700',
+    'proteção': 'bg-gradient-to-br from-red-600 to-red-800'
+  };
+  
+  return exactColorMap[normalizedName] || 'bg-gradient-to-br from-gray-600 to-gray-800';
 };
 
 // Search categories
