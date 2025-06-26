@@ -249,6 +249,17 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
               Sobre
             </Link>
             <Link 
+              href="/faqs" 
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+                pathname && pathname.startsWith('/faqs') 
+                  ? 'text-blue-600 bg-blue-50 dark:bg-blue-900 dark:text-blue-300' 
+                  : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
+              }`}
+              aria-current={pathname && pathname.startsWith('/faqs') ? 'page' : undefined}
+            >
+              FAQs
+            </Link>
+            <Link 
               href="/contacto" 
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
                 pathname && pathname.startsWith('/contacto') 
@@ -531,6 +542,14 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Sobre
+          </Link>
+          <Link 
+            href="/faqs"
+            role="menuitem"
+            className="mobile-menu-item" 
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            FAQs
           </Link>
           <Link 
             href="/contacto"
