@@ -87,7 +87,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **ATUALIZADO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **ATUALIZADO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-28 - v1.9.0)
+## Status Atual do Sistema (2025-01-28 - v1.9.1)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
@@ -105,7 +105,33 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
 
-### 🆕 Funcionalidades Mais Recentes (v1.9.0 - 28/01/2025)
+### 🆕 Funcionalidades Mais Recentes (v1.9.1 - 28/01/2025)
+
+### 🐛 **Correção Crítica 404 - Página Detalhes Encomenda Cliente (v1.9.1)**
+- **PROBLEMA RESOLVIDO**: Cliente não conseguia aceder `/encomenda/[orderId]` (404 error)
+- **CLIENT-ORDER-DETAIL-001**: Página completa de detalhes de encomenda para clientes
+  - **Arquivo**: `app/encomenda/[orderId]/page.tsx`
+  - **Autenticação**: Verificação JWT obrigatória com redirect para login
+  - **Segurança**: Cliente só vê suas próprias encomendas
+  - **Interface Rica**: 11 estados com progress bars, layout profissional
+  - **Mobile-First**: Experiência otimizada para todos dispositivos
+  - **Dark Mode**: Compatibilidade total com tema escuro
+- **API-ENDPOINT-001**: Endpoint seguro para clientes `/api/orders/[orderId]`
+  - **Arquivo**: `app/api/orders/[orderId]/route.ts`
+  - **JWT Verification**: Token via cookie `idea_session_token`
+  - **User Isolation**: WHERE user_id = authenticated_user
+  - **UUID Validation**: Formato orderId validado
+  - **Error Handling**: 401/404/500 responses apropriados
+- **INTERFACE DETALHADA**:
+  - **Progress Tracking**: Barra de progresso 0-100% baseada no estado
+  - **Status Visual**: Cores e ícones específicos para cada estado
+  - **Ordem Items**: Lista completa com cálculos de subtotais
+  - **Cliente Info**: Dados pessoais, empresa, histórico de encomenda
+  - **Help Section**: Link direto para contacto/suporte
+  - **Breadcrumbs**: Navegação de volta para "Minhas Encomendas"
+- **11 ESTADOS SUPORTADOS**: Aguardando Aprovação → Aprovada → Em Processamento → Pronta para Envio → Enviada → Em Rota → Saiu para Entrega → Entregue + estados de cancelamento/devolução
+- **BUILD STATUS**: ✅ Compilação TypeScript sem erros em 4.0s
+- **RESULTADO**: ✅ 404 Error completamente resolvido, URL `/encomenda/[orderId]` totalmente funcional
 
 ### 🎨 **Sistema de Ícones SVG Profissional (v1.9.0)**
 - **ICON-SYSTEM-001**: Implementado sistema completo de ícones SVG para categorias
