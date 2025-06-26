@@ -42,9 +42,9 @@ interface ProductPrice {
   variantid: string;
   variant_name: string;
   stockquantity: number;
-  current_price: number;
-  promotional_price?: number;
-  effective_price: number;
+  current_price: number | string;
+  promotional_price?: number | string;
+  effective_price: number | string;
   categories: string[];
   has_campaign: boolean;
 }
@@ -261,13 +261,13 @@ function ProductPriceEditor() {
                     </span>
                   </td>
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
-                    €{product.current_price?.toFixed(2) || '0.00'}
+                    €{(Number(product.current_price) || 0).toFixed(2)}
                   </td>
                   <td className="px-6 py-4">
                     <input
                       type="number"
                       step="0.01"
-                      value={editingPrices[product.variantid] ?? product.current_price ?? 0}
+                      value={editingPrices[product.variantid] ?? Number(product.current_price) ?? 0}
                       onChange={(e) => handlePriceChange(product.variantid, parseFloat(e.target.value) || 0)}
                       className="w-24 px-2 py-1 border rounded dark:bg-gray-600 dark:border-gray-500 dark:text-white"
                     />
@@ -275,7 +275,7 @@ function ProductPriceEditor() {
                   <td className="px-6 py-4 text-sm">
                     {product.has_campaign ? (
                       <span className="px-2 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 rounded-full text-xs">
-                        🎯 €{product.promotional_price?.toFixed(2)}
+                        🎯 €{(Number(product.promotional_price) || 0).toFixed(2)}
                       </span>
                     ) : (
                       <span className="text-gray-400">-</span>
