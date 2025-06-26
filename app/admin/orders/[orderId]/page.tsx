@@ -16,7 +16,8 @@ import {
   DocumentTextIcon,
   MapPinIcon,
   PhoneIcon,
-  EnvelopeIcon
+  EnvelopeIcon,
+  ArrowUturnLeftIcon
 } from '@heroicons/react/24/outline';
 
 interface OrderItem {
@@ -123,19 +124,37 @@ const statusConfig = {
   }
 };
 
-// Valid transitions mapping
+// Valid transitions mapping - UPDATED com reversões
 const validTransitions = {
-  'pending_approval': ['approved', 'rejected'],
-  'approved': ['processing', 'cancelled'],
-  'processing': ['ready_to_ship', 'cancelled'],
-  'ready_to_ship': ['shipped', 'cancelled'],
-  'shipped': ['in_transit', 'delivered'],
-  'in_transit': ['out_for_delivery', 'delivered'],
-  'out_for_delivery': ['delivered', 'returned'],
-  'delivered': ['returned'],
-  'rejected': [],
-  'cancelled': [],
-  'returned': []
+  'pending_approval': ['approved', 'rejected', 'cancelled'],
+  'approved': ['processing', 'cancelled', 'pending_approval'], // Pode reverter
+  'processing': ['ready_to_ship', 'cancelled', 'approved'], // Pode reverter
+  'ready_to_ship': ['shipped', 'cancelled', 'processing'], // Pode reverter
+  'shipped': ['in_transit', 'delivered', 'cancelled', 'ready_to_ship'], // Pode reverter
+  'in_transit': ['out_for_delivery', 'delivered', 'cancelled', 'shipped'], // Pode reverter
+  'out_for_delivery': ['delivered', 'returned', 'cancelled', 'in_transit'], // Pode reverter
+  'delivered': ['returned'], // Final state - only returns allowed
+  'rejected': ['pending_approval'], // Pode reverter rejeitadas
+  'cancelled': [], // Final state - no transitions
+  'returned': [] // Final state - no transitions
+};
+
+// Função para obter estado anterior lógico
+const getPreviousStatus = (currentStatus: string): string | null => {
+  const progressOrder = [
+    'pending_approval', 'approved', 'processing', 'ready_to_ship', 
+    'shipped', 'in_transit', 'out_for_delivery', 'delivered'
+  ];
+  
+  const currentIndex = progressOrder.indexOf(currentStatus);
+  if (currentIndex > 0) {
+    return progressOrder[currentIndex - 1];
+  }
+  
+  // Casos especiais
+  if (currentStatus === 'rejected') return 'pending_approval';
+  
+  return null;
 };
 
 const OrderDetailPage = () => {
@@ -150,6 +169,10 @@ const OrderDetailPage = () => {
   const [selectedStatus, setSelectedStatus] = useState<string>('');
   const [statusNotes, setStatusNotes] = useState<string>('');
   const [showStatusModal, setShowStatusModal] = useState(false);
+  const [showCancelModal, setShowCancelModal] = useState(false);
+  const [showRevertModal, setShowRevertModal] = useState(false);
+  const [cancelReason, setCancelReason] = useState<string>('');
+  const [revertReason, setRevertReason] = useState<string>('');
 
   useEffect(() => {
     if (orderId) {
@@ -178,7 +201,7 @@ const OrderDetailPage = () => {
     }
   };
 
-  const updateOrderStatus = async (newStatus: string, notes?: string) => {
+  const updateOrderStatus = async (newStatus: string, notes?: string, action?: string) => {
     setUpdating(true);
     setError(null);
     setSuccess(null);
@@ -192,7 +215,8 @@ const OrderDetailPage = () => {
         credentials: 'include',
         body: JSON.stringify({ 
           status: newStatus,
-          notes: notes || statusNotes
+          notes: notes || statusNotes,
+          action: action
         })
       });
 
@@ -202,10 +226,20 @@ const OrderDetailPage = () => {
       }
 
       const result = await response.json();
-      setSuccess(`Estado atualizado: ${result.transition}`);
+      
+      let actionMessage = '';
+      if (action === 'cancel') actionMessage = 'Encomenda cancelada';
+      else if (action === 'revert') actionMessage = 'Estado revertido';
+      else actionMessage = `Estado atualizado: ${result.transition}`;
+      
+      setSuccess(actionMessage);
       setShowStatusModal(false);
+      setShowCancelModal(false);
+      setShowRevertModal(false);
       setSelectedStatus('');
       setStatusNotes('');
+      setCancelReason('');
+      setRevertReason('');
       await fetchOrderData(); // Refresh data
 
     } catch (error) {
@@ -214,6 +248,35 @@ const OrderDetailPage = () => {
     } finally {
       setUpdating(false);
     }
+  };
+
+  const handleCancelOrder = () => {
+    if (!cancelReason.trim()) {
+      setError('Razão para cancelamento é obrigatória');
+      return;
+    }
+    updateOrderStatus('cancelled', cancelReason, 'cancel');
+  };
+
+  const handleRevertOrder = () => {
+    const previousStatus = getPreviousStatus(order?.order_status || '');
+    if (!previousStatus) {
+      setError('Não é possível reverter este estado');
+      return;
+    }
+    if (!revertReason.trim()) {
+      setError('Razão para reversão é obrigatória');
+      return;
+    }
+    updateOrderStatus(previousStatus, revertReason, 'revert');
+  };
+
+  const canCancel = (status: string) => {
+    return status !== 'delivered' && status !== 'cancelled' && status !== 'returned';
+  };
+
+  const canRevert = (status: string) => {
+    return getPreviousStatus(status) !== null;
   };
 
   const getAvailableTransitions = (currentStatus: string) => {
@@ -434,6 +497,34 @@ const OrderDetailPage = () => {
                   })}
                 </div>
               </div>
+
+              {/* Quick Action Buttons */}
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">
+                  Ações Rápidas:
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {canCancel(order.order_status) && (
+                    <button
+                      onClick={() => setShowCancelModal(true)}
+                      className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                      disabled={updating}
+                    >
+                      ❌ Cancelar Encomenda
+                    </button>
+                  )}
+                  
+                  {canRevert(order.order_status) && (
+                    <button
+                      onClick={() => setShowRevertModal(true)}
+                      className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                      disabled={updating}
+                    >
+                      ↶ Reverter Estado
+                    </button>
+                  )}
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -607,6 +698,118 @@ const OrderDetailPage = () => {
                   className="px-4 py-2 text-sm font-medium text-white bg-orange-600 border border-transparent rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {updating ? 'A atualizar...' : 'Confirmar Mudança'}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Cancel Order Modal */}
+      {showCancelModal && (
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+          <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800">
+            <div className="mt-3">
+              <h3 className="text-lg font-medium text-red-600 dark:text-red-400 mb-4 flex items-center">
+                <ExclamationCircleIcon className="h-6 w-6 mr-2" />
+                Cancelar Encomenda
+              </h3>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  ⚠️ Esta ação irá cancelar permanentemente a encomenda. Esta ação não pode ser desfeita.
+                </p>
+                
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Razão para cancelamento *:
+                </label>
+                <textarea
+                  value={cancelReason}
+                  onChange={(e) => setCancelReason(e.target.value)}
+                  rows={3}
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  placeholder="Descreva o motivo do cancelamento (obrigatório)..."
+                />
+              </div>
+
+              <div className="flex justify-end space-x-3">
+                <button
+                  onClick={() => {
+                    setShowCancelModal(false);
+                    setCancelReason('');
+                    setError(null);
+                  }}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-500"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleCancelOrder}
+                  disabled={updating || !cancelReason.trim()}
+                  className="px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {updating ? 'A cancelar...' : 'Confirmar Cancelamento'}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Revert Order Status Modal */}
+      {showRevertModal && (
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
+          <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white dark:bg-gray-800">
+            <div className="mt-3">
+              <h3 className="text-lg font-medium text-yellow-600 dark:text-yellow-400 mb-4 flex items-center">
+                <ArrowUturnLeftIcon className="h-6 w-6 mr-2" />
+                Reverter Estado da Encomenda
+              </h3>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  Esta ação irá reverter a encomenda para o estado anterior:
+                  <br />
+                  <strong className="text-gray-900 dark:text-white">
+                    {statusConfig[order.order_status as keyof typeof statusConfig]?.label}
+                  </strong>
+                  {' → '}
+                  <strong className="text-yellow-600 dark:text-yellow-400">
+                    {statusConfig[getPreviousStatus(order.order_status) as keyof typeof statusConfig]?.label}
+                  </strong>
+                </p>
+                
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Razão para reversão *:
+                </label>
+                <textarea
+                  value={revertReason}
+                  onChange={(e) => setRevertReason(e.target.value)}
+                  rows={3}
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  placeholder="Descreva o motivo da reversão (obrigatório)..."
+                />
+              </div>
+
+              <div className="flex justify-end space-x-3">
+                <button
+                  onClick={() => {
+                    setShowRevertModal(false);
+                    setRevertReason('');
+                    setError(null);
+                  }}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded-md hover:bg-gray-200 dark:hover:bg-gray-500"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleRevertOrder}
+                  disabled={updating || !revertReason.trim()}
+                  className="px-4 py-2 text-sm font-medium text-white bg-yellow-600 border border-transparent rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {updating ? 'A reverter...' : 'Confirmar Reversão'}
                 </button>
               </div>
             </div>

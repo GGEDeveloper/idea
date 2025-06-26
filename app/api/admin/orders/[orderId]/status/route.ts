@@ -20,7 +20,7 @@ export async function PUT(
 
     const { orderId } = await params;
     const body = await request.json();
-    const { status, notes } = body;
+    const { status, notes, action } = body; // action pode ser: 'transition', 'cancel', 'revert'
 
     // Expanded valid statuses for better order management
     const validStatuses = [
@@ -59,7 +59,7 @@ export async function PUT(
 
     const currentStatus = existingOrder.rows[0].order_status;
 
-    // Business logic validations - Enhanced
+    // Business logic validations - Enhanced with flexible transitions
     if (currentStatus === status) {
       return NextResponse.json(
         { error: 'Order is already in this status' },
@@ -67,30 +67,41 @@ export async function PUT(
       );
     }
 
-    // Define valid status transitions
+    // Define valid status transitions - FLEXIBILIZADA para permitir cancelamentos e reversões
     const validTransitions: Record<string, string[]> = {
-      'pending_approval': ['approved', 'rejected'],
-      'approved': ['processing', 'cancelled'],
-      'processing': ['ready_to_ship', 'cancelled'],
-      'ready_to_ship': ['shipped', 'cancelled'],
-      'shipped': ['in_transit', 'delivered'],
-      'in_transit': ['out_for_delivery', 'delivered'],
-      'out_for_delivery': ['delivered', 'returned'],
-      'delivered': ['returned'], // Only allow returns after delivery
-      'rejected': [], // Final state
-      'cancelled': [], // Final state
-      'returned': [] // Final state
+      'pending_approval': ['approved', 'rejected', 'cancelled'],
+      'approved': ['processing', 'cancelled', 'pending_approval'], // Pode reverter para pending
+      'processing': ['ready_to_ship', 'cancelled', 'approved'], // Pode reverter para approved
+      'ready_to_ship': ['shipped', 'cancelled', 'processing'], // Pode reverter para processing
+      'shipped': ['in_transit', 'delivered', 'cancelled', 'ready_to_ship'], // Pode reverter
+      'in_transit': ['out_for_delivery', 'delivered', 'cancelled', 'shipped'], // Pode reverter
+      'out_for_delivery': ['delivered', 'returned', 'cancelled', 'in_transit'], // Pode reverter
+      'delivered': ['returned'], // Final state - only returns allowed
+      'rejected': ['pending_approval'], // Pode reverter rejeitadas
+      'cancelled': [], // Final state - no transitions
+      'returned': [] // Final state - no transitions
     };
 
-    // Check if transition is valid
-    const allowedTransitions = validTransitions[currentStatus] || [];
-    if (!allowedTransitions.includes(status)) {
-      return NextResponse.json(
-        { 
-          error: `Invalid status transition from '${currentStatus}' to '${status}'. Allowed transitions: ${allowedTransitions.join(', ') || 'none'}` 
-        },
-        { status: 400 }
-      );
+    // LÓGICA ESPECIAL: Cancelamento permitido de qualquer estado (exceto delivered)
+    if (action === 'cancel' && status === 'cancelled') {
+      if (currentStatus === 'delivered') {
+        return NextResponse.json(
+          { error: 'Cannot cancel delivered orders. Use return option instead.' },
+          { status: 400 }
+        );
+      }
+      // Cancelamento permitido, skip validation normal
+    } else {
+      // Check if transition is valid para transições normais
+      const allowedTransitions = validTransitions[currentStatus] || [];
+      if (!allowedTransitions.includes(status)) {
+        return NextResponse.json(
+          { 
+            error: `Invalid status transition from '${currentStatus}' to '${status}'. Allowed transitions: ${allowedTransitions.join(', ') || 'none'}` 
+          },
+          { status: 400 }
+        );
+      }
     }
 
     // Update order status
@@ -99,14 +110,18 @@ export async function PUT(
       [status, orderId]
     );
 
-    // Log the status change
-    console.log(`[ORDER-STATUS] Admin ${adminUser.email} changed order ${orderId} status from '${currentStatus}' to '${status}'${notes ? ` with notes: ${notes}` : ''}`);
+    // Enhanced logging with action context
+    const actionText = action === 'cancel' ? 'CANCELOU' : 
+                      action === 'revert' ? 'REVERTEU' : 'ALTEROU';
+    
+    console.log(`[ORDER-STATUS] Admin ${adminUser.email} ${actionText} order ${orderId} status from '${currentStatus}' to '${status}'${notes ? ` with notes: ${notes}` : ''}`);
 
     return NextResponse.json({
       message: 'Order status updated successfully',
       order: result.rows[0],
       previousStatus: currentStatus,
       transition: `${currentStatus} → ${status}`,
+      action: action || 'transition',
       notes: notes || null
     });
 
