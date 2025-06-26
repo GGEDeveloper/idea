@@ -98,6 +98,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
                 <Link
                   key={item.name}
                   href={item.href}
+                  onClick={() => setSidebarOpen(false)}
                   className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
                     isActive
                       ? 'bg-orange-100 dark:bg-orange-900 text-orange-900 dark:text-orange-100'
@@ -118,7 +119,10 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
         
         <div className="flex-shrink-0 flex border-t border-gray-200 dark:border-gray-700 p-4">
           <button
-            onClick={handleLogout}
+            onClick={() => {
+              setSidebarOpen(false);
+              handleLogout();
+            }}
             className="flex items-center w-full px-2 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white rounded-md"
           >
             <ArrowRightOnRectangleIcon className="mr-3 h-6 w-6 text-gray-400" />
