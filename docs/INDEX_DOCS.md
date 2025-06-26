@@ -65,7 +65,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [FRONTEND_CATEGORIES_IMPLEMENTATION.md](./FRONTEND_CATEGORIES_IMPLEMENTATION.md): Detalhes de implementação das categorias no frontend. **(Atualizado: árvore de categorias baseada em path, estrutura esperada e exemplos)**
 - [ADMIN_AREA_IMPLEMENTATION_STATUS.md](./ADMIN_AREA_IMPLEMENTATION_STATUS.md): ✅ **ATUALIZADO (17/01/2025)** Status completo da área de administração - 100% funcional
 - [DEVELOPMENT_LOG.md](./DEVELOPMENT_LOG.md): ✅ **ATUALIZADO (18/01/2025)** Log detalhado de desenvolvimento e correções
-- [CHANGELOG.md](./CHANGELOG.md): ✅ **ATUALIZADO (27/01/2025)** Histórico de versões e alterações - v1.6.2
+- [CHANGELOG.md](./CHANGELOG.md): ✅ **ATUALIZADO (29/01/2025)** Histórico de versões e alterações - v1.9.2.3
 - [PRODUCT_DETAIL_PAGE_STATUS.md](./PRODUCT_DETAIL_PAGE_STATUS.md): ✅ **ATUALIZADO (14/01/2025)** Status detalhado da página de produto
 
 ### Implementação e Dark Mode
@@ -87,7 +87,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **ATUALIZADO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **ATUALIZADO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-28 - v1.9.1)
+## Status Atual do Sistema (2025-01-29 - v1.9.2.3)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
@@ -104,8 +104,47 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Dashboard Administrativo**: Estatísticas em tempo real e gestão completa
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
+- **Sistema de Preços Dinâmico**: ✅ **100% FUNCIONAL** - Configurações admin/cliente independentes com aplicação imediata
 
-### 🆕 Funcionalidades Mais Recentes (v1.9.1 - 28/01/2025)
+### 🆕 Funcionalidades Mais Recentes (v1.9.2.3 - 29/01/2025)
+
+### 🔧 **Configuração Admin de Preços (CORRIGIDA)**
+- **PROBLEMA RESOLVIDO**: Admin sempre via preços hardcoded em vez da configuração `default_admin_price_list`
+- **ADMIN-PRICE-CONFIG-001**: ProductPriceEditor agora usa configuração dinâmica
+  - **Arquivo**: `app/admin/pricing/page.tsx` - função `fetchAdminConfig()`
+  - **Estado Otimizado**: `configLoading` + `defaultAdminPriceList` para UX fluida
+  - **Fluxo Inteligente**: Configuração → Filtros → Produtos com lista correta
+  - **Independência Total**: Admin e clientes podem ter listas de preços completamente independentes
+  - **Error Handling**: Fallbacks automáticos se API falhar
+- **RESULTADO**: ✅ Admin vê preços da lista configurada independentemente dos clientes
+
+### 🚚 **Nova Configuração: Preço Base de Transporte**
+- **TRANSPORT-CONFIG-001**: Sistema completo de configuração de transporte
+  - **Base de Dados**: Nova configuração `base_transport_price` (€5.00 padrão)
+  - **Interface Admin**: Seção "🚚 Preço Base de Transporte" na aba Configurações
+  - **Validação Avançada**: Input €0-€999.99 com símbolo de euro e range validation
+  - **API Support**: Endpoint `/api/admin/pricing/config` atualizado
+  - **Script Automático**: `add_transport_config.js` para inserção na base de dados
+  - **Future Ready**: Base preparada para sistema avançado com zona/peso
+- **RESULTADO**: ✅ Configuração disponível para futura integração com transportes
+
+### 📱 **UX Mobile Otimizada - Tabs Responsivos**
+- **MOBILE-TABS-001**: Layout tabs do painel de preços otimizado para mobile
+  - **Arquivo**: `app/admin/pricing/page.tsx` - navegação tabs
+  - **Scroll Horizontal**: `overflow-x-auto` com navegação fluida
+  - **Textos Adaptativos**: Completos (desktop) → Abreviados (mobile)
+  - **Icons Consistentes**: Sempre visíveis com spacing inteligente
+  - **CSS Customizado**: `.scrollbar-hide` cross-browser (Safari/Chrome/Firefox/IE10+)
+  - **Breakpoints**: `sm:hidden/inline` para alternância contextual
+  - **Layout Profissional**: 7 opções de tabs em telas pequenas
+- **RESULTADO**: ✅ Navegação profissional em todos os dispositivos e tamanhos de tela
+
+### 🔧 **Melhorias Técnicas v1.9.2.3**
+- **State Management**: Separação `configLoading` vs `loading` para UX otimizada
+- **Error Resilience**: Fallbacks automáticos para configurações padrão
+- **Responsive Design**: Tabs adaptativos com mínimo 7 opções mobile
+- **Cross-browser CSS**: Scrollbar oculta em todos os navegadores modernos
+- **Performance**: Carregamento sequencial otimizado (config → produtos)
 
 ### 🐛 **Correção Crítica 404 - Página Detalhes Encomenda Cliente (v1.9.1)**
 - **PROBLEMA RESOLVIDO**: Cliente não conseguia aceder `/encomenda/[orderId]` (404 error)
