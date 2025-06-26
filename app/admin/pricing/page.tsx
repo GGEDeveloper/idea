@@ -1662,8 +1662,9 @@ function PricingConfigManager() {
         </div>
       </div>
 
-      {/* Save Button */}
-      <div className="flex justify-end">
+      {/* Action Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4">
+        {/* Save Button */}
         <button
           onClick={saveConfigs}
           disabled={saving || loading}
@@ -1671,7 +1672,7 @@ function PricingConfigManager() {
             saving || loading
               ? 'bg-gray-400 cursor-not-allowed'
               : 'bg-green-600 hover:bg-green-700'
-          } flex items-center space-x-2`}
+          } flex items-center justify-center space-x-2 flex-1`}
         >
           {saving ? (
             <>
@@ -1685,6 +1686,65 @@ function PricingConfigManager() {
             </>
           )}
         </button>
+        
+        {/* Recalculate Button */}
+        <button
+          onClick={async () => {
+            if (!confirm('⚠️ Isto irá recalcular TODOS os preços baseado nas configurações atuais. Continuar?')) return;
+            
+            try {
+              setSaving(true);
+              const response = await fetch('/api/admin/pricing/recalculate', {
+                method: 'POST',
+                credentials: 'include'
+              });
+              
+              if (response.ok) {
+                const data = await response.json();
+                alert(`✅ ${data.message}\n\n📊 Resultados:\n• Preços base atualizados: ${data.result.basePricesUpdated}\n• Preços cliente atualizados: ${data.result.customerPricesUpdated}\n• Total afetado: ${data.result.totalAffected}\n• Duração: ${data.result.durationMs}ms`);
+                // Refresh configs after recalculation
+                fetchConfigs();
+              } else {
+                const error = await response.json();
+                alert(`❌ Erro: ${error.error}`);
+              }
+            } catch (error) {
+              console.error('Error recalculating prices:', error);
+              alert('❌ Erro ao recalcular preços');
+            } finally {
+              setSaving(false);
+            }
+          }}
+          disabled={saving || loading}
+          className={`px-6 py-3 rounded-lg text-white font-medium ${
+            saving || loading
+              ? 'bg-gray-400 cursor-not-allowed'
+              : 'bg-orange-600 hover:bg-orange-700'
+          } flex items-center justify-center space-x-2 flex-1`}
+        >
+          {saving ? (
+            <>
+              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+              <span>Recalculando...</span>
+            </>
+          ) : (
+            <>
+              <span>🔄</span>
+              <span>Recalcular Preços</span>
+            </>
+          )}
+        </button>
+      </div>
+      
+      {/* Warning */}
+      <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3 mt-4">
+        <div className="flex items-start space-x-3">
+          <div className="text-yellow-600 dark:text-yellow-400">⚠️</div>
+          <div className="text-sm text-yellow-800 dark:text-yellow-200">
+            <p><strong>Importante:</strong> Salve as configurações antes de recalcular para aplicar as novas margens.</p>
+            <p className="mt-1">O recálculo afeta TODOS os preços da plataforma baseado nas configurações atuais.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
