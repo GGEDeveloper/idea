@@ -1,15 +1,26 @@
+'use client';
+
 import React from 'react';
+import CategoryIcon from '../components/CategoryIcon';
 
 export default function CategoriasPage() {
   const categories = [
-    { name: 'Ferramentas Elétricas', icon: 'fa-bolt', count: 45 },
-    { name: 'Construção', icon: 'fa-hard-hat', count: 32 },
-    { name: 'Jardim', icon: 'fa-seedling', count: 28 },
-    { name: 'Segurança', icon: 'fa-shield-alt', count: 15 },
-    { name: 'Oficina', icon: 'fa-wrench', count: 38 },
-    { name: 'Elétrica', icon: 'fa-plug', count: 22 },
-    { name: 'Hidráulica', icon: 'fa-tint', count: 18 },
-    { name: 'Bricolage', icon: 'fa-hammer', count: 41 }
+    { name: 'Power Tools', count: 245 },
+    { name: 'Garden', count: 189 },
+    { name: 'Welding Equipment and Accessories', count: 156 },
+    { name: 'Tools for The Workshop and Garage', count: 134 },
+    { name: 'Health and Safety Articles', count: 98 },
+    { name: 'Construction and Renovation', count: 87 },
+    { name: 'Pneumatics', count: 76 },
+    { name: 'Cutting Tools', count: 65 },
+    { name: 'Measuring Tools', count: 54 },
+    { name: 'Tools for Electricians', count: 43 },
+    { name: 'Tools for Plumbers', count: 38 },
+    { name: 'Abrasive Materials', count: 32 },
+    { name: 'Household Items', count: 28 },
+    { name: 'Joining Tools', count: 25 },
+    { name: 'Laser Tools', count: 18 },
+    { name: 'Heaters and Radiators', count: 16 }
   ];
 
   return (
@@ -28,7 +39,11 @@ export default function CategoriasPage() {
           <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer group">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-                <i className={`fas ${category.icon} text-2xl text-blue-600`}></i>
+                <CategoryIcon 
+                  categoryName={category.name} 
+                  size={32} 
+                  className="text-blue-600"
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {category.name}

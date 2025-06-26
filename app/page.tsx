@@ -4,6 +4,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
+import CategoryIcon from './components/CategoryIcon';
 import ProductCarousel from '../src/components/products/ProductCarousel';
 import BannerCarousel from './components/BannerCarousel';
 import BrandCarousel from './components/BrandCarousel';
@@ -212,7 +213,12 @@ const HomePage = () => {
                       <div className={`${getCategoryColor(displayName)} rounded-lg shadow-md overflow-hidden h-full flex flex-col transition-all duration-300 transform hover:scale-105 hover:shadow-xl`}>
                         <div className="p-3 text-center flex-1 flex flex-col items-center justify-center">
                           <div className="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                            <i className={`${getCategoryIcon(displayName)} text-lg text-white`}></i>
+                            <CategoryIcon 
+                              categoryName={displayName} 
+                              size={20} 
+                              className="filter brightness-0 invert"
+                              style={{ filter: 'brightness(0) invert(1)' }}
+                            />
                           </div>
                           <h3 className="text-sm font-bold text-white mb-1 line-clamp-2 leading-tight">{displayName}</h3>
                           <p className="text-xs text-white text-opacity-80 mb-2">
