@@ -1,7 +1,7 @@
 # 🏪 IDEA E-commerce - Sistema B2B Completo
 
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-1.5.0-blue)]()
+[![Version](https://img.shields.io/badge/Version-2.0.0--B2B-blue)]()
 [![Node](https://img.shields.io/badge/Node.js-18%2B-green)]()
 [![React](https://img.shields.io/badge/React-19.1.0-blue)]()
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-blue)]()
@@ -16,9 +16,12 @@ O IDEA E-commerce é uma solução completa de e-commerce B2B que inclui:
 - 🛒 **Sistema de Carrinho** com persistência LocalStorage + API
 - ✅ **Checkout Completo** com validações e formulário de entrega
 - 📦 **Gestão de Encomendas** com workflow de aprovação
-- 👨‍💼 **Área Administrativa** completa com 17 páginas de gestão
+- 👨‍💼 **Área Administrativa** completa com 22 páginas de gestão
 - 🔐 **Autenticação JWT** com sistema RBAC
 - 📊 **Relatórios e Analytics** em tempo real
+- 🏢 **Sistema B2B** completo com gestão de clientes e pedidos de cooperação
+- 🔔 **Notificações Internas** em tempo real para administradores
+- 📧 **Sistema de Email** configurável com templates personalizados
 
 ## ✨ **Funcionalidades Principais**
 
@@ -36,6 +39,14 @@ O IDEA E-commerce é uma solução completa de e-commerce B2B que inclui:
 - **Gestão de Utilizadores** - RBAC com permissões granulares
 - **Monitor de Carrinhos** - Visualização e conversão em tempo real
 - **Relatórios Avançados** - Analytics de vendas e performance
+
+### 🏢 **Sistema B2B (NOVO)**
+- **Pedidos de Cooperação** - Formulário público para empresas solicitarem acesso
+- **Gestão de Clientes B2B** - Aprovação/rejeição de pedidos empresariais
+- **Notificações Internas** - Sistema em tempo real com contador dinâmico
+- **Configurações de Email** - SMTP customizável com teste de configuração
+- **Auditoria Completa** - Log detalhado de todas as ações administrativas
+- **Workflow Automático** - Promoção automática de visitante a cliente aprovado
 
 ## 🚀 **Quick Start**
 
@@ -136,10 +147,23 @@ POST   /api/auth/login      # Autenticação
 
 ### **Admin**
 ```
-GET    /api/admin/orders    # Todas as encomendas
-GET    /api/admin/carts     # Carrinhos pendentes
-POST   /api/admin/carts     # Converter carrinho
-GET    /api/admin/reports   # Relatórios
+GET    /api/admin/orders              # Todas as encomendas
+GET    /api/admin/carts               # Carrinhos pendentes
+POST   /api/admin/carts               # Converter carrinho
+GET    /api/admin/reports             # Relatórios
+GET    /api/admin/customer-applications  # Pedidos de cooperação B2B
+PATCH  /api/admin/customer-applications  # Aprovar/rejeitar pedidos
+GET    /api/admin/notifications       # Notificações internas
+PATCH  /api/admin/notifications       # Marcar como lida
+GET    /api/admin/email-config        # Configurações de email
+POST   /api/admin/email-config        # Criar configuração SMTP
+POST   /api/admin/email-config/test   # Testar configuração
+```
+
+### **B2B Público**
+```
+POST   /api/pedido-cooperacao         # Submeter pedido de cooperação
+GET    /api/pedido-cooperacao         # Consultar status do pedido
 ```
 
 ## 🔐 **Sistema de Permissões**
@@ -193,6 +217,7 @@ GEKO_API_KEY=your-api-key
 - [**Features Completas**](docs/FEATURES_COMPLETE_REFERENCE.md) - Referência completa
 - [**Sistema de Checkout**](docs/CHECKOUT_SYSTEM_IMPLEMENTATION.md) - Documentação do checkout
 - [**Admin Area Status**](docs/ADMIN_AREA_IMPLEMENTATION_STATUS.md) - Status da área admin
+- [**Sistema B2B**](docs/RELATORIO_VALIDACAO_SISTEMA_B2B.md) - **NOVO** Relatório de validação B2B
 - [**Deployment Guide**](docs/DEPLOYMENT_GUIDE.md) - Guia de deployment
 - [**Project Status**](docs/PROJECT_STATUS_SUMMARY.md) - Resumo do projeto
 - [**Changelog**](docs/CHANGELOG.md) - Histórico de versões
@@ -227,11 +252,12 @@ python scripts/data_import/orchestrate_geko_import_with_reset.py
 
 ## 📈 **Métricas**
 
-- **📄 Páginas**: 27+ (17 admin + 10+ cliente)
-- **🔌 APIs**: 9 (2 cliente + 7 admin)
-- **🎯 Endpoints**: 60+ endpoints funcionais
+- **📄 Páginas**: 33+ (22 admin + 11+ cliente)
+- **🔌 APIs**: 15+ (2 cliente + 9 admin + 4 B2B)
+- **🎯 Endpoints**: 75+ endpoints funcionais
 - **⚡ Performance**: <500ms API response
 - **📦 Build**: 87KB CSS (16KB gzipped)
+- **🏢 B2B**: 5 fases completas do sistema empresarial
 
 ## 🤝 **Contribuição**
 
@@ -256,13 +282,16 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## ⭐ **Status do Projeto**
 
 ```
-✅ Área Administrativa: 100% completa
+✅ Área Administrativa: 100% completa (22 páginas)
 ✅ Área Cliente: 100% completa  
 ✅ Sistema E-commerce: 100% implementado
+✅ Sistema B2B: 100% implementado (5 fases)
 ✅ Autenticação: 100% funcional
-✅ APIs: 60+ endpoints funcionais
-✅ Documentação: 95% completa
-🚀 Status: PRODUCTION READY
+✅ APIs: 75+ endpoints funcionais
+✅ Notificações: 100% funcionais
+✅ Gestão Email: 100% funcional
+✅ Documentação: 98% completa
+🚀 Status: PRODUCTION READY + B2B ENTERPRISE
 ```
 
 **O sistema está completamente funcional e pronto para deployment em produção!** 🎉

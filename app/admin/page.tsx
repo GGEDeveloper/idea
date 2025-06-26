@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useNotifications } from '../../hooks/useNotifications';
 import { 
   ChartBarIcon, 
   UsersIcon, 
@@ -10,7 +11,8 @@ import {
   ExclamationTriangleIcon,
   CheckCircleIcon,
   ClockIcon,
-  XCircleIcon
+  XCircleIcon,
+  BellIcon
 } from '@heroicons/react/24/outline';
 
 interface DashboardStats {
@@ -43,10 +45,12 @@ const AdminDashboard = () => {
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { notifications, unreadCount, fetchNotifications } = useNotifications();
 
   useEffect(() => {
     fetchDashboardStats();
-  }, []);
+    fetchNotifications({ limit: 5 });
+  }, [fetchNotifications]);
 
   const fetchDashboardStats = async () => {
     try {
@@ -251,8 +255,8 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Quick Actions */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        {/* Quick Actions & Notifications */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {/* Order Status Overview */}
           <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
             <div className="px-4 py-5 sm:p-6">
@@ -350,6 +354,86 @@ const AdminDashboard = () => {
                     Configurações
                   </span>
                   <ChartBarIcon className="h-5 w-5 text-gray-400" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Recent Notifications */}
+          <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
+            <div className="px-4 py-5 sm:p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+                  Notificações Recentes
+                </h3>
+                {unreadCount > 0 && (
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 dark:bg-red-900/20 text-red-800 dark:text-red-400">
+                    {unreadCount} não lidas
+                  </span>
+                )}
+              </div>
+              
+              {notifications.length > 0 ? (
+                <div className="space-y-3 max-h-64 overflow-y-auto">
+                  {notifications.slice(0, 5).map((notification) => (
+                    <div 
+                      key={notification.notification_id}
+                      className={`flex items-start space-x-3 p-3 rounded-md ${
+                        notification.is_read 
+                          ? 'bg-gray-50 dark:bg-gray-700' 
+                          : 'bg-blue-50 dark:bg-blue-900/20'
+                      }`}
+                    >
+                      <div className="flex-shrink-0">
+                        <BellIcon className={`h-5 w-5 ${
+                          notification.priority === 'critical' ? 'text-red-500' :
+                          notification.priority === 'high' ? 'text-orange-500' :
+                          'text-blue-500'
+                        }`} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-sm ${
+                          notification.is_read 
+                            ? 'text-gray-900 dark:text-white' 
+                            : 'text-gray-900 dark:text-white font-medium'
+                        }`}>
+                          {notification.title}
+                        </p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 truncate">
+                          {notification.message}
+                        </p>
+                        <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                          {new Date(notification.created_at).toLocaleDateString('pt-PT', {
+                            day: '2-digit',
+                            month: '2-digit',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                          })}
+                        </p>
+                      </div>
+                      {!notification.is_read && (
+                        <div className="flex-shrink-0">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-6">
+                  <BellIcon className="mx-auto h-8 w-8 text-gray-400" />
+                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                    Sem notificações
+                  </p>
+                </div>
+              )}
+              
+              <div className="mt-4">
+                <Link 
+                  href="/admin/notifications"
+                  className="text-orange-600 hover:text-orange-500 text-sm font-medium"
+                >
+                  Ver todas as notificações →
                 </Link>
               </div>
             </div>

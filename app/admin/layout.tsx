@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useAuth } from '../contexts/AuthContext';
+import { useNotifications } from '../../hooks/useNotifications';
 import {
   Bars3Icon,
   XMarkIcon,
@@ -19,11 +20,14 @@ import {
   UserGroupIcon,
   ShieldCheckIcon,
   ArrowRightOnRectangleIcon,
-  QuestionMarkCircleIcon
+  QuestionMarkCircleIcon,
+  BellIcon,
+  BuildingOffice2Icon
 } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon },
+  { name: 'Pedidos B2B', href: '/admin/customer-applications', icon: BuildingOffice2Icon },
   { name: 'Produtos', href: '/admin/products', icon: CubeIcon },
   { name: 'Encomendas', href: '/admin/orders', icon: ShoppingBagIcon },
   { name: 'Carrinhos', href: '/admin/carrinhos', icon: ShoppingCartIcon },
@@ -45,6 +49,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
   const { logout } = useAuth();
+  const { unreadCount } = useNotifications();
 
   const handleLogout = async () => {
     try {
@@ -188,15 +193,36 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
 
       {/* Main content */}
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
-        {/* Mobile header */}
-        <div className="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
-          <button
-            type="button"
-            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
-            onClick={() => setSidebarOpen(true)}
-          >
-            <Bars3Icon className="h-6 w-6" />
-          </button>
+        {/* Header */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-2 flex items-center justify-between">
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              type="button"
+              className="h-10 w-10 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              onClick={() => setSidebarOpen(true)}
+            >
+              <Bars3Icon className="h-6 w-6" />
+            </button>
+          </div>
+
+          {/* Desktop spacer */}
+          <div className="hidden md:block"></div>
+
+          {/* Notifications */}
+          <div className="flex items-center space-x-4">
+            <Link
+              href="/admin/notifications"
+              className="relative inline-flex items-center p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <BellIcon className="h-6 w-6" />
+              {unreadCount > 0 && (
+                <span className="absolute -top-1 -right-1 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full min-w-[20px] h-5">
+                  {unreadCount > 99 ? '99+' : unreadCount}
+                </span>
+              )}
+            </Link>
+          </div>
         </div>
 
         {/* Main content area */}
