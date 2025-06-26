@@ -316,14 +316,14 @@ function ProductsPageContent() {
   }, [productsPerPage, preferencesLoaded]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto py-8 px-4">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Catálogo de Produtos
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 dark:text-gray-300">
             Explore a nossa vasta gama de ferramentas profissionais
           </p>
         </div>
@@ -350,13 +350,13 @@ function ProductsPageContent() {
           {/* Products Grid */}
           <div className="lg:col-span-3">
             {/* Controls Header */}
-            <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-6 border border-gray-200 dark:border-gray-700">
               {/* First Row: Mobile Filter Button + Search */}
               <div className="flex items-center space-x-4 mb-4 sm:mb-0">
                 {/* Mobile Filter Button */}
                 <button
                   onClick={() => setIsFilterOpen(true)}
-                  className="lg:hidden bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors"
+                  className="lg:hidden bg-indigo-600 dark:bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors"
                 >
                   Filtros
                 </button>
@@ -368,7 +368,7 @@ function ProductsPageContent() {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Pesquisar produtos..."
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                   />
                 </div>
               </div>
@@ -379,13 +379,13 @@ function ProductsPageContent() {
                 <div className="flex items-center space-x-4">
                   {/* View Mode Toggle */}
                   {preferencesLoaded && (
-                    <div className="flex rounded-lg border border-gray-300 p-1">
+                    <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 p-1 bg-gray-50 dark:bg-gray-700">
                       <button
                         onClick={() => setViewMode('grid')}
                         className={`p-2 rounded-md transition-colors ${
                           viewMode === 'grid'
                             ? 'bg-blue-600 text-white'
-                            : 'text-gray-600 hover:bg-gray-100'
+                            : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'
                         }`}
                         title="Vista em grelha"
                       >
@@ -396,7 +396,7 @@ function ProductsPageContent() {
                         className={`p-2 rounded-md transition-colors ${
                           viewMode === 'list'
                             ? 'bg-blue-600 text-white'
-                            : 'text-gray-600 hover:bg-gray-100'
+                            : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'
                         }`}
                         title="Vista em lista"
                       >
@@ -406,7 +406,7 @@ function ProductsPageContent() {
                   )}
 
                   {/* Results Count */}
-                  <div className="text-gray-600 text-sm">
+                  <div className="text-gray-600 dark:text-gray-300 text-sm">
                     {loading ? (
                       <span>A carregar produtos...</span>
                     ) : (
@@ -422,7 +422,7 @@ function ProductsPageContent() {
                   {/* Products per page */}
                   {preferencesLoaded && (
                     <div className="flex items-center space-x-2">
-                      <label htmlFor="productsPerPage" className="text-sm font-medium text-gray-700 whitespace-nowrap">
+                      <label htmlFor="productsPerPage" className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
                         Por página:
                       </label>
                       <select
@@ -433,7 +433,7 @@ function ProductsPageContent() {
                           setProductsPerPage(newPerPage);
                           setCurrentPage(1); // Reset to first page
                         }}
-                        className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white text-gray-900"
+                        className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                       >
                         <option value={10}>10</option>
                         <option value={20}>20</option>
@@ -445,22 +445,22 @@ function ProductsPageContent() {
 
                   {/* Sort */}
                   <div className="flex items-center space-x-2">
-                    <label htmlFor="sort" className="text-sm font-medium text-gray-700 whitespace-nowrap">
+                    <label htmlFor="sort" className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
                       Ordenar:
                     </label>
                     <select
                       id="sort"
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
-                      className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white text-gray-900 min-w-[140px]"
+                      className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white min-w-[140px]"
                     >
-                      <option value="name" className="text-gray-900 bg-white">Nome (A-Z)</option>
-                      <option value="brand" className="text-gray-900 bg-white">Marca</option>
-                      <option value="created_at" className="text-gray-900 bg-white">Mais Recentes</option>
+                      <option value="name" className="text-gray-900 dark:text-white bg-white dark:bg-gray-700">Nome (A-Z)</option>
+                      <option value="brand" className="text-gray-900 dark:text-white bg-white dark:bg-gray-700">Marca</option>
+                      <option value="created_at" className="text-gray-900 dark:text-white bg-white dark:bg-gray-700">Mais Recentes</option>
                       {isAuthenticated && hasPermission('view_price') && (
                         <>
-                          <option value="price-low" className="text-gray-900 bg-white">Preço (Menor → Maior)</option>
-                          <option value="price-high" className="text-gray-900 bg-white">Preço (Maior → Menor)</option>
+                          <option value="price-low" className="text-gray-900 dark:text-white bg-white dark:bg-gray-700">Preço (Menor → Maior)</option>
+                          <option value="price-high" className="text-gray-900 dark:text-white bg-white dark:bg-gray-700">Preço (Maior → Menor)</option>
                         </>
                       )}
                     </select>
@@ -471,7 +471,7 @@ function ProductsPageContent() {
 
             {/* Error Message */}
             {error && (
-              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6">
+              <div className="bg-red-100 dark:bg-red-900/20 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-300 px-4 py-3 rounded-lg mb-6">
                 <p>{error}</p>
               </div>
             )}
@@ -483,17 +483,17 @@ function ProductsPageContent() {
                   // Loading skeleton for list view
                   <div className="space-y-4">
                     {[...Array(6)].map((_, index) => (
-                      <div key={index} className="flex items-center bg-white rounded-lg shadow-md p-4 border border-gray-200 animate-pulse">
-                        <div className="flex-shrink-0 w-24 h-24 bg-gray-200 rounded-lg"></div>
+                      <div key={index} className="flex items-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 border border-gray-200 dark:border-gray-700 animate-pulse">
+                        <div className="flex-shrink-0 w-24 h-24 bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
                         <div className="flex-1 ml-4">
-                          <div className="h-4 bg-gray-200 rounded mb-2 w-3/4"></div>
-                          <div className="h-3 bg-gray-200 rounded mb-3 w-full"></div>
-                          <div className="h-3 bg-gray-200 rounded mb-3 w-5/6"></div>
-                          <div className="h-4 bg-gray-200 rounded w-1/3"></div>
+                          <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded mb-2 w-3/4"></div>
+                          <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded mb-3 w-full"></div>
+                          <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded mb-3 w-5/6"></div>
+                          <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/3"></div>
                         </div>
                         <div className="flex flex-col items-end space-y-2">
-                          <div className="h-6 bg-gray-200 rounded w-20"></div>
-                          <div className="h-8 bg-gray-200 rounded w-32"></div>
+                          <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded w-20"></div>
+                          <div className="h-8 bg-gray-200 dark:bg-gray-700 rounded w-32"></div>
                         </div>
                       </div>
                     ))}
@@ -502,12 +502,12 @@ function ProductsPageContent() {
                   // Loading skeleton for grid view
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {[...Array(8)].map((_, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gray-200"></div>
+                  <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 animate-pulse">
+                    <div className="aspect-square bg-gray-200 dark:bg-gray-700"></div>
                     <div className="p-4">
-                      <div className="h-4 bg-gray-200 rounded mb-2"></div>
-                      <div className="h-3 bg-gray-200 rounded mb-3 w-3/4"></div>
-                      <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                      <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded mb-2"></div>
+                      <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded mb-3 w-3/4"></div>
+                      <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2"></div>
                     </div>
                   </div>
                 ))}
@@ -531,17 +531,17 @@ function ProductsPageContent() {
                     <button
                       onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                       disabled={currentPage === 1}
-                      className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                       Anterior
                     </button>
-                    <span className="text-gray-700">
+                    <span className="text-gray-700 dark:text-gray-300">
                       Página {currentPage} de {totalPages}
                     </span>
                     <button
                       onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                       disabled={currentPage === totalPages}
-                      className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                       Próxima
                     </button>
@@ -552,19 +552,19 @@ function ProductsPageContent() {
 
             {/* No Products Found */}
             {!loading && products.length === 0 && !error && (
-              <div className="text-center py-12 bg-white rounded-lg shadow-md">
-                <div className="w-24 h-24 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
-                  <i className="fas fa-search text-3xl text-gray-400"></i>
+              <div className="text-center py-12 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
+                  <i className="fas fa-search text-3xl text-gray-400 dark:text-gray-500"></i>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   Nenhum produto encontrado
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Tente ajustar os filtros ou termo de pesquisa
                 </p>
                 <button
                   onClick={handleClearFilters}
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                  className="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
                 >
                   Limpar Filtros
                 </button>

@@ -80,7 +80,7 @@ const HomePage = () => {
   );
 
   return (
-    <div className="space-y-16 bg-gray-50 bg-gradient-to-b from-gray-50 to-gray-200">
+    <div className="space-y-16 bg-gray-50 dark:bg-gray-900 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800">
       {/* Hero Section with Banner Carousel */}
       <BannerCarousel 
         autoplay={true}
@@ -90,67 +90,67 @@ const HomePage = () => {
 
       {/* B2B Value Proposition Section - só aparece quando não há login */}
       {!authLoading && !isAuthenticated && (
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-700 dark:to-blue-900 py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               🏢 Plataforma B2B Exclusiva
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-blue-100 dark:text-blue-200 max-w-3xl mx-auto">
               Ferramentas profissionais com preços especiais e condições preferenciais para revendedores autorizados
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-white bg-opacity-20 dark:bg-white dark:bg-opacity-30 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-euro-sign text-2xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Preços Especiais</h3>
-              <p className="text-blue-100">
+              <p className="text-blue-100 dark:text-blue-200">
                 Acesso a preços de grossista e condições preferenciais de pagamento
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-white bg-opacity-20 dark:bg-white dark:bg-opacity-30 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-boxes text-2xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Stock em Tempo Real</h3>
-              <p className="text-blue-100">
+              <p className="text-blue-100 dark:text-blue-200">
                 Consulte disponibilidade em tempo real e reserve produtos
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-white bg-opacity-20 dark:bg-white dark:bg-opacity-30 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-headset text-2xl text-white"></i>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Suporte Dedicado</h3>
-              <p className="text-blue-100">
+              <p className="text-blue-100 dark:text-blue-200">
                 Apoio técnico especializado e gestor de conta dedicado
               </p>
             </div>
           </div>
 
           <div className="text-center">
-            <div className="bg-white bg-opacity-10 rounded-lg p-8 max-w-2xl mx-auto">
+            <div className="bg-white bg-opacity-10 dark:bg-white dark:bg-opacity-20 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Como se tornar parceiro?
               </h3>
-              <p className="text-blue-100 mb-6">
+              <p className="text-blue-100 dark:text-blue-200 mb-6">
                 O processo é simples e rápido. Preencha o formulário de contacto com os dados da sua empresa 
                 e a nossa equipa entrará em contacto consigo num prazo de 24 horas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 
                   href="/contacto" 
-                  className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                  className="bg-white text-blue-600 dark:bg-gray-100 dark:text-blue-700 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 dark:hover:bg-gray-200 transition-colors"
                 >
                   <i className="fas fa-handshake mr-2"></i>
                   Candidatar-me a Parceiro
                 </Link>
                 <Link 
                   href="/login" 
-                  className="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors"
+                  className="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 dark:hover:bg-gray-100 dark:hover:text-blue-700 transition-colors"
                 >
                   <i className="fas fa-sign-in-alt mr-2"></i>
                   Já sou Parceiro
@@ -163,7 +163,7 @@ const HomePage = () => {
       )}
 
       {/* Brand Carousel Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <BrandCarousel 
             autoplay={true}
@@ -174,26 +174,26 @@ const HomePage = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="bg-white py-12">
+      <section className="bg-white dark:bg-gray-900 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Nossas Categorias</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Explore nossa ampla variedade de categorias de produtos de qualidade</p>
+            <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white mb-4">Nossas Categorias</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Explore nossa ampla variedade de categorias de produtos de qualidade</p>
           </div>
           
           {isLoadingCategories ? (
             <div className="text-center py-16">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
-              <p className="mt-4 text-gray-600 text-lg">Carregando categorias...</p>
+              <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg">Carregando categorias...</p>
             </div>
           ) : errorCategories ? (
-            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+            <div className="text-center py-8 text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-6 rounded-lg max-w-2xl mx-auto">
               <div className="text-3xl mb-3">⚠️</div>
               <p className="text-lg font-medium">Não foi possível carregar as categorias</p>
               <p className="text-sm mt-2">{errorCategories}</p>
               <button 
                 onClick={() => window.location.reload()} 
-                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+                className="mt-4 bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
               >
                 Tentar novamente
               </button>
@@ -241,7 +241,7 @@ const HomePage = () => {
             <div className="text-center mt-12">
               <Link 
                 href="/produtos" 
-                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
               >
                 Ver todas as categorias
                 <span className="ml-2">→</span>
@@ -252,25 +252,25 @@ const HomePage = () => {
       </section>
 
       {/* Featured Products Section */}
-      <section className="bg-white py-12">
+      <section className="bg-white dark:bg-gray-900 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Produtos em Destaque</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Confira os produtos mais populares e recomendados pelos nossos clientes.</p>
+            <h2 className="text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-4">Produtos em Destaque</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Confira os produtos mais populares e recomendados pelos nossos clientes.</p>
           </div>
           
           {loadingProducts ? (
             <div className="text-center py-16">
               <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
-              <p className="mt-4 text-blue-600 text-lg">Carregando produtos em destaque...</p>
+              <p className="mt-4 text-blue-600 dark:text-blue-400 text-lg">Carregando produtos em destaque...</p>
             </div>
           ) : productsError ? (
-            <div className="text-center py-8 text-red-500 bg-red-50 p-6 rounded-lg max-w-2xl mx-auto">
+            <div className="text-center py-8 text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-6 rounded-lg max-w-2xl mx-auto">
               <div className="text-3xl mb-3">⚠️</div>
               <p className="text-lg font-medium">{productsError}</p>
               <button 
                 onClick={() => window.location.reload()} 
-                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+                className="mt-4 bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
               >
                 Tentar novamente
               </button>
@@ -280,9 +280,9 @@ const HomePage = () => {
               {/* Carousel de produtos em destaque */}
               {featuredProducts.length > 0 ? (
                 <Suspense fallback={
-                  <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 text-center">
                     <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600 mx-auto mb-4"></div>
-                    <p className="text-gray-600">Carregando carousel...</p>
+                    <p className="text-gray-600 dark:text-gray-300">Carregando carousel...</p>
                   </div>
                 }>
                   <ProductCarousel 
@@ -293,18 +293,18 @@ const HomePage = () => {
                 </Suspense>
               ) : (
                 <div className="text-center py-12">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
-                    <i className="fas fa-tools text-3xl text-gray-400"></i>
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                    <i className="fas fa-tools text-3xl text-gray-400 dark:text-gray-500"></i>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                     Nenhum produto em destaque encontrado
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6">
                     Os produtos em destaque aparecerão aqui quando estiverem disponíveis.
                   </p>
                   <Link 
                     href="/produtos" 
-                    className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors"
+                    className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
                   >
                     Ver catálogo completo
                   </Link>
