@@ -87,7 +87,7 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - [IMPLEMENTATION_LOG_2025_01_17.md](./IMPLEMENTATION_LOG_2025_01_17.md): ✅ **ATUALIZADO (17/01/2025)** Log da correção e finalização da área de administração
 - [IMPLEMENTATION_LOG_v3.0.md](./IMPLEMENTATION_LOG_v3.0.md): ✅ **ATUALIZADO (18/01/2025)** Log da implementação completa da área admin v3.0
 
-## Status Atual do Sistema (2025-01-27 - v1.6.2)
+## Status Atual do Sistema (2025-01-28 - v1.8.1)
 
 ### ✅ Funcionalidades Completamente Operacionais
 - **Área de Administração**: ✅ **100% FUNCIONAL** - Gestão completa de produtos, encomendas e carrinhos
@@ -105,7 +105,16 @@ Este índice serve para rápida navegação e consulta por humanos e IA. Atualiz
 - **Sistema de Encomendas**: Workflow completo de aprovação/rejeição
 - **Dark Mode**: Sistema modular completo implementado
 
-### 🆕 Funcionalidades Mais Recentes (v1.6.2 - 27/01/2025)
+### 🆕 Funcionalidades Mais Recentes (v1.8.1 - 28/01/2025)
+
+### 🔧 **Correções Finais UX (v1.8.1)**
+- **HEADER-FIX-001**: Remoção de botão dark mode duplicado no header desktop
+- **MOBILE-CART-001**: Correção do dropdown carrinho cortado em mobile
+  - **Largura Responsiva**: `w-80 sm:w-96` adaptável por dispositivo
+  - **Margem Inteligente**: `mr-2 sm:mr-0` evita cortes nas bordas
+  - **MaxWidth Dinâmica**: `calc(100vw - 1rem)` garante visibilidade total
+- **Build Perfect**: ✅ Compilação TypeScript sem erros em 4.0s
+- **Sistema 100% Pronto**: Interface polida para deployment em produção
 
 ### 🎨 **Melhorias UX - Login Page (v1.6.2)**
 - **LOGIN-UX-IMPROVEMENTS**: Melhorias na página de login

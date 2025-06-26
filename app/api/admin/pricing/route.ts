@@ -19,50 +19,19 @@ export async function GET(request: NextRequest) {
     const type = searchParams.get('type') || 'config';
 
     if (type === 'config') {
-      // Get pricing configuration from settings
+      // Get pricing configuration from pricing_config table
       const configQuery = `
         SELECT 
-          setting_key,
-          setting_value,
-          setting_type,
+          config_key,
+          config_value,
+          data_type,
           description
-        FROM system_settings
-        WHERE setting_key LIKE 'pricing_%'
-        ORDER BY setting_key
+        FROM pricing_config
+        ORDER BY config_key
       `;
 
       const configResult = await pool.query(configQuery);
-
-      // Default pricing configuration
-      const defaultConfig = {
-        pricing_base_margin: { value: 1.3, type: 'number', description: 'Base margin multiplier' },
-        pricing_min_margin: { value: 1.1, type: 'number', description: 'Minimum margin multiplier' },
-        pricing_max_margin: { value: 2.0, type: 'number', description: 'Maximum margin multiplier' },
-        pricing_currency: { value: 'EUR', type: 'string', description: 'Default currency' },
-        pricing_vat_rate: { value: 0.23, type: 'number', description: 'VAT rate (23%)' },
-        pricing_auto_update: { value: true, type: 'boolean', description: 'Auto-update prices from supplier' }
-      };
-
-      // Merge with actual settings
-      const config: any = { ...defaultConfig };
-      configResult.rows.forEach((row: any) => {
-        let value = row.setting_value;
-        switch (row.setting_type) {
-          case 'number':
-            value = parseFloat(value);
-            break;
-          case 'boolean':
-            value = value === 'true';
-            break;
-        }
-        config[row.setting_key] = {
-          value,
-          type: row.setting_type,
-          description: row.description
-        };
-      });
-
-      return NextResponse.json({ config });
+      return NextResponse.json({ configs: configResult.rows });
     }
 
     if (type === 'rules') {

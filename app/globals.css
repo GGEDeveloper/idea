@@ -274,4 +274,29 @@ img {
 
 .animate-slideOut {
   animation: slideOut 0.3s ease-in;
+}
+
+/* Header Sticky Fix */
+.header-sticky-fix {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+.dark .header-sticky-fix {
+  background: rgb(17 24 39) !important;
+}
+
+/* Compensar o espaço do header fixo */
+.header-spacer {
+  height: 100px;
+}
+
+/* Aplicar margin-top automático para todas as páginas */
+main#main-content {
+  margin-top: 100px;
 } 

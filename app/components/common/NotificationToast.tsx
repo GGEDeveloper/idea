@@ -46,7 +46,7 @@ const NotificationToast: React.FC = () => {
   if (notifications.length === 0) return null;
 
   return (
-    <div className="fixed top-4 right-4 z-50 space-y-2">
+    <div className="fixed top-4 right-4 left-4 sm:left-auto z-50 space-y-2">
       {notifications.map((notification) => (
         <div
           key={notification.id}
@@ -54,7 +54,7 @@ const NotificationToast: React.FC = () => {
             flex items-start p-4 rounded-lg border shadow-lg backdrop-blur-sm
             ${getBackgroundColor(notification.type)}
             transform transition-all duration-300 ease-in-out
-            animate-slideIn max-w-sm
+            animate-slideIn max-w-sm w-full sm:w-auto
           `}
         >
           <div className="flex-shrink-0">

@@ -153,10 +153,10 @@ export default function CarrinhoPage() {
             </div>
 
             {cartItems.map((item) => (
-              <div key={item.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
-                <div className="flex items-start space-x-4">
+              <div key={item.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 sm:p-6 border border-gray-200 dark:border-gray-700">
+                <div className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-4">
                   {/* Product Image */}
-                  <div className="flex-shrink-0 w-20 h-20 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
+                  <div className="flex-shrink-0 w-full sm:w-20 h-20 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
                     {item.image ? (
                       <img 
                         src={item.image} 
@@ -187,7 +187,7 @@ export default function CarrinhoPage() {
                     )}
                     
                     {/* Price and Quantity Controls */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-3 sm:space-y-0">
                       <div className="flex items-center space-x-4">
                         <span className="text-lg font-bold text-gray-900 dark:text-white">
                           €{item.price.toFixed(2)}
@@ -197,7 +197,7 @@ export default function CarrinhoPage() {
                         </span>
                       </div>
 
-                      <div className="flex items-center space-x-3">
+                      <div className="flex items-center justify-between sm:justify-end space-x-3">
                         {/* Quantity Controls */}
                         <div className="flex items-center space-x-2 bg-gray-50 dark:bg-gray-700 rounded-lg p-1">
                           <button
@@ -248,7 +248,7 @@ export default function CarrinhoPage() {
 
           {/* Cart Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 sticky top-24">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:p-6 sticky top-24">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
                 Resumo do Pedido
               </h3>
@@ -272,29 +272,20 @@ export default function CarrinhoPage() {
                 </div>
               </div>
 
+              <div className="space-y-3">
                 <button
                   onClick={handleCheckout}
-                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg"
+                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
                 >
-                <ShoppingBagIcon className="h-5 w-5 inline mr-2" />
-                Finalizar Compra
+                  Finalizar Compra
                 </button>
                 
-              <div className="mt-4 text-center">
-                <Link
+                <Link 
                   href="/produtos"
-                  className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm transition-colors"
+                  className="block w-full text-center text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 py-2 transition-colors"
                 >
-                  ← Continuar a Comprar
+                  Continuar a Comprar
                 </Link>
-              </div>
-
-              {/* Security Information */}
-              <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
-                <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                  <i className="fas fa-shield-alt text-green-500 mr-2"></i>
-                  Compra 100% segura e protegida
-                </div>
               </div>
             </div>
           </div>

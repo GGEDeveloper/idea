@@ -10,6 +10,7 @@ import {
   CheckIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
+import GekoApprovalsManager from '../../../src/components/admin/pricing/GekoApprovalsManager';
 
 interface PriceList {
   price_list_id: number;
@@ -293,25 +294,503 @@ function ProductPriceEditor() {
 
 // Component: Bulk Operations Manager  
 function BulkOperationsManager() {
+  const [operations, setOperations] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [showNewOperation, setShowNewOperation] = useState(false);
+  const [executing, setExecuting] = useState(false);
+  const [availableFilters, setAvailableFilters] = useState<any>({});
+
+  const [newOperation, setNewOperation] = useState({
+    operationType: 'markup' as 'markup' | 'discount' | 'fixed_price',
+    operationName: '',
+    filters: {
+      category: '',
+      brand: '',
+      priceListId: 4,
+      minPrice: '',
+      maxPrice: '',
+      hasStock: '',
+    },
+    operationData: {
+      percentage: '',
+      fixedPrice: ''
+    },
+    applyImmediately: true
+  });
+
+  const fetchOperations = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/admin/pricing/bulk', { credentials: 'include' });
+      if (response.ok) {
+        const data = await response.json();
+        setOperations(data.operations || []);
+      }
+    } catch (error) {
+      console.error('Error fetching operations:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchFilters = async () => {
+    try {
+      const response = await fetch('/api/admin/pricing/products?limit=1', { credentials: 'include' });
+      if (response.ok) {
+        const data = await response.json();
+        setAvailableFilters(data.filters || {});
+      }
+    } catch (error) {
+      console.error('Error fetching filters:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchOperations();
+    fetchFilters();
+  }, []);
+
+  const executeOperation = async () => {
+    if (!newOperation.operationName || !newOperation.operationType) {
+      alert('Nome da operação e tipo são obrigatórios');
+      return;
+    }
+
+    if (newOperation.operationType === 'fixed_price' && !newOperation.operationData.fixedPrice) {
+      alert('Preço fixo é obrigatório para este tipo de operação');
+      return;
+    }
+
+    if (['markup', 'discount'].includes(newOperation.operationType) && !newOperation.operationData.percentage) {
+      alert('Percentagem é obrigatória para este tipo de operação');
+      return;
+    }
+
+    try {
+      setExecuting(true);
+      
+      const requestData = {
+        operationType: newOperation.operationType,
+        operationName: newOperation.operationName,
+        filters: {
+          ...newOperation.filters,
+          minPrice: newOperation.filters.minPrice ? parseFloat(newOperation.filters.minPrice) : undefined,
+          maxPrice: newOperation.filters.maxPrice ? parseFloat(newOperation.filters.maxPrice) : undefined,
+          hasStock: newOperation.filters.hasStock === '' ? undefined : newOperation.filters.hasStock === 'true'
+        },
+        operationData: {
+          percentage: newOperation.operationData.percentage ? parseFloat(newOperation.operationData.percentage) : undefined,
+          fixedPrice: newOperation.operationData.fixedPrice ? parseFloat(newOperation.operationData.fixedPrice) : undefined
+        },
+        applyImmediately: newOperation.applyImmediately
+      };
+
+      const response = await fetch('/api/admin/pricing/bulk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(requestData)
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert(`✅ Operação executada: ${result.affectedCount || 0} preços atualizados`);
+        
+        // Reset form
+        setNewOperation({
+          operationType: 'markup',
+          operationName: '',
+          filters: {
+            category: '',
+            brand: '',
+            priceListId: 4,
+            minPrice: '',
+            maxPrice: '',
+            hasStock: '',
+          },
+          operationData: {
+            percentage: '',
+            fixedPrice: ''
+          },
+          applyImmediately: true
+        });
+        setShowNewOperation(false);
+        fetchOperations();
+      } else {
+        const error = await response.json();
+        alert(`❌ Erro: ${error.error}`);
+      }
+    } catch (error) {
+      console.error('Error executing operation:', error);
+      alert('❌ Erro ao executar operação');
+    } finally {
+      setExecuting(false);
+    }
+  };
+
+  const getOperationTypeLabel = (type: string) => {
+    const labels = {
+      markup: '📈 Markup',
+      discount: '📉 Desconto',
+      fixed_price: '💰 Preço Fixo',
+      category_update: '📂 Atualização por Categoria',
+      brand_update: '🏷️ Atualização por Marca'
+    };
+    return labels[type as keyof typeof labels] || type;
+  };
+
+  const getStatusBadge = (status: string) => {
+    const styles = {
+      completed: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300',
+      processing: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
+      pending: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
+      failed: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+    };
+    return styles[status as keyof typeof styles] || styles.pending;
+  };
+
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-      <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Operações em Massa
-        </h2>
-      </div>
-      <div className="p-6">
-        <div className="text-center py-12">
-          <div className="text-6xl mb-4">⚡</div>
-          <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-            Operações em Massa de Preços
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Aplique markups, descontos ou atualize preços em massa baseado em filtros avançados.
-          </p>
-          <div className="text-sm text-gray-500 dark:text-gray-400">
-            Interface em desenvolvimento - APIs implementadas ✅
+    <div className="space-y-6">
+      {/* Header with New Operation Button */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              ⚡ Operações em Massa
+            </h2>
+            <button
+              onClick={() => setShowNewOperation(!showNewOperation)}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+            >
+              <PlusIcon className="h-5 w-5" />
+              <span>Nova Operação</span>
+            </button>
           </div>
+        </div>
+
+        {/* New Operation Form */}
+        {showNewOperation && (
+          <div className="p-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Left Column - Basic Info */}
+              <div className="space-y-4">
+                <h3 className="text-md font-medium text-gray-900 dark:text-white">Configuração da Operação</h3>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Nome da Operação
+                  </label>
+                  <input
+                    type="text"
+                    value={newOperation.operationName}
+                    onChange={(e) => setNewOperation(prev => ({ ...prev, operationName: e.target.value }))}
+                    placeholder="Ex: Markup 25% em produtos eletrónicos"
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Tipo de Operação
+                  </label>
+                  <select
+                    value={newOperation.operationType}
+                    onChange={(e) => setNewOperation(prev => ({ 
+                      ...prev, 
+                      operationType: e.target.value as any,
+                      operationData: { percentage: '', fixedPrice: '' } // Reset data when type changes
+                    }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    <option value="markup">📈 Aplicar Markup (%)</option>
+                    <option value="discount">📉 Aplicar Desconto (%)</option>
+                    <option value="fixed_price">💰 Definir Preço Fixo</option>
+                  </select>
+                </div>
+
+                {/* Operation Value */}
+                {newOperation.operationType === 'fixed_price' ? (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Preço Fixo (€)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newOperation.operationData.fixedPrice}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        operationData: { ...prev.operationData, fixedPrice: e.target.value }
+                      }))}
+                      placeholder="Ex: 99.99"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                ) : (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Percentagem (%)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.1"
+                      value={newOperation.operationData.percentage}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        operationData: { ...prev.operationData, percentage: e.target.value }
+                      }))}
+                      placeholder="Ex: 25.5"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                )}
+
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="applyImmediately"
+                    checked={newOperation.applyImmediately}
+                    onChange={(e) => setNewOperation(prev => ({ ...prev, applyImmediately: e.target.checked }))}
+                    className="h-4 w-4 text-blue-600 rounded border-gray-300"
+                  />
+                  <label htmlFor="applyImmediately" className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                    Executar imediatamente
+                  </label>
+                </div>
+              </div>
+
+              {/* Right Column - Filters */}
+              <div className="space-y-4">
+                <h3 className="text-md font-medium text-gray-900 dark:text-white">Filtros de Produtos</h3>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Lista de Preços
+                  </label>
+                  <select
+                    value={newOperation.filters.priceListId}
+                    onChange={(e) => setNewOperation(prev => ({ 
+                      ...prev, 
+                      filters: { ...prev.filters, priceListId: parseInt(e.target.value) }
+                    }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    {availableFilters.priceLists?.map((list: any) => (
+                      <option key={list.price_list_id} value={list.price_list_id}>
+                        {list.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Categoria
+                    </label>
+                    <select
+                      value={newOperation.filters.category}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, category: e.target.value }
+                      }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    >
+                      <option value="">Todas</option>
+                      {availableFilters.categories?.map((cat: string) => (
+                        <option key={cat} value={cat}>{cat}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Marca
+                    </label>
+                    <select
+                      value={newOperation.filters.brand}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, brand: e.target.value }
+                      }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    >
+                      <option value="">Todas</option>
+                      {availableFilters.brands?.map((brand: string) => (
+                        <option key={brand} value={brand}>{brand}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Preço Mín. (€)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newOperation.filters.minPrice}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, minPrice: e.target.value }
+                      }))}
+                      placeholder="0.00"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Preço Máx. (€)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newOperation.filters.maxPrice}
+                      onChange={(e) => setNewOperation(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, maxPrice: e.target.value }
+                      }))}
+                      placeholder="999.99"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Stock
+                  </label>
+                  <select
+                    value={newOperation.filters.hasStock}
+                    onChange={(e) => setNewOperation(prev => ({ 
+                      ...prev, 
+                      filters: { ...prev.filters, hasStock: e.target.value }
+                    }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    <option value="">Todos os produtos</option>
+                    <option value="true">Apenas com stock</option>
+                    <option value="false">Apenas sem stock</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex justify-end space-x-3 mt-6 pt-4 border-t border-gray-200 dark:border-gray-600">
+              <button
+                onClick={() => setShowNewOperation(false)}
+                className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-md"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={executeOperation}
+                disabled={executing}
+                className={`px-6 py-2 rounded-md text-white ${
+                  executing 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-green-600 hover:bg-green-700'
+                } flex items-center space-x-2`}
+              >
+                {executing ? (
+                  <>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    <span>Executando...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>⚡</span>
+                    <span>Executar Operação</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Operations History */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            Histórico de Operações
+          </h3>
+        </div>
+
+        <div className="overflow-x-auto">
+          {loading ? (
+            <div className="p-8 text-center">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar operações...</p>
+            </div>
+          ) : operations.length === 0 ? (
+            <div className="p-8 text-center">
+              <div className="text-4xl mb-4">📊</div>
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                Nenhuma operação executada
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                As operações em massa aparecerão aqui após serem executadas.
+              </p>
+            </div>
+          ) : (
+            <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead className="bg-gray-50 dark:bg-gray-700">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Operação
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Tipo
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Status
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Produtos Afetados
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Executado por
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Data
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                {operations.map((operation) => (
+                  <tr key={operation.operation_id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <td className="px-6 py-4">
+                      <div className="text-sm font-medium text-gray-900 dark:text-white">
+                        {operation.operation_name}
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                      {getOperationTypeLabel(operation.operation_type)}
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`px-2 py-1 rounded-full text-xs ${getStatusBadge(operation.status)}`}>
+                        {operation.status}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                      {operation.affected_count || 0}
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                      {operation.first_name} {operation.last_name}
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
+                      {new Date(operation.created_at).toLocaleDateString('pt-PT')}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
         </div>
       </div>
     </div>
@@ -320,26 +799,892 @@ function BulkOperationsManager() {
 
 // Component: Campaigns Manager
 function CampaignsManager() {
+  const [campaigns, setCampaigns] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [showNewCampaign, setShowNewCampaign] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [availableFilters, setAvailableFilters] = useState<any>({});
+
+  const [newCampaign, setNewCampaign] = useState({
+    name: '',
+    description: '',
+    campaignType: 'promotional' as 'promotional' | 'seasonal' | 'clearance' | 'flash_sale' | 'bulk_discount',
+    startDate: '',
+    endDate: '',
+    isActive: true,
+    priority: 1,
+    discountType: 'percentage' as 'percentage' | 'fixed_amount',
+    discountValue: '',
+    filters: {
+      categories: [] as string[],
+      brands: [] as string[],
+      priceListId: 4,
+      minPrice: '',
+      maxPrice: '',
+      hasStock: '',
+    }
+  });
+
+  const fetchCampaigns = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/admin/pricing/campaigns', { credentials: 'include' });
+      if (response.ok) {
+        const data = await response.json();
+        setCampaigns(data.campaigns || []);
+      }
+    } catch (error) {
+      console.error('Error fetching campaigns:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchFilters = async () => {
+    try {
+      const response = await fetch('/api/admin/pricing/products?limit=1', { credentials: 'include' });
+      if (response.ok) {
+        const data = await response.json();
+        setAvailableFilters(data.filters || {});
+      }
+    } catch (error) {
+      console.error('Error fetching filters:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchCampaigns();
+    fetchFilters();
+  }, []);
+
+  const createCampaign = async () => {
+    if (!newCampaign.name || !newCampaign.discountValue) {
+      alert('Nome da campanha e valor do desconto são obrigatórios');
+      return;
+    }
+
+    if (!newCampaign.startDate || !newCampaign.endDate) {
+      alert('Datas de início e fim são obrigatórias');
+      return;
+    }
+
+    try {
+      setCreating(true);
+      
+      const requestData = {
+        name: newCampaign.name,
+        description: newCampaign.description,
+        campaignType: newCampaign.campaignType,
+        startDate: newCampaign.startDate,
+        endDate: newCampaign.endDate,
+        isActive: newCampaign.isActive,
+        priority: newCampaign.priority,
+        discountType: newCampaign.discountType,
+        discountValue: parseFloat(newCampaign.discountValue),
+        filters: {
+          ...newCampaign.filters,
+          minPrice: newCampaign.filters.minPrice ? parseFloat(newCampaign.filters.minPrice) : undefined,
+          maxPrice: newCampaign.filters.maxPrice ? parseFloat(newCampaign.filters.maxPrice) : undefined,
+          hasStock: newCampaign.filters.hasStock === '' ? undefined : newCampaign.filters.hasStock === 'true'
+        }
+      };
+
+      const response = await fetch('/api/admin/pricing/campaigns', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(requestData)
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert(`✅ Campanha criada: ${result.affectedCount || 0} produtos incluídos`);
+        
+        // Reset form
+        setNewCampaign({
+          name: '',
+          description: '',
+          campaignType: 'promotional',
+          startDate: '',
+          endDate: '',
+          isActive: true,
+          priority: 1,
+          discountType: 'percentage',
+          discountValue: '',
+          filters: {
+            categories: [],
+            brands: [],
+            priceListId: 4,
+            minPrice: '',
+            maxPrice: '',
+            hasStock: '',
+          }
+        });
+        setShowNewCampaign(false);
+        fetchCampaigns();
+      } else {
+        const error = await response.json();
+        alert(`❌ Erro: ${error.error}`);
+      }
+    } catch (error) {
+      console.error('Error creating campaign:', error);
+      alert('❌ Erro ao criar campanha');
+    } finally {
+      setCreating(false);
+    }
+  };
+
+  const toggleCampaignStatus = async (campaignId: number, isActive: boolean) => {
+    try {
+      const response = await fetch(`/api/admin/pricing/campaigns/${campaignId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ isActive: !isActive })
+      });
+
+      if (response.ok) {
+        fetchCampaigns();
+      } else {
+        const error = await response.json();
+        alert(`❌ Erro: ${error.error}`);
+      }
+    } catch (error) {
+      console.error('Error toggling campaign:', error);
+      alert('❌ Erro ao alterar estado da campanha');
+    }
+  };
+
+  const getCampaignTypeLabel = (type: string) => {
+    const labels = {
+      promotional: '🎯 Promocional',
+      seasonal: '🌞 Sazonal', 
+      clearance: '🔥 Liquidação',
+      flash_sale: '⚡ Flash Sale',
+      bulk_discount: '📦 Desconto Volume'
+    };
+    return labels[type as keyof typeof labels] || type;
+  };
+
+  const getStatusBadge = (campaign: any) => {
+    const now = new Date();
+    const start = new Date(campaign.start_date);
+    const end = new Date(campaign.end_date);
+    
+    if (!campaign.is_active) {
+      return { text: 'Inativo', color: 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300' };
+    }
+    
+    if (now < start) {
+      return { text: 'Agendado', color: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300' };
+    }
+    
+    if (now >= start && now <= end) {
+      return { text: 'Ativo', color: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300' };
+    }
+    
+    return { text: 'Expirado', color: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300' };
+  };
+
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString('pt-PT', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    });
+  };
+
+  const formatDateTime = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString('pt-PT', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  };
+
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-      <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Campanhas Promocionais
-        </h2>
-      </div>
-      <div className="p-6">
-        <div className="text-center py-12">
-          <div className="text-6xl mb-4">🎯</div>
-          <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-            Gestão de Campanhas Promocionais
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Crie e gira campanhas promocionais com preços especiais, datas de início/fim e targeting avançado.
-          </p>
-          <div className="text-sm text-gray-500 dark:text-gray-400">
-            Interface em desenvolvimento - APIs implementadas ✅
+    <div className="space-y-6">
+      {/* Header with New Campaign Button */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              🎯 Campanhas Promocionais
+            </h2>
+            <button
+              onClick={() => setShowNewCampaign(!showNewCampaign)}
+              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+            >
+              <PlusIcon className="h-5 w-5" />
+              <span>Nova Campanha</span>
+            </button>
           </div>
         </div>
+
+        {/* New Campaign Form */}
+        {showNewCampaign && (
+          <div className="p-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Left Column - Basic Info */}
+              <div className="space-y-4">
+                <h3 className="text-md font-medium text-gray-900 dark:text-white">Informações da Campanha</h3>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Nome da Campanha
+                  </label>
+                  <input
+                    type="text"
+                    value={newCampaign.name}
+                    onChange={(e) => setNewCampaign(prev => ({ ...prev, name: e.target.value }))}
+                    placeholder="Ex: Black Friday 2024"
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Descrição
+                  </label>
+                  <textarea
+                    value={newCampaign.description}
+                    onChange={(e) => setNewCampaign(prev => ({ ...prev, description: e.target.value }))}
+                    placeholder="Descrição detalhada da campanha"
+                    rows={3}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Tipo de Campanha
+                  </label>
+                  <select
+                    value={newCampaign.campaignType}
+                    onChange={(e) => setNewCampaign(prev => ({ ...prev, campaignType: e.target.value as any }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    <option value="promotional">🎯 Promocional</option>
+                    <option value="seasonal">🌞 Sazonal</option>
+                    <option value="clearance">🔥 Liquidação</option>
+                    <option value="flash_sale">⚡ Flash Sale</option>
+                    <option value="bulk_discount">📦 Desconto Volume</option>
+                  </select>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Data de Início
+                    </label>
+                    <input
+                      type="datetime-local"
+                      value={newCampaign.startDate}
+                      onChange={(e) => setNewCampaign(prev => ({ ...prev, startDate: e.target.value }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Data de Fim
+                    </label>
+                    <input
+                      type="datetime-local"
+                      value={newCampaign.endDate}
+                      onChange={(e) => setNewCampaign(prev => ({ ...prev, endDate: e.target.value }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Tipo de Desconto
+                    </label>
+                    <select
+                      value={newCampaign.discountType}
+                      onChange={(e) => setNewCampaign(prev => ({ ...prev, discountType: e.target.value as any }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    >
+                      <option value="percentage">📊 Percentagem (%)</option>
+                      <option value="fixed_amount">💰 Valor Fixo (€)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Valor do Desconto
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newCampaign.discountValue}
+                      onChange={(e) => setNewCampaign(prev => ({ ...prev, discountValue: e.target.value }))}
+                      placeholder={newCampaign.discountType === 'percentage' ? '25.0' : '10.00'}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Prioridade
+                    </label>
+                    <select
+                      value={newCampaign.priority}
+                      onChange={(e) => setNewCampaign(prev => ({ ...prev, priority: parseInt(e.target.value) }))}
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    >
+                      <option value={1}>🔴 Alta (1)</option>
+                      <option value={2}>🟡 Média (2)</option>
+                      <option value={3}>🟢 Baixa (3)</option>
+                    </select>
+                  </div>
+
+                  <div className="flex items-end">
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="isActive"
+                        checked={newCampaign.isActive}
+                        onChange={(e) => setNewCampaign(prev => ({ ...prev, isActive: e.target.checked }))}
+                        className="h-4 w-4 text-green-600 rounded border-gray-300"
+                      />
+                      <label htmlFor="isActive" className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+                        Ativar imediatamente
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Filters */}
+              <div className="space-y-4">
+                <h3 className="text-md font-medium text-gray-900 dark:text-white">Produtos Incluídos</h3>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Lista de Preços
+                  </label>
+                  <select
+                    value={newCampaign.filters.priceListId}
+                    onChange={(e) => setNewCampaign(prev => ({ 
+                      ...prev, 
+                      filters: { ...prev.filters, priceListId: parseInt(e.target.value) }
+                    }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    {availableFilters.priceLists?.map((list: any) => (
+                      <option key={list.price_list_id} value={list.price_list_id}>
+                        {list.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Categorias (múltipla seleção)
+                  </label>
+                  <select
+                    multiple
+                    value={newCampaign.filters.categories}
+                    onChange={(e) => {
+                      const selected = Array.from(e.target.selectedOptions, option => option.value);
+                      setNewCampaign(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, categories: selected }
+                      }));
+                    }}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white h-24"
+                  >
+                    {availableFilters.categories?.map((cat: string) => (
+                      <option key={cat} value={cat}>{cat}</option>
+                    ))}
+                  </select>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    Ctrl+Click para selecionar múltiplas categorias
+                  </p>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Marcas (múltipla seleção)
+                  </label>
+                  <select
+                    multiple
+                    value={newCampaign.filters.brands}
+                    onChange={(e) => {
+                      const selected = Array.from(e.target.selectedOptions, option => option.value);
+                      setNewCampaign(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, brands: selected }
+                      }));
+                    }}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white h-24"
+                  >
+                    {availableFilters.brands?.map((brand: string) => (
+                      <option key={brand} value={brand}>{brand}</option>
+                    ))}
+                  </select>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    Ctrl+Click para selecionar múltiplas marcas
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Preço Mín. (€)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newCampaign.filters.minPrice}
+                      onChange={(e) => setNewCampaign(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, minPrice: e.target.value }
+                      }))}
+                      placeholder="0.00"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Preço Máx. (€)
+                    </label>
+                    <input
+                      type="number"
+                      step="0.01"
+                      value={newCampaign.filters.maxPrice}
+                      onChange={(e) => setNewCampaign(prev => ({ 
+                        ...prev, 
+                        filters: { ...prev.filters, maxPrice: e.target.value }
+                      }))}
+                      placeholder="999.99"
+                      className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Stock
+                  </label>
+                  <select
+                    value={newCampaign.filters.hasStock}
+                    onChange={(e) => setNewCampaign(prev => ({ 
+                      ...prev, 
+                      filters: { ...prev.filters, hasStock: e.target.value }
+                    }))}
+                    className="w-full px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+                  >
+                    <option value="">Todos os produtos</option>
+                    <option value="true">Apenas com stock</option>
+                    <option value="false">Apenas sem stock</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex justify-end space-x-3 mt-6 pt-4 border-t border-gray-200 dark:border-gray-600">
+              <button
+                onClick={() => setShowNewCampaign(false)}
+                className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-md"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={createCampaign}
+                disabled={creating}
+                className={`px-6 py-2 rounded-md text-white ${
+                  creating 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-green-600 hover:bg-green-700'
+                } flex items-center space-x-2`}
+              >
+                {creating ? (
+                  <>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    <span>Criando...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>🎯</span>
+                    <span>Criar Campanha</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Campaigns List */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            Campanhas Ativas e Agendadas
+          </h3>
+        </div>
+
+        <div className="overflow-x-auto">
+          {loading ? (
+            <div className="p-8 text-center">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar campanhas...</p>
+            </div>
+          ) : campaigns.length === 0 ? (
+            <div className="p-8 text-center">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                Nenhuma campanha criada
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                As campanhas promocionais aparecerão aqui após serem criadas.
+              </p>
+            </div>
+          ) : (
+            <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead className="bg-gray-50 dark:bg-gray-700">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Campanha
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Tipo
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Desconto
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Período
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Status
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Produtos
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                    Ações
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                {campaigns.map((campaign) => {
+                  const status = getStatusBadge(campaign);
+                  return (
+                    <tr key={campaign.campaign_id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
+                      <td className="px-6 py-4">
+                        <div className="text-sm font-medium text-gray-900 dark:text-white">
+                          {campaign.name}
+                        </div>
+                        <div className="text-sm text-gray-500 dark:text-gray-400">
+                          {campaign.description}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                        {getCampaignTypeLabel(campaign.campaign_type)}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                        {campaign.discount_type === 'percentage' 
+                          ? `${campaign.discount_value}%` 
+                          : `€${campaign.discount_value}`
+                        }
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
+                        <div>{formatDate(campaign.start_date)}</div>
+                        <div>{formatDate(campaign.end_date)}</div>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className={`px-2 py-1 rounded-full text-xs ${status.color}`}>
+                          {status.text}
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
+                        {campaign.products_count || 0}
+                      </td>
+                      <td className="px-6 py-4 text-sm">
+                        <button
+                          onClick={() => toggleCampaignStatus(campaign.campaign_id, campaign.is_active)}
+                          className={`px-3 py-1 rounded-md text-xs ${
+                            campaign.is_active 
+                              ? 'bg-red-100 text-red-800 hover:bg-red-200 dark:bg-red-900 dark:text-red-300' 
+                              : 'bg-green-100 text-green-800 hover:bg-green-200 dark:bg-green-900 dark:text-green-300'
+                          }`}
+                        >
+                          {campaign.is_active ? 'Desativar' : 'Ativar'}
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Component: Pricing Config Manager
+function PricingConfigManager() {
+  const [configs, setConfigs] = useState<any>({});
+  const [priceLists, setPriceLists] = useState<PriceList[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  
+  const [settings, setSettings] = useState({
+    defaultPriceList: '',
+    markups: {} as Record<string, string>
+  });
+
+  const fetchConfigs = async () => {
+    try {
+      setLoading(true);
+      
+      // Fetch current configurations
+      const configResponse = await fetch('/api/admin/pricing?type=config', { credentials: 'include' });
+      const configData = await configResponse.json();
+      
+      // Fetch price lists
+      const listsResponse = await fetch('/api/admin/pricing?type=lists', { credentials: 'include' });
+      const listsData = await listsResponse.json();
+      
+      if (configResponse.ok && listsResponse.ok) {
+        const configMap = configData.configs?.reduce((acc: any, config: any) => {
+          acc[config.config_key] = config.config_value;
+          return acc;
+        }, {}) || {};
+        
+        setConfigs(configMap);
+        setPriceLists(listsData.priceLists || []);
+        
+        // Initialize settings
+        setSettings({
+          defaultPriceList: configMap['default_customer_price_list'] || '4',
+          markups: {
+            '1': configMap['markup_supplier_price'] || '0',
+            '2': configMap['markup_base_selling_price'] || '25',
+            '4': configMap['markup_customer_price'] || '35'
+          }
+        });
+      }
+    } catch (error) {
+      console.error('Error fetching configs:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchConfigs();
+  }, []);
+
+  const saveConfigs = async () => {
+    try {
+      setSaving(true);
+      
+      const configUpdates = [
+        { key: 'default_customer_price_list', value: settings.defaultPriceList },
+        { key: 'markup_supplier_price', value: settings.markups['1'] || '0' },
+        { key: 'markup_base_selling_price', value: settings.markups['2'] || '25' },
+        { key: 'markup_customer_price', value: settings.markups['4'] || '35' }
+      ];
+
+      const response = await fetch('/api/admin/pricing/config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ configs: configUpdates })
+      });
+
+      if (response.ok) {
+        alert('✅ Configurações salvas com sucesso!');
+        fetchConfigs(); // Refresh data
+      } else {
+        const error = await response.json();
+        alert(`❌ Erro: ${error.error}`);
+      }
+    } catch (error) {
+      console.error('Error saving configs:', error);
+      alert('❌ Erro ao salvar configurações');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleMarkupChange = (priceListId: string, value: string) => {
+    setSettings(prev => ({
+      ...prev,
+      markups: {
+        ...prev.markups,
+        [priceListId]: value
+      }
+    }));
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Default Price List Configuration */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            ⚙️ Lista de Preços Padrão para Clientes
+          </h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Defina qual lista de preços os clientes veem por padrão após o login
+          </p>
+        </div>
+
+        <div className="p-6">
+          {loading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar configurações...</p>
+            </div>
+          ) : (
+            <div className="max-w-md">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Lista de Preços Padrão
+              </label>
+              <select
+                value={settings.defaultPriceList}
+                onChange={(e) => setSettings(prev => ({ ...prev, defaultPriceList: e.target.value }))}
+                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              >
+                {priceLists.map(list => (
+                  <option key={list.price_list_id} value={list.price_list_id}>
+                    {list.name} (ID: {list.price_list_id})
+                  </option>
+                ))}
+              </select>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                Esta lista será mostrada automaticamente aos clientes quando fizerem login
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Markup Configuration */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            📊 Markups Base por Lista de Preços
+          </h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Configure as margens automáticas aplicadas sobre o custo de fornecedor para cada lista
+          </p>
+        </div>
+
+        <div className="p-6">
+          {loading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar configurações...</p>
+            </div>
+          ) : (
+            <div className="space-y-6">
+              {priceLists.map(list => (
+                <div key={list.price_list_id} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                  <div className="flex-1">
+                    <h3 className="text-sm font-medium text-gray-900 dark:text-white">
+                      {list.name}
+                    </h3>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">
+                      {list.description}
+                    </p>
+                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                      ID: {list.price_list_id}
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <label className="text-sm text-gray-700 dark:text-gray-300">
+                      Markup:
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="number"
+                        step="0.1"
+                        min="0"
+                        max="1000"
+                        value={settings.markups[list.price_list_id] || '0'}
+                        onChange={(e) => handleMarkupChange(list.price_list_id.toString(), e.target.value)}
+                        className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white dark:bg-gray-600 text-gray-900 dark:text-white"
+                        placeholder="0"
+                      />
+                      <span className="absolute right-8 top-1 text-xs text-gray-500 dark:text-gray-400">%</span>
+                    </div>
+                    
+                    {list.price_list_id === 1 && (
+                      <span className="text-xs bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">
+                        Custo Base
+                      </span>
+                    )}
+                    {list.price_list_id === 4 && (
+                      <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded">
+                        Padrão Clientes
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+              
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                <div className="flex items-start space-x-3">
+                  <div className="text-blue-600 dark:text-blue-400">ℹ️</div>
+                  <div>
+                    <h4 className="text-sm font-medium text-blue-800 dark:text-blue-200">
+                      Como Funcionam os Markups
+                    </h4>
+                    <div className="text-sm text-blue-700 dark:text-blue-300 mt-1 space-y-1">
+                      <p>• <strong>Supplier Price (ID: 1):</strong> Custo base do fornecedor (normalmente 0% markup)</p>
+                      <p>• <strong>Base Selling Price (ID: 2):</strong> Preço de venda base com markup padrão</p>
+                      <p>• <strong>Preço Cliente (ID: 4):</strong> Preço final mostrado aos clientes (markup recomendado: 25-40%)</p>
+                      <p className="mt-2 font-medium">💡 Exemplo: Custo €10 + Markup 35% = Preço Final €13.50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Save Button */}
+      <div className="flex justify-end">
+        <button
+          onClick={saveConfigs}
+          disabled={saving || loading}
+          className={`px-6 py-3 rounded-lg text-white font-medium ${
+            saving || loading
+              ? 'bg-gray-400 cursor-not-allowed'
+              : 'bg-green-600 hover:bg-green-700'
+          } flex items-center space-x-2`}
+        >
+          {saving ? (
+            <>
+              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+              <span>Salvando...</span>
+            </>
+          ) : (
+            <>
+              <CheckIcon className="h-5 w-5" />
+              <span>Salvar Configurações</span>
+            </>
+          )}
+        </button>
       </div>
     </div>
   );
@@ -351,7 +1696,7 @@ export default function AdminPricingPage() {
   const [stats, setStats] = useState<PricingStats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'lists' | 'rules' | 'products' | 'bulk' | 'campaigns'>('products');
+  const [activeTab, setActiveTab] = useState<'lists' | 'rules' | 'products' | 'bulk' | 'campaigns' | 'config' | 'geko-approvals'>('products');
   const [editingItem, setEditingItem] = useState<any>(null);
   const [showForm, setShowForm] = useState(false);
   const [saveLoading, setSaveLoading] = useState(false);
@@ -582,6 +1927,26 @@ export default function AdminPricingPage() {
                 📋 Listas ({priceLists.length})
               </button>
               <button
+                onClick={() => setActiveTab('config')}
+                className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                  activeTab === 'config'
+                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                }`}
+              >
+                ⚙️ Configurações
+              </button>
+              <button
+                onClick={() => setActiveTab('geko-approvals')}
+                className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                  activeTab === 'geko-approvals'
+                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                }`}
+              >
+                🔄 Aprovações Geko
+              </button>
+              <button
                 onClick={() => setActiveTab('rules')}
                 className={`py-2 px-1 border-b-2 font-medium text-sm ${
                   activeTab === 'rules'
@@ -690,6 +2055,16 @@ export default function AdminPricingPage() {
           <CampaignsManager />
         )}
 
+        {/* Config Tab */}
+        {activeTab === 'config' && (
+          <PricingConfigManager />
+        )}
+
+        {/* Geko Approvals Tab */}
+        {activeTab === 'geko-approvals' && (
+          <GekoApprovalsManager />
+        )}
+
         {/* Pricing Rules Tab */}
         {activeTab === 'rules' && (
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
@@ -723,8 +2098,8 @@ export default function AdminPricingPage() {
                 Configure regras para aplicar markups automáticos baseados em categorias, 
                 marcas, datas ou outros critérios avançados.
               </p>
-              <div className="text-sm text-gray-500 dark:text-gray-400">
-                Funcionalidade avançada - Em desenvolvimento para v1.8.0
+              <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">
+                ✅ Sistema de Aprovação da Geko disponível na aba "🔄 Aprovações Geko"
               </div>
             </div>
           </div>

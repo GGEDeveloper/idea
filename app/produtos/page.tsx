@@ -101,6 +101,7 @@ function ProductsPageContent() {
     
     const categoryFromUrl = searchParams.get('category');
     const searchFromUrl = searchParams.get('q');
+    const brandsFromUrl = searchParams.get('brands');
     
     if (categoryFromUrl) {
       setFilters(prev => ({
@@ -111,6 +112,19 @@ function ProductsPageContent() {
     
     if (searchFromUrl) {
       setSearchTerm(searchFromUrl);
+    }
+    
+    if (brandsFromUrl) {
+      const brandList = brandsFromUrl.split(',');
+      const brandObject = brandList.reduce((acc: { [key: string]: boolean }, brand) => {
+        acc[brand] = true;
+        return acc;
+      }, {});
+      
+      setFilters(prev => ({
+        ...prev,
+        brands: brandObject
+      }));
     }
   }, [searchParams]);
 

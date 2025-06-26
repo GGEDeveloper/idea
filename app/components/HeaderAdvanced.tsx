@@ -167,7 +167,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900" ref={headerRef}>
+      <header className="header-sticky-fix" ref={headerRef}>
         {/* Skip links for accessibility */}
         <div className="sr-only focus-within:not-sr-only focus-within:fixed focus-within:top-4 focus-within:left-4 focus-within:z-50 focus-within:p-4 focus-within:bg-white focus-within:shadow-lg focus-within:rounded">
           <a 
@@ -190,12 +190,12 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
           </a>
         </div>
 
-        <div className="container mx-auto px-4 flex items-center justify-between min-h-36 lg:min-h-48">
+        <div className="container mx-auto px-4 flex items-center justify-between min-h-20 lg:min-h-24">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex-shrink-0 flex items-center" aria-label="Página inicial">
               <img 
-                className="h-32 md:h-44 w-auto" 
+                className="h-16 md:h-20 w-auto" 
                 src="/logo_transparente_amarelo.png" 
                 alt="AliTools Logo" 
               />
@@ -246,7 +246,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
               }`}
               aria-current={pathname && pathname.startsWith('/sobre') ? 'page' : undefined}
             >
-              Sobre Nós
+              Sobre
             </Link>
             <Link 
               href="/contacto" 
@@ -301,8 +301,8 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
               {isCartDropdownOpen && (
                 <div 
                   ref={cartDropdownRef}
-                  className="absolute right-0 mt-2 w-96 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50"
-                  style={{ maxHeight: '500px' }}
+                  className="absolute right-0 mt-2 w-80 sm:w-96 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50 mr-2 sm:mr-0"
+                  style={{ maxHeight: '500px', maxWidth: 'calc(100vw - 1rem)' }}
                 >
                   <div className="p-4 border-b border-gray-200 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -425,19 +425,6 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
               )}
             </div>
 
-            {/* Dark Mode Toggle */}
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-label="Toggle dark mode"
-            >
-              {darkMode ? (
-                <SunIcon className="h-5 w-5" />
-              ) : (
-                <MoonIcon className="h-5 w-5" />
-              )}
-            </button>
-
             {/* Mobile Menu Button */}
             <div className="md:hidden">
               <button 
@@ -543,7 +530,7 @@ const HeaderAdvanced: React.FC<HeaderAdvancedProps> = ({ onMobileMenuToggle }) =
             className="mobile-menu-item" 
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Sobre Nós
+            Sobre
           </Link>
           <Link 
             href="/contacto"

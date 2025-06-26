@@ -145,9 +145,9 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
             key={product.ean}
             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               {/* Imagem */}
-              <div className="relative w-48 h-48 flex-shrink-0 bg-gray-50">
+              <div className="relative w-full sm:w-48 h-48 flex-shrink-0 bg-gray-50">
                 <Link href={`/produtos/${product.ean}`}>
                   <img
                     src={mainImage}
@@ -163,9 +163,9 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                     {product.brand}
                   </div>
                 )}
-                {/* Badge de Stock */}
+                {/* Badge de Stock - Hidden on mobile, shown in content area */}
                 {canViewStock && (
-                  <div className={`absolute top-2 right-2 rounded px-2 py-1 text-xs font-semibold ${
+                  <div className={`hidden sm:block absolute top-2 right-2 rounded px-2 py-1 text-xs font-semibold ${
                     stockInfo.color === 'green' 
                       ? 'bg-green-100 text-green-800' 
                       : stockInfo.color === 'orange'
@@ -181,7 +181,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
               </div>
 
               {/* Conteúdo */}
-              <div className="flex-1 p-6 flex flex-col">
+              <div className="flex-1 p-4 sm:p-6 flex flex-col">
                 <div className="flex-1">
                   <Link
                     href={`/produtos/${product.ean}`}
@@ -197,10 +197,22 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                     dangerouslySetInnerHTML={{ __html: product.shortdescription || '' }}
                   />
 
-                  {/* Informação de Stock */}
+                  {/* Informação de Stock - visible always */}
                   {canViewStock && (
                     <div className="mb-4">
-                      <div className={`text-sm font-medium ${
+                      <div className={`inline-flex px-2 py-1 text-xs font-semibold rounded sm:hidden ${
+                        stockInfo.color === 'green' 
+                          ? 'bg-green-100 text-green-800' 
+                          : stockInfo.color === 'orange'
+                          ? 'bg-orange-100 text-orange-800'
+                          : 'bg-red-100 text-red-800'
+                      }`}>
+                        {isAdmin ? 
+                          (hasStock ? `${availableStock} em stock` : 'Sem stock') :
+                          stockInfo.label
+                        }
+                      </div>
+                      <div className={`hidden sm:block text-sm font-medium ${
                         stockInfo.color === 'green' ? 'text-green-600' : 
                         stockInfo.color === 'orange' ? 'text-orange-600' :
                         'text-red-600'
@@ -239,9 +251,9 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
 
                     {/* Seletor de Quantidade e Botão */}
                     {canAddToCart && (
-                      <div className="flex items-center space-x-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-3">
                         <div 
-                          className="flex items-center space-x-2"
+                          className="flex items-center justify-center sm:justify-start space-x-2"
                           onClick={(e) => e.preventDefault()}
                         >
                           <button
@@ -306,7 +318,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                             setQuantity(product.ean, 1);
                           }}
                           disabled={!canAddToCart}
-                          className={`px-6 py-2 rounded-md font-semibold transition-colors ${
+                          className={`w-full sm:w-auto px-6 py-2 rounded-md font-semibold transition-colors ${
                             canAddToCart 
                               ? 'bg-blue-600 text-white hover:bg-blue-700' 
                               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -319,7 +331,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                             'Adicionar ao Carrinho'
                           }
                         >
-                          {canViewStock && !hasStock ? 'Sem Stock' : 'Adicionar ao Carrinho'}
+                          {canViewStock && !hasStock ? 'Sem Stock' : 'Adicionar'}
                         </button>
                       </div>
                     )}

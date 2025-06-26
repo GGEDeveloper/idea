@@ -6,6 +6,7 @@ import { useCategories } from '../src/hooks/useCategories';
 import { getCategoryIcon, getCategoryColor } from '../src/services/categoryService';
 import ProductCarousel from '../src/components/products/ProductCarousel';
 import BannerCarousel from './components/BannerCarousel';
+import BrandCarousel from './components/BrandCarousel';
 import { useAuth } from './contexts/AuthContext';
 
 interface Product {
@@ -159,6 +160,17 @@ const HomePage = () => {
         </div>
       </section>
       )}
+
+      {/* Brand Carousel Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6">
+          <BrandCarousel 
+            autoplay={true}
+            autoplayInterval={4000}
+            showProductCount={true}
+          />
+        </div>
+      </section>
 
       {/* Categories Section */}
       <section className="bg-white py-12">
