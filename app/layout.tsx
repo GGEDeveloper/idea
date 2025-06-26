@@ -2,6 +2,7 @@ import React from 'react';
 import './globals.css';
 import HeaderAdvanced from './components/HeaderAdvanced';
 import Footer from '../src/components/Footer';
+import BackToTop from './components/BackToTop';
 import { CartProvider } from './contexts/CartContext';
 import { AuthProvider } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
@@ -36,6 +37,7 @@ export default function RootLayout({
                 <Footer />
               </div>
               <NotificationToast />
+              <BackToTop />
             </CartProvider>
           </NotificationProvider>
         </AuthProvider>

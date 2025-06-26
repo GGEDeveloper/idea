@@ -242,13 +242,13 @@ export default function SobrePage() {
               <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <UserGroupIcon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Distribuição Nacional</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">Oficina e Mecânica</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">
-                Rede especializada de distribuição para ferragens, ferramentas e drogarias 
-                em todo o território nacional.
+                Equipamentos especializados para oficinas mecânicas, garagens e 
+                centros de manutenção automóvel. Ferramentas profissionais de qualidade.
               </p>
-              <Link href="/contacto" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
-                Tornar-se parceiro →
+              <Link href="/produtos?categories=oficina-mecanica" className="block text-center text-orange-500 hover:text-orange-600 font-medium">
+                Ver produtos →
               </Link>
             </div>
           </div>

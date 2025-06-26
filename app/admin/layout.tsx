@@ -18,7 +18,8 @@ import {
   CurrencyEuroIcon,
   UserGroupIcon,
   ShieldCheckIcon,
-  ArrowRightOnRectangleIcon
+  ArrowRightOnRectangleIcon,
+  QuestionMarkCircleIcon
 } from '@heroicons/react/24/outline';
 
 const navigation = [
@@ -30,6 +31,7 @@ const navigation = [
   { name: 'Relatórios', href: '/admin/reports', icon: ChartBarIcon },
   { name: 'Preços', href: '/admin/pricing', icon: CurrencyEuroIcon },
   { name: 'Conteúdo', href: '/admin/content', icon: DocumentTextIcon },
+  { name: 'FAQs', href: '/admin/faqs', icon: QuestionMarkCircleIcon },
   { name: 'Roles', href: '/admin/roles', icon: UserGroupIcon },
   { name: 'Permissões', href: '/admin/permissions', icon: ShieldCheckIcon },
   { name: 'Configurações', href: '/admin/settings', icon: CogIcon },
