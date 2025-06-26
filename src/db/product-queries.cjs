@@ -8,8 +8,22 @@
  * - Confiança em tipos de dados numéricos (NUMERIC, INTEGER) para performance.
  * - Integração com o novo sistema de listas de preços.
  * - Remoção de funções de busca granulares em favor de uma query 'getProducts' mais rica.
+ * - Integração com configurações dinâmicas de listas de preços (v1.9.2.2)
  */
 const pool = require('../../db/index.cjs'); // Corrigido para apontar para a raiz /db/index.cjs
+
+/**
+ * Obtém a lista de preços configurada para clientes
+ * @returns {string} - Subquery para obter o price_list_id configurado
+ */
+function getCustomerPriceListId() {
+  return `(
+    SELECT COALESCE(
+      CAST((SELECT config_value FROM pricing_config WHERE config_key = 'default_customer_price_list') AS INTEGER),
+      4
+    )
+  )`;
+}
 
 /**
  * Constrói a cláusula WHERE para a query de produtos com base nos filtros fornecidos.
@@ -94,7 +108,8 @@ function buildWhereClause(filters, forCount = false) {
 
   // Filtro por preços
   if (filters.priceMin || filters.priceMax) {
-    const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+    // Usar configuração dinâmica também para filtros de preços
+    const customerPriceListId = getCustomerPriceListId();
     let priceConditions = [];
     
     if (filters.priceMin) {
@@ -119,7 +134,7 @@ function buildWhereClause(filters, forCount = false) {
             SELECT 1 FROM product_variants pv_filter
             JOIN prices pr_filter ON pv_filter.variantid = pr_filter.variantid
             WHERE pv_filter.ean = ${productAlias}.ean 
-            AND pr_filter.price_list_id = ${basePriceListId}
+            AND pr_filter.price_list_id = ${customerPriceListId}
             AND ${priceConditions.join(' AND ')}
         )
       `);
@@ -183,20 +198,21 @@ async function getProducts(filters = {}, pagination = {}) {
   const safeSortBy = validSortColumns.includes(sortBy.toLowerCase()) ? sortBy : 'name';
   const safeOrder = order.toLowerCase() === 'desc' ? 'DESC' : 'ASC';
 
-  const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+  // Usar configuração dinâmica para lista de preços dos clientes
+  const customerPriceListId = getCustomerPriceListId();
   
   const priceSubQuery = `
     (SELECT pr_display.price 
      FROM product_variants pv_display
      JOIN prices pr_display ON pv_display.variantid = pr_display.variantid
-     WHERE pv_display.ean = p.ean AND pr_display.price_list_id = ${basePriceListId}
+     WHERE pv_display.ean = p.ean AND pr_display.price_list_id = ${customerPriceListId}
      ORDER BY pv_display.variantid ASC
      LIMIT 1
     ) 
   `;
 
   const sortExpression = safeSortBy === 'price' 
-    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.ean AND pr_sort.price_list_id = ${basePriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
+    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.ean AND pr_sort.price_list_id = ${customerPriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
     : `p.${safeSortBy}`;
 
   const query = `
@@ -227,7 +243,8 @@ async function getProducts(filters = {}, pagination = {}) {
  * @returns {Promise<object|null>} - O objeto do produto ou nulo se não for encontrado.
  */
 async function getProductByEan(ean) {
-  const basePriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Base Selling Price\' LIMIT 1)';
+  // Usar configuração dinâmica para lista de preços dos clientes
+  const customerPriceListId = getCustomerPriceListId();
   const promotionalPriceListId = '(SELECT price_list_id FROM price_lists WHERE name = \'Promotional Price\' LIMIT 1)';
   
     const query = `
@@ -236,7 +253,7 @@ async function getProductByEan(ean) {
       (SELECT pr.price 
        FROM product_variants pv 
        JOIN prices pr ON pv.variantid = pr.variantid 
-       WHERE pv.ean = p.ean AND pr.price_list_id = ${basePriceListId}
+       WHERE pv.ean = p.ean AND pr.price_list_id = ${customerPriceListId}
        ORDER BY pv.variantid ASC LIMIT 1
       ) as product_price, 
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
@@ -247,7 +264,7 @@ async function getProductByEan(ean) {
       ) as images,
       (SELECT json_agg(var ORDER BY var.variantid) FROM
         (SELECT pv_detail.variantid, pv_detail.name as variant_name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
-                (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${basePriceListId} LIMIT 1) as base_selling_price,
+                (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${customerPriceListId} LIMIT 1) as base_selling_price,
                 (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
          FROM product_variants pv_detail WHERE pv_detail.ean = p.ean
         ) as var

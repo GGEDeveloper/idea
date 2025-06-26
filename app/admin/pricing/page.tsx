@@ -1445,6 +1445,7 @@ function PricingConfigManager() {
   
   const [settings, setSettings] = useState({
     defaultPriceList: '',
+    defaultAdminPriceList: '',
     markups: {} as Record<string, string>
   });
 
@@ -1472,6 +1473,7 @@ function PricingConfigManager() {
         // Initialize settings
         setSettings({
           defaultPriceList: configMap['default_customer_price_list'] || '4',
+          defaultAdminPriceList: configMap['default_admin_price_list'] || '4',
           markups: {
             '1': configMap['markup_supplier_price'] || '0',
             '2': configMap['markup_base_selling_price'] || '25',
@@ -1496,6 +1498,7 @@ function PricingConfigManager() {
       
       const configUpdates = [
         { key: 'default_customer_price_list', value: settings.defaultPriceList },
+        { key: 'default_admin_price_list', value: settings.defaultAdminPriceList },
         { key: 'markup_supplier_price', value: settings.markups['1'] || '0' },
         { key: 'markup_base_selling_price', value: settings.markups['2'] || '25' },
         { key: 'markup_customer_price', value: settings.markups['4'] || '35' }
@@ -1571,6 +1574,55 @@ function PricingConfigManager() {
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                 Esta lista será mostrada automaticamente aos clientes quando fizerem login
               </p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Admin Default Price List Configuration */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+        <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            👨‍💼 Lista de Preços Padrão para Admin
+          </h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Defina qual lista de preços o admin vê por padrão na área de gestão de produtos
+          </p>
+        </div>
+
+        <div className="p-6">
+          {loading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+              <p className="mt-2 text-gray-600 dark:text-gray-400">A carregar configurações...</p>
+            </div>
+          ) : (
+            <div className="max-w-md">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Lista de Preços Padrão Admin
+              </label>
+              <select
+                value={settings.defaultAdminPriceList}
+                onChange={(e) => setSettings(prev => ({ ...prev, defaultAdminPriceList: e.target.value }))}
+                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              >
+                {priceLists.map(list => (
+                  <option key={list.price_list_id} value={list.price_list_id}>
+                    {list.name} (ID: {list.price_list_id})
+                  </option>
+                ))}
+              </select>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                Esta lista será mostrada por padrão ao admin na gestão de produtos e preços
+              </p>
+              <div className="mt-3 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg">
+                <div className="flex items-start space-x-2">
+                  <div className="text-amber-600 dark:text-amber-400">💡</div>
+                  <div className="text-sm text-amber-700 dark:text-amber-300">
+                    <strong>Recomendação:</strong> Use "Supplier Price" para ver custos ou "Preço Cliente" para ver preços finais
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
