@@ -26,18 +26,24 @@ export async function POST(request: NextRequest) {
 
     const response = Response.json(responseData, { status: 200 });
 
-    // Clear the authentication cookie
-    response.headers.set('Set-Cookie', 
-      `${TOKEN_COOKIE_NAME}=; ` +
+    // Clear the authentication cookie with multiple strategies for thorough cleanup
+    const cookieConfig = `${TOKEN_COOKIE_NAME}=; ` +
       `HttpOnly; ` +
       `${process.env.NODE_ENV === 'production' ? 'Secure; ' : ''}` +
       `SameSite=Lax; ` +
       `Path=/; ` +
       `Max-Age=0; ` +
-      `Expires=Thu, 01 Jan 1970 00:00:00 GMT`
-    );
+      `Expires=Thu, 01 Jan 1970 00:00:00 GMT`;
 
-    console.log('[API /auth/logout] Cookie cleared. Sending success response.');
+    // Set multiple cookie headers to ensure cleanup across different scenarios
+    response.headers.set('Set-Cookie', cookieConfig);
+    
+    // Add cache control headers to prevent caching
+    response.headers.set('Cache-Control', 'no-cache, no-store, must-revalidate, private');
+    response.headers.set('Pragma', 'no-cache');
+    response.headers.set('Expires', '0');
+
+    console.log('[API /auth/logout] Cookie cleared with enhanced cleanup. Sending success response.');
     return response;
 
   } catch (error) {

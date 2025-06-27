@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useAdminOperations } from '../../../hooks/useAdminOperations';
 import { 
   DocumentTextIcon, 
   PhotoIcon, 
@@ -9,7 +10,8 @@ import {
   TrashIcon,
   EyeIcon,
   CheckIcon,
-  XMarkIcon
+  XMarkIcon,
+  EyeSlashIcon
 } from '@heroicons/react/24/outline';
 
 interface ContentItem {
@@ -39,8 +41,8 @@ export default function AdminContentPage() {
   const [activeTab, setActiveTab] = useState<'all' | 'banner' | 'page' | 'announcement'>('all');
   const [editingItem, setEditingItem] = useState<ContentItem | null>(null);
   const [showForm, setShowForm] = useState(false);
-  const [saveLoading, setSaveLoading] = useState(false);
   const [previewItem, setPreviewItem] = useState<ContentItem | null>(null);
+  const { loading: operationLoading, saveOperation, deleteOperation } = useAdminOperations();
 
   const fetchContent = async () => {
     try {
@@ -68,69 +70,46 @@ export default function AdminContentPage() {
   }, []);
 
   const handleSaveContent = async (formData: any) => {
-    try {
-      setSaveLoading(true);
-      const method = editingItem ? 'PUT' : 'POST';
-      const response = await fetch('/api/admin/content', {
-        method,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(editingItem ? { ...formData, id: editingItem.id } : formData)
-      });
-
-      if (response.ok) {
-        await fetchContent();
-        setShowForm(false);
-        setEditingItem(null);
-      } else {
-        const data = await response.json();
-        alert(data.error || 'Erro ao salvar conteúdo');
+    const method = editingItem ? 'PUT' : 'POST';
+    const payload = editingItem ? { ...formData, id: editingItem.id } : formData;
+    
+    const result = await saveOperation(
+      '/api/admin/content',
+      payload,
+      method,
+      {
+        successMessage: editingItem ? 'Conteúdo atualizado com sucesso!' : 'Conteúdo criado com sucesso!',
+        onSuccess: () => {
+          setShowForm(false);
+          setEditingItem(null);
+        },
+        revalidate: fetchContent
       }
-    } catch (error) {
-      console.error('Error saving content:', error);
-      alert('Erro de conexão');
-    } finally {
-      setSaveLoading(false);
-    }
+    );
   };
 
   const handleDeleteContent = async (id: number) => {
     if (!confirm('Tem certeza que deseja excluir este conteúdo?')) return;
 
-    try {
-      const response = await fetch(`/api/admin/content/${id}`, {
-        method: 'DELETE'
-      });
-
-      if (response.ok) {
-        await fetchContent();
-      } else {
-        const data = await response.json();
-        alert(data.error || 'Erro ao excluir conteúdo');
+    await deleteOperation(
+      `/api/admin/content/${id}`,
+      {
+        successMessage: 'Conteúdo excluído com sucesso!',
+        revalidate: fetchContent
       }
-    } catch (error) {
-      console.error('Error deleting content:', error);
-      alert('Erro de conexão');
-    }
+    );
   };
 
   const handleToggleActive = async (id: number, isActive: boolean) => {
-    try {
-      const response = await fetch(`/api/admin/content/${id}/toggle`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ is_active: !isActive })
-      });
-
-      if (response.ok) {
-        await fetchContent();
-      } else {
-        const data = await response.json();
-        alert(data.error || 'Erro ao atualizar status');
+    const result = await saveOperation(
+      `/api/admin/content/${id}/toggle`,
+      { is_active: !isActive },
+      'PATCH',
+      {
+        successMessage: `Conteúdo ${!isActive ? 'ativado' : 'desativado'} com sucesso!`,
+        revalidate: fetchContent
       }
-    } catch (error) {
-      console.error('Error toggling status:', error);
-      alert('Erro de conexão');
-    }
+    );
   };
 
   const getTypeLabel = (type: string) => {
@@ -525,15 +504,15 @@ export default function AdminContentPage() {
                     </button>
                     <button
                       type="submit"
-                      disabled={saveLoading}
+                      disabled={operationLoading}
                       className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
                     >
-                      {saveLoading ? (
+                      {operationLoading ? (
                         <div className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></div>
                       ) : (
                         <CheckIcon className="h-4 w-4" />
                       )}
-                      <span>{saveLoading ? 'Salvando...' : 'Salvar'}</span>
+                      <span>{operationLoading ? 'Salvando...' : 'Salvar'}</span>
                     </button>
                   </div>
                 </div>

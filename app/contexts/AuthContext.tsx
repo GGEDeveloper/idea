@@ -58,52 +58,51 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     console.log(`[AuthContext] fetchUserProfile INICIADA (source: ${source})`);
     setIsLoading(true);
     setAuthError(null);
-    
+
     try {
       const response = await fetch('/api/users/me', {
         method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
         credentials: 'include',
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        }
       });
-      
-      console.log(`[AuthContext] fetchUserProfile - Resposta de /api/users/me: Status ${response.status}, OK: ${response.ok}`);
-      
+
       if (response.ok) {
-        const data = await response.json();
-        console.log('[AuthContext] fetchUserProfile - Dados recebidos de /api/users/me:', data);
-        
-        if (data && data.user_id) {
-          setLocalUser(data);
-          console.log('[AuthContext] fetchUserProfile - localUser DEFINIDO:', data);
-        } else {
-          setLocalUser(null);
-          console.log('[AuthContext] fetchUserProfile - Resposta OK mas sem user_id. localUser definido para null.');
+        const userData = await response.json();
+        console.log(`[AuthContext] fetchUserProfile SUCESSO (source: ${source}):`, userData.email);
+        setLocalUser(userData);
+        setAuthError(null);
+      } else if (response.status === 401) {
+        // Token inválido ou expirado - fazer logout automático
+        console.log(`[AuthContext] fetchUserProfile - Token inválido (401), fazendo logout automático`);
+        setLocalUser(null);
+        setAuthError(null);
+        // Não redirecionar automaticamente para /login se já estamos numa página pública
+        const isPublicPage = window.location.pathname === '/' || 
+                             window.location.pathname === '/produtos' || 
+                             window.location.pathname === '/categorias' ||
+                             window.location.pathname === '/sobre' ||
+                             window.location.pathname === '/contacto';
+        if (!isPublicPage && !window.location.pathname.startsWith('/login')) {
+          router.push('/login');
         }
       } else {
+        console.warn(`[AuthContext] fetchUserProfile ERRO HTTP ${response.status} (source: ${source})`);
+        const errorData = await response.text();
+        setAuthError('Erro ao carregar perfil do utilizador.');
         setLocalUser(null);
-        console.log(`[AuthContext] fetchUserProfile - Resposta não OK (${response.status}). Limpando localUser.`);
-        
-        if (response.status !== 401 && response.status !== 403) {
-          try {
-            const errorData = await response.text();
-            console.error('[AuthContext] fetchUserProfile - Erro HTTP:', response.status, errorData);
-            setAuthError(`Erro ao buscar perfil: ${response.status}`);
-          } catch {
-            console.error('[AuthContext] fetchUserProfile - Não foi possível ler erro');
-          }
-        }
       }
     } catch (error) {
-      console.error('[AuthContext] fetchUserProfile - Erro de fetch:', error);
-      setAuthError('Falha na comunicação com o servidor ao buscar perfil.');
+      console.error(`[AuthContext] fetchUserProfile ERRO FETCH (source: ${source}):`, error);
+      setAuthError('Erro de ligação ao carregar perfil.');
       setLocalUser(null);
     } finally {
       setIsLoading(false);
-      console.log('[AuthContext] fetchUserProfile FINALIZADA');
+      console.log(`[AuthContext] fetchUserProfile FINALIZADA (source: ${source})`);
     }
-  }, []);
+  }, [router]);
 
   // Verificar sessão no carregamento inicial
   useEffect(() => {

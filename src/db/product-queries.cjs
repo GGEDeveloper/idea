@@ -83,12 +83,18 @@ function buildWhereClause(filters, forCount = false) {
   }
 
   // Filtros rápidos adicionais
-  // Filtro por stock disponível
+  // Filtro por stock disponível - CORRIGIDO: incluir ambas as fontes de stock
   if (filters.hasStock === true || String(filters.hasStock).toLowerCase() === 'true') {
-    whereClauses.push(`EXISTS (
-      SELECT 1 FROM product_variants pv_stock 
-      WHERE pv_stock.ean = ${productAlias}.ean 
-      AND pv_stock.stockquantity > 0
+    whereClauses.push(`(
+      EXISTS (
+        SELECT 1 FROM product_variants pv_stock 
+        WHERE pv_stock.ean = ${productAlias}.ean 
+        AND pv_stock.stockquantity > 0
+      ) OR EXISTS (
+        SELECT 1 FROM geko_products gp_stock 
+        WHERE gp_stock.ean = ${productAlias}.ean 
+        AND gp_stock.stock_quantity > 0
+      )
     )`);
   }
 
