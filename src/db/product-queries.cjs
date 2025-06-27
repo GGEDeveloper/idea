@@ -67,7 +67,7 @@ function buildWhereClause(filters, forCount = false) {
       
       whereClauses.push(`EXISTS (
         SELECT 1 FROM product_categories pc 
-        WHERE pc.product_ean = ${productAlias}.ean 
+        WHERE pc.product_ean = ${productAlias}.product_ean 
         AND (${categoryConditions.join(' OR ')})
       )`);
       
@@ -87,12 +87,12 @@ function buildWhereClause(filters, forCount = false) {
   if (filters.hasStock === true || String(filters.hasStock).toLowerCase() === 'true') {
     whereClauses.push(`(
       EXISTS (
-        SELECT 1 FROM product_variants pv_stock 
-        WHERE pv_stock.ean = ${productAlias}.ean 
-        AND pv_stock.stockquantity > 0
+      SELECT 1 FROM product_variants pv_stock 
+      WHERE pv_stock.ean = ${productAlias}.product_ean 
+      AND pv_stock.stockquantity > 0
       ) OR EXISTS (
         SELECT 1 FROM geko_products gp_stock 
-        WHERE gp_stock.ean = ${productAlias}.ean 
+        WHERE gp_stock.ean = ${productAlias}.product_ean 
         AND gp_stock.stock_quantity > 0
       )
     )`);
@@ -102,7 +102,7 @@ function buildWhereClause(filters, forCount = false) {
   if (filters.onSale === true || String(filters.onSale).toLowerCase() === 'true') {
     whereClauses.push(`EXISTS (
       SELECT 1 FROM product_variants pv_sale 
-      WHERE pv_sale.ean = ${productAlias}.ean 
+      WHERE pv_sale.ean = ${productAlias}.product_ean 
       AND pv_sale.is_on_sale = true
     )`);
   }
@@ -139,7 +139,7 @@ function buildWhereClause(filters, forCount = false) {
         EXISTS (
             SELECT 1 FROM product_variants pv_filter
             JOIN prices pr_filter ON pv_filter.variantid = pr_filter.variantid
-            WHERE pv_filter.ean = ${productAlias}.ean 
+            WHERE pv_filter.ean = ${productAlias}.product_ean 
             AND pr_filter.price_list_id = ${customerPriceListId}
             AND ${priceConditions.join(' AND ')}
         )
@@ -147,14 +147,14 @@ function buildWhereClause(filters, forCount = false) {
     }
   }
 
-  // Filtro por busca textual
+  // Filtro por busca textual - ADAPTADO para campos da view unificada
   if (filters.searchQuery && typeof filters.searchQuery === 'string' && String(filters.searchQuery).trim() !== '') {
     const searchTerm = `%${String(filters.searchQuery).trim()}%`;
     const searchConditions = [
-        `${productAlias}.name ILIKE $${paramIndex}`,
-        `${productAlias}.ean ILIKE $${paramIndex + 1}`,
-        `${productAlias}.shortdescription ILIKE $${paramIndex + 2}`,
-        `${productAlias}.longdescription ILIKE $${paramIndex + 3}`,
+        `${productAlias}.display_name_pt ILIKE $${paramIndex}`,
+        `${productAlias}.product_ean ILIKE $${paramIndex + 1}`,
+        `${productAlias}.display_shortdesc_pt ILIKE $${paramIndex + 2}`,
+        `${productAlias}.original_name ILIKE $${paramIndex + 3}`,
         `${productAlias}.brand ILIKE $${paramIndex + 4}`
     ];
     whereClauses.push(`(${searchConditions.join(' OR ')})`);
@@ -164,7 +164,7 @@ function buildWhereClause(filters, forCount = false) {
   
   // Filtro por status ativo/inativo
   if (filters.active !== undefined && filters.active !== null) {
-    whereClauses.push(`${productAlias}.active = $${paramIndex++}`);
+    whereClauses.push(`${productAlias}.is_active = $${paramIndex++}`);
     queryParams.push(filters.active);
   }
 
@@ -180,8 +180,8 @@ function buildWhereClause(filters, forCount = false) {
 async function countProducts(filters = {}) {
   const { whereClause, queryParams } = buildWhereClause(filters, true);
   const countQuery = `
-    SELECT COUNT(DISTINCT p_count.ean) 
-    FROM products p_count 
+    SELECT COUNT(DISTINCT p_count.product_ean) 
+    FROM unified_product_catalog p_count 
     ${whereClause}
   `;
   const { rows } = await pool.query(countQuery, queryParams);
@@ -211,30 +211,42 @@ async function getProducts(filters = {}, pagination = {}) {
     (SELECT pr_display.price 
      FROM product_variants pv_display
      JOIN prices pr_display ON pv_display.variantid = pr_display.variantid
-     WHERE pv_display.ean = p.ean AND pr_display.price_list_id = ${customerPriceListId}
+     WHERE pv_display.ean = p.product_ean AND pr_display.price_list_id = ${customerPriceListId}
      ORDER BY pv_display.variantid ASC
      LIMIT 1
     ) 
   `;
 
   const sortExpression = safeSortBy === 'price' 
-    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.ean AND pr_sort.price_list_id = ${customerPriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
+    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.product_ean AND pr_sort.price_list_id = ${customerPriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
+    : safeSortBy === 'name' 
+    ? `p.display_name_pt`
     : `p.${safeSortBy}`;
 
   const query = `
     SELECT 
-      p.ean, p.name, p.brand, p.active, p.shortdescription, p.is_featured, p.created_at, p.updated_at,
+      p.product_ean as ean, 
+      p.display_name_pt as name, 
+      p.brand, 
+      p.is_active as active, 
+      p.display_shortdesc_pt as shortdescription, 
+      p.is_featured, 
+      p.created_at, 
+      p.updated_at,
+      p.source_type,
       ${priceSubQuery} as product_price,
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
-        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
+        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.product_ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
-        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
+        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.product_ean
+         UNION ALL
+         SELECT image_id as imageid, image_url as url, alt_text as alt, is_primary FROM unified_product_images WHERE product_ean = p.product_ean AND image_source = 'internal') as img
       ) as images,
-      (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.ean) as total_stock
-    FROM products p
+      (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.product_ean) as total_stock
+    FROM unified_product_catalog p
     ${whereClause}
-    ORDER BY ${sortExpression} ${safeOrder} NULLS LAST, p.ean ASC
+    ORDER BY ${sortExpression} ${safeOrder} NULLS LAST, p.product_ean ASC
     LIMIT $${currentParamIndex++} OFFSET $${currentParamIndex++}
   `;
   
@@ -255,31 +267,45 @@ async function getProductByEan(ean) {
   
     const query = `
     SELECT 
-      p.ean, p.name, p.brand, p.active, p.shortdescription, p.longdescription, p.productid, p.created_at, p.updated_at, p.is_featured,
+      p.product_ean as ean, 
+      p.display_name_pt as name, 
+      p.brand, 
+      p.is_active as active, 
+      p.display_shortdesc_pt as shortdescription, 
+      p.display_shortdesc_en as longdescription, 
+      p.productid, 
+      p.created_at, 
+      p.updated_at, 
+      p.is_featured,
+      p.source_type,
       (SELECT pr.price 
        FROM product_variants pv 
        JOIN prices pr ON pv.variantid = pr.variantid 
-       WHERE pv.ean = p.ean AND pr.price_list_id = ${customerPriceListId}
+       WHERE pv.ean = p.product_ean AND pr.price_list_id = ${customerPriceListId}
        ORDER BY pv.variantid ASC LIMIT 1
       ) as product_price, 
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
-        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.ean) as cat
+        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.product_ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
-        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.ean) as img
+        (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.product_ean
+         UNION ALL
+         SELECT image_id as imageid, image_url as url, alt_text as alt, is_primary FROM unified_product_images WHERE product_ean = p.product_ean AND image_source = 'internal') as img
       ) as images,
       (SELECT json_agg(var ORDER BY var.variantid) FROM
         (SELECT pv_detail.variantid, pv_detail.name as variant_name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
                 (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${customerPriceListId} LIMIT 1) as base_selling_price,
                 (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
-         FROM product_variants pv_detail WHERE pv_detail.ean = p.ean
+         FROM product_variants pv_detail WHERE pv_detail.ean = p.product_ean
         ) as var
       ) as variants,
       (SELECT json_agg(attr ORDER BY attr.key) FROM
-        (SELECT attributeid, "key", "value" FROM product_attributes WHERE product_ean = p.ean) as attr
+        (SELECT attributeid, "key", "value" FROM product_attributes WHERE product_ean = p.product_ean
+         UNION ALL
+         SELECT attributeid, "key", "value" FROM unified_product_attributes WHERE ean = p.product_ean AND source_type = 'vip') as attr
       ) as attributes
-    FROM products p
-    WHERE p.ean = $1
+    FROM unified_product_catalog p
+    WHERE p.product_ean = $1
   `;
   
   const { rows } = await pool.query(query, [ean]);
