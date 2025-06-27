@@ -1,0 +1,3 @@
+ean,productid,name,shortdescription,longdescription,brand,category_id,supplier_price,stock_quantity,image_urls,attributes
+5601234567890,PROD001,"Produto Exemplo 1","Descrição curta do produto","Descrição longa e detalhada do produto","Marca Exemplo","CAT001",25.50,100,"https://example.com/image1.jpg,https://example.com/image2.jpg","color:azul,size:M,material:algodão"
+5601234567891,PROD002,"Produto Exemplo 2","Outra descrição curta","Outra descrição longa do produto","Marca Exemplo","CAT002",45.00,50,"https://example.com/image3.jpg","color:vermelho,size:L" 

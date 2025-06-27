@@ -1,0 +1,65 @@
+{
+  "supplier_info": {
+    "supplier_id": "SUPPLIER_1",
+    "supplier_name": "Fornecedor Exemplo Lda",
+    "import_date": "2025-01-27T10:00:00Z",
+    "format_version": "1.0"
+  },
+  "products": [
+    {
+      "ean": "5601234567890",
+      "productid": "PROD001",
+      "name": "Produto Exemplo 1",
+      "shortdescription": "Descrição curta do produto",
+      "longdescription": "Descrição longa e detalhada do produto",
+      "brand": "Marca Exemplo",
+      "category_id": "CAT001",
+      "supplier_price": 25.50,
+      "stock_quantity": 100,
+      "images": [
+        {
+          "url": "https://example.com/image1.jpg",
+          "alt": "Imagem principal",
+          "is_primary": true
+        },
+        {
+          "url": "https://example.com/image2.jpg",
+          "alt": "Imagem secundária",
+          "is_primary": false
+        }
+      ],
+      "attributes": {
+        "color": "azul",
+        "size": "M",
+        "material": "algodão",
+        "weight": "0.5kg"
+      },
+      "active": true,
+      "is_featured": false
+    },
+    {
+      "ean": "5601234567891",
+      "productid": "PROD002",
+      "name": "Produto Exemplo 2",
+      "shortdescription": "Outra descrição curta",
+      "longdescription": "Outra descrição longa do produto",
+      "brand": "Marca Exemplo",
+      "category_id": "CAT002",
+      "supplier_price": 45.00,
+      "stock_quantity": 50,
+      "images": [
+        {
+          "url": "https://example.com/image3.jpg",
+          "alt": "Produto vermelho",
+          "is_primary": true
+        }
+      ],
+      "attributes": {
+        "color": "vermelho",
+        "size": "L"
+      },
+      "active": true,
+      "is_featured": true
+    }
+  ]
+} 
