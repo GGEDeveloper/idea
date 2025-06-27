@@ -1,7 +1,7 @@
 # 🏪 IDEA E-commerce - Sistema B2B Completo
 
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)]()
-[![Version](https://img.shields.io/badge/Version-2.0.0--B2B-blue)]()
+[![Version](https://img.shields.io/badge/Version-2.2.0--B2B--UX--ENHANCED-blue)]()
 [![Node](https://img.shields.io/badge/Node.js-18%2B-green)]()
 [![React](https://img.shields.io/badge/React-19.1.0-blue)]()
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-blue)]()
@@ -26,7 +26,8 @@ O IDEA E-commerce é uma solução completa de e-commerce B2B que inclui:
 ## ✨ **Funcionalidades Principais**
 
 ### 🛍️ **Para Clientes**
-- **Navegação de Produtos** - Catálogo com filtros por categoria, marca, preço
+- **Navegação de Produtos** - Catálogo com filtros avançados por categoria, marca, preço
+- **Filtros Inteligentes** - Sistema collapsible com ícones das marcas e badges de contadores
 - **Carrinho Inteligente** - Gestão completa com hidratação automática
 - **Checkout Seguro** - Formulário validado com dados de entrega
 - **Acompanhamento** - Tracking de encomendas em tempo real

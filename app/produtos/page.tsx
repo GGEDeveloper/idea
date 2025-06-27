@@ -7,6 +7,7 @@ import { useAuth } from '../contexts/AuthContext';
 import ProductGrid from '../components/products/ProductGrid';
 import ProductList from '../components/products/ProductList';
 import FilterSidebar from '../components/products/FilterSidebar';
+import EnhancedActiveFiltersBar from '../components/products/EnhancedActiveFiltersBar';
 import { useProductViewPreferences } from '../hooks/useProductViewPreferences';
 import { 
   Bars3Icon, 
@@ -349,6 +350,32 @@ function ProductsPageContent() {
 
           {/* Products Grid */}
           <div className="lg:col-span-3">
+            {/* Enhanced Active Filters Bar */}
+            <EnhancedActiveFiltersBar
+              filters={filters}
+              filterOptions={filterOptions}
+              onRemoveFilter={(type, value) => {
+                if (type === 'brand') {
+                  handleBrandChange(value as string);
+                } else if (type === 'category') {
+                  handleCategoryChange(value as string);
+                } else if (type === 'price') {
+                  setFilters(prev => ({ ...prev, price: { min: 0, max: 10000 } }));
+                  setCurrentPage(1);
+                } else if (type === 'stock') {
+                  handleStockChange();
+                } else if (type === 'sale') {
+                  handleOnSaleChange();
+                } else if (type === 'new') {
+                  handleIsNewChange();
+                } else if (type === 'featured') {
+                  handleFeaturedChange();
+                }
+              }}
+              onClearAll={handleClearFilters}
+              totalProducts={totalProducts}
+            />
+
             {/* Controls Header */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-6 border border-gray-200 dark:border-gray-700">
               {/* First Row: Mobile Filter Button + Search */}

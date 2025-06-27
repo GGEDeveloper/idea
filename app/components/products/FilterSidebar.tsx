@@ -19,6 +19,72 @@ import {
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import HierarchicalCategoryFilter from './HierarchicalCategoryFilter';
+import EnhancedCategoryFilter from './EnhancedCategoryFilter';
+
+// Brand logos mini - extraído do BrandCarousel
+const brandLogos: Record<string, string> = {
+  'GEKO': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="miniGekoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect x="2" y="4" width="20" height="27" rx="4" fill="url(#miniGekoGrad)"/>
+    <text x="28" y="18" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#1e40af">GEKO</text>
+    <circle cx="8" cy="12" r="2" fill="#fbbf24"/>
+    <circle cx="14" cy="17" r="1.5" fill="#f59e0b"/>
+    <circle cx="16" cy="22" r="2" fill="#fbbf24"/>
+  </svg>`,
+  'TVARDY': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="miniTvardyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect x="4" y="4" width="92" height="27" rx="3" fill="url(#miniTvardyGrad)"/>
+    <text x="50" y="21" font-family="Arial Black, sans-serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">TVARDY</text>
+    <rect x="8" y="9" width="2" height="13" fill="#fbbf24" rx="1"/>
+    <rect x="90" y="9" width="2" height="13" fill="#fbbf24" rx="1"/>
+  </svg>`,
+  'John Gardener': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="miniJgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="50" cy="17" rx="48" ry="15" fill="url(#miniJgGrad)"/>
+    <text x="50" y="21" font-family="Georgia, serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">John Gardener</text>
+    <circle cx="15" cy="17" r="3" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="85" cy="17" r="3" fill="#22d3ee" opacity="0.8"/>
+  </svg>`,
+  'Keltin': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="miniKeltinGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect x="7" y="6" width="86" height="23" rx="11" fill="url(#miniKeltinGrad)"/>
+    <text x="50" y="21" font-family="Arial Black, sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">KELTIN</text>
+    <polygon points="15,12 22,9 18,17" fill="#fbbf24"/>
+    <polygon points="85,12 78,9 82,17" fill="#fbbf24"/>
+  </svg>`,
+  'Heidmann': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="miniHeidGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect x="4" y="5" width="92" height="25" rx="4" fill="url(#miniHeidGrad)"/>
+    <text x="50" y="21" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">HEIDMANN</text>
+    <rect x="8" y="10" width="2" height="15" fill="#f59e0b"/>
+    <rect x="90" y="10" width="2" height="15" fill="#f59e0b"/>
+  </svg>`
+};
 
 // Types
 interface Category {
@@ -364,6 +430,53 @@ const PremiumSearch: React.FC<PremiumSearchProps> = ({
   );
 };
 
+// Componente de Brand com Logo
+interface BrandCheckboxProps {
+  brand: string;
+  checked: boolean;
+  onChange: () => void;
+}
+
+const BrandCheckbox: React.FC<BrandCheckboxProps> = ({ brand, checked, onChange }) => {
+  return (
+    <label className="flex items-center p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors group">
+      <div className="relative">
+        <input
+          type="checkbox"
+          checked={checked}
+          onChange={onChange}
+          className="sr-only"
+        />
+        <div className={`w-5 h-5 rounded-lg border-2 flex items-center justify-center transition-all duration-200 ${
+          checked 
+            ? 'bg-gradient-to-r from-indigo-500 to-purple-600 border-indigo-500 shadow-lg shadow-indigo-200' 
+            : 'border-gray-300 hover:border-indigo-400 group-hover:border-indigo-500'
+        }`}>
+          {checked && <CheckIcon className="w-3 h-3 text-white" />}
+        </div>
+      </div>
+      
+      {/* Brand Logo */}
+      <div className="w-8 h-4 mx-3 flex items-center justify-center">
+        {brandLogos[brand] ? (
+          <div
+            className="w-full h-full"
+            dangerouslySetInnerHTML={{ __html: brandLogos[brand] }}
+          />
+        ) : (
+          <div className="w-6 h-3 bg-gradient-to-r from-gray-400 to-gray-500 rounded text-xs text-white font-bold flex items-center justify-center">
+            {brand.substring(0, 2).toUpperCase()}
+          </div>
+        )}
+      </div>
+      
+      <span className="text-sm font-medium text-gray-700 group-hover:text-indigo-600 transition-colors">
+        {brand}
+      </span>
+    </label>
+  );
+};
+
 // Main FilterSidebar Component
 const FilterSidebar: React.FC<FilterSidebarProps> = ({ 
   isOpen = false, 
@@ -414,6 +527,16 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
     return count;
   }, [filters]);
 
+  // Contar marcas selecionadas
+  const selectedBrandsCount = useMemo(() => {
+    return Object.values(filters.brands || {}).filter(Boolean).length;
+  }, [filters.brands]);
+
+  // Contar categorias selecionadas
+  const selectedCategoriesCount = useMemo(() => {
+    return filters.categories?.length || 0;
+  }, [filters.categories]);
+
   if (isMobile && !isOpen) return null;
 
   return (
@@ -440,9 +563,15 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
       </div>
 
       <div className="space-y-6">
-        {/* Filtros Rápidos - Sempre visíveis */}
-        <div>
-          <h3 className="text-sm font-medium text-gray-900 mb-3">Filtros Rápidos</h3>
+        {/* Filtros Rápidos - Sempre expandido */}
+        <PremiumFilterSection
+          title="Filtros Rápidos"
+          icon={AdjustmentsHorizontalIcon}
+          collapsible={true}
+          defaultExpanded={true}
+          badge={activeFiltersCount > 0 ? `${activeFiltersCount} ativo${activeFiltersCount !== 1 ? 's' : ''}` : undefined}
+          description="Filtros de acesso rápido"
+        >
           <div className="grid grid-cols-2 gap-2">
             <button
               onClick={onStockChange}
@@ -495,7 +624,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
               </button>
             )}
           </div>
-        </div>
+        </PremiumFilterSection>
 
         {/* Aviso para visitantes */}
         {!isAuthenticated && (
@@ -519,33 +648,32 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
           <>
             {/* Categorias */}
             {filterOptions.categories && filterOptions.categories.length > 0 && (
-              <div>
-                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-                  <TagIcon className="w-4 h-4 mr-1" />
-                  Categorias
-                  <span className="ml-auto text-xs text-gray-500 bg-green-100 px-2 py-1 rounded-full">
-                    Hierárquico
-                  </span>
-                </h3>
-                <HierarchicalCategoryFilter
+              <PremiumFilterSection
+                title="Categorias"
+                icon={TagIcon}
+                collapsible={true}
+                defaultExpanded={false}
+                badge={selectedCategoriesCount > 0 ? selectedCategoriesCount : undefined}
+                description="Filtrar por categoria com ícones"
+              >
+                <EnhancedCategoryFilter
                   categories={filterOptions.categories}
                   selectedCategories={Array.isArray(filters.categories) ? filters.categories : []}
                   onCategorySelect={onCategoryChange}
                 />
-              </div>
+              </PremiumFilterSection>
             )}
 
-            {/* Marcas */}
+            {/* Marcas com Logos */}
             {filterOptions.brands && filterOptions.brands.length > 0 && (
-              <div>
-                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-                  <TagIcon className="w-4 h-4 mr-1" />
-                  Marcas
-                  <span className="ml-auto text-xs text-gray-500">
-                    {filterOptions.brands.length}
-                  </span>
-                </h3>
-                
+              <PremiumFilterSection
+                title="Marcas"
+                icon={TagIcon}
+                collapsible={true}
+                defaultExpanded={false}
+                badge={selectedBrandsCount > 0 ? selectedBrandsCount : undefined}
+                description="Filtrar por marca com logos"
+              >
                 {/* Search */}
                 <div className="relative mb-3">
                   <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -558,31 +686,40 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
                   />
                 </div>
                 
-                {/* Brand List */}
-                <div className="max-h-48 overflow-y-auto space-y-2">
+                {/* Brand List com Logos */}
+                <div className="max-h-48 overflow-y-auto space-y-1">
                   {filteredBrands.map((brand) => (
-                    <label key={brand} className="flex items-center p-2 hover:bg-gray-50 rounded-lg cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={filters.brands[brand] || false}
-                        onChange={() => onBrandChange(brand)}
-                        className="h-4 w-4 text-indigo-600 rounded border-gray-300 focus:ring-indigo-500"
-                      />
-                      <span className="ml-2 text-sm text-gray-700">{brand}</span>
-                    </label>
+                    <BrandCheckbox
+                      key={brand}
+                      brand={brand}
+                      checked={filters.brands[brand] || false}
+                      onChange={() => onBrandChange(brand)}
+                    />
                   ))}
                 </div>
-              </div>
+
+                {filteredBrands.length === 0 && brandSearch && (
+                  <div className="text-center text-gray-500 text-sm py-4">
+                    Nenhuma marca encontrada para "{brandSearch}"
+                  </div>
+                )}
+              </PremiumFilterSection>
             )}
 
             {/* Preços - Só para utilizadores com permissão view_price */}
             {hasPermission('view_price') && filterOptions.price && (
-              <div>
-                <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center">
-                  <CurrencyEuroIcon className="w-4 h-4 mr-1" />
-                  Preço
-                </h3>
-                
+              <PremiumFilterSection
+                title="Preço"
+                icon={CurrencyEuroIcon}
+                collapsible={true}
+                defaultExpanded={false}
+                badge={
+                  (filters.price?.min > 0 || filters.price?.max < 10000) 
+                    ? `€${filters.price?.min || 0} - €${filters.price?.max || '∞'}` 
+                    : undefined
+                }
+                description="Definir faixa de preços"
+              >
                 <div className="space-y-3">
                   <div className="flex space-x-2">
                     <div className="flex-1">
@@ -610,7 +747,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
                     </div>
                   </div>
                 </div>
-              </div>
+              </PremiumFilterSection>
             )}
           </>
         )}

@@ -5,6 +5,42 @@ Todas as mudanças notáveis do projeto AliTools B2B serão documentadas neste a
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.0-B2B-UX-ENHANCED] - 2025-01-26
+
+### 🎨 Enhanced
+- **[FILTROS]** Sistema de filtros collapsible implementado
+  - Todas as seções de filtro agora podem ser expandidas/colapsadas
+  - Filtros Rápidos: Expandido por padrão
+  - Categorias, Marcas e Preços: Colapsados por padrão
+  - Badges informativos mostrando contadores de filtros ativos
+  - Descrições contextuais em cada seção
+
+- **[BRANDING]** Ícones pequenos das marcas nos filtros
+  - 5 marcas principais com logos SVG personalizados:
+    - GEKO: Logo azul com gradiente
+    - TVARDY: Logo vermelho profissional
+    - John Gardener: Logo verde para ferramentas de jardim
+    - Keltin: Logo roxo para linha acessível
+    - Heidmann: Logo cinza para linha profissional/industrial
+  - Fallback inteligente: Iniciais em gradiente para marcas sem logo
+
+### 🔧 Fixed
+- **[UX]** Corrigida confusão de interface com controles duplicados
+  - Removido controle de visualização das categorias (cards vs lista)
+  - Mantido apenas controle principal dos produtos (grid vs lista)
+  - Interface mais limpa sem controles conflitantes
+  - UX mais clara - sem ambiguidade sobre função de cada controle
+
+### ⚡ Optimized
+- **[PERFORMANCE]** Build mais leve (15.9 kB vs 16.5 kB anterior)
+- **[CODE]** Removidas ~150 linhas de código desnecessário
+- **[LOGIC]** Lógica simplificada com modo cards fixo para categorias
+
+### 🎯 Improved
+- **[NAVIGATION]** Navegação hierárquica das categorias mantida em modo cards
+- **[SEARCH]** Busca de categorias e marcas melhorada
+- **[RESPONSIVE]** Layout responsivo mantido em todos os tamanhos
+
 ## [v2.1.0-B2B-STABLE] - 2025-01-26
 
 ### 🔧 Fixed
