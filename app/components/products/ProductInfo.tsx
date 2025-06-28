@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 
 interface Variant {
@@ -44,24 +44,50 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   hasPermission = () => false,
   selectedVariant = null
 }) => {
-  // State for quantity selection
+  // State for quantity selection and selected variant
   const [quantity, setQuantity] = useState(1);
+  const [selectedVariantId, setSelectedVariantId] = useState<string | null>(null);
   
   // Fallbacks for essential data
   const name = product.name || 'Produto sem nome';
   const brand = product.brand || '';
   const ean = product.ean || '';
 
-  // Calculate total stock from all variants
-  const totalStock = product.variants?.reduce((acc, variant) => acc + (variant.stockquantity || 0), 0) ?? 0;
+  // Get selected variant or first variant as default
+  const activeVariant = useMemo(() => {
+    if (!product.variants || product.variants.length === 0) return null;
+    return product.variants.find(v => v.variantid === selectedVariantId) || product.variants[0];
+  }, [product.variants, selectedVariantId]);
 
-  // Get the price to display (product_price or from variants)
-  const displayPrice = product.product_price || 
-    product.variants?.[0]?.base_selling_price || 
-    product.variants?.[0]?.promotional_price;
+  // Check if product has multiple variants (condition for showing selector)
+  const hasMultipleVariants = product.variants && product.variants.length > 1;
 
-  // Check if product has valid price (including zero price products)
+  // Calculate dynamic values based on selected variant
+  const { displayPrice, totalStock, stockInfo } = useMemo(() => {
+    if (hasMultipleVariants && activeVariant) {
+      // Single variant values
+      const price = activeVariant.base_selling_price || activeVariant.promotional_price || product.product_price;
+      const stock = activeVariant.stockquantity || 0;
+      const info = stock > 0 ? `Em Stock (${stock} unidades)` : 'Indisponível';
+      return { displayPrice: price, totalStock: stock, stockInfo: info };
+    } else {
+      // Aggregate values for single variant or no variants
+      const aggStock = product.variants?.reduce((acc, variant) => acc + (variant.stockquantity || 0), 0) ?? 0;
+      const price = product.product_price || product.variants?.[0]?.base_selling_price || product.variants?.[0]?.promotional_price;
+      const info = aggStock > 0 ? `Em Stock (${aggStock} unidades)` : 'Indisponível';
+      return { displayPrice: price, totalStock: aggStock, stockInfo: info };
+    }
+  }, [hasMultipleVariants, activeVariant, product]);
+
+  // Check if product has valid price
   const hasValidPrice = displayPrice !== undefined && displayPrice !== null && !isNaN(Number(displayPrice));
+
+  // Get layout strategy based on variant count
+  const getVariantLayoutClass = (variantCount: number) => {
+    if (variantCount <= 3) return 'variant-layout-horizontal';
+    if (variantCount <= 6) return 'variant-layout-grid';
+    return 'variant-layout-dropdown';
+  };
 
   // Logic for displaying price based on auth and permissions
   const renderPrice = () => {
@@ -83,14 +109,115 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   // Logic for displaying stock based on auth and permissions
   const renderStock = () => {
     if (isAuthenticated && hasPermission('view_stock')) {
-      const stockInfo = totalStock > 0 ? `Em Stock (${totalStock} unidades)` : 'Indisponível';
       return (
         <p className={`text-base font-semibold mb-6 ${totalStock > 0 ? 'text-green-700' : 'text-red-600'}`}>
           {stockInfo}
         </p>
       );
     }
-    return null; // Don't show stock info if not permitted
+    return null;
+  };
+
+  // Render variant selector based on layout strategy
+  const renderVariantSelector = () => {
+    if (!hasMultipleVariants) return null;
+
+    const variantCount = product.variants!.length;
+    const layoutClass = getVariantLayoutClass(variantCount);
+
+    if (layoutClass === 'variant-layout-dropdown') {
+      // Dropdown for 7+ variants
+      return (
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Escolha a variante:
+          </label>
+          <select 
+            value={selectedVariantId || ''} 
+            onChange={(e) => setSelectedVariantId(e.target.value)}
+            className="w-full border border-gray-300 rounded-lg p-3 bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          >
+            {product.variants!.map(variant => (
+              <option key={variant.variantid} value={variant.variantid}>
+                {variant.variant_name}
+                {hasValidPrice && variant.base_selling_price && (
+                  ` - €${variant.base_selling_price.toFixed(2)}`
+                )}
+                {isAuthenticated && hasPermission('view_stock') && (
+                  ` (Stock: ${variant.stockquantity})`
+                )}
+              </option>
+            ))}
+          </select>
+        </div>
+      );
+    }
+
+    if (layoutClass === 'variant-layout-grid') {
+      // Grid layout for 4-6 variants
+      return (
+        <div className="mb-6">
+          <h3 className="text-sm font-medium text-gray-700 mb-3">Escolha a variante:</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {product.variants!.map(variant => (
+              <button
+                key={variant.variantid}
+                onClick={() => setSelectedVariantId(variant.variantid)}
+                className={`p-3 border-2 rounded-lg text-left transition-all duration-200 ${
+                  selectedVariantId === variant.variantid || (!selectedVariantId && variant === product.variants![0])
+                    ? 'border-blue-500 bg-blue-50 text-blue-900'
+                    : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                <div className="font-medium text-sm mb-1 line-clamp-2">{variant.variant_name}</div>
+                {hasValidPrice && variant.base_selling_price && (
+                  <div className="text-blue-600 font-semibold text-sm">
+                    €{variant.base_selling_price.toFixed(2)}
+                  </div>
+                )}
+                {isAuthenticated && hasPermission('view_stock') && (
+                  <div className={`text-xs mt-1 ${variant.stockquantity > 0 ? 'text-green-600' : 'text-red-500'}`}>
+                    Stock: {variant.stockquantity}
+                  </div>
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // Horizontal layout for 2-3 variants
+    return (
+      <div className="mb-6">
+        <h3 className="text-sm font-medium text-gray-700 mb-3">Escolha a variante:</h3>
+        <div className="flex flex-col sm:flex-row gap-3">
+          {product.variants!.map(variant => (
+            <button
+              key={variant.variantid}
+              onClick={() => setSelectedVariantId(variant.variantid)}
+              className={`flex-1 p-4 border-2 rounded-lg text-left transition-all duration-200 ${
+                selectedVariantId === variant.variantid || (!selectedVariantId && variant === product.variants![0])
+                  ? 'border-blue-500 bg-blue-50 text-blue-900'
+                  : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+              }`}
+            >
+              <div className="font-medium mb-2">{variant.variant_name}</div>
+              {hasValidPrice && variant.base_selling_price && (
+                <div className="text-blue-600 font-bold text-lg mb-1">
+                  €{variant.base_selling_price.toFixed(2)}
+                </div>
+              )}
+              {isAuthenticated && hasPermission('view_stock') && (
+                <div className={`text-sm ${variant.stockquantity > 0 ? 'text-green-600' : 'text-red-500'}`}>
+                  Stock: {variant.stockquantity} unidades
+                </div>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
   };
 
   const handleAddToCart = () => {
@@ -124,8 +251,18 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
     }
 
     try {
-      addToCart(product, quantity);
-      alert(`${quantity} unidade(s) de "${product.name}" adicionada(s) ao carrinho!`);
+      // Create product object with selected variant info
+      const cartProduct = {
+        ...product,
+        selectedVariant: hasMultipleVariants ? activeVariant : null,
+        finalPrice: displayPrice,
+        finalStock: totalStock
+      };
+      
+      addToCart(cartProduct, quantity);
+      
+      const variantInfo = hasMultipleVariants && activeVariant ? ` (${activeVariant.variant_name})` : '';
+      alert(`${quantity} unidade(s) de "${product.name}"${variantInfo} adicionada(s) ao carrinho!`);
     } catch (error) {
       console.error('Error adding to cart:', error);
       alert('Erro ao adicionar produto ao carrinho. Tente novamente.');
@@ -170,28 +307,25 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         </div>
       )}
 
+      {/* Variant Selector - Only shows for multiple variants */}
+      {renderVariantSelector()}
+
       <div className="mb-6">
         {renderPrice()}
       </div>
 
       {renderStock()}
 
-      {/* Variants info */}
-      {product.variants && product.variants.length > 0 && (
-        <div className="mb-6">
-          <h3 className="text-sm font-semibold text-gray-900 mb-2">Variantes disponíveis:</h3>
-          <div className="space-y-2">
-            {product.variants.map((variant) => (
-              <div key={variant.variantid} className="text-sm text-gray-600">
-                <span className="font-medium">{variant.variant_name}</span>
-                {isAuthenticated && hasPermission('view_stock') && (
-                  <span className="ml-2 text-gray-400">
-                    (Stock: {variant.stockquantity})
-                  </span>
-                )}
-              </div>
-            ))}
-          </div>
+      {/* Selected Variant Info (only for multiple variants) */}
+      {hasMultipleVariants && activeVariant && (
+        <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">Variante selecionada:</h4>
+          <p className="text-gray-900 font-medium">{activeVariant.variant_name}</p>
+          {isAuthenticated && hasPermission('view_stock') && (
+            <p className="text-sm text-gray-600 mt-1">
+              Stock disponível: {activeVariant.stockquantity} unidades
+            </p>
+          )}
         </div>
       )}
 

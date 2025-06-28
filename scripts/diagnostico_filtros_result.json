@@ -1,0 +1,3467 @@
+{
+  "timestamp": 1751114844.3798895,
+  "tests": {
+    "database": {
+      "success": true,
+      "total_brands": 11,
+      "vip_brands": {
+        "FERMAN": 43,
+        "HARDMAN": 187,
+        "Gen\u00e9rico": 71,
+        "TOURO": 107
+      },
+      "all_brands": [
+        "FERMAN",
+        "GEKO",
+        "Gardman",
+        "Gen\u00e9rico",
+        "HARDMAN",
+        "Hardman",
+        "Heidmann",
+        "John Gardener",
+        "Keltin",
+        "TOURO",
+        "Tvardy"
+      ]
+    },
+    "api_filters": {
+      "success": true,
+      "brands_count": 11,
+      "vip_brands": [
+        "FERMAN",
+        "Gen\u00e9rico",
+        "HARDMAN",
+        "TOURO"
+      ],
+      "data": {
+        "categories": [
+          {
+            "id": "virtual-Construction and Renovation\\",
+            "name": "",
+            "path": "Construction and Renovation\\",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "110006",
+                "name": "Trowels and Spatulas",
+                "path": "Construction and Renovation\\\\Trowels and Spatulas",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112780",
+            "name": "Abrasive Materials",
+            "path": "Abrasive Materials",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "112781",
+                "name": "Brushes",
+                "path": "Abrasive Materials\\Brushes",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107859",
+                    "name": "Brush Brushes",
+                    "path": "Abrasive Materials\\Brushes\\Brush Brushes",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107860",
+                    "name": "Butt Brushes With Braided Wire",
+                    "path": "Abrasive Materials\\Brushes\\Butt Brushes With Braided Wire",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107861",
+                    "name": "Butt Brushes With Crimped Wire",
+                    "path": "Abrasive Materials\\Brushes\\Butt Brushes With Crimped Wire",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107857",
+                    "name": "Disc Brushes With Braided Wire",
+                    "path": "Abrasive Materials\\Brushes\\Disc Brushes With Braided Wire",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107858",
+                    "name": "Disc Brushes With Crimped Wire",
+                    "path": "Abrasive Materials\\Brushes\\Disc Brushes With Crimped Wire",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107856",
+                    "name": "Non-woven Fabrics for Cleaning",
+                    "path": "Abrasive Materials\\Brushes\\Non-woven Fabrics for Cleaning",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107863",
+                    "name": "Nylon Brushes",
+                    "path": "Abrasive Materials\\Brushes\\Nylon Brushes",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107862",
+                    "name": "Wire Brushes",
+                    "path": "Abrasive Materials\\Brushes\\Wire Brushes",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "110245",
+                "name": "Brushes for A Burnishing Machine",
+                "path": "Abrasive Materials\\Brushes for A Burnishing Machine",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107864",
+                "name": "Discs for Bench Grinders",
+                "path": "Abrasive Materials\\Discs for Bench Grinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112782",
+                "name": "Discs for Orbital-rotary Sanders",
+                "path": "Abrasive Materials\\Discs for Orbital-rotary Sanders",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107865",
+                    "name": "125mm",
+                    "path": "Abrasive Materials\\Discs for Orbital-rotary Sanders\\125mm",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107967",
+                    "name": "150mm",
+                    "path": "Abrasive Materials\\Discs for Orbital-rotary Sanders\\150mm",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107866",
+                    "name": "190mm",
+                    "path": "Abrasive Materials\\Discs for Orbital-rotary Sanders\\190mm",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107867",
+                    "name": "225mm",
+                    "path": "Abrasive Materials\\Discs for Orbital-rotary Sanders\\225mm",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "105569",
+                "name": "Endless Abrasive Belts",
+                "path": "Abrasive Materials\\Endless Abrasive Belts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105574",
+                "name": "Felt Discs",
+                "path": "Abrasive Materials\\Felt Discs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105581",
+                "name": "Fiber Discs",
+                "path": "Abrasive Materials\\Fiber Discs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105575",
+                "name": "Flap Discs (Type 29 Conical)",
+                "path": "Abrasive Materials\\Flap Discs (Type 29 Conical)",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107852",
+                "name": "Manual Sanding",
+                "path": "Abrasive Materials\\Manual Sanding",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107955",
+                    "name": "Abrasive Sheets",
+                    "path": "Abrasive Materials\\Manual Sanding\\Abrasive Sheets",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107855",
+                    "name": "Accessories",
+                    "path": "Abrasive Materials\\Manual Sanding\\Accessories",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107850",
+                "name": "Shank Flap Wheels",
+                "path": "Abrasive Materials\\Shank Flap Wheels",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105587",
+                "name": "Sharpening Discs",
+                "path": "Abrasive Materials\\Sharpening Discs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107854",
+                "name": "Sharpening Stones",
+                "path": "Abrasive Materials\\Sharpening Stones",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107851",
+                "name": "Sponges and Polishing Pads",
+                "path": "Abrasive Materials\\Sponges and Polishing Pads",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "108636",
+                "name": "Stoneware Grinding Discs",
+                "path": "Abrasive Materials\\Stoneware Grinding Discs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105573",
+                "name": "Velcro Pads",
+                "path": "Abrasive Materials\\Velcro Pads",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107705",
+            "name": "Construction and Renovation",
+            "path": "Construction and Renovation",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107763",
+                "name": "Agitators",
+                "path": "Construction and Renovation\\Agitators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112529",
+                "name": "Akcesoria do komin\u00f3w",
+                "path": "Construction and Renovation\\Akcesoria do komin\u00f3w",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112778",
+                "name": "Betoniarki",
+                "path": "Construction and Renovation\\Betoniarki",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112783",
+                "name": "Brushes, Rollers, Accessories",
+                "path": "Construction and Renovation\\Brushes, Rollers, Accessories",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "109845",
+                    "name": "Rollers",
+                    "path": "Construction and Renovation\\Brushes, Rollers, Accessories\\Rollers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107760",
+                "name": "Chisels, Chisels and Punches",
+                "path": "Construction and Renovation\\Chisels, Chisels and Punches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "110347",
+                "name": "Clamps and Handles",
+                "path": "Construction and Renovation\\Clamps and Handles",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112784",
+                "name": "Clamps, Vices and Squares",
+                "path": "Construction and Renovation\\Clamps, Vices and Squares",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107801",
+                    "name": "Angles",
+                    "path": "Construction and Renovation\\Clamps, Vices and Squares\\Angles",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107797",
+                "name": "Concrete Vibrators",
+                "path": "Construction and Renovation\\Concrete Vibrators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107762",
+                "name": "Crowbars",
+                "path": "Construction and Renovation\\Crowbars",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107761",
+                "name": "Electric Cable Winches",
+                "path": "Construction and Renovation\\Electric Cable Winches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107932",
+                "name": "Hand Saws",
+                "path": "Construction and Renovation\\Hand Saws",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "110317",
+                "name": "Ladders",
+                "path": "Construction and Renovation\\Ladders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107799",
+                "name": "Masonry Hammers",
+                "path": "Construction and Renovation\\Masonry Hammers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112528",
+                "name": "Materia\u0142y do znakowania",
+                "path": "Construction and Renovation\\Materia\u0142y do znakowania",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112558",
+                "name": "O\u015bwietlenie robocze",
+                "path": "Construction and Renovation\\O\u015bwietlenie robocze",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109773",
+                "name": "Painting Accessories",
+                "path": "Construction and Renovation\\Painting Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107800",
+                "name": "Painting Guns and Units",
+                "path": "Construction and Renovation\\Painting Guns and Units",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107798",
+                "name": "Rubber Hammers",
+                "path": "Construction and Renovation\\Rubber Hammers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107759",
+                "name": "Thermal Knives",
+                "path": "Construction and Renovation\\Thermal Knives",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112785",
+                "name": "Tile Cutting Tools and Accessories",
+                "path": "Construction and Renovation\\Tile Cutting Tools and Accessories",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "112530",
+                    "name": "Akcesoria",
+                    "path": "Construction and Renovation\\Tile Cutting Tools and Accessories\\Akcesoria",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "109751",
+                    "name": "Suction Cups",
+                    "path": "Construction and Renovation\\Tile Cutting Tools and Accessories\\Suction Cups",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112786",
+            "name": "Cutting Tools",
+            "path": "Cutting Tools",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107841",
+                "name": "Cutting and Grinding Discs",
+                "path": "Cutting Tools\\Cutting and Grinding Discs",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107842",
+                    "name": "Carbide-free Discs for Cutting Wood",
+                    "path": "Cutting Tools\\Cutting and Grinding Discs\\Carbide-free Discs for Cutting Wood",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107847",
+                    "name": "Metal Grinding Discs",
+                    "path": "Cutting Tools\\Cutting and Grinding Discs\\Metal Grinding Discs",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107846",
+                    "name": "Stainless Steel Cutting Discs",
+                    "path": "Cutting Tools\\Cutting and Grinding Discs\\Stainless Steel Cutting Discs",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107848",
+                    "name": "Stone Grinding Discs",
+                    "path": "Cutting Tools\\Cutting and Grinding Discs\\Stone Grinding Discs",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107806",
+                "name": "Diamond Tools",
+                "path": "Cutting Tools\\Diamond Tools",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107808",
+                    "name": "Diamond Core Drills",
+                    "path": "Cutting Tools\\Diamond Tools\\Diamond Core Drills",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107807",
+                    "name": "Diamond Discs for Cutting Building Materials",
+                    "path": "Cutting Tools\\Diamond Tools\\Diamond Discs for Cutting Building Materials",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "108939",
+                    "name": "M14 Diamond Hole Saws",
+                    "path": "Cutting Tools\\Diamond Tools\\M14 Diamond Hole Saws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "112787",
+                "name": "Discs With Tungsten Carbide Blade",
+                "path": "Cutting Tools\\Discs With Tungsten Carbide Blade",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107845",
+                    "name": "For Steel and Aluminum",
+                    "path": "Cutting Tools\\Discs With Tungsten Carbide Blade\\For Steel and Aluminum",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107844",
+                    "name": "For Wood",
+                    "path": "Cutting Tools\\Discs With Tungsten Carbide Blade\\For Wood",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "105492",
+                "name": "Drilling",
+                "path": "Cutting Tools\\Drilling",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "105502",
+                    "name": "Drill Bits for Stoneware, Tiles and Glass",
+                    "path": "Cutting Tools\\Drilling\\Drill Bits for Stoneware, Tiles and Glass",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "105513",
+                    "name": "Drill Sets for Metal, Wood and Concrete",
+                    "path": "Cutting Tools\\Drilling\\Drill Sets for Metal, Wood and Concrete",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107828",
+                    "name": "Drills and Impact Chisels",
+                    "path": "Cutting Tools\\Drilling\\Drills and Impact Chisels",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "108551",
+                        "name": "Hex Chisels",
+                        "path": "Cutting Tools\\Drilling\\Drills and Impact Chisels\\Hex Chisels",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107829",
+                        "name": "SDS-Max Chisels",
+                        "path": "Cutting Tools\\Drilling\\Drills and Impact Chisels\\SDS-Max Chisels",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107830",
+                        "name": "Sets",
+                        "path": "Cutting Tools\\Drilling\\Drills and Impact Chisels\\Sets",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107838",
+                    "name": "Drills for Metal",
+                    "path": "Cutting Tools\\Drilling\\Drills for Metal",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107839",
+                        "name": "Adjustable Reamers",
+                        "path": "Cutting Tools\\Drilling\\Drills for Metal\\Adjustable Reamers",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107840",
+                        "name": "Hss Metal Drill Bits",
+                        "path": "Cutting Tools\\Drilling\\Drills for Metal\\Hss Metal Drill Bits",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107961",
+                        "name": "Rotary Files for Metal, Milling Cutters",
+                        "path": "Cutting Tools\\Drilling\\Drills for Metal\\Rotary Files for Metal, Milling Cutters",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107831",
+                    "name": "Hole Saws for Drilling",
+                    "path": "Cutting Tools\\Drilling\\Hole Saws for Drilling",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "112677",
+                        "name": "Otwornice diamentowe",
+                        "path": "Cutting Tools\\Drilling\\Hole Saws for Drilling\\Otwornice diamentowe",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "105499",
+                    "name": "Stone Drills",
+                    "path": "Cutting Tools\\Drilling\\Stone Drills",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "105498",
+                    "name": "Wood Drills",
+                    "path": "Cutting Tools\\Drilling\\Wood Drills",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107833",
+                        "name": null,
+                        "path": "Cutting Tools\\Drilling\\Wood Drills\\Twist Drills",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107832",
+                        "name": "Drills for Holes for Hinges",
+                        "path": "Cutting Tools\\Drilling\\Wood Drills\\Drills for Holes for Hinges",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107837",
+                        "name": "Sedniki",
+                        "path": "Cutting Tools\\Drilling\\Wood Drills\\Sedniki",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107835",
+                        "name": "Spatula Drills for Wood",
+                        "path": "Cutting Tools\\Drilling\\Wood Drills\\Spatula Drills for Wood",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107836",
+                        "name": "Wood Cutters",
+                        "path": "Cutting Tools\\Drilling\\Wood Drills\\Wood Cutters",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "109791",
+                "name": "Files",
+                "path": "Cutting Tools\\Files",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107809",
+                "name": "Knives and Blades",
+                "path": "Cutting Tools\\Knives and Blades",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107811",
+                    "name": "Blades",
+                    "path": "Cutting Tools\\Knives and Blades\\Blades",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107810",
+                    "name": "Knives With A Retractable Blade",
+                    "path": "Cutting Tools\\Knives and Blades\\Knives With A Retractable Blade",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "105385",
+                "name": "Leather Piercers",
+                "path": "Cutting Tools\\Leather Piercers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107805",
+                "name": "Punching and Sewing Machines",
+                "path": "Cutting Tools\\Punching and Sewing Machines",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105582",
+                "name": "Reductions for Discs",
+                "path": "Cutting Tools\\Reductions for Discs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107943",
+                "name": "Saws and Saw Blades",
+                "path": "Cutting Tools\\Saws and Saw Blades",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107948",
+                    "name": "Accessories for Multi-functional Oscillating Tools",
+                    "path": "Cutting Tools\\Saws and Saw Blades\\Accessories for Multi-functional Oscillating Tools",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107945",
+                    "name": "Jigsaw Blades",
+                    "path": "Cutting Tools\\Saws and Saw Blades\\Jigsaw Blades",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107944",
+                    "name": "Saw Blades",
+                    "path": "Cutting Tools\\Saws and Saw Blades\\Saw Blades",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107947",
+                    "name": "Saws for Aerated Concrete",
+                    "path": "Cutting Tools\\Saws and Saw Blades\\Saws for Aerated Concrete",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107946",
+                    "name": "Wood Saws",
+                    "path": "Cutting Tools\\Saws and Saw Blades\\Wood Saws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107827",
+                "name": "Shears",
+                "path": "Cutting Tools\\Shears",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105512",
+                "name": "The Other",
+                "path": "Cutting Tools\\The Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112788",
+                "name": "Threading Tools",
+                "path": "Cutting Tools\\Threading Tools",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "105484",
+                    "name": "Calibrators and Taps",
+                    "path": "Cutting Tools\\Threading Tools\\Calibrators and Taps",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "105485",
+                    "name": "Extractors for Broken Screws",
+                    "path": "Cutting Tools\\Threading Tools\\Extractors for Broken Screws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107712",
+            "name": "Garden",
+            "path": "Garden",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107751",
+                "name": "Combustion Water Pumps",
+                "path": "Garden\\Combustion Water Pumps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107755",
+                "name": "Dirty Water Pumps",
+                "path": "Garden\\Dirty Water Pumps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107758",
+                "name": "Electric Motors",
+                "path": "Garden\\Electric Motors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107746",
+                "name": "Forks and Rakes",
+                "path": "Garden\\Forks and Rakes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107748",
+                "name": "Garden Hoses",
+                "path": "Garden\\Garden Hoses",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107752",
+                "name": "Garden Pumps",
+                "path": "Garden\\Garden Pumps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109846",
+                "name": "Grills and Accessories",
+                "path": "Garden\\Grills and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107744",
+                "name": "Hose Trolleys and Stands",
+                "path": "Garden\\Hose Trolleys and Stands",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "110071",
+                "name": "Lighting",
+                "path": "Garden\\Lighting",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112777",
+                "name": "Ma\u0142e narz\u0119dzia ogrodnicze",
+                "path": "Garden\\Ma\u0142e narz\u0119dzia ogrodnicze",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107757",
+                "name": "Mowing",
+                "path": "Garden\\Mowing",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107895",
+                "name": "Ponds",
+                "path": "Garden\\Ponds",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107749",
+                "name": "Power Take-off Shafts",
+                "path": "Garden\\Power Take-off Shafts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107753",
+                "name": "Pumps and Hydrophore Sets",
+                "path": "Garden\\Pumps and Hydrophore Sets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109632",
+                "name": "Seeders",
+                "path": "Garden\\Seeders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107745",
+                "name": "Soil Drilling Rigs",
+                "path": "Garden\\Soil Drilling Rigs",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107754",
+                "name": "Submersible Pumps",
+                "path": "Garden\\Submersible Pumps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107750",
+                "name": "Submersible Pumps for Clean Water",
+                "path": "Garden\\Submersible Pumps for Clean Water",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107742",
+                "name": "The Other",
+                "path": "Garden\\The Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107897",
+                "name": "Trimming",
+                "path": "Garden\\Trimming",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107886",
+                "name": "Trimming and Cutting",
+                "path": "Garden\\Trimming and Cutting",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "112789",
+                    "name": "Axes",
+                    "path": "Garden\\Trimming and Cutting\\Axes",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "109370",
+                        "name": "Wedges",
+                        "path": "Garden\\Trimming and Cutting\\Axes\\Wedges",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107890",
+                    "name": "Branch Shears",
+                    "path": "Garden\\Trimming and Cutting\\Branch Shears",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107894",
+                    "name": "Cordless Grass and Shrub Shears",
+                    "path": "Garden\\Trimming and Cutting\\Cordless Grass and Shrub Shears",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107891",
+                    "name": "Electric and Petrol Hedge Trimmers",
+                    "path": "Garden\\Trimming and Cutting\\Electric and Petrol Hedge Trimmers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107888",
+                    "name": "Garden Saws",
+                    "path": "Garden\\Trimming and Cutting\\Garden Saws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107887",
+                    "name": "Garden Secateurs",
+                    "path": "Garden\\Trimming and Cutting\\Garden Secateurs",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107893",
+                    "name": "Manual Grass Shears",
+                    "path": "Garden\\Trimming and Cutting\\Manual Grass Shears",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107892",
+                    "name": "Manual Hedge Trimmer",
+                    "path": "Garden\\Trimming and Cutting\\Manual Hedge Trimmer",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107889",
+                    "name": "Saws With A Telescopic Handle",
+                    "path": "Garden\\Trimming and Cutting\\Saws With A Telescopic Handle",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107747",
+                "name": "Webbing Fire Hoses, Pvc",
+                "path": "Garden\\Webbing Fire Hoses, Pvc",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107896",
+                "name": "Weed Heat Guns",
+                "path": "Garden\\Weed Heat Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112790",
+                "name": "Wheels for Wheelbarrows and Carts",
+                "path": "Garden\\Wheels for Wheelbarrows and Carts",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107937",
+                    "name": "Tires and Inner Tubes",
+                    "path": "Garden\\Wheels for Wheelbarrows and Carts\\Tires and Inner Tubes",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107936",
+                    "name": "Wheels",
+                    "path": "Garden\\Wheels for Wheelbarrows and Carts\\Wheels",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "105632",
+            "name": "Health and Safety Articles",
+            "path": "Health and Safety Articles",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "106002",
+                "name": "Eye Protection",
+                "path": "Health and Safety Articles\\Eye Protection",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106001",
+                "name": "Hearing Protection",
+                "path": "Health and Safety Articles\\Hearing Protection",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112601",
+                "name": "Kaski",
+                "path": "Health and Safety Articles\\Kaski",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106005",
+                "name": "Knee Protection",
+                "path": "Health and Safety Articles\\Knee Protection",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106003",
+                "name": "Protective Masks",
+                "path": "Health and Safety Articles\\Protective Masks",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106929",
+                "name": "Rainwear",
+                "path": "Health and Safety Articles\\Rainwear",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106928",
+                "name": "Reflective Vests",
+                "path": "Health and Safety Articles\\Reflective Vests",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106000",
+                "name": "Work Clothes",
+                "path": "Health and Safety Articles\\Work Clothes",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107962",
+                    "name": "Jackets",
+                    "path": "Health and Safety Articles\\Work Clothes\\Jackets",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "106006",
+                    "name": "Polo Shirts",
+                    "path": "Health and Safety Articles\\Work Clothes\\Polo Shirts",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "106238",
+                    "name": "Sweatshirts",
+                    "path": "Health and Safety Articles\\Work Clothes\\Sweatshirts",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "106007",
+                    "name": "T-shirts",
+                    "path": "Health and Safety Articles\\Work Clothes\\T-shirts",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "106239",
+                    "name": "Work Trousers",
+                    "path": "Health and Safety Articles\\Work Clothes\\Work Trousers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "106004",
+                "name": "Work Gloves",
+                "path": "Health and Safety Articles\\Work Gloves",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105999",
+                "name": "Work Shoes",
+                "path": "Health and Safety Articles\\Work Shoes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107707",
+            "name": "Heaters and Radiators",
+            "path": "Heaters and Radiators",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107791",
+                "name": "Electric Heaters",
+                "path": "Heaters and Radiators\\Electric Heaters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107792",
+                "name": "Gas Heaters",
+                "path": "Heaters and Radiators\\Gas Heaters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107794",
+                "name": "Gas Radiators",
+                "path": "Heaters and Radiators\\Gas Radiators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107793",
+                "name": "Oil Heaters",
+                "path": "Heaters and Radiators\\Oil Heaters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "106411",
+            "name": "Household Items",
+            "path": "Household Items",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107741",
+                "name": "Animal Clippers",
+                "path": "Household Items\\Animal Clippers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107740",
+                "name": "Cleaning Devices",
+                "path": "Household Items\\Cleaning Devices",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "108376",
+                "name": "Electric Heaters",
+                "path": "Household Items\\Electric Heaters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107614",
+                "name": "Fans",
+                "path": "Household Items\\Fans",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109133",
+                "name": "Garbage Bags",
+                "path": "Household Items\\Garbage Bags",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109752",
+                "name": "GSM Accessories",
+                "path": "Household Items\\GSM Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107960",
+                "name": "Insect and Rodent Repellents",
+                "path": "Household Items\\Insect and Rodent Repellents",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107613",
+                "name": "Kitchen and Bathroom Scales",
+                "path": "Household Items\\Kitchen and Bathroom Scales",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109132",
+                "name": "Other",
+                "path": "Household Items\\Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107615",
+                "name": "Safes and Boxes",
+                "path": "Household Items\\Safes and Boxes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112791",
+            "name": "Joining Tools",
+            "path": "Joining Tools",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "105337",
+                "name": "Carpentry Clamps",
+                "path": "Joining Tools\\Carpentry Clamps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107772",
+                "name": "Foam Guns",
+                "path": "Joining Tools\\Foam Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107773",
+                "name": "Glue Guns and Cartridges",
+                "path": "Joining Tools\\Glue Guns and Cartridges",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105315",
+                "name": "Mass Squeezers",
+                "path": "Joining Tools\\Mass Squeezers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107957",
+                "name": "Padlocks",
+                "path": "Joining Tools\\Padlocks",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105338",
+                "name": "Riveters",
+                "path": "Joining Tools\\Riveters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105602",
+                "name": "Soldering Irons",
+                "path": "Joining Tools\\Soldering Irons",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105340",
+                "name": "Staplers",
+                "path": "Joining Tools\\Staplers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105339",
+                "name": "Tapes",
+                "path": "Joining Tools\\Tapes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105595",
+                "name": "Torches and Soldering Irons",
+                "path": "Joining Tools\\Torches and Soldering Irons",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107958",
+                "name": "Towing and Safety Ropes",
+                "path": "Joining Tools\\Towing and Safety Ropes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105332",
+                "name": "Transport Lines",
+                "path": "Joining Tools\\Transport Lines",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112792",
+            "name": "Laser Tools",
+            "path": "Laser Tools",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107769",
+                "name": "Cross Line Lasers",
+                "path": "Laser Tools\\Cross Line Lasers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107770",
+                "name": "Laser Levels",
+                "path": "Laser Tools\\Laser Levels",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107771",
+                "name": "Profile Detectors",
+                "path": "Laser Tools\\Profile Detectors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107768",
+                "name": "Rangefinders",
+                "path": "Laser Tools\\Rangefinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107704",
+            "name": "Measuring Tools",
+            "path": "Measuring Tools",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107766",
+                "name": "Comb Gauges for Threads",
+                "path": "Measuring Tools\\Comb Gauges for Threads",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107767",
+                "name": "Feeler Gauges",
+                "path": "Measuring Tools\\Feeler Gauges",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107764",
+                "name": "Long Rolled Measures",
+                "path": "Measuring Tools\\Long Rolled Measures",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "108074",
+                "name": "Roll-up Rulers",
+                "path": "Measuring Tools\\Roll-up Rulers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112793",
+                "name": "Vernier and Electronic Calipers",
+                "path": "Measuring Tools\\Vernier and Electronic Calipers",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "108076",
+                    "name": "Analog",
+                    "path": "Measuring Tools\\Vernier and Electronic Calipers\\Analog",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "108077",
+                    "name": "Electronic",
+                    "path": "Measuring Tools\\Vernier and Electronic Calipers\\Electronic",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107765",
+                "name": "Voltage Testers",
+                "path": "Measuring Tools\\Voltage Testers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112602",
+                "name": "Wagi",
+                "path": "Measuring Tools\\Wagi",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112794",
+            "name": "Pneumatics",
+            "path": "Pneumatics",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107775",
+                "name": "Air Hammers and Accessories",
+                "path": "Pneumatics\\Air Hammers and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105351",
+                "name": "Blowing and Cleaning Guns",
+                "path": "Pneumatics\\Blowing and Cleaning Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107942",
+                "name": "Impact Wrenches",
+                "path": "Pneumatics\\Impact Wrenches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107951",
+                "name": "Oil and Oil-free Compressors",
+                "path": "Pneumatics\\Oil and Oil-free Compressors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107777",
+                "name": "Oils for Compressors",
+                "path": "Pneumatics\\Oils for Compressors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105357",
+                "name": "Paint Guns and Accessories",
+                "path": "Pneumatics\\Paint Guns and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107039",
+                "name": "Pneumatic Grinders and Accessories",
+                "path": "Pneumatics\\Pneumatic Grinders and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112795",
+                "name": "Pneumatic Installation Accessories",
+                "path": "Pneumatics\\Pneumatic Installation Accessories",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107780",
+                    "name": "Filters, Reducers and Lubricators",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Filters, Reducers and Lubricators",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107940",
+                    "name": "Polyurethane Straight Hoses",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Polyurethane Straight Hoses",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107938",
+                    "name": "Quick Connectors, Hose Connectors",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Quick Connectors, Hose Connectors",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107783",
+                    "name": "Reinforced Hoses",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Reinforced Hoses",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107939",
+                    "name": "Reinforced Technical Hoses",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Reinforced Technical Hoses",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107781",
+                    "name": "Rubber Hoses",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Rubber Hoses",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107782",
+                    "name": "Spiral Hoses",
+                    "path": "Pneumatics\\Pneumatic Installation Accessories\\Spiral Hoses",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107778",
+                "name": "Pneumatic Lubricators",
+                "path": "Pneumatics\\Pneumatic Lubricators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107941",
+                "name": "Pneumatic Ratchets",
+                "path": "Pneumatics\\Pneumatic Ratchets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107776",
+                "name": "Pneumatic Riveters",
+                "path": "Pneumatics\\Pneumatic Riveters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107779",
+                "name": "Pneumatic Staplers and Nailers",
+                "path": "Pneumatics\\Pneumatic Staplers and Nailers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107784",
+                "name": "Pneumatic Tool Sets",
+                "path": "Pneumatics\\Pneumatic Tool Sets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105355",
+                "name": "Sandblasting Guns",
+                "path": "Pneumatics\\Sandblasting Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107047",
+                "name": "Tire Inflation Guns",
+                "path": "Pneumatics\\Tire Inflation Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "105277",
+            "name": "Power Tools",
+            "path": "Power Tools",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107040",
+                "name": "Angle Grinders and Metal Processing",
+                "path": "Power Tools\\Angle Grinders and Metal Processing",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107824",
+                    "name": "Angle Grinders",
+                    "path": "Power Tools\\Angle Grinders and Metal Processing\\Angle Grinders",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107954",
+                    "name": "Car Polishers",
+                    "path": "Power Tools\\Angle Grinders and Metal Processing\\Car Polishers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107823",
+                    "name": "Shears",
+                    "path": "Power Tools\\Angle Grinders and Metal Processing\\Shears",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107822",
+                    "name": "Straight Grinders",
+                    "path": "Power Tools\\Angle Grinders and Metal Processing\\Straight Grinders",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "105284",
+                "name": "Bench Drills",
+                "path": "Power Tools\\Bench Drills",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106217",
+                "name": "Bench Grinders",
+                "path": "Power Tools\\Bench Grinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106039",
+                "name": "Cordless Power Tools",
+                "path": "Power Tools\\Cordless Power Tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107821",
+                "name": "Detail Grinders",
+                "path": "Power Tools\\Detail Grinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107868",
+                "name": "Drill Accessories",
+                "path": "Power Tools\\Drill Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107041",
+                "name": "Grinders for Plaster and Plaster",
+                "path": "Power Tools\\Grinders for Plaster and Plaster",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105842",
+                "name": "Heat Guns",
+                "path": "Power Tools\\Heat Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107048",
+                "name": "Impact Drills",
+                "path": "Power Tools\\Impact Drills",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105289",
+                "name": "Other Power Tools",
+                "path": "Power Tools\\Other Power Tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105285",
+                "name": "Screwdrivers and Impact Wrenches",
+                "path": "Power Tools\\Screwdrivers and Impact Wrenches",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "112676",
+                    "name": "Bity i akcesoria",
+                    "path": "Power Tools\\Screwdrivers and Impact Wrenches\\Bity i akcesoria",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107813",
+                "name": "SDS-Plus Hammer Drills",
+                "path": "Power Tools\\SDS-Plus Hammer Drills",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107820",
+                "name": "Sharpeners for Discs, Drills and Knives",
+                "path": "Power Tools\\Sharpeners for Discs, Drills and Knives",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112796",
+                "name": "Spare Parts for Power Tools",
+                "path": "Power Tools\\Spare Parts for Power Tools",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107045",
+                    "name": "Gears",
+                    "path": "Power Tools\\Spare Parts for Power Tools\\Gears",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107952",
+                    "name": "Rotors",
+                    "path": "Power Tools\\Spare Parts for Power Tools\\Rotors",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107812",
+                "name": "Stationary Equipment",
+                "path": "Power Tools\\Stationary Equipment",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107825",
+                "name": "Wood and Leather Burners",
+                "path": "Power Tools\\Wood and Leather Burners",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107814",
+                "name": "Wood Processing",
+                "path": "Power Tools\\Wood Processing",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107818",
+                    "name": "Jigsaws",
+                    "path": "Power Tools\\Wood Processing\\Jigsaws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107819",
+                    "name": "Multifunctional Oscillating Tools",
+                    "path": "Power Tools\\Wood Processing\\Multifunctional Oscillating Tools",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107815",
+                    "name": "Orbital Sanders",
+                    "path": "Power Tools\\Wood Processing\\Orbital Sanders",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107817",
+                    "name": "Planers and Routers",
+                    "path": "Power Tools\\Wood Processing\\Planers and Routers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107953",
+                    "name": "Saws and Saws",
+                    "path": "Power Tools\\Wood Processing\\Saws and Saws",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "100017",
+            "name": "Service Parts",
+            "path": "Service Parts",
+            "directProductCount": 0,
+            "children": [],
+            "productCount": 0
+          },
+          {
+            "id": "100018",
+            "name": "Spare Parts",
+            "path": "Spare Parts",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "112779",
+                "name": null,
+                "path": "Spare Parts\\Betoniarki",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "110869",
+                "name": null,
+                "path": "Spare Parts\\Pi\u0142y ukosowe",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106728",
+                "name": "4in1 Trimmer",
+                "path": "Spare Parts\\4in1 Trimmer",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105642",
+                "name": "Angle Grinders",
+                "path": "Spare Parts\\Angle Grinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105661",
+                "name": "Bench Drills",
+                "path": "Spare Parts\\Bench Drills",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105902",
+                "name": "Branch Shredders",
+                "path": "Spare Parts\\Branch Shredders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105270",
+                "name": "Cabin and Siphon Sandblasters",
+                "path": "Spare Parts\\Cabin and Siphon Sandblasters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105269",
+                "name": "Car Polishers",
+                "path": "Spare Parts\\Car Polishers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105641",
+                "name": "Combustion Augers",
+                "path": "Spare Parts\\Combustion Augers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105654",
+                "name": "Combustion Blowers",
+                "path": "Spare Parts\\Combustion Blowers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105274",
+                "name": "Combustion Engines",
+                "path": "Spare Parts\\Combustion Engines",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105271",
+                "name": "Combustion Sprayers",
+                "path": "Spare Parts\\Combustion Sprayers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106916",
+                "name": "Compactors",
+                "path": "Spare Parts\\Compactors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105262",
+                "name": "Compressors",
+                "path": "Spare Parts\\Compressors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105841",
+                "name": "Cordless Tools",
+                "path": "Spare Parts\\Cordless Tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112318",
+                "name": "Cz\u0119\u015bci zamienne do przetwornic napi\u0119cia",
+                "path": "Spare Parts\\Cz\u0119\u015bci zamienne do przetwornic napi\u0119cia",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106018",
+                "name": "Electric Impact Wrenches",
+                "path": "Spare Parts\\Electric Impact Wrenches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106397",
+                "name": "Electric Lawn Mowers",
+                "path": "Spare Parts\\Electric Lawn Mowers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106448",
+                "name": "Electric Plane",
+                "path": "Spare Parts\\Electric Plane",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "108637",
+                "name": "Electric Saws",
+                "path": "Spare Parts\\Electric Saws",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105273",
+                "name": "Electric Winches",
+                "path": "Spare Parts\\Electric Winches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105634",
+                "name": "Heaters",
+                "path": "Spare Parts\\Heaters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105266",
+                "name": "Hydraulic Lifts",
+                "path": "Spare Parts\\Hydraulic Lifts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105275",
+                "name": "Hydraulic Presses",
+                "path": "Spare Parts\\Hydraulic Presses",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105272",
+                "name": "Hydraulic Pullers",
+                "path": "Spare Parts\\Hydraulic Pullers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107963",
+                "name": "Impact Drills",
+                "path": "Spare Parts\\Impact Drills",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105643",
+                "name": "Jigsaws for Wood",
+                "path": "Spare Parts\\Jigsaws for Wood",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105645",
+                "name": "Motor Pumps",
+                "path": "Spare Parts\\Motor Pumps",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107966",
+                "name": "Orbital Sanders",
+                "path": "Spare Parts\\Orbital Sanders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105276",
+                "name": "Other",
+                "path": "Spare Parts\\Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105659",
+                "name": "Parts for Electric Heat Guns",
+                "path": "Spare Parts\\Parts for Electric Heat Guns",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105658",
+                "name": "Parts for Knives for Cutting Styrofoam",
+                "path": "Spare Parts\\Parts for Knives for Cutting Styrofoam",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105774",
+                "name": "Parts for Power Generators",
+                "path": "Spare Parts\\Parts for Power Generators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107551",
+                "name": "Parts for Toilet Pump",
+                "path": "Spare Parts\\Parts for Toilet Pump",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105264",
+                "name": "Petrol Lawn Mowers",
+                "path": "Spare Parts\\Petrol Lawn Mowers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105652",
+                "name": "Petrol Saws",
+                "path": "Spare Parts\\Petrol Saws",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105655",
+                "name": "Petrol Tillers",
+                "path": "Spare Parts\\Petrol Tillers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105663",
+                "name": "Plaster Grinders",
+                "path": "Spare Parts\\Plaster Grinders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105265",
+                "name": "Plasterboard Lifter",
+                "path": "Spare Parts\\Plasterboard Lifter",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105268",
+                "name": "Power Transmitter Shafts",
+                "path": "Spare Parts\\Power Transmitter Shafts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105288",
+                "name": "Reciprocating Saws",
+                "path": "Spare Parts\\Reciprocating Saws",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105644",
+                "name": "Renovators",
+                "path": "Spare Parts\\Renovators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107575",
+                "name": "Vacuum Cleaner Parts",
+                "path": "Spare Parts\\Vacuum Cleaner Parts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105267",
+                "name": "Welders and Mig Machines",
+                "path": "Spare Parts\\Welders and Mig Machines",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107709",
+            "name": "Tools for Electricians",
+            "path": "Tools for Electricians",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107790",
+                "name": "Crimping Pliers and Sets",
+                "path": "Tools for Electricians\\Crimping Pliers and Sets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107796",
+                "name": "Electric Meters",
+                "path": "Tools for Electricians\\Electric Meters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "109382",
+                "name": "Electrical Quick Connectors",
+                "path": "Tools for Electricians\\Electrical Quick Connectors",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107795",
+                "name": "Heat Shrink Tubing",
+                "path": "Tools for Electricians\\Heat Shrink Tubing",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107789",
+                "name": "Insulating Materials",
+                "path": "Tools for Electricians\\Insulating Materials",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107956",
+                "name": "Insulation Strippers",
+                "path": "Tools for Electricians\\Insulation Strippers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112797",
+            "name": "Tools for Plumbers",
+            "path": "Tools for Plumbers",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "105476",
+                "name": "Circulation Pumps for Central Heating and Hot Water",
+                "path": "Tools for Plumbers\\Circulation Pumps for Central Heating and Hot Water",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107803",
+                "name": "Edge Wrenches",
+                "path": "Tools for Plumbers\\Edge Wrenches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105325",
+                "name": "Hydraulic Pipe Benders",
+                "path": "Tools for Plumbers\\Hydraulic Pipe Benders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105281",
+                "name": "Pipe and Plastic Welders",
+                "path": "Tools for Plumbers\\Pipe and Plastic Welders",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107802",
+                "name": "Pipe Crimpers and Accessories",
+                "path": "Tools for Plumbers\\Pipe Crimpers and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105327",
+                "name": "Pipe Cutters",
+                "path": "Tools for Plumbers\\Pipe Cutters",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105326",
+                "name": "Pipe Threaders and Accessories",
+                "path": "Tools for Plumbers\\Pipe Threaders and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105328",
+                "name": "Pipe Wrenches",
+                "path": "Tools for Plumbers\\Pipe Wrenches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105329",
+                "name": "Spirals for Unblocking Pipes",
+                "path": "Tools for Plumbers\\Spirals for Unblocking Pipes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105300",
+                "name": "The Other",
+                "path": "Tools for Plumbers\\The Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107804",
+                "name": "Tools for PEX, PERT Pipes",
+                "path": "Tools for Plumbers\\Tools for PEX, PERT Pipes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107070",
+            "name": "Tools for The Workshop and Garage",
+            "path": "Tools for The Workshop and Garage",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "107326",
+                "name": "Bags, Tool Backpacks",
+                "path": "Tools for The Workshop and Garage\\Bags, Tool Backpacks",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107715",
+                "name": "Car Accessories",
+                "path": "Tools for The Workshop and Garage\\Car Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112798",
+                "name": "Car Lifts",
+                "path": "Tools for The Workshop and Garage\\Car Lifts",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107919",
+                    "name": "Car Ramps",
+                    "path": "Tools for The Workshop and Garage\\Car Lifts\\Car Ramps",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "112799",
+                "name": "Consumables",
+                "path": "Tools for The Workshop and Garage\\Consumables",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "108506",
+                    "name": "Zippers",
+                    "path": "Tools for The Workshop and Garage\\Consumables\\Zippers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107716",
+                "name": "Electric and Manual Winches",
+                "path": "Tools for The Workshop and Garage\\Electric and Manual Winches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107733",
+                "name": "Embossing Tools",
+                "path": "Tools for The Workshop and Garage\\Embossing Tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "112800",
+                "name": "Fuel Handling and Distribution",
+                "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107877",
+                    "name": "Accessories, Equipment",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Accessories, Equipment",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107873",
+                    "name": "Barrel Pumps",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Barrel Pumps",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107876",
+                    "name": "Counters",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Counters",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107875",
+                    "name": "Electric Fuel and Adblue Pumps",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Electric Fuel and Adblue Pumps",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107870",
+                    "name": "Fuel Filling Guns",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Fuel Filling Guns",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107874",
+                    "name": "Manual Fuel Pumps",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Manual Fuel Pumps",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107871",
+                    "name": "Mini Cpn Distributors",
+                    "path": "Tools for The Workshop and Garage\\Fuel Handling and Distribution\\Mini Cpn Distributors",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107881",
+                "name": "General Mechanical Tools",
+                "path": "Tools for The Workshop and Garage\\General Mechanical Tools",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107930",
+                    "name": "Thread Repair",
+                    "path": "Tools for The Workshop and Garage\\General Mechanical Tools\\Thread Repair",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107882",
+                    "name": "Wrenches",
+                    "path": "Tools for The Workshop and Garage\\General Mechanical Tools\\Wrenches",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107883",
+                        "name": "Box Wrenches",
+                        "path": "Tools for The Workshop and Garage\\General Mechanical Tools\\Wrenches\\Box Wrenches",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107884",
+                        "name": "Double-ended Open-end Wrenches",
+                        "path": "Tools for The Workshop and Garage\\General Mechanical Tools\\Wrenches\\Double-ended Open-end Wrenches",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107732",
+                "name": "Load Securing",
+                "path": "Tools for The Workshop and Garage\\Load Securing",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107920",
+                "name": "Lubricators",
+                "path": "Tools for The Workshop and Garage\\Lubricators",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107826",
+                "name": "Others",
+                "path": "Tools for The Workshop and Garage\\Others",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107878",
+                "name": "Pneumatic Tools",
+                "path": "Tools for The Workshop and Garage\\Pneumatic Tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107787",
+                "name": "Service Carts",
+                "path": "Tools for The Workshop and Garage\\Service Carts",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107785",
+                "name": "Service Equipment",
+                "path": "Tools for The Workshop and Garage\\Service Equipment",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107917",
+                    "name": "Assembly Aids",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Assembly Aids",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107918",
+                        "name": "Motorcycle Lifts",
+                        "path": "Tools for The Workshop and Garage\\Service Equipment\\Assembly Aids\\Motorcycle Lifts",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107929",
+                    "name": "Diagnostics",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Diagnostics",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107914",
+                    "name": "Hydraulic Spreaders",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Hydraulic Spreaders",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "112577",
+                    "name": "Optyka",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Optyka",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107949",
+                    "name": "Pumps and Air Compressors",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Pumps and Air Compressors",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107964",
+                    "name": "Rectifiers",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Rectifiers",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107786",
+                    "name": "Starting Devices",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Starting Devices",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "112801",
+                    "name": "Tools for Oil Service",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Tools for Oil Service",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107906",
+                        "name": "Oil Drain Wrenches",
+                        "path": "Tools for The Workshop and Garage\\Service Equipment\\Tools for Oil Service\\Oil Drain Wrenches",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107905",
+                        "name": "Oil Filter Wrenches and Kits",
+                        "path": "Tools for The Workshop and Garage\\Service Equipment\\Tools for Oil Service\\Oil Filter Wrenches and Kits",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107907",
+                        "name": "Oilers",
+                        "path": "Tools for The Workshop and Garage\\Service Equipment\\Tools for Oil Service\\Oilers",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107950",
+                    "name": "Tools for Wheels and Tires",
+                    "path": "Tools for The Workshop and Garage\\Service Equipment\\Tools for Wheels and Tires",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107718",
+                "name": "Socket Wrenches and Accessories",
+                "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107729",
+                    "name": "Accessories",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Accessories",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107725",
+                    "name": "Impact Sockets and Accessories",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Impact Sockets and Accessories",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107727",
+                    "name": "L-type Socket Wrenches",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\L-type Socket Wrenches",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107728",
+                    "name": "Ratchets and Knobs",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Ratchets and Knobs",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107931",
+                    "name": "Sockets",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Sockets",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "108738",
+                        "name": "0.75\" Drive",
+                        "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Sockets\\0.75\" Drive",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107726",
+                    "name": "Special Sockets",
+                    "path": "Tools for The Workshop and Garage\\Socket Wrenches and Accessories\\Special Sockets",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107898",
+                "name": "Specialized Tools for Vehicles",
+                "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107899",
+                    "name": "Battery Maintenance Tools",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Battery Maintenance Tools",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107901",
+                        "name": "Battery Testers",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Battery Maintenance Tools\\Battery Testers",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107900",
+                        "name": "Jumper Cables",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Battery Maintenance Tools\\Jumper Cables",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "112802",
+                    "name": "Chassis Repair Tools",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107913",
+                        "name": "Braking System Tools",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools\\Braking System Tools",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107911",
+                        "name": "Maintenance Guns",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools\\Maintenance Guns",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107910",
+                        "name": "Pullers for Pulleys, Hubs and Bearings",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools\\Pullers for Pulleys, Hubs and Bearings",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107909",
+                        "name": "Steering and Axle Tools",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools\\Steering and Axle Tools",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107912",
+                        "name": "Suspension Tools",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Chassis Repair Tools\\Suspension Tools",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107904",
+                    "name": "Clutch and Gearbox Tools",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Clutch and Gearbox Tools",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "112803",
+                    "name": "Engine Maintenance Tools",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Engine Maintenance Tools",
+                    "directProductCount": 0,
+                    "children": [
+                      {
+                        "id": "107928",
+                        "name": "Engine Diagnostics",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Engine Maintenance Tools\\Engine Diagnostics",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      },
+                      {
+                        "id": "107965",
+                        "name": "Engine Timing Locks",
+                        "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Engine Maintenance Tools\\Engine Timing Locks",
+                        "directProductCount": 0,
+                        "children": [],
+                        "productCount": 0
+                      }
+                    ],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107902",
+                    "name": "Exhaust Tools",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Exhaust Tools",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107915",
+                    "name": "Tools for Air Conditioning and Cooling System",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Tools for Air Conditioning and Cooling System",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107903",
+                    "name": "Tools for Car Windows",
+                    "path": "Tools for The Workshop and Garage\\Specialized Tools for Vehicles\\Tools for Car Windows",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "112804",
+                "name": "Tool Cabinets and Tool Sets",
+                "path": "Tools for The Workshop and Garage\\Tool Cabinets and Tool Sets",
+                "directProductCount": 0,
+                "children": [
+                  {
+                    "id": "107923",
+                    "name": "Cabinets With Equipment",
+                    "path": "Tools for The Workshop and Garage\\Tool Cabinets and Tool Sets\\Cabinets With Equipment",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107922",
+                    "name": "Cabinets Without Equipment",
+                    "path": "Tools for The Workshop and Garage\\Tool Cabinets and Tool Sets\\Cabinets Without Equipment",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107924",
+                    "name": "Modules With Tools",
+                    "path": "Tools for The Workshop and Garage\\Tool Cabinets and Tool Sets\\Modules With Tools",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  },
+                  {
+                    "id": "107926",
+                    "name": "Tool Boxes and Cases",
+                    "path": "Tools for The Workshop and Garage\\Tool Cabinets and Tool Sets\\Tool Boxes and Cases",
+                    "directProductCount": 0,
+                    "children": [],
+                    "productCount": 0
+                  }
+                ],
+                "productCount": 0
+              },
+              {
+                "id": "107717",
+                "name": "Torque Wrenches",
+                "path": "Tools for The Workshop and Garage\\Torque Wrenches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107731",
+                "name": "Tow Ropes",
+                "path": "Tools for The Workshop and Garage\\Tow Ropes",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107788",
+                "name": "Transport Trolleys",
+                "path": "Tools for The Workshop and Garage\\Transport Trolleys",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "108344",
+                "name": "Wheel Sets",
+                "path": "Tools for The Workshop and Garage\\Wheel Sets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107921",
+                "name": "Workshop Tables and Shelves",
+                "path": "Tools for The Workshop and Garage\\Workshop Tables and Shelves",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "112805",
+            "name": "Tourist Equipment and Accessories",
+            "path": "Tourist Equipment and Accessories",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "110729",
+                "name": "Akcesoria rowerowe",
+                "path": "Tourist Equipment and Accessories\\Akcesoria rowerowe",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107735",
+                "name": "Car Coolers",
+                "path": "Tourist Equipment and Accessories\\Car Coolers",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107736",
+                "name": "Multi-tools",
+                "path": "Tourist Equipment and Accessories\\Multi-tools",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107737",
+                "name": "Portable Gas Stoves",
+                "path": "Tourist Equipment and Accessories\\Portable Gas Stoves",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107738",
+                "name": "The Other",
+                "path": "Tourist Equipment and Accessories\\The Other",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          },
+          {
+            "id": "107706",
+            "name": "Vacuum Cleaners",
+            "path": "Vacuum Cleaners",
+            "directProductCount": 0,
+            "children": [],
+            "productCount": 0
+          },
+          {
+            "id": "112806",
+            "name": "Welding Equipment and Accessories",
+            "path": "Welding Equipment and Accessories",
+            "directProductCount": 0,
+            "children": [
+              {
+                "id": "105614",
+                "name": "Accessories for Welding Machines",
+                "path": "Welding Equipment and Accessories\\Accessories for Welding Machines",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105612",
+                "name": "Electrodes Covered",
+                "path": "Welding Equipment and Accessories\\Electrodes Covered",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105610",
+                "name": "MIG MAG Devices",
+                "path": "Welding Equipment and Accessories\\MIG MAG Devices",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105611",
+                "name": "MMA Devices",
+                "path": "Welding Equipment and Accessories\\MMA Devices",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "107774",
+                "name": "Multi-process Devices",
+                "path": "Welding Equipment and Accessories\\Multi-process Devices",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105616",
+                "name": "Roofing Gas Burners and Accessories",
+                "path": "Welding Equipment and Accessories\\Roofing Gas Burners and Accessories",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "106385",
+                "name": "Torches and Blowtorches",
+                "path": "Welding Equipment and Accessories\\Torches and Blowtorches",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105608",
+                "name": "Welding Masks and Helmets",
+                "path": "Welding Equipment and Accessories\\Welding Masks and Helmets",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              },
+              {
+                "id": "105613",
+                "name": "Welding Wires",
+                "path": "Welding Equipment and Accessories\\Welding Wires",
+                "directProductCount": 0,
+                "children": [],
+                "productCount": 0
+              }
+            ],
+            "productCount": 0
+          }
+        ],
+        "brands": [
+          "FERMAN",
+          "GEKO",
+          "Gardman",
+          "Gen\u00e9rico",
+          "HARDMAN",
+          "Hardman",
+          "Heidmann",
+          "John Gardener",
+          "Keltin",
+          "TOURO",
+          "Tvardy"
+        ],
+        "price": {
+          "min": 0.025,
+          "max": 932.4
+        }
+      }
+    },
+    "brand_filter": {
+      "success": true,
+      "total_products": 38,
+      "products_returned": 5,
+      "brand_matches": true
+    },
+    "multiple_brands": {
+      "success": true,
+      "total_products": 222,
+      "valid_brands": true,
+      "actual_brands": [
+        "HARDMAN"
+      ]
+    },
+    "combined_filters": {
+      "success": true,
+      "combined_filter_works": true,
+      "total_products": 38
+    }
+  }
+}
