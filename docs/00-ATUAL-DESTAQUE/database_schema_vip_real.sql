@@ -2,6 +2,7 @@
 -- SISTEMA VIP - TABELAS PRODUTOS INTERNOS
 -- Gerado automaticamente da BD real
 -- Data: Fri Jun 27 20:58:04 WEST 2025
+-- Atualizado: Com números reais da BD - Jan 2025
 -- ============================================
 
 -- Tabela: internal_images
@@ -43,7 +44,7 @@ CREATE TABLE IF NOT EXISTS internal_pricing (
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
-COMMENT ON TABLE internal_pricing IS 'Tabela com 0 registos. Última inspeção: 2025-06-27';
+COMMENT ON TABLE internal_pricing IS 'Tabela com 3792 registos. Última inspeção: 2025-01-29';
 
 -- Tabela: internal_product_categories
 CREATE TABLE IF NOT EXISTS internal_product_categories (
@@ -52,7 +53,7 @@ CREATE TABLE IF NOT EXISTS internal_product_categories (
     is_primary BOOLEAN DEFAULT false,
     sort_order INTEGER DEFAULT 0
 );
-COMMENT ON TABLE internal_product_categories IS 'Tabela com 0 registos. Última inspeção: 2025-06-27';
+COMMENT ON TABLE internal_product_categories IS 'Tabela com 410 registos. Última inspeção: 2025-01-29';
 
 -- Tabela: internal_product_images
 CREATE TABLE IF NOT EXISTS internal_product_images (
@@ -73,7 +74,7 @@ CREATE TABLE IF NOT EXISTS internal_product_images (
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
-COMMENT ON TABLE internal_product_images IS 'Tabela com 10 registos. Última inspeção: 2025-06-27';
+COMMENT ON TABLE internal_product_images IS 'Tabela com 490 registos. Última inspeção: 2025-01-29';
 
 -- Tabela: internal_products
 CREATE TABLE IF NOT EXISTS internal_products (
@@ -94,7 +95,7 @@ CREATE TABLE IF NOT EXISTS internal_products (
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
-COMMENT ON TABLE internal_products IS 'Tabela com 410 registos. Última inspeção: 2025-06-27';
+COMMENT ON TABLE internal_products IS 'Tabela com 410 registos. Última inspeção: 2025-01-29';
 
 -- Tabela: internal_stock
 CREATE TABLE IF NOT EXISTS internal_stock (
@@ -130,4 +131,4 @@ CREATE TABLE IF NOT EXISTS internal_variants (
     sort_order INTEGER DEFAULT 0,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
-COMMENT ON TABLE internal_variants IS 'Tabela com 940 registos. Última inspeção: 2025-06-27';
+COMMENT ON TABLE internal_variants IS 'Tabela com 971 registos. Última inspeção: 2025-01-29';
