@@ -72,7 +72,24 @@ export async function GET(request: NextRequest) {
     if (searchParams.get('filters') === 'true') {
       const [categoryData, brandData, priceData] = await Promise.all([
         pool.default.query('SELECT categoryid as id, name, "path" FROM categories ORDER BY "path"'),
-        pool.default.query("SELECT DISTINCT brand as name FROM products WHERE brand IS NOT NULL AND brand <> '' ORDER BY name"),
+        // ✅ CORRIGIDO: Inclui marcas VIP na query unificada
+        pool.default.query(`
+          SELECT DISTINCT brand as name 
+          FROM (
+            -- Marcas Geko (existentes)
+            SELECT DISTINCT brand 
+            FROM products 
+            WHERE brand IS NOT NULL AND brand <> '' AND active = true
+            
+            UNION ALL
+            
+            -- Marcas VIP (novos produtos internos)
+            SELECT DISTINCT brand 
+            FROM internal_products 
+            WHERE brand IS NOT NULL AND brand <> '' AND is_active = true
+          ) combined_brands
+          ORDER BY name
+        `),
         pool.default.query("SELECT MIN(price) as min, MAX(price) as max FROM prices WHERE price_list_id = (SELECT price_list_id FROM price_lists WHERE name = 'Base Selling Price' LIMIT 1)")
       ]);
 

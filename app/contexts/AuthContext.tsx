@@ -58,7 +58,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     console.log(`[AuthContext] fetchUserProfile INICIADA (source: ${source})`);
     setIsLoading(true);
     setAuthError(null);
-
+    
     try {
       const response = await fetch('/api/users/me', {
         method: 'GET',
@@ -68,7 +68,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           'Pragma': 'no-cache'
         }
       });
-
+      
       if (response.ok) {
         const userData = await response.json();
         console.log(`[AuthContext] fetchUserProfile SUCESSO (source: ${source}):`, userData.email);
@@ -77,7 +77,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       } else if (response.status === 401) {
         // Token inválido ou expirado - fazer logout automático
         console.log(`[AuthContext] fetchUserProfile - Token inválido (401), fazendo logout automático`);
-        setLocalUser(null);
+          setLocalUser(null);
         setAuthError(null);
         // Não redirecionar automaticamente para /login se já estamos numa página pública
         const isPublicPage = window.location.pathname === '/' || 

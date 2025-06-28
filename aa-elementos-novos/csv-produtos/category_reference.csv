@@ -1,0 +1,10 @@
+Geko_Category_ID,Geko_Category_Name,Geko_Category_Path,Tipo_Produtos,Palavras_Chave,Compativel_Com_Geko
+110002,Work Gloves,Health and Safety Articles\Work Gloves,"Luvas de proteção, luvas descartáveis","luva, glove, guante",Sim
+110003,Protective Clothing,Health and Safety Articles\Protective Clothing,"Fatos de proteção, roupas impermeáveis","fato, parka, impermeável, reflector",Sim
+110006,Trowels and Spatulas,Construction and Renovation\Hand Tools\Trowels and Spatulas,Ferramentas de construção manual,"espatula, talocha, florentina, colher",Sim
+110007,Cutting Discs,Abrasive Materials\Cutting Discs,Discos de corte para várias aplicações,disco,Sim
+110008,Polishing Materials,Abrasive Materials\Polishing Materials,Materiais para polimento e acabamento,"esponja, polimento",Sim
+110009,Abrasive Accessories,Abrasive Materials\Accessories,Acessórios para ferramentas abrasivas,flange,Sim
+110010,Cables and Extensions,Tools for Electricians\Cables and Extensions,Cabos elétricos e extensões,"extensão, bobine, cabo",Sim
+110011,Cutting Tools,Tools for The Workshop and Garage\Cutting Tools,Ferramentas de corte manuais,"lamina, blade, xizato",Sim
+110012,General Tools,Tools for The Workshop and Garage\General Tools,Ferramentas gerais de oficina,outras ferramentas,Sim

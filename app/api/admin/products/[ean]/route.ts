@@ -64,7 +64,7 @@ export async function GET(
           )
         ) FILTER (WHERE c.categoryid IS NOT NULL) as categories,
         
-        -- Get product attributes
+        -- Get product attributes (unified: Geko + VIP)
         jsonb_agg(
           DISTINCT jsonb_build_object(
             'attributeid', pa.attributeid,
@@ -94,7 +94,7 @@ export async function GET(
       LEFT JOIN product_images pi ON p.ean = pi.ean
       LEFT JOIN product_categories pc ON p.ean = pc.product_ean
       LEFT JOIN categories c ON pc.category_id = c.categoryid
-      LEFT JOIN product_attributes pa ON p.ean = pa.product_ean
+      LEFT JOIN unified_product_attributes pa ON p.ean = pa.ean
       LEFT JOIN prices pr ON pv.variantid = pr.variantid
       LEFT JOIN price_lists pl ON pr.price_list_id = pl.price_list_id
       LEFT JOIN geko_products gp ON p.ean = gp.ean

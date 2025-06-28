@@ -70,18 +70,18 @@ export default function AdminContentPage() {
   }, []);
 
   const handleSaveContent = async (formData: any) => {
-    const method = editingItem ? 'PUT' : 'POST';
+      const method = editingItem ? 'PUT' : 'POST';
     const payload = editingItem ? { ...formData, id: editingItem.id } : formData;
     
     const result = await saveOperation(
       '/api/admin/content',
       payload,
-      method,
+        method,
       {
         successMessage: editingItem ? 'Conteúdo atualizado com sucesso!' : 'Conteúdo criado com sucesso!',
         onSuccess: () => {
-          setShowForm(false);
-          setEditingItem(null);
+        setShowForm(false);
+        setEditingItem(null);
         },
         revalidate: fetchContent
       }

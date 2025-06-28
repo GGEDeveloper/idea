@@ -48,6 +48,7 @@ interface ProductPrice {
   effective_price: number | string;
   categories: string[];
   has_campaign: boolean;
+  source_type: string; // 'geko' | 'internal'
 }
 
 // Component: Product Price Editor
@@ -60,6 +61,7 @@ function ProductPriceEditor() {
     search: '',
     brand: '',
     category: '',
+    source: '', // NOVO: filtro por source
     priceListId: '4', // Será atualizado com a configuração
     page: 1,
     limit: 20
@@ -110,7 +112,10 @@ function ProductPriceEditor() {
       if (response.ok) {
         const data = await response.json();
         setProducts(data.products || []);
-        setAvailableFilters(data.filters || {});
+        setAvailableFilters({
+          ...data.filters,
+          stats: data.stats // NOVO: incluir estatísticas
+        });
       }
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -173,9 +178,26 @@ function ProductPriceEditor() {
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
       <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
         <div className="flex justify-between items-center">
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Editar Preços de Produtos
-          </h2>
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Editar Preços de Produtos
+            </h2>
+            {/* Estatísticas melhoradas */}
+            {availableFilters.stats && (
+              <div className="mt-2 flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
+                <span>📊 Total: {availableFilters.stats?.totalProducts || 0}</span>
+                {availableFilters.stats?.gekoProducts > 0 && (
+                  <span>🔵 Geko: {availableFilters.stats.gekoProducts}</span>
+                )}
+                {availableFilters.stats?.vipProducts > 0 && (
+                  <span>⭐ VIP: {availableFilters.stats.vipProducts}</span>
+                )}
+                {availableFilters.stats?.withoutPrices > 0 && (
+                  <span>❌ Sem preço: {availableFilters.stats.withoutPrices}</span>
+                )}
+              </div>
+            )}
+          </div>
           {Object.keys(editingPrices).length > 0 && (
             <button
               onClick={saveChanges}
@@ -187,9 +209,9 @@ function ProductPriceEditor() {
         </div>
       </div>
 
-      {/* Filters */}
+      {/* Filters - Expandido para incluir source */}
       <div className="p-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
           <input
             type="text"
             placeholder="Pesquisar produtos..."
@@ -232,6 +254,20 @@ function ProductPriceEditor() {
             ))}
           </select>
 
+          {/* NOVO: Filtro por source */}
+          <select
+            value={filters.source}
+            onChange={(e) => setFilters(prev => ({ ...prev, source: e.target.value, page: 1 }))}
+            className="px-3 py-2 border rounded-md dark:bg-gray-600 dark:border-gray-500 dark:text-white"
+          >
+            <option value="">Todos os tipos</option>
+            {availableFilters.sources?.map((source: any) => (
+              <option key={source.id} value={source.id}>
+                {source.name}
+              </option>
+            ))}
+          </select>
+
           <button
             onClick={() => setFilters(prev => ({ ...prev, page: 1 }))}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
@@ -241,7 +277,7 @@ function ProductPriceEditor() {
         </div>
       </div>
 
-      {/* Products Table */}
+      {/* Products Table - Atualizada com badges e coluna tipo */}
       <div className="overflow-x-auto">
         {loading ? (
           <div className="p-8 text-center">
@@ -254,6 +290,9 @@ function ProductPriceEditor() {
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
                   Produto
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                  Tipo
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
                   Marca
@@ -285,17 +324,37 @@ function ProductPriceEditor() {
                       </div>
                     </div>
                   </td>
+                  
+                  {/* NOVA: Coluna tipo com badges */}
+                  <td className="px-6 py-4">
+                    {product.source_type === 'internal' ? (
+                      <span className="px-2 py-1 bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300 rounded-full text-xs font-medium">
+                        ⭐ VIP
+                      </span>
+                    ) : (
+                      <span className="px-2 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 rounded-full text-xs font-medium">
+                        🔵 Geko
+                      </span>
+                    )}
+                  </td>
+                  
                   <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
                     {product.brand}
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                    <span className={`px-2 py-1 rounded-full text-xs ${
-                      product.stockquantity > 0 
-                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
-                        : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
-                    }`}>
-                      {product.stockquantity}
-                    </span>
+                    {product.source_type === 'internal' ? (
+                      <span className="px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-600 dark:bg-gray-600 dark:text-gray-400">
+                        N/A
+                      </span>
+                    ) : (
+                      <span className={`px-2 py-1 rounded-full text-xs ${
+                        product.stockquantity > 0 
+                          ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+                          : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+                      }`}>
+                        {product.stockquantity}
+                      </span>
+                    )}
                   </td>
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
                     €{(Number(product.current_price) || 0).toFixed(2)}
@@ -308,11 +367,21 @@ function ProductPriceEditor() {
                       onChange={(e) => handlePriceChange(product.variantid, parseFloat(e.target.value) || 0)}
                       className="w-24 px-2 py-1 border rounded dark:bg-gray-600 dark:border-gray-500 dark:text-white"
                     />
+                    {/* Indicação adicional para VIP */}
+                    {product.source_type === 'internal' && (
+                      <div className="text-xs text-purple-600 dark:text-purple-400 mt-1">
+                        VIP Internal
+                      </div>
+                    )}
                   </td>
                   <td className="px-6 py-4 text-sm">
                     {product.has_campaign ? (
                       <span className="px-2 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 rounded-full text-xs">
                         🎯 €{(Number(product.promotional_price) || 0).toFixed(2)}
+                      </span>
+                    ) : product.source_type === 'internal' ? (
+                      <span className="px-2 py-1 bg-gray-100 text-gray-600 dark:bg-gray-600 dark:text-gray-400 rounded-full text-xs">
+                        🚧 Em breve
                       </span>
                     ) : (
                       <span className="text-gray-400">-</span>
@@ -324,6 +393,19 @@ function ProductPriceEditor() {
           </table>
         )}
       </div>
+
+      {/* Informação adicional sobre VIP */}
+      {products.some(p => p.source_type === 'internal') && (
+        <div className="px-6 py-4 bg-purple-50 dark:bg-purple-900/20 border-t border-gray-200 dark:border-gray-700">
+          <div className="flex items-start space-x-2">
+            <div className="text-purple-600 dark:text-purple-400">ℹ️</div>
+            <div className="text-sm text-purple-700 dark:text-purple-300">
+              <strong>Produtos VIP:</strong> Sistema de gestão de produtos internos AliTools. 
+              Stock não controlado atualmente. Sistema promocional em desenvolvimento.
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

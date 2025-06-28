@@ -34,13 +34,15 @@ interface ProductInfoProps {
   addToCart?: (product: Product, quantity?: number) => void;
   isAuthenticated?: boolean;
   hasPermission?: (permission: string) => boolean;
+  selectedVariant?: string | null;
 }
 
 const ProductInfo: React.FC<ProductInfoProps> = ({ 
   product, 
   addToCart = () => {}, 
   isAuthenticated = false, 
-  hasPermission = () => false 
+  hasPermission = () => false,
+  selectedVariant = null
 }) => {
   // State for quantity selection
   const [quantity, setQuantity] = useState(1);

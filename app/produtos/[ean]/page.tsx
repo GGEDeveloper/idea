@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from '../../contexts/CartContext';
 import ProductImageGallery from '../../components/products/ProductImageGallery';
@@ -31,6 +31,8 @@ interface Product {
 
 export default function ProductDetailPage() {
   const params = useParams();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const ean = params?.ean as string;
   
   // Use auth and cart contexts safely
@@ -40,6 +42,7 @@ export default function ProductDetailPage() {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -50,6 +53,18 @@ export default function ProductDetailPage() {
         const response = await fetch(`/api/products/${ean}`, {
           credentials: 'include' // Important for authentication
         });
+        
+        if (response.status === 308) {
+          // Handle VIP variant redirect
+          const redirectData = await response.json();
+          console.log('[ProductDetail] Variant redirect detected:', redirectData);
+          
+          if (redirectData.isVariant && redirectData.redirectTo) {
+            // Redirect to parent product with variant pre-selected
+            router.replace(redirectData.redirectTo);
+            return;
+          }
+        }
         
         if (!response.ok) {
           if (response.status === 404) {
@@ -62,6 +77,14 @@ export default function ProductDetailPage() {
         console.log('[ProductDetail] Product data received:', data);
         setProduct(data);
         setError(null);
+
+        // Check for pre-selected variant from URL params
+        const variantParam = searchParams?.get?.('variant');
+        if (variantParam) {
+          setSelectedVariant(variantParam);
+          console.log('[ProductDetail] Pre-selecting variant:', variantParam);
+        }
+        
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Erro desconhecido');
         console.error('Error fetching product:', err);
@@ -71,7 +94,7 @@ export default function ProductDetailPage() {
     };
 
     fetchProduct();
-  }, [ean]);
+  }, [ean, router, searchParams]);
 
   const handleAddToCart = (productData: Product, quantity: number = 1) => {
     if (!product) {
@@ -246,6 +269,7 @@ export default function ProductDetailPage() {
                     addToCart={handleAddToCart}
                     isAuthenticated={isAuthenticated}
               hasPermission={hasPermission}
+                    selectedVariant={selectedVariant}
                   />
           </div>
         </div>

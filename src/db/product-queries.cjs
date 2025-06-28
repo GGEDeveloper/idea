@@ -9,6 +9,7 @@
  * - Integração com o novo sistema de listas de preços.
  * - Remoção de funções de busca granulares em favor de uma query 'getProducts' mais rica.
  * - Integração com configurações dinâmicas de listas de preços (v1.9.2.2)
+ * - Suporte unificado para stock VIP + Geko (v1.9.3.0)
  */
 const pool = require('../../db/index.cjs'); // Corrigido para apontar para a raiz /db/index.cjs
 
@@ -83,18 +84,20 @@ function buildWhereClause(filters, forCount = false) {
   }
 
   // Filtros rápidos adicionais
-  // Filtro por stock disponível - CORRIGIDO: incluir ambas as fontes de stock
+  // Filtro por stock disponível - CORRIGIDO: incluir stock VIP e Geko
   if (filters.hasStock === true || String(filters.hasStock).toLowerCase() === 'true') {
     whereClauses.push(`(
-      EXISTS (
-      SELECT 1 FROM product_variants pv_stock 
-      WHERE pv_stock.ean = ${productAlias}.product_ean 
-      AND pv_stock.stockquantity > 0
-      ) OR EXISTS (
-        SELECT 1 FROM geko_products gp_stock 
-        WHERE gp_stock.ean = ${productAlias}.product_ean 
-        AND gp_stock.stock_quantity > 0
-      )
+      (${productAlias}.source_type = 'geko' AND EXISTS (
+        SELECT 1 FROM product_variants pv_stock 
+        WHERE pv_stock.ean = ${productAlias}.product_ean 
+        AND pv_stock.stockquantity > 0
+      )) OR
+      (${productAlias}.source_type = 'internal' AND EXISTS (
+        SELECT 1 FROM internal_variants iv_stock
+        JOIN internal_stock ist_stock ON iv_stock.internal_variant_id = ist_stock.internal_variant_id
+        WHERE iv_stock.internal_ean = ${productAlias}.product_ean 
+        AND ist_stock.quantity > 0
+      ))
     )`);
   }
 
@@ -207,18 +210,32 @@ async function getProducts(filters = {}, pagination = {}) {
   // Usar configuração dinâmica para lista de preços dos clientes
   const customerPriceListId = getCustomerPriceListId();
   
+  // Query de preço unificada (Geko + VIP)
   const priceSubQuery = `
-    (SELECT pr_display.price 
-     FROM product_variants pv_display
-     JOIN prices pr_display ON pv_display.variantid = pr_display.variantid
-     WHERE pv_display.ean = p.product_ean AND pr_display.price_list_id = ${customerPriceListId}
-     ORDER BY pv_display.variantid ASC
-     LIMIT 1
-    ) 
+    CASE 
+      WHEN p.source_type = 'internal' THEN
+        (SELECT ip_price.selling_price 
+         FROM internal_pricing ip_price
+         WHERE ip_price.internal_variant_id IN (
+           SELECT iv.internal_variant_id 
+           FROM internal_variants iv 
+           WHERE iv.internal_ean = p.product_ean
+         )
+         AND ip_price.price_list_id = 4
+         AND ip_price.is_active = true
+         LIMIT 1)
+      ELSE 
+        (SELECT pr_display.price 
+         FROM product_variants pv_display
+         JOIN prices pr_display ON pv_display.variantid = pr_display.variantid
+         WHERE pv_display.ean = p.product_ean AND pr_display.price_list_id = ${customerPriceListId}
+         ORDER BY pv_display.variantid ASC
+         LIMIT 1)
+    END
   `;
 
   const sortExpression = safeSortBy === 'price' 
-    ? `(SELECT pr_sort.price FROM product_variants pv_sort JOIN prices pr_sort ON pv_sort.variantid = pr_sort.variantid WHERE pv_sort.ean = p.product_ean AND pr_sort.price_list_id = ${customerPriceListId} ORDER BY pv_sort.variantid ASC LIMIT 1)`
+    ? `(${priceSubQuery})`
     : safeSortBy === 'name' 
     ? `p.display_name_pt`
     : `p.${safeSortBy}`;
@@ -236,14 +253,28 @@ async function getProducts(filters = {}, pagination = {}) {
       p.source_type,
       ${priceSubQuery} as product_price,
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
-        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.product_ean) as cat
+        (SELECT c.categoryid, c.name, c.path FROM categories c 
+         JOIN product_categories pc ON c.categoryid = pc.category_id 
+         WHERE pc.product_ean = p.product_ean
+         UNION ALL
+         SELECT c.categoryid, c.name, c.path FROM categories c 
+         JOIN internal_product_categories ipc ON c.categoryid = ipc.category_id 
+         WHERE ipc.internal_ean = p.product_ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.product_ean
          UNION ALL
          SELECT image_id as imageid, image_url as url, alt_text as alt, is_primary FROM unified_product_images WHERE product_ean = p.product_ean AND image_source = 'internal') as img
       ) as images,
-      (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.product_ean) as total_stock
+      CASE 
+        WHEN p.source_type = 'internal' THEN 
+          (SELECT SUM(ist.quantity) 
+           FROM internal_variants iv 
+           JOIN internal_stock ist ON iv.internal_variant_id = ist.internal_variant_id 
+           WHERE iv.internal_ean = p.product_ean)
+        ELSE 
+          (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.product_ean)
+      END as total_stock
     FROM unified_product_catalog p
     ${whereClause}
     ORDER BY ${sortExpression} ${safeOrder} NULLS LAST, p.product_ean ASC
@@ -252,7 +283,7 @@ async function getProducts(filters = {}, pagination = {}) {
   
   const finalQueryParams = [...queryParams, limit, offset];
   const { rows } = await pool.query(query, finalQueryParams);
-  return rows.map(row => ({...row, price: row.product_price })); 
+  return rows.map(row => ({...row, price: row.product_price, stock: row.total_stock })); 
 }
 
 /**
@@ -278,32 +309,79 @@ async function getProductByEan(ean) {
       p.updated_at, 
       p.is_featured,
       p.source_type,
-      (SELECT pr.price 
-       FROM product_variants pv 
-       JOIN prices pr ON pv.variantid = pr.variantid 
-       WHERE pv.ean = p.product_ean AND pr.price_list_id = ${customerPriceListId}
-       ORDER BY pv.variantid ASC LIMIT 1
-      ) as product_price, 
+      CASE 
+        WHEN p.source_type = 'internal' THEN
+          (SELECT ip_price.selling_price 
+           FROM internal_pricing ip_price
+           WHERE ip_price.internal_variant_id IN (
+             SELECT iv.internal_variant_id 
+             FROM internal_variants iv 
+             WHERE iv.internal_ean = p.product_ean
+           )
+           AND ip_price.price_list_id = 4
+           AND ip_price.is_active = true
+           LIMIT 1)
+        ELSE 
+          (SELECT pr.price 
+           FROM product_variants pv 
+           JOIN prices pr ON pv.variantid = pr.variantid 
+           WHERE pv.ean = p.product_ean AND pr.price_list_id = ${customerPriceListId}
+           ORDER BY pv.variantid ASC LIMIT 1)
+      END as product_price, 
       (SELECT json_agg(cat ORDER BY cat.path) FROM 
-        (SELECT c.categoryid, c.name, c.path FROM categories c JOIN product_categories pc ON c.categoryid = pc.category_id WHERE pc.product_ean = p.product_ean) as cat
+        (SELECT c.categoryid, c.name, c.path FROM categories c 
+         JOIN product_categories pc ON c.categoryid = pc.category_id 
+         WHERE pc.product_ean = p.product_ean
+         UNION ALL
+         SELECT c.categoryid, c.name, c.path FROM categories c 
+         JOIN internal_product_categories ipc ON c.categoryid = ipc.category_id 
+         WHERE ipc.internal_ean = p.product_ean) as cat
       ) as categories,
       (SELECT json_agg(img ORDER BY img.is_primary DESC, img.imageid) FROM 
         (SELECT imageid, url, alt, is_primary FROM product_images WHERE ean = p.product_ean
          UNION ALL
          SELECT image_id as imageid, image_url as url, alt_text as alt, is_primary FROM unified_product_images WHERE product_ean = p.product_ean AND image_source = 'internal') as img
       ) as images,
-      (SELECT json_agg(var ORDER BY var.variantid) FROM
-        (SELECT pv_detail.variantid, pv_detail.name as variant_name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
-                (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${customerPriceListId} LIMIT 1) as base_selling_price,
-                (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
-         FROM product_variants pv_detail WHERE pv_detail.ean = p.product_ean
-        ) as var
-      ) as variants,
+      CASE 
+        WHEN p.source_type = 'internal' THEN
+          (SELECT json_agg(var ORDER BY var.sort_order) FROM
+            (SELECT iv_detail.internal_variant_id as variantid, 
+                    iv_detail.variant_name, 
+                    ist_detail.quantity as stockquantity, 
+                    ip_base.base_cost as supplier_price, 
+                    false as is_on_sale,
+                    iv_detail.sort_order,
+                    (SELECT ip_detail.selling_price FROM internal_pricing ip_detail WHERE ip_detail.internal_variant_id = iv_detail.internal_variant_id AND ip_detail.price_list_id = 4 AND ip_detail.is_active = true LIMIT 1) as base_selling_price,
+                    null as promotional_price
+             FROM internal_variants iv_detail 
+             JOIN internal_stock ist_detail ON iv_detail.internal_variant_id = ist_detail.internal_variant_id
+             JOIN internal_products ip_base ON iv_detail.internal_ean = ip_base.internal_ean
+             WHERE iv_detail.internal_ean = p.product_ean
+            ) as var
+          )
+        ELSE 
+          (SELECT json_agg(var ORDER BY var.variantid) FROM
+            (SELECT pv_detail.variantid, pv_detail.name as variant_name, pv_detail.stockquantity, pv_detail.supplier_price, pv_detail.is_on_sale, 
+                    (SELECT pr_detail.price FROM prices pr_detail WHERE pr_detail.variantid = pv_detail.variantid AND pr_detail.price_list_id = ${customerPriceListId} LIMIT 1) as base_selling_price,
+                    (SELECT pr_promo.price FROM prices pr_promo WHERE pr_promo.variantid = pv_detail.variantid AND pr_promo.price_list_id = ${promotionalPriceListId} LIMIT 1) as promotional_price
+             FROM product_variants pv_detail WHERE pv_detail.ean = p.product_ean
+            ) as var
+          )
+      END as variants,
       (SELECT json_agg(attr ORDER BY attr.key) FROM
         (SELECT attributeid, "key", "value" FROM product_attributes WHERE product_ean = p.product_ean
          UNION ALL
-         SELECT attributeid, "key", "value" FROM unified_product_attributes WHERE ean = p.product_ean AND source_type = 'vip') as attr
-      ) as attributes
+         SELECT attributeid, "key", "value" FROM internal_product_attributes WHERE internal_ean = p.product_ean) as attr
+      ) as attributes,
+      CASE 
+        WHEN p.source_type = 'internal' THEN 
+          (SELECT SUM(ist.quantity) 
+           FROM internal_variants iv 
+           JOIN internal_stock ist ON iv.internal_variant_id = ist.internal_variant_id 
+           WHERE iv.internal_ean = p.product_ean)
+        ELSE 
+          (SELECT SUM(pv_stock.stockquantity) FROM product_variants pv_stock WHERE pv_stock.ean = p.product_ean)
+      END as total_stock
     FROM unified_product_catalog p
     WHERE p.product_ean = $1
   `;
@@ -311,7 +389,7 @@ async function getProductByEan(ean) {
   const { rows } = await pool.query(query, [ean]);
   if (rows.length > 0) {
     const product = rows[0];
-    return {...product, price: product.product_price };
+    return {...product, price: product.product_price, stock: product.total_stock };
   }
   return null;
 }

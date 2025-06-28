@@ -21,8 +21,9 @@ import { useAuth } from '../../contexts/AuthContext';
 import HierarchicalCategoryFilter from './HierarchicalCategoryFilter';
 import EnhancedCategoryFilter from './EnhancedCategoryFilter';
 
-// Brand logos mini - extraído do BrandCarousel
+// Brand logos mini - incluindo marcas VIP
 const brandLogos: Record<string, string> = {
+  // ===== MARCAS EXISTENTES (GEKO) =====
   'GEKO': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="miniGekoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -83,6 +84,41 @@ const brandLogos: Record<string, string> = {
     <text x="50" y="21" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">HEIDMANN</text>
     <rect x="8" y="10" width="2" height="15" fill="#f59e0b"/>
     <rect x="90" y="10" width="2" height="15" fill="#f59e0b"/>
+  </svg>`,
+  
+  // ===== MARCAS VIP (NOVOS PRODUTOS INTERNOS) =====
+  'AliTools': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#2563eb" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">AliTools</text>
+  </svg>`,
+  'AliTools Professional': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#1d4ed8" rx="6"/>
+    <text x="50" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">AliTools</text>
+    <text x="50" y="29" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd" text-anchor="middle">Pro</text>
+  </svg>`,
+  'FERMAN': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#dc2626" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">FERMAN</text>
+  </svg>`,
+  'EXENA': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#059669" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">EXENA</text>
+  </svg>`,
+  'HARDMAN': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#7c2d12" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">HARDMAN</text>
+  </svg>`,
+  'Blue Line': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#0284c7" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Blue Line</text>
+  </svg>`,
+  'TytanX': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#6b21a8" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TytanX</text>
+  </svg>`,
+  'AG TOOLS': `<svg viewBox="0 0 100 35" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="35" fill="#374151" rx="6"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">AG TOOLS</text>
   </svg>`
 };
 

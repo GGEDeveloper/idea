@@ -1,12 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '../../../../src/utils/jwtUtils';
+import { handleVariantRedirect, normalizeEanForProductSearch } from '../../../../src/lib/product-utils';
+
+// Adicionar tipo explícito para o retorno de handleVariantRedirect
+
+type VariantRedirectData = {
+  shouldRedirect: true;
+  parentEan: string;
+  variantId: string;
+  variantNumber: string | null;
+  redirectUrl: string;
+} | {
+  shouldRedirect: false;
+};
 
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ ean: string }> }
 ) {
   try {
-    const { ean } = await params;
+    const { ean: originalEan } = await params;
+
+    // Handle VIP variant redirection
+    const redirectData = handleVariantRedirect(originalEan) as VariantRedirectData;
+    if (redirectData.shouldRedirect) {
+      // Return redirect information for variants
+      return NextResponse.json({
+        isVariant: true,
+        redirectTo: redirectData.redirectUrl,
+        parentEan: redirectData.parentEan,
+        variantId: redirectData.variantId,
+        variantNumber: redirectData.variantNumber
+      }, { status: 308 }); // Permanent redirect
+    }
+
+    // Use normalized EAN for product search
+    const ean = normalizeEanForProductSearch(originalEan);
 
     // Check if user is authenticated
     const token = request.cookies.get('idea_session_token')?.value;

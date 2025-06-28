@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-06-28T10:40:27.937498",
+  "tabelas": {
+    "internal_stock": {
+      "registos_originais": 940,
+      "backup_table": "backup_internal_stock_20250628_104028",
+      "backup_registos": 940,
+      "status": "SUCCESS"
+    },
+    "internal_product_attributes": {
+      "registos_originais": 1281,
+      "backup_table": "backup_internal_product_attributes_20250628_104028",
+      "backup_registos": 1281,
+      "status": "SUCCESS"
+    },
+    "internal_product_images": {
+      "registos_originais": 10,
+      "backup_table": "backup_internal_product_images_20250628_104028",
+      "backup_registos": 10,
+      "status": "SUCCESS"
+    },
+    "internal_pricing": {
+      "registos_originais": 3628,
+      "backup_table": "backup_internal_pricing_20250628_104028",
+      "backup_registos": 3628,
+      "status": "SUCCESS"
+    },
+    "internal_product_categories": {
+      "registos_originais": 410,
+      "backup_table": "backup_internal_product_categories_20250628_104029",
+      "backup_registos": 410,
+      "status": "SUCCESS"
+    },
+    "internal_variants": {
+      "registos_originais": 940,
+      "backup_table": "backup_internal_variants_20250628_104029",
+      "backup_registos": 940,
+      "status": "SUCCESS"
+    },
+    "internal_products": {
+      "registos_originais": 410,
+      "backup_table": "backup_internal_products_20250628_104029",
+      "backup_registos": 410,
+      "status": "SUCCESS"
+    }
+  }
+}

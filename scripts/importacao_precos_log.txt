@@ -1,0 +1,428 @@
+🎯 IMPORTAÇÃO DE PREÇOS REAIS - MARKUP 35%
+============================================================
+
+📊 CARREGANDO DADOS DO CSV...
+✅ Carregados 396 produtos com preços
+
+💰 VERIFICANDO LISTAS DE PREÇOS...
+✅ Encontradas 4 listas de preços:
+   • 1: Supplier Price
+   • 2: Base Selling Price
+   • 3: Promotional Price
+   • 4: Preço Cliente
+
+🔄 ATUALIZANDO CUSTOS BASE (35% markup)...
+✅ INT_2C30F0: Parka Impermiável Reflectora... → €15.22 → €20.55
+✅ INT_C2E23B: Espatula em  ABS  - 250MM... → €0.73 → €0.99
+✅ INT_197DB7: Talocha para pavimentos INOX 500 MM -A5717... → €7.30 → €9.85
+✅ INT_2F3844: Talocha para estucador Inox 110x240MM... → €8.14 → €10.99
+✅ INT_F72B15: Espatula / Colher para Estucador Inox 100mm - A170... → €1.47 → €1.99
+✅ INT_F823EC: Espatula em ABS 250 MM... → €0.73 → €0.99
+✅ INT_7AD991: Talocha de Grosa Endurecida 120 x 375mm - A3701... → €4.44 → €5.99
+✅ INT_1D7A25: Talocha de Grosa Metalica 120x270mm - A3672... → €2.21 → €2.99
+✅ INT_D41336: Luva Nitrile Preta com nylon +grossa prof... → €0.36 → €0.49
+✅ INT_9F239E: Luva Nitrile azul 3/4" grossa com Punho malha 10" ... → €0.73 → €0.99
+✅ INT_4C9C4B: Extensão Eléctrica 25Mts x 2.5mm Bobine [900338]... → €20.73 → €27.99
+✅ INT_33A8CD: Laminas pretas SK5 -18mm [10pcs] para Xizato -[890... → €1.19 → €1.60
+✅ INT_E6450E: Cintas de Elevação Plana Dupla- CERTIFICADO... → €2.14 → €2.89
+✅ INT_DB0F3D: Extensão Eléctrica 3x1.5mm - Laranja... → €5.18 → €6.99
+✅ INT_4E8F8A: Talocha para Lixa [ A0040]... → €1.18 → €1.59
+✅ INT_572AF8: Máscara de Soldador AUTOMATIC [AK00291]... → €11.10 → €14.99
+✅ INT_653756: Kit 4 pcs para Mangueira Rega [Borracha]... → €1.47 → €1.99
+✅ INT_408ABB: União Mangueira Rega Plástico... → €0.41 → €0.56
+✅ INT_2AF76C: Tomada Rápida  para Mangueira Rega... → €0.44 → €0.60
+✅ INT_4C317F: Adaptor de torneira para Mangueira Rega... → €0.24 → €0.33
+✅ INT_EAE58E: ÓCULOS de Proteção Pretos... → €0.81 → €1.10
+✅ INT_97F25F: Escova de Arame Galvanizado para Roçadora... → €4.26 → €5.75
+✅ INT_8AA4B0: Escova de Nylon para Roçadora 200x25.4mm para Limp... → €6.93 → €9.35
+✅ INT_A7BF73: Disco corte Madeira, Plst, Gesso Cartonado 125x22.... → €3.33 → €4.49
+✅ INT_18E625: Pistola para Espuma PU... → €4.07 → €5.50
+✅ INT_95FD51: Broca cónica escalonada HSS - TITANIO... → €2.22 → €3.00
+✅ INT_016A01: Pulverizador 2L PRO... → €2.59 → €3.49
+✅ INT_595DDD: Pulverizador manual 5 L - PRO... → €7.40 → €9.99
+✅ INT_B7F203: Cinto Pedreiro com 11 Bolsas para Ferramentas... → €2.96 → €3.99
+✅ INT_60CA7F: Turques de carpinteiro 8" / 200mm... → €2.59 → €3.50
+✅ INT_228142: Espatula borracha 200mm... → €0.81 → €1.09
+✅ INT_4BE460: Misturador 120x600 Arga Massa c/ paraf. M14... → €5.18 → €6.99
+✅ INT_A927DF: Escova Latonada 4 filas com raspador... → €0.85 → €1.15
+✅ INT_77E0D9: Escopro com protecção 7cms [300×16mm]... → €2.59 → €3.50
+✅ INT_D42A82: Faca de alcatifa Profissional  5 Laminas Autoload... → €3.53 → €4.77
+✅ INT_C27E8D: Suporte para  Mangueira em Plástico Verde... → €1.47 → €1.99
+✅ INT_BECF0D: Marcador Preto Tinta Permanente BLST 5pcs... → €1.10 → €1.49
+✅ INT_E36CAD: Lamina para Xizato 9mm... → €0.21 → €0.29
+✅ INT_75FC3E: Correia de aperto com Tensor [vários Tamanhos]... → €1.94 → €2.62
+✅ INT_DA9D69: X- acto com Lâmina 9mm... → €0.29 → €0.39
+✅ INT_9CDA8B: Máscara de soldador com pega ECO... → €1.85 → €2.50
+✅ INT_CC9CFB: Xizato  Lâmina Preta 18MM em Blister... → €0.81 → €1.10
+✅ INT_CB5720: Pás Dobrável CAMPING - 4 em 1 com Bolsa... → €2.21 → €2.99
+✅ INT_6B7CBC: Fato chuva em PU - profissional... → €12.59 → €16.99
+✅ INT_82FCD1: Sapatilha ténis Ancla S1P NO METAL... → €15.55 → €20.99
+✅ INT_F19923: Luva em Espuma Nitrilo Preto - Respirável PROF.... → €0.81 → €1.10
+✅ INT_AC7E99: Luva nylon e Latex - Estanque TOP... → €1.10 → €1.49
+✅ INT_8F590A: Óculo de proteção [ para sobreposição de óculos]... → €1.44 → €1.95
+✅ INT_21C7AC: Óculo de Proteção Prof. Pretos... → €1.47 → €1.99
+✅ INT_E63A8A: Óculo de proteção Prof. Transparente... → €1.47 → €1.99
+✅ INT_B77B27: Sapato Camurça S1P NO METAL... → €13.33 → €17.99
+✅ INT_0B473D: Talocha esponja Laranja 280x140x20mm... → €2.96 → €3.99
+✅ INT_162B76: Talocha base borracha 240x100x20mm... → €3.33 → €4.49
+✅ INT_92C3EE: Serrote para Pladur 6" Profissional... → €2.21 → €2.99
+✅ INT_E3F003: Serrote prof. cortar Ferro 12" - 300 MM... → €2.96 → €3.99
+✅ INT_4257CC: Esticador Olhal / Olhal 5x70mm - 25pcs... → €7.40 → €9.99
+✅ INT_88C28D: Maquina de fazer Estribos com Rolamentos... → €55.56 → €75.00
+✅ INT_B8B005: Chave de virar ferro... → €4.70 → €6.35
+✅ INT_BDF3ED: Alavanca e Desmontador... → €24.07 → €32.50
+✅ INT_E5AB54: Pé de Cabra... → €7.48 → €10.10
+✅ INT_885B1E: Escacilhadeira Pedra 6cms... → €12.00 → €16.20
+✅ INT_EC7A84: Guilho (abrir a pedra)... → €5.04 → €6.80
+✅ INT_0DE2F0: Ponteiro / Escopro... → €3.89 → €5.25
+✅ INT_B899CF: Chaviete Temperado... → €2.22 → €3.00
+✅ INT_843B5C: Pica Solda... → €8.37 → €11.30
+✅ INT_77EDB2: Martelo Fazer Calçada... → €11.96 → €16.15
+✅ INT_588860: Martelo Faz Tudo... → €8.30 → €11.20
+✅ INT_F6E26C: Martelo Calceteira... → €9.93 → €13.40
+✅ INT_EDC658: Martelo Calceteiro... → €9.93 → €13.40
+✅ INT_9AE223: Marreta Campo... → €6.81 → €9.20
+✅ INT_426D23: Marreta  /  Martelo Campo... → €5.78 → €7.80
+✅ INT_98B710: Raspador Leiria sem cabo... → €5.93 → €8.00
+✅ INT_A92212: Arrelhada Vinha... → €8.19 → €11.05
+✅ INT_582C01: Arrelhada Marisco... → €7.19 → €9.70
+✅ INT_E45785: Escavadeira Tubo... → €25.26 → €34.10
+✅ INT_E7F070: Escavadeira Tenaz... → €24.15 → €32.60
+✅ INT_694A9F: Trado Vinha... → €12.37 → €16.70
+✅ INT_D935FC: Bate Estacas... → €28.15 → €38.00
+✅ INT_2BDEA3: Colher de Jardim... → €4.22 → €5.70
+✅ INT_0F7606: Pá Corta Raízes... → €12.00 → €16.20
+✅ INT_1507CA: Pá de Jardim... → €12.00 → €16.20
+✅ INT_769BDD: Pá Valar... → €11.19 → €15.10
+✅ INT_55BC9D: Pá Francesa... → €13.33 → €18.00
+✅ INT_17C98B: Pá Cabo de Madeira modelo Bufalo... → €11.56 → €15.60
+✅ INT_274A51: Cabo Metálico com Cunha p/ gadanha... → €10.37 → €14.00
+✅ INT_6377DA: Cabo Metálico com Parafuso... → €10.65 → €14.38
+✅ INT_B4320C: Safra... → €10.93 → €14.75
+✅ INT_B26D2E: Gadanha Mato 2 Cortes... → €19.33 → €26.10
+✅ INT_6E2CA2: Gadanha Mato... → €18.96 → €25.60
+✅ INT_8BA78B: Enxó... → €17.93 → €24.20
+✅ INT_FC6BA9: Catana... → €8.22 → €11.10
+✅ INT_65601E: Podão Vinha... → €9.62 → €12.99
+✅ INT_E7FAB8: Podão para Banana... → €6.22 → €8.40
+✅ INT_DC0FE6: Podão Poda Horticolas... → €6.22 → €8.40
+✅ INT_1512E1: Podão Leiria Aberto... → €9.93 → €13.40
+✅ INT_A4C893: Podão Leiria 2 Cortes... → €8.74 → €11.80
+✅ INT_1B8F95: Foice Mira... → €9.19 → €12.40
+✅ INT_EA3592: Foice Barreiro... → €7.19 → €9.70
+✅ INT_46382F: Foice Leiria com Peta... → €9.19 → €12.40
+✅ INT_03AA2B: Foice Meia lua com Galho... → €9.93 → €13.40
+✅ INT_287A6A: Foice Meia lua... → €9.11 → €12.30
+✅ INT_A90EFD: Foice Limpa Caldas... → €9.78 → €13.20
+✅ INT_49214C: Foice Douro Limpa... → €8.78 → €11.85
+✅ INT_165931: Foice Douro... → €7.70 → €10.40
+✅ INT_25FC9F: Cunha para Lenha... → €4.74 → €6.40
+✅ INT_B41306: Machadão Lenha N°3... → €20.00 → €27.00
+✅ INT_9DDD1A: Machado Cortiça... → €26.37 → €35.60
+✅ INT_E85C04: Machado N°3... → €11.85 → €16.00
+✅ INT_6D71E5: Machado Sul... → €16.30 → €22.00
+✅ INT_C362EA: Machadinha Rola... → €9.19 → €12.40
+✅ INT_E263B4: Machadinha Falca... → €8.81 → €11.90
+✅ INT_ADF88D: Machadinha Limpeza... → €8.81 → €11.90
+✅ INT_AB5702: Machadinha com Unhas... → €12.89 → €17.40
+✅ INT_1F04F1: Machadinha com Martelo... → €11.04 → €14.90
+✅ INT_8DBB5F: Machadinha Rola com cabo... → €10.37 → €14.00
+✅ INT_AB0E47: Machadinha Lisa com Cabo... → €10.22 → €13.80
+✅ INT_343F0B: Machadinha Poda com Cabo ( + pequeno)... → €8.30 → €11.20
+✅ INT_5BFA6A: Parka impermeável Reflector... → €12.19 → €16.45
+✅ INT_D3E386: T - Shirt 155 grs - todas as cores... → €1.47 → €1.99
+✅ INT_B68FD4: Calça Multibolsos reflectora Azul ou Cinza... → €8.52 → €11.50
+✅ INT_A6453D: Sapato pele preta S1P biqueira e palmilha em Aço... → €10.36 → €13.99
+✅ INT_708E69: Sapato de Camurça S1P biqueira e Palmilha em Aço... → €10.93 → €14.75
+✅ INT_BD4D83: Alvião Poda... → €7.56 → €10.20
+✅ INT_EEC5A0: Gancho / Forquilha Francesa 4 dentes... → €16.00 → €21.60
+✅ INT_E6DA84: Forquilha com cabo metálico... → €15.19 → €20.50
+✅ INT_32E3DD: Forquilha com cabo madeira... → €15.56 → €21.00
+✅ INT_FA2CCA: Forquilha olho redondo... → €12.37 → €16.70
+✅ INT_BC7D7C: Forquilha curva mini- dente torneado... → €8.59 → €11.60
+✅ INT_3CA2A3: Forquilha curva... → €12.37 → €16.70
+✅ INT_E589DE: Disco diamantado Ceramica 115mm... → €2.96 → €3.99
+✅ INT_27CA5A: Lança metálica + punho para Pulverizador 5 / 8 Lts... → €0.73 → €0.99
+✅ INT_F49443: Forquilha direita mini (Dente Torneado)... → €8.59 → €11.60
+✅ INT_E37783: Forquilha direita pequena... → €12.15 → €16.40
+✅ INT_3291C4: Forquilha direita... → €8.67 → €11.70
+✅ INT_FD346F: Ancinho de berbigão... → €15.33 → €20.70
+✅ INT_1AA474: Gadanho  Uvas... → €8.74 → €11.80
+✅ INT_533629: Ancinho Alenquer... → €9.78 → €13.20
+✅ INT_C9AA2E: Ancinho Leiria... → €9.78 → €13.20
+✅ INT_9B17E4: Ancinho Ferreiro... → €7.63 → €10.30
+✅ INT_D38036: Ancinho Madeira Dente de Prego... → €3.70 → €5.00
+✅ INT_BD83B0: Ancinho para Batata... → €8.89 → €12.00
+✅ INT_72D1B7: Ancinho... → €5.04 → €6.80
+✅ INT_E386FF: Disco diamantado - especial Madeira 115mm... → €3.33 → €4.50
+✅ INT_F06D41: Gancho Cavar Leiria... → €10.37 → €14.00
+✅ INT_187A42: Gancho Coração... → €8.22 → €11.10
+✅ INT_86959B: Gancho Dentes Redondo... → €10.96 → €14.80
+✅ INT_6A2C2C: Arado Mão... → €8.81 → €11.90
+✅ INT_FA811A: Raspador de Batatas... → €7.78 → €10.50
+✅ INT_988725: Sacho Monda... → €5.11 → €6.90
+✅ INT_48B77D: Sacho Coração... → €6.78 → €9.15
+✅ INT_7BBA67: Sacho Vimeiro... → €5.37 → €7.25
+✅ INT_7C3429: Extintor Pó Quimico ABC... → €17.78 → €24.00
+✅ INT_612AA0: Extintor CO2... → €32.59 → €44.00
+✅ INT_8C25CA: Luva gasolineira 27cms Nitrile Azul... → €0.89 → €1.20
+✅ INT_1DC30C: Pulverizador 2 Lts... → €1.99 → €2.69
+✅ INT_6CE894: Maço de Madeira... → €4.44 → €5.99
+✅ INT_5F53C3: Ancinho Madeira Dente Prego... → €3.70 → €4.99
+✅ INT_AAD5F9: Pião... → €1.48 → €2.00
+✅ INT_4DF6E5: Rodo Madeira... → €1.76 → €2.38
+✅ INT_04C94E: Crivo... → €6.67 → €9.00
+✅ INT_890DF1: Peneira... → €2.81 → €3.80
+✅ INT_98BF33: Máscara Protecção FFP2 c/ valvula... → €0.37 → €0.50
+✅ INT_A00E4A: Sacho Alce Nº1... → €5.89 → €7.95
+✅ INT_6A808A: Sacho Alce Nº0... → €5.70 → €7.70
+✅ INT_CCA46C: Sacho Viseu Nº0... → €5.89 → €7.95
+✅ INT_C8B6CB: Sacho Viseu Nº2/0... → €5.78 → €7.80
+✅ INT_3BE30C: Sacho Feijão... → €4.96 → €6.70
+✅ INT_DBCCF7: Pá (colher) Jardim... → €3.50 → €4.73
+✅ INT_CCC26C: Sacho de Plantação... → €7.00 → €9.45
+✅ INT_DBC8D4: Sacho de Jardim... → €3.93 → €5.30
+✅ INT_B26227: Sacho com Cabo... → €3.59 → €4.85
+✅ INT_9170E2: Pescasses... → €0.47 → €0.63
+✅ INT_239B36: Cunhas para Enxadas... → €0.47 → €0.63
+✅ INT_CE2CF7: Enxada de Bico Turquel... → €12.04 → €16.25
+✅ INT_BFAA17: Enxada Pontas Meia Redonda Turquel... → €13.81 → €18.65
+✅ INT_CE0B25: Enxada Pontas RedondasTurquel... → €13.81 → €18.65
+✅ INT_2E2E06: Enxada Pontas Bico Turquel... → €13.81 → €18.65
+✅ INT_573F85: Enxada Pontas Faca Turquel... → €13.81 → €18.65
+✅ INT_AAA3C1: Enxada Pontas Bico... → €9.59 → €12.95
+✅ INT_521E9F: Enxada Pontas Redondas... → €9.59 → €12.95
+✅ INT_58E974: Enxada Pontas Faca... → €9.59 → €12.95
+✅ INT_4D07AB: Enxada Pontas Meia Redonda... → €13.96 → €18.85
+✅ INT_CCE5D9: Enxada Pontas Vimeiro... → €13.96 → €18.85
+✅ INT_66D5F8: Enxada 2 bicos... → €8.81 → €11.90
+✅ INT_790FD2: Enxada Tipo Ancinho... → €12.81 → €17.30
+✅ INT_61DAC4: Enxadão Vinha... → €6.00 → €8.10
+✅ INT_0F130B: Enxada Mato Redonda... → €10.59 → €14.30
+✅ INT_AB1F2E: Enxada Barreiro... → €11.56 → €15.60
+✅ INT_E6F480: Enxada USA... → €8.00 → €10.80
+✅ INT_1491EC: Enxada castelo Branco... → €9.48 → €12.80
+✅ INT_B836C0: Enxada Meia Lua Triangular Turquel... → €13.85 → €18.70
+✅ INT_0309EB: Enxada Meia Lua Turquel... → €6.67 → €9.00
+✅ INT_B3E6A1: Enxada Meia Lua Alcobaça... → €13.85 → €18.70
+✅ INT_C6FC8E: Enxada Meia Lua Caldas... → €13.85 → €18.70
+✅ INT_2F2B60: Enxada Meia Lua Leiria... → €13.85 → €18.70
+✅ INT_FB2B07: Enxada Relvas... → €10.96 → €14.80
+✅ INT_DE5EFA: Enxada Leiria... → €8.78 → €11.85
+✅ INT_6DF80E: Enxada Vimeiro... → €10.19 → €13.75
+✅ INT_DFFCD2: Enxada Nacional com Peta... → €8.19 → €11.05
+✅ INT_1B6264: Enxada Nacional... → €6.48 → €8.75
+✅ INT_C1A840: Medidas Aferidas INOX... → €8.13 → €10.98
+✅ INT_E006D2: Apanha Fruta... → €2.80 → €3.78
+✅ INT_3107FD: Pá do Lixo... → €1.07 → €1.44
+✅ INT_A961D5: Enxofradeira... → €2.93 → €3.96
+✅ INT_15696C: Baldes Cónicos com Tampa... → €11.33 → €15.29
+✅ INT_ACC21C: Baldes Cónicos... → €7.23 → €9.76
+✅ INT_B8C5B9: Cabaço... → €6.67 → €9.00
+✅ INT_B28DE3: Ralos de Rega... → €3.33 → €4.50
+✅ INT_F16096: Regador Zincado... → €8.87 → €11.97
+✅ INT_EA0398: Panelas... → €17.03 → €22.99
+✅ INT_152EC6: Lata para Brasas... → €10.33 → €13.95
+✅ INT_92A495: Cafeteiras... → €8.16 → €11.02
+✅ INT_FAA69E: Assador de Castanhas... → €4.81 → €6.50
+✅ INT_D563FA: Corredor Direito Inox... → €15.41 → €20.80
+✅ INT_C99775: Corredor Direito... → €9.92 → €13.39
+✅ INT_9D0D68: Corredor redondo... → €6.67 → €9.00
+✅ INT_1D29E8: Comedouro para Coelhos... → €9.16 → €12.37
+✅ INT_6AB949: Comedouro para Galinhas Zincado... → €8.14 → €10.99
+✅ INT_BD903F: Mata frangos... → €5.41 → €7.30
+✅ INT_0FC028: Canudo para Toupeiras... → €1.75 → €2.36
+✅ INT_5D2732: Disco segmentado profissional multiusos... → €1.33 → €1.79
+✅ INT_4EB338: Misturador SDS Tinta / Cola-  Robusto... → €1.56 → €2.10
+✅ INT_551364: Pulverizador elétrico bateria Litio com lança metá... → €31.10 → €41.99
+✅ INT_4D0D3C: Máscaras cirurgicas cx 50pcs... → €0.04 → €0.06
+✅ INT_F9A0AA: Fato descartável Cat III tipo 5e6... → €2.44 → €3.30
+✅ INT_EC63ED: Fato descartável Cat I... → €1.30 → €1.75
+✅ INT_649102: Casaco Protecção Térmica - 5°c... → €58.52 → €79.00
+✅ INT_FED1D8: Pistola Mastik Prof. Reforçada... → €5.37 → €7.25
+✅ INT_B9791A: Talocha borracha preta... → €1.30 → €1.75
+✅ INT_B0A4A3: Corta Rebites  - 8"... → €2.46 → €3.32
+✅ INT_04159D: Capa de chuva em PU... → €9.99 → €13.49
+✅ INT_D1C9BB: Capa Chuva em Nylon - ECONOMIC... → €3.70 → €4.99
+✅ INT_09A39B: Viseira de proteção em rede com ajuste... → €2.96 → €3.99
+✅ INT_F569D1: Viseira de proteção acrílica com ajuste... → €1.47 → €1.99
+✅ INT_C601C1: Viseira de proteção acrílica... → €0.21 → €0.29
+✅ INT_4A3ACE: Máscara de soldador com visor... → €2.59 → €3.50
+✅ INT_4060F0: Colete de segurança de alta visibilidade verde... → €0.96 → €1.29
+✅ INT_6D3B69: Colete de segurança de alta visibilidade laranja... → €0.96 → €1.29
+✅ INT_B85085: Calças e jaqueta de trabalho azul marinho... → €7.04 → €9.50
+✅ INT_04F05B: Jardineira de trabalho azul marinho... → €5.18 → €6.99
+✅ INT_8F7E8D: Bata de trabalho azul marinho... → €3.70 → €4.99
+✅ INT_1A7A4F: Polainitos de soldador em pele... → €2.96 → €3.99
+✅ INT_AB8533: Manguitos de soldador em pele... → €2.96 → €3.99
+✅ INT_9FCBAF: Avental de soldador em pele... → €3.70 → €4.99
+✅ INT_764D30: Casaco de soldador em pele... → €12.22 → €16.50
+✅ INT_F0F8E3: Sapato de segurança pele branca... → €10.36 → €13.99
+✅ INT_2C7B3F: Bota de segurança S3 preta KEVLAR & MICROFIBRA... → €14.81 → €19.99
+✅ INT_E360C2: Sapato Ténis  camurça em KEVLAR e composito S1P... → €14.81 → €19.99
+✅ INT_CF1BA5: Bota de segurança S3 com biqueira reforçada e palm... → €10.36 → €13.99
+✅ INT_BF6FDA: Fita de sinalização amarela e preta 18mts x 50mm... → €1.25 → €1.69
+✅ INT_A2AFF1: Fita de sinalização branca e vermelha 200m x 50mm... → €1.18 → €1.59
+✅ INT_82A1F7: Rede de proteção laranja 100g/M2 = 1Mx50mts... → €10.36 → €13.99
+✅ INT_7AB457: Corrente de plástico branco e vermelha... → €14.44 → €19.50
+✅ INT_D4C2B0: Luva crute e pano com palma reforçada... → €1.33 → €1.79
+✅ INT_51AE25: Luva industrial preta... → €0.51 → €0.69
+✅ INT_FD10E9: Luva nitrile com nylon, palma e dedos cinzentos... → €0.28 → €0.38
+✅ INT_8B3556: Luva nylon com latex na palma dedos... → €0.41 → €0.55
+✅ INT_64FC79: Luva  pele genuína branca com dorso em algodão... → €1.44 → €1.95
+✅ INT_03446D: Luva pele genuína branca tipo chefe... → €1.03 → €1.39
+✅ INT_F0DFDD: Luva chefe pele genuína amarela... → €1.15 → €1.55
+✅ INT_3E6B04: Luva chefe crute cinza... → €0.81 → €1.09
+✅ INT_D428D8: Luva mista de crute e pele branca... → €0.96 → €1.29
+✅ INT_7E6F39: Luva para soldador crute vermelha... → €1.84 → €2.49
+✅ INT_40ADC2: Luva de soldador pele + crute 35 cm... → €1.37 → €1.85
+✅ INT_B9946D: Luva para soldador crute cinza canhão... → €1.22 → €1.65
+✅ INT_694D4E: Filtro para máscara tipo COMACEC 2-BL... → €0.70 → €0.95
+✅ INT_BE9C45: Auscultadores de proteção - Protectores... → €1.47 → €1.99
+✅ INT_062748: Óculos de proteção 100% transparentes... → €0.41 → €0.55
+✅ INT_E3ACE2: Óculos de proteção transparente... → €0.63 → €0.85
+✅ INT_62B1A9: óculos de proteção transparente... → €0.66 → €0.89
+✅ INT_3782C3: Maço de borracha preta com cabo em madeira enverni... → €0.70 → €0.95
+✅ INT_AC493E: Maço de borracha branca com cabo em madeira envern... → €1.56 → €2.10
+✅ INT_377D84: Maço de borracha branca profissional com cabo em f... → €2.04 → €2.75
+✅ INT_954A6E: Machadinha 600g profissional  com cabo em fibra de... → €4.44 → €5.99
+✅ INT_D828CC: Machado 1600g profissional com cabo em fibra de vi... → €8.52 → €11.50
+✅ INT_A912C1: Mini picareta 400g pá/bico com cabo em fibra de vi... → €2.96 → €3.99
+✅ INT_301FA2: Marreta Martelo de campo de 910mm com cabo em fibr... → €11.10 → €14.99
+✅ INT_CF9F40: Maceta 1kg cromada profissional com cabo em fibra ... → €4.44 → €5.99
+✅ INT_F146C3: Martelo de campo profissional com cabo em fibra de... → €4.44 → €5.99
+✅ INT_AD424F: Martelo  Maquinista profissional com cabo em fibra... → €2.19 → €2.95
+✅ INT_B34496: Faz tudo 600 Gr polido profissional com cabo em fi... → €4.44 → €5.99
+✅ INT_1AA2CE: Martelo cofragem 750g profissional com cabo fibra ... → €4.44 → €5.99
+✅ INT_E1A140: Martelo tipo americano profissional com cabo em fi... → €2.07 → €2.79
+✅ INT_60E7C8: Martelo de bola profissional com cabo em fibra de ... → €2.37 → €3.20
+✅ INT_EB0B04: Martelo de cofragem 600g com cabo em fibra de vidr... → €4.44 → €5.99
+✅ INT_733153: Corta Rebites... → €6.66 → €8.99
+✅ INT_AE1708: Cabo de fibra Grande Picareta / Marreta 910 mm... → €4.07 → €5.49
+✅ INT_998FAC: Cabo de fibra - faz tudo / martelo / cofragem... → €1.03 → €1.39
+✅ INT_569E68: Picareta profissional sem cabo... → €4.44 → €5.99
+✅ INT_9B23CA: Alicate bomba de água 250mm... → €3.19 → €4.30
+✅ INT_BC01FC: Alicate descarnador profissional... → €1.99 → €2.69
+✅ INT_6E6640: Alicate telefonista pontas redondas profissional... → €1.70 → €2.29
+✅ INT_6B5A63: Alicate telefonista pontas curvas profissional... → €1.70 → €2.29
+✅ INT_0DFB1B: Alicate telefonista pontas chatas profissional... → €1.70 → €2.29
+✅ INT_BDF8E5: Alicate telefonista profissional... → €1.70 → €2.29
+✅ INT_787D92: Alicate universal profissional... → €1.70 → €2.29
+✅ INT_E30C75: Alicate de corte diagonal profissional... → €1.70 → €2.29
+✅ INT_E96A11: Chave Pozidrive CRV ponta magnética... → €0.43 → €0.58
+✅ INT_E47323: Chave crescente cromo vanadio com punho de borrach... → €2.30 → €3.10
+✅ INT_1CCDEC: Alicate porta eletrodos 500 AMP... → €1.47 → €1.99
+✅ INT_7B5C34: Alicate de massa 500A  em aço cromado... → €1.96 → €2.65
+✅ INT_5C12A2: Bits profissionais 37pcs com ponta magnética... → €3.52 → €4.75
+✅ INT_05FADB: Jogo de chaves 46 Pcs - CRV... → €11.84 → €15.99
+✅ INT_D41BAB: Funil em plástico preto... → €0.93 → €1.25
+✅ INT_A70571: Carreto com cabo de aço 10mts -  450 kg... → €13.33 → €17.99
+✅ INT_8DD22B: Aparelho de arrasto 4 TON... → €8.14 → €10.99
+✅ INT_B8AD33: Carro de ferramentas com 3 prateleiras... → €37.03 → €49.99
+✅ INT_56C467: Macaco de garrafa profissional... → €5.92 → €7.99
+✅ INT_07CDE6: Aparelho diferêncial  Garibaldo em aço tratado de ... → €29.62 → €39.99
+✅ INT_1EFEE4: Busca polos 19cms T/SDS  profissional transparente... → €0.63 → €0.85
+✅ INT_E77C74: Cola Termofusível 1kg... → €2.96 → €3.99
+✅ INT_F062F4: Ficha tripla em T com proteção... → €1.10 → €1.49
+✅ INT_759F89: Ficha com interruptor simples... → €1.03 → €1.39
+✅ INT_888420: Ficha tripla Rectângular... → €1.22 → €1.65
+✅ INT_479A45: Interruptor estanque para exterior... → €1.18 → €1.59
+✅ INT_38FC26: Ficha branca PLST tipo SHUKO... → €0.41 → €0.55
+✅ INT_605D59: Ficha preta PLST tipo SHUKO... → €0.41 → €0.55
+✅ INT_08F6B9: Cabo de bateria 600A profissional - 4 metros... → €8.14 → €10.99
+✅ INT_1FE26D: Luz LED de presença 1W com interruptor... → €0.67 → €0.90
+✅ INT_E03CAE: Fio de nylon para aparador de relva - 15 metros... → €0.75 → €1.01
+✅ INT_C7AB49: Tesoura de cortar sebes 23" com lâmina ondulada 64... → €4.26 → €5.75
+✅ INT_822ED7: Serrote  de poda no AR com lâmina... → €5.18 → €6.99
+✅ INT_185252: Cabo extensível para serrote de poda "AR"... → €2.96 → €3.99
+✅ INT_772FF5: Serrote de poda pequeno dobrável... → €1.78 → €2.40
+✅ INT_72A6C3: Tesoura vindima profissional cabo borracha... → €2.56 → €3.45
+✅ INT_CD5CEE: Tesoura poda tipo Nacional... → €2.96 → €3.99
+✅ INT_6F0ADB: Pulverizador com lança em fibra... → €6.66 → €8.99
+✅ INT_E88A7B: Bateria GEL 8AH para pulverizador elétrico 16L... → €10.36 → €13.99
+Traceback (most recent call last):
+  File "/home/pixie/idea/scripts/import_real_pricing.py", line 238, in main
+    pricing_count = populate_internal_pricing(conn, price_lists)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pixie/idea/scripts/import_real_pricing.py", line 188, in populate_internal_pricing
+    cur.execute("""
+psycopg2.errors.UndefinedColumn: column "role" does not exist
+LINE 8: ...                 (SELECT user_id FROM users WHERE role = 'ad...
+                                                             ^
+
+✅ INT_7ADF17: Adaptador de torneira 1"... → €0.31 → €0.42
+✅ INT_25DBE5: Adaptador de torneira 3/4"... → €0.27 → €0.36
+✅ INT_B9DB7B: Agulheta de plástico com regulador - encaixe rápid... → €0.51 → €0.69
+✅ INT_25819F: Aspersor sectorial com regulação de direção  - 33 ... → €1.25 → €1.69
+✅ INT_4325CA: Disco diamantado cerâmica extra retificadora / reb... → €3.15 → €4.25
+✅ INT_5EDDA9: Disco diamantado turbo para retificadora / rebarba... → €1.03 → €1.39
+✅ INT_7556BB: Disco de corte para madeira 140x20x24T... → €1.47 → €1.99
+✅ INT_E5223E: Disco corte madeira 230x30x24T... → €2.81 → €3.79
+✅ INT_191EFF: Serras craneanas Conjunto de 16 peças... → €3.70 → €4.99
+✅ INT_3BDD2F: Serras craneanas Conjunto de 11 peças... → €2.21 → €2.99
+✅ INT_2C24EF: Serras craneanas Conjunto de 6 peças... → €1.30 → €1.75
+✅ INT_51A142: Destorcedor móvel zincado niquelado... → €20.37 → €27.50
+✅ INT_63617D: Manilha Galvanizada tipo europeu niquelado... → €3.84 → €5.19
+✅ INT_86C56A: Esticador galvanizado DIN 1480... → €6.30 → €8.50
+✅ INT_C25BB9: Elo rápido galvanizado niquelado... → €8.15 → €11.00
+✅ INT_77EAE5: Mosquetão Galvanizado niquelado... → €6.66 → €8.99
+✅ INT_9BEC81: Mosquetão galvanizado com rosca... → €9.26 → €12.50
+✅ INT_986931: Gancho móvel redondo com mola niquelado... → €17.96 → €24.25
+✅ INT_850249: Gancho simples com elo móvel niquelado - Mosq T/ F... → €3.19 → €4.30
+✅ INT_DAFBF9: Bicha Aço com um fecho... → €1.47 → €1.99
+✅ INT_3A1B8B: Traçador de reta + Pó de Traçar + nivel... → €1.56 → €2.10
+✅ INT_63FC40: Corta vidros profissional  com depósito para petró... → €1.47 → €1.99
+✅ INT_616785: cabo de fibra para picareta - redondo... → €4.07 → €5.50
+✅ INT_492111: Picareta profissional sem cabo... → €4.44 → €5.99
+✅ INT_B571DA: Mini picareta pá & bico - Picadeira cabo de fibra... → €4.11 → €5.55
+✅ INT_BA115E: Misturador- tinta / cola - Hexagonal... → €0.99 → €1.34
+✅ INT_6E8F8A: Pistola mastik profissional de aço tipo italiano... → €1.33 → €1.79
+✅ INT_719133: Pistola mastik de alumínio tipo italiano... → €2.96 → €3.99
+✅ INT_42A5C7: Pistola mastik profissional em tubo de alumínio... → €3.33 → €4.50
+✅ INT_DB3217: Colher de pedreiro - cabo de borracha... → €1.30 → €1.76
+✅ INT_B6E24D: Colher de pedreiro cortada - cabo de borracha... → €1.33 → €1.79
+✅ INT_E12A48: Colher de pedreiro  - cabo de madeira... → €1.10 → €1.49
+✅ INT_AA8F80: Colher de pedreiro cortada  - cabo de madeira... → €1.10 → €1.49
+✅ INT_D60AD2: Talocha 120x500 prof. de inox dentada 10x10 T/Inox... → €3.70 → €4.99
+✅ INT_0C0CE1: Talocha 120x500 prof. de inox lisa T/Inox - cabo d... → €4.36 → €5.89
+✅ INT_31F737: Talocha 120x300 prof de aço lisa T/Inox- cabo de b... → €2.81 → €3.79
+✅ INT_0D4AE9: Talocha 125x300 prof. de aço dentada 8x8 - T/Inox ... → €2.44 → €3.30
+✅ INT_539176: Pá metálica quadrada vermelha... → €4.44 → €5.99
+✅ INT_3B6AD0: Pás em Cabo Metal em Bico / Quadrada... → €4.44 → €5.99
+✅ INT_00AF97: Pá metálica quadrada - cabo de madeira e punho ABS... → €4.44 → €5.99
+✅ INT_29DB31: Pás de bico / Quadrada cabo Madeira... → €4.44 → €5.99
+✅ INT_85C3EA: Espatula Polida em Inox com cabo de borracha... → €0.56 → €0.75
+✅ INT_BA561F: Fita métrica em aço - caixa metálica... → €4.07 → €5.50
+✅ INT_F943E4: Fita métrica com travão... → €0.73 → €0.99
+✅ INT_145255: Corrente branca e vermelha 8mmx25mts... → €14.44 → €19.50
+✅ INT_4AC237: Serra cabos em aço inox 3mm... → €0.29 → €0.39
+✅ INT_17C45F: Serra cabos em aço galvanizado... → €2.37 → €3.20
+✅ INT_7BA27E: Rodizio industrial fixo - roda cinza... → €0.87 → €1.17
+✅ INT_F38396: Rodizio Giratório industrial com travão - roda cin... → €1.47 → €1.99
+✅ INT_37DD29: Rodizio Giratório industrial com roda cinza... → €0.64 → €0.87
+✅ INT_9F957C: Pedra de afiar Gadanha... → €0.38 → €0.51
+✅ INT_87ADD8: Pedra de afiar óxido alumínio 2 faces 6" ou 8"... → €0.33 → €0.44
+✅ INT_BCFAC0: Agrafador metálico 4-14mm... → €2.96 → €3.99
+✅ INT_E3103D: Lâminas para Xizato de 18mm... → €0.51 → €0.69
+✅ INT_B20954: Xizato com travão 18mm SK2... → €0.73 → €0.99
+✅ INT_5B2311: Xizato autoload com 3 laminas Blst + cx expositora... → €1.33 → €1.79
+✅ INT_95F83C: Catrabucha de taça ondulada para rebarbadora... → €1.33 → €1.79
+✅ INT_337F97: Catrabucha de taça entraçada para rebarbadora... → €1.15 → €1.55
+✅ INT_33BAA0: Escova arame de aço com cabo de plástico... → €0.66 → €0.89
+✅ INT_6679AF: Escova arame de aço Galv ou Latonado... → €0.51 → €0.69
+✅ INT_66001A: Remendos e Cola para bicicleta... → €0.51 → €0.69
+✅ INT_E4567A: Fita de alumínio... → €0.59 → €0.79
+✅ INT_A935FA: Plástico com Fita 210x20mts... → €1.99 → €2.69
+✅ INT_03EFF0: Abraçadeira Plst branco -saco100pcs... → €0.73 → €0.99
+✅ INT_4387AB: Abraçadeira Plst Preto - saco100pcs... → €0.73 → €0.99
+✅ INT_338D61: Cadeado Latonado T/ Goldoor... → €1.13 → €1.52
+✅ INT_1226FF: Canhão de Segurança chave computador... → €1.47 → €1.99
+✅ INT_E0C163: Esticador Ramada... → €0.27 → €0.37
+✅ Atualizados 396 produtos com custos base
+
+💲 POPULANDO INTERNAL_PRICING...
+
+❌ ERRO: column "role" does not exist
+LINE 8: ...                 (SELECT user_id FROM users WHERE role = 'ad...
+                                                             ^
+

@@ -1,0 +1,7 @@
+categoria,quantidade,fonte,data_geracao
+Produtos Total,410,internal_products,2025-06-28 10:21:13
+Produtos com Preço,396,base_cost > 0,2025-06-28 10:21:13
+Produtos sem Preço,14,base_cost = 0 ou NULL,2025-06-28 10:21:13
+Variantes Total,940,internal_variants,2025-06-28 10:21:13
+Produtos com Variantes,109,internal_variants,2025-06-28 10:21:13
+Produtos sem Variantes,301,LEFT JOIN NULL,2025-06-28 10:21:13

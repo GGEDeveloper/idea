@@ -156,7 +156,7 @@ alitools-b2b/
 ## 🚀 **COMEÇAR DESENVOLVIMENTO**
 
 ### **Pré-requisitos**
-- Node.js 18+ 
+- Node.js 18+
 - PostgreSQL/Neon access
 - Git
 
