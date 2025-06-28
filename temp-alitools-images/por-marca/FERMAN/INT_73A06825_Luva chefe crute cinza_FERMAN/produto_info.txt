@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_73A06825
+Nome PT: Luva chefe crute cinza
+Nome EN: Luva chefe crute cinza
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva chefe crute cinza
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2ba3b71adb144a50b305ac8333a64d67~mv2.jpg
+  Principal: Sim

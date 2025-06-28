@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_79518505
+Nome PT: Corredor redondo
+Nome EN: Corredor redondo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corredor redondo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_435b29323f454467839d05abf6123c42~mv2.jpg
+  Principal: Sim

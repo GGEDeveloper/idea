@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_182769A4
+Nome PT: Luva gasolineira 27cms Nitrile Azul
+Nome EN: Luva gasolineira 27cms Nitrile Azul
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva gasolineira 27cms Nitrile Azul
+Marca: 
+Coleção: Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_8b6512cd00b94b1ca09bb325df4d70ac~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_6cea255e819a47c79a2f66b7b8f64dd1~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_fe04b731c8044a859c2a7ac685404ddd~mv2.jpg
+  Principal: Não

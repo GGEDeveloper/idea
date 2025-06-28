@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EB4300D2
+Nome PT: Corrente de plástico branco e vermelha
+Nome EN: Corrente de plástico branco e vermelha
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corrente de plástico branco e vermelha
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b4982b1dced04141b99b31af7daabfbe~mv2.jpg
+  Principal: Sim

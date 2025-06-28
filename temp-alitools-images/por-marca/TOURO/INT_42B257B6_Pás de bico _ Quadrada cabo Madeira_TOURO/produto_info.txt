@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_42B257B6
+Nome PT: Pás de bico / Quadrada cabo Madeira
+Nome EN: Pás de bico / Quadrada cabo Madeira
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pás de bico / Quadrada cabo Madeira
+Marca: TOURO
+Coleção: Construção;Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_abb6833bcc904502ad9e1c3b4926092f~mv2.jpg
+  Principal: Sim

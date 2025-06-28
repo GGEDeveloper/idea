@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C493A82C
+Nome PT: Suporte para  Mangueira em Plástico Verde
+Nome EN: Suporte para  Mangueira em Plástico Verde
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Suporte para  Mangueira em Plástico Verde
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_89139789a5aa4b308a169d22483990a6~mv2.jpeg
+  Principal: Sim

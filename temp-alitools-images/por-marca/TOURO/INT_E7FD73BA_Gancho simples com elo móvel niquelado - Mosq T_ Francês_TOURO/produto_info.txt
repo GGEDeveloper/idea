@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E7FD73BA
+Nome PT: Gancho simples com elo móvel niquelado - Mosq T/ Francês
+Nome EN: Gancho simples com elo móvel niquelado - Mosq T/ Francês
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Gancho simples com elo móvel niquelado - Mosq T/ Francês
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6c07aed1fb674744872802852219f6e8~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_57EA339C
+Nome PT: Alicate de corte diagonal profissional
+Nome EN: Alicate de corte diagonal profissional
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate de corte diagonal profissional
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6b947f6e96ba4702910dbb037eec8275~mv2.jpg
+  Principal: Sim

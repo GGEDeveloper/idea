@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_728B7B09
+Nome PT: Foice Limpa Caldas
+Nome EN: Foice Limpa Caldas
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Foice Limpa Caldas
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_225ad1ee56f441538aa76c9ade5f9f20~mv2.jpg
+  Principal: Sim

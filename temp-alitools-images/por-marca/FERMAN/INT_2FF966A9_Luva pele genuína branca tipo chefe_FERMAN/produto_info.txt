@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_2FF966A9
+Nome PT: Luva pele genuína branca tipo chefe
+Nome EN: Luva pele genuína branca tipo chefe
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva pele genuína branca tipo chefe
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_13249fd8e8aa4ee5bf666fe1dd6cc4b4~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_f07639d46f724874ab22737ee65c21ea~mv2.jpg
+  Principal: Não

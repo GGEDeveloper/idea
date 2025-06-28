@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_80CC1AF2
+Nome PT: Mata frangos
+Nome EN: Mata frangos
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Mata frangos
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_40c75f9ecc1f40fc9e4f0e9cc7abfa4b~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_6c6e2f3775dc4ebb87d5c3abcb6bab33~mv2.jpg
+  Principal: Não

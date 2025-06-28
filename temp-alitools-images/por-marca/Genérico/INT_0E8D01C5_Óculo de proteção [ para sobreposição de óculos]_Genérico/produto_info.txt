@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0E8D01C5
+Nome PT: Óculo de proteção [ para sobreposição de óculos]
+Nome EN: Óculo de proteção [ para sobreposição de óculos]
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Óculo de proteção [ para sobreposição de óculos]
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_6459f9355efa47aea0b38e124e087560~mv2.png
+  Principal: Sim

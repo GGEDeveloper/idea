@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_71FAEBE5
+Nome PT: Expositor de aço para 7 bobines
+Nome EN: Expositor de aço para 7 bobines
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Expositor de aço para 7 bobines
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1fb13f47754d436c8eb51d1c3b49747f~mv2.jpg
+  Principal: Sim

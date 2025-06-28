@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5228E623
+Nome PT: Sapato de segurança pele branca
+Nome EN: Sapato de segurança pele branca
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sapato de segurança pele branca
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_39644b01909046f2ab03a3559ec2c329~mv2.jpg
+  Principal: Sim

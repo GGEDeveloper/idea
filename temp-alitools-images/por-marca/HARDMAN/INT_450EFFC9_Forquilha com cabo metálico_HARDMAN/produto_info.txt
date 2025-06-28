@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_450EFFC9
+Nome PT: Forquilha com cabo metálico
+Nome EN: Forquilha com cabo metálico
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Forquilha com cabo metálico
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_76c880ed2e9348da8272962ab206ffcb~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_cc32558286ad402782216a7f15f0ab66~mv2.jpg
+  Principal: Não

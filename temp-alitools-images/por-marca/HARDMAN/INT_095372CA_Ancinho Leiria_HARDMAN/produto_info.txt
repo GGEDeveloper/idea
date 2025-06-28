@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_095372CA
+Nome PT: Ancinho Leiria
+Nome EN: Ancinho Leiria
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ancinho Leiria
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_cd0bcb1cff8045a3b61c8e3f2b77e096~mv2.jpg
+  Principal: Sim

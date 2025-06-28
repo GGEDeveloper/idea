@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_39826FC1
+Nome PT: Maço de borracha branca profissional com cabo em fibra de vidro
+Nome EN: Maço de borracha branca profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Maço de borracha branca profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e539012c9330477ea7c9f6882bee34c1~mv2.png
+  Principal: Sim

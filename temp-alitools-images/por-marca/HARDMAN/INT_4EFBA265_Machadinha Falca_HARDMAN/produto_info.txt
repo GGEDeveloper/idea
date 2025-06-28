@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4EFBA265
+Nome PT: Machadinha Falca
+Nome EN: Machadinha Falca
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha Falca
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_45d7fa678e924017a12bfc67e8c18cd0~mv2.jpg
+  Principal: Sim

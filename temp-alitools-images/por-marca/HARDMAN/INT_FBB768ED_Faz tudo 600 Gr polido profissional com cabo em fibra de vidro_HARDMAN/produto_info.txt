@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FBB768ED
+Nome PT: Faz tudo 600 Gr polido profissional com cabo em fibra de vidro
+Nome EN: Faz tudo 600 Gr polido profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Faz tudo 600 Gr polido profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d384994c8d53440390715146644da89f~mv2.png
+  Principal: Sim

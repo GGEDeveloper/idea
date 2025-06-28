@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E13CA496
+Nome PT: Pulverizador elétrico bateria Litio com lança metálica telescópica
+Nome EN: Pulverizador elétrico bateria Litio com lança metálica telescópica
+Marca: TOURO
+Score Mapeamento: 0.5555555555555556
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pulverizador pressão com lança metálica telescópica
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_578c2855f80246a4ba91b6fe4204c66b~mv2.jpg
+  Principal: Sim

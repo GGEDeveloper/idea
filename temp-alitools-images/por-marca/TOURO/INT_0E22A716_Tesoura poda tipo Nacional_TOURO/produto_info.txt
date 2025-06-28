@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0E22A716
+Nome PT: Tesoura poda tipo Nacional
+Nome EN: Tesoura poda tipo Nacional
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Tesoura poda tipo Nacional
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8c104559e6c34f3785c5588ac7aa5d3e~mv2.jpg
+  Principal: Sim

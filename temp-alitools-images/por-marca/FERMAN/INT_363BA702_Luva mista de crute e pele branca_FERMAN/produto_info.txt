@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_363BA702
+Nome PT: Luva mista de crute e pele branca
+Nome EN: Luva mista de crute e pele branca
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva mista de crute e pele branca
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a68215ba9e5c4dba99cac50323159739~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_a564ce9579e84782aac897c3ff5aa67e~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_65f15a779150438aaba50d14e97839bc~mv2.jpg
+  Principal: Não

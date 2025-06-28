@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FD032584
+Nome PT: Calça Multibolsos reflectora Azul ou Cinza
+Nome EN: Calça Multibolsos reflectora Azul ou Cinza
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Calça Multibolsos reflectora Azul ou Cinza
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_83137e69d691458194e85057dbcda6d4~mv2.jpg
+  Principal: Sim

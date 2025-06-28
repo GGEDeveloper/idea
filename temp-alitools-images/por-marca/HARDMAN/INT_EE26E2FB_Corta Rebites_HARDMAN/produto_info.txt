@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EE26E2FB
+Nome PT: Corta Rebites
+Nome EN: Corta Rebites
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corta Rebites
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_58a03936470843009979ccd6f744c647~mv2.jpeg
+  Principal: Sim
+Imagem 2: 55dd72_10258b9e430d408abb533d1fb15d29f7~mv2.jpg
+  Principal: Não

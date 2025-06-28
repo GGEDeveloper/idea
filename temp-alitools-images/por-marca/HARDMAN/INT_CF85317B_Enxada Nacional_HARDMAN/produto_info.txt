@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CF85317B
+Nome PT: Enxada Nacional
+Nome EN: Enxada Nacional
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Nacional
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6e30eb75f556485cae8a2dda64ad942e~mv2.jpg
+  Principal: Sim

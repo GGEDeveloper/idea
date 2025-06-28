@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5181F219
+Nome PT: Corta vidros profissional  com depósito para petróleo
+Nome EN: Corta vidros profissional  com depósito para petróleo
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corta vidros profissional  com depósito para petróleo
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0e1cbfa04fe343ee94a67526fc77e882~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_08EEF6FA
+Nome PT: Maço de Madeira
+Nome EN: Maço de Madeira
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Maço de Madeira
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b0e781723e6b48819729b6e504f88ab3~mv2.jpg
+  Principal: Sim

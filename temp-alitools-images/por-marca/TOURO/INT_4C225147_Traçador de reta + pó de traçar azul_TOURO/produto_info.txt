@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4C225147
+Nome PT: Traçador de reta + pó de traçar azul
+Nome EN: Traçador de reta + pó de traçar azul
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Traçador de reta + pó de traçar azul
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b0e8f8283c6a4c15a8f17282a1155660~mv2.jpg
+  Principal: Sim

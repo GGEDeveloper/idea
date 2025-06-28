@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_24B97331
+Nome PT: Talocha 120x500 prof. de inox lisa T/Inox - cabo de madeira
+Nome EN: Talocha 120x500 prof. de inox lisa T/Inox - cabo de madeira
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha 120x500 prof. de inox lisa T/Inox - cabo de madeira
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_045b834d59aa4eda9e69a807ecd6f4eb~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_96A0751E
+Nome PT: Sapato Camurça S1P NO METAL
+Nome EN: Sapato Camurça S1P NO METAL
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sapato Camurça S1P NO METAL
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_c5fa2394e4eb47ac88b0c0fc9bebc7fb~mv2.png
+  Principal: Sim

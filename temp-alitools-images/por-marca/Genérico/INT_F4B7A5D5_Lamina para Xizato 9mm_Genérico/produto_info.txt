@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F4B7A5D5
+Nome PT: Lamina para Xizato 9mm
+Nome EN: Lamina para Xizato 9mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Lamina para Xizato 9mm
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_8ccf9827d97a4caa8149eb7f5d9541cc~mv2.jpeg
+  Principal: Sim

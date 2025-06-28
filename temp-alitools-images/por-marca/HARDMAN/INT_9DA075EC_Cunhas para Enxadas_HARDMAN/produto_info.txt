@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9DA075EC
+Nome PT: Cunhas para Enxadas
+Nome EN: Cunhas para Enxadas
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cunhas para Enxadas
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_037c22359449430d8d73e601b6a0023f~mv2.jpg
+  Principal: Sim

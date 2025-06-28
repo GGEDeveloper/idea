@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9974DD25
+Nome PT: Foice Douro Limpa
+Nome EN: Foice Douro Limpa
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Foice Douro Limpa
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_4f14ad95d01748bf9f125a7209dea535~mv2.jpg
+  Principal: Sim

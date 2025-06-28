@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_847B6EEE
+Nome PT: Disco de corte para madeira 140x20x24T
+Nome EN: Disco de corte para madeira 140x20x24T
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco de corte para madeira 140x20x24T
+Marca: TOURO
+Coleção: Construção;Discos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_54611488eb6b42cab548fce1f822abba~mv2.jpg
+  Principal: Sim

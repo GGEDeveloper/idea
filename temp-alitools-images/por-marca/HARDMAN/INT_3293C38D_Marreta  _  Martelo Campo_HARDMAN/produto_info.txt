@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3293C38D
+Nome PT: Marreta  /  Martelo Campo
+Nome EN: Marreta  /  Martelo Campo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Marreta  /  Martelo Campo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_f562185e4305456daa8f42811a8e2fd5~mv2.jpg
+  Principal: Sim

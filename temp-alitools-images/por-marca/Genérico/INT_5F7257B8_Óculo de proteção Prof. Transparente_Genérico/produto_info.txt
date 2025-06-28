@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5F7257B8
+Nome PT: Óculo de proteção Prof. Transparente
+Nome EN: Óculo de proteção Prof. Transparente
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Óculo de proteção Prof. Transparente 
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_924811fabc2f455bb2fe4f42d6f264c0~mv2.png
+  Principal: Sim

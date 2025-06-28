@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_34C625E5
+Nome PT: Colher de pedreiro - cabo de borracha
+Nome EN: Colher de pedreiro - cabo de borracha
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Colher de pedreiro - cabo de borracha
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d10da11d3fe3494d9aa84c5d361531ca~mv2.jpg
+  Principal: Sim

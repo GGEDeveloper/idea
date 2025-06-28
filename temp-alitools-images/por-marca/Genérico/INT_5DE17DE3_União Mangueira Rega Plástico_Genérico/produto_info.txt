@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5DE17DE3
+Nome PT: União Mangueira Rega Plástico
+Nome EN: União Mangueira Rega Plástico
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: União Mangueira Rega Plástico 
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_067117d3a5554c35bc9f330484d4e145~mv2.jpeg
+  Principal: Sim

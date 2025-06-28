@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FA739AA2
+Nome PT: Machadinha com Martelo
+Nome EN: Machadinha com Martelo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha com Martelo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a5e6c42371cd4267836e1e2ee9a5bea8~mv2.jpg
+  Principal: Sim

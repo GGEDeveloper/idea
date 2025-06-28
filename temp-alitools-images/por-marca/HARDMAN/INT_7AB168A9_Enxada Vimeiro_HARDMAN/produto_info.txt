@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7AB168A9
+Nome PT: Enxada Vimeiro
+Nome EN: Enxada Vimeiro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Vimeiro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_bb3aafb505984a25b9fe350a3c2937e5~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F63EAD9F
+Nome PT: Bota de segurança S3 preta KEVLAR & MICROFIBRA
+Nome EN: Bota de segurança S3 preta KEVLAR & MICROFIBRA
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bota de segurança S3 preta KEVLAR & MICROFIBRA
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_86ae2ebdf6c746a2ade772fbbfb37680~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_671426FF
+Nome PT: Chave Pozidrive CRV ponta magnética
+Nome EN: Chave Pozidrive CRV ponta magnética
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Chave Pozidrive CRV ponta magnética
+Marca: HARDMAN
+Coleção: Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2966aca089b24a10a7f22e7eb7c05a8d~mv2.jpg
+  Principal: Sim

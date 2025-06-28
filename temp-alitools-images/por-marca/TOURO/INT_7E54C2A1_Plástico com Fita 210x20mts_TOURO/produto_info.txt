@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7E54C2A1
+Nome PT: Plástico com Fita 210x20mts
+Nome EN: Plástico com Fita 210x20mts
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Plástico com Fita 210x20mts
+Marca: TOURO
+Coleção: Construção;Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_f39ca6180e7f411bbedb9d1b2695209b~mv2.jpg
+  Principal: Sim

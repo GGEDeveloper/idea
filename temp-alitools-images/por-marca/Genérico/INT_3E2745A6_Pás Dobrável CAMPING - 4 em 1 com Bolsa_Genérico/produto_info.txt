@@ -1,0 +1,30 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3E2745A6
+Nome PT: Pás Dobrável CAMPING - 4 em 1 com Bolsa
+Nome EN: Pás Dobrável CAMPING - 4 em 1 com Bolsa
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 6
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pás Dobrável CAMPING - 4 em 1 com Bolsa
+Marca: 
+Coleção: Construção;Jardim;Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_d135b03a6e8b4c8dbfe591fb295cc6dd~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_7d0bafa0bc6541449bd9959cf6da11e2~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_6247166655d74d17bc134dfaf7e99da3~mv2.jpg
+  Principal: Não
+Imagem 4: 88efbe_16e63e10473b4c648882dbec8a51b185~mv2.jpg
+  Principal: Não
+Imagem 5: 88efbe_f187bf80cb86448cbf8769f6a1ab883c~mv2.jpg
+  Principal: Não
+Imagem 6: 88efbe_e98ccc5a84424a6cb253be7bc583bc2d~mv2.jpg
+  Principal: Não

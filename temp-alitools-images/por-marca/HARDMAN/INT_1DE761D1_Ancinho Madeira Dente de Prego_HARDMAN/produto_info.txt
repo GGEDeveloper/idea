@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1DE761D1
+Nome PT: Ancinho Madeira Dente de Prego
+Nome EN: Ancinho Madeira Dente de Prego
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ancinho Madeira Dente de Prego
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_10f69cf3152f4e10bc07e2e0b0c789d3~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6C94903E
+Nome PT: Alicate de massa 500A  em aço cromado
+Nome EN: Alicate de massa 500A  em aço cromado
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate de massa 500A  em aço cromado
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_3a4f5b2edd494574b34e30c186237261~mv2.jpg
+  Principal: Sim

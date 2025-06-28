@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CD5C3377
+Nome PT: Corredor Direito Inox
+Nome EN: Corredor Direito Inox
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corredor Direito Inox
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6f02462fa2d947629738450bc8be7f1b~mv2.jpg
+  Principal: Sim

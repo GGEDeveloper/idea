@@ -1,0 +1,20 @@
+RELATÓRIO DE DOWNLOAD - ALITOOLS IMAGES
+==================================================
+Data: 2025-06-28 16:09:03
+
+RESUMO GERAL
+============
+Total de produtos: 408
+Produtos processados: 408
+Imagens descarregadas: 2440
+Imagens falharam: 0
+Taxa de sucesso: 100.0%
+
+ESTATÍSTICAS POR MARCA
+======================
+FERMAN: 42 produtos, 280 imagens
+Gardman: 1 produtos, 5 imagens
+Genérico: 71 produtos, 505 imagens
+HARDMAN: 187 produtos, 1010 imagens
+Hardman: 1 produtos, 10 imagens
+TOURO: 106 produtos, 630 imagens

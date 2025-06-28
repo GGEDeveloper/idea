@@ -1,0 +1,58 @@
+{
+  "versao": "2.0",
+  "timestamp": 1751120046.2556338,
+  "total_produtos": 6,
+  "total_imagens_baixadas": 0,
+  "total_falhas": 0,
+  "estatisticas_tipos": {},
+  "produtos": [
+    {
+      "vip_id": "INT_C6DB06A9",
+      "nome_alitools": "parka-impermiavel-reflectora",
+      "url": "https://www.alimamedetools.com/product-page/parka-impermi%C3%A1vel-reflectora",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    },
+    {
+      "vip_id": "INT_FF39EB27",
+      "nome_alitools": "fato-de-chuva-reflector",
+      "url": "https://www.alimamedetools.com/product-page/fato-de-chuva-reflector",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    },
+    {
+      "vip_id": "INT_C53773B7",
+      "nome_alitools": "luva-nitrile-preta",
+      "url": "https://www.alimamedetools.com/product-page/luva-nitrile-preta-com-nylon-grossa-prof",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    },
+    {
+      "vip_id": "INT_0BB129F3",
+      "nome_alitools": "talocha-de-grosa",
+      "url": "https://www.alimamedetools.com/product-page/talocha-de-grosa-endurecida-120-x-375mm-a3701",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    },
+    {
+      "vip_id": "INT_4AF69DA0",
+      "nome_alitools": "espatula-em-abs",
+      "url": "https://www.alimamedetools.com/product-page/espatula-em-abs-250-mm",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    },
+    {
+      "vip_id": "INT_870A51FF",
+      "nome_alitools": "serrote-prof-cortar-ferro",
+      "url": "https://www.alimamedetools.com/product-page/serrote-prof-cortar-ferro-12-300-mm",
+      "imagens_encontradas": 0,
+      "imagens_baixadas": 0,
+      "status": "sem_imagens"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D419E958
+Nome PT: Extintor CO2
+Nome EN: Extintor CO2
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Extintor CO2
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_e415cbc9587242f8a89cf32bdf3ed65f~mv2.jpg
+  Principal: Sim

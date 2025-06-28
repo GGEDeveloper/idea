@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7404DD50
+Nome PT: Pedra de afiar Gadanha
+Nome EN: Pedra de afiar Gadanha
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pedra de afiar Gadanha
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1f41801269ff4f09bcd83706deebfb74~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_d5de2b2c229347ef8806276e6377d722~mv2.jpg
+  Principal: Não

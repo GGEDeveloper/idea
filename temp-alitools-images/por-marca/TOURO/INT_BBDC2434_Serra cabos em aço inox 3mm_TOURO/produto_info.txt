@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BBDC2434
+Nome PT: Serra cabos em aço inox 3mm
+Nome EN: Serra cabos em aço inox 3mm
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serra cabos em aço inox 3mm
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_7bc454b463e84e6fbef731570e3d49c8~mv2.jpg
+  Principal: Sim

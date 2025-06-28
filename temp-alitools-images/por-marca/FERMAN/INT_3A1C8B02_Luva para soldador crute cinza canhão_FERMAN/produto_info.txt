@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3A1C8B02
+Nome PT: Luva para soldador crute cinza canhão
+Nome EN: Luva para soldador crute cinza canhão
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva para soldador crute cinza canhão
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e808d7d9123c4e12a4e640299554c437~mv2.jpg
+  Principal: Sim

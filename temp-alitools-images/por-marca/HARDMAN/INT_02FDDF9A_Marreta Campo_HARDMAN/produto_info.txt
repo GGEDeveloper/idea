@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_02FDDF9A
+Nome PT: Marreta Campo
+Nome EN: Marreta Campo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Marreta Campo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a5d9b330cafd484fb7090ac98962d5e6~mv2.jpg
+  Principal: Sim

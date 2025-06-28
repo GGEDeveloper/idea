@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FB134288
+Nome PT: Machado Cortiça
+Nome EN: Machado Cortiça
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machado Cortiça
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_cd02bc70d06947419b252f6fbc405b4e~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1694D786
+Nome PT: Disco corte Madeira, Plst, Gesso Cartonado 125x22.2mm
+Nome EN: Disco corte Madeira, Plst, Gesso Cartonado 125x22.2mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco corte Madeira, Plst, Gesso Cartonado 125x22.2mm
+Marca: 
+Coleção: Discos;Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_7de34eb0b1d84d48820f5e0f0d4a0ce5~mv2.jpeg
+  Principal: Sim

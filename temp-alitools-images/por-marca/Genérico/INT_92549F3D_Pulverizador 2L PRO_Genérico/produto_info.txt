@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_92549F3D
+Nome PT: Pulverizador 2L PRO
+Nome EN: Pulverizador 2L PRO
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pulverizador 2L PRO
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_0908e035d16148e2b68ee63fd2837663~mv2.jpg
+  Principal: Sim

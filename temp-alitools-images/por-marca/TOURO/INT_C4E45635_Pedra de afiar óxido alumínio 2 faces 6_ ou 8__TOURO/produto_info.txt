@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C4E45635
+Nome PT: Pedra de afiar óxido alumínio 2 faces 6" ou 8"
+Nome EN: Pedra de afiar óxido alumínio 2 faces 6" ou 8"
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pedra de afiar óxido alumínio 2 faces 6" ou 8"
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e4010d49946b441cbf7f90b8e4e5685d~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_5ba731050ecd44b1a46ff0515046a145~mv2.jpg
+  Principal: Não

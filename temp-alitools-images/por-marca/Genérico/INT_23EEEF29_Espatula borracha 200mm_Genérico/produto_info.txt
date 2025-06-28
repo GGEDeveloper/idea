@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_23EEEF29
+Nome PT: Espatula borracha 200mm
+Nome EN: Espatula borracha 200mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Espatula borracha 200mm
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_2cf6243974ab4b259cbf679c7b6fc01d~mv2.jpeg
+  Principal: Sim

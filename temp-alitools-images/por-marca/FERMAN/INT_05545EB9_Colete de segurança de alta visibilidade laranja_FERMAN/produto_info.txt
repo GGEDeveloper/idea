@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_05545EB9
+Nome PT: Colete de segurança de alta visibilidade laranja
+Nome EN: Colete de segurança de alta visibilidade laranja
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Colete de segurança de alta visibilidade laranja
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8dd22b6ce43a428caa2bf743bcf57f0a~mv2.jpg
+  Principal: Sim

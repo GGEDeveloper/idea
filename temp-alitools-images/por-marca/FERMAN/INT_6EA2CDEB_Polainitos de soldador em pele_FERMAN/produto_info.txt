@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6EA2CDEB
+Nome PT: Polainitos de soldador em pele
+Nome EN: Polainitos de soldador em pele
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Polainitos de soldador em pele
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_4631dcc0766746fd88b0a10632219b98~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BFC55978
+Nome PT: Esticador Ramada
+Nome EN: Esticador Ramada
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Esticador Ramada
+Marca: 
+Coleção: Jardim;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_42ec47a23b714651a2c4a2921b97d11f~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_e84dc18bb3c14ee8a731a4b741102db0~mv2.jpg
+  Principal: Não

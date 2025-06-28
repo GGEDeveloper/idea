@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_8E242732
+Nome PT: Rede de proteção laranja 100g/M2 = 1Mx50mts
+Nome EN: Rede de proteção laranja 100g/M2 = 1Mx50mts
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Rede de proteção laranja 100g/M2 = 1Mx50mts
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_693ad1dbb3dc4095955a92441014e55d~mv2.jpg
+  Principal: Sim

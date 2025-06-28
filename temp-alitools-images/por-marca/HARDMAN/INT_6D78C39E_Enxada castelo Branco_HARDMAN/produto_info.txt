@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6D78C39E
+Nome PT: Enxada castelo Branco
+Nome EN: Enxada castelo Branco
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada castelo Branco
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2c6fa057c39d4bcc886a7b3a1ef7c78e~mv2.jpg
+  Principal: Sim

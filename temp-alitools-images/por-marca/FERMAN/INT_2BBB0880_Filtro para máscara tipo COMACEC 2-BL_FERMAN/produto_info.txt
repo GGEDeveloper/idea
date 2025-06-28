@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_2BBB0880
+Nome PT: Filtro para máscara tipo COMACEC 2-BL
+Nome EN: Filtro para máscara tipo COMACEC 2-BL
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Filtro para máscara tipo COMACEC 2-BL
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_181d23d49c9b4ddea362be2e4a20a1d0~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D0A28012
+Nome PT: Turques de carpinteiro 8" / 200mm
+Nome EN: Turques de carpinteiro 8" / 200mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Turques de carpinteiro 8" / 200mm 
+Marca: 
+Coleção: Alicates;Construção;Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_a86b885a023841a9810c5a9597b56a12~mv2.jpeg
+  Principal: Sim

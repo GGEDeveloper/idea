@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F59DFB82
+Nome PT: Sapatilha ténis Ancla S1P NO METAL
+Nome EN: Sapatilha ténis Ancla S1P NO METAL
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sapatilha ténis Ancla S1P NO METAL
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_7f6a60d00006477482c70faf9d134a05~mv2.png
+  Principal: Sim

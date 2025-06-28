@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E94AA2D5
+Nome PT: Interruptor estanque para exterior
+Nome EN: Interruptor estanque para exterior
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Interruptor estanque para exterior
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_887b7a3f8c874b9188a5f98e6434f700~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_8e6a3382175848bda990776bdfd21c20~mv2.jpg
+  Principal: Não

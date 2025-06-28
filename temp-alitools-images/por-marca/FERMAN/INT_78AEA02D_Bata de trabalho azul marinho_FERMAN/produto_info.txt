@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_78AEA02D
+Nome PT: Bata de trabalho azul marinho
+Nome EN: Bata de trabalho azul marinho
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bata de trabalho azul marinho
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0936eeca126846179f8632b4186c2681~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_281E73C9
+Nome PT: Cadeado Latonado T/ Goldoor
+Nome EN: Cadeado Latonado T/ Goldoor
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cadeado Latonado T/ Goldoor
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9ce9c86813eb4b19a1fbb96cca06fb25~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_6e5f3541de60448eac3365aa3711c995~mv2.jpg
+  Principal: Não

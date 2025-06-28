@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_849AFD62
+Nome PT: Maceta 1kg cromada profissional com cabo em fibra de vidro
+Nome EN: Maceta 1kg cromada profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Maceta 1kg cromada profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0a8b1280b2aa4f86b6f129cc50d1a431~mv2.png
+  Principal: Sim

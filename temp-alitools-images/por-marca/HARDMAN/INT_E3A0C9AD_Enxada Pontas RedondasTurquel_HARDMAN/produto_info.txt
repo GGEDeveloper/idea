@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E3A0C9AD
+Nome PT: Enxada Pontas RedondasTurquel
+Nome EN: Enxada Pontas RedondasTurquel
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Pontas RedondasTurquel
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8c40421b8fe64bc4a25356f7e3b6f757~mv2.jpg
+  Principal: Sim

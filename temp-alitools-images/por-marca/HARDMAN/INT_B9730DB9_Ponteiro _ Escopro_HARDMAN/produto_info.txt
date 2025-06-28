@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_B9730DB9
+Nome PT: Ponteiro / Escopro
+Nome EN: Ponteiro / Escopro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ponteiro / Escopro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_a60c2db82df34d93845cc720153ba00d~mv2.jpg
+  Principal: Sim

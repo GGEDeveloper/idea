@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7F25879F
+Nome PT: Espátula de estucador dentada - cabo de borracha
+Nome EN: Espátula de estucador dentada - cabo de borracha
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Espátula de estucador dentada - cabo de borracha
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_af0df87c63ae4e49981f613234601582~mv2.jpg
+  Principal: Sim

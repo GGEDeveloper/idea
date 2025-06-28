@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_04C28727
+Nome PT: Fita de sinalização branca e vermelha 200m x 50mm
+Nome EN: Fita de sinalização branca e vermelha 200m x 50mm
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fita de sinalização branca e vermelha 200m x 50mm
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1cafdaa02de34d2ea759a81d644e3b1f~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_7389d17059d0414fac42edaaad33c461~mv2.jpg
+  Principal: Não

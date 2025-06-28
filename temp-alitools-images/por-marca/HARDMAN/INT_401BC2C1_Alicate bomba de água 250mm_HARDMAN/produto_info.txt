@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_401BC2C1
+Nome PT: Alicate bomba de água 250mm
+Nome EN: Alicate bomba de água 250mm
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate bomba de água 250mm
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_f6b97b5c1eb14dab85363bae862f55db~mv2.jpeg
+  Principal: Sim
+Imagem 2: 55dd72_bb40cc59c7a54eacaeba7b2ddbb6fd56~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_3ae545c2dc134963bf15dee3cb58d01d~mv2.jpg
+  Principal: Não

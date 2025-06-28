@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BC88F6DB
+Nome PT: Avental de soldador em pele
+Nome EN: Avental de soldador em pele
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Avental de soldador em pele
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_ec431331cd8e4cf7b014e90864707253~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_19678ED4
+Nome PT: Bits profissionais 37pcs com ponta magnética
+Nome EN: Bits profissionais 37pcs com ponta magnética
+Marca: HARDMAN
+Score Mapeamento: 0.5
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bits ponta magnética
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b262f393cbf94c38b0d18aca4b6348e2~mv2.jpg
+  Principal: Sim

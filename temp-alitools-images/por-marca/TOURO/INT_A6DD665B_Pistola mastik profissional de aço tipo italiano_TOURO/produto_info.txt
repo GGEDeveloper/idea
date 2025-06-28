@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A6DD665B
+Nome PT: Pistola mastik profissional de aço tipo italiano
+Nome EN: Pistola mastik profissional de aço tipo italiano
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pistola mastik profissional de aço tipo italiano
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_91428b9fb0754881a6bd744040a77d30~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6DB2FFCA
+Nome PT: Disco segmentado profissional multiusos
+Nome EN: Disco segmentado profissional multiusos
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco segmentado profissional multiusos
+Marca: TOURO
+Coleção: Construção;Discos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_7cb466ae681b4882916b6872cf3c6341~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4B8DDE13
+Nome PT: Luva nylon com latex na palma dedos
+Nome EN: Luva nylon com latex na palma dedos
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva nylon com latex na palma dedos
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_590e9bd7e7e64a96b55fbd1d561b1aec~mv2.jpg
+  Principal: Sim

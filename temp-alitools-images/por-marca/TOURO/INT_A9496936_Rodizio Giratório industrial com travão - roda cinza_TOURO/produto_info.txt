@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A9496936
+Nome PT: Rodizio Giratório industrial com travão - roda cinza
+Nome EN: Rodizio Giratório industrial com travão - roda cinza
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Rodizio Giratório industrial com travão - roda cinza
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_4a837f3315dc46079f0ab545d1eacdb3~mv2.jpg
+  Principal: Sim

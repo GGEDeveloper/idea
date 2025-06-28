@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_25FEEAC0
+Nome PT: Talocha borracha preta
+Nome EN: Talocha borracha preta
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha borracha preta
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9510cb1f4e1844bdb0996bd9cc9fb34a~mv2.jpg
+  Principal: Sim

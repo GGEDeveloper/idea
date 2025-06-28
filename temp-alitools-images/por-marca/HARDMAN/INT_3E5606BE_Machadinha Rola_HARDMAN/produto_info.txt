@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3E5606BE
+Nome PT: Machadinha Rola
+Nome EN: Machadinha Rola
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha Rola
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_98eb6ca63cdc4afb80004e6b71bf0c5e~mv2.jpg
+  Principal: Sim

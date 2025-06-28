@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1FE4A713
+Nome PT: Bate Estacas
+Nome EN: Bate Estacas
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bate Estacas
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6620c78e9fe04534a80a9840b9ea0917~mv2.jpg
+  Principal: Sim

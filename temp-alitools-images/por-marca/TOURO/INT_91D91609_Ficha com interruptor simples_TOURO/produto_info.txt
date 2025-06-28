@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_91D91609
+Nome PT: Ficha com interruptor simples
+Nome EN: Ficha com interruptor simples
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ficha com interruptor simples
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d9ed6c99e11d4b8ba3f67d747d595fd6~mv2.jpg
+  Principal: Sim

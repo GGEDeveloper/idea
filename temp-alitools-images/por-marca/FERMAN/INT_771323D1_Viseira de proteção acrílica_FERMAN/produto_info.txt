@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_771323D1
+Nome PT: Viseira de proteção acrílica
+Nome EN: Viseira de proteção acrílica
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Viseira de proteção acrílica
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_796db1b7faee49bc8d9fc3dc1f20cd3c~mv2.jpeg
+  Principal: Sim

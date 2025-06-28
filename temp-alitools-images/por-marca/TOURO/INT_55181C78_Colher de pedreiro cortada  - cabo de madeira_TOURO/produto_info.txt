@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_55181C78
+Nome PT: Colher de pedreiro cortada  - cabo de madeira
+Nome EN: Colher de pedreiro cortada  - cabo de madeira
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Colher de pedreiro cortada  - cabo de madeira
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_f0f7bfa27e5245a79253ee6faf969f2f~mv2.jpg
+  Principal: Sim

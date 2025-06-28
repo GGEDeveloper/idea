@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_8B65E89F
+Nome PT: Ficha tripla Rectângular
+Nome EN: Ficha tripla Rectângular
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ficha tripla Rectângular
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8042fbab5e6647eb8ce1fb58853aea1a~mv2.jpg
+  Principal: Sim

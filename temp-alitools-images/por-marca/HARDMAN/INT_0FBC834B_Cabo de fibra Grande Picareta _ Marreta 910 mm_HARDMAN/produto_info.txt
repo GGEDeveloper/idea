@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0FBC834B
+Nome PT: Cabo de fibra Grande Picareta / Marreta 910 mm
+Nome EN: Cabo de fibra Grande Picareta / Marreta 910 mm
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cabo de fibra Grande Picareta / Marreta 910 mm
+Marca: HARDMAN
+Coleção: Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a1430395825b4a7d89148ed44f1ae990~mv2.jpg
+  Principal: Sim

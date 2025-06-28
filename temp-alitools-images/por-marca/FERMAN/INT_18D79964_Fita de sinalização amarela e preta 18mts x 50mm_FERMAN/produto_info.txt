@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_18D79964
+Nome PT: Fita de sinalização amarela e preta 18mts x 50mm
+Nome EN: Fita de sinalização amarela e preta 18mts x 50mm
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fita de sinalização amarela e preta 18mts x 50mm
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2b3c25f9e0574dcba4a72e5b117773e0~mv2.jpg
+  Principal: Sim

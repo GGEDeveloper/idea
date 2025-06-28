@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A79EF400
+Nome PT: Máscara Protecção FFP2 c/ valvula
+Nome EN: Máscara Protecção FFP2 c/ valvula
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Máscara Protecção FFP2 c/ valvula 
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_7582c5b4b8d94a55aa1ef82d8e281b8e~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C46AFA40
+Nome PT: Laminas pretas SK5 -18mm [10pcs] para Xizato -[890088/2]
+Nome EN: Laminas pretas SK5 -18mm [10pcs] para Xizato -[890088/2]
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Laminas pretas SK5 -18mm [10pcs] para Xizato -[890088/2]
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_c6498925dc884db083d9c4e92eaf05eb~mv2.jpg
+  Principal: Sim

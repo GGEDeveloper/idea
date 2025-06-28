@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4A829F96
+Nome PT: Chaviete Temperado
+Nome EN: Chaviete Temperado
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Chaviete Temperado
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_12a200c1f1684735a69f5c9d1de3ab54~mv2.jpg
+  Principal: Sim

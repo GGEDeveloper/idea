@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_2CE31F45
+Nome PT: Podão Leiria Aberto
+Nome EN: Podão Leiria Aberto
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Podão Leiria Aberto
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_646b212c753e4d21a46021d3c88bfc32~mv2.jpg
+  Principal: Sim

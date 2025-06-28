@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_12CCF77E
+Nome PT: Sacho de Plantação
+Nome EN: Sacho de Plantação
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sacho de Plantação
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9980b533a5f843d0bc56a256fbc01a24~mv2.jpg
+  Principal: Sim

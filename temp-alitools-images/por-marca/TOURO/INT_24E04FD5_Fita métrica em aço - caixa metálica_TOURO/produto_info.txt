@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_24E04FD5
+Nome PT: Fita métrica em aço - caixa metálica
+Nome EN: Fita métrica em aço - caixa metálica
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fita métrica em aço - caixa metálica
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2b513241f7474bfaa6c3e3bd6c904c83~mv2.png
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3304C207
+Nome PT: Cabo extensível para serrote de poda "AR"
+Nome EN: Cabo extensível para serrote de poda "AR"
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cabo extensível para serrote de poda "AR"
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_104b9af03ea0481fa21485412f0ab7a6~mv2.jpg
+  Principal: Sim

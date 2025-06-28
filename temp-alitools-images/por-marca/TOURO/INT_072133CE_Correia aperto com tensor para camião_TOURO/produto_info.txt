@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_072133CE
+Nome PT: Correia aperto com tensor para camião
+Nome EN: Correia aperto com tensor para camião
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Correia aperto com tensor para camião
+Marca: TOURO
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fb823bde1a904e56bab114badfc27af8~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_00F1DA11
+Nome PT: Máscaras cirurgicas cx 50pcs
+Nome EN: Máscaras cirurgicas cx 50pcs
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Máscaras cirurgicas cx 50pcs
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_abd46befd59b40f3a8f68892f77ac189~mv2.jpg
+  Principal: Sim

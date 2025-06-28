@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_B284BABC
+Nome PT: Broca cónica escalonada HSS - TITANIO
+Nome EN: Broca cónica escalonada HSS - TITANIO
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Broca cónica escalonada HSS - TITANIO
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_be88b443fae34d46b2d550a9cf28993d~mv2.jpeg
+  Principal: Sim

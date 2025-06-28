@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_42853901
+Nome PT: Gadanha Mato
+Nome EN: Gadanha Mato
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Gadanha Mato
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_51bbdfbd38f04285ada27cc8510d6184~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E8183E82
+Nome PT: Cinto Pedreiro com 11 Bolsas para Ferramentas
+Nome EN: Cinto Pedreiro com 11 Bolsas para Ferramentas
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cinto Pedreiro com 11 Bolsas para Ferramentas 
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_d8835b500ccf43cbac2f4c6a7997ad02~mv2.jpeg
+  Principal: Sim

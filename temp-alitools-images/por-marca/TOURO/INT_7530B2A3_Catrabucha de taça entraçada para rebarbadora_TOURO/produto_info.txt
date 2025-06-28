@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7530B2A3
+Nome PT: Catrabucha de taça entraçada para rebarbadora
+Nome EN: Catrabucha de taça entraçada para rebarbadora
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Catrabucha de taça entraçada para rebarbadora
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6393456b44a94eb786c024bfc7518fd4~mv2.jpg
+  Principal: Sim

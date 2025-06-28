@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DE28B83E
+Nome PT: Aparelho diferêncial  Garibaldo em aço tratado de alta resistência
+Nome EN: Aparelho diferêncial  Garibaldo em aço tratado de alta resistência
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Aparelho diferêncial  Garibaldo em aço tratado de alta resistência
+Marca: TOURO
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2ade4fa3211e4289b5a6f8bff0adc42e~mv2.jpg
+  Principal: Sim

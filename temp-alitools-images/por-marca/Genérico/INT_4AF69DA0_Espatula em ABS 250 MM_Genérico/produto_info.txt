@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4AF69DA0
+Nome PT: Espatula em ABS 250 MM
+Nome EN: Espatula em ABS 250 MM
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Espatula em ABS 250 MM
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_945213F4
+Nome PT: Luz LED de presença 1W com interruptor
+Nome EN: Luz LED de presença 1W com interruptor
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luz LED de presença 1W com interruptor
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b9734d633000432d88a6a50296752a9c~mv2.jpg
+  Principal: Sim

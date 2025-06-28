@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_8D9BD0C5
+Nome PT: Busca polos 19cms T/SDS  profissional transparente
+Nome EN: Busca polos 19cms T/SDS  profissional transparente
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Busca polos 19cms T/SDS  profissional transparente
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_5644c6dabe3a4832829e3d8c16519ea8~mv2.jpg
+  Principal: Sim

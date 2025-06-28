@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DD1A9CC1
+Nome PT: Talocha para estucador Inox 110x240MM
+Nome EN: Talocha para estucador Inox 110x240MM
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha para estucador Inox 110x240MM
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_e3f0b8ef1ead4fe8b81d0615d3fd3130~mv2.jpg
+  Principal: Sim

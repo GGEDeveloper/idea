@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0A2A819B
+Nome PT: Enxada de Bico Turquel
+Nome EN: Enxada de Bico Turquel
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada de Bico Turquel
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0fb5d3ed279045b488c0c25ad1cac90a~mv2.jpg
+  Principal: Sim

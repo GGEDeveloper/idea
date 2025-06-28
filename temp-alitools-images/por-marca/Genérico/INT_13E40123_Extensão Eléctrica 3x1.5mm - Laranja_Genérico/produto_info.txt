@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_13E40123
+Nome PT: Extensão Eléctrica 3x1.5mm - Laranja
+Nome EN: Extensão Eléctrica 3x1.5mm - Laranja
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Extensão Eléctrica 3x1.5mm - Laranja 
+Marca: 
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_9c00cf0ac5fb466a8270417ea4eb5820~mv2.jpeg
+  Principal: Sim

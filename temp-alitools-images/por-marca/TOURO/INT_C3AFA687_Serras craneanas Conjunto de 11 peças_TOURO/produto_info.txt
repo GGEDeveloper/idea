@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C3AFA687
+Nome PT: Serras craneanas Conjunto de 11 peças
+Nome EN: Serras craneanas Conjunto de 11 peças
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serras craneanas Conjunto de 11 peças
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e638f553989f4a52bb3c9bed3da17286~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C6DB06A9
+Nome PT: Parka impermeável Reflector
+Nome EN: Parka impermeável Reflector
+Marca: Genérico
+Score Mapeamento: 0.5
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Blusão impermeável reflector
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_f79418db5a1248c784408eec0d96ba11~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D9816747
+Nome PT: Machado 1600g profissional com cabo em fibra de vidro
+Nome EN: Machado 1600g profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machado 1600g profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_89c20c3c40544fbc9820db0088406acb~mv2.jpeg
+  Principal: Sim
+Imagem 2: 55dd72_b13bdb827f2a4ec291e4d71e7552b4a5~mv2.jpg
+  Principal: Não

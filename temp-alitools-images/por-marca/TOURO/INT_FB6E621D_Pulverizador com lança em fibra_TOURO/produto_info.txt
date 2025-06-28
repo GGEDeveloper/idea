@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FB6E621D
+Nome PT: Pulverizador com lança em fibra
+Nome EN: Pulverizador com lança em fibra
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pulverizador com lança em fibra
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_5c6c4fa2ab5142729e8cc8fda7906fd7~mv2.jpg
+  Principal: Sim

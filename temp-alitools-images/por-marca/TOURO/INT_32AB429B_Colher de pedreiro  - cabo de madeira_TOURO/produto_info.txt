@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_32AB429B
+Nome PT: Colher de pedreiro  - cabo de madeira
+Nome EN: Colher de pedreiro  - cabo de madeira
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Colher de pedreiro  - cabo de madeira
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_cc2270e4983e40a595521794688ac8cc~mv2.jpg
+  Principal: Sim

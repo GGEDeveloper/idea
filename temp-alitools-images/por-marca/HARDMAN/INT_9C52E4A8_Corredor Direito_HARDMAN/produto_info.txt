@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9C52E4A8
+Nome PT: Corredor Direito
+Nome EN: Corredor Direito
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corredor Direito
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_57e5b941fe764f2aa6eb3726e780d758~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_4769a8e536d74fd99160e90004720334~mv2.jpg
+  Principal: Não

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_897B0042
+Nome PT: Faca de alcatifa Profissional  5 Laminas Autoload
+Nome EN: Faca de alcatifa Profissional  5 Laminas Autoload
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Faca de alcatifa Profissional  5 Laminas Autoload
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_80a7307480694ec9bbe2a3624bfde3fa~mv2.jpeg
+  Principal: Sim

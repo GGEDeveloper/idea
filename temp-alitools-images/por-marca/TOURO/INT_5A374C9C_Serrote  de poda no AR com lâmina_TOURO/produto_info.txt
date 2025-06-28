@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5A374C9C
+Nome PT: Serrote  de poda no AR com lâmina
+Nome EN: Serrote  de poda no AR com lâmina
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serrote  de poda no AR com lâmina
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e17587df47ae49e4b3a0ca8bdbe157ca~mv2.jpg
+  Principal: Sim

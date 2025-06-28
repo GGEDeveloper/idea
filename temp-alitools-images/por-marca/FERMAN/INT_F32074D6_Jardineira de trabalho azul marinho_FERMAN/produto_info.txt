@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F32074D6
+Nome PT: Jardineira de trabalho azul marinho
+Nome EN: Jardineira de trabalho azul marinho
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Jardineira de trabalho azul marinho
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_430d8ac622304807a67129c4a0417232~mv2.jpg
+  Principal: Sim

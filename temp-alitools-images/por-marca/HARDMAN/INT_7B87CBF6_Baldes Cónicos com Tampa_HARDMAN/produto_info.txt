@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7B87CBF6
+Nome PT: Baldes Cónicos com Tampa
+Nome EN: Baldes Cónicos com Tampa
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Baldes Cónicos com Tampa
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9155a3bcb4934f9bbd92d37c298db04d~mv2.jpg
+  Principal: Sim

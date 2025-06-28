@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A5D8E101
+Nome PT: Martelo Calceteiro
+Nome EN: Martelo Calceteiro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo Calceteiro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_43d7f66b488d4bc6a4864bd6165ba11d~mv2.jpg
+  Principal: Sim

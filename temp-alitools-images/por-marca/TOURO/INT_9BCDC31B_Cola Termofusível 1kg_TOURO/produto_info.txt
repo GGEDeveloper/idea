@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9BCDC31B
+Nome PT: Cola Termofusível 1kg
+Nome EN: Cola Termofusível 1kg
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cola Termofusível 1kg
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_5865393d036e46948a57e5e6e2ec8734~mv2.jpg
+  Principal: Sim

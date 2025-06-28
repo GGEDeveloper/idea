@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_B99E419B
+Nome PT: Mosquetão galvanizado com rosca
+Nome EN: Mosquetão galvanizado com rosca
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Mosquetão galvanizado com rosca
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fe65c108eb23446ea75fe440fcf54c31~mv2.jpg
+  Principal: Sim

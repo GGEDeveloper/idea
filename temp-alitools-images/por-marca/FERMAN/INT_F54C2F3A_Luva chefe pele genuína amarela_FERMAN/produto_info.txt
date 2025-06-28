@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F54C2F3A
+Nome PT: Luva chefe pele genuína amarela
+Nome EN: Luva chefe pele genuína amarela
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva chefe pele genuína amarela
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d3cd002330994075af8337027019398b~mv2.jpg
+  Principal: Sim

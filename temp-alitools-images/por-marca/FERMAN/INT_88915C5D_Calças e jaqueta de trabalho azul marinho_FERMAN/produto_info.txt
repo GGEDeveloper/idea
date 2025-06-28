@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_88915C5D
+Nome PT: Calças e jaqueta de trabalho azul marinho
+Nome EN: Calças e jaqueta de trabalho azul marinho
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Calças e jaqueta de trabalho azul marinho
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fdb6afc251da4f2689108ac0e5dd84bb~mv2.jpg
+  Principal: Sim

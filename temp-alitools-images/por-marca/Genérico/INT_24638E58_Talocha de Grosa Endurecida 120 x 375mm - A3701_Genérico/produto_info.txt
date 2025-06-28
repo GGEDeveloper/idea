@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_24638E58
+Nome PT: Talocha de Grosa Endurecida 120 x 375mm - A3701
+Nome EN: Talocha de Grosa Endurecida 120 x 375mm - A3701
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha de Grosa Endurecida 120 x 375mm - A3701
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_e9a2c7f013ae441d80133d5646618a2f~mv2.jpg
+  Principal: Sim

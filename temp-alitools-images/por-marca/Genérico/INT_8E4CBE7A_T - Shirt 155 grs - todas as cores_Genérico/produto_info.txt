@@ -1,0 +1,30 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_8E4CBE7A
+Nome PT: T - Shirt 155 grs - todas as cores
+Nome EN: T - Shirt 155 grs - todas as cores
+Marca: Genérico
+Score Mapeamento: 0.3333333333333333
+Total Imagens: 6
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Capacete Protecção- todas as cores
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_5e5d81e8966c476e83d7d76871cfc81a~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_e7d8032fb5b14137a13c25a55efb8375~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_0215e1226846418bacd7864950b9a379~mv2.jpg
+  Principal: Não
+Imagem 4: 55dd72_01af216f74424e549ae88d47fc14a260~mv2.jpg
+  Principal: Não
+Imagem 5: 55dd72_c6096f7d268b4438aa1a1c64410502d2~mv2.jpg
+  Principal: Não
+Imagem 6: 55dd72_7b6a952f21e54a15afb1538701346408~mv2.jpg
+  Principal: Não

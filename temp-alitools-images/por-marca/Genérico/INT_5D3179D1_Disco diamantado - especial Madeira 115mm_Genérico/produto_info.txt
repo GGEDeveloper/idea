@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5D3179D1
+Nome PT: Disco diamantado - especial Madeira 115mm
+Nome EN: Disco diamantado - especial Madeira 115mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco diamantado - especial Madeira 115mm
+Marca: 
+Coleção: Construção;Discos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_12aaa035148b4e12b217afb19ca42b3e~mv2.jpg
+  Principal: Sim

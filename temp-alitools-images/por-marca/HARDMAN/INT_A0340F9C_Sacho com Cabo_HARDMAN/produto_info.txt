@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A0340F9C
+Nome PT: Sacho com Cabo
+Nome EN: Sacho com Cabo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sacho com Cabo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_927dd9adf2724cffb9ddb94f950c7dab~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9887BDBF
+Nome PT: Manguitos de soldador em pele
+Nome EN: Manguitos de soldador em pele
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Manguitos de soldador em pele
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fd584fe30edd4dcb8a86f8b61fb0334e~mv2.jpg
+  Principal: Sim

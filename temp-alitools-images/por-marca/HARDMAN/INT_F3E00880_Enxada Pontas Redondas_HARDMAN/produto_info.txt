@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F3E00880
+Nome PT: Enxada Pontas Redondas
+Nome EN: Enxada Pontas Redondas
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Pontas Redondas
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8c40421b8fe64bc4a25356f7e3b6f757~mv2.jpg
+  Principal: Sim

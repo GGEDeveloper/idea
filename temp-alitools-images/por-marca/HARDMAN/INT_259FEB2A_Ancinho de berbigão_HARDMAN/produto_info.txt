@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_259FEB2A
+Nome PT: Ancinho de berbigão
+Nome EN: Ancinho de berbigão
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ancinho de berbigão
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_f4e17154ae9e4966a01d2e2d374433c3~mv2.jpg
+  Principal: Sim

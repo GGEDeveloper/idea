@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_00289E59
+Nome PT: Ficha preta PLST tipo SHUKO
+Nome EN: Ficha preta PLST tipo SHUKO
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ficha preta PLST tipo SHUKO
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_39c41b4946684bba8dd9da947ff04a8d~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_1151cc1220b94ed78e76f7541c00899e~mv2.jpg
+  Principal: Não

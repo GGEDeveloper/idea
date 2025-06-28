@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0FD2B740
+Nome PT: Pá Cabo de Madeira modelo Bufalo
+Nome EN: Pá Cabo de Madeira modelo Bufalo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pá Cabo de Madeira modelo Bufalo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_bfaa9ac7632543fa9bc3e2173a6cb537~mv2.jpg
+  Principal: Sim

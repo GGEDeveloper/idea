@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D352B3B9
+Nome PT: Luva nitrile com nylon, palma e dedos cinzentos
+Nome EN: Luva nitrile com nylon, palma e dedos cinzentos
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva nitrile com nylon, palma e dedos cinzentos
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e37b10a77cd344cb85d88c416669e45d~mv2.jpg
+  Principal: Sim

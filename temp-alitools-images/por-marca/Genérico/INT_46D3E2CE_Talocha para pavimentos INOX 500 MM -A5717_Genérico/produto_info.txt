@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_46D3E2CE
+Nome PT: Talocha para pavimentos INOX 500 MM -A5717
+Nome EN: Talocha para pavimentos INOX 500 MM -A5717
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha para pavimentos INOX 500 MM -A5717
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_8bd8e8d1243f48058f59f6e84da5d0ea~mv2.jpg
+  Principal: Sim

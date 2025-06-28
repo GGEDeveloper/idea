@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C1707895
+Nome PT: Capa Chuva em Nylon - ECONOMIC
+Nome EN: Capa Chuva em Nylon - ECONOMIC
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Capa Chuva em Nylon - ECONOMIC
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_b392255cf2424150a76bedd9a66bb536~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_272e7e6c94534d84b35e71742252d2de~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_2ed7bc4a9af6493f871f0562d4344b38~mv2.jpg
+  Principal: Não

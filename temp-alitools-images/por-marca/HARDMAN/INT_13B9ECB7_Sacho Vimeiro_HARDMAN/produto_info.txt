@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_13B9ECB7
+Nome PT: Sacho Vimeiro
+Nome EN: Sacho Vimeiro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sacho Vimeiro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b7cc184d0b2548589b909fce4a82a74f~mv2.jpg
+  Principal: Sim

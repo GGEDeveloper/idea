@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_088B50A0
+Nome PT: Alicate telefonista pontas curvas profissional
+Nome EN: Alicate telefonista pontas curvas profissional
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate telefonista pontas curvas profissional
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b50cbf602a8c4d16845cb0e17a52d6d6~mv2.jpg
+  Principal: Sim

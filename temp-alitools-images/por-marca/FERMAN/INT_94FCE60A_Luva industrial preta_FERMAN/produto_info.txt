@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_94FCE60A
+Nome PT: Luva industrial preta
+Nome EN: Luva industrial preta
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva industrial preta
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_d084217945e04669a461fe691c8d4471~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_507440b61aa84bbeb1b296bdfed28fcd~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_1aa1f55b36ff4c8da5c62762cf3ea2d3~mv2.jpg
+  Principal: Não

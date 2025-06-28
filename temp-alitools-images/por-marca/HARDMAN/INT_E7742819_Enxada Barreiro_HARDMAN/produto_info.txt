@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E7742819
+Nome PT: Enxada Barreiro
+Nome EN: Enxada Barreiro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Barreiro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a33b5ff6e30d4f85b5fe5aa5d275bbae~mv2.jpg
+  Principal: Sim

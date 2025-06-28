@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EF140090
+Nome PT: Capa de chuva em PU
+Nome EN: Capa de chuva em PU
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Capa de chuva em PU
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_7bbbe6a13b4147eba9fe0e2b456f717b~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_09a69afd6e5a4e69afe3eaf54ee299bb~mv2.jpg
+  Principal: Não

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_87A464F9
+Nome PT: Serrote de poda pequeno dobrável
+Nome EN: Serrote de poda pequeno dobrável
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serrote de poda pequeno dobrável
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_20bde000d8ce4a1d8558dbeeac1f4811~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1A060188
+Nome PT: Mini picareta 400g pá/bico com cabo em fibra de vidro
+Nome EN: Mini picareta 400g pá/bico com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Mini picareta 400g pá/bico com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_571baffb25a64ebd837d10e316470ce2~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_30709af5cbcb4c859537f1dc8d55c096~mv2.jpg
+  Principal: Não

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A377ADF0
+Nome PT: Agulheta de plástico com regulador - encaixe rápido
+Nome EN: Agulheta de plástico com regulador - encaixe rápido
+Marca: TOURO
+Score Mapeamento: 0.45454545454545453
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Agulheta de rega, bico fino em plástico, encaixe rápido
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_54b70a849e24400297b1385179323298~mv2.jpg
+  Principal: Sim

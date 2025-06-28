@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_99E8E6AA
+Nome PT: Pá Francesa
+Nome EN: Pá Francesa
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pá Francesa
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2c53a379a63b4ec4aaaf44af089dbb85~mv2.jpg
+  Principal: Sim

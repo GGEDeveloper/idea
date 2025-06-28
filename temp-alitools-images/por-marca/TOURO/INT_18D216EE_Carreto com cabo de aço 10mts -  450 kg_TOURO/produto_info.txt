@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_18D216EE
+Nome PT: Carreto com cabo de aço 10mts -  450 kg
+Nome EN: Carreto com cabo de aço 10mts -  450 kg
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Carreto com cabo de aço 10mts -  450 kg
+Marca: TOURO
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a079ba26a11c492bbe2e8c707064eb52~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3594DDEA
+Nome PT: Forquilha curva mini- dente torneado
+Nome EN: Forquilha curva mini- dente torneado
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Forquilha curva mini- dente torneado
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_97b5f1567b4d4a0f83801308f845f0c3~mv2.jpg
+  Principal: Sim

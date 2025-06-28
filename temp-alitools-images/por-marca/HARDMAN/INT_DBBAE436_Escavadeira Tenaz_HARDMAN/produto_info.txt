@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DBBAE436
+Nome PT: Escavadeira Tenaz
+Nome EN: Escavadeira Tenaz
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Escavadeira Tenaz
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_ba5d89a14999458091ef9ff370690d58~mv2.jpg
+  Principal: Sim

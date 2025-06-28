@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3EE7E1CC
+Nome PT: Talocha 125x300 prof. de aço dentada 8x8 - T/Inox - cabo de borracha
+Nome EN: Talocha 125x300 prof. de aço dentada 8x8 - T/Inox - cabo de borracha
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha 125x300 prof. de aço dentada 8x8 - T/Inox - cabo de borracha
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_7385fca59fcc453c90563e688f4b222b~mv2.jpg
+  Principal: Sim

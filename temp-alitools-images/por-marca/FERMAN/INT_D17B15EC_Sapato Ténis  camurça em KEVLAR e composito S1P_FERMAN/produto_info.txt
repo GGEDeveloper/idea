@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D17B15EC
+Nome PT: Sapato Ténis  camurça em KEVLAR e composito S1P
+Nome EN: Sapato Ténis  camurça em KEVLAR e composito S1P
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sapato Ténis  camurça em KEVLAR e composito S1P
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_da31d9de3422419c99b1ed6d1784af23~mv2.jpg
+  Principal: Sim

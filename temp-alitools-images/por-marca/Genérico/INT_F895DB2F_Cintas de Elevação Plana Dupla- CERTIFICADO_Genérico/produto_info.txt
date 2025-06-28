@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F895DB2F
+Nome PT: Cintas de Elevação Plana Dupla- CERTIFICADO
+Nome EN: Cintas de Elevação Plana Dupla- CERTIFICADO
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cintas de Elevação Plana Dupla- CERTIFICADO 
+Marca: 
+Coleção: Construção;Oficina Mecânica;Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_f8e8f8f10f3f4df89c4ad6ef0b5adb04~mv2.jpg
+  Principal: Sim

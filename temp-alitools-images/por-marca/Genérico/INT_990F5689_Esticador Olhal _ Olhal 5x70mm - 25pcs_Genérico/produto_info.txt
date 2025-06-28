@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_990F5689
+Nome PT: Esticador Olhal / Olhal 5x70mm - 25pcs
+Nome EN: Esticador Olhal / Olhal 5x70mm - 25pcs
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Esticador Olhal / Olhal 5x70mm - 25pcs
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_2992dc58776c4154a02a5b5634d0c842~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_106079cf72754b919b0eaa654dde4f6b~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_2f80bf19ddac4d7daa8a7f2433805aa3~mv2.jpg
+  Principal: Não

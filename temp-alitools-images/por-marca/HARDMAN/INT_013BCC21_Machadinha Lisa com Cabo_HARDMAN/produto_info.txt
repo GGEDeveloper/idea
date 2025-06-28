@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_013BCC21
+Nome PT: Machadinha Lisa com Cabo
+Nome EN: Machadinha Lisa com Cabo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha Lisa com Cabo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2c9211f84bc148098545ea5efa147349~mv2.jpg
+  Principal: Sim

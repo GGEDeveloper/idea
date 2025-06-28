@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FFCA5FA3
+Nome PT: Ancinho para Batata
+Nome EN: Ancinho para Batata
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ancinho para Batata
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_5536810101614f60aa83a6e257d0442e~mv2.jpg
+  Principal: Sim

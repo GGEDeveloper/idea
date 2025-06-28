@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E8F28B1D
+Nome PT: Fita de alumínio
+Nome EN: Fita de alumínio
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fita de alumínio
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e69d9ac7778e43ff8bfcbb8a5d8e39d5~mv2.jpg
+  Principal: Sim

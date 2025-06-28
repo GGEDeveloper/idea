@@ -1,0 +1,28 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_203A3A82
+Nome PT: Catrabucha de taça ondulada para rebarbadora
+Nome EN: Catrabucha de taça ondulada para rebarbadora
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 5
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Catrabucha de taça ondulada para rebarbadora
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e1c630c4dd944dc5ad9721604797e522~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_748c21b0c1b84c57bbcfbf2f96991acb~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_d4132676063f457aa085688d93ec4ee7~mv2.jpg
+  Principal: Não
+Imagem 4: 88efbe_9f914246877a426a855dd90e1b26d9b8~mv2.jpg
+  Principal: Não
+Imagem 5: 88efbe_94442ad7094941be82dd974f262ecd57~mv2.jpg
+  Principal: Não

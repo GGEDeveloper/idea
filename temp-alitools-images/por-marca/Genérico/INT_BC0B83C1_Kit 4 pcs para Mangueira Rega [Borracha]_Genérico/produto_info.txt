@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BC0B83C1
+Nome PT: Kit 4 pcs para Mangueira Rega [Borracha]
+Nome EN: Kit 4 pcs para Mangueira Rega [Borracha]
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Kit 4 pcs para Mangueira Rega [Borracha]
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_e0e3b0686b724e21a57ab0194f5fb1cd~mv2.jpeg
+  Principal: Sim

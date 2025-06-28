@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5115C800
+Nome PT: Correia de aperto com Tensor [vários Tamanhos]
+Nome EN: Correia de aperto com Tensor [vários Tamanhos]
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Correia de aperto com Tensor [vários Tamanhos]
+Marca: 
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_726e04fe0cf4494ab1755c944e73a55e~mv2.jpeg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_9BA3FD00
+Nome PT: Extensão Eléctrica 25Mts x 2.5mm Bobine [900338]
+Nome EN: Extensão Eléctrica 25Mts x 2.5mm Bobine [900338]
+Marca: Genérico
+Score Mapeamento: 0.3333333333333333
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Extensão Elétrica 25 mts x 2,5mm bobine em Metal
+Marca: 
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_5eb7ac171dce41a687fba3c69d0c4eff~mv2.jpg
+  Principal: Sim

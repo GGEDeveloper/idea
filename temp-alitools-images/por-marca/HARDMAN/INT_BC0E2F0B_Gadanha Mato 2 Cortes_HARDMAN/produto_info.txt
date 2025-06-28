@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BC0E2F0B
+Nome PT: Gadanha Mato 2 Cortes
+Nome EN: Gadanha Mato 2 Cortes
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Gadanha Mato 2 Cortes
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1c5c8420f5dd4d47b1e3e0f639ac936b~mv2.jpg
+  Principal: Sim

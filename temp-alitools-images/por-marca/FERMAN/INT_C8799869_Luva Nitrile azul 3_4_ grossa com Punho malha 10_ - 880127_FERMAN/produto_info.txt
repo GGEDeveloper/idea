@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C8799869
+Nome PT: Luva Nitrile azul 3/4" grossa com Punho malha 10" - 880127
+Nome EN: Luva Nitrile azul 3/4" grossa com Punho malha 10" - 880127
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva Nitrile azul 3/4" grossa com Punho malha 10" - 880127
+Marca: FERMAN
+Coleção: Luvas de Protecção;Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_869ea2f2cf984839adda41786eb00faa~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_2B18F68C
+Nome PT: Funil em plástico preto
+Nome EN: Funil em plástico preto
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Funil em plástico preto
+Marca: TOURO
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_12f10c5b7ead4166938e6c2d4fc12439~mv2.jpg
+  Principal: Sim

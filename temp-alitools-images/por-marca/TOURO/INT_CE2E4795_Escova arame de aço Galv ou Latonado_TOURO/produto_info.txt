@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CE2E4795
+Nome PT: Escova arame de aço Galv ou Latonado
+Nome EN: Escova arame de aço Galv ou Latonado
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Escova arame de aço Galv ou Latonado
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_738682e9817c4e51a3c3ada174aa7474~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_1c30e623db6f413fab24157bab5147f6~mv2.jpg
+  Principal: Não

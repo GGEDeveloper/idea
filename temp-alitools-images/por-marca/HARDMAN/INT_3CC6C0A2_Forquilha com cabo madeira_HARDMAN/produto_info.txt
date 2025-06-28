@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3CC6C0A2
+Nome PT: Forquilha com cabo madeira
+Nome EN: Forquilha com cabo madeira
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Forquilha com cabo madeira
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0fbc4d009261449a96a0727561b8b78b~mv2.jpg
+  Principal: Sim

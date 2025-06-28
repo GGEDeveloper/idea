@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_75D07C82
+Nome PT: Auscultadores de proteção - Protectores
+Nome EN: Auscultadores de proteção - Protectores
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Auscultadores de proteção - Protectores
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e4d9d26f0a4a4a4ba06a5f02bb8dc89e~mv2.jpg
+  Principal: Sim

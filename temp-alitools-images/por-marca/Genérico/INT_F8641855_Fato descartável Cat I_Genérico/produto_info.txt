@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F8641855
+Nome PT: Fato descartável Cat I
+Nome EN: Fato descartável Cat I
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fato descartável Cat I 
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_95419e9b218d480d93c3da7c2f97a95e~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_1644a1ed6b944f648970a09f71a6d1f2~mv2.jpg
+  Principal: Não

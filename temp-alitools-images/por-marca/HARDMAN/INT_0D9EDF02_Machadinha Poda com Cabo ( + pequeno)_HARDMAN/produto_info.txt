@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0D9EDF02
+Nome PT: Machadinha Poda com Cabo ( + pequeno)
+Nome EN: Machadinha Poda com Cabo ( + pequeno)
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha Poda com Cabo ( + pequeno)
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2c9211f84bc148098545ea5efa147349~mv2.jpg
+  Principal: Sim

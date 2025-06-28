@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DEFEF580
+Nome PT: Corta Rebites  - 8"
+Nome EN: Corta Rebites  - 8"
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corta Rebites  - 8"
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0822f9428ead4ebdb439304b8e50314a~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_d47ddc73c4244be7a8efdfce55e9083d~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_03b42d2d19154474a7de4acd7329b6f8~mv2.jpg
+  Principal: Não

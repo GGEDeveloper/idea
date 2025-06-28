@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_695C1DF5
+Nome PT: Foice Meia lua com Galho
+Nome EN: Foice Meia lua com Galho
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Foice Meia lua com Galho
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_69758b66c5fa4e68be0058a7666ececa~mv2.jpg
+  Principal: Sim

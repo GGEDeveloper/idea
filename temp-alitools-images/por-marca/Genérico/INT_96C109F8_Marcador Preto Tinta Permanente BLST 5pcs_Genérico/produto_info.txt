@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_96C109F8
+Nome PT: Marcador Preto Tinta Permanente BLST 5pcs
+Nome EN: Marcador Preto Tinta Permanente BLST 5pcs
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Marcador Preto Tinta Permanente BLST 5pcs
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_1e58dcf54bdf47f4b59aa8948cde90b6~mv2.jpeg
+  Principal: Sim

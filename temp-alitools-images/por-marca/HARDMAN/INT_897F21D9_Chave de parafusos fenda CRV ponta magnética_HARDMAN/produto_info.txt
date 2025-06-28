@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_897F21D9
+Nome PT: Chave de parafusos fenda CRV ponta magnética
+Nome EN: Chave de parafusos fenda CRV ponta magnética
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Chave de parafusos fenda CRV ponta magnética
+Marca: HARDMAN
+Coleção: Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_387fb20eefe341be8d76dbdba69aa0c7~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1CBA816B
+Nome PT: Adaptador de torneira 1"
+Nome EN: Adaptador de torneira 1"
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Adaptador de torneira 1"
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_4296ce03b3254f24a7e25f0e443673fb~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_0a5015df7e9f47268ee11f51170a6999~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_ebfdfb66ec2b48038088b383c921b529~mv2.jpg
+  Principal: Não

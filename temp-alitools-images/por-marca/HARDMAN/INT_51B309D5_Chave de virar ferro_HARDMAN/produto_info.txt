@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_51B309D5
+Nome PT: Chave de virar ferro
+Nome EN: Chave de virar ferro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Chave de virar ferro
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_57f9679c4a1a44b9a5fcf896469a7ccf~mv2.jpg
+  Principal: Sim

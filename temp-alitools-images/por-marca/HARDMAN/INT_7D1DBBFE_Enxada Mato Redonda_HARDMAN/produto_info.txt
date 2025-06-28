@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7D1DBBFE
+Nome PT: Enxada Mato Redonda
+Nome EN: Enxada Mato Redonda
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Mato Redonda
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_c41d2b8defa4479d8ee95de3f7e13c10~mv2.jpg
+  Principal: Sim

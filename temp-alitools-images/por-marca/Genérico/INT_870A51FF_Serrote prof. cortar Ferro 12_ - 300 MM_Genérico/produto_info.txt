@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_870A51FF
+Nome PT: Serrote prof. cortar Ferro 12" - 300 MM
+Nome EN: Serrote prof. cortar Ferro 12" - 300 MM
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serrote prof. cortar Ferro 12" - 300 MM 
+Marca: 
+Coleção: Construção;Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg
+  Principal: Não

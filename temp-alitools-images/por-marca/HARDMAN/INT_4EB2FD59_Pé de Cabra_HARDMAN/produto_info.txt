@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4EB2FD59
+Nome PT: Pé de Cabra
+Nome EN: Pé de Cabra
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pé de Cabra
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b7f0e5144a40492d9b66bb807f45a88b~mv2.jpg
+  Principal: Sim

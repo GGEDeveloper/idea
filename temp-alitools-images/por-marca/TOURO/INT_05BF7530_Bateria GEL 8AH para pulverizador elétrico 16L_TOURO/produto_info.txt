@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_05BF7530
+Nome PT: Bateria GEL 8AH para pulverizador elétrico 16L
+Nome EN: Bateria GEL 8AH para pulverizador elétrico 16L
+Marca: TOURO
+Score Mapeamento: 0.3
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bomba elétrica para pulverizador de 16L
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e303a88289154fe7b525aa7cebc46dba~mv2.jpg
+  Principal: Sim

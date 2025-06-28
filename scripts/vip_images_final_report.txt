@@ -1,0 +1,1657 @@
+🎯 RELATÓRIO FINAL - SISTEMA IMAGENS VIP
+==================================================
+
+Data: 2025-06-28 16:47:01
+Total de produtos processados: 408
+Total de imagens organizadas: 488
+
+DISTRIBUIÇÃO POR PRODUTO:
+------------------------------
+• INT_01A0DE82: 1 imagens
+  Nome: Parka Impermiável Reflectora
+  Imagem principal: INT_01A0DE82_001.jpg
+
+• INT_980344A4: 1 imagens
+  Nome: Espatula em  ABS  - 250MM
+  Imagem principal: INT_980344A4_001.jpg
+
+• INT_46D3E2CE: 1 imagens
+  Nome: Talocha para pavimentos INOX 500 MM -A5717
+  Imagem principal: INT_46D3E2CE_001.jpg
+
+• INT_DD1A9CC1: 1 imagens
+  Nome: Talocha para estucador Inox 110x240MM
+  Imagem principal: INT_DD1A9CC1_001.jpg
+
+• INT_0A32BA2F: 1 imagens
+  Nome: Espatula / Colher para Estucador Inox 100mm - A1704
+  Imagem principal: INT_0A32BA2F_001.jpg
+
+• INT_E5CA6895: 1 imagens
+  Nome: Espatula Polida em Inox com cabo de borracha
+  Imagem principal: INT_E5CA6895_001.jpg
+
+• INT_4AF69DA0: 1 imagens
+  Nome: Espatula em ABS 250 MM
+  Imagem principal: INT_4AF69DA0_001.jpg
+
+• INT_24638E58: 1 imagens
+  Nome: Talocha de Grosa Endurecida 120 x 375mm - A3701
+  Imagem principal: INT_24638E58_001.jpg
+
+• INT_0BB129F3: 1 imagens
+  Nome: Talocha de Grosa Metalica 120x270mm - A3672
+  Imagem principal: INT_0BB129F3_001.jpg
+
+• INT_C53773B7: 2 imagens
+  Nome: Luva Nitrile Preta com nylon +grossa prof
+  Imagem principal: INT_C53773B7_001.jpg
+
+• INT_C8799869: 1 imagens
+  Nome: Luva Nitrile azul 3/4" grossa com Punho malha 10" - 880127
+  Imagem principal: INT_C8799869_001.jpg
+
+• INT_F54C2F3A: 1 imagens
+  Nome: Luva chefe pele genuína amarela
+  Imagem principal: INT_F54C2F3A_001.jpg
+
+• INT_9BA3FD00: 1 imagens
+  Nome: Extensão Eléctrica 25Mts x 2.5mm Bobine [900338]
+  Imagem principal: INT_9BA3FD00_001.jpg
+
+• INT_C46AFA40: 1 imagens
+  Nome: Laminas pretas SK5 -18mm [10pcs] para Xizato -[890088/2]
+  Imagem principal: INT_C46AFA40_001.jpg
+
+• INT_F895DB2F: 1 imagens
+  Nome: Cintas de Elevação Plana Dupla- CERTIFICADO
+  Imagem principal: INT_F895DB2F_001.jpg
+
+• INT_13E40123: 1 imagens
+  Nome: Extensão Eléctrica 3x1.5mm - Laranja
+  Imagem principal: INT_13E40123_001.jpg
+
+• INT_FECC4DC8: 2 imagens
+  Nome: Talocha para Lixa [ A0040]
+  Imagem principal: INT_FECC4DC8_001.jpg
+
+• INT_324DE734: 3 imagens
+  Nome: Máscara de Soldador AUTOMATIC [AK00291]
+  Imagem principal: INT_324DE734_001.jpg
+
+• INT_5A374C9C: 1 imagens
+  Nome: Serrote  de poda no AR com lâmina
+  Imagem principal: INT_5A374C9C_001.jpg
+
+• INT_BC0B83C1: 1 imagens
+  Nome: Kit 4 pcs para Mangueira Rega [Borracha]
+  Imagem principal: INT_BC0B83C1_001.jpg
+
+• INT_5DE17DE3: 1 imagens
+  Nome: União Mangueira Rega Plástico
+  Imagem principal: INT_5DE17DE3_001.jpg
+
+• INT_5633FD9E: 1 imagens
+  Nome: Tomada Rápida  para Mangueira Rega
+  Imagem principal: INT_5633FD9E_001.jpg
+
+• INT_E5C1796E: 1 imagens
+  Nome: Adaptor de torneira para Mangueira Rega
+  Imagem principal: INT_E5C1796E_001.jpg
+
+• INT_175AA93D: 1 imagens
+  Nome: ÓCULOS de Proteção Pretos
+  Imagem principal: INT_175AA93D_001.jpg
+
+• INT_6448F36D: 1 imagens
+  Nome: Escova de Arame Galvanizado para Roçadora
+  Imagem principal: INT_6448F36D_001.jpg
+
+• INT_1757F3CC: 1 imagens
+  Nome: Escova de Nylon para Roçadora 200x25.4mm para Limpeza Superficies
+  Imagem principal: INT_1757F3CC_001.jpg
+
+• INT_1694D786: 1 imagens
+  Nome: Disco corte Madeira, Plst, Gesso Cartonado 125x22.2mm
+  Imagem principal: INT_1694D786_001.jpg
+
+• INT_494F9555: 1 imagens
+  Nome: Pistola para Espuma PU
+  Imagem principal: INT_494F9555_001.jpg
+
+• INT_B284BABC: 1 imagens
+  Nome: Broca cónica escalonada HSS - TITANIO
+  Imagem principal: INT_B284BABC_001.jpg
+
+• INT_92549F3D: 1 imagens
+  Nome: Pulverizador 2L PRO
+  Imagem principal: INT_92549F3D_001.jpg
+
+• INT_F3FFC80D: 1 imagens
+  Nome: Pulverizador manual 5 L - PRO
+  Imagem principal: INT_F3FFC80D_001.jpg
+
+• INT_E8183E82: 1 imagens
+  Nome: Cinto Pedreiro com 11 Bolsas para Ferramentas
+  Imagem principal: INT_E8183E82_001.jpg
+
+• INT_D0A28012: 1 imagens
+  Nome: Turques de carpinteiro 8" / 200mm
+  Imagem principal: INT_D0A28012_001.jpg
+
+• INT_23EEEF29: 1 imagens
+  Nome: Espatula borracha 200mm
+  Imagem principal: INT_23EEEF29_001.jpg
+
+• INT_F0A1BF19: 1 imagens
+  Nome: Misturador 120x600 Arga Massa c/ paraf. M14
+  Imagem principal: INT_F0A1BF19_001.jpg
+
+• INT_146DF6E2: 1 imagens
+  Nome: Escova Latonada 4 filas com raspador
+  Imagem principal: INT_146DF6E2_001.jpg
+
+• INT_DBE00F8F: 1 imagens
+  Nome: Escopro com protecção 7cms [300×16mm]
+  Imagem principal: INT_DBE00F8F_001.jpg
+
+• INT_897B0042: 1 imagens
+  Nome: Faca de alcatifa Profissional  5 Laminas Autoload
+  Imagem principal: INT_897B0042_001.jpg
+
+• INT_C493A82C: 1 imagens
+  Nome: Suporte para  Mangueira em Plástico Verde
+  Imagem principal: INT_C493A82C_001.jpg
+
+• INT_96C109F8: 1 imagens
+  Nome: Marcador Preto Tinta Permanente BLST 5pcs
+  Imagem principal: INT_96C109F8_001.jpg
+
+• INT_F4B7A5D5: 1 imagens
+  Nome: Lamina para Xizato 9mm
+  Imagem principal: INT_F4B7A5D5_001.jpg
+
+• INT_5115C800: 1 imagens
+  Nome: Correia de aperto com Tensor [vários Tamanhos]
+  Imagem principal: INT_5115C800_001.jpg
+
+• INT_68157939: 1 imagens
+  Nome: X- acto com Lâmina 9mm
+  Imagem principal: INT_68157939_001.jpg
+
+• INT_48748655: 1 imagens
+  Nome: Máscara de soldador com pega ECO
+  Imagem principal: INT_48748655_001.jpg
+
+• INT_04B778A3: 1 imagens
+  Nome: Xizato  Lâmina Preta 18MM em Blister
+  Imagem principal: INT_04B778A3_001.jpg
+
+• INT_3E2745A6: 6 imagens
+  Nome: Pás Dobrável CAMPING - 4 em 1 com Bolsa
+  Imagem principal: INT_3E2745A6_001.jpg
+
+• INT_FF39EB27: 2 imagens
+  Nome: Fato chuva em PU - profissional
+  Imagem principal: INT_FF39EB27_001.jpg
+
+• INT_F59DFB82: 1 imagens
+  Nome: Sapatilha ténis Ancla S1P NO METAL
+  Imagem principal: INT_F59DFB82_001.jpg
+
+• INT_73A06825: 1 imagens
+  Nome: Luva chefe crute cinza
+  Imagem principal: INT_73A06825_001.jpg
+
+• INT_26C3AE8B: 1 imagens
+  Nome: Luva em Espuma Nitrilo Preto - Respirável PROF.
+  Imagem principal: INT_26C3AE8B_001.jpg
+
+• INT_72158DE2: 1 imagens
+  Nome: Luva nylon e Latex - Estanque TOP
+  Imagem principal: INT_72158DE2_001.jpg
+
+• INT_0E8D01C5: 1 imagens
+  Nome: Óculo de proteção [ para sobreposição de óculos]
+  Imagem principal: INT_0E8D01C5_001.jpg
+
+• INT_023D1D65: 1 imagens
+  Nome: Óculo de Proteção Prof. Pretos
+  Imagem principal: INT_023D1D65_001.jpg
+
+• INT_5F7257B8: 1 imagens
+  Nome: Óculo de proteção Prof. Transparente
+  Imagem principal: INT_5F7257B8_001.jpg
+
+• INT_96A0751E: 1 imagens
+  Nome: Sapato Camurça S1P NO METAL
+  Imagem principal: INT_96A0751E_001.jpg
+
+• INT_84DEFA56: 1 imagens
+  Nome: Talocha esponja Laranja 280x140x20mm
+  Imagem principal: INT_84DEFA56_001.jpg
+
+• INT_947F1728: 3 imagens
+  Nome: Talocha base borracha 240x100x20mm
+  Imagem principal: INT_947F1728_001.jpg
+
+• INT_ECAE1D08: 2 imagens
+  Nome: Serrote para Pladur 6" Profissional
+  Imagem principal: INT_ECAE1D08_001.jpg
+
+• INT_870A51FF: 2 imagens
+  Nome: Serrote prof. cortar Ferro 12" - 300 MM
+  Imagem principal: INT_870A51FF_001.jpg
+
+• INT_990F5689: 3 imagens
+  Nome: Esticador Olhal / Olhal 5x70mm - 25pcs
+  Imagem principal: INT_990F5689_001.jpg
+
+• INT_FC457B1C: 1 imagens
+  Nome: Maquina de fazer Estribos com Rolamentos
+  Imagem principal: INT_FC457B1C_001.jpg
+
+• INT_51B309D5: 1 imagens
+  Nome: Chave de virar ferro
+  Imagem principal: INT_51B309D5_001.jpg
+
+• INT_2527AD89: 2 imagens
+  Nome: Alavanca e Desmontador
+  Imagem principal: INT_2527AD89_001.jpg
+
+• INT_4EB2FD59: 1 imagens
+  Nome: Pé de Cabra
+  Imagem principal: INT_4EB2FD59_001.jpg
+
+• INT_B6E5D9ED: 1 imagens
+  Nome: Escacilhadeira Pedra 6cms
+  Imagem principal: INT_B6E5D9ED_001.jpg
+
+• INT_7E42C09F: 1 imagens
+  Nome: Guilho (abrir a pedra)
+  Imagem principal: INT_7E42C09F_001.jpg
+
+• INT_B9730DB9: 1 imagens
+  Nome: Ponteiro / Escopro
+  Imagem principal: INT_B9730DB9_001.jpg
+
+• INT_4A829F96: 1 imagens
+  Nome: Chaviete Temperado
+  Imagem principal: INT_4A829F96_001.jpg
+
+• INT_4CE6CB9D: 1 imagens
+  Nome: Pica Solda
+  Imagem principal: INT_4CE6CB9D_001.jpg
+
+• INT_37050A3E: 1 imagens
+  Nome: Martelo Fazer Calçada
+  Imagem principal: INT_37050A3E_001.jpg
+
+• INT_72B410DA: 1 imagens
+  Nome: Martelo Faz Tudo
+  Imagem principal: INT_72B410DA_001.jpg
+
+• INT_D7C94CC4: 1 imagens
+  Nome: Martelo Calceteira
+  Imagem principal: INT_D7C94CC4_001.jpg
+
+• INT_A5D8E101: 1 imagens
+  Nome: Martelo Calceteiro
+  Imagem principal: INT_A5D8E101_001.jpg
+
+• INT_02FDDF9A: 1 imagens
+  Nome: Marreta Campo
+  Imagem principal: INT_02FDDF9A_001.jpg
+
+• INT_3293C38D: 1 imagens
+  Nome: Marreta  /  Martelo Campo
+  Imagem principal: INT_3293C38D_001.jpg
+
+• INT_6160F72D: 1 imagens
+  Nome: Raspador Leiria sem cabo
+  Imagem principal: INT_6160F72D_001.jpg
+
+• INT_99595193: 1 imagens
+  Nome: Arrelhada Vinha
+  Imagem principal: INT_99595193_001.jpg
+
+• INT_6ADE88DB: 1 imagens
+  Nome: Arrelhada Marisco
+  Imagem principal: INT_6ADE88DB_001.jpg
+
+• INT_7B333C8F: 1 imagens
+  Nome: Escavadeira Tubo
+  Imagem principal: INT_7B333C8F_001.jpg
+
+• INT_DBBAE436: 1 imagens
+  Nome: Escavadeira Tenaz
+  Imagem principal: INT_DBBAE436_001.jpg
+
+• INT_CC13B800: 1 imagens
+  Nome: Trado Vinha
+  Imagem principal: INT_CC13B800_001.jpg
+
+• INT_1FE4A713: 1 imagens
+  Nome: Bate Estacas
+  Imagem principal: INT_1FE4A713_001.jpg
+
+• INT_602F6EFB: 1 imagens
+  Nome: Colher de Jardim
+  Imagem principal: INT_602F6EFB_001.jpg
+
+• INT_F7EFF8B6: 1 imagens
+  Nome: Pá Corta Raízes
+  Imagem principal: INT_F7EFF8B6_001.jpg
+
+• INT_36225FF7: 1 imagens
+  Nome: Pá de Jardim
+  Imagem principal: INT_36225FF7_001.jpg
+
+• INT_7A8AA630: 1 imagens
+  Nome: Pá Valar
+  Imagem principal: INT_7A8AA630_001.jpg
+
+• INT_99E8E6AA: 1 imagens
+  Nome: Pá Francesa
+  Imagem principal: INT_99E8E6AA_001.jpg
+
+• INT_0FD2B740: 1 imagens
+  Nome: Pá Cabo de Madeira modelo Bufalo
+  Imagem principal: INT_0FD2B740_001.jpg
+
+• INT_F99C0D60: 1 imagens
+  Nome: Cabo Metálico com Cunha p/ gadanha
+  Imagem principal: INT_F99C0D60_001.jpg
+
+• INT_315BA05E: 1 imagens
+  Nome: Cabo Metálico com Parafuso
+  Imagem principal: INT_315BA05E_001.jpg
+
+• INT_DD964AAC: 1 imagens
+  Nome: Safra
+  Imagem principal: INT_DD964AAC_001.jpg
+
+• INT_BC0E2F0B: 1 imagens
+  Nome: Gadanha Mato 2 Cortes
+  Imagem principal: INT_BC0E2F0B_001.jpg
+
+• INT_42853901: 1 imagens
+  Nome: Gadanha Mato
+  Imagem principal: INT_42853901_001.jpg
+
+• INT_45DC1790: 1 imagens
+  Nome: Enxó
+  Imagem principal: INT_45DC1790_001.jpg
+
+• INT_91305FD8: 1 imagens
+  Nome: Catana
+  Imagem principal: INT_91305FD8_001.jpg
+
+• INT_85505809: 1 imagens
+  Nome: Podão Vinha
+  Imagem principal: INT_85505809_001.jpg
+
+• INT_2D99DF9A: 1 imagens
+  Nome: Podão para Banana
+  Imagem principal: INT_2D99DF9A_001.jpg
+
+• INT_E382B0F0: 1 imagens
+  Nome: Podão Poda Horticolas
+  Imagem principal: INT_E382B0F0_001.jpg
+
+• INT_2CE31F45: 1 imagens
+  Nome: Podão Leiria Aberto
+  Imagem principal: INT_2CE31F45_001.jpg
+
+• INT_839F6B2C: 1 imagens
+  Nome: Podão Leiria 2 Cortes
+  Imagem principal: INT_839F6B2C_001.jpg
+
+• INT_FE8E53EA: 1 imagens
+  Nome: Foice Mira
+  Imagem principal: INT_FE8E53EA_001.jpg
+
+• INT_1DF00867: 1 imagens
+  Nome: Foice Barreiro
+  Imagem principal: INT_1DF00867_001.jpg
+
+• INT_95F37C11: 1 imagens
+  Nome: Foice Leiria com Peta
+  Imagem principal: INT_95F37C11_001.jpg
+
+• INT_695C1DF5: 1 imagens
+  Nome: Foice Meia lua com Galho
+  Imagem principal: INT_695C1DF5_001.jpg
+
+• INT_4F7ED035: 1 imagens
+  Nome: Foice Meia lua
+  Imagem principal: INT_4F7ED035_001.jpg
+
+• INT_728B7B09: 1 imagens
+  Nome: Foice Limpa Caldas
+  Imagem principal: INT_728B7B09_001.jpg
+
+• INT_9974DD25: 1 imagens
+  Nome: Foice Douro Limpa
+  Imagem principal: INT_9974DD25_001.jpg
+
+• INT_BEC174AC: 1 imagens
+  Nome: Foice Douro
+  Imagem principal: INT_BEC174AC_001.jpg
+
+• INT_6005C3A0: 1 imagens
+  Nome: Cunha para Lenha
+  Imagem principal: INT_6005C3A0_001.jpg
+
+• INT_6290B603: 1 imagens
+  Nome: Machadão Lenha N°3
+  Imagem principal: INT_6290B603_001.jpg
+
+• INT_FB134288: 1 imagens
+  Nome: Machado Cortiça
+  Imagem principal: INT_FB134288_001.jpg
+
+• INT_C3EA8B92: 1 imagens
+  Nome: Machado N°3
+  Imagem principal: INT_C3EA8B92_001.jpg
+
+• INT_6248603D: 1 imagens
+  Nome: Machado Sul
+  Imagem principal: INT_6248603D_001.jpg
+
+• INT_3E5606BE: 1 imagens
+  Nome: Machadinha Rola
+  Imagem principal: INT_3E5606BE_001.jpg
+
+• INT_4EFBA265: 1 imagens
+  Nome: Machadinha Falca
+  Imagem principal: INT_4EFBA265_001.jpg
+
+• INT_B96B975C: 1 imagens
+  Nome: Machadinha Limpeza
+  Imagem principal: INT_B96B975C_001.jpg
+
+• INT_02BCDC53: 1 imagens
+  Nome: Machadinha com Unhas
+  Imagem principal: INT_02BCDC53_001.jpg
+
+• INT_FA739AA2: 1 imagens
+  Nome: Machadinha com Martelo
+  Imagem principal: INT_FA739AA2_001.jpg
+
+• INT_BB92C6CA: 1 imagens
+  Nome: Machadinha Rola com cabo
+  Imagem principal: INT_BB92C6CA_001.jpg
+
+• INT_013BCC21: 1 imagens
+  Nome: Machadinha Lisa com Cabo
+  Imagem principal: INT_013BCC21_001.jpg
+
+• INT_0D9EDF02: 1 imagens
+  Nome: Machadinha Poda com Cabo ( + pequeno)
+  Imagem principal: INT_0D9EDF02_001.jpg
+
+• INT_C6DB06A9: 1 imagens
+  Nome: Parka impermeável Reflector
+  Imagem principal: INT_C6DB06A9_001.jpg
+
+• INT_8E4CBE7A: 6 imagens
+  Nome: T - Shirt 155 grs - todas as cores
+  Imagem principal: INT_8E4CBE7A_001.jpg
+
+• INT_FD032584: 1 imagens
+  Nome: Calça Multibolsos reflectora Azul ou Cinza
+  Imagem principal: INT_FD032584_001.jpg
+
+• INT_DFBCD29F: 1 imagens
+  Nome: Sapato pele preta S1P biqueira e palmilha em Aço
+  Imagem principal: INT_DFBCD29F_001.jpg
+
+• INT_8E054BF5: 1 imagens
+  Nome: Sapato de Camurça S1P biqueira e Palmilha em Aço
+  Imagem principal: INT_8E054BF5_001.jpg
+
+• INT_4332EB4D: 1 imagens
+  Nome: Alvião Poda
+  Imagem principal: INT_4332EB4D_001.jpg
+
+• INT_6F533F9A: 1 imagens
+  Nome: Gancho / Forquilha Francesa 4 dentes
+  Imagem principal: INT_6F533F9A_001.jpg
+
+• INT_450EFFC9: 2 imagens
+  Nome: Forquilha com cabo metálico
+  Imagem principal: INT_450EFFC9_001.jpg
+
+• INT_3CC6C0A2: 1 imagens
+  Nome: Forquilha com cabo madeira
+  Imagem principal: INT_3CC6C0A2_001.jpg
+
+• INT_4C6CA5DF: 1 imagens
+  Nome: Forquilha olho redondo
+  Imagem principal: INT_4C6CA5DF_001.jpg
+
+• INT_3594DDEA: 1 imagens
+  Nome: Forquilha curva mini- dente torneado
+  Imagem principal: INT_3594DDEA_001.jpg
+
+• INT_809D824C: 1 imagens
+  Nome: Forquilha curva
+  Imagem principal: INT_809D824C_001.jpg
+
+• INT_2D785BA2: 2 imagens
+  Nome: Disco diamantado Ceramica 115mm
+  Imagem principal: INT_2D785BA2_001.jpg
+
+• INT_811F1944: 3 imagens
+  Nome: Lança metálica + punho para Pulverizador 5 / 8 Lts
+  Imagem principal: INT_811F1944_001.jpg
+
+• INT_4287AA83: 1 imagens
+  Nome: Forquilha direita mini (Dente Torneado)
+  Imagem principal: INT_4287AA83_001.jpg
+
+• INT_135505A5: 1 imagens
+  Nome: Forquilha direita pequena
+  Imagem principal: INT_135505A5_001.jpg
+
+• INT_DD0FA31B: 1 imagens
+  Nome: Forquilha direita
+  Imagem principal: INT_DD0FA31B_001.jpg
+
+• INT_259FEB2A: 1 imagens
+  Nome: Ancinho de berbigão
+  Imagem principal: INT_259FEB2A_001.jpg
+
+• INT_C8FB6F03: 1 imagens
+  Nome: Gadanho  Uvas
+  Imagem principal: INT_C8FB6F03_001.jpg
+
+• INT_06DA922E: 1 imagens
+  Nome: Ancinho Alenquer
+  Imagem principal: INT_06DA922E_001.jpg
+
+• INT_095372CA: 1 imagens
+  Nome: Ancinho Leiria
+  Imagem principal: INT_095372CA_001.jpg
+
+• INT_C4296F43: 1 imagens
+  Nome: Ancinho Ferreiro
+  Imagem principal: INT_C4296F43_001.jpg
+
+• INT_1DE761D1: 1 imagens
+  Nome: Ancinho Madeira Dente de Prego
+  Imagem principal: INT_1DE761D1_001.jpg
+
+• INT_FFCA5FA3: 1 imagens
+  Nome: Ancinho para Batata
+  Imagem principal: INT_FFCA5FA3_001.jpg
+
+• INT_4FCC9B63: 1 imagens
+  Nome: Ancinho
+  Imagem principal: INT_4FCC9B63_001.jpg
+
+• INT_5D3179D1: 1 imagens
+  Nome: Disco diamantado - especial Madeira 115mm
+  Imagem principal: INT_5D3179D1_001.jpg
+
+• INT_0A9ADFF8: 1 imagens
+  Nome: Gancho Cavar Leiria
+  Imagem principal: INT_0A9ADFF8_001.jpg
+
+• INT_6574542B: 1 imagens
+  Nome: Gancho Coração
+  Imagem principal: INT_6574542B_001.jpg
+
+• INT_EFEF0304: 1 imagens
+  Nome: Gancho Dentes Redondo
+  Imagem principal: INT_EFEF0304_001.jpg
+
+• INT_107E41D3: 1 imagens
+  Nome: Arado Mão
+  Imagem principal: INT_107E41D3_001.jpg
+
+• INT_E62263FC: 1 imagens
+  Nome: Raspador de Batatas
+  Imagem principal: INT_E62263FC_001.jpg
+
+• INT_B180E267: 1 imagens
+  Nome: Sacho Monda
+  Imagem principal: INT_B180E267_001.jpg
+
+• INT_7EE979DC: 1 imagens
+  Nome: Sacho Coração
+  Imagem principal: INT_7EE979DC_001.jpg
+
+• INT_13B9ECB7: 1 imagens
+  Nome: Sacho Vimeiro
+  Imagem principal: INT_13B9ECB7_001.jpg
+
+• INT_C1707895: 3 imagens
+  Nome: Capa Chuva em Nylon - ECONOMIC
+  Imagem principal: INT_C1707895_001.jpg
+
+• INT_7D8D09FF: 1 imagens
+  Nome: Extintor Pó Quimico ABC
+  Imagem principal: INT_7D8D09FF_001.jpg
+
+• INT_D419E958: 1 imagens
+  Nome: Extintor CO2
+  Imagem principal: INT_D419E958_001.jpg
+
+• INT_182769A4: 3 imagens
+  Nome: Luva gasolineira 27cms Nitrile Azul
+  Imagem principal: INT_182769A4_001.jpg
+
+• INT_CD3FE0E6: 2 imagens
+  Nome: Pulverizador 2 Lts
+  Imagem principal: INT_CD3FE0E6_001.jpg
+
+• INT_08EEF6FA: 1 imagens
+  Nome: Maço de Madeira
+  Imagem principal: INT_08EEF6FA_001.jpg
+
+• INT_68361CDF: 1 imagens
+  Nome: Ancinho Madeira Dente Prego
+  Imagem principal: INT_68361CDF_001.jpg
+
+• INT_BD426D82: 1 imagens
+  Nome: Pião
+  Imagem principal: INT_BD426D82_001.jpg
+
+• INT_F525AC0D: 1 imagens
+  Nome: Rodo Madeira
+  Imagem principal: INT_F525AC0D_001.jpg
+
+• INT_C0D05CF1: 1 imagens
+  Nome: Crivo
+  Imagem principal: INT_C0D05CF1_001.jpg
+
+• INT_6DAFCA00: 1 imagens
+  Nome: Peneira
+  Imagem principal: INT_6DAFCA00_001.jpg
+
+• INT_A79EF400: 1 imagens
+  Nome: Máscara Protecção FFP2 c/ valvula
+  Imagem principal: INT_A79EF400_001.jpg
+
+• INT_66D5994D: 1 imagens
+  Nome: Sacho Alce Nº1
+  Imagem principal: INT_66D5994D_001.jpg
+
+• INT_AB21FB47: 1 imagens
+  Nome: Sacho Alce Nº0
+  Imagem principal: INT_AB21FB47_001.jpg
+
+• INT_C9121F4F: 1 imagens
+  Nome: Sacho Viseu Nº0
+  Imagem principal: INT_C9121F4F_001.jpg
+
+• INT_22C7478C: 1 imagens
+  Nome: Sacho Viseu Nº2/0
+  Imagem principal: INT_22C7478C_001.jpg
+
+• INT_AD5BB025: 1 imagens
+  Nome: Sacho Feijão
+  Imagem principal: INT_AD5BB025_001.jpg
+
+• INT_408C8A49: 1 imagens
+  Nome: Pá (colher) Jardim
+  Imagem principal: INT_408C8A49_001.jpg
+
+• INT_12CCF77E: 1 imagens
+  Nome: Sacho de Plantação
+  Imagem principal: INT_12CCF77E_001.jpg
+
+• INT_5F1021A5: 1 imagens
+  Nome: Sacho de Jardim
+  Imagem principal: INT_5F1021A5_001.jpg
+
+• INT_A0340F9C: 1 imagens
+  Nome: Sacho com Cabo
+  Imagem principal: INT_A0340F9C_001.jpg
+
+• INT_1E3ADF65: 1 imagens
+  Nome: Pescasses
+  Imagem principal: INT_1E3ADF65_001.jpg
+
+• INT_9DA075EC: 1 imagens
+  Nome: Cunhas para Enxadas
+  Imagem principal: INT_9DA075EC_001.jpg
+
+• INT_0A2A819B: 1 imagens
+  Nome: Enxada de Bico Turquel
+  Imagem principal: INT_0A2A819B_001.jpg
+
+• INT_215D8FBA: 1 imagens
+  Nome: Enxada Pontas Meia Redonda Turquel
+  Imagem principal: INT_215D8FBA_001.jpg
+
+• INT_E3A0C9AD: 1 imagens
+  Nome: Enxada Pontas RedondasTurquel
+  Imagem principal: INT_E3A0C9AD_001.jpg
+
+• INT_75308E3E: 1 imagens
+  Nome: Enxada Pontas Bico Turquel
+  Imagem principal: INT_75308E3E_001.jpg
+
+• INT_D19C6E42: 1 imagens
+  Nome: Enxada Pontas Faca Turquel
+  Imagem principal: INT_D19C6E42_001.jpg
+
+• INT_ACE3F152: 1 imagens
+  Nome: Enxada Pontas Bico
+  Imagem principal: INT_ACE3F152_001.jpg
+
+• INT_F3E00880: 1 imagens
+  Nome: Enxada Pontas Redondas
+  Imagem principal: INT_F3E00880_001.jpg
+
+• INT_CACFDB83: 1 imagens
+  Nome: Enxada Pontas Faca
+  Imagem principal: INT_CACFDB83_001.jpg
+
+• INT_C7068FE0: 1 imagens
+  Nome: Enxada Pontas Meia Redonda
+  Imagem principal: INT_C7068FE0_001.jpg
+
+• INT_B9133A1B: 1 imagens
+  Nome: Enxada Pontas Vimeiro
+  Imagem principal: INT_B9133A1B_001.jpg
+
+• INT_B3229D06: 1 imagens
+  Nome: Enxada 2 bicos
+  Imagem principal: INT_B3229D06_001.jpg
+
+• INT_87952F56: 1 imagens
+  Nome: Enxada Tipo Ancinho
+  Imagem principal: INT_87952F56_001.jpg
+
+• INT_F6453A93: 1 imagens
+  Nome: Enxadão Vinha
+  Imagem principal: INT_F6453A93_001.jpg
+
+• INT_7D1DBBFE: 1 imagens
+  Nome: Enxada Mato Redonda
+  Imagem principal: INT_7D1DBBFE_001.jpg
+
+• INT_E7742819: 1 imagens
+  Nome: Enxada Barreiro
+  Imagem principal: INT_E7742819_001.jpg
+
+• INT_03BC4021: 1 imagens
+  Nome: Enxada USA
+  Imagem principal: INT_03BC4021_001.jpg
+
+• INT_6D78C39E: 1 imagens
+  Nome: Enxada castelo Branco
+  Imagem principal: INT_6D78C39E_001.jpg
+
+• INT_358AD7DE: 1 imagens
+  Nome: Enxada Meia Lua Triangular Turquel
+  Imagem principal: INT_358AD7DE_001.jpg
+
+• INT_EAAC5578: 1 imagens
+  Nome: Enxada Meia Lua Turquel
+  Imagem principal: INT_EAAC5578_001.jpg
+
+• INT_7170BE6C: 1 imagens
+  Nome: Enxada Meia Lua Alcobaça
+  Imagem principal: INT_7170BE6C_001.jpg
+
+• INT_3B0729B2: 1 imagens
+  Nome: Enxada Meia Lua Caldas
+  Imagem principal: INT_3B0729B2_001.jpg
+
+• INT_CBB5E9B0: 1 imagens
+  Nome: Enxada Meia Lua Leiria
+  Imagem principal: INT_CBB5E9B0_001.jpg
+
+• INT_4A550C85: 1 imagens
+  Nome: Enxada Relvas
+  Imagem principal: INT_4A550C85_001.jpg
+
+• INT_5A6D9678: 1 imagens
+  Nome: Enxada Leiria
+  Imagem principal: INT_5A6D9678_001.jpg
+
+• INT_7AB168A9: 1 imagens
+  Nome: Enxada Vimeiro
+  Imagem principal: INT_7AB168A9_001.jpg
+
+• INT_DF063536: 1 imagens
+  Nome: Enxada Nacional com Peta
+  Imagem principal: INT_DF063536_001.jpg
+
+• INT_CF85317B: 1 imagens
+  Nome: Enxada Nacional
+  Imagem principal: INT_CF85317B_001.jpg
+
+• INT_0536E735: 1 imagens
+  Nome: Medidas Aferidas INOX
+  Imagem principal: INT_0536E735_001.jpg
+
+• INT_932BEE3C: 1 imagens
+  Nome: Apanha Fruta
+  Imagem principal: INT_932BEE3C_001.jpg
+
+• INT_2226550B: 1 imagens
+  Nome: Pá do Lixo
+  Imagem principal: INT_2226550B_001.jpg
+
+• INT_51DAEF2A: 2 imagens
+  Nome: Enxofradeira
+  Imagem principal: INT_51DAEF2A_001.jpg
+
+• INT_7B87CBF6: 1 imagens
+  Nome: Baldes Cónicos com Tampa
+  Imagem principal: INT_7B87CBF6_001.jpg
+
+• INT_F7AAA3AE: 1 imagens
+  Nome: Baldes Cónicos
+  Imagem principal: INT_F7AAA3AE_001.jpg
+
+• INT_FF6B922B: 1 imagens
+  Nome: Cabaço
+  Imagem principal: INT_FF6B922B_001.jpg
+
+• INT_7CC9FF6D: 1 imagens
+  Nome: Ralos de Rega
+  Imagem principal: INT_7CC9FF6D_001.jpg
+
+• INT_C585A0C9: 1 imagens
+  Nome: Regador Zincado
+  Imagem principal: INT_C585A0C9_001.jpg
+
+• INT_6A4BEA26: 1 imagens
+  Nome: Panelas
+  Imagem principal: INT_6A4BEA26_001.jpg
+
+• INT_2455438A: 1 imagens
+  Nome: Lata para Brasas
+  Imagem principal: INT_2455438A_001.jpg
+
+• INT_854750C5: 1 imagens
+  Nome: Cafeteiras
+  Imagem principal: INT_854750C5_001.jpg
+
+• INT_347E20A1: 1 imagens
+  Nome: Assador de Castanhas
+  Imagem principal: INT_347E20A1_001.jpg
+
+• INT_CD5C3377: 1 imagens
+  Nome: Corredor Direito Inox
+  Imagem principal: INT_CD5C3377_001.jpg
+
+• INT_9C52E4A8: 2 imagens
+  Nome: Corredor Direito
+  Imagem principal: INT_9C52E4A8_001.jpg
+
+• INT_79518505: 1 imagens
+  Nome: Corredor redondo
+  Imagem principal: INT_79518505_001.jpg
+
+• INT_2636EDE0: 1 imagens
+  Nome: Comedouro para Coelhos
+  Imagem principal: INT_2636EDE0_001.jpg
+
+• INT_4F02B1B4: 1 imagens
+  Nome: Comedouro para Galinhas Zincado
+  Imagem principal: INT_4F02B1B4_001.jpg
+
+• INT_397966C3: 1 imagens
+  Nome: Comedouro para Galinhas Lacado
+  Imagem principal: INT_397966C3_001.jpg
+
+• INT_80CC1AF2: 2 imagens
+  Nome: Mata frangos
+  Imagem principal: INT_80CC1AF2_001.jpg
+
+• INT_D2E98F6A: 1 imagens
+  Nome: Canudo para Toupeiras
+  Imagem principal: INT_D2E98F6A_001.jpg
+
+• INT_6DB2FFCA: 1 imagens
+  Nome: Disco segmentado profissional multiusos
+  Imagem principal: INT_6DB2FFCA_001.jpg
+
+• INT_2D578C80: 1 imagens
+  Nome: Misturador SDS Tinta / Cola-  Robusto
+  Imagem principal: INT_2D578C80_001.jpg
+
+• INT_E13CA496: 1 imagens
+  Nome: Pulverizador elétrico bateria Litio com lança metálica telescópica
+  Imagem principal: INT_E13CA496_001.jpg
+
+• INT_00F1DA11: 1 imagens
+  Nome: Máscaras cirurgicas cx 50pcs
+  Imagem principal: INT_00F1DA11_001.jpg
+
+• INT_225975A4: 2 imagens
+  Nome: Fato descartável Cat III tipo 5e6
+  Imagem principal: INT_225975A4_001.jpg
+
+• INT_F8641855: 2 imagens
+  Nome: Fato descartável Cat I
+  Imagem principal: INT_F8641855_001.jpg
+
+• INT_E906A296: 2 imagens
+  Nome: Casaco Protecção Térmica - 5°c
+  Imagem principal: INT_E906A296_001.jpg
+
+• INT_351D4D43: 2 imagens
+  Nome: Pistola Mastik Prof. Reforçada
+  Imagem principal: INT_351D4D43_001.jpg
+
+• INT_25FEEAC0: 1 imagens
+  Nome: Talocha borracha preta
+  Imagem principal: INT_25FEEAC0_001.jpg
+
+• INT_DEFEF580: 3 imagens
+  Nome: Corta Rebites  - 8"
+  Imagem principal: INT_DEFEF580_001.jpg
+
+• INT_EF140090: 2 imagens
+  Nome: Capa de chuva em PU
+  Imagem principal: INT_EF140090_001.jpg
+
+• INT_42C6B660: 1 imagens
+  Nome: Viseira de proteção em rede com ajuste
+  Imagem principal: INT_42C6B660_001.jpg
+
+• INT_21BA25FB: 1 imagens
+  Nome: Viseira de proteção acrílica com ajuste
+  Imagem principal: INT_21BA25FB_001.jpg
+
+• INT_771323D1: 1 imagens
+  Nome: Viseira de proteção acrílica
+  Imagem principal: INT_771323D1_001.jpg
+
+• INT_5C8BD11D: 1 imagens
+  Nome: Máscara de soldador com visor
+  Imagem principal: INT_5C8BD11D_001.jpg
+
+• INT_A05A99A3: 1 imagens
+  Nome: Colete de segurança de alta visibilidade verde
+  Imagem principal: INT_A05A99A3_001.jpg
+
+• INT_05545EB9: 1 imagens
+  Nome: Colete de segurança de alta visibilidade laranja
+  Imagem principal: INT_05545EB9_001.jpg
+
+• INT_88915C5D: 1 imagens
+  Nome: Calças e jaqueta de trabalho azul marinho
+  Imagem principal: INT_88915C5D_001.jpg
+
+• INT_F32074D6: 1 imagens
+  Nome: Jardineira de trabalho azul marinho
+  Imagem principal: INT_F32074D6_001.jpg
+
+• INT_78AEA02D: 1 imagens
+  Nome: Bata de trabalho azul marinho
+  Imagem principal: INT_78AEA02D_001.jpg
+
+• INT_6EA2CDEB: 1 imagens
+  Nome: Polainitos de soldador em pele
+  Imagem principal: INT_6EA2CDEB_001.jpg
+
+• INT_9887BDBF: 1 imagens
+  Nome: Manguitos de soldador em pele
+  Imagem principal: INT_9887BDBF_001.jpg
+
+• INT_BC88F6DB: 1 imagens
+  Nome: Avental de soldador em pele
+  Imagem principal: INT_BC88F6DB_001.jpg
+
+• INT_AF9E6B5C: 1 imagens
+  Nome: Casaco de soldador em pele
+  Imagem principal: INT_AF9E6B5C_001.jpg
+
+• INT_5228E623: 1 imagens
+  Nome: Sapato de segurança pele branca
+  Imagem principal: INT_5228E623_001.jpg
+
+• INT_F63EAD9F: 1 imagens
+  Nome: Bota de segurança S3 preta KEVLAR & MICROFIBRA
+  Imagem principal: INT_F63EAD9F_001.jpg
+
+• INT_D17B15EC: 1 imagens
+  Nome: Sapato Ténis  camurça em KEVLAR e composito S1P
+  Imagem principal: INT_D17B15EC_001.jpg
+
+• INT_A24BC0DF: 1 imagens
+  Nome: Bota de segurança S3 com biqueira reforçada e palmilha em aço
+  Imagem principal: INT_A24BC0DF_001.jpg
+
+• INT_18D79964: 1 imagens
+  Nome: Fita de sinalização amarela e preta 18mts x 50mm
+  Imagem principal: INT_18D79964_001.jpg
+
+• INT_04C28727: 2 imagens
+  Nome: Fita de sinalização branca e vermelha 200m x 50mm
+  Imagem principal: INT_04C28727_001.jpg
+
+• INT_8E242732: 1 imagens
+  Nome: Rede de proteção laranja 100g/M2 = 1Mx50mts
+  Imagem principal: INT_8E242732_001.jpg
+
+• INT_EB4300D2: 1 imagens
+  Nome: Corrente de plástico branco e vermelha
+  Imagem principal: INT_EB4300D2_001.jpg
+
+• INT_1A18032E: 3 imagens
+  Nome: Luva crute e pano com palma reforçada
+  Imagem principal: INT_1A18032E_001.jpg
+
+• INT_94FCE60A: 3 imagens
+  Nome: Luva industrial preta
+  Imagem principal: INT_94FCE60A_001.jpg
+
+• INT_D352B3B9: 1 imagens
+  Nome: Luva nitrile com nylon, palma e dedos cinzentos
+  Imagem principal: INT_D352B3B9_001.jpg
+
+• INT_4B8DDE13: 1 imagens
+  Nome: Luva nylon com latex na palma dedos
+  Imagem principal: INT_4B8DDE13_001.jpg
+
+• INT_1820C367: 1 imagens
+  Nome: Luva  pele genuína branca com dorso em algodão
+  Imagem principal: INT_1820C367_001.jpg
+
+• INT_2FF966A9: 2 imagens
+  Nome: Luva pele genuína branca tipo chefe
+  Imagem principal: INT_2FF966A9_001.jpg
+
+• INT_363BA702: 3 imagens
+  Nome: Luva mista de crute e pele branca
+  Imagem principal: INT_363BA702_001.jpg
+
+• INT_B0CEBE8B: 3 imagens
+  Nome: Luva para soldador crute vermelha
+  Imagem principal: INT_B0CEBE8B_001.jpg
+
+• INT_D3C98A2B: 1 imagens
+  Nome: Luva de soldador pele + crute 35 cm
+  Imagem principal: INT_D3C98A2B_001.jpg
+
+• INT_3A1C8B02: 1 imagens
+  Nome: Luva para soldador crute cinza canhão
+  Imagem principal: INT_3A1C8B02_001.jpg
+
+• INT_2BBB0880: 1 imagens
+  Nome: Filtro para máscara tipo COMACEC 2-BL
+  Imagem principal: INT_2BBB0880_001.jpg
+
+• INT_75D07C82: 1 imagens
+  Nome: Auscultadores de proteção - Protectores
+  Imagem principal: INT_75D07C82_001.jpg
+
+• INT_58C104C9: 1 imagens
+  Nome: Óculos de proteção 100% transparentes
+  Imagem principal: INT_58C104C9_001.jpg
+
+• INT_A0281CD9: 1 imagens
+  Nome: Óculos de proteção transparente
+  Imagem principal: INT_A0281CD9_001.jpg
+
+• INT_CFAC730A: 1 imagens
+  Nome: Maço de borracha preta com cabo em madeira envernizada
+  Imagem principal: INT_CFAC730A_001.jpg
+
+• INT_477D1EAA: 1 imagens
+  Nome: Maço de borracha branca com cabo em madeira envernizada
+  Imagem principal: INT_477D1EAA_001.jpg
+
+• INT_39826FC1: 1 imagens
+  Nome: Maço de borracha branca profissional com cabo em fibra de vidro
+  Imagem principal: INT_39826FC1_001.jpg
+
+• INT_63628610: 1 imagens
+  Nome: Machadinha 600g profissional  com cabo em fibra de vidro
+  Imagem principal: INT_63628610_001.jpg
+
+• INT_D9816747: 2 imagens
+  Nome: Machado 1600g profissional com cabo em fibra de vidro
+  Imagem principal: INT_D9816747_001.jpg
+
+• INT_1A060188: 2 imagens
+  Nome: Mini picareta 400g pá/bico com cabo em fibra de vidro
+  Imagem principal: INT_1A060188_001.jpg
+
+• INT_C4681B5A: 1 imagens
+  Nome: Marreta Martelo de campo de 910mm com cabo em fibra de vidro
+  Imagem principal: INT_C4681B5A_001.jpg
+
+• INT_849AFD62: 1 imagens
+  Nome: Maceta 1kg cromada profissional com cabo em fibra de vidro
+  Imagem principal: INT_849AFD62_001.jpg
+
+• INT_A65062CA: 1 imagens
+  Nome: Martelo de campo profissional com cabo em fibra de vidro
+  Imagem principal: INT_A65062CA_001.jpg
+
+• INT_4C2CF813: 3 imagens
+  Nome: Martelo  Maquinista profissional com cabo em fibra de vidro
+  Imagem principal: INT_4C2CF813_001.jpg
+
+• INT_FBB768ED: 1 imagens
+  Nome: Faz tudo 600 Gr polido profissional com cabo em fibra de vidro
+  Imagem principal: INT_FBB768ED_001.jpg
+
+• INT_FE89B796: 1 imagens
+  Nome: Martelo cofragem 750g profissional com cabo fibra de vidro com cabeça magnética
+  Imagem principal: INT_FE89B796_001.jpg
+
+• INT_8537A937: 1 imagens
+  Nome: Martelo tipo americano profissional com cabo em fibra de vidro
+  Imagem principal: INT_8537A937_001.jpg
+
+• INT_20039CEE: 1 imagens
+  Nome: Martelo de bola profissional com cabo em fibra de vidro
+  Imagem principal: INT_20039CEE_001.jpg
+
+• INT_25A2C3A4: 1 imagens
+  Nome: Martelo de cofragem 600g com cabo em fibra de vidro e cabeça magnética
+  Imagem principal: INT_25A2C3A4_001.jpg
+
+• INT_EE26E2FB: 2 imagens
+  Nome: Corta Rebites
+  Imagem principal: INT_EE26E2FB_001.jpg
+
+• INT_0FBC834B: 1 imagens
+  Nome: Cabo de fibra Grande Picareta / Marreta 910 mm
+  Imagem principal: INT_0FBC834B_001.jpg
+
+• INT_FB3B2024: 2 imagens
+  Nome: Cabo de fibra - faz tudo / martelo / cofragem
+  Imagem principal: INT_FB3B2024_001.jpg
+
+• INT_070FC237: 1 imagens
+  Nome: Picareta profissional sem cabo
+  Imagem principal: INT_070FC237_001.jpg
+
+• INT_401BC2C1: 3 imagens
+  Nome: Alicate bomba de água 250mm
+  Imagem principal: INT_401BC2C1_001.jpg
+
+• INT_83F81DF4: 1 imagens
+  Nome: Alicate descarnador profissional
+  Imagem principal: INT_83F81DF4_001.jpg
+
+• INT_E3F776E4: 1 imagens
+  Nome: Alicate telefonista pontas redondas profissional
+  Imagem principal: INT_E3F776E4_001.jpg
+
+• INT_088B50A0: 1 imagens
+  Nome: Alicate telefonista pontas curvas profissional
+  Imagem principal: INT_088B50A0_001.jpg
+
+• INT_5975CE7F: 1 imagens
+  Nome: Alicate telefonista pontas chatas profissional
+  Imagem principal: INT_5975CE7F_001.jpg
+
+• INT_2A7C3DBD: 1 imagens
+  Nome: Alicate telefonista profissional
+  Imagem principal: INT_2A7C3DBD_001.jpg
+
+• INT_8A4E45B4: 1 imagens
+  Nome: Alicate universal profissional
+  Imagem principal: INT_8A4E45B4_001.jpg
+
+• INT_57EA339C: 1 imagens
+  Nome: Alicate de corte diagonal profissional
+  Imagem principal: INT_57EA339C_001.jpg
+
+• INT_897F21D9: 1 imagens
+  Nome: Chave de parafusos fenda CRV ponta magnética
+  Imagem principal: INT_897F21D9_001.jpg
+
+• INT_671426FF: 1 imagens
+  Nome: Chave Pozidrive CRV ponta magnética
+  Imagem principal: INT_671426FF_001.jpg
+
+• INT_4BEE3D57: 1 imagens
+  Nome: Chave crescente cromo vanadio com punho de borracha
+  Imagem principal: INT_4BEE3D57_001.jpg
+
+• INT_DA589D23: 1 imagens
+  Nome: Alicate porta eletrodos 500 AMP
+  Imagem principal: INT_DA589D23_001.jpg
+
+• INT_6C94903E: 1 imagens
+  Nome: Alicate de massa 500A  em aço cromado
+  Imagem principal: INT_6C94903E_001.jpg
+
+• INT_19678ED4: 1 imagens
+  Nome: Bits profissionais 37pcs com ponta magnética
+  Imagem principal: INT_19678ED4_001.jpg
+
+• INT_6BF41CAC: 1 imagens
+  Nome: Jogo de chaves 46 Pcs - CRV
+  Imagem principal: INT_6BF41CAC_001.jpg
+
+• INT_072133CE: 1 imagens
+  Nome: Correia aperto com tensor para camião
+  Imagem principal: INT_072133CE_001.jpg
+
+• INT_2B18F68C: 1 imagens
+  Nome: Funil em plástico preto
+  Imagem principal: INT_2B18F68C_001.jpg
+
+• INT_18D216EE: 1 imagens
+  Nome: Carreto com cabo de aço 10mts -  450 kg
+  Imagem principal: INT_18D216EE_001.jpg
+
+• INT_149B3AD6: 2 imagens
+  Nome: Aparelho de arrasto 4 TON
+  Imagem principal: INT_149B3AD6_001.jpg
+
+• INT_7A97A857: 1 imagens
+  Nome: Carro de ferramentas com 3 prateleiras
+  Imagem principal: INT_7A97A857_001.jpg
+
+• INT_D8D6B11E: 2 imagens
+  Nome: Macaco de garrafa profissional
+  Imagem principal: INT_D8D6B11E_001.jpg
+
+• INT_DE28B83E: 1 imagens
+  Nome: Aparelho diferêncial  Garibaldo em aço tratado de alta resistência
+  Imagem principal: INT_DE28B83E_001.jpg
+
+• INT_847B6EEE: 1 imagens
+  Nome: Disco de corte para madeira 140x20x24T
+  Imagem principal: INT_847B6EEE_001.jpg
+
+• INT_5AD3A30E: 1 imagens
+  Nome: Brocas H.S.S. -Conj. 5pcs - DIN 338
+  Imagem principal: INT_5AD3A30E_001.jpg
+
+• INT_8D9BD0C5: 1 imagens
+  Nome: Busca polos 19cms T/SDS  profissional transparente
+  Imagem principal: INT_8D9BD0C5_001.jpg
+
+• INT_9BCDC31B: 1 imagens
+  Nome: Cola Termofusível 1kg
+  Imagem principal: INT_9BCDC31B_001.jpg
+
+• INT_19A1F638: 1 imagens
+  Nome: Ficha tripla em T com proteção
+  Imagem principal: INT_19A1F638_001.jpg
+
+• INT_91D91609: 1 imagens
+  Nome: Ficha com interruptor simples
+  Imagem principal: INT_91D91609_001.jpg
+
+• INT_8B65E89F: 1 imagens
+  Nome: Ficha tripla Rectângular
+  Imagem principal: INT_8B65E89F_001.jpg
+
+• INT_E94AA2D5: 2 imagens
+  Nome: Interruptor estanque para exterior
+  Imagem principal: INT_E94AA2D5_001.jpg
+
+• INT_3C2C04D9: 1 imagens
+  Nome: Ficha branca PLST tipo SHUKO
+  Imagem principal: INT_3C2C04D9_001.jpg
+
+• INT_00289E59: 2 imagens
+  Nome: Ficha preta PLST tipo SHUKO
+  Imagem principal: INT_00289E59_001.jpg
+
+• INT_879241BC: 1 imagens
+  Nome: Cabo de bateria 600A profissional - 4 metros
+  Imagem principal: INT_879241BC_001.jpg
+
+• INT_945213F4: 1 imagens
+  Nome: Luz LED de presença 1W com interruptor
+  Imagem principal: INT_945213F4_001.jpg
+
+• INT_A5E1D8F7: 1 imagens
+  Nome: Fio de nylon para aparador de relva - 15 metros
+  Imagem principal: INT_A5E1D8F7_001.jpg
+
+• INT_EECDC92A: 1 imagens
+  Nome: Tesourão de poda curvo telescópico extensível
+  Imagem principal: INT_EECDC92A_001.jpg
+
+• INT_DC059771: 1 imagens
+  Nome: Tesourão poda profissional extensível
+  Imagem principal: INT_DC059771_001.jpg
+
+• INT_87D97330: 1 imagens
+  Nome: Tesoura de cortar sebes 23" com lâmina ondulada 64 cm
+  Imagem principal: INT_87D97330_001.jpg
+
+• INT_3304C207: 1 imagens
+  Nome: Cabo extensível para serrote de poda "AR"
+  Imagem principal: INT_3304C207_001.jpg
+
+• INT_87A464F9: 1 imagens
+  Nome: Serrote de poda pequeno dobrável
+  Imagem principal: INT_87A464F9_001.jpg
+
+• INT_94BDE618: 1 imagens
+  Nome: Tesoura vindima profissional cabo borracha
+  Imagem principal: INT_94BDE618_001.jpg
+
+• INT_0E22A716: 1 imagens
+  Nome: Tesoura poda tipo Nacional
+  Imagem principal: INT_0E22A716_001.jpg
+
+• INT_FB6E621D: 1 imagens
+  Nome: Pulverizador com lança em fibra
+  Imagem principal: INT_FB6E621D_001.jpg
+
+• INT_1B27A626: 1 imagens
+  Nome: Pulverizador
+  Imagem principal: INT_1B27A626_001.jpg
+
+• INT_05BF7530: 1 imagens
+  Nome: Bateria GEL 8AH para pulverizador elétrico 16L
+  Imagem principal: INT_05BF7530_001.jpg
+
+• INT_1CBA816B: 3 imagens
+  Nome: Adaptador de torneira 1"
+  Imagem principal: INT_1CBA816B_001.jpg
+
+• INT_16C481E0: 1 imagens
+  Nome: Adaptador de torneira 3/4"
+  Imagem principal: INT_16C481E0_001.jpg
+
+• INT_A377ADF0: 1 imagens
+  Nome: Agulheta de plástico com regulador - encaixe rápido
+  Imagem principal: INT_A377ADF0_001.jpg
+
+• INT_B8611DFD: 1 imagens
+  Nome: Aspersor sectorial com regulação de direção  - 33 cm
+  Imagem principal: INT_B8611DFD_001.jpg
+
+• INT_4C225147: 1 imagens
+  Nome: Traçador de reta + pó de traçar azul
+  Imagem principal: INT_4C225147_001.jpg
+
+• INT_BF686B49: 1 imagens
+  Nome: Disco diamantado cerâmica extra retificadora / rebarbadora
+  Imagem principal: INT_BF686B49_001.jpg
+
+• INT_6C1071A0: 1 imagens
+  Nome: Disco diamantado turbo para retificadora / rebarbadora
+  Imagem principal: INT_6C1071A0_001.jpg
+
+• INT_D5BB7B86: 1 imagens
+  Nome: Disco de corte para madeira 40 dentes
+  Imagem principal: INT_D5BB7B86_001.jpg
+
+• INT_173AB9EB: 1 imagens
+  Nome: Disco de corte para madeira 30 dentes
+  Imagem principal: INT_173AB9EB_001.jpg
+
+• INT_A3973A87: 1 imagens
+  Nome: Disco corte madeira 230x30x24T
+  Imagem principal: INT_A3973A87_001.jpg
+
+• INT_CA857C75: 1 imagens
+  Nome: Disco para máquina de cortar azulejo
+  Imagem principal: INT_CA857C75_001.jpg
+
+• INT_A7AAB801: 1 imagens
+  Nome: Serras craneanas Conjunto de 16 peças
+  Imagem principal: INT_A7AAB801_001.jpg
+
+• INT_C3AFA687: 1 imagens
+  Nome: Serras craneanas Conjunto de 11 peças
+  Imagem principal: INT_C3AFA687_001.jpg
+
+• INT_699E6132: 1 imagens
+  Nome: Serras craneanas Conjunto de 6 peças
+  Imagem principal: INT_699E6132_001.jpg
+
+• INT_02EE3B98: 1 imagens
+  Nome: Destorcedor móvel zincado niquelado
+  Imagem principal: INT_02EE3B98_001.jpg
+
+• INT_17C4D943: 1 imagens
+  Nome: Manilha Galvanizada tipo europeu niquelado
+  Imagem principal: INT_17C4D943_001.jpg
+
+• INT_766A234A: 1 imagens
+  Nome: Esticador galvanizado DIN 1480
+  Imagem principal: INT_766A234A_001.jpg
+
+• INT_02FD502F: 1 imagens
+  Nome: Elo rápido galvanizado niquelado
+  Imagem principal: INT_02FD502F_001.jpg
+
+• INT_47D5337A: 1 imagens
+  Nome: Mosquetão Galvanizado niquelado
+  Imagem principal: INT_47D5337A_001.jpg
+
+• INT_B99E419B: 1 imagens
+  Nome: Mosquetão galvanizado com rosca
+  Imagem principal: INT_B99E419B_001.jpg
+
+• INT_0A9BE7FE: 1 imagens
+  Nome: Gancho móvel redondo com mola niquelado
+  Imagem principal: INT_0A9BE7FE_001.jpg
+
+• INT_E7FD73BA: 1 imagens
+  Nome: Gancho simples com elo móvel niquelado - Mosq T/ Francês
+  Imagem principal: INT_E7FD73BA_001.jpg
+
+• INT_299F4D8B: 1 imagens
+  Nome: Bicha Aço com um fecho
+  Imagem principal: INT_299F4D8B_001.jpg
+
+• INT_82D1B2E2: 1 imagens
+  Nome: Traçador de reta + Pó de Traçar + nivel
+  Imagem principal: INT_82D1B2E2_001.jpg
+
+• INT_5181F219: 1 imagens
+  Nome: Corta vidros profissional  com depósito para petróleo
+  Imagem principal: INT_5181F219_001.jpg
+
+• INT_7D56B308: 1 imagens
+  Nome: cabo de fibra para picareta - redondo
+  Imagem principal: INT_7D56B308_001.jpg
+
+• INT_2E33FB5C: 1 imagens
+  Nome: Mini picareta pá & bico - Picadeira cabo de fibra
+  Imagem principal: INT_2E33FB5C_001.jpg
+
+• INT_21B4FBEE: 1 imagens
+  Nome: Misturador- tinta / cola - Hexagonal
+  Imagem principal: INT_21B4FBEE_001.jpg
+
+• INT_A6DD665B: 1 imagens
+  Nome: Pistola mastik profissional de aço tipo italiano
+  Imagem principal: INT_A6DD665B_001.jpg
+
+• INT_E381F65A: 1 imagens
+  Nome: Pistola mastik de alumínio tipo italiano
+  Imagem principal: INT_E381F65A_001.jpg
+
+• INT_46DF5B08: 1 imagens
+  Nome: Pistola mastik profissional em tubo de alumínio
+  Imagem principal: INT_46DF5B08_001.jpg
+
+• INT_34C625E5: 1 imagens
+  Nome: Colher de pedreiro - cabo de borracha
+  Imagem principal: INT_34C625E5_001.jpg
+
+• INT_889E9773: 1 imagens
+  Nome: Colher de pedreiro cortada - cabo de borracha
+  Imagem principal: INT_889E9773_001.jpg
+
+• INT_32AB429B: 1 imagens
+  Nome: Colher de pedreiro  - cabo de madeira
+  Imagem principal: INT_32AB429B_001.jpg
+
+• INT_55181C78: 1 imagens
+  Nome: Colher de pedreiro cortada  - cabo de madeira
+  Imagem principal: INT_55181C78_001.jpg
+
+• INT_DCC25364: 1 imagens
+  Nome: Talocha 120x500 prof. de inox dentada 10x10 T/Inox - cabo de madeira
+  Imagem principal: INT_DCC25364_001.jpg
+
+• INT_24B97331: 1 imagens
+  Nome: Talocha 120x500 prof. de inox lisa T/Inox - cabo de madeira
+  Imagem principal: INT_24B97331_001.jpg
+
+• INT_72D75E04: 1 imagens
+  Nome: Talocha 120x300 prof de aço lisa T/Inox- cabo de borracha
+  Imagem principal: INT_72D75E04_001.jpg
+
+• INT_3EE7E1CC: 1 imagens
+  Nome: Talocha 125x300 prof. de aço dentada 8x8 - T/Inox - cabo de borracha
+  Imagem principal: INT_3EE7E1CC_001.jpg
+
+• INT_DB7F1946: 1 imagens
+  Nome: Pá metálica quadrada vermelha
+  Imagem principal: INT_DB7F1946_001.jpg
+
+• INT_C547A837: 1 imagens
+  Nome: Pás em Cabo Metal em Bico / Quadrada
+  Imagem principal: INT_C547A837_001.jpg
+
+• INT_35D0E5EC: 1 imagens
+  Nome: Pá metálica quadrada - cabo de madeira e punho ABS
+  Imagem principal: INT_35D0E5EC_001.jpg
+
+• INT_42B257B6: 1 imagens
+  Nome: Pás de bico / Quadrada cabo Madeira
+  Imagem principal: INT_42B257B6_001.jpg
+
+• INT_7F25879F: 1 imagens
+  Nome: Espátula de estucador dentada - cabo de borracha
+  Imagem principal: INT_7F25879F_001.jpg
+
+• INT_24E04FD5: 1 imagens
+  Nome: Fita métrica em aço - caixa metálica
+  Imagem principal: INT_24E04FD5_001.jpg
+
+• INT_894881E9: 1 imagens
+  Nome: Fita métrica com travão
+  Imagem principal: INT_894881E9_001.jpg
+
+• INT_71FAEBE5: 1 imagens
+  Nome: Expositor de aço para 7 bobines
+  Imagem principal: INT_71FAEBE5_001.jpg
+
+• INT_996D484F: 1 imagens
+  Nome: Corrente branca e vermelha 8mmx25mts
+  Imagem principal: INT_996D484F_001.jpg
+
+• INT_20ABDCF1: 1 imagens
+  Nome: Escova arame de aço com cabo de plástico
+  Imagem principal: INT_20ABDCF1_001.jpg
+
+• INT_BBDC2434: 1 imagens
+  Nome: Serra cabos em aço inox 3mm
+  Imagem principal: INT_BBDC2434_001.jpg
+
+• INT_8B702606: 1 imagens
+  Nome: Serra cabos em aço galvanizado
+  Imagem principal: INT_8B702606_001.jpg
+
+• INT_8BB0C4A2: 1 imagens
+  Nome: Rodizio industrial fixo - roda cinza
+  Imagem principal: INT_8BB0C4A2_001.jpg
+
+• INT_A9496936: 1 imagens
+  Nome: Rodizio Giratório industrial com travão - roda cinza
+  Imagem principal: INT_A9496936_001.jpg
+
+• INT_4DAAE2F6: 1 imagens
+  Nome: Rodizio Giratório industrial com roda cinza
+  Imagem principal: INT_4DAAE2F6_001.jpg
+
+• INT_7404DD50: 2 imagens
+  Nome: Pedra de afiar Gadanha
+  Imagem principal: INT_7404DD50_001.jpg
+
+• INT_C4E45635: 2 imagens
+  Nome: Pedra de afiar óxido alumínio 2 faces 6" ou 8"
+  Imagem principal: INT_C4E45635_001.jpg
+
+• INT_3750FF01: 1 imagens
+  Nome: Agrafador metálico 4-14mm
+  Imagem principal: INT_3750FF01_001.jpg
+
+• INT_8B7CE050: 1 imagens
+  Nome: Lâminas para Xizato de 18mm
+  Imagem principal: INT_8B7CE050_001.jpg
+
+• INT_F88007CD: 2 imagens
+  Nome: Xizato com travão 18mm SK2
+  Imagem principal: INT_F88007CD_001.jpg
+
+• INT_EB20A432: 1 imagens
+  Nome: Xizato autoload com 3 laminas Blst + cx expositora
+  Imagem principal: INT_EB20A432_001.jpg
+
+• INT_203A3A82: 5 imagens
+  Nome: Catrabucha de taça ondulada para rebarbadora
+  Imagem principal: INT_203A3A82_001.jpg
+
+• INT_7530B2A3: 1 imagens
+  Nome: Catrabucha de taça entraçada para rebarbadora
+  Imagem principal: INT_7530B2A3_001.jpg
+
+• INT_CE2E4795: 2 imagens
+  Nome: Escova arame de aço Galv ou Latonado
+  Imagem principal: INT_CE2E4795_001.jpg
+
+• INT_8896B2E8: 2 imagens
+  Nome: Remendos e Cola para bicicleta
+  Imagem principal: INT_8896B2E8_001.jpg
+
+• INT_E8F28B1D: 1 imagens
+  Nome: Fita de alumínio
+  Imagem principal: INT_E8F28B1D_001.jpg
+
+• INT_7E54C2A1: 1 imagens
+  Nome: Plástico com Fita 210x20mts
+  Imagem principal: INT_7E54C2A1_001.jpg
+
+• INT_D5CD3B5B: 3 imagens
+  Nome: Abraçadeira Plst branco -saco100pcs
+  Imagem principal: INT_D5CD3B5B_001.jpg
+
+• INT_F10EC669: 3 imagens
+  Nome: Abraçadeira Plst Preto - saco100pcs
+  Imagem principal: INT_F10EC669_001.jpg
+
+• INT_281E73C9: 2 imagens
+  Nome: Cadeado Latonado T/ Goldoor
+  Imagem principal: INT_281E73C9_001.jpg
+
+• INT_827CF33C: 1 imagens
+  Nome: Canhão de Segurança Cromado
+  Imagem principal: INT_827CF33C_001.jpg
+
+• INT_A3307C63: 1 imagens
+  Nome: Canhão de Segurança chave computador
+  Imagem principal: INT_A3307C63_001.jpg
+
+• INT_BFC55978: 2 imagens
+  Nome: Esticador Ramada
+  Imagem principal: INT_BFC55978_001.jpg
+
+
+ESTRUTURA FINAL:
+--------------------
+public/images/products/internal/
+├── originals/     (imagens originais)
+├── medium/        (400x400px - futuro)
+├── thumbnails/    (150x150px - futuro)
+└── temp/          (uploads temporários)
+
+PRÓXIMOS PASSOS:
+---------------
+1. ✅ Imagens organizadas
+2. ⏳ Aprovar execução SQL (scripts/insert_vip_images.sql)
+3. ⏳ Executar na base de dados
+4. ⏳ Validar frontend
+5. ⏳ Deploy e celebrar! 🎉

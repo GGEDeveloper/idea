@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_146DF6E2
+Nome PT: Escova Latonada 4 filas com raspador
+Nome EN: Escova Latonada 4 filas com raspador
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Escova Latonada 4 filas com raspador 
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_eb044fea69004f6f9f7f76513717b6fc~mv2.jpeg
+  Principal: Sim

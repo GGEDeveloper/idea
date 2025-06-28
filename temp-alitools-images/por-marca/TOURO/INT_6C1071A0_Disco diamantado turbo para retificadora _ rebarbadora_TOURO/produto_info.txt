@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6C1071A0
+Nome PT: Disco diamantado turbo para retificadora / rebarbadora
+Nome EN: Disco diamantado turbo para retificadora / rebarbadora
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco diamantado turbo para retificadora / rebarbadora
+Marca: TOURO
+Coleção: Construção;Discos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_15b9cbb5d318475ea65f0cf22d1cc615~mv2.jpg
+  Principal: Sim

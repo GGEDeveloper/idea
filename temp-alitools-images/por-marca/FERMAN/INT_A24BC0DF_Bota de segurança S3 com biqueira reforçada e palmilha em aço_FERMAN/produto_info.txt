@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A24BC0DF
+Nome PT: Bota de segurança S3 com biqueira reforçada e palmilha em aço
+Nome EN: Bota de segurança S3 com biqueira reforçada e palmilha em aço
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Bota de segurança S3 com biqueira reforçada e palmilha em aço
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a1a09968744f4be4b1e3845ea6923836~mv2.jpg
+  Principal: Sim

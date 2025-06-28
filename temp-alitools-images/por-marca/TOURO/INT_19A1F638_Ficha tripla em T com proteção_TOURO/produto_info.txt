@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_19A1F638
+Nome PT: Ficha tripla em T com proteção
+Nome EN: Ficha tripla em T com proteção
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ficha tripla em T com proteção
+Marca: TOURO
+Coleção: Eletricidade
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b6632d7a3fa64f33b74aed6e85367969~mv2.jpg
+  Principal: Sim

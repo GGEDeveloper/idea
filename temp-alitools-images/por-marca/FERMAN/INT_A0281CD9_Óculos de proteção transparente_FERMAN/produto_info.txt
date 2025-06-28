@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A0281CD9
+Nome PT: Óculos de proteção transparente
+Nome EN: Óculos de proteção transparente
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: óculos de proteção transparente
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_655aa58ef92d450db3c251640b3532e9~mv2.jpg
+  Principal: Sim

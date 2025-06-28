@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_ECAE1D08
+Nome PT: Serrote para Pladur 6" Profissional
+Nome EN: Serrote para Pladur 6" Profissional
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serrote para Pladur 6" Profissional 
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_ddedabcedf554e89a33fdd76baeca021~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_ec636f42d51a47819cc9566d3cc65b0f~mv2.jpg
+  Principal: Não

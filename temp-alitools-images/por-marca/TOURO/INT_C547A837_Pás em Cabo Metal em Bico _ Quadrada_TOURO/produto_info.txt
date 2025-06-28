@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C547A837
+Nome PT: Pás em Cabo Metal em Bico / Quadrada
+Nome EN: Pás em Cabo Metal em Bico / Quadrada
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pás em Cabo Metal em Bico / Quadrada
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_3107554d6fa54f619312d65a22ff817b~mv2.jpg
+  Principal: Sim

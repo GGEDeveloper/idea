@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_494F9555
+Nome PT: Pistola para Espuma PU
+Nome EN: Pistola para Espuma PU
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pistola para Espuma PU 
+Marca: 
+Coleção: Construção;Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_0423ea55765b403baa34ced9e39a57a8~mv2.jpeg
+  Principal: Sim

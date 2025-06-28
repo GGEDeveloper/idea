@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_324DE734
+Nome PT: Máscara de Soldador AUTOMATIC [AK00291]
+Nome EN: Máscara de Soldador AUTOMATIC [AK00291]
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Máscara de Soldador AUTOMATIC [AK00291]
+Marca: 
+Coleção: Proteção e Segurança;Oficina Mecânica;Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_c83e81b3553447cfbcacb88f48dca149~mv2.jpeg
+  Principal: Sim
+Imagem 2: 88efbe_c0eb48f4c7ee46c68792a1cc8f0117cc~mv2.jpeg
+  Principal: Não
+Imagem 3: 88efbe_3a58a31753bc4817aa74a22caa218b0a~mv2.jpeg
+  Principal: Não

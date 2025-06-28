@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EB20A432
+Nome PT: Xizato autoload com 3 laminas Blst + cx expositora
+Nome EN: Xizato autoload com 3 laminas Blst + cx expositora
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Xizato autoload com 3 laminas Blst + cx expositora 
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_f2490cdb84b744c68a18dcf0eb17e5a7~mv2.jpg
+  Principal: Sim

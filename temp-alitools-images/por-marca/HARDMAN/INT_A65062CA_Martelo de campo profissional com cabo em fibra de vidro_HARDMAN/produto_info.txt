@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A65062CA
+Nome PT: Martelo de campo profissional com cabo em fibra de vidro
+Nome EN: Martelo de campo profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo de campo profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6f9e7d1068af4fb38df552bcc5c66843~mv2.png
+  Principal: Sim

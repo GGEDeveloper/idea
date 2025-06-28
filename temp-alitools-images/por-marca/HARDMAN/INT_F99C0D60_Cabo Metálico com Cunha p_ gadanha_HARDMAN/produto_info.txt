@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F99C0D60
+Nome PT: Cabo Metálico com Cunha p/ gadanha
+Nome EN: Cabo Metálico com Cunha p/ gadanha
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Cabo Metálico com Cunha p/ gadanha
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_30f404a0a42548c0b8d446f35ee52b7d~mv2.jpg
+  Principal: Sim

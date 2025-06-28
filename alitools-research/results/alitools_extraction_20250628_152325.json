@@ -1,0 +1,233 @@
+{
+  "extraction_info": {
+    "timestamp": "2025-06-28T15:23:19.256916",
+    "total_urls_processed": 6,
+    "total_images_found": 0,
+    "successful_mappings": 6,
+    "failed_mappings": 0
+  },
+  "products": [
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/parka-impermi%C3%A1vel-reflectora",
+        "product_name": "Parka Impermiável Reflectora",
+        "extraction_timestamp": "2025-06-28T15:23:19.317675"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_1d905753afc941c58cb068d278426a88~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_1d905753afc941c58cb068d278426a88~mv2.jpg",
+          "hash": "1d905753afc941c58cb068d278426a88",
+          "classification": {
+            "type": "medium",
+            "size": "375x375",
+            "quality": "medium",
+            "width": 375,
+            "height": 375
+          },
+          "is_primary": true
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_01A0DE82",
+        "vip_sku": "VIP_01A0DE82",
+        "vip_name": "Parka Impermiável Reflectora",
+        "vip_brand": "Genérico",
+        "similarity_score": 1.2
+      },
+      "statistics": {
+        "total_images": 1,
+        "unique_hashes": 1,
+        "image_types": [
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/fato-de-chuva-reflector",
+        "product_name": "Fato de chuva Reflector",
+        "extraction_timestamp": "2025-06-28T15:23:20.366905"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_86fc46a04fe0425ca165aaa99f5bfb69~mv2.jpg/v1/fill/w_375,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_86fc46a04fe0425ca165aaa99f5bfb69~mv2.jpg",
+          "hash": "86fc46a04fe0425ca165aaa99f5bfb69",
+          "classification": {
+            "type": "medium",
+            "size": "375x500",
+            "quality": "medium",
+            "width": 375,
+            "height": 500
+          },
+          "is_primary": true
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_C6DB06A9",
+        "vip_sku": "VIP_C6DB06A9",
+        "vip_name": "Parka impermeável Reflector",
+        "vip_brand": "Genérico",
+        "similarity_score": 0.66
+      },
+      "statistics": {
+        "total_images": 1,
+        "unique_hashes": 1,
+        "image_types": [
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/luva-nitrile-preta-com-nylon-grossa-prof",
+        "product_name": "Luva Nitrile Preta com nylon +grossa prof",
+        "extraction_timestamp": "2025-06-28T15:23:21.433701"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg/v1/fill/w_375,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "classification": {
+            "type": "medium",
+            "size": "375x281",
+            "quality": "medium",
+            "width": 375,
+            "height": 281
+          },
+          "is_primary": true
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_C53773B7",
+        "vip_sku": "VIP_C53773B7",
+        "vip_name": "Luva Nitrile Preta com nylon +grossa prof",
+        "vip_brand": "FERMAN",
+        "similarity_score": 1.2
+      },
+      "statistics": {
+        "total_images": 1,
+        "unique_hashes": 1,
+        "image_types": [
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/talocha-de-grosa-endurecida-120-x-375mm-a3701",
+        "product_name": "Talocha de Grosa Endurecida 120 x 375mm - A3701",
+        "extraction_timestamp": "2025-06-28T15:23:22.508190"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_e9a2c7f013ae441d80133d5646618a2f~mv2.jpg/v1/fill/w_375,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_e9a2c7f013ae441d80133d5646618a2f~mv2.jpg",
+          "hash": "e9a2c7f013ae441d80133d5646618a2f",
+          "classification": {
+            "type": "medium",
+            "size": "375x250",
+            "quality": "medium",
+            "width": 375,
+            "height": 250
+          },
+          "is_primary": true
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_24638E58",
+        "vip_sku": "VIP_24638E58",
+        "vip_name": "Talocha de Grosa Endurecida 120 x 375mm - A3701",
+        "vip_brand": "Genérico",
+        "similarity_score": 1.2
+      },
+      "statistics": {
+        "total_images": 1,
+        "unique_hashes": 1,
+        "image_types": [
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/espatula-em-abs-250-mm",
+        "product_name": "Espatula em ABS 250 MM",
+        "extraction_timestamp": "2025-06-28T15:23:23.555540"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg/v1/fill/w_375,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "classification": {
+            "type": "medium",
+            "size": "375x281",
+            "quality": "medium",
+            "width": 375,
+            "height": 281
+          },
+          "is_primary": true
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_4AF69DA0",
+        "vip_sku": "VIP_4AF69DA0",
+        "vip_name": "Espatula em ABS 250 MM",
+        "vip_brand": "Genérico",
+        "similarity_score": 1.1
+      },
+      "statistics": {
+        "total_images": 1,
+        "unique_hashes": 1,
+        "image_types": [
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/serrote-prof-cortar-ferro-12-300-mm",
+        "product_name": "Serrote prof. cortar Ferro 12\" - 300 MM",
+        "extraction_timestamp": "2025-06-28T15:23:24.619527"
+      },
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "classification": {
+            "type": "medium",
+            "size": "375x375",
+            "quality": "medium",
+            "width": 375,
+            "height": 375
+          },
+          "is_primary": true
+        },
+        {
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "classification": {
+            "type": "medium",
+            "size": "375x375",
+            "quality": "medium",
+            "width": 375,
+            "height": 375
+          },
+          "is_primary": false
+        }
+      ],
+      "vip_mapping": {
+        "vip_ean": "INT_870A51FF",
+        "vip_sku": "VIP_870A51FF",
+        "vip_name": "Serrote prof. cortar Ferro 12\" - 300 MM",
+        "vip_brand": "Genérico",
+        "similarity_score": 1.2
+      },
+      "statistics": {
+        "total_images": 2,
+        "unique_hashes": 2,
+        "image_types": [
+          "medium"
+        ]
+      }
+    }
+  ]
+}

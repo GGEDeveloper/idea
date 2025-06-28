@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_BB92C6CA
+Nome PT: Machadinha Rola com cabo
+Nome EN: Machadinha Rola com cabo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha Rola com cabo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2c9211f84bc148098545ea5efa147349~mv2.jpg
+  Principal: Sim

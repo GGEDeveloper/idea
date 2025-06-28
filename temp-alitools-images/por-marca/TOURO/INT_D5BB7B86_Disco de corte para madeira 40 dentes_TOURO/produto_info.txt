@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D5BB7B86
+Nome PT: Disco de corte para madeira 40 dentes
+Nome EN: Disco de corte para madeira 40 dentes
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco de corte para madeira 40 dentes
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d7e41ce7f4c14d3a80e0dc83a43b2e3e~mv2.jpg
+  Principal: Sim

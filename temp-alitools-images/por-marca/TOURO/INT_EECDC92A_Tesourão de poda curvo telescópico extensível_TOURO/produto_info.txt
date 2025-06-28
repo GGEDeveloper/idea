@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EECDC92A
+Nome PT: Tesourão de poda curvo telescópico extensível
+Nome EN: Tesourão de poda curvo telescópico extensível
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Tesourão de poda curvo telescópico extensível
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d264f50b69ab4219a0da93c5912fc1eb~mv2.jpg
+  Principal: Sim

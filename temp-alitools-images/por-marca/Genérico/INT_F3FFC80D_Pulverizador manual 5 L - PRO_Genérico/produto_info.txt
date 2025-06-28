@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F3FFC80D
+Nome PT: Pulverizador manual 5 L - PRO
+Nome EN: Pulverizador manual 5 L - PRO
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pulverizador manual 5 L - PRO
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_2a25062400c542c59d9f19ef3c2e651a~mv2.jpg
+  Principal: Sim

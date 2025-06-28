@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0A9ADFF8
+Nome PT: Gancho Cavar Leiria
+Nome EN: Gancho Cavar Leiria
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Gancho Cavar Leiria
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_99099f116250416b8de9188c29c65b8e~mv2.jpg
+  Principal: Sim

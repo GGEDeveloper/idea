@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D19C6E42
+Nome PT: Enxada Pontas Faca Turquel
+Nome EN: Enxada Pontas Faca Turquel
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Pontas Faca Turquel
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_aa82f8bbc5924667bf90c1cf29e4c68e~mv2.jpg
+  Principal: Sim

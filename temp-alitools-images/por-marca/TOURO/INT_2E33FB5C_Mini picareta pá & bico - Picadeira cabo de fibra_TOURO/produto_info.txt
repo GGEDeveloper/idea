@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_2E33FB5C
+Nome PT: Mini picareta pá & bico - Picadeira cabo de fibra
+Nome EN: Mini picareta pá & bico - Picadeira cabo de fibra
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Mini picareta pá & bico - Picadeira cabo de fibra
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_d73fd69b49504d88a6898ddc12a828b2~mv2.jpg
+  Principal: Sim

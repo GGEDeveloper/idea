@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A3307C63
+Nome PT: Canhão de Segurança chave computador
+Nome EN: Canhão de Segurança chave computador
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Canhão de Segurança chave computador
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e63e1943625f48ddb849f27c44c991a7~mv2.jpg
+  Principal: Sim

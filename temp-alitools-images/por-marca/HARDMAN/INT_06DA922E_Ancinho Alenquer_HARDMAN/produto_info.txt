@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_06DA922E
+Nome PT: Ancinho Alenquer
+Nome EN: Ancinho Alenquer
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ancinho Alenquer 
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_45082ace1c504e89a7d7acde9f967170~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7D8D09FF
+Nome PT: Extintor Pó Quimico ABC
+Nome EN: Extintor Pó Quimico ABC
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Extintor Pó Quimico ABC
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_aa60647cc32a4a32b0fc419bf420707d~mv2.jpg
+  Principal: Sim

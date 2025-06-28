@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_699E6132
+Nome PT: Serras craneanas Conjunto de 6 peças
+Nome EN: Serras craneanas Conjunto de 6 peças
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Serras craneanas Conjunto de 6 peças
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_da1c233c86e44906833dd1fd95c3459b~mv2.jpg
+  Principal: Sim

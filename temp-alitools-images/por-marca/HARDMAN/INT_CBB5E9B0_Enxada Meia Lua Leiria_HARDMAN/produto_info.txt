@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CBB5E9B0
+Nome PT: Enxada Meia Lua Leiria
+Nome EN: Enxada Meia Lua Leiria
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Meia Lua Leiria
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_c81b69555e424d1499ee181f67623052~mv2.jpg
+  Principal: Sim

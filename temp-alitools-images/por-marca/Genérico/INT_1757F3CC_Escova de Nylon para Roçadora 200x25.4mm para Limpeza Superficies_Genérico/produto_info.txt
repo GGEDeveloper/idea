@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1757F3CC
+Nome PT: Escova de Nylon para Roçadora 200x25.4mm para Limpeza Superficies
+Nome EN: Escova de Nylon para Roçadora 200x25.4mm para Limpeza Superficies
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Escova de Nylon para Roçadora 200x25.4mm para Limpeza Superficies
+Marca: 
+Coleção: Jardim;Discos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_00f025caf9184d8ba7d015618f64d207~mv2.jpeg
+  Principal: Sim

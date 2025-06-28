@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_68157939
+Nome PT: X- acto com Lâmina 9mm
+Nome EN: X- acto com Lâmina 9mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: X- acto com Lâmina 9mm
+Marca: 
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_0ab32cafbef64f2b9d005b26642a8e3f~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DD0FA31B
+Nome PT: Forquilha direita
+Nome EN: Forquilha direita
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Forquilha direita
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_48830fcaf69840d595a66e6e8aea6b4f~mv2.jpg
+  Principal: Sim

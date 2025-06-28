@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4F02B1B4
+Nome PT: Comedouro para Galinhas Zincado
+Nome EN: Comedouro para Galinhas Zincado
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Comedouro para Galinhas Zincado
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_883a21b021584ac7a1bb396f6e3fe0ef~mv2.jpg
+  Principal: Sim

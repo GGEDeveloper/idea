@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_36225FF7
+Nome PT: Pá de Jardim
+Nome EN: Pá de Jardim
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pá de Jardim
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6eafdb2ed9a5421bb0ba55215cce5df6~mv2.jpg
+  Principal: Sim

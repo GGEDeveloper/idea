@@ -321,11 +321,11 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         <div className="mb-6 p-4 bg-gray-50 rounded-lg">
           <h4 className="text-sm font-semibold text-gray-700 mb-2">Variante selecionada:</h4>
           <p className="text-gray-900 font-medium">{activeVariant.variant_name}</p>
-          {isAuthenticated && hasPermission('view_stock') && (
+                {isAuthenticated && hasPermission('view_stock') && (
             <p className="text-sm text-gray-600 mt-1">
               Stock disponível: {activeVariant.stockquantity} unidades
             </p>
-          )}
+                )}
         </div>
       )}
 

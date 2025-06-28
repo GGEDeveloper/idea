@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_84DEFA56
+Nome PT: Talocha esponja Laranja 280x140x20mm
+Nome EN: Talocha esponja Laranja 280x140x20mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha esponja Laranja 280x140x20mm
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_ab0f0f574d804a3f90f774d4b5e2b4ce~mv2.jpg
+  Principal: Sim

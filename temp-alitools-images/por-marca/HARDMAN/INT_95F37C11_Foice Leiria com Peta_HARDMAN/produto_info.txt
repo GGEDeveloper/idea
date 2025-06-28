@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_95F37C11
+Nome PT: Foice Leiria com Peta
+Nome EN: Foice Leiria com Peta
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Foice Leiria com Peta
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_bdcea10f58544f7e9ba9d10908e3df5b~mv2.jpg
+  Principal: Sim

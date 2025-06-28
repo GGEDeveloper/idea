@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6290B603
+Nome PT: Machadão Lenha N°3
+Nome EN: Machadão Lenha N°3
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadão Lenha N°3
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9d1f815af37942a9884f047de4f42f04~mv2.jpg
+  Principal: Sim

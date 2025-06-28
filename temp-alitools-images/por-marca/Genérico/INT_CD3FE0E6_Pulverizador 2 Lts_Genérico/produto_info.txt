@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CD3FE0E6
+Nome PT: Pulverizador 2 Lts
+Nome EN: Pulverizador 2 Lts
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pulverizador 2 Lts
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_30cd48bb7e7244ca8489a5ab8095be71~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_8369c3c92144488b85b3dd9775d8ce4b~mv2.jpg
+  Principal: Não

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_023D1D65
+Nome PT: Óculo de Proteção Prof. Pretos
+Nome EN: Óculo de Proteção Prof. Pretos
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Óculo de Proteção Prof. Pretos
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_1d3a062abbaa438faa28507d7d27aac6~mv2.png
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_D3C98A2B
+Nome PT: Luva de soldador pele + crute 35 cm
+Nome EN: Luva de soldador pele + crute 35 cm
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva de soldador pele + crute 35 cm
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a2fbfedbbd8a4f39a855494dd7ca3675~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7EE979DC
+Nome PT: Sacho Coração
+Nome EN: Sacho Coração
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sacho Coração
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9918a0d9f3514bd1acbd4fc7460ebf29~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6160F72D
+Nome PT: Raspador Leiria sem cabo
+Nome EN: Raspador Leiria sem cabo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Raspador Leiria sem cabo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_deb05db88a374b4890f31196126134d4~mv2.jpg
+  Principal: Sim

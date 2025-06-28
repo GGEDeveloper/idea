@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_72158DE2
+Nome PT: Luva nylon e Latex - Estanque TOP
+Nome EN: Luva nylon e Latex - Estanque TOP
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva nylon e Latex - Estanque TOP
+Marca: 
+Coleção: Luvas de Protecção;Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_6e67185ba6634eb8938c2b6c4d8bd26c~mv2.png
+  Principal: Sim

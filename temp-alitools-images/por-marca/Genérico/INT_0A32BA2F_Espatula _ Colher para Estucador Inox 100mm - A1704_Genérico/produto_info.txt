@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0A32BA2F
+Nome PT: Espatula / Colher para Estucador Inox 100mm - A1704
+Nome EN: Espatula / Colher para Estucador Inox 100mm - A1704
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Espatula / Colher para Estucador Inox 100mm - A1704
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_92c5e241673540e5a52816808463ed58~mv2.jpg
+  Principal: Sim

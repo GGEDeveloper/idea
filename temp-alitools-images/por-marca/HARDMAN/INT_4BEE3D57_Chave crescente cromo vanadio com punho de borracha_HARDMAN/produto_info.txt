@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4BEE3D57
+Nome PT: Chave crescente cromo vanadio com punho de borracha
+Nome EN: Chave crescente cromo vanadio com punho de borracha
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Chave crescente cromo vanadio com punho de borracha
+Marca: HARDMAN
+Coleção: Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e7a6a4c885b140718761c6519c4cb0b4~mv2.jpg
+  Principal: Sim

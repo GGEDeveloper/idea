@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_070FC237
+Nome PT: Picareta profissional sem cabo
+Nome EN: Picareta profissional sem cabo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Picareta profissional sem cabo
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_44134086d583438fa6fc17d1fa167dc6~mv2.jpg
+  Principal: Sim

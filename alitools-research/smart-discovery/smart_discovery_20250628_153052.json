@@ -1,0 +1,800 @@
+{
+  "discovery_info": {
+    "timestamp": "2025-06-28T15:30:29.418329",
+    "total_vip_products": 410,
+    "total_urls_generated": 408,
+    "total_urls_tested": 100,
+    "working_urls_found": 3,
+    "total_images_extracted": 20
+  },
+  "successful_matches": [
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/luva-nitrile-preta-com-nylon-grossa-prof",
+        "product_name": "Luva Nitrile Preta com nylon +grossa prof",
+        "price": "N/A"
+      },
+      "vip_mapping": {
+        "internal_ean": "INT_C53773B7",
+        "internal_sku": "VIP_C53773B7",
+        "name_pt": "Luva Nitrile Preta com nylon +grossa prof",
+        "brand": "FERMAN",
+        "similarity_score": 1.0
+      },
+      "images": [
+        {
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "type": "original",
+          "size": "original",
+          "width": null,
+          "height": null,
+          "quality": "original",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "type": "large",
+          "size": "750x750",
+          "width": 750,
+          "height": 750,
+          "quality": "high",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "type": "medium",
+          "size": "375x375",
+          "width": 375,
+          "height": 375,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "type": "small",
+          "size": "200x200",
+          "width": 200,
+          "height": 200,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "7d5d8fbf796e40338ff42914af3f4916",
+          "url": "https://static.wixstatic.com/media/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg/v1/fill/w_150,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg",
+          "type": "thumbnail",
+          "size": "150x150",
+          "width": 150,
+          "height": 150,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        }
+      ],
+      "statistics": {
+        "total_images": 5,
+        "unique_hashes": 1,
+        "image_types": [
+          "large",
+          "thumbnail",
+          "original",
+          "small",
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/espatula-em-abs-250-mm",
+        "product_name": "Espatula em ABS 250 MM",
+        "price": "N/A"
+      },
+      "vip_mapping": {
+        "internal_ean": "INT_4AF69DA0",
+        "internal_sku": "VIP_4AF69DA0",
+        "name_pt": "Espatula em ABS 250 MM",
+        "brand": "Genérico",
+        "similarity_score": 1.0
+      },
+      "images": [
+        {
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "type": "original",
+          "size": "original",
+          "width": null,
+          "height": null,
+          "quality": "original",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "type": "large",
+          "size": "750x750",
+          "width": 750,
+          "height": 750,
+          "quality": "high",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "type": "medium",
+          "size": "375x375",
+          "width": 375,
+          "height": 375,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "type": "small",
+          "size": "200x200",
+          "width": 200,
+          "height": 200,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3a0afa69331e4657b801aa1c3b5334c5",
+          "url": "https://static.wixstatic.com/media/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg/v1/fill/w_150,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3a0afa69331e4657b801aa1c3b5334c5~mv2.jpg",
+          "type": "thumbnail",
+          "size": "150x150",
+          "width": 150,
+          "height": 150,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        }
+      ],
+      "statistics": {
+        "total_images": 5,
+        "unique_hashes": 1,
+        "image_types": [
+          "large",
+          "thumbnail",
+          "original",
+          "small",
+          "medium"
+        ]
+      }
+    },
+    {
+      "alitools_info": {
+        "url": "https://www.alimamedetools.com/product-page/serrote-prof-cortar-ferro-12-300-mm",
+        "product_name": "Serrote prof. cortar Ferro 12\" - 300 MM",
+        "price": "N/A"
+      },
+      "vip_mapping": {
+        "internal_ean": "INT_870A51FF",
+        "internal_sku": "VIP_870A51FF",
+        "name_pt": "Serrote prof. cortar Ferro 12\" - 300 MM",
+        "brand": "Genérico",
+        "similarity_score": 1.0
+      },
+      "images": [
+        {
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "type": "original",
+          "size": "original",
+          "width": null,
+          "height": null,
+          "quality": "original",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "type": "large",
+          "size": "750x750",
+          "width": 750,
+          "height": 750,
+          "quality": "high",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "type": "medium",
+          "size": "375x375",
+          "width": 375,
+          "height": 375,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "type": "small",
+          "size": "200x200",
+          "width": 200,
+          "height": 200,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "3c4ad74c3b3a4cc4a7957a781dd8782a",
+          "url": "https://static.wixstatic.com/media/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg/v1/fill/w_150,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_3c4ad74c3b3a4cc4a7957a781dd8782a~mv2.jpg",
+          "type": "thumbnail",
+          "size": "150x150",
+          "width": 150,
+          "height": 150,
+          "quality": "medium",
+          "is_primary": true,
+          "image_index": 0
+        },
+        {
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "type": "original",
+          "size": "original",
+          "width": null,
+          "height": null,
+          "quality": "original",
+          "is_primary": false,
+          "image_index": 1
+        },
+        {
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg/v1/fill/w_750,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "type": "large",
+          "size": "750x750",
+          "width": 750,
+          "height": 750,
+          "quality": "high",
+          "is_primary": false,
+          "image_index": 1
+        },
+        {
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg/v1/fill/w_375,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "type": "medium",
+          "size": "375x375",
+          "width": 375,
+          "height": 375,
+          "quality": "medium",
+          "is_primary": false,
+          "image_index": 1
+        },
+        {
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "type": "small",
+          "size": "200x200",
+          "width": 200,
+          "height": 200,
+          "quality": "medium",
+          "is_primary": false,
+          "image_index": 1
+        },
+        {
+          "hash": "f511cd2cf8c74a0993e888bb9ea10d75",
+          "url": "https://static.wixstatic.com/media/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg/v1/fill/w_150,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/88efbe_f511cd2cf8c74a0993e888bb9ea10d75~mv2.jpg",
+          "type": "thumbnail",
+          "size": "150x150",
+          "width": 150,
+          "height": 150,
+          "quality": "medium",
+          "is_primary": false,
+          "image_index": 1
+        }
+      ],
+      "statistics": {
+        "total_images": 10,
+        "unique_hashes": 2,
+        "image_types": [
+          "large",
+          "thumbnail",
+          "original",
+          "small",
+          "medium"
+        ]
+      }
+    }
+  ],
+  "failed_attempts": [
+    {
+      "url": "https://www.alimamedetools.com/product-page/auscultadores-de-proteção-protectores",
+      "slug": "auscultadores-de-proteção-protectores",
+      "original_vip_name": "Auscultadores de proteção - Protectores"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/avental-de-soldador-em-pele",
+      "slug": "avental-de-soldador-em-pele",
+      "original_vip_name": "Avental de soldador em pele"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/bata-de-trabalho-azul-marinho",
+      "slug": "bata-de-trabalho-azul-marinho",
+      "original_vip_name": "Bata de trabalho azul marinho"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/bota-de-segurança-s3-com-biqueira-reforçada-e-palmilha-em-aço",
+      "slug": "bota-de-segurança-s3-com-biqueira-reforçada-e-palmilha-em-aço",
+      "original_vip_name": "Bota de segurança S3 com biqueira reforçada e palmilha em aço"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/bota-de-segurança-s3-preta-kevlar-microfibra",
+      "slug": "bota-de-segurança-s3-preta-kevlar-microfibra",
+      "original_vip_name": "Bota de segurança S3 preta KEVLAR & MICROFIBRA"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/calças-e-jaqueta-de-trabalho-azul-marinho",
+      "slug": "calças-e-jaqueta-de-trabalho-azul-marinho",
+      "original_vip_name": "Calças e jaqueta de trabalho azul marinho"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/capa-chuva-em-nylon-economic",
+      "slug": "capa-chuva-em-nylon-economic",
+      "original_vip_name": "Capa Chuva em Nylon - ECONOMIC"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/capa-de-chuva-em-pu",
+      "slug": "capa-de-chuva-em-pu",
+      "original_vip_name": "Capa de chuva em PU"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/casaco-de-soldador-em-pele",
+      "slug": "casaco-de-soldador-em-pele",
+      "original_vip_name": "Casaco de soldador em pele"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/colete-de-segurança-de-alta-visibilidade-laranja",
+      "slug": "colete-de-segurança-de-alta-visibilidade-laranja",
+      "original_vip_name": "Colete de segurança de alta visibilidade laranja"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/colete-de-segurança-de-alta-visibilidade-verde",
+      "slug": "colete-de-segurança-de-alta-visibilidade-verde",
+      "original_vip_name": "Colete de segurança de alta visibilidade verde"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/corrente-de-plástico-branco-e-vermelha",
+      "slug": "corrente-de-plástico-branco-e-vermelha",
+      "original_vip_name": "Corrente de plástico branco e vermelha"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/filtro-para-máscara-tipo-comacec-2-bl",
+      "slug": "filtro-para-máscara-tipo-comacec-2-bl",
+      "original_vip_name": "Filtro para máscara tipo COMACEC 2-BL"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/fita-de-sinalização-amarela-e-preta-18mts-x-50mm",
+      "slug": "fita-de-sinalização-amarela-e-preta-18mts-x-50mm",
+      "original_vip_name": "Fita de sinalização amarela e preta 18mts x 50mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/fita-de-sinalização-branca-e-vermelha-200m-x-50mm",
+      "slug": "fita-de-sinalização-branca-e-vermelha-200m-x-50mm",
+      "original_vip_name": "Fita de sinalização branca e vermelha 200m x 50mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/jardineira-de-trabalho-azul-marinho",
+      "slug": "jardineira-de-trabalho-azul-marinho",
+      "original_vip_name": "Jardineira de trabalho azul marinho"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-pele-genuína-branca-com-dorso-em-algodão",
+      "slug": "luva-pele-genuína-branca-com-dorso-em-algodão",
+      "original_vip_name": "Luva  pele genuína branca com dorso em algodão"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-nitrile-azul-34-grossa-com-punho-malha-10-880127",
+      "slug": "luva-nitrile-azul-34-grossa-com-punho-malha-10-880127",
+      "original_vip_name": "Luva Nitrile azul 3/4\" grossa com Punho malha 10\" - 880127"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-chefe-crute-cinza",
+      "slug": "luva-chefe-crute-cinza",
+      "original_vip_name": "Luva chefe crute cinza"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-chefe-pele-genuína-amarela",
+      "slug": "luva-chefe-pele-genuína-amarela",
+      "original_vip_name": "Luva chefe pele genuína amarela"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-crute-e-pano-com-palma-reforçada",
+      "slug": "luva-crute-e-pano-com-palma-reforçada",
+      "original_vip_name": "Luva crute e pano com palma reforçada"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-de-soldador-pele-crute-35-cm",
+      "slug": "luva-de-soldador-pele-crute-35-cm",
+      "original_vip_name": "Luva de soldador pele + crute 35 cm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-industrial-preta",
+      "slug": "luva-industrial-preta",
+      "original_vip_name": "Luva industrial preta"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-mista-de-crute-e-pele-branca",
+      "slug": "luva-mista-de-crute-e-pele-branca",
+      "original_vip_name": "Luva mista de crute e pele branca"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-nitrile-com-nylon-palma-e-dedos-cinzentos",
+      "slug": "luva-nitrile-com-nylon-palma-e-dedos-cinzentos",
+      "original_vip_name": "Luva nitrile com nylon, palma e dedos cinzentos"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-nylon-com-latex-na-palma-dedos",
+      "slug": "luva-nylon-com-latex-na-palma-dedos",
+      "original_vip_name": "Luva nylon com latex na palma dedos"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-para-soldador-crute-cinza-canhão",
+      "slug": "luva-para-soldador-crute-cinza-canhão",
+      "original_vip_name": "Luva para soldador crute cinza canhão"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-para-soldador-crute-vermelha",
+      "slug": "luva-para-soldador-crute-vermelha",
+      "original_vip_name": "Luva para soldador crute vermelha"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-pele-genuína-branca-tipo-chefe",
+      "slug": "luva-pele-genuína-branca-tipo-chefe",
+      "original_vip_name": "Luva pele genuína branca tipo chefe"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/manguitos-de-soldador-em-pele",
+      "slug": "manguitos-de-soldador-em-pele",
+      "original_vip_name": "Manguitos de soldador em pele"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/máscara-de-soldador-com-visor",
+      "slug": "máscara-de-soldador-com-visor",
+      "original_vip_name": "Máscara de soldador com visor"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/polainitos-de-soldador-em-pele",
+      "slug": "polainitos-de-soldador-em-pele",
+      "original_vip_name": "Polainitos de soldador em pele"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/rede-de-proteção-laranja-100gm2-1mx50mts",
+      "slug": "rede-de-proteção-laranja-100gm2-1mx50mts",
+      "original_vip_name": "Rede de proteção laranja 100g/M2 = 1Mx50mts"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapato-ténis-camurça-em-kevlar-e-composito-s1p",
+      "slug": "sapato-ténis-camurça-em-kevlar-e-composito-s1p",
+      "original_vip_name": "Sapato Ténis  camurça em KEVLAR e composito S1P"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapato-de-segurança-pele-branca",
+      "slug": "sapato-de-segurança-pele-branca",
+      "original_vip_name": "Sapato de segurança pele branca"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/viseira-de-proteção-acrílica",
+      "slug": "viseira-de-proteção-acrílica",
+      "original_vip_name": "Viseira de proteção acrílica"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/viseira-de-proteção-acrílica-com-ajuste",
+      "slug": "viseira-de-proteção-acrílica-com-ajuste",
+      "original_vip_name": "Viseira de proteção acrílica com ajuste"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/viseira-de-proteção-em-rede-com-ajuste",
+      "slug": "viseira-de-proteção-em-rede-com-ajuste",
+      "original_vip_name": "Viseira de proteção em rede com ajuste"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/óculos-de-proteção-pretos",
+      "slug": "óculos-de-proteção-pretos",
+      "original_vip_name": "ÓCULOS de Proteção Pretos"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/óculos-de-proteção-100-transparentes",
+      "slug": "óculos-de-proteção-100-transparentes",
+      "original_vip_name": "Óculos de proteção 100% transparentes"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/óculos-de-proteção-transparente",
+      "slug": "óculos-de-proteção-transparente",
+      "original_vip_name": "Óculos de proteção transparente"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/tesoura-vindima-profissional-cabo-borracha",
+      "slug": "tesoura-vindima-profissional-cabo-borracha",
+      "original_vip_name": "Tesoura vindima profissional cabo borracha"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/adaptor-de-torneira-para-mangueira-rega",
+      "slug": "adaptor-de-torneira-para-mangueira-rega",
+      "original_vip_name": "Adaptor de torneira para Mangueira Rega"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/broca-cónica-escalonada-hss-titanio",
+      "slug": "broca-cónica-escalonada-hss-titanio",
+      "original_vip_name": "Broca cónica escalonada HSS - TITANIO"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/calça-multibolsos-reflectora-azul-ou-cinza",
+      "slug": "calça-multibolsos-reflectora-azul-ou-cinza",
+      "original_vip_name": "Calça Multibolsos reflectora Azul ou Cinza"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/casaco-protecção-térmica-5c",
+      "slug": "casaco-protecção-térmica-5c",
+      "original_vip_name": "Casaco Protecção Térmica - 5°c"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/cintas-de-elevação-plana-dupla-certificado",
+      "slug": "cintas-de-elevação-plana-dupla-certificado",
+      "original_vip_name": "Cintas de Elevação Plana Dupla- CERTIFICADO"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/cinto-pedreiro-com-11-bolsas-para-ferramentas",
+      "slug": "cinto-pedreiro-com-11-bolsas-para-ferramentas",
+      "original_vip_name": "Cinto Pedreiro com 11 Bolsas para Ferramentas"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/correia-de-aperto-com-tensor-vários-tamanhos",
+      "slug": "correia-de-aperto-com-tensor-vários-tamanhos",
+      "original_vip_name": "Correia de aperto com Tensor [vários Tamanhos]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/disco-corte-madeira-plst-gesso-cartonado-125x222mm",
+      "slug": "disco-corte-madeira-plst-gesso-cartonado-125x222mm",
+      "original_vip_name": "Disco corte Madeira, Plst, Gesso Cartonado 125x22.2mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/disco-diamantado-especial-madeira-115mm",
+      "slug": "disco-diamantado-especial-madeira-115mm",
+      "original_vip_name": "Disco diamantado - especial Madeira 115mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/disco-diamantado-ceramica-115mm",
+      "slug": "disco-diamantado-ceramica-115mm",
+      "original_vip_name": "Disco diamantado Ceramica 115mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/escopro-com-protecção-7cms-30016mm",
+      "slug": "escopro-com-protecção-7cms-30016mm",
+      "original_vip_name": "Escopro com protecção 7cms [300×16mm]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/escova-latonada-4-filas-com-raspador",
+      "slug": "escova-latonada-4-filas-com-raspador",
+      "original_vip_name": "Escova Latonada 4 filas com raspador"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/escova-de-arame-galvanizado-para-roçadora",
+      "slug": "escova-de-arame-galvanizado-para-roçadora",
+      "original_vip_name": "Escova de Arame Galvanizado para Roçadora"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/escova-de-nylon-para-roçadora-200x254mm-para-limpeza-superficies",
+      "slug": "escova-de-nylon-para-roçadora-200x254mm-para-limpeza-superficies",
+      "original_vip_name": "Escova de Nylon para Roçadora 200x25.4mm para Limpeza Superficies"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/espatula-colher-para-estucador-inox-100mm-a1704",
+      "slug": "espatula-colher-para-estucador-inox-100mm-a1704",
+      "original_vip_name": "Espatula / Colher para Estucador Inox 100mm - A1704"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/espatula-borracha-200mm",
+      "slug": "espatula-borracha-200mm",
+      "original_vip_name": "Espatula borracha 200mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/espatula-em-abs-250mm",
+      "slug": "espatula-em-abs-250mm",
+      "original_vip_name": "Espatula em  ABS  - 250MM"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/esticador-olhal-olhal-5x70mm-25pcs",
+      "slug": "esticador-olhal-olhal-5x70mm-25pcs",
+      "original_vip_name": "Esticador Olhal / Olhal 5x70mm - 25pcs"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/esticador-ramada",
+      "slug": "esticador-ramada",
+      "original_vip_name": "Esticador Ramada"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/extensão-eléctrica-25mts-x-25mm-bobine-900338",
+      "slug": "extensão-eléctrica-25mts-x-25mm-bobine-900338",
+      "original_vip_name": "Extensão Eléctrica 25Mts x 2.5mm Bobine [900338]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/extensão-eléctrica-3x15mm-laranja",
+      "slug": "extensão-eléctrica-3x15mm-laranja",
+      "original_vip_name": "Extensão Eléctrica 3x1.5mm - Laranja"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/extintor-co2",
+      "slug": "extintor-co2",
+      "original_vip_name": "Extintor CO2"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/extintor-pó-quimico-abc",
+      "slug": "extintor-pó-quimico-abc",
+      "original_vip_name": "Extintor Pó Quimico ABC"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/faca-de-alcatifa-profissional-5-laminas-autoload",
+      "slug": "faca-de-alcatifa-profissional-5-laminas-autoload",
+      "original_vip_name": "Faca de alcatifa Profissional  5 Laminas Autoload"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/fato-chuva-em-pu-profissional",
+      "slug": "fato-chuva-em-pu-profissional",
+      "original_vip_name": "Fato chuva em PU - profissional"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/fato-descartável-cat-i",
+      "slug": "fato-descartável-cat-i",
+      "original_vip_name": "Fato descartável Cat I"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/fato-descartável-cat-iii-tipo-5e6",
+      "slug": "fato-descartável-cat-iii-tipo-5e6",
+      "original_vip_name": "Fato descartável Cat III tipo 5e6"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/kit-4-pcs-para-mangueira-rega-borracha",
+      "slug": "kit-4-pcs-para-mangueira-rega-borracha",
+      "original_vip_name": "Kit 4 pcs para Mangueira Rega [Borracha]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/lamina-para-xizato-9mm",
+      "slug": "lamina-para-xizato-9mm",
+      "original_vip_name": "Lamina para Xizato 9mm"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/laminas-pretas-sk5-18mm-10pcs-para-xizato-8900882",
+      "slug": "laminas-pretas-sk5-18mm-10pcs-para-xizato-8900882",
+      "original_vip_name": "Laminas pretas SK5 -18mm [10pcs] para Xizato -[890088/2]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/lança-metálica-punho-para-pulverizador-5-8-lts",
+      "slug": "lança-metálica-punho-para-pulverizador-5-8-lts",
+      "original_vip_name": "Lança metálica + punho para Pulverizador 5 / 8 Lts"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-em-espuma-nitrilo-preto-respirável-prof",
+      "slug": "luva-em-espuma-nitrilo-preto-respirável-prof",
+      "original_vip_name": "Luva em Espuma Nitrilo Preto - Respirável PROF."
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-gasolineira-27cms-nitrile-azul",
+      "slug": "luva-gasolineira-27cms-nitrile-azul",
+      "original_vip_name": "Luva gasolineira 27cms Nitrile Azul"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/luva-nylon-e-latex-estanque-top",
+      "slug": "luva-nylon-e-latex-estanque-top",
+      "original_vip_name": "Luva nylon e Latex - Estanque TOP"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/marcador-preto-tinta-permanente-blst-5pcs",
+      "slug": "marcador-preto-tinta-permanente-blst-5pcs",
+      "original_vip_name": "Marcador Preto Tinta Permanente BLST 5pcs"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/misturador-120x600-arga-massa-c-paraf-m14",
+      "slug": "misturador-120x600-arga-massa-c-paraf-m14",
+      "original_vip_name": "Misturador 120x600 Arga Massa c/ paraf. M14"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/máscara-protecção-ffp2-c-valvula",
+      "slug": "máscara-protecção-ffp2-c-valvula",
+      "original_vip_name": "Máscara Protecção FFP2 c/ valvula"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/máscara-de-soldador-automatic-ak00291",
+      "slug": "máscara-de-soldador-automatic-ak00291",
+      "original_vip_name": "Máscara de Soldador AUTOMATIC [AK00291]"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/máscara-de-soldador-com-pega-eco",
+      "slug": "máscara-de-soldador-com-pega-eco",
+      "original_vip_name": "Máscara de soldador com pega ECO"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/máscaras-cirurgicas-cx-50pcs",
+      "slug": "máscaras-cirurgicas-cx-50pcs",
+      "original_vip_name": "Máscaras cirurgicas cx 50pcs"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/parka-impermiável-reflectora",
+      "slug": "parka-impermiável-reflectora",
+      "original_vip_name": "Parka Impermiável Reflectora"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/parka-impermeável-reflector",
+      "slug": "parka-impermeável-reflector",
+      "original_vip_name": "Parka impermeável Reflector"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/pistola-para-espuma-pu",
+      "slug": "pistola-para-espuma-pu",
+      "original_vip_name": "Pistola para Espuma PU"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/pulverizador-2-lts",
+      "slug": "pulverizador-2-lts",
+      "original_vip_name": "Pulverizador 2 Lts"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/pulverizador-2l-pro",
+      "slug": "pulverizador-2l-pro",
+      "original_vip_name": "Pulverizador 2L PRO"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/pulverizador-manual-5-l-pro",
+      "slug": "pulverizador-manual-5-l-pro",
+      "original_vip_name": "Pulverizador manual 5 L - PRO"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/pás-dobrável-camping-4-em-1-com-bolsa",
+      "slug": "pás-dobrável-camping-4-em-1-com-bolsa",
+      "original_vip_name": "Pás Dobrável CAMPING - 4 em 1 com Bolsa"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapatilha-ténis-ancla-s1p-no-metal",
+      "slug": "sapatilha-ténis-ancla-s1p-no-metal",
+      "original_vip_name": "Sapatilha ténis Ancla S1P NO METAL"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapato-camurça-s1p-no-metal",
+      "slug": "sapato-camurça-s1p-no-metal",
+      "original_vip_name": "Sapato Camurça S1P NO METAL"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapato-de-camurça-s1p-biqueira-e-palmilha-em-aço",
+      "slug": "sapato-de-camurça-s1p-biqueira-e-palmilha-em-aço",
+      "original_vip_name": "Sapato de Camurça S1P biqueira e Palmilha em Aço"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/sapato-pele-preta-s1p-biqueira-e-palmilha-em-aço",
+      "slug": "sapato-pele-preta-s1p-biqueira-e-palmilha-em-aço",
+      "original_vip_name": "Sapato pele preta S1P biqueira e palmilha em Aço"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/serrote-para-pladur-6-profissional",
+      "slug": "serrote-para-pladur-6-profissional",
+      "original_vip_name": "Serrote para Pladur 6\" Profissional"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/suporte-para-mangueira-em-plástico-verde",
+      "slug": "suporte-para-mangueira-em-plástico-verde",
+      "original_vip_name": "Suporte para  Mangueira em Plástico Verde"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/t-shirt-155-grs-todas-as-cores",
+      "slug": "t-shirt-155-grs-todas-as-cores",
+      "original_vip_name": "T - Shirt 155 grs - todas as cores"
+    },
+    {
+      "url": "https://www.alimamedetools.com/product-page/talocha-base-borracha-240x100x20mm",
+      "slug": "talocha-base-borracha-240x100x20mm",
+      "original_vip_name": "Talocha base borracha 240x100x20mm"
+    }
+  ]
+}

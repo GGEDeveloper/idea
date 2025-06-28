@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_8896B2E8
+Nome PT: Remendos e Cola para bicicleta
+Nome EN: Remendos e Cola para bicicleta
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Remendos e Cola para bicicleta
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_2dd7e4fe1269455caf2a0b43f7694b10~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_6ba27def2dfa4c8bba00e1af7a53dff9~mv2.jpg
+  Principal: Não

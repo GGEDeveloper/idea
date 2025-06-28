@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_996D484F
+Nome PT: Corrente branca e vermelha 8mmx25mts
+Nome EN: Corrente branca e vermelha 8mmx25mts
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Corrente branca e vermelha 8mmx25mts
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_942fdac8ce57436182eaada9e3af8a7f~mv2.jpg
+  Principal: Sim

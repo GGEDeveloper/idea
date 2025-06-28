@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7CC9FF6D
+Nome PT: Ralos de Rega
+Nome EN: Ralos de Rega
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Ralos de Rega
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_96ff5492ec75422f8d2d2c23bc063002~mv2.jpg
+  Principal: Sim

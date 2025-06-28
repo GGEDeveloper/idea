@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_1A18032E
+Nome PT: Luva crute e pano com palma reforçada
+Nome EN: Luva crute e pano com palma reforçada
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva crute e pano com palma reforçada
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0c6db32c10224ee289b30434cd2045eb~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_7aca3d41781340e5ad0c74cf2f9c5811~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_c994f4c6e3c5431ca05403b5fbca9a02~mv2.jpg
+  Principal: Não

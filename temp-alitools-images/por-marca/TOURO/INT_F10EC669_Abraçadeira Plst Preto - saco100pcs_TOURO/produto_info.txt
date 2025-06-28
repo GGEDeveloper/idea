@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F10EC669
+Nome PT: Abraçadeira Plst Preto - saco100pcs
+Nome EN: Abraçadeira Plst Preto - saco100pcs
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Abraçadeira Plst Preto - saco100pcs
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9da1342f82c943659548de28a4d8555d~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_e94c5f099ce84e89b4978d7f6548c0ab~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_6f53b927d3964f1abe9ee80bca9ea9d3~mv2.jpg
+  Principal: Não

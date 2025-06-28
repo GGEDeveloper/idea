@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_408C8A49
+Nome PT: Pá (colher) Jardim
+Nome EN: Pá (colher) Jardim
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pá (colher) Jardim
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6ae374955bc44cf984a0d8b399ece08d~mv2.jpg
+  Principal: Sim

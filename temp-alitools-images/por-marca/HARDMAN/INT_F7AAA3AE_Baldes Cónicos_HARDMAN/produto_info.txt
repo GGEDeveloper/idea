@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F7AAA3AE
+Nome PT: Baldes Cónicos
+Nome EN: Baldes Cónicos
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Baldes Cónicos
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_ec7cafeae6164dd7a25d73d6b7851f34~mv2.jpg
+  Principal: Sim

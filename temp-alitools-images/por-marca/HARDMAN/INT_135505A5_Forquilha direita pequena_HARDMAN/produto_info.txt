@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_135505A5
+Nome PT: Forquilha direita pequena
+Nome EN: Forquilha direita pequena
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Forquilha direita pequena
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8e4ef8560bf34718b5ba302dd5d6ed5b~mv2.jpg
+  Principal: Sim

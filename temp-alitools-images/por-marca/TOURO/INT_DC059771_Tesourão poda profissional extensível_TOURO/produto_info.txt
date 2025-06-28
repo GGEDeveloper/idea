@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_DC059771
+Nome PT: Tesourão poda profissional extensível
+Nome EN: Tesourão poda profissional extensível
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Tesourão poda profissional extensível
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_9a5f9aee76d949d4b35ed6465682789f~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_37050A3E
+Nome PT: Martelo Fazer Calçada
+Nome EN: Martelo Fazer Calçada
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo Fazer Calçada
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fa20cde1093140fb977cb1efdd3bebc0~mv2.jpg
+  Principal: Sim

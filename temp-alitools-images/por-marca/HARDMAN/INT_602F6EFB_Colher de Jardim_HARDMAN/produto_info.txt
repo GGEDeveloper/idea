@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_602F6EFB
+Nome PT: Colher de Jardim
+Nome EN: Colher de Jardim
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Colher de Jardim
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_6ae374955bc44cf984a0d8b399ece08d~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F88007CD
+Nome PT: Xizato com travão 18mm SK2
+Nome EN: Xizato com travão 18mm SK2
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Xizato com travão 18mm SK2
+Marca: TOURO
+Coleção: Geral
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_d74a9d2ac31c41b181f36eb77532e9cc~mv2.jpeg
+  Principal: Sim
+Imagem 2: 55dd72_97029b03b8074bfaa1acbf17bc74ca2a~mv2.png
+  Principal: Não

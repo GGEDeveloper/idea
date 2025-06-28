@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FE8E53EA
+Nome PT: Foice Mira
+Nome EN: Foice Mira
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Foice Mira
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b5ad7e59e3ba4dc4bda9e81bdb534a47~mv2.jpg
+  Principal: Sim

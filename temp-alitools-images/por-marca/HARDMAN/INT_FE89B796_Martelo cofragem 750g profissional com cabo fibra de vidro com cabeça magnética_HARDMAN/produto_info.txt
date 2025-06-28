@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FE89B796
+Nome PT: Martelo cofragem 750g profissional com cabo fibra de vidro com cabeça magnética
+Nome EN: Martelo cofragem 750g profissional com cabo fibra de vidro com cabeça magnética
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo cofragem 750g profissional com cabo fibra de vidro com cabeça magnética
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_20e9ed9177a44a38b9d03d34996c26ae~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_42C6B660
+Nome PT: Viseira de proteção em rede com ajuste
+Nome EN: Viseira de proteção em rede com ajuste
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Viseira de proteção em rede com ajuste
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1f92292b33aa4687aeb5388b1a02d3a7~mv2.jpg
+  Principal: Sim

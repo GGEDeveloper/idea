@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_63628610
+Nome PT: Machadinha 600g profissional  com cabo em fibra de vidro
+Nome EN: Machadinha 600g profissional  com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Machadinha 600g profissional  com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_b13bdb827f2a4ec291e4d71e7552b4a5~mv2.jpg
+  Principal: Sim

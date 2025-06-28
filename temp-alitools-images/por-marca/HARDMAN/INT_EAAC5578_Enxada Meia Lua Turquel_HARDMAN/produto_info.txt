@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_EAAC5578
+Nome PT: Enxada Meia Lua Turquel
+Nome EN: Enxada Meia Lua Turquel
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Meia Lua Turquel
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_30f7da53b3e54145bc3f4f55442e9a4d~mv2.jpg
+  Principal: Sim

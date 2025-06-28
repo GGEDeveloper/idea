@@ -1,0 +1,25 @@
+🎯 ALITOOLS IMAGE HARVEST - RELATÓRIO RESUMO
+==================================================
+
+📅 Data: 28/06/2025 15:41:54
+📦 Produtos VIP com imagens: 408
+🖼️  Total de imagens: 488
+📥 Total de downloads: 2440
+
+🏆 TOP 10 PRODUTOS COM MAIS IMAGENS:
+----------------------------------------
+ 1. INT_3E2745A6 - Pás Dobrável CAMPING - 4 em 1 com Bolsa (6 imagens)
+ 2. INT_8E4CBE7A - Capacete Protecção- todas as cores (6 imagens)
+ 3. INT_203A3A82 - Catrabucha de taça ondulada para rebarbadora (5 imagens)
+ 4. INT_324DE734 - Máscara de Soldador AUTOMATIC [AK00291] (3 imagens)
+ 5. INT_947F1728 - Talocha base borracha 240x100x20mm (3 imagens)
+ 6. INT_990F5689 - Esticador Olhal / Olhal 5x70mm - 25pcs (3 imagens)
+ 7. INT_811F1944 - Lança telescópica 12/16 Lts Metálica para pulverizador (3 imagens)
+ 8. INT_C1707895 - Capa Chuva em Nylon - ECONOMIC (3 imagens)
+ 9. INT_182769A4 - Luva gasolineira 27cms Nitrile Azul (3 imagens)
+10. INT_DEFEF580 - Corta Rebites  - 8" (3 imagens)
+
+📂 Ficheiros gerados:
+   - alitools-research/image-catalog/complete_image_catalog.json
+   - alitools-research/image-catalog/download_plan.json
+   - alitools-research/image-catalog/summary_report.txt

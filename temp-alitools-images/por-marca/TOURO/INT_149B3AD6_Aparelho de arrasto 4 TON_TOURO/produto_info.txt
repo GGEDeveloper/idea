@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_149B3AD6
+Nome PT: Aparelho de arrasto 4 TON
+Nome EN: Aparelho de arrasto 4 TON
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Aparelho de arrasto 4 TON
+Marca: TOURO
+Coleção: Oficina Mecânica
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_179d5fbba02946a4a0853c5523131180~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_4d49651464aa436ca415eb047d9d2bba~mv2.jpg
+  Principal: Não

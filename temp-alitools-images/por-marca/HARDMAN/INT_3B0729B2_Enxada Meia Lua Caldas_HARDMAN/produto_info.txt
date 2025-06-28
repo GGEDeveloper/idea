@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_3B0729B2
+Nome PT: Enxada Meia Lua Caldas
+Nome EN: Enxada Meia Lua Caldas
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Enxada Meia Lua Caldas
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_fd2f8f0586544a2bba985550027e81d2~mv2.jpg
+  Principal: Sim

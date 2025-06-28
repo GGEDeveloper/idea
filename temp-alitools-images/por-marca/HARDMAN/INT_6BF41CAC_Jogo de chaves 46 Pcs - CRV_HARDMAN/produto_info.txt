@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6BF41CAC
+Nome PT: Jogo de chaves 46 Pcs - CRV
+Nome EN: Jogo de chaves 46 Pcs - CRV
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Jogo de chaves 46 Pcs - CRV
+Marca: HARDMAN
+Coleção: Ferramentas Manuais
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_3d2c9def4f974a449c53a2336813bf89~mv2.jpg
+  Principal: Sim

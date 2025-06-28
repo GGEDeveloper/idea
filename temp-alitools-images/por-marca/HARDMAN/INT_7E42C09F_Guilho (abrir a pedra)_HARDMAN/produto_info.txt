@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_7E42C09F
+Nome PT: Guilho (abrir a pedra)
+Nome EN: Guilho (abrir a pedra)
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Guilho (abrir a pedra)
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_14d16ffbd774484fb82c73f314ddb5ca~mv2.jpg
+  Principal: Sim

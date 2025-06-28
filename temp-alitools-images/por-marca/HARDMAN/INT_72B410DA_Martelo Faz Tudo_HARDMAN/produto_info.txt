@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_72B410DA
+Nome PT: Martelo Faz Tudo
+Nome EN: Martelo Faz Tudo
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo Faz Tudo
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_711ec6b2acdf47f18e1f28e14402fa9c~mv2.jpg
+  Principal: Sim

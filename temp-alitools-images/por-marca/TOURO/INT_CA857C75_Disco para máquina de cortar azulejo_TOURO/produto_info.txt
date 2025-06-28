@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_CA857C75
+Nome PT: Disco para máquina de cortar azulejo
+Nome EN: Disco para máquina de cortar azulejo
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Disco para máquina de cortar azulejo
+Marca: TOURO
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_8af5f8620e8e425f9cb3d376dce16ae7~mv2.jpg
+  Principal: Sim

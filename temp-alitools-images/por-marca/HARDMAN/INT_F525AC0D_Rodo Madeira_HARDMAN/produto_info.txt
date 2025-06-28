@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_F525AC0D
+Nome PT: Rodo Madeira
+Nome EN: Rodo Madeira
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Rodo Madeira
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_46f40ad6f63a4055b6f6c4caf181425b~mv2.jpg
+  Principal: Sim

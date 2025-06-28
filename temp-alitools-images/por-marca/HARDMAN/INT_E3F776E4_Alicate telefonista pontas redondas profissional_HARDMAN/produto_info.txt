@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_E3F776E4
+Nome PT: Alicate telefonista pontas redondas profissional
+Nome EN: Alicate telefonista pontas redondas profissional
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate telefonista pontas redondas profissional
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_e2bb2b63e48f47cd8d6491d67bac832b~mv2.jpg
+  Principal: Sim

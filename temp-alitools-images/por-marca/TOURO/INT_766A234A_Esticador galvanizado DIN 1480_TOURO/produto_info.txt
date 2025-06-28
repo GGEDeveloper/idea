@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_766A234A
+Nome PT: Esticador galvanizado DIN 1480
+Nome EN: Esticador galvanizado DIN 1480
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Esticador galvanizado DIN 1480
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_ea4b628f24e2498b8bb2dc87885a9cab~mv2.jpg
+  Principal: Sim

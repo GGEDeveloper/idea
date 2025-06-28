@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_47D5337A
+Nome PT: Mosquetão Galvanizado niquelado
+Nome EN: Mosquetão Galvanizado niquelado
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Mosquetão Galvanizado niquelado
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_7a5942435b9649f0a9289869bcd6d648~mv2.jpg
+  Principal: Sim

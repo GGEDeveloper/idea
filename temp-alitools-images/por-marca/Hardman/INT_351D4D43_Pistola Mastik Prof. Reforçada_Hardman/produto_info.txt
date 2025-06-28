@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_351D4D43
+Nome PT: Pistola Mastik Prof. Reforçada
+Nome EN: Pistola Mastik Prof. Reforçada
+Marca: Hardman
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Pistola Mastik Prof. Reforçada
+Marca: Hardman
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_a18692897dd9463b882685fd512ca8f9~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_323cd2b5af4b4398838fdcf97e0b2ff3~mv2.jpg
+  Principal: Não

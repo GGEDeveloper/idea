@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C53773B7
+Nome PT: Luva Nitrile Preta com nylon +grossa prof
+Nome EN: Luva Nitrile Preta com nylon +grossa prof
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva Nitrile Preta com nylon +grossa prof
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_7d5d8fbf796e40338ff42914af3f4916~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_5d5fdb9f3cb944d985627140d9293b5c~mv2.jpg
+  Principal: Não

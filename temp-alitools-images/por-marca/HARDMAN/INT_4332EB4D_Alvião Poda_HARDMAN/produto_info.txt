@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4332EB4D
+Nome PT: Alvião Poda
+Nome EN: Alvião Poda
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alvião Poda
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_3bc0bb3e8ce14ced8b3dc2cd18d88aef~mv2.jpg
+  Principal: Sim

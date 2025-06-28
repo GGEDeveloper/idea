@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_21BA25FB
+Nome PT: Viseira de proteção acrílica com ajuste
+Nome EN: Viseira de proteção acrílica com ajuste
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Viseira de proteção acrílica com ajuste
+Marca: FERMAN
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_dce535e2b95c4d218b8c8b3f8414f60b~mv2.jpg
+  Principal: Sim

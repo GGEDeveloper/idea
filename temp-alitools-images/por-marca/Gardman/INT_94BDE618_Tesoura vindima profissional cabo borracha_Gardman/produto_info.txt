@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_94BDE618
+Nome PT: Tesoura vindima profissional cabo borracha
+Nome EN: Tesoura vindima profissional cabo borracha
+Marca: Gardman
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Tesoura vindima profissional cabo borracha
+Marca: Gardman
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_c58f12f339ac4cb9a178f76f1b89ca12~mv2.jpg
+  Principal: Sim

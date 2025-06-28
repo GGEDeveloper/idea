@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_4C2CF813
+Nome PT: Martelo  Maquinista profissional com cabo em fibra de vidro
+Nome EN: Martelo  Maquinista profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Martelo  Maquinista profissional com cabo em fibra de vidro
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Martelos
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_4c0e05d556c74540a61016bfe35bebc0~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_c3b752ccde574ca5891b2643d19c470b~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_55f80e99098249eb9f18aa5ecac1d31e~mv2.jpg
+  Principal: Não

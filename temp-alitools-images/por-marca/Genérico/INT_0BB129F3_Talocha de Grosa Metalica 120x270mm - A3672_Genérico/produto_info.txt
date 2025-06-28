@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_0BB129F3
+Nome PT: Talocha de Grosa Metalica 120x270mm - A3672
+Nome EN: Talocha de Grosa Metalica 120x270mm - A3672
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha de Grosa Metalica 120x270mm - A3672
+Marca: 
+Coleção: Construção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_46f7601e978d47389cbe1bbba2a03e06~mv2.jpg
+  Principal: Sim

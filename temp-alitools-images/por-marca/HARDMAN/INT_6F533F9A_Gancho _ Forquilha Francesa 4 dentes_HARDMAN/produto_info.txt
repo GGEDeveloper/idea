@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_6F533F9A
+Nome PT: Gancho / Forquilha Francesa 4 dentes
+Nome EN: Gancho / Forquilha Francesa 4 dentes
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Gancho / Forquilha Francesa 4 dentes
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0ef6325557994c069722e68ab8e2190d~mv2.jpg
+  Principal: Sim

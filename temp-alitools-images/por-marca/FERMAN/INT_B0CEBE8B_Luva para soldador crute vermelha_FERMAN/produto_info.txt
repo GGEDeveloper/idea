@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_B0CEBE8B
+Nome PT: Luva para soldador crute vermelha
+Nome EN: Luva para soldador crute vermelha
+Marca: FERMAN
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Luva para soldador crute vermelha
+Marca: FERMAN
+Coleção: Proteção e Segurança;Luvas de Protecção
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_0a4b9528a7a347cfbd617aee55bf72c3~mv2.jpg
+  Principal: Sim
+Imagem 2: 55dd72_8966d991567847eea2a7ffd841e90e57~mv2.jpg
+  Principal: Não
+Imagem 3: 55dd72_21e2d9f5bc344dfba0f711ea2109a458~mv2.jpg
+  Principal: Não

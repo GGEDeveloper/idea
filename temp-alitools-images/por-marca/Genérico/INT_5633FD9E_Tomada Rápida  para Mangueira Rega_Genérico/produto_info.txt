@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5633FD9E
+Nome PT: Tomada Rápida  para Mangueira Rega
+Nome EN: Tomada Rápida  para Mangueira Rega
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Tomada Rápida  para Mangueira Rega
+Marca: 
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_e41b52bd4b7043e3ac2c1d70736abc12~mv2.jpeg
+  Principal: Sim

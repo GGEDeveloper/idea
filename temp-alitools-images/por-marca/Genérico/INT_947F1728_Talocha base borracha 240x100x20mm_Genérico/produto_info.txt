@@ -1,0 +1,24 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_947F1728
+Nome PT: Talocha base borracha 240x100x20mm
+Nome EN: Talocha base borracha 240x100x20mm
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 3
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Talocha base borracha 240x100x20mm
+Marca: 
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_63fe8ee3b3a34325aab7fecf3b37c671~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_39c61525d9f940c58506094a02ff64da~mv2.jpg
+  Principal: Não
+Imagem 3: 88efbe_f3d8ce9d06604ef2ae275701158ebd67~mv2.jpg
+  Principal: Não

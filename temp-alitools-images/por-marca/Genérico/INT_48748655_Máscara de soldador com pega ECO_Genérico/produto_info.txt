@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_48748655
+Nome PT: Máscara de soldador com pega ECO
+Nome EN: Máscara de soldador com pega ECO
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Máscara de soldador com pega ECO
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_a6aaeec2a3414421b30c0819de3aecbe~mv2.jpeg
+  Principal: Sim

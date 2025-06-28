@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_99595193
+Nome PT: Arrelhada Vinha
+Nome EN: Arrelhada Vinha
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Arrelhada Vinha
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_554a6cab8f59487b999de2d6c1aaf505~mv2.jpg
+  Principal: Sim

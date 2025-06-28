@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_C9121F4F
+Nome PT: Sacho Viseu Nº0
+Nome EN: Sacho Viseu Nº0
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Sacho Viseu Nº0
+Marca: HARDMAN
+Coleção: 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_65083501c818427f93a3b467e55889af~mv2.jpg
+  Principal: Sim

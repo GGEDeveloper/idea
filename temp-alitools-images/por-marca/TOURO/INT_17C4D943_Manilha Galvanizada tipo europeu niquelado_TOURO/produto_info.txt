@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_17C4D943
+Nome PT: Manilha Galvanizada tipo europeu niquelado
+Nome EN: Manilha Galvanizada tipo europeu niquelado
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Manilha Galvanizada tipo europeu niquelado
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_c568830a05ea4d31a2bcbec26fe9154d~mv2.jpg
+  Principal: Sim

@@ -1,0 +1,22 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_FF39EB27
+Nome PT: Fato chuva em PU - profissional
+Nome EN: Fato chuva em PU - profissional
+Marca: Genérico
+Score Mapeamento: 1.0
+Total Imagens: 2
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fato chuva em PU - profissional
+Marca: 
+Coleção: Proteção e Segurança
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 88efbe_b91b1852c0bd43e496e74d94432a0d73~mv2.jpg
+  Principal: Sim
+Imagem 2: 88efbe_aad0a8202abf4ded8390eb28e8486b15~mv2.jpg
+  Principal: Não

@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_A5E1D8F7
+Nome PT: Fio de nylon para aparador de relva - 15 metros
+Nome EN: Fio de nylon para aparador de relva - 15 metros
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Fio de nylon para aparador de relva - 15 metros
+Marca: TOURO
+Coleção: Jardim
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_3c59b4c1572a4feeab4943499f4dd32a~mv2.jpg
+  Principal: Sim

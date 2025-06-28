@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_5975CE7F
+Nome PT: Alicate telefonista pontas chatas profissional
+Nome EN: Alicate telefonista pontas chatas profissional
+Marca: HARDMAN
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Alicate telefonista pontas chatas profissional
+Marca: HARDMAN
+Coleção: Ferramentas Manuais;Alicates
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1f132ea51969400383d63eb4a5376dd5~mv2.jpg
+  Principal: Sim

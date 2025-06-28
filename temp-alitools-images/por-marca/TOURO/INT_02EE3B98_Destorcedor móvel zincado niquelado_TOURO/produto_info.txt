@@ -1,0 +1,20 @@
+INFORMAÇÃO DO PRODUTO VIP
+==================================================
+
+EAN: INT_02EE3B98
+Nome PT: Destorcedor móvel zincado niquelado
+Nome EN: Destorcedor móvel zincado niquelado
+Marca: TOURO
+Score Mapeamento: 1.0
+Total Imagens: 1
+
+INFORMAÇÃO ORIGINAL CSV
+==============================
+Nome: Destorcedor móvel zincado niquelado
+Marca: TOURO
+Coleção: Construção;Cabos de aço e acessórios 
+
+IMAGENS DISPONÍVEIS
+==============================
+Imagem 1: 55dd72_1e6f31421c2943009ceade76772d1f39~mv2.jpg
+  Principal: Sim
